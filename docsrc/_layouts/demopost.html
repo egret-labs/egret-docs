@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+
+    {% include header.html %}
+ 
+      <!-------------------文档版本说明------------------>
+    <div class="container">
+        
+        <div class="row-fluid">
+            <!-------------运行-------------->
+            <div class="span5">
+
+            	<div id="gameDiv">
+                    <canvas id="gameCanvas" width="480" height="800" style="background-color: #000000"></canvas>
+                </div>
+                <script>var this_document_class = "{{page.documentclass}}"</script>
+                <script src="./egret_loader.js"></script>
+                <script src="./game-min.js"></script>
+                <script>egret_h5.startGame();</script>
+
+            </div>
+            <div class="span7">
+            	<div class="well">
+            		{{page.codedes}}
+        		</div>
+            	<p>{{ content }}</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+   {% include footer.html %}
+
+    </body>
+</html>

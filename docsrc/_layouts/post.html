@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+
+    {% include header.html %}
+ 
+      <!-------------------文档版本说明------------------>
+    <div class="container">
+        <div class="well">
+            此文档适用于版本：{{page.version}}
+        </div>
+        <div class="row-fluid">
+            {% include list.html %}
+            
+            <!-------------文章-------------->
+            <div class="span9">
+            <h2 class="text-center">{{page.title}}</h2>
+                <p>{{ content }}</p>
+            </div>
+
+        </div>
+
+
+        <div class="well">
+            为了更好的完善文档内容，希望您对我们的文档做出评价。您是否觉得此文档对您有帮助？
+            <label class="checkbox inline">
+                <input type="checkbox" id="inlineCheckbox1" value="option1">非常有帮助
+            </label>
+            <label class="checkbox inline">
+                <input type="checkbox" id="inlineCheckbox2" value="option2">一般
+            </label>
+            <label class="checkbox inline">
+                <input type="checkbox" id="inlineCheckbox3" value="option3">没有帮助
+            </label>
+        </div>
+    </div>
+
+
+   {% include footer.html %}
+
+
+    </body>
+</html>

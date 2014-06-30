@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+	<title>src Source: events/TouchEvent.ts</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	
+	<link type="text/css" rel="stylesheet" href="styles/site.cerulean.css">
+	
+	<style>
+		.sideMenu
+		{
+			margin-left: 320px!important;
+
+		}
+		#main
+		{
+			margin-top: 46px;
+		}
+		#mainMenu
+		{
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			
+		}
+
+		#searchBox
+		{
+			vertical-align: none !important;
+			padding-right: 0px;
+			width:238px;
+
+		}
+		.sideMargin
+		{
+			margin-left: 15px;
+		}
+		.sunlight-code-container
+		{
+			border:none!important;
+		}
+		.navTitle
+		{
+			font-size:15px;
+			padding:0px;
+
+		}
+		.nav-list
+		{
+			width: 100%;
+		}
+		.nav-list
+		{
+			padding-left:20px;
+		}		
+		.nav-list li
+		{
+			line-height: 16px;
+		}
+		.handCursor
+		{
+			cursor: pointer;
+		}
+		.nav-pills > li > a {
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+
+		#projectTitle
+		{
+			position: fixed;
+			padding-left: 10px;
+			padding-top: 5px;
+			font-size: 26px;
+			font-weight: lighter;
+			letter-spacing: -1px;
+			background-color: #FFF;
+			width: 100%;
+			height: 35px;
+			line-height: 18px;
+			color: #000;
+			border-bottom: 1px solid rgba(0,0,0,.2);
+			z-index: 10;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font-family: 'Helvetica Neue';
+			font-weight: lighter;
+		}
+		h3
+		{
+			font-size: 22px;
+			font-weight: lighter;
+		}
+		.page-title
+		{
+			font-weight: lighter;
+			font-size: 28px;
+			letter-spacing: -2px;
+			padding-top:0px;
+		}
+
+		.well
+		{
+			padding: 5px;
+			width:280px;
+			margin-left:0px;
+		}
+
+
+		.menuFrame
+		{
+			margin-top: 20px;
+			overflow:hidden; 
+			overflow-y:auto;
+		}
+		.menuFrame::-webkit-scrollbar {
+		    -webkit-appearance: none;
+		}
+
+		.menuFrame::-webkit-scrollbar:vertical {
+		    width: 11px;
+		}
+
+		.menuFrame::-webkit-scrollbar:horizontal {
+		    height: 11px;
+		}
+
+		.menuFrame::-webkit-scrollbar-thumb {
+		    border-radius: 8px;
+		    border: 2px solid white; /* should match background, can't be transparent */
+		    background-color: rgba(0, 0, 0, .5);
+		}
+		
+		.container-fluid
+		{
+			padding-left: 10px;
+		}
+
+		#side-menu
+		{
+			height: 415px;
+			box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+			border: 1px solid #999;
+		}
+
+		#menuAside
+		{
+			margin-top:50px;
+			position:fixed;
+		}
+
+		.member {
+			font-size: 14px;
+			color:#000;
+			background-color:#FFF;
+			border:1px solid #2fa4e7;
+		}
+		.member:hover {
+
+			background-color:#F6F6F6;
+		}		
+		.member-open .paramSignature{
+			font-size: 14px;
+			color: #2fa4e7;
+		}
+		.member-collapsed .paramSignature{
+			font-size: 14px;
+			color: #2fa4e7;
+		}
+		.routeTitle{
+		    cursor: pointer;
+		}
+
+		.genericAnnotation
+		{
+		    color:#2fa4e7;
+		}
+
+		.sourceBar
+		{
+			margin-top: -5px;
+		}
+
+
+
+.twitter-typeahead
+{
+	top: -5px;
+}
+.twitter-typeahead .tt-query,
+.twitter-typeahead .tt-hint {
+  margin-bottom: 0;
+  background-color: #F00;
+  border-radius: 20px;
+
+}
+
+.tt-hint
+{
+	top: 2px!important;
+
+    padding-left: 10px!important;  
+    width: 188px;
+    text-indent: 4px;
+}
+.tt-dropdown-menu {
+  min-width: 160px;
+  margin-top: 2px;
+  padding: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.2);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+
+.tt-suggestion {
+  display: block;
+  padding: 3px 20px;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+  color: #fff;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0)
+}
+
+.tt-suggestion.tt-is-under-cursor a {
+  color: #fff;
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+	</style>
+</head>
+
+<body>
+<div id="projectTitle">
+	<div id="btnCollapse" class="btn collapseSidebarButton btn-primary"><i class="icon-th-list icon-white"></i></div>
+	src
+</div>	
+<div class="container-fluid">
+
+	<div id="menuAside">
+    <aside class="well span3 oc" id="side-menu" role="navigation">
+
+    	<div style="margin-left: 10px; margin-top: 10px;">
+			<input type="text" id="searchBox" class="search-query typeahead" placeholder="Search">
+		</div>
+		<div class="menuFrame" id="sideMenuFrame">
+		<ul id="menuContainer" class="nav nav-pills nav-stacked">
+			<li class="nav-header navTitle"><a href="index.html">INDEX</a></li>
+				<li class="divider"></li>
+				
+				
+					    <li id="navTitle_Namespaces" class="nav-header navTitle">
+                            <a class="handCursor" data-toggle="collapse" data-id="T_Namespaces" data-target="#collapse_Namespaces">Namespaces<span class="badge badge-info pull-right">1</span></a>
+                        </li>
+                        <li id="navContents_Namespaces">
+                            <div id="collapse_Namespaces" class="collapse">
+                                <ul class="nav nav-list" style="width:100%;margin-left:-8px;">
+                                    
+                                        <?j
+                                    <li>
+                                        
+                                        
+                                        	<a href="egret.html">egret</a>
+                                        
+                                    </li>
+                                    
+                             <li class="divider"></li>
+                        
+                                    </ul>
+                                </div>
+                            </li>
+                        
+					    <li id="navTitle_Classes" class="nav-header navTitle">
+                            <a class="handCursor" data-toggle="collapse" data-id="T_Classes" data-target="#collapse_Classes">Classes<span class="badge badge-info pull-right">58</span></a>
+                        </li>
+                        <li id="navContents_Classes">
+                            <div id="collapse_Classes" class="collapse">
+                                <ul class="nav nav-list" style="width:100%;margin-left:-8px;">
+                                    <li><div class="routeTitle">egret</div><ul class="children nav nav-list"><li><a href="egret.Bitmap.html">Bitmap</a></li><li><a href="egret.BitmapFillMode.html">BitmapFillMode</a></li><li><a href="egret.BlendMode.html">BlendMode</a></li><li><a href="egret.ContainerStrategy.html">ContainerStrategy</a></li><li><a href="egret.ContentStrategy.html">ContentStrategy</a></li><li><a href="egret.DeviceContext.html">DeviceContext</a></li><li><a href="egret.DisplayObject.html">DisplayObject</a></li><li><a href="egret.DisplayObjectContainer.html">DisplayObjectContainer</a></li><li><a href="egret.EqualToFrame.html">EqualToFrame</a></li><li><a href="egret.Event.html">Event</a></li><li><a href="egret.EventDispatcher.html">EventDispatcher</a></li><li><a href="egret.EventPhase.html">EventPhase</a></li><li><a href="egret.FixedHeight.html">FixedHeight</a></li><li><a href="egret.FixedSize.html">FixedSize</a></li><li><a href="egret.FixedWidth.html">FixedWidth</a></li><li><a href="egret.Graphics.html">Graphics</a></li><li><a href="egret.HashObject.html">HashObject</a></li><li><a href="egret.HorizontalAlign.html">HorizontalAlign</a></li><li><a href="egret.HTML5CanvasRenderer.html">HTML5CanvasRenderer</a></li><li><a href="egret.HTML5DeviceContext.html">HTML5DeviceContext</a></li><li><a href="egret.HTML5NetContext.html">HTML5NetContext</a></li><li><a href="egret.Injector.html">Injector</a></li><li><a href="egret.IOErrorEvent.html">IOErrorEvent</a></li><li><a href="egret.Logger.html">Logger</a></li><li><a href="egret.MainContext.html">MainContext</a></li><li><a href="egret.Matrix.html">Matrix</a></li><li><a href="egret.Matrix#constructor.html">Matrix#constructor</a></li><li><a href="egret.MovieClip.html">MovieClip</a></li><li><a href="egret.NativeDeviceContext.html">NativeDeviceContext</a></li><li><a href="egret.NativeRendererContext.html">NativeRendererContext</a></li><li><a href="egret.NetContext.html">NetContext</a></li><li><a href="egret.Point.html">Point</a></li><li><a href="egret.Profiler.html">Profiler</a></li><li><a href="egret.Rectangle.html">Rectangle</a></li><li><a href="egret.RendererContext.html">RendererContext</a></li><li><a href="egret.RenderFilter.html">RenderFilter</a></li><li><a href="egret.ResolutionPolicy.html">ResolutionPolicy</a></li><li><a href="egret.Shape.html">Shape</a></li><li><a href="egret.Sound.html">Sound</a></li><li><a href="egret.Sprite.html">Sprite</a></li><li><a href="egret.SpriteSheet.html">SpriteSheet</a></li><li><a href="egret.Stage.html">Stage</a></li><li><a href="egret.StageDelegate.html">StageDelegate</a></li><li><a href="egret.StageText.html">StageText</a></li><li><a href="egret.TextField.html">TextField</a></li><li><a href="egret.TextFieldType.html">TextFieldType</a></li><li><a href="egret.Texture.html">Texture</a></li><li><a href="egret.Ticker.html">Ticker</a></li><li><a href="egret.TimerEvent.html">TimerEvent</a></li><li><a href="egret.TouchContext.html">TouchContext</a></li><li><a href="egret.TouchEvent.html">TouchEvent</a></li><li><a href="egret.URLLoader.html">URLLoader</a></li><li><a href="egret.URLLoaderDataFormat.html">URLLoaderDataFormat</a></li><li><a href="egret.URLRequest.html">URLRequest</a></li><li><a href="egret.URLRequestMethod.html">URLRequestMethod</a></li><li><a href="egret.URLVariables.html">URLVariables</a></li><li><a href="egret.VerticalAlign.html">VerticalAlign</a></li><li><a href="egret.WebGLRenderer.html">WebGLRenderer</a></li></ul></li>
+                            
+                                    </ul>
+                                </div>
+                            </li>
+                        
+					    <li id="navTitle_Global" class="nav-header navTitle">
+                            <a class="handCursor" data-toggle="collapse" data-id="T_Global" data-target="#collapse_Global">Global<span class="badge badge-info pull-right">2</span></a>
+                        </li>
+                        <li id="navContents_Global">
+                            <div id="collapse_Global" class="collapse">
+                                <ul class="nav nav-list" style="width:100%;margin-left:-8px;">
+                                    
+                                        <?j
+                                    <li>
+                                        
+                                        
+                                        	<a href="global.html#egret.Stage#stageHeight
+舞台高度（坐标系高度，非设备高度）">egret.Stage#stageHeight
+舞台高度（坐标系高度，非设备高度）</a>
+                                        
+                                    </li>
+                                    
+                                    <li>
+                                        
+                                        
+                                        	<a href="global.html#egret.Stage#stageWidth
+舞台宽度（坐标系宽度，非设备宽度）">egret.Stage#stageWidth
+舞台宽度（坐标系宽度，非设备宽度）</a>
+                                        
+                                    </li>
+                                    
+                             <li class="divider"></li>
+                        
+                                    </ul>
+                                </div>
+                            </li>
+                        
+					    <li id="navTitle_Interfaces" class="nav-header navTitle">
+                            <a class="handCursor" data-toggle="collapse" data-id="T_Interfaces" data-target="#collapse_Interfaces">Interfaces<span class="badge badge-info pull-right">3</span></a>
+                        </li>
+                        <li id="navContents_Interfaces">
+                            <div id="collapse_Interfaces" class="collapse">
+                                <ul class="nav nav-list" style="width:100%;margin-left:-8px;">
+                                    <li><div class="routeTitle">egret</div><ul class="children nav nav-list"><li><a href="egret.IEventDispatcher.html">IEventDispatcher</a></li><li><a href="egret.IHashObject.html">IHashObject</a></li><li><a href="egret.RenderData.html">RenderData</a></li></ul></li>
+                            
+                                    </ul>
+                                </div>
+                            </li>
+                        
+
+		</ul>
+		</div>
+
+		<script>
+			var searchMembers = [{"realName":"egret","link":"egret"},{"realName":"egret.Bitmap","link":"egret.Bitmap"},{"realName":"egret.BitmapFillMode","link":"egret.BitmapFillMode"},{"realName":"egret.BlendMode","link":"egret.BlendMode"},{"realName":"egret.ContainerStrategy","link":"egret.ContainerStrategy"},{"realName":"egret.ContentStrategy","link":"egret.ContentStrategy"},{"realName":"egret.DeviceContext","link":"egret.DeviceContext"},{"realName":"egret.DisplayObject","link":"egret.DisplayObject"},{"realName":"egret.DisplayObjectContainer","link":"egret.DisplayObjectContainer"},{"realName":"egret.EqualToFrame","link":"egret.EqualToFrame"},{"realName":"egret.Event","link":"egret.Event"},{"realName":"egret.EventDispatcher","link":"egret.EventDispatcher"},{"realName":"egret.EventPhase","link":"egret.EventPhase"},{"realName":"egret.FixedHeight","link":"egret.FixedHeight"},{"realName":"egret.FixedSize","link":"egret.FixedSize"},{"realName":"egret.FixedWidth","link":"egret.FixedWidth"},{"realName":"egret.Graphics","link":"egret.Graphics"},{"realName":"egret.HashObject","link":"egret.HashObject"},{"realName":"egret.HorizontalAlign","link":"egret.HorizontalAlign"},{"realName":"egret.HTML5CanvasRenderer","link":"egret.HTML5CanvasRenderer"},{"realName":"egret.HTML5DeviceContext","link":"egret.HTML5DeviceContext"},{"realName":"egret.HTML5NetContext","link":"egret.HTML5NetContext"},{"realName":"egret.Injector","link":"egret.Injector"},{"realName":"egret.IOErrorEvent","link":"egret.IOErrorEvent"},{"realName":"egret.Logger","link":"egret.Logger"},{"realName":"egret.MainContext","link":"egret.MainContext"},{"realName":"egret.Matrix","link":"egret.Matrix"},{"realName":"egret.Matrix#constructor","link":"egret.Matrix#constructor"},{"realName":"egret.MovieClip","link":"egret.MovieClip"},{"realName":"egret.NativeDeviceContext","link":"egret.NativeDeviceContext"},{"realName":"egret.NativeRendererContext","link":"egret.NativeRendererContext"},{"realName":"egret.NetContext","link":"egret.NetContext"},{"realName":"egret.Point","link":"egret.Point"},{"realName":"egret.Profiler","link":"egret.Profiler"},{"realName":"egret.Rectangle","link":"egret.Rectangle"},{"realName":"egret.RendererContext","link":"egret.RendererContext"},{"realName":"egret.RenderFilter","link":"egret.RenderFilter"},{"realName":"egret.ResolutionPolicy","link":"egret.ResolutionPolicy"},{"realName":"egret.Shape","link":"egret.Shape"},{"realName":"egret.Sound","link":"egret.Sound"},{"realName":"egret.Sprite","link":"egret.Sprite"},{"realName":"egret.SpriteSheet","link":"egret.SpriteSheet"},{"realName":"egret.Stage","link":"egret.Stage"},{"realName":"egret.StageDelegate","link":"egret.StageDelegate"},{"realName":"egret.StageText","link":"egret.StageText"},{"realName":"egret.TextField","link":"egret.TextField"},{"realName":"egret.TextFieldType","link":"egret.TextFieldType"},{"realName":"egret.Texture","link":"egret.Texture"},{"realName":"egret.Ticker","link":"egret.Ticker"},{"realName":"egret.TimerEvent","link":"egret.TimerEvent"},{"realName":"egret.TouchContext","link":"egret.TouchContext"},{"realName":"egret.TouchEvent","link":"egret.TouchEvent"},{"realName":"egret.URLLoader","link":"egret.URLLoader"},{"realName":"egret.URLLoaderDataFormat","link":"egret.URLLoaderDataFormat"},{"realName":"egret.URLRequest","link":"egret.URLRequest"},{"realName":"egret.URLRequestMethod","link":"egret.URLRequestMethod"},{"realName":"egret.URLVariables","link":"egret.URLVariables"},{"realName":"egret.VerticalAlign","link":"egret.VerticalAlign"},{"realName":"egret.WebGLRenderer","link":"egret.WebGLRenderer"},{"realName":"egret.IEventDispatcher","link":"egret.IEventDispatcher"},{"realName":"egret.IHashObject","link":"egret.IHashObject"},{"realName":"egret.RenderData","link":"egret.RenderData"}];
+		</script>
+    </aside>
+	</div>
+    <div id="docContents" class="sideMenu sideMargin">
+
+		
+			<div style="width:100%">
+		
+				<div id="main">
+					
+
+
+		<h1 class="page-title">Source: events/TouchEvent.ts</h1>
+    
+    <section>
+        <article>
+            <pre class="sunlight-highlight-javascript ">/**
+ * Copyright (c) 2014,Egret-Labs.org
+ * All rights reserved.
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above copyright
+ *       notice, this list of conditions and the following disclaimer in the
+ *       documentation and/or other materials provided with the distribution.
+ *     * Neither the name of the Egret-Labs.org nor the
+ *       names of its contributors may be used to endorse or promote products
+ *       derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY EGRET-LABS.ORG AND CONTRIBUTORS "AS IS" AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL EGRET-LABS.ORG AND CONTRIBUTORS BE LIABLE FOR ANY
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+/// &lt;reference path="../display/DisplayObject.ts"/>
+/// &lt;reference path="Event.ts"/>
+/// &lt;reference path="IEventDispatcher.ts"/>
+/// &lt;reference path="../geom/Point.ts"/>
+
+module egret {
+
+    export class TouchEvent extends Event {
+
+        /**
+         * 创建一个作为参数传递给事件侦听器的 Event 对象。
+		 *
+         * @class egret.TouchEvent
+         * @classdesc
+         * TouchEvent数据类
+         * @extends egret.Event
+         * @constructor egret.TouchEvent
+         * @param type {string} 事件的类型，可以作为 Event.type 访问。
+         * @param bubbles {boolean} 确定 Event 对象是否参与事件流的冒泡阶段。默认值为 false。
+         * @param cancelable {boolean} 确定是否可以取消 Event 对象。默认值为 false。
+		 * @param touchPointID {number} 
+		 * @param stageX {number} 
+		 * @param stageY {number} 
+		 * @param ctrlKey {boolean} 
+		 * @param altKey {boolean} 
+		 * @param shiftKey {boolean} 
+		 * @param touchDown {boolean} 
+         */
+        public constructor(type:string, bubbles:boolean = true, cancelable:boolean = true,
+                           touchPointID:number = 0, stageX:number = 0, stageY:number = 0,
+                           ctrlKey:boolean=false,altKey:boolean=false,shiftKey:boolean=false,touchDown:boolean=false) {
+            super(type, bubbles, cancelable);
+            this.touchPointID = touchPointID
+            this._stageX = stageX;
+            this._stageY = stageY;
+            this.ctrlKey = ctrlKey;
+            this.altKey = altKey;
+            this.touchDown = touchDown;
+        }
+
+        /**
+         * 轻触，参考Flash的MouseEvent.CLICK
+		 * @constant {string} egret.TouchEvent.TOUCH_TAP
+         */
+        public static TOUCH_TAP:string = "touchTap";
+
+        /**
+         * 移动，参考FLash的MouseEvent.MOVE
+		 * @constant {string} egret.TouchEvent.TOUCH_MOVE
+         */
+        public static TOUCH_MOVE:string = "touchMove";
+
+        /**
+         * 开始触摸,参考Flash的MouseEvent.MOUSE_DOWN
+		 * @constant {string} egret.TouchEvent.TOUCH_BEGIN
+         */
+        public static TOUCH_BEGIN:string = "touchBegin";
+
+        /**
+         * 在同一对象上结束触摸,参考Flash的MouseEvent.MOUSE_UP
+		 * @constant {string} egret.TouchEvent.TOUCH_END
+         */
+        public static TOUCH_END:string = "touchEnd";
+
+        /**
+         * 在对象外部结束触摸，参考Flash的MouseEvent.RELEASE_OUTSIDE
+		 * @constant {string} egret.TouchEvent.TOUCH_RELEASE_OUTSIDE
+         */
+        public static TOUCH_RELEASE_OUTSIDE:string = "touchReleaseOutside";
+
+        /**
+         * 移动，参考FLash的MouseEvent.MOVE
+         * @member egret.TouchEvent.TOUCH_MOVE
+		 * @constant {string} egret.TouchEvent.TOUCH_ROLL_OUT
+         */
+        public static TOUCH_ROLL_OUT:string = "touchRollOut";
+
+        /**
+         * 移动，参考FLash的MouseEvent.MOVE
+         * @member egret.TouchEvent.TOUCH_MOVE
+		 * @constant {string} egret.TouchEvent.TOUCH_ROLL_OVER
+         */
+        public static TOUCH_ROLL_OVER:string = "touchRollOver";
+
+        /**
+         * 移动，参考FLash的MouseEvent.MOVE
+		 * @constant {string} egret.TouchEvent.TOUCH_OUT
+         */
+        public static TOUCH_OUT:string = "touchOut";
+
+        /**
+         * 移动，参考FLash的MouseEvent.MOVE
+         * @member egret.TouchEvent.TOUCH_MOVE
+		 * @constant {string} egret.TouchEvent.TOUCH_OVER
+         */
+        public static TOUCH_OVER:string = "touchOver";
+
+
+        public _stageX:number = 0;
+        /**
+         * 事件发生点在全局舞台坐标中的水平坐标。
+		 * @member {number} egret.TouchEvent#stageX
+         */
+        public get stageX():number {
+            return this._stageX;
+        }
+
+        public _stageY:number = 0;
+        /**
+         * 事件发生点在全局舞台坐标中的垂直坐标。
+		 * @member {number} egret.TouchEvent#stageY
+         */
+        public get stageY():number {
+            return this._stageY;
+        }
+
+        private _localX:number = 0;
+        /**
+         * 事件发生点相对于currentTarget的水平坐标。
+		 * @member {number} egret.TouchEvent#localX
+         */
+        public get localX():number {
+            return this._localX;
+        }
+
+        private _localY:number = 0;
+        /**
+         * 事件发生点相对于currentTarget的垂直坐标。
+		 * @member {number} egret.TouchEvent#localY
+         */
+        public get localY():number {
+            return this._localY;
+        }
+
+        /**
+         * 分配给触摸点的唯一标识号
+		 * @member {number} egret.TouchEvent#touchPointID
+         */
+        public touchPointID:number;
+        /**
+         * 事件发生时ctrl键是否被按下。 (Mac OS下为 Cmd 或 Ctrl)
+		 * @member {boolean} egret.TouchEvent#ctrlKey
+         */
+        public ctrlKey:boolean;
+        /**
+         * 事件发生时shift键是否被按下。
+		 * @member {boolean} egret.TouchEvent#shiftKey
+         */
+        public shiftKey:boolean;
+        /**
+         * 事件发生时alt键是否被按下。
+		 * @member {boolean} egret.TouchEvent#altKey
+         */
+        public altKey:boolean;
+        /**
+         * 表示触摸已按下 (true) 还是未按下 (false)。
+		 * @member {boolean} egret.TouchEvent#touchDown
+         */
+        public touchDown:boolean;
+
+        public _setCurrentTarget(target:any):void {
+            super._setCurrentTarget(target);
+            if (target instanceof DisplayObject) {
+                var dp:DisplayObject = &lt;DisplayObject> target;
+                var point:Point = dp.globalToLocal(this._stageX, this._stageY,Point.identity);
+                this._localX = point.x;
+                this._localY = point.y;
+            }
+        }
+
+        /**
+         * 使用指定的EventDispatcher对象来抛出Event事件对象。抛出的对象将会缓存在对象池上，供下次循环复用。
+		 * @method egret.TouchEvent.dispatchTouchEvent
+		 * @param target {egret.IEventDispatcher} 
+		 * @param type {string} 
+		 * @param touchPointID {number} 
+		 * @param stageX {number} 
+		 * @param stageY {number} 
+		 * @param ctrlKey {boolean} 
+		 * @param altKey {boolean} 
+		 * @param shiftKey {boolean} 
+		 * @param touchDown {boolean} 
+         */
+        public static dispatchTouchEvent(target:IEventDispatcher,type:string,touchPointID:number = 0, stageX:number = 0, stageY:number = 0,
+                                         ctrlKey:boolean=false,altKey:boolean=false,shiftKey:boolean=false,touchDown:boolean=false):void{
+            var eventClass:any = TouchEvent;
+            var props:any = Event._getPropertyData(eventClass);
+            props.touchPointID = touchPointID
+            props._stageX = stageX;
+            props._stageY = stageY;
+            props.ctrlKey = ctrlKey;
+            props.altKey = altKey;
+            props.shiftKey = shiftKey;
+            props.touchDown = touchDown;
+            Event._dispatchByTarget(eventClass,target,type,props,true,true);
+        }
+    }
+}</pre>
+        </article>
+    </section>
+
+
+
+
+
+				</div>
+
+				<div class="clearfix"></div>
+				<footer>
+					
+					
+						<span class="copyright">
+						src Copyright © 2014 mebius.
+						</span>
+									<br />
+									
+						<span class="jsdoc-message">
+						Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.2.0</a>
+						on Mon Jun 30 2014 11:16:27 GMT+0800 (CST) using the <a href="https://github.com/xperiments/TSDoc">TSDoc template</a>.
+						</span>
+				</footer>
+			</div>
+			<!--
+			
+			-->
+			<br clear="both">
+		</div>
+
+	</div>
+
+	<script src="scripts/sunlight.js"></script>
+	<script src="scripts/sunlight.javascript.js"></script>
+	<script src="scripts/sunlight-plugin.doclinks.js"></script>
+	<script src="scripts/sunlight-plugin.linenumbers.js"></script>
+	<script src="scripts/sunlight-plugin.menu.js"></script>
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/jquery.scrollTo.js"></script>
+	<script src="scripts/jquery.localScroll.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
+
+
+
+	<script>  Sunlight.highlightAll({lineNumbers:false,  showMenu: true, enableDoclinks :true}); </script>
+
+	<script>
+		$( function () {
+
+			var searchItems = [];
+			var searchMap = {};
+			var mapName = "";
+			for( var i=0; i<searchMembers.length; i++ )
+			{
+				realName = searchMembers[i].realName;
+				searchItems.push( realName );
+				searchMap[ realName ] = searchMembers[ i ];
+			}
+
+
+			$('.typeahead').typeahead({
+			  source: searchItems,
+			  matcher: function(item) {
+			  	//console.log('aaa'+item, this.query, item.indexOf( this.query.toLowerCase() )==-1?false:true)
+                // evaluate item variable and return true if the item was matched.
+                return item.toLowerCase().indexOf( this.query.toLowerCase() )==-1?false:true;
+             },
+			  updater: function (item) {
+					window.location.href = searchMap[ item ].link+'.html';
+			  }
+
+			});
+
+
+            // Move Tutorials to bottom
+            //$('#menuContainer').append($('#navTitle_Tutorials'));
+            //$('#menuContainer').append($('#navContents_Tutorials'));
+			$(window).resize(function() {
+			  $('#side-menu').height( $(window).height()-70 );
+			  $('#sideMenuFrame').height( $(window).height()-140 );
+			  if( $(window).width() <480 )
+			  {
+			  	$('#side-menu').hide();
+				$('#docContents').removeClass('sideMenu');
+			  }
+			});
+
+			$(window).trigger('resize')
+			$('#btnCollapse').click(function()
+			{
+				$('#side-menu').toggle();
+				$('#docContents').toggleClass('sideMenu');
+
+			})
+			$('#btnHome').click(function()
+			{
+				document.location.href="index.html"
+
+			})		
+
+			$('.sourceBar').click(function(){})
+			var lastMenuSelection = window.localStorage.getItem('lastMenuSelection') || null;
+			if( lastMenuSelection ) $('a[data-id='+lastMenuSelection+']').click();
+			$('a[data-toggle=collapse]').click(function(){
+				if( lastMenuSelection == $(this).attr('data-id') ) return;
+				if( lastMenuSelection ) $('a[data-id='+lastMenuSelection+']').click();
+				lastMenuSelection = $(this).attr('data-id');
+				window.localStorage.setItem('lastMenuSelection', lastMenuSelection )
+			});	
+
+
+		} );
+	</script>
+
+	
+	<script>
+		$( function () {
+			$('#main').localScroll({
+				offset: { top: 56 } //offset by the height of your header (give or take a few px, see what works for you)
+			});
+			$(".routeTitle").on('click', function(){
+			    $(this).next().slideToggle();
+			});
+			$( "dt h4.name" ).each( function () {
+				var $this = $( this );
+				//var icon = $( "<i/>" ).addClass( "icon-plus-sign" ).addClass( "pull-right" );
+				var dt = $this.parents( "dt" );
+				var children = dt.next( "dd" );
+
+				//$this.append( icon ).css( {cursor : "pointer"} );
+				$this.addClass( "member-collapsed" ).addClass( "member" );
+
+				children.hide();
+				$this.toggle( function () {
+					//icon.addClass( "icon-minus-sign" ).removeClass( "icon-plus-sign" );
+					$this.addClass( "member-open" ).removeClass( "member-collapsed" );
+					children.slideDown();
+				}, function () {
+					//icon.addClass( "icon-plus-sign" ).removeClass( "icon-minus-sign" );
+					$this.addClass( "member-collapsed" ).removeClass( "member-open" );
+					children.slideUp();
+				} );
+			} );
+			$('.sourceBar').click(function(event){event.stopPropagation();})
+		} );
+	</script>
+	
+
+</body>
+</html>

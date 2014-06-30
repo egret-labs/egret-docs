@@ -1,0 +1,209 @@
+# Site settings
+title: Egret产品文档
+email: your-email@domain.com
+description: "Egret产品文档,HTML5游戏引擎"
+baseurl: ""
+url: "/home.html"
+
+# Build settings
+#markdown: kramdown
+markdown: redcarpet
+permalink: pretty
+encoding: utf-8
+safe: false
+
+#pygments: true
+highlighter: pygments
+
+
+#菜单配置
+nav:
+  - text: 首页
+    url: http://www.egret-labs.org
+  - text: 文档
+    url: /home.html
+  - text: API文档
+    url: /api/api.html
+  - text: Flash移植教程
+    url: /flash.html
+  - text: 代码迁移
+    url: /as2ts/index.html
+
+#文档一级分类
+docsType:
+  - text: 快速入门
+    type: quitestart
+  - text: 手册
+    type: manual
+  - text: 实例
+    type: demo
+  - text: 工具
+    type: tools
+
+#文档二级分了
+quitestart:
+  - text: 简介
+    enter: true
+    element: quitestartabout
+    url: post/quitestart/about/aboutegret.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: 安装与部署
+    element: quitestartinstall
+    url: post/quitestart/install/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: Hello World
+    fenter: false
+    element: quitestarthelloworld
+    url: post/quitestart/helloworld/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+
+manual:
+  - text: 基础知识
+    enter: true
+    element: manualknowledge
+    url: post/manual/knowledge/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: 编程工具
+    element: manualide
+    url: post/manual/ide/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: 显示对象
+    fenter: false
+    element: manualdisplay
+    url: post/manual/display/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: 纹理图片
+    enter: true
+    element: manualtexture
+    url: post/manual/texture/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: 事件捕获
+    element: manualevent
+    url: post/manual/event/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: 显示文本
+    fenter: false
+    element: manualtext
+    url: post/manual/text/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: 动画
+    enter: true
+    element: manualmoive
+    url: post/manual/movie/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: 计时器
+    element: manualtime
+    url: post/manual/time/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: 声音
+    fenter: false
+    element: manualsound
+    url: post/manual/sound/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: GUI
+    enter: true
+    element: manualgui
+    url: post/manual/gui/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: 打包发布
+    element: manualpublish
+    url: post/manual/publish/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: 浏览器兼容性与性能
+    fenter: false
+    element: manualbrowser
+    url: post/manual/browser/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: 高级开发
+    enter: true
+    element: manualother
+    url: post/manual/other/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: 网络
+    element: manualnetwork
+    url: post/manual/network/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: 调试
+    fenter: false
+    element: manualdebug
+    url: post/manual/debug/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+  - text: 资源加载
+    fenter: false
+    enter: true
+    element: manualloader
+    url: post/manual/loader/index.html
+    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+
+demo:
+  - text: 显示对象
+    enter: true
+    element: demodisplay
+    url: demo/display.html
+  - text: 事件
+    element: demoevent
+    url: demo/event.html
+  - text: 布局
+    fenter: false
+    element: demolayout
+    url: demo/layout.html
+  - text: 声音
+    enter: true
+    element: demosound
+    url: demo/sound.html
+  - text: 网络
+    element: demonetwork
+    url: demo/network.html
+  - text: 文本
+    fenter: false
+    element: demotext
+    url: demo/text.html
+  - text: 动画
+    enter: true
+    element: demomovie
+    url: demo/movie.html
+  - text: GUI
+    element: demogui
+    url: demo/gui.html
+  - text: 高级
+    fenter: false
+    element: demoother
+    url: demo/other.html
+
+tools:
+  - text: 官方工具
+    enter: true
+    element: tools
+    url: post/tools/egrettools/index.html
+  - text: 官方插件
+    element: tools
+    url: post/tools/egretplugin/index.html
+  - text: 代码编辑器
+    fenter: false
+    element: tools
+    url: post/tools/ide/index.html
+  - text: 第三方工具
+    enter: true
+    element: tools
+    url: post/tools/othertools/index.html
+  - text: 服务器工具
+    element: tools
+    url: post/tools/servertools/index.html
+  - text: 浏览器工具
+    fenter: false
+    element: tools
+    url: post/tools/browser/index.html
+
+#AS3 TS代码对比参考目录 及参数
+codePageTitle: Flash ActionScript 3代码迁移Egret在线参考
+codeType:
+  - text: 显示列表
+    type: codedisplay
+    uiid: collapseOne
+  - text: 网络
+    type: codenetwork
+    uiid: collapseTwo
+  - text: 事件处理
+    type: codeevent
+    uiid: collapseThree
+

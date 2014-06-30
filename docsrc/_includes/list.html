@@ -1,0 +1,14 @@
+<!-------------------折叠列表------------------>
+<div class="span3">
+    <ul class="nav nav-tabs nav-stacked">
+        {% for post in site.posts %}
+        	{% if post.type == page.type %}
+        		{% if post.element == page.element %}
+        			<li>
+                		<a href="{{post.url}}">{{post.title}}</a>
+            		</li>
+        		{% endif %}
+        	{% endif %}
+        {% endfor %}
+    </ul>
+</div>	

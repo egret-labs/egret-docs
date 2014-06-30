@@ -1,0 +1,4266 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+	<title>src Class: Bitmap</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	
+	<link type="text/css" rel="stylesheet" href="styles/site.cerulean.css">
+	
+	<style>
+		.sideMenu
+		{
+			margin-left: 320px!important;
+
+		}
+		#main
+		{
+			margin-top: 46px;
+		}
+		#mainMenu
+		{
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			
+		}
+
+		#searchBox
+		{
+			vertical-align: none !important;
+			padding-right: 0px;
+			width:238px;
+
+		}
+		.sideMargin
+		{
+			margin-left: 15px;
+		}
+		.sunlight-code-container
+		{
+			border:none!important;
+		}
+		.navTitle
+		{
+			font-size:15px;
+			padding:0px;
+
+		}
+		.nav-list
+		{
+			width: 100%;
+		}
+		.nav-list
+		{
+			padding-left:20px;
+		}		
+		.nav-list li
+		{
+			line-height: 16px;
+		}
+		.handCursor
+		{
+			cursor: pointer;
+		}
+		.nav-pills > li > a {
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+
+		#projectTitle
+		{
+			position: fixed;
+			padding-left: 10px;
+			padding-top: 5px;
+			font-size: 26px;
+			font-weight: lighter;
+			letter-spacing: -1px;
+			background-color: #FFF;
+			width: 100%;
+			height: 35px;
+			line-height: 18px;
+			color: #000;
+			border-bottom: 1px solid rgba(0,0,0,.2);
+			z-index: 10;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font-family: 'Helvetica Neue';
+			font-weight: lighter;
+		}
+		h3
+		{
+			font-size: 22px;
+			font-weight: lighter;
+		}
+		.page-title
+		{
+			font-weight: lighter;
+			font-size: 28px;
+			letter-spacing: -2px;
+			padding-top:0px;
+		}
+
+		.well
+		{
+			padding: 5px;
+			width:280px;
+			margin-left:0px;
+		}
+
+
+		.menuFrame
+		{
+			margin-top: 20px;
+			overflow:hidden; 
+			overflow-y:auto;
+		}
+		.menuFrame::-webkit-scrollbar {
+		    -webkit-appearance: none;
+		}
+
+		.menuFrame::-webkit-scrollbar:vertical {
+		    width: 11px;
+		}
+
+		.menuFrame::-webkit-scrollbar:horizontal {
+		    height: 11px;
+		}
+
+		.menuFrame::-webkit-scrollbar-thumb {
+		    border-radius: 8px;
+		    border: 2px solid white; /* should match background, can't be transparent */
+		    background-color: rgba(0, 0, 0, .5);
+		}
+		
+		.container-fluid
+		{
+			padding-left: 10px;
+		}
+
+		#side-menu
+		{
+			height: 415px;
+			box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+			border: 1px solid #999;
+		}
+
+		#menuAside
+		{
+			margin-top:50px;
+			position:fixed;
+		}
+
+		.member {
+			font-size: 14px;
+			color:#000;
+			background-color:#FFF;
+			border:1px solid #2fa4e7;
+		}
+		.member:hover {
+
+			background-color:#F6F6F6;
+		}		
+		.member-open .paramSignature{
+			font-size: 14px;
+			color: #2fa4e7;
+		}
+		.member-collapsed .paramSignature{
+			font-size: 14px;
+			color: #2fa4e7;
+		}
+		.routeTitle{
+		    cursor: pointer;
+		}
+
+		.genericAnnotation
+		{
+		    color:#2fa4e7;
+		}
+
+		.sourceBar
+		{
+			margin-top: -5px;
+		}
+
+
+
+.twitter-typeahead
+{
+	top: -5px;
+}
+.twitter-typeahead .tt-query,
+.twitter-typeahead .tt-hint {
+  margin-bottom: 0;
+  background-color: #F00;
+  border-radius: 20px;
+
+}
+
+.tt-hint
+{
+	top: 2px!important;
+
+    padding-left: 10px!important;  
+    width: 188px;
+    text-indent: 4px;
+}
+.tt-dropdown-menu {
+  min-width: 160px;
+  margin-top: 2px;
+  padding: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.2);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+
+.tt-suggestion {
+  display: block;
+  padding: 3px 20px;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+  color: #fff;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0)
+}
+
+.tt-suggestion.tt-is-under-cursor a {
+  color: #fff;
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+	</style>
+</head>
+
+<body>
+<div id="projectTitle">
+	<div id="btnCollapse" class="btn collapseSidebarButton btn-primary"><i class="icon-th-list icon-white"></i></div>
+	src
+</div>	
+<div class="container-fluid">
+
+	<div id="menuAside">
+    <aside class="well span3 oc" id="side-menu" role="navigation">
+
+    	<div style="margin-left: 10px; margin-top: 10px;">
+			<input type="text" id="searchBox" class="search-query typeahead" placeholder="Search">
+		</div>
+		<div class="menuFrame" id="sideMenuFrame">
+		<ul id="menuContainer" class="nav nav-pills nav-stacked">
+			<li class="nav-header navTitle"><a href="index.html">INDEX</a></li>
+				<li class="divider"></li>
+				
+				
+					    <li id="navTitle_Namespaces" class="nav-header navTitle">
+                            <a class="handCursor" data-toggle="collapse" data-id="T_Namespaces" data-target="#collapse_Namespaces">Namespaces<span class="badge badge-info pull-right">1</span></a>
+                        </li>
+                        <li id="navContents_Namespaces">
+                            <div id="collapse_Namespaces" class="collapse">
+                                <ul class="nav nav-list" style="width:100%;margin-left:-8px;">
+                                    
+                                        <?j
+                                    <li>
+                                        
+                                        
+                                        	<a href="egret.html">egret</a>
+                                        
+                                    </li>
+                                    
+                             <li class="divider"></li>
+                        
+                                    </ul>
+                                </div>
+                            </li>
+                        
+					    <li id="navTitle_Classes" class="nav-header navTitle">
+                            <a class="handCursor" data-toggle="collapse" data-id="T_Classes" data-target="#collapse_Classes">Classes<span class="badge badge-info pull-right">58</span></a>
+                        </li>
+                        <li id="navContents_Classes">
+                            <div id="collapse_Classes" class="collapse">
+                                <ul class="nav nav-list" style="width:100%;margin-left:-8px;">
+                                    <li><div class="routeTitle">egret</div><ul class="children nav nav-list"><li><a href="egret.Bitmap.html">Bitmap</a></li><li><a href="egret.BitmapFillMode.html">BitmapFillMode</a></li><li><a href="egret.BlendMode.html">BlendMode</a></li><li><a href="egret.ContainerStrategy.html">ContainerStrategy</a></li><li><a href="egret.ContentStrategy.html">ContentStrategy</a></li><li><a href="egret.DeviceContext.html">DeviceContext</a></li><li><a href="egret.DisplayObject.html">DisplayObject</a></li><li><a href="egret.DisplayObjectContainer.html">DisplayObjectContainer</a></li><li><a href="egret.EqualToFrame.html">EqualToFrame</a></li><li><a href="egret.Event.html">Event</a></li><li><a href="egret.EventDispatcher.html">EventDispatcher</a></li><li><a href="egret.EventPhase.html">EventPhase</a></li><li><a href="egret.FixedHeight.html">FixedHeight</a></li><li><a href="egret.FixedSize.html">FixedSize</a></li><li><a href="egret.FixedWidth.html">FixedWidth</a></li><li><a href="egret.Graphics.html">Graphics</a></li><li><a href="egret.HashObject.html">HashObject</a></li><li><a href="egret.HorizontalAlign.html">HorizontalAlign</a></li><li><a href="egret.HTML5CanvasRenderer.html">HTML5CanvasRenderer</a></li><li><a href="egret.HTML5DeviceContext.html">HTML5DeviceContext</a></li><li><a href="egret.HTML5NetContext.html">HTML5NetContext</a></li><li><a href="egret.Injector.html">Injector</a></li><li><a href="egret.IOErrorEvent.html">IOErrorEvent</a></li><li><a href="egret.Logger.html">Logger</a></li><li><a href="egret.MainContext.html">MainContext</a></li><li><a href="egret.Matrix.html">Matrix</a></li><li><a href="egret.Matrix#constructor.html">Matrix#constructor</a></li><li><a href="egret.MovieClip.html">MovieClip</a></li><li><a href="egret.NativeDeviceContext.html">NativeDeviceContext</a></li><li><a href="egret.NativeRendererContext.html">NativeRendererContext</a></li><li><a href="egret.NetContext.html">NetContext</a></li><li><a href="egret.Point.html">Point</a></li><li><a href="egret.Profiler.html">Profiler</a></li><li><a href="egret.Rectangle.html">Rectangle</a></li><li><a href="egret.RendererContext.html">RendererContext</a></li><li><a href="egret.RenderFilter.html">RenderFilter</a></li><li><a href="egret.ResolutionPolicy.html">ResolutionPolicy</a></li><li><a href="egret.Shape.html">Shape</a></li><li><a href="egret.Sound.html">Sound</a></li><li><a href="egret.Sprite.html">Sprite</a></li><li><a href="egret.SpriteSheet.html">SpriteSheet</a></li><li><a href="egret.Stage.html">Stage</a></li><li><a href="egret.StageDelegate.html">StageDelegate</a></li><li><a href="egret.StageText.html">StageText</a></li><li><a href="egret.TextField.html">TextField</a></li><li><a href="egret.TextFieldType.html">TextFieldType</a></li><li><a href="egret.Texture.html">Texture</a></li><li><a href="egret.Ticker.html">Ticker</a></li><li><a href="egret.TimerEvent.html">TimerEvent</a></li><li><a href="egret.TouchContext.html">TouchContext</a></li><li><a href="egret.TouchEvent.html">TouchEvent</a></li><li><a href="egret.URLLoader.html">URLLoader</a></li><li><a href="egret.URLLoaderDataFormat.html">URLLoaderDataFormat</a></li><li><a href="egret.URLRequest.html">URLRequest</a></li><li><a href="egret.URLRequestMethod.html">URLRequestMethod</a></li><li><a href="egret.URLVariables.html">URLVariables</a></li><li><a href="egret.VerticalAlign.html">VerticalAlign</a></li><li><a href="egret.WebGLRenderer.html">WebGLRenderer</a></li></ul></li>
+                            
+                                    </ul>
+                                </div>
+                            </li>
+                        
+					    <li id="navTitle_Global" class="nav-header navTitle">
+                            <a class="handCursor" data-toggle="collapse" data-id="T_Global" data-target="#collapse_Global">Global<span class="badge badge-info pull-right">2</span></a>
+                        </li>
+                        <li id="navContents_Global">
+                            <div id="collapse_Global" class="collapse">
+                                <ul class="nav nav-list" style="width:100%;margin-left:-8px;">
+                                    
+                                        <?j
+                                    <li>
+                                        
+                                        
+                                        	<a href="global.html#egret.Stage#stageHeight
+舞台高度（坐标系高度，非设备高度）">egret.Stage#stageHeight
+舞台高度（坐标系高度，非设备高度）</a>
+                                        
+                                    </li>
+                                    
+                                    <li>
+                                        
+                                        
+                                        	<a href="global.html#egret.Stage#stageWidth
+舞台宽度（坐标系宽度，非设备宽度）">egret.Stage#stageWidth
+舞台宽度（坐标系宽度，非设备宽度）</a>
+                                        
+                                    </li>
+                                    
+                             <li class="divider"></li>
+                        
+                                    </ul>
+                                </div>
+                            </li>
+                        
+					    <li id="navTitle_Interfaces" class="nav-header navTitle">
+                            <a class="handCursor" data-toggle="collapse" data-id="T_Interfaces" data-target="#collapse_Interfaces">Interfaces<span class="badge badge-info pull-right">3</span></a>
+                        </li>
+                        <li id="navContents_Interfaces">
+                            <div id="collapse_Interfaces" class="collapse">
+                                <ul class="nav nav-list" style="width:100%;margin-left:-8px;">
+                                    <li><div class="routeTitle">egret</div><ul class="children nav nav-list"><li><a href="egret.IEventDispatcher.html">IEventDispatcher</a></li><li><a href="egret.IHashObject.html">IHashObject</a></li><li><a href="egret.RenderData.html">RenderData</a></li></ul></li>
+                            
+                                    </ul>
+                                </div>
+                            </li>
+                        
+
+		</ul>
+		</div>
+
+		<script>
+			var searchMembers = [{"realName":"egret","link":"egret"},{"realName":"egret.Bitmap","link":"egret.Bitmap"},{"realName":"egret.BitmapFillMode","link":"egret.BitmapFillMode"},{"realName":"egret.BlendMode","link":"egret.BlendMode"},{"realName":"egret.ContainerStrategy","link":"egret.ContainerStrategy"},{"realName":"egret.ContentStrategy","link":"egret.ContentStrategy"},{"realName":"egret.DeviceContext","link":"egret.DeviceContext"},{"realName":"egret.DisplayObject","link":"egret.DisplayObject"},{"realName":"egret.DisplayObjectContainer","link":"egret.DisplayObjectContainer"},{"realName":"egret.EqualToFrame","link":"egret.EqualToFrame"},{"realName":"egret.Event","link":"egret.Event"},{"realName":"egret.EventDispatcher","link":"egret.EventDispatcher"},{"realName":"egret.EventPhase","link":"egret.EventPhase"},{"realName":"egret.FixedHeight","link":"egret.FixedHeight"},{"realName":"egret.FixedSize","link":"egret.FixedSize"},{"realName":"egret.FixedWidth","link":"egret.FixedWidth"},{"realName":"egret.Graphics","link":"egret.Graphics"},{"realName":"egret.HashObject","link":"egret.HashObject"},{"realName":"egret.HorizontalAlign","link":"egret.HorizontalAlign"},{"realName":"egret.HTML5CanvasRenderer","link":"egret.HTML5CanvasRenderer"},{"realName":"egret.HTML5DeviceContext","link":"egret.HTML5DeviceContext"},{"realName":"egret.HTML5NetContext","link":"egret.HTML5NetContext"},{"realName":"egret.Injector","link":"egret.Injector"},{"realName":"egret.IOErrorEvent","link":"egret.IOErrorEvent"},{"realName":"egret.Logger","link":"egret.Logger"},{"realName":"egret.MainContext","link":"egret.MainContext"},{"realName":"egret.Matrix","link":"egret.Matrix"},{"realName":"egret.Matrix#constructor","link":"egret.Matrix#constructor"},{"realName":"egret.MovieClip","link":"egret.MovieClip"},{"realName":"egret.NativeDeviceContext","link":"egret.NativeDeviceContext"},{"realName":"egret.NativeRendererContext","link":"egret.NativeRendererContext"},{"realName":"egret.NetContext","link":"egret.NetContext"},{"realName":"egret.Point","link":"egret.Point"},{"realName":"egret.Profiler","link":"egret.Profiler"},{"realName":"egret.Rectangle","link":"egret.Rectangle"},{"realName":"egret.RendererContext","link":"egret.RendererContext"},{"realName":"egret.RenderFilter","link":"egret.RenderFilter"},{"realName":"egret.ResolutionPolicy","link":"egret.ResolutionPolicy"},{"realName":"egret.Shape","link":"egret.Shape"},{"realName":"egret.Sound","link":"egret.Sound"},{"realName":"egret.Sprite","link":"egret.Sprite"},{"realName":"egret.SpriteSheet","link":"egret.SpriteSheet"},{"realName":"egret.Stage","link":"egret.Stage"},{"realName":"egret.StageDelegate","link":"egret.StageDelegate"},{"realName":"egret.StageText","link":"egret.StageText"},{"realName":"egret.TextField","link":"egret.TextField"},{"realName":"egret.TextFieldType","link":"egret.TextFieldType"},{"realName":"egret.Texture","link":"egret.Texture"},{"realName":"egret.Ticker","link":"egret.Ticker"},{"realName":"egret.TimerEvent","link":"egret.TimerEvent"},{"realName":"egret.TouchContext","link":"egret.TouchContext"},{"realName":"egret.TouchEvent","link":"egret.TouchEvent"},{"realName":"egret.URLLoader","link":"egret.URLLoader"},{"realName":"egret.URLLoaderDataFormat","link":"egret.URLLoaderDataFormat"},{"realName":"egret.URLRequest","link":"egret.URLRequest"},{"realName":"egret.URLRequestMethod","link":"egret.URLRequestMethod"},{"realName":"egret.URLVariables","link":"egret.URLVariables"},{"realName":"egret.VerticalAlign","link":"egret.VerticalAlign"},{"realName":"egret.WebGLRenderer","link":"egret.WebGLRenderer"},{"realName":"egret.IEventDispatcher","link":"egret.IEventDispatcher"},{"realName":"egret.IHashObject","link":"egret.IHashObject"},{"realName":"egret.RenderData","link":"egret.RenderData"}];
+		</script>
+    </aside>
+	</div>
+    <div id="docContents" class="sideMenu sideMargin">
+
+		
+			<div style="width:100%">
+		
+				<div id="main">
+					
+
+
+	<h1 class="page-title">
+        Class:
+        <span class="ancestors"><a href="egret.html">egret</a>.</span>Bitmap
+        
+    </h1>
+<section>
+
+<header>
+    
+        <div class="class-description"><p>Bitmap 类表示用于表示位图图像的显示对象。</p></div>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+<dt>
+    <a name="Bitmap"></a>
+
+    <h4 class="name" id="Bitmap"><span class="btn btn-mini btn btn-danger">C</span> new Bitmap(  ) &rarr; {void}
+
+    
+
+    <a href="Bitmap.ts.html"><div style="font-weight:lighter; float:right;" class="btn sourceBar"><i class="icon-eye-open"></i></div></a>
+
+    
+
+    </h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="Bitmap.ts.html">display/Bitmap.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+ 
+    
+    </div>
+
+   
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        <ul>
+            <li><a href="egret.DisplayObject.html">egret.DisplayObject</a></li>
+        </ul>
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Properties</h3>
+
+        <dl>
+            
+<dt>
+    <a name="debug"></a><h4 class="name" id="debug"><span class="btn btn-mini btn btn-inverse">S</span> <span class="btn btn-mini btn-success" title="public">P</span> debug<span class="type-signature"> :boolean</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>全部Bitmap是否开启DEBUG模式</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">boolean</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="Bitmap.ts.html">display/Bitmap.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="alpha"></a><h4 class="name" id="alpha"><span class="btn btn-mini btn-success" title="public">P</span> alpha<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>表示指定对象的 Alpha 透明度值</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#alpha">egret.DisplayObject#alpha</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>1</li></ul></dd>
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="anchorOffsetX"></a><h4 class="name" id="anchorOffsetX"><span class="btn btn-mini btn-success" title="public">P</span> anchorOffsetX<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>表示从对象绝对锚点X。</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#anchorOffsetX">egret.DisplayObject#anchorOffsetX</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>0</li></ul></dd>
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="anchorOffsetY"></a><h4 class="name" id="anchorOffsetY"><span class="btn btn-mini btn-success" title="public">P</span> anchorOffsetY<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>表示从对象绝对锚点Y。</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#anchorOffsetY">egret.DisplayObject#anchorOffsetY</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>0</li></ul></dd>
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="anchorX"></a><h4 class="name" id="anchorX"><span class="btn btn-mini btn-success" title="public">P</span> anchorX<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>表示从对象相对锚点X。</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#anchorX">egret.DisplayObject#anchorX</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>0</li></ul></dd>
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="anchorY"></a><h4 class="name" id="anchorY"><span class="btn btn-mini btn-success" title="public">P</span> anchorY<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>表示从对象相对锚点Y。</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#anchorY">egret.DisplayObject#anchorY</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>0</li></ul></dd>
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="blendMode"></a><h4 class="name" id="blendMode"><span class="btn btn-mini btn-success" title="public">P</span> blendMode<span class="type-signature"> :BlendMode</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>BlendMode 类中的一个值，用于指定要使用的混合模式。</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">BlendMode</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#blendMode">egret.DisplayObject#blendMode</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="debug"></a><h4 class="name" id="debug"><span class="btn btn-mini btn-success" title="public">P</span> debug<span class="type-signature"> :boolean</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>单个Bitmap是否开启DEBUG模式</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">boolean</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="Bitmap.ts.html">display/Bitmap.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="debugColor"></a><h4 class="name" id="debugColor"><span class="btn btn-mini btn-success" title="public">P</span> debugColor<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>debug边框颜色，默认值为红色</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="Bitmap.ts.html">display/Bitmap.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="fillMode"></a><h4 class="name" id="fillMode"><span class="btn btn-mini btn-success" title="public">P</span> fillMode<span class="type-signature"> :<a href="egret.Texture.html">egret.Texture</a></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>确定位图填充尺寸的方式。默认值：BitmapFillMode.SCALE。
+设置为 BitmapFillMode.REPEAT时，位图将重复以填充区域。
+设置为 BitmapFillMode.SCALE时，位图将拉伸以填充区域。</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type"><a href="egret.Texture.html">egret.Texture</a></span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="Bitmap.ts.html">display/Bitmap.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="hashCode"></a><h4 class="name" id="hashCode"><span class="btn btn-mini btn-success" title="public">P</span> hashCode<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>返回此对象唯一的哈希值,用于唯一确定一个对象。hashCode为大于等于1的整数。</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#hashCode">egret.DisplayObject#hashCode</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="HashObject.ts.html">utils/HashObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="height"></a><h4 class="name" id="height"><span class="btn btn-mini btn-success" title="public">P</span> height<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>高度，优先顺序为 显式设置高度 &gt; 测量高度</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#height">egret.DisplayObject#height</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="name"></a><h4 class="name" id="name"><span class="btn btn-mini btn-success" title="public">P</span> name<span class="type-signature"> :string</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>表示 DisplayObject 的实例名称。</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">string</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#name">egret.DisplayObject#name</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="parent"></a><h4 class="name" id="parent"><span class="btn btn-mini btn-success" title="public">P</span> parent<span class="type-signature"> :<a href="egret.DisplayObjectContainer.html">egret.DisplayObjectContainer</a></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>表示包含此显示对象的 DisplayObjectContainer 对象</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type"><a href="egret.DisplayObjectContainer.html">egret.DisplayObjectContainer</a></span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#parent">egret.DisplayObject#parent</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="rotation"></a><h4 class="name" id="rotation"><span class="btn btn-mini btn-success" title="public">P</span> rotation<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>表示 DisplayObject 实例距其原始方向的旋转程度，以度为单位</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#rotation">egret.DisplayObject#rotation</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>0</li></ul></dd>
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="scale9Grid"></a><h4 class="name" id="scale9Grid"><span class="btn btn-mini btn-success" title="public">P</span> scale9Grid<span class="type-signature"> :<a href="egret.Texture.html">egret.Texture</a></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>矩形区域，它定义位图对象的九个缩放区域。此属性仅当fillMode为BitmapFillMode.SCALE时有效。</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type"><a href="egret.Texture.html">egret.Texture</a></span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="Bitmap.ts.html">display/Bitmap.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="scaleX"></a><h4 class="name" id="scaleX"><span class="btn btn-mini btn-success" title="public">P</span> scaleX<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>表示从注册点开始应用的对象的水平缩放比例（百分比）。</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#scaleX">egret.DisplayObject#scaleX</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>1</li></ul></dd>
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="scaleY"></a><h4 class="name" id="scaleY"><span class="btn btn-mini btn-success" title="public">P</span> scaleY<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>表示从对象注册点开始应用的对象的垂直缩放比例（百分比）。</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#scaleY">egret.DisplayObject#scaleY</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>1</li></ul></dd>
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="scrollRect"></a><h4 class="name" id="scrollRect"><span class="btn btn-mini btn-success" title="public">P</span> scrollRect<span class="type-signature"> :<a href="egret.Rectangle.html">egret.Rectangle</a></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>显示对象的滚动矩形范围。显示对象被裁切为矩形定义的大小，当您更改 scrollRect 对象的 x 和 y 属性时，它会在矩形内滚动。</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type"><a href="egret.Rectangle.html">egret.Rectangle</a></span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#scrollRect">egret.DisplayObject#scrollRect</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="skewX"></a><h4 class="name" id="skewX"><span class="btn btn-mini btn-success" title="public">P</span> skewX<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>表示DisplayObject的x方向斜切</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#skewX">egret.DisplayObject#skewX</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>0</li></ul></dd>
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="skewY"></a><h4 class="name" id="skewY"><span class="btn btn-mini btn-success" title="public">P</span> skewY<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>表示DisplayObject的y方向斜切</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#skewY">egret.DisplayObject#skewY</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>0</li></ul></dd>
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="stage"></a><h4 class="name" id="stage"><span class="btn btn-mini btn-success" title="public">P</span> stage<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>获取舞台对象。当该显示对象不在舞台上时，此属性返回 undefined</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#stage">egret.DisplayObject#stage</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="texture"></a><h4 class="name" id="texture"><span class="btn btn-mini btn-success" title="public">P</span> texture<span class="type-signature"> :<a href="egret.Texture.html">egret.Texture</a></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>渲染纹理</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type"><a href="egret.Texture.html">egret.Texture</a></span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="Bitmap.ts.html">display/Bitmap.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="touchEnabled"></a><h4 class="name" id="touchEnabled"><span class="btn btn-mini btn-success" title="public">P</span> touchEnabled<span class="type-signature"> :boolean</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>指定此对象是否接收鼠标/触摸事件</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">boolean</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#touchEnabled">egret.DisplayObject#touchEnabled</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>true</li></ul></dd>
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="visible"></a><h4 class="name" id="visible"><span class="btn btn-mini btn-success" title="public">P</span> visible<span class="type-signature"> :boolean</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>显示对象是否可见。</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">boolean</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#visible">egret.DisplayObject#visible</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="width"></a><h4 class="name" id="width"><span class="btn btn-mini btn-success" title="public">P</span> width<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>宽度，优先顺序为 显式设置宽度 &gt; 测量宽度</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#width">egret.DisplayObject#width</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="x"></a><h4 class="name" id="x"><span class="btn btn-mini btn-success" title="public">P</span> x<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>表示 DisplayObject 实例相对于父级 DisplayObjectContainer 本地坐标的 x 坐标。</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#x">egret.DisplayObject#x</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <a name="y"></a><h4 class="name" id="y"><span class="btn btn-mini btn-success" title="public">P</span> y<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>表示 DisplayObject 实例相对于父级 DisplayObjectContainer 本地坐标的 y 坐标。</p>
+    </div>
+    
+    
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#y">egret.DisplayObject#y</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+</dd>
+
+        </dl>
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+            
+<dt>
+    <a name="addEventListener"></a>
+
+    <h4 class="name" id="addEventListener"><span class="btn btn-mini btn-success" title="public">M</span> addEventListener( type: <span class="paramSignature">string</span>, listener: <span class="paramSignature">Function</span>, thisObject: <span class="paramSignature">any</span>, useCapture: <span class="paramSignature">boolean</span>, priority: <span class="paramSignature">number</span> )
+
+    
+
+    </h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>添加事件侦听器</p>
+    </div>
+    
+
+
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>事件的类型。</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>listener</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>处理事件的侦听器函数。此函数必须接受 Event 对象作为其唯一的参数，并且不能返回任何结果，
+如下面的示例所示： function(evt:Event):void 函数可以有任何名称。</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>thisObject</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>侦听函数绑定的this对象</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>useCapture</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>确定侦听器是运行于捕获阶段还是运行于目标和冒泡阶段。如果将 useCapture 设置为 true，
+则侦听器只在捕获阶段处理事件，而不在目标或冒泡阶段处理事件。如果 useCapture 为 false，则侦听器只在目标或冒泡阶段处理事件。
+要在所有三个阶段都侦听事件，请调用 addEventListener 两次：一次将 useCapture 设置为 true，一次将 useCapture 设置为 false。</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>priority</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>事件侦听器的优先级。优先级由一个带符号的 32 位整数指定。数字越大，优先级越高。优先级为 n 的所有侦听器会在
+优先级为 n -1 的侦听器之前得到处理。如果两个或更多个侦听器共享相同的优先级，则按照它们的添加顺序进行处理。默认优先级为 0。</p></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#addEventListener">egret.DisplayObject#addEventListener</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="EventDispatcher.ts.html">events/EventDispatcher.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+ 
+        
+            
+<dt>
+    <a name="dispatchEvent"></a>
+
+    <h4 class="name" id="dispatchEvent"><span class="btn btn-mini btn-success" title="public">M</span> dispatchEvent( event: <span class="paramSignature">egret&#46;Event</span> ) &rarr; { <span class='paramSignature'>boolean</span> }
+
+    
+
+    </h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>将事件分派到事件流中。事件目标是对其调用 dispatchEvent() 方法的 EventDispatcher 对象。</p>
+    </div>
+    
+
+
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>event</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="egret.Event.html">egret.Event</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>调度到事件流中的 Event 对象。如果正在重新分派事件，则会自动创建此事件的一个克隆。 在调度了事件后，其 _eventTarget 属性将无法更改，因此您必须创建此事件的一个新副本以能够重新调度。</p></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#dispatchEvent">egret.DisplayObject#dispatchEvent</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="EventDispatcher.ts.html">events/EventDispatcher.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <span>Returns:</span>
+    
+            
+
+→ { 
+<span class="param-type">boolean</span>
+
+ }
+
+<div class="param-desc">
+    <p>如果成功调度了事件，则值为 true。值 false 表示失败或对事件调用了 preventDefault()。</p>
+</div>
+
+
+
+        
+    
+    
+</dd>
+
+ 
+        
+            
+<dt>
+    <a name="dispatchEventWith"></a>
+
+    <h4 class="name" id="dispatchEventWith"><span class="btn btn-mini btn-success" title="public">M</span> dispatchEventWith( type: <span class="paramSignature">string</span>, bubbles: <span class="paramSignature">boolean</span>, data: <span class="paramSignature">any</span> )
+
+    
+
+    </h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>派发一个包含了特定参数的事件到所有注册了特定类型侦听器的对象中。 这个方法使用了一个内部的事件对象池因避免重复的分配导致的额外开销。</p>
+    </div>
+    
+
+
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>事件类型</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>bubbles</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>是否冒泡，默认false</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>附加数据(可选)</p></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#dispatchEventWith">egret.DisplayObject#dispatchEventWith</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="EventDispatcher.ts.html">events/EventDispatcher.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+ 
+        
+            
+<dt>
+    <a name="getBounds"></a>
+
+    <h4 class="name" id="getBounds"><span class="btn btn-mini btn-success" title="public">M</span> getBounds( resultRect: <span class="paramSignature">Rectangle</span> ) &rarr; { <span class='paramSignature'>Rectangle</span> }
+
+    
+
+    </h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>获取显示对象的测量边界</p>
+    </div>
+    
+
+
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>resultRect</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Rectangle</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>可选参数，传入用于保存结果的Rectangle对象，避免重复创建对象。</p></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#getBounds">egret.DisplayObject#getBounds</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <span>Returns:</span>
+    
+            
+
+
+        
+    
+    
+</dd>
+
+ 
+        
+            
+<dt>
+    <a name="globalToLocal"></a>
+
+    <h4 class="name" id="globalToLocal"><span class="btn btn-mini btn-success" title="public">M</span> globalToLocal( x: <span class="paramSignature">number</span>, y: <span class="paramSignature">number</span>, resultPoint: <span class="paramSignature">Point</span> ) &rarr; { <span class='paramSignature'>egret.Point</span> }
+
+    
+
+    </h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>将指定舞台坐标（全局）转换为显示对象（本地）坐标。</p>
+    </div>
+    
+
+
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>全局x坐标</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>全局y坐标</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>resultPoint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Point</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>可选参数，传入用于保存结果的Point对象，避免重复创建对象。</p></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#globalToLocal">egret.DisplayObject#globalToLocal</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <span>Returns:</span>
+    
+            
+
+
+        
+    
+    
+</dd>
+
+ 
+        
+            
+<dt>
+    <a name="hasEventListener"></a>
+
+    <h4 class="name" id="hasEventListener"><span class="btn btn-mini btn-success" title="public">M</span> hasEventListener( type: <span class="paramSignature">any</span> ) &rarr; { <span class='paramSignature'>boolean</span> }
+
+    
+
+    </h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>检测是否存在监听器</p>
+    </div>
+    
+
+
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>事件名</p></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#hasEventListener">egret.DisplayObject#hasEventListener</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="EventDispatcher.ts.html">events/EventDispatcher.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <span>Returns:</span>
+    
+            
+
+
+        
+    
+    
+</dd>
+
+ 
+        
+            
+<dt>
+    <a name="hitTest"></a>
+
+    <h4 class="name" id="hitTest"><span class="btn btn-mini btn-success" title="public">M</span> hitTest( x: <span class="paramSignature">number</span>, y: <span class="paramSignature">number</span>, ignoreTouchEnabled: <span class="paramSignature">any</span> ) &rarr; { <span class='paramSignature'>*</span> }
+
+    
+
+    </h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>检测指定坐标是否在显示对象内</p>
+    </div>
+    
+
+
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>ignoreTouchEnabled</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>是否忽略TouchEnabled</p></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#hitTest">egret.DisplayObject#hitTest</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <span>Returns:</span>
+    
+            
+
+
+        
+    
+    
+</dd>
+
+ 
+        
+            
+<dt>
+    <a name="localToGlobal"></a>
+
+    <h4 class="name" id="localToGlobal"><span class="btn btn-mini btn-success" title="public">M</span> localToGlobal( x: <span class="paramSignature">number</span>, y: <span class="paramSignature">number</span>, resultPoint: <span class="paramSignature">Point</span> ) &rarr; { <span class='paramSignature'>egret.Point</span> }
+
+    
+
+    </h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>将 point 对象从显示对象的（本地）坐标转换为舞台（全局）坐标。</p>
+    </div>
+    
+
+
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>本地x坐标</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>本地y坐标</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>resultPoint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Point</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>可选参数，传入用于保存结果的Point对象，避免重复创建对象。</p></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#localToGlobal">egret.DisplayObject#localToGlobal</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="DisplayObject.ts.html">display/DisplayObject.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <span>Returns:</span>
+    
+            
+
+
+        
+    
+    
+</dd>
+
+ 
+        
+            
+<dt>
+    <a name="removeEventListener"></a>
+
+    <h4 class="name" id="removeEventListener"><span class="btn btn-mini btn-success" title="public">M</span> removeEventListener( type: <span class="paramSignature">string</span>, listener: <span class="paramSignature">Function</span>, thisObject: <span class="paramSignature">any</span>, useCapture: <span class="paramSignature">boolean</span> )
+
+    
+
+    </h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>移除事件侦听器</p>
+    </div>
+    
+
+
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>事件名</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>listener</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>侦听函数</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>thisObject</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>侦听函数绑定的this对象</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>useCapture</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>是否使用捕获，这个属性只在显示列表中生效。</p></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#removeEventListener">egret.DisplayObject#removeEventListener</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="EventDispatcher.ts.html">events/EventDispatcher.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+ 
+        
+            
+<dt>
+    <a name="willTrigger"></a>
+
+    <h4 class="name" id="willTrigger"><span class="btn btn-mini btn-success" title="public">M</span> willTrigger( type: <span class="paramSignature">any</span> ) &rarr; { <span class='paramSignature'>boolean</span> }
+
+    
+
+    </h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>检查是否用此 EventDispatcher 对象或其任何始祖为指定事件类型注册了事件侦听器。将指定类型的事件调度给此
+EventDispatcher 对象或其任一后代时，如果在事件流的任何阶段触发了事件侦听器，则此方法返回 true。
+hasEventListener() 与 willTrigger() 方法的区别是：hasEventListener() 只检查它所属的对象，
+而 willTrigger() 方法检查整个事件流以查找由 type 参数指定的事件。</p>
+    </div>
+    
+
+
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>事件名</p></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="egret.DisplayObject.html#willTrigger">egret.DisplayObject#willTrigger</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="EventDispatcher.ts.html">events/EventDispatcher.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <span>Returns:</span>
+    
+            
+
+
+        
+    
+    
+</dd>
+
+ 
+        </dl>
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- xperiments
+    
+    <dt style="font-weight:lighter;" class="btn"><i class="icon-eye-open"></i> <a href="Bitmap.ts.html">display/Bitmap.ts</a></dt>
+    -->
+
+    
+
+    
+
+    
+</dl>
+
+</article>
+
+</section>
+
+
+
+
+				</div>
+
+				<div class="clearfix"></div>
+				<footer>
+					
+					
+						<span class="copyright">
+						src Copyright © 2014 mebius.
+						</span>
+									<br />
+									
+						<span class="jsdoc-message">
+						Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.2.0</a>
+						on Mon Jun 30 2014 11:16:28 GMT+0800 (CST) using the <a href="https://github.com/xperiments/TSDoc">TSDoc template</a>.
+						</span>
+				</footer>
+			</div>
+			<!--
+			
+			<div class="span3">
+				<div id="toc"></div>
+			</div>
+			
+			-->
+			<br clear="both">
+		</div>
+
+	</div>
+
+	<script src="scripts/sunlight.js"></script>
+	<script src="scripts/sunlight.javascript.js"></script>
+	<script src="scripts/sunlight-plugin.doclinks.js"></script>
+	<script src="scripts/sunlight-plugin.linenumbers.js"></script>
+	<script src="scripts/sunlight-plugin.menu.js"></script>
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/jquery.scrollTo.js"></script>
+	<script src="scripts/jquery.localScroll.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
+
+
+
+	<script>  Sunlight.highlightAll({lineNumbers:false,  showMenu: true, enableDoclinks :true}); </script>
+
+	<script>
+		$( function () {
+
+			var searchItems = [];
+			var searchMap = {};
+			var mapName = "";
+			for( var i=0; i<searchMembers.length; i++ )
+			{
+				realName = searchMembers[i].realName;
+				searchItems.push( realName );
+				searchMap[ realName ] = searchMembers[ i ];
+			}
+
+
+			$('.typeahead').typeahead({
+			  source: searchItems,
+			  matcher: function(item) {
+			  	//console.log('aaa'+item, this.query, item.indexOf( this.query.toLowerCase() )==-1?false:true)
+                // evaluate item variable and return true if the item was matched.
+                return item.toLowerCase().indexOf( this.query.toLowerCase() )==-1?false:true;
+             },
+			  updater: function (item) {
+					window.location.href = searchMap[ item ].link+'.html';
+			  }
+
+			});
+
+
+            // Move Tutorials to bottom
+            //$('#menuContainer').append($('#navTitle_Tutorials'));
+            //$('#menuContainer').append($('#navContents_Tutorials'));
+			$(window).resize(function() {
+			  $('#side-menu').height( $(window).height()-70 );
+			  $('#sideMenuFrame').height( $(window).height()-140 );
+			  if( $(window).width() <480 )
+			  {
+			  	$('#side-menu').hide();
+				$('#docContents').removeClass('sideMenu');
+			  }
+			});
+
+			$(window).trigger('resize')
+			$('#btnCollapse').click(function()
+			{
+				$('#side-menu').toggle();
+				$('#docContents').toggleClass('sideMenu');
+
+			})
+			$('#btnHome').click(function()
+			{
+				document.location.href="index.html"
+
+			})		
+
+			$('.sourceBar').click(function(){})
+			var lastMenuSelection = window.localStorage.getItem('lastMenuSelection') || null;
+			if( lastMenuSelection ) $('a[data-id='+lastMenuSelection+']').click();
+			$('a[data-toggle=collapse]').click(function(){
+				if( lastMenuSelection == $(this).attr('data-id') ) return;
+				if( lastMenuSelection ) $('a[data-id='+lastMenuSelection+']').click();
+				lastMenuSelection = $(this).attr('data-id');
+				window.localStorage.setItem('lastMenuSelection', lastMenuSelection )
+			});	
+
+
+		} );
+	</script>
+
+	
+	<script>
+		$( function () {
+			$('#main').localScroll({
+				offset: { top: 56 } //offset by the height of your header (give or take a few px, see what works for you)
+			});
+			$(".routeTitle").on('click', function(){
+			    $(this).next().slideToggle();
+			});
+			$( "dt h4.name" ).each( function () {
+				var $this = $( this );
+				//var icon = $( "<i/>" ).addClass( "icon-plus-sign" ).addClass( "pull-right" );
+				var dt = $this.parents( "dt" );
+				var children = dt.next( "dd" );
+
+				//$this.append( icon ).css( {cursor : "pointer"} );
+				$this.addClass( "member-collapsed" ).addClass( "member" );
+
+				children.hide();
+				$this.toggle( function () {
+					//icon.addClass( "icon-minus-sign" ).removeClass( "icon-plus-sign" );
+					$this.addClass( "member-open" ).removeClass( "member-collapsed" );
+					children.slideDown();
+				}, function () {
+					//icon.addClass( "icon-plus-sign" ).removeClass( "icon-minus-sign" );
+					$this.addClass( "member-collapsed" ).removeClass( "member-open" );
+					children.slideUp();
+				} );
+			} );
+			$('.sourceBar').click(function(event){event.stopPropagation();})
+		} );
+	</script>
+	
+
+</body>
+</html>

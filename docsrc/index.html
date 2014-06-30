@@ -1,0 +1,37 @@
+---
+layout: default
+permalink: /home.html
+---
+
+{% for docst in site.docsType %}
+    <div class="container">
+        <div class="hero-unit">
+            <h2 class="text-center">{{docst.text}}</h2>
+            <hr>
+                {% for elements in site.[docst.type] %}
+                    {% if elements.enter == true %}
+                    <div class="row-fluid ">
+                    {% endif %}
+                    <div class="span4">
+                        <a href="{{elements.url}}"><h3>{{elements.text}}</h3></a>
+                        {% if elements.des %}
+                            <p><small>{{elements.des}}</small></p>
+                        {% else %}
+                            {% for post in site.posts %}
+                                {% if post.type == docst.type %}
+                                    {% if post.element == elements.element %}
+                                        <li>
+                                            <a href="{{post.url}}">{{post.title}}</a>
+                                        </li>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    {% if elements.fenter == false %}
+                    </div>
+                    {% endif %}
+                {% endfor %}
+        </div>
+    </div>
+{% endfor %}

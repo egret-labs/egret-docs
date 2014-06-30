@@ -1,0 +1,40 @@
+<div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="{{site.baseurl}}{{site:url}}">{{site.title}}</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+
+                        {% for link in site.nav %}
+            {% assign active = nil %}
+            {% assign homeClass = nil %}
+            {% if page.url == link.url%}
+              {% assign active = 'active' %}
+            {% endif %}
+            
+            <li class="{{ active }}">
+                <a href="{{site.baseurl}}{{ link.url }}">{{link.text}}</a>
+            </li>
+            {% endfor %}
+
+                        <!--
+                        <li class="active"><a href="{{site.url}}/index.html">文档首页</a>
+                        </li>
+                        <li class=""><a href="{{site.url}}/api/api.html">API文档</a>
+                        </li>
+                        <li class=""><a href="#contact">Flash移植教程</a>
+                        </li>
+                        <li class=""><a href="{{site.url}}/as2ts/index.html">代码迁移范例</a>
+                        </li>
+-->
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
