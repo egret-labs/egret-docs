@@ -34,7 +34,7 @@ Egret文档中心使用[Jekyll](http://jekyllrb.com/)制作。
 
 2.**demosrc:**该目录中存在了一个egret项目，该项目用于文档中的“实例”内容。
 
-3.***apidoc:**该目录中存放着Egret-core生成的API文档。
+3.***apidoc:***该目录中存放着Egret-core生成的API文档。
 
 ##文档内容的规则
 
