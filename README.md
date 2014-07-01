@@ -135,3 +135,11 @@ AS3 TS代码对比文章头信息
 ##注意事项
 
 1.请不要讲jekyll项目的临时网页目录文件夹***_site***同步到github中！
+
+##代码高亮语法
+
+代码高亮请吧所有代码放置于下面的标签中
+
+	{% highlight java linenos %}
+	${your code}
+	{% endhighlight  %}
