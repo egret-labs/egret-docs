@@ -85,7 +85,6 @@ Node.js的安装方法非常简单，我们可以访问[Node.js官网](http://no
 <a name="installError" id="installError"></a>
 ####1.5Node.js安装失败解决方案
 * 部分MacOS 安装nodejs的pkg安装包时会显示安装失败，可以通过下载nodejs源代码手动编译解决。
-* 部分Windows安装完成后直接在cmd里输入node和npm，可能会提示找不到该命令。是由于新增的Path路径需要重启才能生效。重启或使用node和npm的绝对路径来运行命令即可。
 
 
 
@@ -96,7 +95,7 @@ Node.js的安装方法非常简单，我们可以访问[Node.js官网](http://no
 当 node.js安装成功后，`node` 和 `npm` 命令就可以使用了。TypeScript的安装可视直接使用`npm`命令直接安装。详细的安装方法可以参考[TypeScript官网](http://www.typescriptlang.org/)。
 
 在终端中输入如下命令：`npm install -g typescript`
->`npm install`命令的作用是在开发者的系统中安装指定的Node.js库，TypeScript是库的名称，`-g`代表将这个库安装到全局路径
+>`npm install`命令的作用是在开发者的系统中安装指定的Node.js库，`typescript`是库的名称，`-g`代表将这个库安装到全局路径
 
 **MacOS用户如果安装失败，请使用 `sudo npm install -g typescript` 命令确保权限**
 
@@ -182,4 +181,3 @@ Egret提供两个下载渠道，一个是[Egret官方下载](http://www.egret-la
 ![Nodejs install]({{site.baseurl}}/assets/img/nodejsinstall14.png)
 
 如果安装失败，请在我们的[开发者社区](http://bbs.egret-labs.org/forum.php)中寻求帮助。
-
