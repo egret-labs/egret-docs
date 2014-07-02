@@ -7,239 +7,27 @@ element: quitestarthelloworld
 version: Egret引擎 v1.x
 ---
 
-Y# Mou
+这是一个令人兴奋的小结，因为在这个小结中你终于能够看到你的第一个Demo的运行效果。
 
-![Mou icon](http://mouapp.com/Mou_128.png)
+运行Egret项目，我们需要一个已运行的HTTP服务器。在前面安装Egret的教程中，我们已经为大家推荐了一款HTTP服务器。现在我们来看一下如何使用我们egret提供的最简单的HTTP服务器来运行我们的项目。
 
-## Overview
+和前面的教程一样，我们首相在终端中定位我们的项目，使用`cd`命令。
 
-**Mou**, the missing Markdown editor for *web developers*.
+然后我们执行一个简单的额命令来启动Egret的HTTP服务器，命令如下：
 
-### Syntax
+`egret startserver HelloWorld`
 
-#### Strong and Emphasize 
+当命令运行后，你会看到如图中的效果。
 
-**strong** or __strong__ ( Cmd + B )
+![Egret Run Pro]({{site.baseurl}}/assets/img/egrethelloworld1.png)
 
-*emphasize* or _emphasize_ ( Cmd + I )
+随后，egret工具会呼出你的浏览器，这里以Chrome为例。egret工具会自动启动Chrome，同时打开指定的网页，默认网页为**http://localhost:3000/HelloWorld/launcher/index.html**
 
-**Sometimes I want a lot of text to be bold.
-Like, seriously, a _LOT_ of text**
+此时你会在Chrome中看到一个带有简单动画的Hello World效果，效果如下图：
 
-#### Blockquotes
+![Egret Run Pro]({{site.baseurl}}/assets/img/egrethelloworld2.png)
 
-> Right angle brackets &gt; are used for block quotes.
+这里我们简单对服务器地址进行以下是说明，默认提供的服务器地址为`http://localhost:3000/HelloWorld/launcher/index.html`。那么egret为我们启动的HTTP服务器访问地址为`http://localhost:3000/`，其中`http://localhost`为本地访问地址，`3000`为我们使用的[端口号](http://zh.wikipedia.org/wiki/TCP/UDP%E7%AB%AF%E5%8F%A3%E5%88%97%E8%A1%A8)，egret默认使用的端口号为“**3000**”。请确保在启动服务器之前，3000端口为未使用状态。
 
-#### Links and Email
-
-An email <example@example.com> link.
-
-Simple inline link <http://chenluois.com>, another inline link [Smaller](http://smallerapp.com), one more inline link with title [Resize](http://resizesafari.com "a Safari extension").
-
-A [reference style][id] link. Input id, then anywhere in the doc, define the link with corresponding id:
-
-[id]: http://mouapp.com "Markdown editor on Mac OS X"
-
-Titles ( or called tool tips ) in the links are optional.
-
-#### Images
-
-An inline image ![Smaller icon](http://smallerapp.com/favicon.ico "Title here"), title is optional.
-
-A ![Resize icon][2] reference style image.
-
-[2]: http://resizesafari.com/favicon.ico "Title"
-
-#### Inline code and Block code
-
-Inline code are surround by `backtick` key. To create a block code:
-
-	Indent each line by at least 1 tab, or 4 spaces.
-    var Mou = exactlyTheAppIwant; 
-
-####  Ordered Lists
-
-Ordered lists are created using "1." + Space:
-
-1. Ordered list item
-2. Ordered list item
-3. Ordered list item
-
-#### Unordered Lists
-
-Unordered list are created using "*" + Space:
-
-* Unordered list item
-* Unordered list item
-* Unordered list item 
-
-Or using "-" + Space:
-
-- Unordered list item
-- Unordered list item
-- Unordered list item
-
-#### Hard Linebreak
-
-End a line with two or more spaces will create a hard linebreak, called `<br />` in HTML. ( Control + Return )  
-Above line ended with 2 spaces.
-
-#### Horizontal Rules
-
-Three or more asterisks or dashes:
-
-***
-
----
-
-- - - -
-
-#### Headers
-
-Setext-style:
-
-This is H1
-==========
-
-This is H2
-----------
-
-atx-style:
-
-# This is H1
-## This is H2
-### This is H3
-#### This is H4
-##### This is H5
-###### This is H6
-
-
-### Extra Syntax
-
-#### Footnotes
-
-Footnotes work mostly like reference-style links. A footnote is made of two things: a marker in the text that will become a superscript number; a footnote definition that will be placed in a list of footnotes at the end of the document. A footnote looks like this:
-
-That's some text with a footnote.[^1]
-
-[^1]: And that's the footnote.
-
-
-#### Strikethrough
-
-Wrap with 2 tilde characters:
-
-~~Strikethrough~~
-
-
-#### Fenced Code Blocks
-
-Start with a line containing 3 or more backticks, and ends with the first line with the same number of backticks:
-
-```
-Fenced code blocks are like Stardard Markdown’s regular code
-blocks, except that they’re not indented and instead rely on
-a start and end fence lines to delimit the code block.
-```
-
-#### Tables
-
-A simple table looks like this:
-
-First Header | Second Header | Third Header
------------- | ------------- | ------------
-Content Cell | Content Cell  | Content Cell
-Content Cell | Content Cell  | Content Cell
-
-If you wish, you can add a leading and tailing pipe to each line of the table:
-
-| First Header | Second Header | Third Header |
-| ------------ | ------------- | ------------ |
-| Content Cell | Content Cell  | Content Cell |
-| Content Cell | Content Cell  | Content Cell |
-
-Specify alignement for each column by adding colons to separator lines:
-
-First Header | Second Header | Third Header
-:----------- | :-----------: | -----------:
-Left         | Center        | Right
-Left         | Center        | Right
-
-
-### Shortcuts
-
-#### View
-
-* Toggle live preview: Shift + Cmd + I
-* Toggle Words Counter: Shift + Cmd + W
-* Toggle Transparent: Shift + Cmd + T
-* Toggle Floating: Shift + Cmd + F
-* Left/Right = 1/1: Cmd + 0
-* Left/Right = 3/1: Cmd + +
-* Left/Right = 1/3: Cmd + -
-* Toggle Writing orientation: Cmd + L
-* Toggle fullscreen: Control + Cmd + F
-
-#### Actions
-
-* Copy HTML: Option + Cmd + C
-* Strong: Select text, Cmd + B
-* Emphasize: Select text, Cmd + I
-* Inline Code: Select text, Cmd + K
-* Strikethrough: Select text, Cmd + U
-* Link: Select text, Control + Shift + L
-* Image: Select text, Control + Shift + I
-* Select Word: Control + Option + W
-* Select Line: Shift + Cmd + L
-* Select All: Cmd + A
-* Deselect All: Cmd + D
-* Convert to Uppercase: Select text, Control + U
-* Convert to Lowercase: Select text, Control + Shift + U
-* Convert to Titlecase: Select text, Control + Option + U
-* Convert to List: Select lines, Control + L
-* Convert to Blockquote: Select lines, Control + Q
-* Convert to H1: Cmd + 1
-* Convert to H2: Cmd + 2
-* Convert to H3: Cmd + 3
-* Convert to H4: Cmd + 4
-* Convert to H5: Cmd + 5
-* Convert to H6: Cmd + 6
-* Convert Spaces to Tabs: Control + [
-* Convert Tabs to Spaces: Control + ]
-* Insert Current Date: Control + Shift + 1
-* Insert Current Time: Control + Shift + 2
-* Insert entity <: Control + Shift + ,
-* Insert entity >: Control + Shift + .
-* Insert entity &: Control + Shift + 7
-* Insert entity Space: Control + Shift + Space
-* Insert Scriptogr.am Header: Control + Shift + G
-* Shift Line Left: Select lines, Cmd + [
-* Shift Line Right: Select lines, Cmd + ]
-* New Line: Cmd + Return
-* Comment: Cmd + /
-* Hard Linebreak: Control + Return
-
-#### Edit
-
-* Auto complete current word: Esc
-* Find: Cmd + F
-* Close find bar: Esc
-
-#### Post
-
-* Post on Scriptogr.am: Control + Shift + S
-* Post on Tumblr: Control + Shift + T
-
-#### Export
-
-* Export HTML: Option + Cmd + E
-* Export PDF:  Option + Cmd + P
-
-
-### And more?
-
-Don't forget to check Preferences, lots of useful options are there.
-
-Follow [@chenluois](http://twitter.com/chenluois) on Twitter for the latest news.
-
-For feedback, use the menu `Help` - `Send Feedback`
+如果你安装了其他HTTP工具，那么现在你可以将其打开运行，同时将你的文件拷贝到对应目录中进行访问即可。
+#相关HTTP服务器操作，未完待续

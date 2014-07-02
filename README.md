@@ -143,3 +143,17 @@ AS3 TS代码对比文章头信息
 	{% highlight java linenos %}
 	${your code}
 	{% endhighlight  %}
+
+##样式修改
+
+默认的blockquote标签样式字体非常大，颜色也与原有github 中的markdown生成后的不同。这里是由于使用了Bootstrap的原因导致的。
+将css文件夹中的bootstrap.css文件中920行的blockquote p标签样式进行修改。修改后的样式如下：
+
+	blockquote p {
+		margin-bottom: 0;
+		font-size: 13px;
+		font-weight: 300;
+		line-height: 1.25;
+		color: #8f8f8f;
+	}
+
