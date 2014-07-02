@@ -6,17 +6,20 @@ title: 文档首页
 
 {% for docst in site.docsType %}
     <div class="container">
-        <div class="hero-unit">
-            <h2 class="text-center">{{docst.text}}</h2>
-            <hr>
+        <div class="row-fluid">
+            <div class="span10 offset1">
+                <div class="well">
+                    <div class="page-header">
+                        <h3 class="text-center">{{docst.text}}</h3>
+            </div>
                 {% for elements in site.[docst.type] %}
                     {% if elements.enter == true %}
                     <div class="row-fluid ">
                     {% endif %}
                     <div class="span4">
-                        <a href="{{elements.url}}"><h3>{{elements.text}}</h3></a>
+                        <a href="{{elements.url}}"><h4>{{elements.text}}</h4></a>
                         {% if elements.des %}
-                            <p><small>{{elements.des}}</small></p>
+                            <p class="muted">{{elements.des}}</p>
                         {% else %}
                             {% for post in site.posts %}
                                 {% if post.type == docst.type %}
@@ -34,5 +37,7 @@ title: 文档首页
                     {% endif %}
                 {% endfor %}
         </div>
+    </div>
+    </div>
     </div>
 {% endfor %}

@@ -1,9 +1,11 @@
+<hr>
 <footer>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="submit">
                         <p class="text-center"><a href="http://www.egret-labs.org">Copyright © 2014 Egret-labs.org.</a>
+                        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000378138'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/z_stat.php%3Fid%3D1000378138%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
                         </p>
                     </div>
                 </div>
@@ -15,3 +17,31 @@
     <script type="text/javascript" src="{{site.baseurl}}/js/jquery.js"></script>
     <script type="text/javascript" src="{{site.baseurl}}/js/bootstrap-collapse.js"></script>
     <script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/js/page_context.js"></script>
+    <!--快速回到顶部--> 
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.8/jquery.js"></script>
+<a id="gotop">
+<img src="{{site.baseurl}}/img/jump.png">
+</a>
+<style type="text/css">
+    #gotop{ 
+        display:block;  
+        position:fixed;  
+        bottom:50px;  
+        right:40px; 
+    }
+</style>
+<script type="text/javascript">
+$(function(){
+    $(window).scroll(function(){  //只要窗口滚动,就触发下面代码 
+        var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度 
+        if( scrollt >200 ){  //判断滚动后高度超过200px,就显示  
+            $("#gotop").fadeIn(400); //淡出     
+        }else{      
+            $("#gotop").stop().fadeOut(400); //如果返回或者没有超过,就淡入.必须加上stop()停止之前动画,否则会出现闪动   
+        }
+    });
+    $("#gotop").click(function(){ //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+            $("html,body").animate({scrollTop:"0px"},200);
+    });
+});
+</script>
