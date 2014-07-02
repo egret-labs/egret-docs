@@ -173,25 +173,25 @@ demo:
 tools:
   - text: 官方工具
     enter: true
-    element: tools
+    element: egrettools
     url: post/tools/egrettools/index.html
   - text: 官方插件
-    element: tools
+    element: egretplugin
     url: post/tools/egretplugin/index.html
   - text: 代码编辑器
     fenter: false
-    element: tools
+    element: ide
     url: post/tools/ide/index.html
   - text: 第三方工具
     enter: true
-    element: tools
+    element: othertools
     url: post/tools/othertools/index.html
   - text: 服务器工具
-    element: tools
+    element: servertools
     url: post/tools/servertools/index.html
   - text: 浏览器工具
     fenter: false
-    element: tools
+    element: browsertools
     url: post/tools/browser/index.html
 
 #AS3 TS代码对比参考目录 及参数
