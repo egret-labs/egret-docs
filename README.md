@@ -110,15 +110,20 @@ AS3 TS代码对比文章头信息
 
 1.编写对应的Demo范例，每个范例为一个class文件，要求只体现一个类的使用方法。
 
-2.将游戏项目在本地运行并使用publish功能发布relesse版本。
+2、执行完成buid操作后，将bin-debug目录中的lib/egret/context/StageDelegate.js中的`ContainerStrategy.prototype._setupContainer`函数直接返回，添加一个`return ;`即可。
 
-3.将发布后的game-min.js和egret_loader.js拷贝到docsrc目录中的demo文件夹中。
+3.将游戏项目在本地运行并使用publish功能发布relesse版本。
 
-4.将egret_loader.js文件中的80行`var document_class = "Game";`修改为`ar document_class = window.this_document_class;`
 
-5.将游戏中的资源文件拷贝到docsrc目录中resources文件夹中。
+4.将发布后的game-min.js和egret_loader.js拷贝到docsrc目录中的demo文件夹中。
 
-6、编写好文章后，发布本地网页并测试。
+5.将egret_loader.js文件中的80行`var document_class = "Game";`
+
+修改为`var document_class = window.this_document_class;`
+
+6.将游戏中的资源文件拷贝到docsrc目录中resources文件夹中。
+
+7、编写好文章后，发布本地网页并测试。
 
 ##API目录制作
 
