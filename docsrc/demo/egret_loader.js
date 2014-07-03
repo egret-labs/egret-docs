@@ -79,7 +79,8 @@ egret_h5.startGame = function () {
     context.run();
 
     //在此定义文档类的完整类名，若包含命名空间，需要填写命名空间前缀。
-    var document_class = "GameApp";
+    //var document_class = "GameApp";
+    var document_class = window.this_document_class;
 
     var rootClass;
     if(document_class){
