@@ -19,12 +19,12 @@ sprite.addEventListener(MouseEvent.MOUSE_MOVE, onMouseHandler, true);
 sprite.removeEventListener(MouseEvent.MOUSE_MOVE,onMouseHandler, true);
 function onMouseHandler(event:MouseEvent):void
 {
-	var stageX:Number = event.stageX;
-	var stageY:Number = event.stageY;
-	var localX:Number = event.localX;
-	var localY:Number = event.localY;
-	var target:Object = event.target;
-	var currentTarget:Object = event.currentTarget;
+    var stageX:Number = event.stageX;
+    var stageY:Number = event.stageY;
+    var localX:Number = event.localX;
+    var localY:Number = event.localY;
+    var target:Object = event.target;
+    var currentTarget:Object = event.currentTarget;
 }
 {% endhighlight %}
 
