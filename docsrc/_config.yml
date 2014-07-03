@@ -18,7 +18,7 @@ highlighter: pygments
 
 #菜单配置
 nav:
-  - text: 首页
+  - text: 回到官网
     url: http://www.egret-labs.org
   - text: 文档
     url: /home.html
