@@ -70,6 +70,12 @@ Egret文档中心使用[Jekyll](http://jekyllrb.com/)制作。
 
 6.***每篇文章都需要填写完整的头信息。***
 
+##添加链接
+
+默认的MarkDown添加的链接仅支持本页跳转，如果想新打开页面，则使用下面语句
+
+`<a href="http://blogjava.net/lishunli" target="_blank">my blog</a>`
+
 ##文章头信息
 
 实例 文档头信息
