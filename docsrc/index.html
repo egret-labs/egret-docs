@@ -16,7 +16,11 @@ title: 文档首页
                     {% if elements.enter == true %}
                     <div class="row-fluid ">
                     {% endif %}
+                    {% if docst.grid == 3 %}
                     <div class="span4">
+                    {% else %}
+                    <div class="span3">
+                    {% endif %}
                         <a href="{{elements.url}}"><h4>{{elements.text}}</h4></a>
                         {% if elements.des %}
                             <p class="muted">{{elements.des}}</p>

@@ -32,13 +32,17 @@ nav:
 #文档一级分类
 docsType:
   - text: 快速入门
+    grid: 3
     type: quitestart
   - text: 手册
+    grid: 3
     type: manual
   - text: 实例
     type: demo
+    grid: 4
   - text: 工具
     type: tools
+    grid: 3
 
 #文档二级分了
 quitestart:
@@ -136,8 +140,11 @@ manual:
     des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
 
 demo:
-  - text: 显示对象
+  - text: 基础
     enter: true
+    element: demobasics
+    url: demo/basics.html
+  - text: 显示对象
     element: demodisplay
     url: demo/display.html
   - text: 事件
@@ -155,14 +162,14 @@ demo:
     element: demonetwork
     url: demo/network.html
   - text: 文本
-    fenter: false
     element: demotext
     url: demo/text.html
   - text: 动画
-    enter: true
+    fenter: false
     element: demomovie
     url: demo/movie.html
   - text: GUI
+    enter: true
     element: demogui
     url: demo/gui.html
   - text: 高级
