@@ -127,6 +127,10 @@ AS3 TS代码对比文章头信息
 
 修改为`var document_class = window.this_document_class;`
 
+同时在引入此js文件的模板中添加如下代码
+
+`<script>var this_document_class = "{{page.documentclass}}"</script>`
+
 6.将游戏中的资源文件拷贝到docsrc目录中resources文件夹中。
 
 7、编写好文章后，发布本地网页并测试。
