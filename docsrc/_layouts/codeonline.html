@@ -22,20 +22,40 @@
         </div>
     </div>
 
-<div class="well">
+<div id="postok" class="well">
             为了更好的完善文档内容，希望您对我们的文档做出评价。您是否觉得此文档对您有帮助？
-            <label class="checkbox inline">
-                <input type="checkbox" id="inlineCheckbox1" value="option1">非常有帮助
+            <label class="radio inline">
+                <input type="radio" id="inlineCheckbox1" value="1" name="comment">非常有帮助
             </label>
-            <label class="checkbox inline">
-                <input type="checkbox" id="inlineCheckbox2" value="option2">一般
+            <label class="radio inline">
+                <input type="radio" id="inlineCheckbox2" value="2" name="comment">一般
             </label>
-            <label class="checkbox inline">
-                <input type="checkbox" id="inlineCheckbox3" value="option3">没有帮助
+            <label class="radio inline">
+                <input type="radio" id="inlineCheckbox3" value="3" name="comment">没有帮助
             </label>
+            <lable><button class="btn" onclick="sendData();">提交</button></lable>
+        </div>
+        <div id="post1" class="well" style="display:none">
+            感谢您对我们的文档提出评价，我们会根据您的评价继续完善优化我们的文档内容。
         </div>
     </div>
-
+    
+<script type="text/javascript">
+    function sendData() {
+        var title = document.getElementsByTagName('title')[0].text;
+        var comment = $('input[name="comment"]:checked').val()
+        $.ajax({
+        type: "POST",
+        url: "http://download.egret-labs.org/comment.php",
+        data: "title=" + title+ '&comment=' + comment,
+        dataType : "json",
+        success: function(msg){
+            $("#postok").hide();
+            $("#post1").show();
+        }
+    });
+    }
+    </script>
    {% include footer.html %}
 
 
