@@ -7,7 +7,7 @@ element: quitestartabout
 version: Egret引擎 v1.x
 ---
 
-![Egret Icon]()
+![Egret Icon]({{site.baseurl}}/assets/img/egret_logo.png)
 
 Egret引擎是一个开源免费的游戏框架，用于构建二维游戏、演示程序和其他图形界面交互应用等。Egret使用TypeScript脚本语言开发。当游戏完成最终的打包后，可以将程序转换为HTML5游戏。实现跨平台特性。
 
@@ -15,4 +15,4 @@ Egret不仅仅是一个基于HTML5技术的游戏引擎，我们的产品线中�
 
 Egret团队在2014年5月15日正式发布了第一个测试版本，同时提供了附带的三个相关开发工具，以帮助开发者在使用Egret开发游戏时，更加快速便捷。
 
-具体产品下载请查看[Egret产品下载]()页面。
+具体产品下载请查看[Egret产品下载](http://www.egret-labs.org/download/index.html)页面。
