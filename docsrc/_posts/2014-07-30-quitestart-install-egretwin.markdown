@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Windows 系统下安装"
-permalink: post/quitestart/install/index.html
+permalink: post/quitestart/install/installwin.html
 categories: installegret
 type: quitestart
 element: quitestartinstall

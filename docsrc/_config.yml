@@ -53,12 +53,12 @@ quitestart:
     des: Egret引擎以及相关产品介绍。
   - text: 2、安装与部署
     element: quitestartinstall
-    url: post/quitestart/install/index.html
+    url: post/quitestart/install/installwin.html
     des: Egret引擎安装文档说明。
   - text: 3、Hello World
     fenter: false
     element: quitestarthelloworld
-    url: post/quitestart/helloworld/index.html
+    url: post/quitestart/helloworld/helloworld.html
     des: 使用Egret创建你的第一个游戏。
 
 manual:
@@ -66,78 +66,78 @@ manual:
     enter: true
     element: manualknowledge
     url: post/manual/knowledge/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
   - text: 编程工具
     element: manualide
     url: post/manual/ide/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
   - text: 显示对象
     fenter: false
     element: manualdisplay
     url: post/manual/display/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
   - text: 纹理图片
     enter: true
     element: manualtexture
     url: post/manual/texture/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
   - text: 事件捕获
     element: manualevent
     url: post/manual/event/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
   - text: 显示文本
     fenter: false
     element: manualtext
     url: post/manual/text/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
   - text: 动画
     enter: true
     element: manualmoive
     url: post/manual/movie/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
   - text: 计时器
     element: manualtime
     url: post/manual/time/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
   - text: 声音
     fenter: false
     element: manualsound
     url: post/manual/sound/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
   - text: GUI
     enter: true
     element: manualgui
     url: post/manual/gui/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
   - text: 打包发布
     element: manualpublish
     url: post/manual/publish/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
   - text: 浏览器兼容性与性能
     fenter: false
     element: manualbrowser
     url: post/manual/browser/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
   - text: 高级开发
     enter: true
     element: manualother
     url: post/manual/other/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
   - text: 网络
     element: manualnetwork
     url: post/manual/network/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
   - text: 调试
     fenter: false
     element: manualdebug
     url: post/manual/debug/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
   - text: 资源加载
     fenter: false
     enter: true
     element: manualloader
     url: post/manual/loader/index.html
-    des: 一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。一段简单而准确的描述内容。
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
 
 demo:
   - text: 基础
@@ -181,25 +181,25 @@ tools:
   - text: 官方工具
     enter: true
     element: egrettools
-    url: post/tools/egrettools/index.html
+    url: post/tools/egrettools/conversiontool.html
   - text: 官方插件
     element: egretplugin
     url: post/tools/egretplugin/index.html
   - text: 代码编辑器
     fenter: false
     element: ide
-    url: post/tools/ide/index.html
+    url: post/tools/ide/webstorm.html
   - text: 第三方工具
     enter: true
     element: othertools
-    url: post/tools/othertools/index.html
+    url: post/tools/othertools/texturepacker.html
   - text: 服务器工具
     element: servertools
-    url: post/tools/servertools/index.html
+    url: post/tools/servertools/xampp.html
   - text: 浏览器工具
     fenter: false
     element: browsertools
-    url: post/tools/browser/index.html
+    url: post/tools/browser/chrome.html
 
 #AS3 TS代码对比参考目录 及参数
 codePageTitle: Flash ActionScript 3代码迁移Egret在线参考

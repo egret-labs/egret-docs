@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  XAMPP
-permalink: post/tools/browser/xampp.html
+permalink: post/tools/servertools/xampp.html
 type: tools
 element: servertools
 version: XAMPP

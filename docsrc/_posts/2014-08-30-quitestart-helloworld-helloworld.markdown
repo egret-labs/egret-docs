@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello World"
-permalink: post/quitestart/helloworld/index.html
+permalink: post/quitestart/helloworld/helloworld.html
 type: quitestart
 element: quitestarthelloworld
 version: Egret引擎 v1.x
