@@ -34,13 +34,13 @@ docsType:
   - text: 快速入门
     grid: 3
     type: quitestart
-  - text: 手册
+  - text: 开发指南
     grid: 3
     type: manual
-  - text: 实例
+  - text: 演示实例
     type: demo
     grid: 4
-  - text: 工具
+  - text: 开发工具
     type: tools
     grid: 3
 
