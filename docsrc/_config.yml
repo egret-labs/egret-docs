@@ -26,7 +26,7 @@ nav:
     url: /api/api.html
   - text: Flash移植教程
     url: /flash.html
-  - text: 代码迁移
+  - text: AS3对比参考
     url: /as2ts/index.html
 
 #文档一级分类
@@ -213,4 +213,16 @@ codeType:
   - text: 事件处理
     type: codeevent
     uiid: collapseThree
+  - text: WebGL
+    type: codewebgl
+    uiid: collapseFour
+  - text: 文本
+    type: codetext
+    uiid: collapseFive
+  - text: 动画
+    type: codeanm
+    uiid: collapseSix
+  - text: 通用
+    type: codeother
+    uiid: collapseSeven
 
