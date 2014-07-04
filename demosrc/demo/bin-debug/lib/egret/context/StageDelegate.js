@@ -190,6 +190,8 @@ var egret;
         };
 
         ContainerStrategy.prototype._setupContainer = function () {
+
+            return ;
             var body = document.body, style;
             if (body && (style = body.style)) {
                 style.paddingTop = style.paddingTop || "0px";
