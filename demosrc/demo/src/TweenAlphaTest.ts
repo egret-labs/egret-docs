@@ -1,6 +1,7 @@
 class TweenAlphaTest extends egret.DisplayObjectContainer
 {
 
+    //入口函数
     public constructor()
     {
         super();
@@ -20,6 +21,7 @@ class TweenAlphaTest extends egret.DisplayObjectContainer
         spr1.y = 50;
         this.addChild( spr1 );
 
+        //执行alpha从0到1的动画，并且循环执行
         egret.Tween.get(spr1, { loop: true }).to({ alpha: 0 }, 1000).to({ alpha: 1 }, 1000);
     }
 

@@ -1,6 +1,7 @@
 class TextFieldRotationTest extends egret.DisplayObjectContainer
 {
 
+    //入口函数
     public constructor()
     {
         super();
@@ -18,7 +19,7 @@ class TextFieldRotationTest extends egret.DisplayObjectContainer
         label.text = "未旋转的字体";
         this.addChild( label );
 
-        //
+        //文本旋转45度
         var label1:egret.TextField = new egret.TextField();
         label1.width = 450;
         label1.x = 50;

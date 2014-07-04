@@ -23,6 +23,7 @@ class TouchEventTest extends egret.DisplayObjectContainer
         //开启spr1的Touch开关
         spr1.touchEnabled = true;
 
+        //注册事件
         spr1.addEventListener( egret.TouchEvent.TOUCH_TAP, this.onTouch, this );
         this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTouchTap, this);
         this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTouchTaps, this, true);
@@ -43,6 +44,7 @@ class TouchEventTest extends egret.DisplayObjectContainer
         this.txt.text += "\n容器捕获侦听";
     }
 
+    //绘制文本
     private  txt:egret.TextField;
     private drawText():void
     {

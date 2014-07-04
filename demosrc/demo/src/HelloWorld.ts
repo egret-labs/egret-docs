@@ -5,6 +5,7 @@ class HelloWorld extends egret.DisplayObjectContainer
      */
     private loadingView:LoadingUI;
 
+    //入口函数
     public constructor() {
         super();
         this.addEventListener(egret.Event.ADDED_TO_STAGE,this.onAddToStage,this);

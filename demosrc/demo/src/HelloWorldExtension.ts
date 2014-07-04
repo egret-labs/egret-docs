@@ -1,6 +1,7 @@
 class HelloWorldExtension extends egret.DisplayObjectContainer
 {
 
+    //入口函数
     public constructor()
     {
         super();

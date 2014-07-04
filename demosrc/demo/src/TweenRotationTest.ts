@@ -1,4 +1,4 @@
-class TweenMoveTest extends egret.DisplayObjectContainer
+class TweenRotationTest extends egret.DisplayObjectContainer
 {
 
     //入口函数
@@ -18,12 +18,12 @@ class TweenMoveTest extends egret.DisplayObjectContainer
         spr1.graphics.endFill();
         spr1.width = 100;
         spr1.height = 80;
-        spr1.x = 50;
-        spr1.y = 50;
+        spr1.x = 150;
+        spr1.y = 150;
         this.addChild( spr1 );
 
-        //设置一个X轴从250到50的动画，并循环执行
-        egret.Tween.get(spr1, { loop: true }).to({ x: 250 }, 2000).to({ x: 50 }, 2000);
+        //设置一个旋转360度的动画，并循环执行
+        egret.Tween.get(spr1, { loop: true }).to({ rotation: 360 }, 2000).wait(500);
 
     }
 
