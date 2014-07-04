@@ -6,7 +6,7 @@ type: codewebgl
 version: Egret引擎 v1.x
 ---
 
-使用WebGL绘制图片，<a href="hhttp://egret-game.b0.upaiyun.com/webgl/sprite/launcher/release.html" target="_blank">点击查看演示</a>。
+使用WebGL绘制图片，<a href="http://egret-game.b0.upaiyun.com/webgl/sprite/launcher/release.html" target="_blank">点击查看演示</a>。
 
 ####ActionScript 3 Code
 
