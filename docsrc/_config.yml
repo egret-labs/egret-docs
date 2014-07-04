@@ -150,32 +150,32 @@ demo:
   - text: 事件
     element: demoevent
     url: demo/event.html
-  - text: 布局
-    fenter: false
-    element: demolayout
-    url: demo/layout.html
+#  - text: 布局
+#    fenter: false
+#    element: demolayout
+#    url: demo/layout.html
   - text: 声音
-    enter: true
+    fenter: false
     element: demosound
     url: demo/sound.html
   - text: 网络
+    enter: true
     element: demonetwork
     url: demo/network.html
   - text: 文本
     element: demotext
     url: demo/text.html
   - text: 动画
-    fenter: false
     element: demomovie
     url: demo/movie.html
   - text: GUI
-    enter: true
+    fenter: false
     element: demogui
     url: demo/gui.html
-  - text: 高级
-    fenter: false
-    element: demoother
-    url: demo/other.html
+#  - text: 高级
+#    fenter: false
+#    element: demoother
+#    url: demo/other.html
 
 tools:
   - text: 官方工具
