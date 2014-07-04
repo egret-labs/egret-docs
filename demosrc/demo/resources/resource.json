@@ -1,13 +1,1 @@
-{
-"resources":
-	[
-		{"name":"bgImage","type":"image","url":"assets/bg.jpg"},
-		{"name":"egretIcon","type":"image","url":"assets/egret_icon.png"},
-        {"name":"description","type":"json","url":"config/description.json"}
-	],
-
-"groups":
-	[
-        {"name":"preload","keys":"bgImage,egretIcon"}
-	]
-}
+{"groups":[{"name":"preload","keys":"bgImage,egretIcon"},{"name":"soundload","keys":"sound"}],"resources":[{"url":"assets/bg.jpg","type":"image","name":"bgImage"},{"url":"assets/egret_icon.png","type":"image","name":"egretIcon"},{"url":"config/description.json","type":"json","name":"description"},{"url":"assets/sound.mp3","type":"sound","name":"sound"}]}
