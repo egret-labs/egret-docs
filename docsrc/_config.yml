@@ -28,6 +28,8 @@ nav:
 #    url: /flash.html
   - text: AS3对比参考
     url: /as2ts/index.html
+  - text: FAQ
+    url: /faq.html
 
 #文档一级分类
 docsType:
@@ -66,78 +68,78 @@ manual:
     enter: true
     element: manualknowledge
     url: post/manual/knowledge/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
   - text: 编程工具
     element: manualide
     url: post/manual/ide/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
   - text: 显示对象
     fenter: false
     element: manualdisplay
     url: post/manual/display/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
   - text: 纹理图片
     enter: true
     element: manualtexture
     url: post/manual/texture/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
   - text: 事件捕获
     element: manualevent
     url: post/manual/event/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
   - text: 显示文本
     fenter: false
     element: manualtext
     url: post/manual/text/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
   - text: 动画
     enter: true
     element: manualmoive
     url: post/manual/movie/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
   - text: 计时器
     element: manualtime
     url: post/manual/time/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
   - text: 声音
     fenter: false
     element: manualsound
     url: post/manual/sound/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
   - text: GUI
     enter: true
     element: manualgui
     url: post/manual/gui/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
   - text: 打包发布
     element: manualpublish
     url: post/manual/publish/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
   - text: 浏览器兼容性与性能
     fenter: false
     element: manualbrowser
     url: post/manual/browser/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
   - text: 高级开发
     enter: true
     element: manualother
-    url: post/manual/other/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    url: post/manual/other/gui1.html
+    des: 一些关于Egret引擎的高级知识，涉及到引擎的架构和一些模块的设计思想。同时还包含一些高级应用文档。
   - text: 网络
     element: manualnetwork
     url: post/manual/network/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
   - text: 调试
     fenter: false
     element: manualdebug
-    url: post/manual/debug/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    url: post/manual/debug/chromedebug.html
+    des: 详细介绍了Egret可以使用的调试工具与调试技巧。
   - text: 资源加载
     fenter: false
     enter: true
     element: manualloader
     url: post/manual/loader/index.html
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
 
 demo:
   - text: 基础
@@ -157,7 +159,7 @@ demo:
   - text: 声音
     fenter: false
     element: demosound
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
 #    url: demo/sound.html
   - text: 网络
     enter: true
@@ -172,7 +174,7 @@ demo:
   - text: GUI
     fenter: false
     element: demogui
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
 #    url: demo/gui.html
 #  - text: 高级
 #    fenter: false
@@ -186,7 +188,7 @@ tools:
 #    url: post/tools/egrettools/conversiontool.html
   - text: 官方插件
     element: egretplugin
-    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+    des: 编辑努力码字中...
 #    url: post/tools/egretplugin/index.html
   - text: 代码编辑器
     fenter: false
