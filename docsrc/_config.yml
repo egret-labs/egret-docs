@@ -143,13 +143,13 @@ demo:
   - text: 基础
     enter: true
     element: demobasics
-    url: demo/helloworldbasic.html
+#    url: demo/helloworldbasic.html
   - text: 显示对象
     element: demodisplay
-    url: demo/display.html
+#    url: demo/display.html
   - text: 事件
     element: demoevent
-    url: demo/event.html
+#    url: demo/event.html
 #  - text: 布局
 #    fenter: false
 #    element: demolayout
@@ -157,21 +157,23 @@ demo:
   - text: 声音
     fenter: false
     element: demosound
-    url: demo/sound.html
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+#    url: demo/sound.html
   - text: 网络
     enter: true
     element: demonetwork
-    url: demo/network.html
+#    url: demo/network.html
   - text: 文本
     element: demotext
-    url: demo/text.html
+#    url: demo/text.html
   - text: 动画
     element: demomovie
-    url: demo/movie.html
+#    url: demo/movie.html
   - text: GUI
     fenter: false
     element: demogui
-    url: demo/gui.html
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+#    url: demo/gui.html
 #  - text: 高级
 #    fenter: false
 #    element: demoother
@@ -181,25 +183,26 @@ tools:
   - text: 官方工具
     enter: true
     element: egrettools
-    url: post/tools/egrettools/conversiontool.html
+#    url: post/tools/egrettools/conversiontool.html
   - text: 官方插件
     element: egretplugin
-    url: post/tools/egretplugin/index.html
+    des: 稍安勿躁，后台技术编辑的小伙伴们正在努力码字中。
+#    url: post/tools/egretplugin/index.html
   - text: 代码编辑器
     fenter: false
     element: ide
-    url: post/tools/ide/webstorm.html
+#    url: post/tools/ide/webstorm.html
   - text: 第三方工具
     enter: true
     element: othertools
-    url: post/tools/othertools/texturepacker.html
+#    url: post/tools/othertools/texturepacker.html
   - text: 服务器工具
     element: servertools
-    url: post/tools/servertools/xampp.html
+#    url: post/tools/servertools/xampp.html
   - text: 浏览器工具
     fenter: false
     element: browsertools
-    url: post/tools/browser/chrome.html
+#    url: post/tools/browser/chrome.html
 
 #AS3 TS代码对比参考目录 及参数
 codePageTitle: Flash ActionScript 3代码迁移Egret在线参考

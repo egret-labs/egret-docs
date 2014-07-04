@@ -21,7 +21,11 @@ title: 文档首页
                     {% else %}
                     <div class="span3">
                     {% endif %}
-                        <a href="{{elements.url}}"><h4>{{elements.text}}</h4></a>
+                        {% if elements.url %}
+                            <a href="{{elements.url}}"><h4>{{elements.text}}</h4></a>
+                        {% else %}
+                            <h4>{{elements.text}}</h4>
+                        {% endif %}
                         {% if elements.des %}
                             <p class="muted">{{elements.des}}</p>
                         {% else %}
