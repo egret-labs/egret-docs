@@ -138,8 +138,8 @@ manual:
     fenter: false
     enter: true
     element: manualloader
-    url: post/manual/loader/index.html
-    des: 编辑努力码字中...
+    url: post/manual/loader/res.html
+    des: 介绍Egret引擎中相关资源加载方面的内容。
 
 demo:
   - text: 基础
