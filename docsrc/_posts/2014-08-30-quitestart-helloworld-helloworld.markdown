@@ -17,8 +17,16 @@ version: Egret引擎 v1.x
 
 在学习之前，你应该先安装Egret，具体安装步骤请查看相关文档，根据你的操作系统来选择适合你的安装方法。
 
-* [Windows中安装Egret]({{site.baseurl}}/post/quitestart/install/index.html)
+* [Windows中安装Egret]({{site.baseurl}}/post/quitestart/install/installwin.html)
 * [Mac OS X中安装Egret]({{site.baseurl}}/post/quitestart/install/instalformac.html)
 
-安装完成之后，就可以进入我们的Hello World教程啦，请注意，如果你在实际操作中遇到任何问题，请到我们的[开发者社区](http://bbs.egret-labs.org/forum.php)寻求帮助。
+安装完成之后，就可以进入我们的Hello World教程啦。
+
+1. [创建项目]({{site.baseurl}}/post/quitestart/helloworld/createpro.html)
+2. [编译项目]({{site.baseurl}}/post/quitestart/helloworld/buildpro.html)
+3. [运行项目]({{site.baseurl}}/quitestart/helloworld/runpro.html)
+4. [发布项目]({{site.baseurl}}/post/quitestart/helloworld/pushpro.html)
+5. [更多帮助]({{site.baseurl}}/post/quitestart/helloworld/morehelp.html)
+
+如果你在实际操作中遇到任何问题，请到我们的[开发者社区](http://bbs.egret-labs.org/forum.php)寻求帮助。
 

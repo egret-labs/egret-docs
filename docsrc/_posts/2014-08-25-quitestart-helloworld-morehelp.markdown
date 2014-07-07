@@ -26,7 +26,7 @@ version: Egret引擎 v1.x
 如果你是已经具备了一些Flash游戏开发经验的开发者。我们推荐你阅读：
 
 * [《演示实例》]({{site.baseurl}}/home.html)这部分文档可以帮助你快速了解Egret各个功能的实战使用。
-* [《代码迁移》]({{site.baseurl}}/as2ts/index.html)这部分文档会帮助你从Flash开发语言迁移到TypeScript开发语言中。
+* [《AS3对比参考》]({{site.baseurl}}/as2ts/index.html)这部分文档会帮助你从Flash开发语言迁移到TypeScript开发语言中。
 
 ---
 
