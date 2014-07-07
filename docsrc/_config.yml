@@ -115,9 +115,9 @@ manual:
     element: manualpublish
     url: post/manual/publish/index.html
     des: 编辑努力码字中...
-  - text: 浏览器兼容性与性能
+  - text: 本地打包
     fenter: false
-    element: manualbrowser
+    element: manualnative
     url: post/manual/browser/index.html
     des: 编辑努力码字中...
   - text: 高级开发
