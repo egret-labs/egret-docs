@@ -64,21 +64,21 @@ quitestart:
     des: 使用Egret创建你的第一个游戏。
 
 manual:
-  - text: 基础知识
+  - text: 视觉编程
     enter: true
-    element: manualknowledge
-    url: post/manual/knowledge/index.html
-    des: 编辑努力码字中...
-  - text: 编程工具
-    element: manualide
-    url: post/manual/ide/index.html
-    des: 编辑努力码字中...
-  - text: 显示对象
-    fenter: false
     element: manualdisplay
-    url: post/manual/display/index.html
-    des: 编辑努力码字中...
-  - text: 纹理图片
+    url: post/manual/display/aboutdisplay.html
+    des: 详细介绍了Egret中显示对象的架构设计以及一些概念
+  - text: 显示对象
+    element: manualdisplayobj
+    url: post/manual/displayobj/aboutdisplayobj.html
+    des: 详细介绍了Egret中显示对象的基础知识以及使用方法
+  - text: 显示容器
+    fenter: false
+    element: manualdisplaycon
+    url: post/manual/displaycon/aboutdisplaycon.html
+    des: 详细介绍了显示容器以及显示列表的使用方法
+  - text: 位图纹理
     enter: true
     element: manualtexture
     url: post/manual/texture/index.html
@@ -104,8 +104,8 @@ manual:
   - text: 声音
     fenter: false
     element: manualsound
-    url: post/manual/sound/index.html
-    des: 编辑努力码字中...
+    url: post/manual/sound/aboutsound.html
+    des: Egret中的音频系统功能介绍，详细介绍了音频的加载、播放、暂停以及调节音量等功能。
   - text: GUI
     enter: true
     element: manualgui
@@ -135,11 +135,15 @@ manual:
     url: post/manual/debug/chromedebug.html
     des: 详细介绍了Egret可以使用的调试工具与调试技巧。
   - text: 资源加载
-    fenter: false
     enter: true
     element: manualloader
     url: post/manual/loader/res.html
     des: 介绍Egret引擎中相关资源加载方面的内容。
+  - text: 矢量绘图
+    fenter: false
+    element: manualgraphics
+    url: post/manual/graphics/index.html
+    des: 介绍Egret引擎中关于Graphics适量绘图的一些操作。
 
 demo:
   - text: 基础
