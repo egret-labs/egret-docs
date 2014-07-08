@@ -1,0 +1,1 @@
+{"groups":[{"keys":"bgImage,egretIcon","name":"preload"},{"keys":"sound","name":"soundload"}],"resources":[{"url":"assets/bg.jpg","type":"image","name":"bgImage"},{"url":"assets/egret_icon.png","type":"image","name":"egretIcon"},{"url":"config/description.json","type":"json","name":"description"},{"url":"sound/sound.mp3","type":"sound","name":"sound"}]}
