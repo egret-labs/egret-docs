@@ -159,7 +159,7 @@ demo:
   - text: 声音
     fenter: false
     element: demosound
-    des: 编辑努力码字中...
+#    des: 编辑努力码字中...
 #    url: demo/sound.html
   - text: 网络
     enter: true
