@@ -87,11 +87,11 @@ manual:
     element: manualevent
     url: post/manual/event/index.html
     des: 编辑努力码字中...
-  - text: 显示文本
+  - text: 文本
     fenter: false
     element: manualtext
-    url: post/manual/text/index.html
-    des: 编辑努力码字中...
+    url: post/manual/text/createtextfield.html
+    des: 介绍Egret引擎中文本的操作方法
   - text: 动画
     enter: true
     element: manualmoive
@@ -115,7 +115,7 @@ manual:
     element: manualpublish
     url: post/manual/publish/index.html
     des: 编辑努力码字中...
-  - text: 本地打包
+  - text: 移动APP打包
     fenter: false
     element: manualnative
     url: post/manual/browser/index.html
