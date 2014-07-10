@@ -31,4 +31,4 @@ Egret不限制开发工具的使用，我们也为一些优秀的第三方工具
 ---
 Egret为用户建立了用户社区，如果在使用Egret过程中遇到了哪些问题，可以直接在用户社区中得到答案。同时，我们也为用户提供了大量文档手册，方便用户学习。
 
-[点击访问用户社区](http://bbs.egret-labs.org)
+<a href="http://bbs.egret-labs.org" target="_blank">点击访问用户社区</a>

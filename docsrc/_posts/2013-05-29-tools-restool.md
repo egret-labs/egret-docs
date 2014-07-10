@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Res Tool
+title:  资源配置工具
 permalink: post/tools/egrettools/restool.html
 type: tools
 element: egrettools

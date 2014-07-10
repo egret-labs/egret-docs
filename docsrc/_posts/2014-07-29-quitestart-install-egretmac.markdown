@@ -9,8 +9,8 @@ version: Egret引擎 v1.x
 
 ##概述
 
-Egret基于[TypeScript](http://www.typescriptlang.org/)开发的，而TypeScript编译工具tsc是基于[Node.js](http://nodejs.org/)开发的。所以在安装过程中，我们先需要对于基础支持工具进行安装。
-在安装过程中，我们会以此安装如下软件
+Egret基于<a href="http://www.typescriptlang.org/" target="_blank">TypeScript</a>开发的，而TypeScript编译工具tsc是基于<a href="http://nodejs.org/" target="_blank">Node.js</a>开发的。所以在安装过程中，我们先需要对于基础支持工具进行安装。
+需要安装的软件如下：
 
 1. Node.js
 2. TypeScript
@@ -25,7 +25,8 @@ Egret基于[TypeScript](http://www.typescriptlang.org/)开发的，而TypeScript
 ---
 
 ####1.1下载Node.js
-Node.js的安装方法非常简单，我们可以访问[Node.js官网](http://nodejs.org/)如图，然后进点击页面中的**INSTALL**按钮，可直接下载Node.js的pkg安装文件包。
+Node.js的安装方法非常简单，我们可以访问<a href="http://nodejs.org/" target="_blank">Node.js官网</a>，然后进点击页面中的**INSTALL**按钮，可直接下载Node.js的pkg安装文件包。
+
 ![Nodejs]({{site.baseurl}}/assets/img/nodejswebsite.png)
 
 >本教程撰写时，Node.js版本为0.10.29，如果你的版本高于此版本，我们会提供相关的版本兼容说明。如未提供任何版本兼容说明，则表示你的版本适用于Egret。
@@ -63,7 +64,7 @@ Node.js的安装方法非常简单，我们可以访问[Node.js官网](http://no
 
 ![Nodejs install]({{site.baseurl}}/assets/img/nodejsinstall8.png)
 
-安装完成界面，你的Node.js被安装到 `/usr/local/bin/node`目录下，同时该安装包还会为你安装[npm](http://zh.wikipedia.org/wiki/Npm)工具。
+安装完成界面，你的Node.js被安装到 `/usr/local/bin/node`目录下，同时该安装包还会为你安装<a href="http://zh.wikipedia.org/wiki/Npm" target="_blank">npm</a>工具。
 
 ####1.3验证Node.js
 
@@ -73,14 +74,14 @@ Node.js的安装方法非常简单，我们可以访问[Node.js官网](http://no
 
 ![Nodejs install]({{site.baseurl}}/assets/img/nodejsinstall10.png)
 
-如果出现`node: command not found`则表示安装失败，可以参考下面的[Node.js安装失败解决方案](#installError)或者在我们的[开发者社区](http://bbs.egret-labs.org/forum.php)中求助。
+如果出现`node: command not found`则表示安装失败，可以参考下面的[Node.js安装失败解决方案](#installError)或者在我们的[<a href="http://bbs.egret-labs.org/" target="_blank">开发者社区</a>中求助。
 
 ####1.4验证npm
 在终端中执行`npm`，出现如下图内容，标明你的npm安装正确。
 
 ![Nodejs install]({{site.baseurl}}/assets/img/nodejsinstall11.png)
 
-如果出现`npm: command not found`则表示安装失败，可以参考下面的[Node.js安装失败解决方案](#installError)或者在我们的[开发者社区](http://bbs.egret-labs.org/forum.php)中求助。
+如果出现`npm: command not found`则表示安装失败，可以参考下面的[Node.js安装失败解决方案](#installError)或者在我们的<a href="http://bbs.egret-labs.org/" target="_blank">开发者社区</a>中求助。
 
 <a name="installError" id="installError"></a>
 ####1.5Node.js安装失败解决方案
@@ -92,7 +93,7 @@ Node.js的安装方法非常简单，我们可以访问[Node.js官网](http://no
 ---
 
 ####2.1安装TypeScript
-当 node.js安装成功后，`node` 和 `npm` 命令就可以使用了。TypeScript的安装可视直接使用`npm`命令直接安装。详细的安装方法可以参考[TypeScript官网](http://www.typescriptlang.org/)。
+当 node.js安装成功后，`node` 和 `npm` 命令就可以使用了。TypeScript的安装可视直接使用`npm`命令直接安装。详细的安装方法可以参考<a href="http://www.typescriptlang.org/" target="_blank">TypeScript官网</a>。
 
 在终端中输入如下命令：`npm install -g typescript`
 >`npm install`命令的作用是在开发者的系统中安装指定的Node.js库，`typescript`是库的名称，`-g`代表将这个库安装到全局路径
@@ -114,7 +115,7 @@ Node.js的安装方法非常简单，我们可以访问[Node.js官网](http://no
 
 Egret可以使用任何支持脚本语言的代码编辑器，包括：
 
-* WebStorm [官方下载地址](http://www.jetbrains.com/webstorm/) 【官方推荐】
+* WebStorm <a href="http://www.jetbrains.com/webstorm/" target="_blank">官方下载地址</a> 【官方推荐】
 * Microsoft Visual Studio 2012 + TypeScript插件
 * Sublime Text + TypeScript插件
 
@@ -123,7 +124,7 @@ Egret可以使用任何支持脚本语言的代码编辑器，包括：
 ###4.安装一个HTTP服务器
 ---
 #####4.1选择一个合适的HTTP服务器
-MacOS用户可以使用系统自带的服务器，Windows用户推荐采用[XMAPP](https://www.apachefriends.org/download.html)
+Mac用户可以使用系统自带的服务器，Mac用户推荐采用<a href="https://www.apachefriends.org/download.html" target="_blank">XMAPP</a>
 
 用户也可以跳过这个步骤，使用Egret内置的基于Node.js的简单HTTP服务器。但为了保证更好的开发体验，Egret建议用户安装上述较为成熟的HTTP服务器
 
@@ -145,11 +146,11 @@ Egret可以运行在绝大多数的现代浏览器上，但是 Egret 目前推�
 ---
 ####6.1从官网中下载Egret
 
-Egret提供两个下载渠道，一个是[Egret官方下载](http://www.egret-labs.org/download/index.html)，另外一个是[Egret Github下载](https://github.com/egret-labs/egret-core)。
+Egret提供两个下载渠道，一个是<a href="http://www.egret-labs.org/download/index.html" target="_blank">Egret官方下载</a>，另外一个是<a href="https://github.com/egret-labs/egret-core" target="_blank">Egret Github下载</a>。
 
 我们推荐大家从官方网站中下载，这里的版本是当前稳定版本。如果你从github中下载引擎的开发版本，该版本非稳定版，你可能在实际开发中遇到许多问题，这些问题通常不会在稳定版中出现。
 
-我们打开[官方下载页面](http://www.egret-labs.org/download/index.html)，找到“**Egret引擎**”产品项目，点击蓝色的下载按钮，下载最新版Egret引擎，如图。
+我们打开<a href="http://www.egret-labs.org/download/index.html" target="_blank">官方下载页面</a>，找到“**Egret引擎**”产品项目，点击蓝色的下载按钮，下载最新版Egret引擎，如图。
 
 ![Nodejs install]({{site.baseurl}}/assets/img/nodejsinstall13.png)
 
@@ -180,4 +181,4 @@ Egret提供两个下载渠道，一个是[Egret官方下载](http://www.egret-la
 
 ![Nodejs install]({{site.baseurl}}/assets/img/nodejsinstall14.png)
 
-如果安装失败，请在我们的[开发者社区](http://bbs.egret-labs.org/forum.php)中寻求帮助。
+如果安装失败，请在我们的<a href="http://bbs.egret-labs.org/" target="_blank">开发者社区</a>中寻求帮助。

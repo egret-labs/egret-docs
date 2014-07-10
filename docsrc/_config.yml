@@ -81,25 +81,25 @@ manual:
   - text: 位图纹理
     enter: true
     element: manualtexture
-    url: post/manual/texture/index.html
+    url: #
     des: 编辑努力码字中...
   - text: 事件捕获
     element: manualevent
-    url: post/manual/event/index.html
+    url: #
     des: 编辑努力码字中...
   - text: 文本
     fenter: false
     element: manualtext
-    url: post/manual/text/createtextfield.html
-    des: 介绍Egret引擎中文本的操作方法
+    url: #
+    des: 编辑努力码字中...
   - text: 动画
     enter: true
     element: manualmoive
-    url: post/manual/movie/index.html
+    url: #
     des: 编辑努力码字中...
   - text: 计时器
     element: manualtime
-    url: post/manual/time/index.html
+    url: #
     des: 编辑努力码字中...
   - text: 声音
     fenter: false
@@ -109,17 +109,17 @@ manual:
   - text: GUI
     enter: true
     element: manualgui
-    url: post/manual/gui/index.html
+    url: #
     des: 编辑努力码字中...
   - text: 打包发布
     element: manualpublish
-    url: post/manual/publish/index.html
+    url: #
     des: 编辑努力码字中...
   - text: 移动APP打包
     fenter: false
     element: manualnative
-    url: post/manual/browser/index.html
-    des: 编辑努力码字中...
+    url: post/tools/native/androidforwindows.html
+    des: 详细介绍了iOS，Android和Windows Phone平台的APP打包解决方案是打包方法。
   - text: 高级开发
     enter: true
     element: manualother
@@ -127,7 +127,7 @@ manual:
     des: 一些关于Egret引擎的高级知识，涉及到引擎的架构和一些模块的设计思想。同时还包含一些高级应用文档。
   - text: 网络
     element: manualnetwork
-    url: post/manual/network/index.html
+    url: #
     des: 编辑努力码字中...
   - text: 调试
     fenter: false
@@ -142,8 +142,8 @@ manual:
   - text: 矢量绘图
     fenter: false
     element: manualgraphics
-    url: post/manual/graphics/index.html
-    des: 介绍Egret引擎中关于Graphics适量绘图的一些操作。
+    url: #
+    des: 编辑努力码字中...
 
 demo:
   - text: 基础

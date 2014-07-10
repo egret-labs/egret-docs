@@ -15,4 +15,4 @@ Egret不仅仅是一个基于HTML5技术的游戏引擎，我们的产品线中�
 
 Egret团队在2014年5月15日正式发布了第一个测试版本，同时提供了附带的三个相关开发工具，以帮助开发者在使用Egret开发游戏时，更加快速便捷。
 
-具体产品下载请查看[Egret产品下载](http://www.egret-labs.org/download/index.html)页面。
+具体产品下载请查看<a href="http://www.egret-labs.org/download/index.html" target="_blank">Egret产品下载页面</a>

@@ -17,16 +17,16 @@ version: Egret引擎 v1.x
 
 在学习之前，你应该先安装Egret，具体安装步骤请查看相关文档，根据你的操作系统来选择适合你的安装方法。
 
-* [Windows中安装Egret]({{site.baseurl}}/post/quitestart/install/installwin.html)
-* [Mac OS X中安装Egret]({{site.baseurl}}/post/quitestart/install/instalformac.html)
+* <a href="{{site.baseurl}}/post/quitestart/install/installwin.html" target="_blank">Windows中安装Egret</a>
+* <a href="{{site.baseurl}}/post/quitestart/install/instalformac.html" target="_blank">Mac OS X中安装Egret</a>
 
 安装完成之后，就可以进入我们的Hello World教程啦。
 
-1. [创建项目]({{site.baseurl}}/post/quitestart/helloworld/createpro.html)
-2. [编译项目]({{site.baseurl}}/post/quitestart/helloworld/buildpro.html)
-3. [运行项目]({{site.baseurl}}/quitestart/helloworld/runpro.html)
-4. [发布项目]({{site.baseurl}}/post/quitestart/helloworld/pushpro.html)
-5. [更多帮助]({{site.baseurl}}/post/quitestart/helloworld/morehelp.html)
+1. <a href="{{site.baseurl}}/post/quitestart/helloworld/createpro.html" target="_blank">创建项目</a>
+2. <a href="{{site.baseurl}}/post/quitestart/helloworld/buildpro.html" target="_blank">编译项目</a>
+3. <a href="{{site.baseurl}}/post/quitestart/helloworld/runpro.html" target="_blank">运行项目</a>
+4. <a href="{{site.baseurl}}/post/quitestart/helloworld/pushpro.html" target="_blank">发布项目</a>
+5. <a href="{{site.baseurl}}/post/quitestart/helloworld/morehelp.html" target="_blank">更多帮助</a>
 
-如果你在实际操作中遇到任何问题，请到我们的[开发者社区](http://bbs.egret-labs.org/forum.php)寻求帮助。
+如果你在实际操作中遇到任何问题，请到我们的<a href="http://bbs.egret-labs.org/" target="_blank">开发者社区</a>寻求帮助。
 

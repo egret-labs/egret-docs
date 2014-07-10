@@ -12,24 +12,24 @@ version: Egret引擎 v1.x
 ###阅读指导
 如果你熟悉了前面的几项操作，并且非常顺利的运行了你的第一个项目，那么我们推荐你阅读：
 
-* [《HelloWorld扩展阅读》]({{site.baseurl}}/post/quitestart/helloworld/extension.html):这部分内容会帮助更加了解Egret的工程结构。
+* <a href="{{site.baseurl}}/post/quitestart/helloworld/extension.html" target="_blank">《HelloWorld扩展阅读》</a>:这部分内容会帮助更加了解Egret的工程结构。
 
 ---
 
 如果你是一名前端开发者或初级开发者，熟悉HTML页面的制作，同时掌握一些基础的JavaScript脚本语言，我们推荐你阅读：
 
-* [《基础知识》]({{site.baseurl}}/home.html)这部分将帮助你掌握游戏开发中的相关知识。
-* [《开发指南》]({{site.baseurl}}/home.html)这部分会帮助你熟悉Egret引擎各部分功能的使用。
+* <a href="{{site.baseurl}}/home.html" target="_blank">《基础知识》</a>这部分将帮助你掌握游戏开发中的相关知识。
+* <a href="{{site.baseurl}}/home.html" target="_blank">《开发指南》</a>这部分会帮助你熟悉Egret引擎各部分功能的使用。
 
 ---
 
 如果你是已经具备了一些Flash游戏开发经验的开发者。我们推荐你阅读：
 
-* [《演示实例》]({{site.baseurl}}/home.html)这部分文档可以帮助你快速了解Egret各个功能的实战使用。
-* [《AS3对比参考》]({{site.baseurl}}/as2ts/index.html)这部分文档会帮助你从Flash开发语言迁移到TypeScript开发语言中。
+* <a href="{{site.baseurl}}/home.html" target="_blank">《演示实例》</a>这部分文档可以帮助你快速了解Egret各个功能的实战使用。
+* <a href="{{site.baseurl}}/as2ts/index.html" target="_blank">《AS3对比参考》</a>这部分文档会帮助你从Flash开发语言迁移到TypeScript开发语言中。
 
 ---
 
 如果你是一名具有丰富编程经验和游戏开发经验的开发者，我们推荐你阅读：
 
-* [《开发指南》]({{site.baseurl}}/home.html)这部分会帮助你熟悉Egret引擎各部分功能的使用。
+* <a href="{{site.baseurl}}/home.html" target="_blank">《开发指南》</a>这部分会帮助你熟悉Egret引擎各部分功能的使用。

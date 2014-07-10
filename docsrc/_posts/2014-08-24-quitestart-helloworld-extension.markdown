@@ -85,7 +85,7 @@ private onAddToStage(event:egret.Event)
 
 ####打包测试
 ---
-这一步在[编译项目]({{site.baseurl}}/post/quitestart/helloworld/buildpro.html)和[运行项目]({{site.baseurl}}/quitestart/helloworld/runpro.html)已经描述过具体方法，再此不在赘述。
+这一步在<a href="{{site.baseurl}}/post/quitestart/helloworld/buildpro.html" target="_blank">编译项目</a>和<a href="{{site.baseurl}}/quitestart/helloworld/runpro.html" target="_blank">运行项目</a>已经描述过具体方法，再此不在赘述。
 
 ####性能面板
 ---
@@ -119,4 +119,4 @@ private onAddToStage(event:egret.Event)
 
 我们需要打开浏览器的JavaScript控制台，在控制台中我们看到了“Hello World!”字样。
 
-调试Egret方法请参考[【使用Chrome调试Egret】]({{site.baseurl}}/post/manual/debug/chromedebug.html)。
+调试Egret方法请参考<a href="{{site.baseurl}}/post/manual/debug/chromedebug.html" target="_blank">【使用Chrome调试Egret】</a>。
