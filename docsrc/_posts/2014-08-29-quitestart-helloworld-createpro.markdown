@@ -43,4 +43,5 @@ workspace    // egret工作空间
                 |-- index.html //启动文件
         |-- libs //egret引擎库文件
         |-- bin-debug // 编译后的代码目录,存放当前debug模式的代码，这个文件夹中绝大部分代码为`.js`文件。
+        |-- egretProperties.json //Egret项目编译参数
 {% endhighlight %}

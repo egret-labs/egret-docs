@@ -78,8 +78,8 @@ private onAddToStage(event:egret.Event)
 ---
 前面我们创建了新的文档类，如果想让新的文档类起效，我们还需要进行一步设置。这一步就是将原有文档类修改，修改为我们新创建的文档类。具体步骤如下：
 
-1. 打开 `HelloWorld/launcher/egret_loader.js` 文件。
-2. 找到第82行，`var document_class = "GameApp";`。
+1. 打开 `HelloWorld/egretProperties.json` 文件。
+2. 找到第2行，`"document_class" : "GameApp"`。
 3. 将其中的`GameApp`修改为现在文档类的名称，这里我们改为`HelloWorld`。
 4. 修改完成之后保存文件。
 
