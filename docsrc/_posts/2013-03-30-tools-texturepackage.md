@@ -11,7 +11,7 @@ version: Texture Packer v3.x
 
 **适应平台：**Windows、Mac OS X
 
-**下载地址：**[https://www.codeandweb.com/texturepacker](https://www.codeandweb.com/texturepacker)
+**下载地址：**<a href="https://www.codeandweb.com/texturepacker" target="_blank">https://www.codeandweb.com/texturepacker</a>
 
 ####关于TexturePacker
 ---
@@ -23,9 +23,9 @@ TexturePacker可以很方便的制作位图纹理集。同时TexturePacker支持
 
 ####下载插件
 
-该插件由[ping-chen](https://github.com/ping-chen/)提供。
+该插件由<a href="https://github.com/ping-chen/" target="_blank">ping-chen</a>提供。
 
-插件下载地址：[https://github.com/ping-chen/egret-tool](https://github.com/ping-chen/egret-tool)
+插件下载地址：<a href="https://github.com/ping-chen/egret-tool" target="_blank">https://github.com/ping-chen/egret-tool</a>
 
 ####插件安装
 

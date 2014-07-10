@@ -56,4 +56,4 @@ class GridMain extends egret.DisplayObjectContainer
 
 编写保存后，在 `egretProperties.json` 文件中将文档类改为 `GridMain`，编译并测试，你会在浏览器中看到如下图效果。
 
-![grid]()
+![grid]({{site.baseurl}}/assets/img/mygrid.png)

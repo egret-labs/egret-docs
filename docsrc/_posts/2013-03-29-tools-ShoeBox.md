@@ -11,7 +11,7 @@ version: ShoeBox v3.x
 
 **适应平台：**Windows、Mac OS X
 
-**下载地址：**[http://renderhjs.net/shoebox/](http://renderhjs.net/shoebox/)
+**下载地址：**<a href="http://renderhjs.net/shoebox/" target="_blank">http://renderhjs.net/shoebox/</a>
 
 ![ShoeBox]({{site.baseurl}}/assets/img/ShoeBox1.png)
 
@@ -19,6 +19,6 @@ version: ShoeBox v3.x
 
 ####插件下载
 ---
-该插件由[runinspring](https://github.com/runinspring)提供。
+该插件由<a href="https://github.com/runinspring" target="_blank">runinspring</a>提供。
 
-插件下载地址：[https://github.com/runinspring/egretTools](https://github.com/runinspring/egretTools)
+插件下载地址：<a href="https://github.com/runinspring/egretTools" target="_blank">https://github.com/runinspring/egretTools</a>

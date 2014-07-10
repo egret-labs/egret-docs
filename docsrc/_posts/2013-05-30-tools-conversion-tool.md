@@ -11,7 +11,7 @@ version: Conversion Tool v1.x
 
 **适应平台：**Windows、Mac OS X
 
-**下载地址：**[点击进入官方下载地址](http://www.egret-labs.org/download/conversion-tool-download.html)
+**下载地址：**<a href="http://www.egret-labs.org/download/conversion-tool-download.html" target="_blank">点击进入官方下载地址</a>
 
 Conversion Tool是一款非常方便的代码转换工具，可以将ActionScript 3代码转换为TypeScript代码。
 

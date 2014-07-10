@@ -46,7 +46,7 @@ class Test extends egret.DisplayObjectContainer
 
 编译运行后我们可以在浏览器中看到如下效果：
 
-![mask]()
+![mask]({{site.baseurl}}/assets/img/mask1.png)
 
 现在对 `shp` 添加遮罩，具体代码如下：
 
@@ -59,6 +59,6 @@ shp.mask = rect;
 
 编译并运行，我们可以在浏览器中看到如下效果：
 
-![mask]()
+![mask]({{site.baseurl}}/assets/img/mask2.png)
 
 可以从上图中看到效果，原先红色的正方形添加了遮罩后只显示了(20,20,30,50)这部分的图像，其他地方的图像都被隐藏掉了。而未添加遮罩的 `shp2` 依然显示完整。

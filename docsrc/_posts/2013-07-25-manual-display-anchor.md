@@ -35,7 +35,7 @@ class AnchorTest extends egret.DisplayObjectContainer
 
 上面的代码中，我们绘制了一个绿色的正方形，锚点默认在正方形的左上角位置，我们通过设置 `shp` 的 `x`、`y`属性来改变正方形的位置，效果如图：
 
-![anchor]()
+![anchor]({{site.baseurl}}/assets/img/anchor1.png)
 
 现在我们来修改锚点的位置，让锚点居于正方形左上角x轴 50 像素的位置，代码如下：
 
@@ -45,6 +45,6 @@ shp.anchorOffsetX = 50;
 
 再次编译项目并测试，我们可以从浏览器中看到效果如下：
 
-![anchor]()
+![anchor]({{site.baseurl}}/assets/img/anchor2.png)
 
 我们可以看到，这个绿色的正方形位置依然是x：100，y：100。但实际效果中，正方形的位置和上一张图中的位置有明显的差异。这是因为我们修改了锚点的位置所导致的。

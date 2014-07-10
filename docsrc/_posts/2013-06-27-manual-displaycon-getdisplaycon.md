@@ -46,7 +46,7 @@ _spr.alpha = 0.5;
 
 编译并运行代码，效果如图：
 
-![displayobject]()
+![img]({{site.baseurl}}/assets/img/getchild1.png)
 
 ####通过Name属性获取
 ---
@@ -81,7 +81,7 @@ _spr.alpha = 0.5;
 
 编译并运行代码，效果如图：
 
-![displayobject]()
+![img]({{site.baseurl}}/assets/img/getchild1.png)
 
 ####两种获取子对象方式的比较
 ---

@@ -11,9 +11,9 @@ version: Egret引擎 v1.x
 
 当一个显示对象在舞台中显示的时候，该对象拥有一些非常明显的属性，例如位置，大小等。除此之外显示对象还有一些其他属性，我们来看下图：
 
-#制作一张图，里面有四张小图，1是展示舞台的坐标系和一个方块的坐标 2表示方块的宽高，缩放， 3表示方块的透明度，4表示旋转
+![about display]({{site.baseurl}}/assets/img/aboutdisplay1.png)
 
-如上图1所示，在Egret中舞台的坐标系从左上角开始，这是一个非常简单的[笛卡尔坐标系](http://zh.wikipedia.org/wiki/%E7%AC%9B%E5%8D%A1%E5%B0%94%E5%9D%90%E6%A0%87%E7%B3%BB)。
+如上图1所示，在Egret中舞台的坐标系从左上角开始，这是一个非常简单的<a href="http://zh.wikipedia.org/wiki/%E7%AC%9B%E5%8D%A1%E5%B0%94%E5%9D%90%E6%A0%87%E7%B3%BB" target="_blank">笛卡尔坐标系</a>。
 
 横轴使用X表示，越向右，X值越大。
 

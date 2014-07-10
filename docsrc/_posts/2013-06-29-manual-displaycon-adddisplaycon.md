@@ -29,11 +29,13 @@ this.addChild( spr );
 
 添加这句代码之后，我们再次编译运行程序，此时你可以在浏览器中看到效果如图：
 
+![img]({{site.baseurl}}/assets/img/spr1.png)
+
 代码中 `addChild` 就是将 `spr` 添加到显示列表中。我们前面介绍过，显示列表是一个树状结构，这里 `spr` 的上一级就是 `this`，也就是我们的文档类。文档类是 `stage` 舞台的第一个子对象。
 
 下面是关于当前示例的层级示意图
 
-#层级示意图，将层级以立体的方式展现
+![img]({{site.baseurl}}/assets/img/spr2.png)
 
 ####删除显示对象
 ---
@@ -51,7 +53,7 @@ this.removeChild( spr );
 ####显示对象操作的注意点
 ---
 
-1. 显示对象独立于显示列表
+#####1.显示对象独立于显示列表
 
 虽然我们的显示对象在运行时会被高频率的添加删除到显示列表，但显示对象独立于显示列表。简单解释一下，当我们创建一个显示对象Sprite时，该对象拥有自己的坐标属性，旋转角度属性等。这些属性都是显示对象独立拥有的。一旦该显示对象被键入到显示列表之中，Egret就会按照显示对象的状态进行显示。
 
@@ -72,7 +74,7 @@ this.removeChild( spr );
 //该对象存在，驻于内存中
 {% endhighlight %}
 
-2.相对坐标系
+#####2.相对坐标系
 
 显示对象的坐标系是相对坐标系，而非绝对坐标系。
 
@@ -104,7 +106,7 @@ sprcon2.y = 130;
 
 此时运行后的效果如下：
 
-![DisplayObjectContainer]()
+![DisplayObjectContainer]({{site.baseurl}}/assets/img/spr3.png)
 
 然后我们绘制一个宽高为50的蓝色正方形，我们将这个正方形的x轴和y轴都设置为10像素。下面我们分别将这个蓝色的正方形添加到不同的容器中，以便查看效果。
 
@@ -127,7 +129,7 @@ this.addChild( spr );
 
 运行效果：
 
-![DisplayObjectContainer]()
+![DisplayObjectContainer]({{site.baseurl}}/assets/img/spr4.png)
 
 添加到sprcon1绿色容器中：
 
@@ -137,7 +139,7 @@ sprcon1.addChild( spr );
 
 运行效果：
 
-![DisplayObjectContainer]()
+![DisplayObjectContainer]({{site.baseurl}}/assets/img/spr5.png)
 
 添加到sprcon2红色容器中：
 
@@ -147,15 +149,15 @@ sprcon2.addChild( spr );
 
 运行效果：
 
-![DisplayObjectContainer]()
+![DisplayObjectContainer]({{site.baseurl}}/assets/img/spr6.png)
 
-3.多次添加显示对象到显示列表
+#####3.多次添加显示对象到显示列表
 
 同一个显示对象不被被代码加入显示列表多少次，在屏幕上只绘制一次。
 
 如果一个显示对象A被添加到了B这个容器中，然后A又被添加到了C容器中。那么在第二次执行 `C.addChild(A)` 的时候，A自动的从B容器中被删除，然后添加到C容器中。
 
-4. 删除操作的注意点
+#####4.删除操作的注意点
 
 当我们想要删除一个显示对象的时候需要执行的操作是：
 

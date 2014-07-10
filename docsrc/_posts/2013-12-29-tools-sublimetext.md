@@ -10,7 +10,7 @@ version: Sublime Text v2.x
 
 **适应平台：**Windows、Mac OS X、Linux
 
-**下载地址：**[http://www.sublimetext.com/](http://www.sublimetext.com/)
+**下载地址：**<a href="http://www.sublimetext.com/" target="_blank">http://www.sublimetext.com/</a>
 
 ![Sublime Text]({{site.baseurl}}/assets/img/sublimetext2.png)
 
@@ -19,4 +19,4 @@ version: Sublime Text v2.x
 
 由于Sublime Text默认不支持TypeScript，我们需要安装一个插件，插件地址如下：
 
-[https://github.com/raph-amiard/sublime-typescript](https://github.com/raph-amiard/sublime-typescript)
+<a href="https://github.com/raph-amiard/sublime-typescript" target="_blank">https://github.com/raph-amiard/sublime-typescript</a>

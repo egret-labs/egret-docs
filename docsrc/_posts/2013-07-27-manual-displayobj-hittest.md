@@ -55,7 +55,7 @@ class HitTest extends egret.DisplayObjectContainer
 
 编译并测试上面的代码后，我们可以看到效果如图：
 
-![hittest]()
+![hittest]({{site.baseurl}}/assets/img/hittest1.png)
 
 文本中返回碰撞的结果，显示为 `true`，表示发生了碰撞。这里示例中执行碰撞检测的语句是
 
@@ -91,7 +91,7 @@ this.infoText.text = "碰撞结果" + isHit;
 
 这段代码运行后效果与上面的效果相同，如图：
 
-![hittest]()
+![hittest]({{site.baseurl}}/assets/img/hittest1.png)
 
 我们稍微修改一下代码，将原来宽高为100的正方形修改为一个半径为20的圆形。代码如下：
 
@@ -110,7 +110,7 @@ this.infoText.text = "碰撞结果" + isHit;
 
 编译运行后我们可以看到效果如下：
 
-![hittest]()
+![hittest]({{site.baseurl}}/assets/img/hittest3.png)
 
 这样修改后，Egret则执行精确碰撞检测，精确的碰撞检测并非测量DisplayObject包围盒是否和某一点相交，而是测量DisplayObject中的图案是否和制定的点相交。
 

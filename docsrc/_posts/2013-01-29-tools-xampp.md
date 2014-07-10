@@ -10,7 +10,7 @@ version: XAMPP
 
 **适应平台：**Windows、Mac OS X、Linux
 
-**下载地址：**[www.apachefriends.org](https://www.apachefriends.org/index.html)
+**下载地址：**<a href="https://www.apachefriends.org/index.html" target="_blank">www.apachefriends.org</a>**
 
 XAMPP是一个把Apache网页服务器与PHP、Perl及MySQL集合在一起的安装包，允许用户可以在自己的电脑上轻易的建立网页服务器。
 

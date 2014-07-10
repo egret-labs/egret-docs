@@ -7,7 +7,7 @@ element: manualsound
 version: Egret引擎 v1.x
 ---
 
-在Egret中播放音频的实现非常简单，但在使用音频之前你先需要对音频资源进行加载，具体加载方法请参考[音频系统]({{site.baseurl}}/post/manual/sound/aboutsound.html)部分。
+在Egret中播放音频的实现非常简单，但在使用音频之前你先需要对音频资源进行加载，具体加载方法请参考<a href="{{site.baseurl}}/post/manual/sound/aboutsound.html" target="_blank">音频系统</a>部分。
 
 当资源问价加载后，我们可以通过 `RES.getRes("sound");` 来获取音频资源，这里 `"sound"` 是我们音频资源的唯一标示符。
 

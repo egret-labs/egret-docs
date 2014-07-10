@@ -11,7 +11,7 @@ version: Res Tool v1.x
 
 **适应平台：**Windows、Mac OS X
 
-**下载地址：**[点击进入官方下载地址](http://www.egret-labs.org/download/restool-download.html)
+**下载地址：**<a href="http://www.egret-labs.org/download/restool-download.html" target="_blank">点击进入官方下载地址</a>
 
 Res Tool的主要目的是方便大家编辑和创建resource.json这个资源配置文件。
 

@@ -9,11 +9,11 @@ version: Egret引擎 v1.x
 
 每一个容器都会有一个自己的深度管理功能，这个深度管理就好像我们排队一样。
 
-#一张人物排队的图片
+![img]({{site.baseurl}}/assets/img/child1.png)
 
 每一个显示对象在其父级的容器中都应该拥有一个属于自己的深度值，而且这个值相对于同级显示对象应该是唯一的。这个深度值实际上就是一个显示对象的叠放次序。我们也称之为**“z-次序”**。
 
-深度是由每个容器的子对象李彪所管理。每个容器都清楚自己拥有多少个子对象。我们可以通过容器的 `numChildren` 属性来获取当前容器的子对象数量。
+深度是由每个容器的子对象列表所管理。每个容器都清楚自己拥有多少个子对象。我们可以通过容器的 `numChildren` 属性来获取当前容器的子对象数量。
 
 `容器.numChildren`
 
@@ -44,7 +44,7 @@ this.addChild( spr2 );
 
 运行效果如下：
 
-![displayobject]()
+![img]({{site.baseurl}}/assets/img/child2.png)
 
 ####添加/删除指定深度的对象
 ---
@@ -53,7 +53,7 @@ this.addChild( spr2 );
 
 当我们想讲某一个显示对象添加到一个指定深度的时候，我们需要使用 `addChildAt` 方法。这个操作很像排队时插队的想象。
 
-#一个显示对象插队的示意图
+![img]({{site.baseurl}}/assets/img/child3.png)
 
 使用 `addChildAt` 方法也非常的容易，具体使用方法如下：
 
@@ -87,7 +87,7 @@ sprcon.addChildAt( sprNew, 1 );
 
 运行效果如图：
 
-![displayobject]()
+![img]({{site.baseurl}}/assets/img/child4.png)
 
 我们不仅仅可以再添加显示对象时指定显示对象的深度，在删除显示对象时依然可以通过深度来进行控制。
 
@@ -125,7 +125,7 @@ sprcon.removeChildAt( 2 );
 
 运行效果如下：
 
-![displayobject]()
+![img]({{site.baseurl}}/assets/img/child5.png)
 
 有时候我们想一次性将一个容器内的所有子对象全部删除，那么我们不需要使用复杂的遍历操作来想子对象一一删除，例如：
 
@@ -186,7 +186,7 @@ sprcon.addChild( spr2 );
 
 运行效果如图：
 
-![displayobject]()
+![img]({{site.baseurl}}/assets/img/child6.png)
 
 下面我们使用第一种方法进行两个方块的深度互换。
 
@@ -242,4 +242,4 @@ sprcon.setChildIndex( spr1, 1 );
 
 运行效果如图：
 
-![displayobjcet]()
+![img]({{site.baseurl}}/assets/img/child7.png)

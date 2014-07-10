@@ -11,6 +11,6 @@ version: egret-iOS-support v1.x
 
 **egret-iOS-support**的安装使用方法请详见：
 
-* [iOS APP打包方案]({{site.baseurl}}/post/tools/native/iosapp.html)
+* <a href="{{site.baseurl}}/post/tools/native/iosapp.html" target="_blank">iOS APP打包方案</a>
 
-如果你在实际操作中遇到任何问题，请到我们的[开发者社区](http://bbs.egret-labs.org/forum.php)寻求帮助。
+如果你在实际操作中遇到任何问题，请到我们的<a href="http://bbs.egret-labs.org/forum.php" target="_blank">开发者社区</a>寻求帮助。

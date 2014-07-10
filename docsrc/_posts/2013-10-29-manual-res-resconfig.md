@@ -49,4 +49,4 @@ RES资源管理模块则支持将这些资源分组，在游戏开发时，开�
 1. name：表示资源组的组名
 2. keys：表示这个资源组包含哪些资源，里面的逗号分隔的每一个字符串，都与**“resources”**下的资源name对应。同一个资源可以存在于多个资源组里。
 
-**如果你有大量资源需要处理，编写配置文件，我们提供了可视化资源配置文件处理软件，可参考[Res Tool]({{site.baseurl}}/post/tools/egrettools/restool.html)**
+**如果你有大量资源需要处理，编写配置文件，我们提供了可视化资源配置文件处理软件，可参考**<a href="{{site.baseurl}}/post/tools/egrettools/restool.html" target="_blank">Res Tool</a>**

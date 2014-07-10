@@ -63,3 +63,7 @@ class GridSprite extends egret.Sprite
 var _myGrid:GridSprite = new GridSprite();
 this.addChild( _myGrid );
 {% endhighlight %}
+
+编译运行效果如下：
+
+![mygrid]({{site.baseurl}}/assets/img/mygrid.png)

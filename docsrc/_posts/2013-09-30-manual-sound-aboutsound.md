@@ -13,7 +13,7 @@ Egret中的音频系统接种HTML5的Audio系统，这使得Egret的音频兼容
 
 在音频文件格式中Egrent仅支持**MP3**格式。
 
-由于音频文件属于游戏资源的一部分，所以在游戏逻辑中，使用音频前需要预先加载音频资源。加载方式可参考[**资源加载模块**]({{site.baseurl}}/post/manual/loader/res.html)系列文章。
+由于音频文件属于游戏资源的一部分，所以在游戏逻辑中，使用音频前需要预先加载音频资源。加载方式可参考**<a href="{{site.baseurl}}/post/manual/loader/res.html" target="_blank">资源加载模块</a>**系列文章。
 
 如果要加载资源文件夹中的某一个音频，可以参照下列代码来进行加载。
 
