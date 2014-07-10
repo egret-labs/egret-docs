@@ -7,7 +7,7 @@ element: manualnative
 version: egret-android-support v1.x
 ---
 
-egret-android-support是Egret打包为原生Android APP的方案，你可以使用egret-android-support将你的HTML5游戏打包为APK文件，并提供给用户安装。
+**egret-android-support**是Egret打包为原生Android APP的解决方案，你可以使用egret-android-support将你的HTML5游戏打包为APK文件，并提供给用户安装。
 
 具体使用方法如下：
 
@@ -37,8 +37,7 @@ egret-android-support是Egret打包为原生Android APP的方案，你可以使�
 ####1、安装Egret
 ---
 
-请按照文档[Mac OS X 系统下安装Egret]({{site.baseurl}}/post/quitestart/install/instalformac.html)
-将Egret安装到“labs/”下
+请按照文档<a href="{{site.baseurl}}/post/quitestart/install/instalformac.html" target="_blank">Mac OS X 系统下安装Egret</a>将Egret安装到“labs/”下
 ，如图：
 
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-egret-core-finder.png)
@@ -91,7 +90,7 @@ java -version
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-check-jre-mac.png)
 
 
-1. 下载[适用于OS X的Java](http://http://support.apple.com/kb/DL1572?viewlocale=zh_CN), 如下图：
+1. 下载<a href="http://support.apple.com/kb/dl1572" target="_blank">适用于OS X的Java</a>, 如下图：
 
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-java-mac.png)
 
@@ -125,13 +124,13 @@ $ java -version
 
 a） 从官方进行下载
 
-[ADT bundle官方下载](http://developer.android.com/sdk/index.html)
+<a href="http://developer.android.com/sdk/index.html" target="_blank">ADT bundle官方下载</a>
 
-[Android NDK官方下载](http://developer.android.com/tools/sdk/ndk/index.html)
+<a href="http://developer.android.com/tools/sdk/ndk/index.html" target="_blank">Android NDK官方下载</a>
 
 b） ADT bundle+NDK整合包
 
-[百度云镜像](http://pan.baidu.com/s/1bnaSPjT#dir/path=%2Fandroid%20tools%2Fmac)
+<a href="http://pan.baidu.com/s/1bnaSPjT#dir/path=%2Fandroid%20tools%2Fadt-bundle-mac" target="_blank">百度云镜像</a>
 
 ADT bundle+NDK整合包名为：adt-bundle-mac-x86_64-20140624-ndk-r9d.zip
 
@@ -154,7 +153,7 @@ ADT bundle+NDK整合包名为：adt-bundle-mac-x86_64-20140624-ndk-r9d.zip
 
 #####下载Egret Android支持包
 
-下载[egret-android-support](http://www.egret-labs.org/download/egret-android-packager-download.html)，并解压到你喜欢的文件目录，演示中，我们将`egret-android-support`放置在“labs/egret-support/”文件夹下，如下图：
+下载<a href="http://www.egret-labs.org/download/egret-android-packager-download.html" target="_blank">egret-android-support</a>，并解压到你喜欢的文件目录，演示中，我们将`egret-android-support`放置在“labs/egret-support/”文件夹下，如下图：
 
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-egret-support-finder.png)
 
@@ -199,6 +198,7 @@ labs/-+
 ```
 
 ####6、编译Android游戏
+---
 
 #####6.1 导入项目
 
@@ -225,6 +225,7 @@ labs/-+
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-build-project.png)
 
 ####7、测试项目
+---
 
 #####7.1 选择测试环境
 
@@ -237,7 +238,7 @@ labs/-+
 
 #####7.2 运行效果
 
-![img]()
+![img]({{site.baseurl}}/assets/img/egret-android-support3.jpg)
 
 #####7.3 查看生成的APK
 
@@ -249,5 +250,4 @@ labs/-+
 
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-apk-finder.png)
 
-此时的apk已经可以发布到国内的无需签名的应用市场，如需发布到Google Play，请查看[发布到Google Play的官方文档](http://)
-自此，完成了使用Egret实现一个Android游戏应用的全过程。
+此时的apk已经可以发布到国内的无需签名的应用市场，如需发布到Google Play，请查看<a href="https://play.google.com/store" target="_blank">发布到Google Play的官方文档</a>自此，完成了使用Egret实现一个Android游戏应用的全过程。
