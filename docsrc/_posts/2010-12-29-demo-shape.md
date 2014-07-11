@@ -1,6 +1,6 @@
 ---
 layout: demopost
-title:  Shape绘制适量图
+title:  Shape绘制矢量图
 permalink: demo/shape.html
 type: demo
 element: demodisplay

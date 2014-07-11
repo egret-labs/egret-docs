@@ -1,6 +1,6 @@
 ---
 layout: demopost
-title:  Sprite绘制适量图
+title:  Sprite绘制矢量图
 permalink: demo/spritegraphics.html
 type: demo
 element: demodisplay
