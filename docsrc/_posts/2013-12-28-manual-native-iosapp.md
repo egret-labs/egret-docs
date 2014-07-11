@@ -135,7 +135,7 @@ labs/-+
       ...
 ```
 
-####6、编译ios游戏
+####6、编译iOS游戏
 ---
 
 #####6.1 导入项目
@@ -148,7 +148,7 @@ labs/-+
 ####7、测试项目
 ---
 
-点击Xcode的Run命令，直接进入ios模拟器运行
+点击Xcode的Run命令，直接进入iOS模拟器运行
 
 ![img]({{site.baseurl}}/assets/img/egret-ios-support-xcode-proj.png)
 
@@ -159,4 +159,31 @@ labs/-+
 
 如需生成ipa包，请访问<a href="http://developer.apple.com" target="_blank">苹果开发网站</a>，注册开发者账号，阅读相关设置即可。
 
-自此，完成了使用Egret实现一个ios游戏应用的全过程。
+自此，完成了使用Egret实现一个iOS游戏应用的全过程。
+
+####8、项目开发的整体流程
+---
+
+我们推荐的开发方式：在原有的HTML5游戏项目中进行开发，开发测试ok，再编译到iOS平台。下面为大家演示一下流程：
+
+1. 创建一个HTML5游戏：
+ 
+`egret create ACoolHtmlGame`
+
+2. 创建对应的iOS游戏：
+ 
+`egret create_app ACoolIosGame -f ACoolHtmlGame -t ../egret-support/egret-ios-support`
+
+3. 测试一下各个平台游戏
+
+4. 在ACoolHtmlGame中开发游戏，一个小步进的开发后，我们要开始编译我们的游戏并在浏览器上测试，这是使用
+
+`egret build ACoolHtmlGame -e`
+
+这行命令执行了两项任务：1.编译TypeScript到JavaScript（此时HTML5的部分ok），2.将编译出的文件同步到Xcode项目中。这里需要注意的有两点：1.编译的项目是**HTML5项目**，2.**不要更改iOS项目的位置**，项目位置的设置将在高级教程给出。
+
+5. 此时可以使用`egret startserver ACoolHtmlGame` 启动游戏服务，这样浏览器就能观察到实现的游戏逻辑了。
+
+6. 接下来回到ACoolIosGame的Xcode工程中，使用Xcode来清除、重新编译、调试项目，这样就可以在手机上得到和HTML项目的游戏逻辑了。 
+
+7. 返回4，不断的迭代。
