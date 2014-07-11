@@ -222,7 +222,7 @@ labs/-+
 
 #####6.4 载入项目并编译
 
-载入项目成功后，Eclipse会自动执行编译工作。
+载入项目成功后，Eclipse会自动执行编译工作。等待Eclipse编译完成后进行下一步，编译完成后，控制台会提示**“Builde Finished”**。
 
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-build-project.png)
 
@@ -267,24 +267,24 @@ labs/-+
 
 我们推荐的开发方式：在原有的HTML5游戏项目中进行开发，开发测试ok，再编译到Android平台。下面为大家演示一下流程：
 
-1. 创建一个HTML5游戏：
+1.创建一个HTML5游戏：
  
 `egret create ACoolHtmlGame`
 
-2. 创建对应的iOS游戏：
+2.创建对应的iOS游戏：
  
 `egret create_app ACoolAndroidGame -f ACoolHtmlGame -t ../egret-support/egret-android-support`
 
-3. 测试一下各个平台游戏
+3.测试一下各个平台游戏
 
-4. 在ACoolHtmlGame中开发游戏，一个小步进的开发后，我们要开始编译我们的游戏并在浏览器上测试，这是使用
+4.在ACoolHtmlGame中开发游戏，一个小步进的开发后，我们要开始编译我们的游戏并在浏览器上测试，这是使用
 
 `egret build ACoolHtmlGame -e`
 
 这行命令执行了两项任务：1.编译TypeScript到JavaScript（此时HTML5的部分ok），2.将编译出的文件同步到Android项目中。这里需要注意的有两点：1.编译的项目是**HTML5项目**，2.**不要更改Android项目的位置**，项目位置的设置将在高级教程给出。
 
-5. 此时可以使用`egret startserver ACoolHtmlGame` 启动游戏服务，这样浏览器就能观察到实现的游戏逻辑了。
+5.此时可以使用`egret startserver ACoolHtmlGame` 启动游戏服务，这样浏览器就能观察到实现的游戏逻辑了。
 
-6. 接下来回到ACoolAndroidGame的Xcode工程中，使用Eclipse来清除、重新编译、调试项目，这样就可以在手机上得到和HTML项目的游戏逻辑了。 
+6.接下来回到ACoolAndroidGame的Eclipse程中，使用Eclipse来清除、重新编译、调试项目，这样就可以在手机上得到和HTML项目的游戏逻辑了。 
 
-7. 返回4，不断的迭代。
+7.返回4，不断的迭代。
