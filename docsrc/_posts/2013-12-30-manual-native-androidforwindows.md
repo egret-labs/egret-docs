@@ -155,7 +155,7 @@ ADT bundle+NDK整合包名为：
 
 #####下载Egret Android支持包
 
-下载<a href="http://www.egret-labs.org/download/egret-android-packager-download.html)" target="_blank">egret-android-support</a>，并解压到你喜欢的文件目录，演示中，我们将`egret-android-support`放置在“labs/egret-support/”文件夹下，如下图：
+下载<a href="http://www.egret-labs.org/download/egret-android-packager-download.html" target="_blank">egret-android-support</a>，并解压到你喜欢的文件目录，演示中，我们将`egret-android-support`放置在“labs/egret-support/”文件夹下，如下图：
 
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-egret-support-finder.png)
 
