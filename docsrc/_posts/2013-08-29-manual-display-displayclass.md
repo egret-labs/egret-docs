@@ -13,7 +13,7 @@ Egret在架构设计过程中围绕显示列表的概念，对所有对象进行
 
 DisplayObjectContainer显示对象容器的父类也是DisplayObject。
 
-![display class]({{site:baseurl}}/assets/img/uml2.jpg)
+![display class]({{site:baseurl}}/assets/img/uml2.png)
 
 我们在实际操作中把概念再次简化，可以归纳为两条规则：
 
