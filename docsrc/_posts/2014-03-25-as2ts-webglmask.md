@@ -36,7 +36,8 @@ private function createGameScene():void {
     mask.height = stage.stageHeight;
     tweenSmall();
     function tweenSmall():void{
-        TweenLite.to(mask, .5, {x:stage.stageWidth / 3, y:stage.stageHeight / 3, width:stage.stageWidth / 3, height:stage.stageHeight / 3, onComplete:tweenBig});
+        TweenLite.to(mask, .5, {x:stage.stageWidth / 3, y:stage.stageHeight / 3,
+            width:stage.stageWidth / 3, height:stage.stageHeight / 3, onComplete:tweenBig});
     }
     function tweenBig():void{
         TweenLite.to(mask, .5, {x:0, y:0, width:stage.stageWidth, height:stage.stageHeight, onComplete:tweenSmall});
@@ -65,7 +66,8 @@ private createGameScene():void {
     var mask:egret.Rectangle = new egret.Rectangle(0, 0, stage.stageWidth, stage.stageHeight);
     this.ballContainer.mask = mask;
     egret.Tween.get(mask, {loop:true})
-        .to({x:stage.stageWidth / 3, y:stage.stageHeight / 3, width:stage.stageWidth / 3, height:stage.stageHeight / 3}, 500)
+        .to({x:stage.stageWidth / 3, y:stage.stageHeight / 3,
+            width:stage.stageWidth / 3, height:stage.stageHeight / 3}, 500)
         .to({x:0, y:0, width:stage.stageWidth, height:stage.stageHeight}, 500);
 }
 {% endhighlight %}

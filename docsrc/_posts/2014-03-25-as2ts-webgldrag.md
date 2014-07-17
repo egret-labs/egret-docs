@@ -26,10 +26,10 @@ private function createGameScene():void {
         this.addChild(ball);
         this.ballList.push(ball);
     }
-    stage.addEventListener(MouseEvent.MOUSE_DOWN, this.onTouchBegin, this);
-    stage.addEventListener(MouseEvent.MOUSE_MOVE, this.onTouchMove, this);
-    stage.addEventListener(MouseEvent.MOUSE_UP, this.onTouchEnd, this);
-    stage.addEventListener(Event.MOUSE_LEAVE, this.onTouchEnd, this);
+    stage.addEventListener(MouseEvent.MOUSE_DOWN, this.onTouchBegin);
+    stage.addEventListener(MouseEvent.MOUSE_MOVE, this.onTouchMove);
+    stage.addEventListener(MouseEvent.MOUSE_UP, this.onTouchEnd);
+    stage.addEventListener(Event.MOUSE_LEAVE, this.onTouchEnd);
 }
 
 private function onTouchBegin(event:MouseEvent):void {
@@ -76,10 +76,10 @@ private createGameScene():void {
         this.addChild(ball);
         this.ballList.push(ball);
     }
-    stage.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onTouchBegin);
-    stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.onTouchMove);
-    stage.addEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd);
-    stage.addEventListener(egret.Event.LEAVE_STAGE, this.onTouchEnd);
+    stage.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onTouchBegin, this);
+    stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.onTouchMove, this);
+    stage.addEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this);
+    stage.addEventListener(egret.Event.LEAVE_STAGE, this.onTouchEnd, this);
 }
 
 private onTouchBegin(event:egret.TouchEvent):void {
