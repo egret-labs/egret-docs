@@ -17,43 +17,43 @@ private var localY:int;
 private var ballList:Array;
 
 private function createGameScene():void {
-	this.ballList = [];
-	for (var i:int = 0; i < 15; i++) {
-		var ball:Bitmap = this.createBitmapByName("ball");
-		ball.x = Math.floor(Math.random() * (stage.stageWidth - 80));
-		ball.y = Math.floor(Math.random() * (stage.stageHeight - 80));
-		ball.scaleX = ball.scaleY = 0.5;
-		this.addChild(ball);
-		this.ballList.push(ball);
-	}
-	stage.addEventListener(MouseEvent.MOUSE_DOWN, this.onTouchBegin, this);
-	stage.addEventListener(MouseEvent.MOUSE_MOVE, this.onTouchMove, this);
-	stage.addEventListener(MouseEvent.MOUSE_UP, this.onTouchEnd, this);
-	stage.addEventListener(Event.MOUSE_LEAVE, this.onTouchEnd, this);
+    this.ballList = [];
+    for (var i:int = 0; i < 15; i++) {
+        var ball:Bitmap = this.createBitmapByName("ball");
+        ball.x = Math.floor(Math.random() * (stage.stageWidth - 80));
+        ball.y = Math.floor(Math.random() * (stage.stageHeight - 80));
+        ball.scaleX = ball.scaleY = 0.5;
+        this.addChild(ball);
+        this.ballList.push(ball);
+    }
+    stage.addEventListener(MouseEvent.MOUSE_DOWN, this.onTouchBegin, this);
+    stage.addEventListener(MouseEvent.MOUSE_MOVE, this.onTouchMove, this);
+    stage.addEventListener(MouseEvent.MOUSE_UP, this.onTouchEnd, this);
+    stage.addEventListener(Event.MOUSE_LEAVE, this.onTouchEnd, this);
 }
 
 private function onTouchBegin(event:MouseEvent):void {
-	for (var i:int = this.ballList.length - 1; i >= 0; i--) {
-		var ball:Bitmap = this.ballList[i];
-		if (ball.hitTestPoint(event.stageX, event.stageY, true)) {
-			this.currentBall = ball;
-			var p:Point = ball.globalToLocal(event.stageX, event.stageY);
-			this.localX = p.x * this.currentBall.scaleX;
-			this.localY = p.y * this.currentBall.scaleY;
-			return;
-		}
+    for (var i:int = this.ballList.length - 1; i >= 0; i--) {
+        var ball:Bitmap = this.ballList[i];
+        if (ball.hitTestPoint(event.stageX, event.stageY, true)) {
+            this.currentBall = ball;
+            var p:Point = ball.globalToLocal(event.stageX, event.stageY);
+            this.localX = p.x * this.currentBall.scaleX;
+            this.localY = p.y * this.currentBall.scaleY;
+            return;
+        }
     }
 }
 
 private function onTouchMove(event:MouseEvent):void {
-	if (this.currentBall) {
-		this.currentBall.x = event.stageX - this.localX;
-		this.currentBall.y = event.stageY - this.localY;
-	}
+    if (this.currentBall) {
+        this.currentBall.x = event.stageX - this.localX;
+        this.currentBall.y = event.stageY - this.localY;
+    }
 }
 
 private function onTouchEnd(event:MouseEvent):void {
-	this.currentBall = null;
+    this.currentBall = null;
 }
 {% endhighlight %}
 

@@ -14,33 +14,33 @@ webgl遮罩实现，<a href="http://egret-game.b0.upaiyun.com/webgl/mask/launche
 private var ballContainer:Sprite;
 
 private function createGameScene():void {
-	this.ballContainer = new Sprite();
-	this.addChild(this.ballContainer);
+    this.ballContainer = new Sprite();
+    this.addChild(this.ballContainer);
 
-	for (var i:int = 0; i < 15; i++) {
-		var ball:Bitmap = this.createBitmapByName("ball");
-		ball.x = Math.floor(Math.random() * (stage.stageWidth - 80));
-		ball.y = Math.floor(Math.random() * (stage.stageHeight - 80));
-		ball.scaleX = ball.scaleY = 0.5;
-		this.ballContainer.addChild(ball);
-	}
+    for (var i:int = 0; i < 15; i++) {
+        var ball:Bitmap = this.createBitmapByName("ball");
+        ball.x = Math.floor(Math.random() * (stage.stageWidth - 80));
+        ball.y = Math.floor(Math.random() * (stage.stageHeight - 80));
+        ball.scaleX = ball.scaleY = 0.5;
+        this.ballContainer.addChild(ball);
+    }
 
-	var mask:Shape = new Shape(0, 0, stage.stageWidth, stage.stageHeight);
-	mask.graphics.beginFill(0xff0000);
-	mask.graphics.drawRect(0,0,1,1);
-	mask.graphics.endFill();
-	this.ballContainer.addChild(mask);
+    var mask:Shape = new Shape(0, 0, stage.stageWidth, stage.stageHeight);
+    mask.graphics.beginFill(0xff0000);
+    mask.graphics.drawRect(0,0,1,1);
+    mask.graphics.endFill();
+    this.ballContainer.addChild(mask);
 
-	this.ballContainer.mask = mask;
-	mask.width = stage.stageWidth;
-	mask.height = stage.stageHeight;
-	tweenSmall();
-	function tweenSmall():void{
-		TweenLite.to(mask, .5, {x:stage.stageWidth / 3, y:stage.stageHeight / 3, width:stage.stageWidth / 3, height:stage.stageHeight / 3, onComplete:tweenBig});
-	}
-	function tweenBig():void{
-		TweenLite.to(mask, .5, {x:0, y:0, width:stage.stageWidth, height:stage.stageHeight, onComplete:tweenSmall});
-	}
+    this.ballContainer.mask = mask;
+    mask.width = stage.stageWidth;
+    mask.height = stage.stageHeight;
+    tweenSmall();
+    function tweenSmall():void{
+        TweenLite.to(mask, .5, {x:stage.stageWidth / 3, y:stage.stageHeight / 3, width:stage.stageWidth / 3, height:stage.stageHeight / 3, onComplete:tweenBig});
+    }
+    function tweenBig():void{
+        TweenLite.to(mask, .5, {x:0, y:0, width:stage.stageWidth, height:stage.stageHeight, onComplete:tweenSmall});
+    }
 }
 {% endhighlight %}
 
