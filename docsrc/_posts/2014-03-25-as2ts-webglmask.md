@@ -1,7 +1,7 @@
 ---
 layout: codeonline
-title:  "Ball实例代码对比"
-permalink: as2ts/webglcode/ball.html
+title:  "Mask实例代码对比"
+permalink: as2ts/webglcode/mask.html
 type: codewebgl
 version: Egret引擎 v1.x
 ---

@@ -76,10 +76,10 @@ private createGameScene():void {
         this.addChild(ball);
         this.ballList.push(ball);
     }
-    stage.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onTouchBegin, this);
-    stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.onTouchMove, this);
-    stage.addEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this);
-    stage.addEventListener(egret.Event.LEAVE_STAGE, this.onTouchEnd, this);
+    stage.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onTouchBegin);
+    stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.onTouchMove);
+    stage.addEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd);
+    stage.addEventListener(egret.Event.LEAVE_STAGE, this.onTouchEnd);
 }
 
 private onTouchBegin(event:egret.TouchEvent):void {
@@ -87,7 +87,7 @@ private onTouchBegin(event:egret.TouchEvent):void {
         var ball:egret.Bitmap = this.ballList[i];
         if (ball.hitTestPoint(event.stageX, event.stageY, true)) {
             this.currentBall = ball;
-            var p:egret.Point = ball.globalToLocal(event.stageX, event.stageY);
+            var p:egret.Point = this.currentBall.globalToLocal(event.stageX, event.stageY);
             this.localX = p.x * this.currentBall.scaleX;
             this.localY = p.y * this.currentBall.scaleY;
             return;
