@@ -22,7 +22,7 @@ version: egret-android-support v1.x
 - 认识以下术语：
   - 编写游戏逻辑需要：Termial、JavaScript、TypeScript、nodejs、npm
   - 打包Android App需要：XML、Java、JRE、C++、ADT-Bundle、Android SDK、Android NDK
-- 尽管本文由部分内容覆盖HelloWorld，但是还是强烈建议在阅读本文之前先阅读HelloWorld，另本文目录结构环境与HelloWorld不一定兼容。
+- 尽管本文由部分内容覆盖<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>，但是还是强烈建议在阅读本文之前先阅读<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>，另本文目录结构环境与<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>不一定兼容。
 
 
 ####0、怎么读？
