@@ -10,22 +10,21 @@ version: egret-android-support v1.x
 **egret-android-support**是Egret打包为原生Android APP的解决方案，你可以使用egret-android-support将你的HTML5游戏打包为APK文件，并提供给用户安装。
 
 具体使用方法如下：
-####-1、高能预警
+####-1、预备知识
 ---
-“Warning，Warning，前方高能预警！！”
 
-如果想顺利完成本教程，必须具备以下计算机操作的基本知识：
+为了顺利完成本教程，请确认您已熟练掌握以下知识：
 
-- 知道**文件**、**文件夹**是什么？会创建，移动、复制、重命名和删除等基本计算机操作知识
-- 知道**终端**、**命令行**、**Shell**其中之一，会启动她，并能执行命令行，完成上一条的相关操作
-- 会从互联网下载文件、会解压压缩文件
-- 认识以下术语：
-  - 编写游戏逻辑需要：Termial、JavaScript、TypeScript、nodejs、npm
-  - 打包Android App需要：XML、Java、JRE、C++、ADT-Bundle、Android SDK、Android NDK
-- 尽管本文由部分内容覆盖<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>，但是还是强烈建议在阅读本文之前先阅读<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>，另本文目录结构环境与<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>不一定兼容。
+- 了解**文件**、**文件夹**的概念，以及创建，移动、复制、重命名和删除等知识。
+- 了解**终端**、**命令行**、**Shell**其中之一，会启动她，并能通过命令行执行的方式完成上一条的相关操作
+- 了解如何下载文件并解压缩文件
+- 了解以下术语：
+  - 编写游戏逻辑需要：JavaScript、TypeScript、nodejs、npm
+  - 打包iOS App需要：XML、Java、JRE、C++、ADT-Bundle、Android SDK、Android NDK
+- 尽管本文由部分内容覆盖<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>，但是还是强烈建议在阅读本文之前先阅读<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>
 
 
-####0、怎么读？
+####0、文档概述
 ---
 本文会完整的展示如何在一个已经安装npm管理包的环境中全新安装Egret核心包、Egret的Android支持包，最终在模拟机中运行Demo的过程。
 
