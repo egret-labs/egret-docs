@@ -10,7 +10,38 @@ version: egret-android-support v1.x
 **egret-ios-support**是Egret打包为原生ios APP的方案，你可以使用egret-ios-support将你的HTML5游戏打包为ipa文件，并提供给用户安装。
 
 具体使用方法如下：
-####0、预备知识
+####-1、高能预警
+---
+“Warning，Warning，前方高能预警！！”
+
+如果想顺利完成本教程，必须具备以下计算机操作的基本知识：
+
+- 知道**文件**、**文件夹**是什么？会创建，移动、复制、重命名和删除等基本计算机操作知识
+- 知道**终端**、**命令行**、**Shell**其中之一，会启动她，并能执行命令行，完成上一条的相关操作
+- 会从互联网下载文件、会解压压缩文件
+- 认识以下术语：
+  - 编写游戏逻辑需要：Termial、JavaScript、TypeScript、nodejs、npm
+  - 打包iOS App需要：Objective-C、C++、Xcode
+- 尽管本文由部分内容覆盖HelloWorld，但是还是强烈建议在阅读本文之前先阅读HelloWorld，另本文目录结构环境与HelloWorld不一定兼容。
+
+
+####0、怎么读？
+---
+本文会完整的展示如何在一个已经安装npm管理包的环境中全新安装Egret核心包、Egret的iOS支持包，最终在模拟机中运行Demo的过程。
+
+本文分为三部分：第一部分为iOS开发环境的安装、第二部分为Egret游戏框架的安装、第三部分创建一个完整iOS App的示例。
+
+###第一部分、iOS开发环境安装
+
+####1、安装iOS开发环境——Xcode
+---
+
+运行App Store，在搜索项查找“Xcode”，下载并安装即可
+
+![img]({{site.baseurl}}/assets/img/egret-ios-support-install-xcode.png)
+
+###第二部分、安装Egret游戏框架
+####2、预备知识
 ---
 
 运行Mac OS X的Terimal应用：在Finder中打开Applications文件夹，再打开Utilities文件夹，找到Termial应用，双击运行。如下图：
@@ -35,10 +66,10 @@ $ mkdir projects
 
 ![img]({{site.baseurl}}/assets/img/egret-ios-support-projects-finder.png)
 
-####1、安装Egret
+####3、安装Egret
 ---
 
-请按照教程<a href="{{site.baseurl}}/post/quitestart/install/instalformac.html" target="_blank">Mac OS X 系统下安装Egret</a>将Egret安装到“labs/”下
+请将[最新的Egret安装包](http://www.egret-labs.org/download/egret-download.html)下载到本地的“labs/”，解压并重命名为“egret-core”
 ，如图：
 
 ![img]({{site.baseurl}}/assets/img/egret-ios-support-egret-core-finder.png)
@@ -54,9 +85,23 @@ $ cd ../projects
 
 ![img]({{site.baseurl}}/assets/img/egret-ios-support-cd-projects.png)
 
-####2、创建一个Egret项目
+####4、下载Egret的iOS支持包
 ---
+#####创建Egret Support文件夹
 
+![img]({{site.baseurl}}/assets/img/egret-ios-support-mkdir-egret-support-ios.png)
+
+#####下载Egret ios支持包
+
+下载<a href="http://www.egret-labs.org/download/egret-ios-packager-download.html" target="_blank">egret-ios-support</a>，将`egret-ios-support`放置在“labs/egret-support/”文件夹下，如下图：
+
+![img]({{site.baseurl}}/assets/img/egret-ios-support-egret-support-ios.png)
+
+
+
+###第三部分、创建一个iOS打包的示例
+####5、创建一个Egret项目
+---
 
 这里创建一个名称为`ACoolHtmlGame`的项目，使用命令如下：
 
@@ -70,33 +115,16 @@ $ egret create ACoolHtmlGame
 
 ![img]({{site.baseurl}}/assets/img/egret-ios-support-egret-create-finder.png)
 
-#如何使用Egret实现一个ios游戏应用
 
-####3、编写你的游戏项目
+
+####6、编写你的游戏项目
 ---
 
 接下来要做的事情就是编写你的游戏项目逻辑。这里我们不进行操作，使用默认的项目来进行演示。
 
-####4、安装ios开发环境——Xcode
+
+####7、创建你的ios项目工程
 ---
-
-运行App Store，在搜索项查找“Xcode”，下载并安装即可
-
-![img]({{site.baseurl}}/assets/img/egret-ios-support-install-xcode.png)
-
-
-####5、创建你的ios项目工程
----
-
-#####创建Egret Support文件夹
-
-![img]({{site.baseurl}}/assets/img/egret-ios-support-mkdir-egret-support-ios.png)
-
-#####下载Egret ios支持包
-
-下载<a href="http://www.egret-labs.org/download/egret-ios-packager-download.html" target="_blank">egret-ios-support</a>，并解压到你喜欢的文件目录，演示中，我们将`egret-ios-support`放置在“labs/egret-support/”文件夹下，如下图：
-
-![img]({{site.baseurl}}/assets/img/egret-ios-support-egret-support-ios.png)
 
 ##### 从你的HTML5游戏创建ios项目工程
 
@@ -135,17 +163,17 @@ labs/-+
       ...
 ```
 
-####6、编译iOS游戏
+####8、编译iOS游戏
 ---
 
-#####6.1 导入项目
+#####8.1 导入项目
 
 打开ACoolIosGame文件夹，双击“ACoolIosGame.xcodeproj”，等待Xcode加载完成
 
 ![img]({{site.baseurl}}/assets/img/egret-ios-support-import-xcode-proj.png)
 
 
-####7、测试项目
+####9、测试项目
 ---
 
 点击Xcode的Run命令，直接进入iOS模拟器运行
@@ -161,7 +189,7 @@ labs/-+
 
 自此，完成了使用Egret实现一个iOS游戏应用的全过程。
 
-####8、项目开发的整体流程
+####10、项目开发的整体流程
 ---
 
 我们推荐的开发方式：在原有的HTML5游戏项目中进行开发，开发测试ok，再编译到iOS平台。下面为大家演示一下流程：
