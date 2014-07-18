@@ -90,8 +90,8 @@ manual:
   - text: 文本
     fenter: false
     element: manualtext
-    url: #
-    des: 编辑努力码字中...
+    url: post/manual/text/createtext.html
+    des: 关于Egret中相关文本的使用方法。
   - text: 动画
     enter: true
     element: manualmoive
