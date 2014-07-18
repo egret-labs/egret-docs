@@ -14,3 +14,19 @@ version: Egret引擎 v1.x
 
 设置字体的属性是 `fontFamily`，我们在设置时，只需要将是用的字体名填写进去即可。
 
+示例代码如下：
+
+{% highlight java linenos %}
+var label:egret.TextField = new egret.TextField();
+this.addChild( label );
+label.width = 70;
+label.height = 70;
+label.fontFamily = "KaiTi";
+label.text = "这是一个文本";
+{% endhighlight %}
+
+编译并运行，效果如下：
+
+![img]({{site.baseurl}}/assets/img/textstylefont1.png)
+
+**需要注意的是字体名称，上面的字体名设置的为 “KaiTi” 实际上就是我们常用的楷体。**
