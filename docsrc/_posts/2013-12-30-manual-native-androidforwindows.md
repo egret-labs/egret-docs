@@ -33,8 +33,7 @@ version: egret-android-support v1.x
 
 ###第一部分、安装Android开发环境
 Android开发环境的运行需要Java运行时环境（JRE）支持，一个常见的Android App的编写只需要Android SDK（需要Java），作为一款追求性能的游戏框架，我们需要更直接更原生的支持来获得最大性能，所以我们还需要Android NDK支持，最后还有一个集成开发环境（IDE），下面为大家演示一下整个安装过程。
-####0、预备知识
----
+
 
 首先打开我们的工作目录"D:\Labs"，该文件夹目前为空文件夹，后续的所有操作会这里执行。如下图：
 
@@ -103,7 +102,7 @@ ADT bundle+NDK整合包名为：
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-adt-ndk.png)
 
 
-接下来关联ndk到eclipse。找到adt-bundle-windows-x86_64-20140624_and_ndk_r9d->eclipse文件夹下eclipse.exe，启动Eclipse，选择“Windows->Preferences...”。如图：
+接下来关联ndk到eclipse。找到`adt-bundle-windows-x86_64-20140624_and_ndk_r9d`->eclipse文件夹下eclipse.exe，启动Eclipse，选择“Windows->Preferences...”。如图：
 
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-ndk_set_0.png)
 
@@ -143,6 +142,9 @@ D:\Labs>mkdir projects
 D:\Labs>cd egret-core
 D:\Labs\egret-core>npm install -g
 D:\Labs\egret-core>cd ../projects
+如下图：
+
+![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-cd-projects.png)
 ```
 
 ####5、安装Egret的Android支持包
@@ -158,9 +160,7 @@ D:\Labs\egret-core>cd ../projects
 
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-egret-support-finder.png)
 
-如下图：
 
-![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-cd-projects.png)
 
 ###第三部分、创建一个Android打包示例
 
@@ -169,7 +169,7 @@ D:\Labs\egret-core>cd ../projects
 ---
 
 
-这里创建一个名称为`ACoolHtmlGame`的项目，首先进入我们的项目管理文件夹“labs/projects/”下，使用命令如下：
+这里创建一个名称为`ACoolHtmlGame`的项目，注意我们的当前目录为“labs/projects/”下，使用命令如下：
 
 ```
 D:\Labs\projects> egret create ACoolHtmlGame
@@ -189,14 +189,11 @@ D:\Labs\projects> egret create ACoolHtmlGame
 
 
 
-
-
 ####8、创建你的Android项目工程
 ---
 
 
-
-##### 从你的HTML5游戏创建android项目工程
+###### 从你的HTML5游戏创建android项目工程
 
 回到我们的游戏工程文件夹“labs/projects/”下，我们通过一个新的命令来创建适用于Android的项目，该命令创建项目时，需要制定原有HTML5工程和你的egret-android-support路径。命令如下：
 

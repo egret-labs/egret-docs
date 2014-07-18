@@ -33,8 +33,7 @@ version: egret-android-support v1.x
 
 ###第一部分、安装Android开发环境
 Android开发环境的运行需要Java运行时环境（JRE）支持，一个常见的Android App的编写只需要Android SDK（需要Java），作为一款追求性能的游戏框架，我们需要更直接更原生的支持来获得最大性能，所以我们还需要Android NDK支持，最后还有一个集成开发环境（IDE），下面为大家演示一下整个安装过程。
-####0、预备知识
----
+
 
 运行Mac OS X的Terimal应用：在Finder中打开Applications文件夹，再打开Utilities文件夹，找到Termial应用，双击运行。如下图：
 
@@ -120,7 +119,7 @@ ADT bundle+NDK整合包名为：adt-bundle-mac-x86_64-20140624-ndk-r9d.zip
 
 为方便管理游戏项目，首先我们建立一个projects文件夹用于集中存放游戏项目，运行
 
-`mkdir projects`
+```mkdir projects```
 
 如下图：
 
