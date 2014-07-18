@@ -14,7 +14,7 @@ version: Egret引擎 v1.x
 
 和前面的教程一样，我们首相在终端中定位我们的项目，使用`cd`命令。
 
-然后我们执行一个简单的额命令来启动Egret的HTTP服务器，命令如下：
+然后我们执行一个简单的命令来启动Egret的HTTP服务器，命令如下：
 
 `egret startserver HelloWorld`
 
