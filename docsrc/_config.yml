@@ -127,7 +127,7 @@ manual:
     des: 一些关于Egret引擎的高级知识，涉及到引擎的架构和一些模块的设计思想。同时还包含一些高级应用文档。
   - text: 网络
     element: manualnetwork
-    url: #
+    url: post/manual/net/createconnect.html
     des: 编辑努力码字中...
   - text: 调试
     fenter: false
