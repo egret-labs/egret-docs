@@ -81,8 +81,8 @@ manual:
   - text: 位图纹理
     enter: true
     element: manualtexture
-    url: #
-    des: 编辑努力码字中...
+    url: post/manual/bitmap/createbitmap.html
+    des: 位图和纹理相关的使用方法
   - text: 事件捕获
     element: manualevent
     url: #
