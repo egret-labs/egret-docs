@@ -128,7 +128,7 @@ manual:
   - text: 网络
     element: manualnetwork
     url: post/manual/net/createconnect.html
-    des: 编辑努力码字中...
+    des: egret中相关的网络操作。例如，加载数据，服务器通讯等。
   - text: 调试
     fenter: false
     element: manualdebug
