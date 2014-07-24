@@ -142,8 +142,8 @@ manual:
   - text: 矢量绘图
     fenter: false
     element: manualgraphics
-    url: #
-    des: 编辑努力码字中...
+    url: post/manual/graphics/drawrect.html
+    des: 关于绘图API的使用方法与技巧。
 
 demo:
   - text: 基础
