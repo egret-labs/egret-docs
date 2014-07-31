@@ -58,7 +58,7 @@ label.textAlign = egret.HorizontalAlign.RIGHT;
 
 编译并运行，效果如下：
 
-![img]({{site.baseurl}}/assets/img/textlayout1.png)
+![img]({{site.baseurl}}/assets/img/textlayout2.png)
 
 我们可以看到此时文本以右对齐方式排列。
 
