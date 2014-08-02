@@ -17,3 +17,30 @@ version: Egret引擎 v1.x
 
 
 ![img]({{site.baseurl}}/assets/img/tween1.gif)
+
+具体代码如下：
+
+{% highlight java linenos %}
+class TweenTest extends egret.DisplayObjectContainer
+{
+    public constructor()
+    {
+        super();
+        this.addEventListener(egret.Event.ADDED_TO_STAGE,this.onAddToStage,this);
+    }
+
+    private onAddToStage(event:egret.Event)
+    {
+        var shp:egret.Shape = new egret.Shape();
+        shp.graphics.beginFill( 0x00ff00 );
+        shp.graphics.drawRect( 0, 0, 100, 100 );
+        shp.graphics.endFill();
+        shp.x = 50;
+        this.addChild( shp );
+
+        var tw = egret.Tween.get( shp );
+        tw.to( {x:150}, 1000 );
+    }
+}
+{% endhighlight %}
+
