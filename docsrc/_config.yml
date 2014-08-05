@@ -87,7 +87,7 @@ manual:
     des: 介绍了Egret中的事件机制以及详细的使用方法。
     enter: true
 
-  - text: 资源加载
+  - text: RES资源加载
     element: manualloader
     url: post/manual/loader/res.html
     des: 介绍Egret引擎中相关资源加载方面的内容。
