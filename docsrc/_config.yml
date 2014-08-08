@@ -208,7 +208,7 @@ tools:
 #    url: post/tools/egrettools/conversiontool.html
   - text: 官方插件
     element: egretplugin
-    des: 编辑努力码字中...
+    des: Comming Soon...
 #    url: post/tools/egretplugin/index.html
   - text: 代码编辑器
     fenter: false
