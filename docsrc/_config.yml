@@ -190,11 +190,12 @@ demo:
 #    url: demo/text.html
   - text: 动画
     element: demomovie
+
 #    url: demo/movie.html
-  - text: GUI
+#  - text: GUI
     fenter: false
-    element: demogui
-    des: 编辑努力码字中...
+#    element: demogui
+ #   des: 编辑努力码字中...
 #    url: demo/gui.html
 #  - text: 高级
 #    fenter: false
