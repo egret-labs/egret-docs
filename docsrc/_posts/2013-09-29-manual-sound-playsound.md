@@ -14,16 +14,10 @@ version: Egret引擎 v1.x
 准备好音频资源后，我们创建一个 `Sound` 对象，用来操作我们的音频资源。具体创建代码如下：
 
 {% highlight java linenos %}
-var _curSound:egret.Sound = new egret.Sound();
+var _curSound:egret.Sound = RES.getRes("sound");
 {% endhighlight %}
 
-这行代码中，我们创建了一个类型为 `Sound` 的对象 `_curSound` 。创建Sound对象后，我们将已加载的音频资源和当前的Sound对象进行关联，具体代码如下：
-
-{% highlight java linenos %}
-_curSound.audio = RES.getRes("sound");
-{% endhighlight %}
-
-Sound类中有一个名称为 `audio` 的属性，该属性就是用来关联我们的音频资源。
+这行代码中，我们创建了一个类型为 `Sound` 的对象 `_curSound` 。
 
 完成上面步骤后，我们就可以执行音频播放工作了，具体播放代码如下：
 
