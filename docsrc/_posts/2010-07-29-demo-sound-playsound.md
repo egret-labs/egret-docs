@@ -36,8 +36,7 @@ class SoundTest extends egret.DisplayObjectContainer
      * preload资源组加载完成
      */
     private onResourceLoadComplete(event:RES.ResourceEvent):void {
-        var sound:egret.Sound = new egret.Sound();
-        sound.audio = RES.getRes("sound");
+        var sound:egret.Sound = RES.getRes("sound");
         sound.play();
     }
 }
