@@ -138,10 +138,10 @@ manual:
     des: egret中相关的网络操作。例如，加载数据，服务器通讯等。
     enter: true
 
-  - text: 调试
+  - text: 开发工具配置
     element: manualdebug
     url: post/manual/debug/chromedebug.html
-    des: 详细介绍了Egret可以使用的调试工具与调试技巧。
+    des: 详细介绍了Egret可以使用的开发工具与相关工具的配置方法。
 
   - text: 移动APP打包
     element: manualnative
