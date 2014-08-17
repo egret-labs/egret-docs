@@ -291,7 +291,7 @@ labs/-+
  
 `egret create ACoolHtmlGame`
 
-2.创建对应的iOS游戏：
+2.创建对应的Android游戏：
  
 `egret create_app ACoolAndroidGame -f ACoolHtmlGame -t ../egret-support/egret-android-support`
 

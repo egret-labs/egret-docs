@@ -20,7 +20,7 @@ version: Egret引擎 v1.x
 
 Windows：**设置**——>**工具**——>**JavaScript控制台**
 
-Mac OS X：**试图**——>**开发者**——>**JavaScript控制台**
+Mac OS X：**视图**——>**开发者**——>**JavaScript控制台**
 
 效果如图：
 

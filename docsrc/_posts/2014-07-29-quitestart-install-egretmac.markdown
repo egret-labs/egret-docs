@@ -13,11 +13,10 @@ Egret基于<a href="http://www.typescriptlang.org/" target="_blank">TypeScript</
 需要安装的软件如下：
 
 1. Node.js
-2. TypeScript
-3. TypeScript代码编辑器
-4. HTTP服务器（可选）
-5. Chrome（可选）
-6. Egret
+2. TypeScript代码编辑器
+3. HTTP服务器（可选）
+4. Chrome（可选）
+5. Egret
 
 这篇文档中，我们主要介绍在Mac环境中安装Egret。其安装步骤如下。
 
@@ -88,30 +87,10 @@ Node.js的安装方法非常简单，我们可以访问<a href="http://nodejs.or
 * 部分MacOS 安装nodejs的pkg安装包时会显示安装失败，可以通过下载nodejs源代码手动编译解决。
 
 
-
-###2.安装TypeScript
+###2.安装TypeScript代码编辑器
 ---
 
-####2.1安装TypeScript
-当 node.js安装成功后，`node` 和 `npm` 命令就可以使用了。TypeScript的安装可视直接使用`npm`命令直接安装。详细的安装方法可以参考<a href="http://www.typescriptlang.org/" target="_blank">TypeScript官网</a>。
-
-在终端中输入如下命令：`npm install -g typescript`
->`npm install`命令的作用是在开发者的系统中安装指定的Node.js库，`typescript`是库的名称，`-g`代表将这个库安装到全局路径
-
-**MacOS用户如果安装失败，请使用 `sudo npm install -g typescript` 命令确保权限**
-
->如果由于网络问题导致的安装速度很慢，请使用 `npm install -g typescript --registry=http://r.cnpmjs.org` 命令，访问国内镜像版进行安装。
-
-####2.2验证TypeScript
-
-安装成功后，执行 `tsc` 命令，您应该看见如下界面
-
-![Nodejs install]({{site.baseurl}}/assets/img/nodejsinstall12.png)
-
-###3.安装TypeScript代码编辑器
----
-
-####3.1选择一个合适的代码编辑器
+####2.1选择一个合适的代码编辑器
 
 Egret可以使用任何支持脚本语言的代码编辑器，包括：
 
@@ -121,9 +100,9 @@ Egret可以使用任何支持脚本语言的代码编辑器，包括：
 
 >详细的编辑器安装方法以及插件配置方法，可参考文档中工具相关章节。
 
-###4.安装一个HTTP服务器
+###3.安装一个HTTP服务器
 ---
-#####4.1选择一个合适的HTTP服务器
+#####3.1选择一个合适的HTTP服务器
 Mac用户可以使用系统自带的服务器，Mac用户推荐采用<a href="https://www.apachefriends.org/download.html" target="_blank">XMAPP</a>
 
 用户也可以跳过这个步骤，使用Egret内置的基于Node.js的简单HTTP服务器。但为了保证更好的开发体验，Egret建议用户安装上述较为成熟的HTTP服务器
@@ -131,7 +110,7 @@ Mac用户可以使用系统自带的服务器，Mac用户推荐采用<a href="ht
 >具体服务器软件安装，大家可以参考文档中工具相关章节。
 
 
-###5.安装Chrome浏览器
+###4.安装Chrome浏览器
 ---
 
 Egret可以运行在绝大多数的现代浏览器上，但是 Egret 目前推荐开发者使用 Chrome 作为主要的开发和调试环境。
@@ -142,9 +121,9 @@ Egret可以运行在绝大多数的现代浏览器上，但是 Egret 目前推�
 
 **当进行好上述设置之后，只要JavaScript控制台处于打开状态，就不会有浏览器缓存，方便调试。**
 
-###6.下载并安装 Egret
+###5.下载并安装 Egret
 ---
-####6.1从官网中下载Egret
+####5.1从官网中下载Egret
 
 Egret提供两个下载渠道，一个是<a href="http://www.egret-labs.org/download/index.html" target="_blank">Egret官方下载</a>，另外一个是<a href="https://github.com/egret-labs/egret-core" target="_blank">Egret Github下载</a>。
 
@@ -154,7 +133,7 @@ Egret提供两个下载渠道，一个是<a href="http://www.egret-labs.org/down
 
 ![Nodejs install]({{site.baseurl}}/assets/img/nodejsinstall13.png)
 
-####6.2安装Egret
+####5.2安装Egret
 
 将下载后的Egret引擎压缩包解压到指定目录，该目录可以为任意磁盘中目录。在**终端**中敲入命令进入解压后的目录。
 
@@ -174,7 +153,7 @@ Egret提供两个下载渠道，一个是<a href="http://www.egret-labs.org/down
 
 >3. 系统当前用户是否有管理员权限,如果不是管理员权限，请执行`sudo su`命令。
 
-####6.3Egret工具验证
+####5.3Egret工具验证
 ---
 
 安装完成后，我们执行`egret`命令，来查看当前Egret是否安装成功。如安装成功，应出现如下图所示。

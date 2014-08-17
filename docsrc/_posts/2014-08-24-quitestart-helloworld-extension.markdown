@@ -85,7 +85,7 @@ private onAddToStage(event:egret.Event)
 
 ####打包测试
 ---
-这一步在<a href="{{site.baseurl}}/post/quitestart/helloworld/buildpro.html" target="_blank">编译项目</a>和<a href="{{site.baseurl}}/quitestart/helloworld/runpro.html" target="_blank">运行项目</a>已经描述过具体方法，再此不在赘述。
+这一步在<a href="{{site.baseurl}}/post/quitestart/helloworld/buildpro.html" target="_blank">编译项目</a>和<a href="{{site.baseurl}}/post/quitestart/helloworld/runpro.html" target="_blank">运行项目</a>已经描述过具体方法，再此不在赘述。
 
 ####性能面板
 ---

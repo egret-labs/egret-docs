@@ -9,7 +9,7 @@ version: Egret引擎 v1.x
 
 **适应平台：**Windows、Mac OS X
 
-**插件下载地址：**<a href="http://bbs.egret-labs.org/forum.php?mod=attachment&aid=MTAxfDQxZDNkNjQ0fDE0MDUzMjM4NDl8NjF8MTI3" target="_blank">点击进入官方下载地址</a>
+**插件下载地址：**<a href="http://www.egret-labs.org/down/egret-flash-plugin.zip" target="_blank">点击进入官方下载地址</a>
 
 MovieClip插件是方便开发者使用Flash Pro的生成Sprite表功能导出影片剪辑为Egret可识别的json文件和png文件。
 

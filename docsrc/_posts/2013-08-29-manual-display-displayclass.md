@@ -17,5 +17,5 @@ DisplayObjectContainer显示对象容器的父类也是DisplayObject。
 
 我们在实际操作中把概念再次简化，可以归纳为两条规则：
 
-1. 继承自DisplayObject的类都属于非容器。
+1. 直接继承自DisplayObject的类都属于非容器。
 2. 继承自DisplayObjectContainer的类都属于容器。
