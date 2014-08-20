@@ -40,8 +40,7 @@ class SoundStopTest extends egret.DisplayObjectContainer
     private onResourceLoadComplete(event:RES.ResourceEvent):void {
         this.drawStopBtn();
 
-        this.sound = new egret.Sound();
-        this.sound.audio = RES.getRes("sound");
+        this.sound = new RES.getRes("sound");
         this.sound.play();
     }
 

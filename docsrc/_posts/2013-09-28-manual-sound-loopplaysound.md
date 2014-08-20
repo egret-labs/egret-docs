@@ -26,8 +26,7 @@ private  sound:egret.Sound;
 //soundload资源组加载完成
 private onResourceLoadComplete(event:RES.ResourceEvent):void 
 {
-	this.sound = new egret.Sound();
-	this.sound.audio = RES.getRes("sound");
+	this.sound = RES.getRes("sound");
 	this.sound.play();
 }
 {% endhighlight %}
