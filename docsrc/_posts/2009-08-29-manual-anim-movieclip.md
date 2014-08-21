@@ -15,11 +15,11 @@ MovieClip又称之为“影片剪辑“，是Egret中提供的一种动画解决
 ####如何制作动画
 ---
 
-Egret中所使用的动画资格格式可以从Flash软甲中制作，然后导出为能够被Egret使用的格式。
+Egret中所使用的动画资源格式可以从Flash软件中制作，然后导出为能够被Egret使用的格式。
 
 我们为Flash提供了一个插件，这个插件会帮助你将Flash中的动画导出为能够被Egret播放的动画文件。具体插件安装和使用方法请查看
 
-**[MovieClip Plug-in]({{site.baseurl}}/post/manual/displaycon/movieclip.html)**
+**[MovieClip Plug-in]({{site.baseurl}}/post/tools/othertools/movieclipplugin.html)**
 
 ####如何创建一个MovieClip
 ---
