@@ -17,6 +17,7 @@ Egret基于<a href="http://www.typescriptlang.org/" target="_blank">TypeScript</
 3. HTTP服务器（可选）
 4. Chrome（可选）
 5. Egret
+6. Java
 
 这篇文档中，我们主要介绍在Mac环境中安装Egret。其安装步骤如下。
 
@@ -159,5 +160,26 @@ Egret提供两个下载渠道，一个是<a href="http://www.egret-labs.org/down
 安装完成后，我们执行`egret`命令，来查看当前Egret是否安装成功。如安装成功，应出现如下图所示。
 
 ![Nodejs install]({{site.baseurl}}/assets/img/nodejsinstall14.png)
+
+###6 Java
+在Egret项目的发布阶段需要使用Java 7以上环境，在打包成为Android APP时也会使用到。以下为大家演示Java的下载与安装
+####6.1下载
+a. [Java官网的JDK7下载地址](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
+![jdk7](java00-jdk7-download-html)
+b. [百度镜像]()
+####6.2 安装
+a. 确认一下
+![确认一下](java06-jdk7-ok)
+b. 双击挂载安装包
+![双击挂载安装包](java01-jdk7-mount)
+![挂载中](java02-jdk7-mount)
+c. 双击图标进行安装
+![双击图标进行安装](java03-jdk7-install)
+d. 一路Next
+![一路Next](java04-jdk7-next)
+e. 注意授权
+![注意授权](java05-jdk7-password)
+f. 确认一下
+![确认一下](java06-jdk7-ok)
 
 如果安装失败，请在我们的<a href="http://bbs.egret-labs.org/" target="_blank">开发者社区</a>中寻求帮助。
