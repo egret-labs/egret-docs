@@ -20,8 +20,8 @@ version: egret-android-support v1.x
 - 了解如何下载文件并解压缩文件
 - 了解以下术语：
   - 编写游戏逻辑需要：JavaScript、TypeScript、nodejs、npm
-  - 打包Android App需要：XML、Java、JRE、C++、ADT-Bundle、Android SDK、Android NDK
-- 尽管本文由部分内容覆盖<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>，但是还是强烈建议在阅读本文之前先阅读<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>
+  - 打包Android App需要：XML、Java、JRE、ADT-Bundle、Android SDK
+- 尽管本文由部分内容覆盖<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>，但是阅读本文之前请先阅读<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>
 
 
 ####0、文档概述
@@ -31,57 +31,19 @@ version: egret-android-support v1.x
 本文分为三部分：第一部分为Android开发环境的安装、第二部分为Egret游戏框架的安装、第三部分创建一个完整Android App的示例。
 
 ###第一部分、安装Android开发环境
-Android开发环境的运行需要Java运行时环境（JRE）支持，一个常见的Android App的编写只需要Android SDK（需要Java），作为一款追求性能的游戏框架，我们需要更直接更原生的支持来获得最大性能，所以我们还需要Android NDK支持，最后还有一个集成开发环境（IDE），下面为大家演示一下整个安装过程。
+Android开发环境的运行需要Java运行时环境（JRE）支持，一个常见的Android App的编写只需要Android SDK（需要Java)，最后还有一个集成开发环境（IDE），下面为大家演示一下整个安装过程。
 
+运行Mac OS X的Terimal应用：
 
-运行Mac OS X的Terimal应用：在Finder中打开Applications文件夹，再打开Utilities文件夹，找到Termial应用，双击运行。如下图：
-
+a. 常规方法：在Finder中打开Applications文件夹，再打开Utilities文件夹，找到Termial应用，双击运行。如下图：
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-termial.png)
 
+b. （**推荐**）使用Spotlight：使用"Command + 空格"唤出Spotlight，在其中输入"Terminal"，回车即可启动，如图，输入到“ter”时，已经找到terminal
+![egret-android-support](spotlight-terminal)
 
 
 ####1 安装Java运行时环境
-
-Java运行时是Android开发依赖，你应先确定系统中是否已经安装Java运行时，具体操作过程如下：
-
-确认你的系统里是否安装jre，请运行以下命令
-
-{% highlight java %}
-java -version
-{% endhighlight %}
-
-如果出现下图的提示，说明系统已经安装jre，具体版本号可能有差异。请跳转至安装ADT Bundle，否则，请继续。
-
-![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-check-jre-mac.png)
-
-
-1. 下载<a href="http://support.apple.com/kb/dl1572" target="_blank">适用于OS X的Java</a>, 如下图：
-
-![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-java-mac.png)
-
-2. 安装jre包
-
-a. 找到jre安装包，如下图：
-
-![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-java-package-mac.png)
-
-b. 双击jre包，系统会自动挂载安装包，此时会打开pkg文件，如下图：
-
-![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-open-dmg.png)
-
-c. 双击JavaForOSX.pkg，系统自动进入包安装过程，如下图：
-
-![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-install-pkg.png)
-
-d. 之后按安装引导完成安装即可
-
-e. 安装完毕后，请运行以下命令
-
-{% highlight java %}
-$ java -version
-{% endhighlight %}
-
-来确认安装是否正确。
+请确保Java被正确安装，请参考Mac中安装Egret第6节
 
 ####2 安装Android开发工具包
 因为Android开发工具包是绿色软件，所以我们直接放置在我们的工作目录“labs/”中，工作目录为空文件夹，如下图：
@@ -90,27 +52,27 @@ $ java -version
 
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-labs.png)
 
-我们需要两个工具ADT bundle（这个是Google整合的Android SDK和Eclipse IDE的整合包）和NDK。以下提供了两种下载安装方式：
 
 a） 从官方进行下载
 
 <a href="http://developer.android.com/sdk/index.html" target="_blank">ADT bundle官方下载</a>
 
-<a href="http://developer.android.com/tools/sdk/ndk/index.html" target="_blank">Android NDK官方下载</a>
-
-b） （**推荐**）ADT bundle+NDK整合包
+b） （**推荐**）ADT bundle
 
 <a href="http://pan.baidu.com/s/1bnaSPjT#dir/path=%2Fandroid%20tools%2Fadt-bundle-mac" target="_blank">百度云镜像</a>
 
-ADT bundle+NDK整合包名为：adt-bundle-mac-x86_64-20140624-ndk-r9d.zip
+ADT bundle整合包名为：adt-bundle-mac-x86_64-20140624.zip
 
 下载完毕后解压到“labs/”目录下，如下图：
 
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-adt-ndk.png)
 
-接下来关联ndk到eclipse。双击adt文件夹中的eclipse中的Eclipse应用，启动Eclipse，选择“Eclipse->Preferences...”，展开**“Android”**标签，然后选择“NDK”子标签，在“NDK Location”中填写NDK的目录，并确认。如下图：
+#####关于另外的安装Android开发工具
+a. **Intellij IDEA**。 Intellij IDEA 现在支持两种编译模式Ant(ADT的模式)和Gradle(Android Studio的模式)，所以IDEA直接无缝的导入Eclipse项目，再ADT停止更新后，可以完美的使用Gradle编译方式，所以更推荐Intellij IDEA。
 
-![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-link-ndk-mac.png)
+b. **Android Studio**。因为Android Studio只使用新的Gradle模式，因为Gradle要求实时联网编译，暂时不太建议一般用户试用。
+
+
 
 ###第二部分、安装Egret游戏框架
 ####3、预备知识
@@ -246,18 +208,19 @@ labs/-+
 
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-choose-project.png)
 
-#####9.4 载入项目并编译
+#####9.4 载入项目并编译--Eclipse
 
 载入项目成功后，Eclipse会自动执行编译工作。等待Eclipse编译完成后进行下一步，编译完成后，控制台会提示**“Builde Finished”**。
 
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-build-project.png)
+
 
 ####10、测试项目
 ---
 
 #####10.1 选择测试环境
 
-我们推荐大家使用真机进行调试，右击项目，选择“Debug As” -> "1 Android Application"
+因为模拟器不能对Open GL ES很好的实现，所以我们只使用真机进行调试，右击项目，选择“Debug As” -> "1 Android Application"
 
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-debug-as.png)
 

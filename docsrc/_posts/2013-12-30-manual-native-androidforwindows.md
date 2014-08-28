@@ -20,7 +20,7 @@ version: egret-android-support v1.x
 - 了解如何下载文件并解压缩文件
 - 了解以下术语：
   - 编写游戏逻辑需要：JavaScript、TypeScript、nodejs、npm
-  - 打包Android App需要：XML、Java、JRE、C++、ADT-Bundle、Android SDK、Android NDK
+  - 打包Android App需要：XML、Java、JRE、ADT-Bundle、Android SDK
 - 尽管本文由部分内容覆盖<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>，但是还是强烈建议在阅读本文之前先阅读<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>
 
 
@@ -31,7 +31,7 @@ version: egret-android-support v1.x
 本文分为三部分：第一部分为Android开发环境的安装、第二部分为Egret游戏框架的安装、第三部分创建一个完整Android App的示例。
 
 ###第一部分、安装Android开发环境
-Android开发环境的运行需要Java运行时环境（JRE）支持，一个常见的Android App的编写只需要Android SDK（需要Java），作为一款追求性能的游戏框架，我们需要更直接更原生的支持来获得最大性能，所以我们还需要Android NDK支持，最后还有一个集成开发环境（IDE），下面为大家演示一下整个安装过程。
+Android开发环境的运行需要Java运行时环境（JRE）支持，一个常见的Android App的编写只需要Android SDK（需要Java），最后还有一个集成开发环境（IDE），下面为大家演示一下整个安装过程。
 
 
 首先打开我们的工作目录"D:\Labs"，该文件夹目前为空文件夹，后续的所有操作会这里执行。如下图：
@@ -49,30 +49,7 @@ Android开发环境的运行需要Java运行时环境（JRE）支持，一个常
 
 
 ####1、安装Java运行时
----
-首先确定系统中是否已经安装JDK，具体操作过程如下：
-
-打开命令行窗口。执行以下命令
-
-```
-java -version
-``` 
-如果出现下图的提示，说明系统已经安装JDK，具体版本号可能有差异。请跳转至安装ADT Bundle，否则，请继续。
-
-![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-check_jkd_win.png)
-
-
-1）<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">进官网下载JDK</a> 如下图：
-
-![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-jdk_win.png)
-
-2） 下载并安装好JDK以后。再次执行如下命令，检测是否安装正确。
-
-```
-java -version
-```
-
-3） 如果执行以上命令。仍然看不到JDK的信息。则需要手动配置JDK的环境变量。<a href="http://wenku.baidu.com/view/59375e6da98271fe910ef946.html?re=view" target="_blank">点我查看JDK配置教程</a>。
+请确保Java被正确安装，请参考[Windows中安装Egret第6节]()
 
 
 ####2 安装Android开发工具包
@@ -90,7 +67,7 @@ a） 从官方进行下载
 b） (**推荐**)ADT bundle+NDK整合包
 -<a href="http://pan.baidu.com/s/1bnaSPjT#dir/path=%2Fandroid%20tools%2Fadt-bundle-windows" target="_blank">百度云镜像。</a>
 
-ADT bundle+NDK整合包名为：
+ADT bundle整合包名为：
 
 1、对应32位操作系统的：`adt-bundle-windows-x86-20140624_and_ndk_r9d.zip`；
 
@@ -101,16 +78,10 @@ ADT bundle+NDK整合包名为：
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-adt-ndk.png)
 
 
-接下来关联ndk到eclipse。找到`adt-bundle-windows-x86_64-20140624_and_ndk_r9d`->eclipse文件夹下eclipse.exe，启动Eclipse，选择“Windows->Preferences...”。如图：
+#####关于另外的安装Android开发工具
+a. **Intellij IDEA**。 Intellij IDEA 现在支持两种编译模式Ant(ADT的模式)和Gradle(Android Studio的模式)，所以IDEA直接无缝的导入Eclipse项目，再ADT停止更新后，可以完美的使用Gradle编译方式，所以更推荐Intellij IDEA。
 
-![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-ndk_set_0.png)
-
-展开**“Android”**标签，然后选择“NDK”子标签，点击Browse...然后选取NDK的目录。并Apply,确认。如下图：
-
-![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-ndk_set_1.png)
-
-![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-ndk_set_2.png)
-
+b. **Android Studio**。因为Android Studio只使用新的Gradle模式，因为Gradle要求实时联网编译，暂时不太建议一般用户试用。
 
 ###第二部分、安装Egret游戏框架
 ####3、预备知识
