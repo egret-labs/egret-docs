@@ -161,25 +161,45 @@ Egret提供两个下载渠道，一个是<a href="http://www.egret-labs.org/down
 
 ![Nodejs install]({{site.baseurl}}/assets/img/nodejsinstall14.png)
 
-###6 Java
-在Egret项目的发布阶段需要使用Java 7以上环境，在打包成为Android APP时也会使用到。以下为大家演示Java的下载与安装
+###6.Java
+---
+
+在Egret项目的发布阶段需要使用Java 7以上环境，在打包成为Android APP时也会使用到。以下为大家演示Java的下载与安装。
+
 ####6.1下载
-a. [Java官网的JDK7下载地址](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
-![jdk7](java00-jdk7-download-html)
-b. [百度镜像]()
+a.<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" target="_blank">Java官网的JDK7下载地址</a>
+
+![jdk7]({{site.baseurl}}/assets/img/java00-jdk7-download-html.png)
+
+b.<a href="http://pan.baidu.com/s/1bnaSPjT#dir/path=%2Fandroid%20tools%2FJAVA" target="_blank">百度镜像</a>
+
 ####6.2 安装
-a. 确认一下
-![确认一下](java06-jdk7-ok)
-b. 双击挂载安装包
-![双击挂载安装包](java01-jdk7-mount)
-![挂载中](java02-jdk7-mount)
-c. 双击图标进行安装
-![双击图标进行安装](java03-jdk7-install)
-d. 一路Next
-![一路Next](java04-jdk7-next)
-e. 注意授权
-![注意授权](java05-jdk7-password)
-f. 确认一下
-![确认一下](java06-jdk7-ok)
+
+
+a.确认一下，JAVA版本必须为7以上
+
+![确认一下]({{site.baseurl}}/assets/img/java06-jdk7-ok.png)
+
+b.双击挂载安装包
+
+![双击挂载安装包]({{site.baseurl}}/assets/img/java01-jdk7-package.png)
+
+![挂载中]({{site.baseurl}}/assets/img/java02-jdk7-mount.png)
+
+c.双击图标进行安装
+
+![双击图标进行安装]({{site.baseurl}}/assets/img/java03-jdk7-install.png)
+
+d.一路Next
+
+![一路Next]({{site.baseurl}}/assets/img/java04-jdk7-next.png)
+
+e.注意授权
+
+![注意授权]({{site.baseurl}}/assets/img/java05-jdk7-password.png)
+
+f.确认一下
+
+![确认一下]({{site.baseurl}}/assets/img/java06-jdk7-ok.png)
 
 如果安装失败，请在我们的<a href="http://bbs.egret-labs.org/" target="_blank">开发者社区</a>中寻求帮助。
