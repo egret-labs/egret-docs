@@ -39,7 +39,8 @@ a. 常规方法：在Finder中打开Applications文件夹，再打开Utilities�
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-termial.png)
 
 b. （**推荐**）使用Spotlight：使用"Command + 空格"唤出Spotlight，在其中输入"Terminal"，回车即可启动，如图，输入到“ter”时，已经找到terminal
-![egret-android-support](spotlight-terminal)
+
+![egret-android-support]({{site.baseurl}}/assets/img/spotlight-terminal.png)
 
 
 ####1 安装Java运行时环境
@@ -210,7 +211,7 @@ labs/-+
 
 #####9.4 载入项目并编译--Eclipse
 
-载入项目成功后，Eclipse会自动执行编译工作。等待Eclipse编译完成后进行下一步，编译完成后，控制台会提示**“Builde Finished”**。
+载入项目成功后，等待Eclipse解析项目。
 
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-build-project.png)
 

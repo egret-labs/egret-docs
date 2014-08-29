@@ -49,7 +49,7 @@ Android开发环境的运行需要Java运行时环境（JRE）支持，一个常
 
 
 ####1、安装Java运行时
-请确保Java被正确安装，请参考[Windows中安装Egret第6节]()
+请确保Java被正确安装，请参考[Windows中安装Egret第6节]({{site.baseurl}}/post/quitestart/install/instalformac.html)
 
 
 ####2 安装Android开发工具包
@@ -225,13 +225,13 @@ labs/-+
 
 #####9.4 载入项目并编译
 
-载入项目成功后，Eclipse会自动执行编译工作。等待Eclipse编译完成后进行下一步，编译完成后，控制台会提示**“Builde Finished”**。
+载入项目成功后，等待Eclipse解析项目。
 
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-build-project.png)
 
 #####9.5 手动编译
 
-如果Eclipse没有自动编译。可以选中项目。然后选择菜单"Project"->"Build Project"
+右键点击项目，在弹出的菜单中选择"Build Project"，执行项目编译。
 
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-build_project.png)
 
