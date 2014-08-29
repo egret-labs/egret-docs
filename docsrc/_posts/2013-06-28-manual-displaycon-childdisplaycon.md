@@ -59,7 +59,7 @@ this.addChild( spr2 );
 
 `容器.addChildAt( 显示对象, 深度值 )`
 
-我们来看一个具体的演示代码，我们随机绘制四个颜色不同的正方形，然它们依次叠加排列，然后新建一个显示对象，并且放到深度为1的位置。
+我们来看一个具体的演示代码，我们随机绘制四个颜色不同的正方形，将它们依次叠加排列，然后新建一个显示对象，并且放到深度为1的位置。
 
 {% highlight java linenos %}
 var sprcon:egret.Sprite = new egret.Sprite();
