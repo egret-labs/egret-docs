@@ -56,22 +56,17 @@ Android开发环境的运行需要Java运行时环境（JRE）支持，一个常
 ---
 因为Android开发工具包是绿色软件，所以我们直接放置在我们的工作目录“D:\Labs\”中，工作目录为空文件夹，如下图：
 
-我们需要两个工具ADT bundle和NDK。以下提供了两种下载安装方式：
 
-a） 从官方进行下载
+a） <a href="http://developer.android.com/sdk/index.html" target="_blank">ADT bundle官方下载</a>
 
-<a href="http://developer.android.com/sdk/index.html" target="_blank">ADT bundle官方下载</a>
 
-<a href="http://developer.android.com/tools/sdk/ndk/index.html" target="_blank">Android NDK官方下载</a>
-
-b） (**推荐**)ADT bundle+NDK整合包
--<a href="http://pan.baidu.com/s/1bnaSPjT#dir/path=%2Fandroid%20tools%2Fadt-bundle-windows" target="_blank">百度云镜像。</a>
+b） (**推荐**)<a href="http://pan.baidu.com/s/1bnaSPjT#dir/path=%2Fandroid%20tools%2Fadt-bundle-windows" target="_blank">ADT bundle百度云镜像</a>
 
 ADT bundle整合包名为：
 
-1、对应32位操作系统的：`adt-bundle-windows-x86-20140624_and_ndk_r9d.zip`；
+1、对应32位操作系统的：`adt-bundle-windows-x86-20140624.zip`；
 
-2、对应64位操作系统的：`adt-bundle-windows-x86_64-20140624_and_ndk_r9d.zip`
+2、对应64位操作系统的：`adt-bundle-windows-x86_64-20140624.zip`
 
 以64位为例。下载完毕后解压到“D:\Labs\”目录下，如下图：
 
