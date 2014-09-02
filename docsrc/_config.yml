@@ -148,6 +148,12 @@ manual:
     url: post/tools/native/androidforwindows.html
     des: 详细介绍了iOS，Android和Windows Phone平台的APP打包解决方案是打包方法。
     fenter: false
+  - text: 第三方库
+    element: threelibs
+    url: post/manual/threelibs/uselibs.html
+    des: 详细介绍了Egret中第三方库的使用。
+    enter: true
+    fenter: false
 
 # - text: 打包发布
 #   element: manualpublish
