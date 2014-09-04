@@ -32,7 +32,7 @@ urlreq.url = "http://httpbin.org/user-agent";
 
 上面代码创建一个 `URLRequest` 类型的对象，并且将我们的测试地址赋给名称为 `url` 的属性。下面我们就可以开始加载数据了。
 
-记载数据的方法是 `load`，你可以将刚刚创建的 `URLRequest` 对象作为参数传递进去。
+加载数据的方法是 `load`，你可以将刚刚创建的 `URLRequest` 对象作为参数传递进去。
 
 {% highlight java linenos %}
  this.urlloader.load( urlreq );
