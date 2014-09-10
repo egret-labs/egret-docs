@@ -107,10 +107,12 @@ D:\Labs>mkdir projects
 D:\Labs>cd egret-core
 D:\Labs\egret-core>npm install -g
 D:\Labs\egret-core>cd ../projects
+```
+
 如下图：
 
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-cd-projects.png)
-```
+
 
 ####5、安装Egret的Android支持包
 

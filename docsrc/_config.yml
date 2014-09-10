@@ -39,6 +39,9 @@ docsType:
   - text: 开发指南
     grid: 3
     type: manual
+  - text: 平台/广告接入
+    grid: 3
+    type: platform
   - text: 演示实例
     type: demo
     grid: 4
@@ -165,6 +168,15 @@ manual:
 #   url: post/manual/other/gui1.html
 #   des: 一些关于Egret引擎的高级知识，涉及到引擎的架构和一些模块的设计思想。同时还包含一些高级应用文档。
 
+platform:
+  - text: 广告接入
+    enter: true
+    element: adAccess
+  - text: 平台接入
+    element: platformAccess
+  - text: Native SDK接入
+    fenter: false
+    element: sdkAccess
 
 
 demo:
