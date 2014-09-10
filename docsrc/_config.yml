@@ -39,6 +39,9 @@ docsType:
   - text: 开发指南
     grid: 3
     type: manual
+  - text: GUI开发指南
+    grid: 3
+    type: guimanual
   - text: 平台/广告接入
     grid: 3
     type: platform
@@ -107,39 +110,39 @@ manual:
     des: 关于绘图API的使用方法与技巧。
     enter: true
 
-  - text: GUI
-    element: manualgui
-    url: post/manual/other/gui1.html
-    des: 这部分内容介绍了Egret中的GUI模块设计思想以及使用方法。
+#  - text: GUI
+#    element: manualgui
+#    url: post/manual/other/gui1.html
+#    des: 这部分内容介绍了Egret中的GUI模块设计思想以及使用方法。
 
   - text: 文本
     element: manualtext
     url: post/manual/text/createtext.html
     des: 关于Egret中相关文本的使用方法。
-    fenter: false
+    
 
   - text: 动画
     element: manualmoive
     url: post/manual/anim/tween.html
     des: 介绍了Egret中多种动画方案的使用方法。
-    enter: true
+    fenter: false
 
   - text: 计时器
     url: post/manual/timer/timer.html
     des: 介绍了Egret中关于计时器的使用方法。
     element: manualtime
+    enter: true
 
   - text: 声音
     element: manualsound
     url: post/manual/sound/aboutsound.html
     des: Egret中的音频系统功能介绍，详细介绍了音频的加载、播放、暂停以及调节音量等功能。
-    fenter: false
 
   - text: 网络
     element: manualnetwork
     url: post/manual/net/createconnect.html
     des: egret中相关的网络操作。例如，加载数据，服务器通讯等。
-    enter: true
+    fenter: false
 
   - text: 开发工具配置
     element: manualdebug
@@ -150,12 +153,11 @@ manual:
     element: manualnative
     url: post/tools/native/androidforwindows.html
     des: 详细介绍了iOS，Android和Windows Phone平台的APP打包解决方案是打包方法。
-    fenter: false
+    enter: true
   - text: 第三方库
     element: threelibs
     url: post/manual/threelibs/uselibs.html
     des: 详细介绍了Egret中第三方库的使用。
-    enter: true
     fenter: false
 
 # - text: 打包发布
@@ -167,6 +169,67 @@ manual:
 #   element: manualother
 #   url: post/manual/other/gui1.html
 #   des: 一些关于Egret引擎的高级知识，涉及到引擎的架构和一些模块的设计思想。同时还包含一些高级应用文档。
+
+guimanual:
+  - text: 关于GUI库
+    enter: true
+    element: aboutgui
+    url: post/guimanual/aboutgui/aboutguilib.html
+    des: GUI库学习导读,GUI入门必读指南。
+
+  - text: 控件的使用
+    element: usecontrol
+    des: 所谓控件，主要是相对容器而言，实现某一个特定功能。
+    url: post/guimanual/usecontrol/uselabel.html
+
+  - text: 容器
+    fenter: false
+    element: container
+    des: 容器本身也是显示对象，但区别在于，容器可以放其他的显示对象。
+    url: post/guimanual/container/group.html
+
+  - text: 数据集合
+    enter: true
+    element: guidata
+    des: 本章介绍典型的组件+数据的分离方式。
+    url: post/guimanual/guidata/arraycollection.html
+
+  - text: 窗体
+    element: window
+    des: 本章节讲解窗体的用法和PopUp机制。
+    url: post/guimanual/window/titlewindow.html
+
+  - text: 导航
+    fenter: false
+    element: navigator
+    des: 讲解导航容器或组件的用法。
+    url: post/guimanual/navigator/viewstack.html
+
+  - text: 布局和定位
+    enter: true
+    element: layout
+    des: 本章节讲解组件如何布局。
+    url: post/guimanual/layout/defaultlayout.html
+
+  - text: 视图状态
+    element: stategui
+    des: 本章节讲解关于试图状态的使用。
+    url: post/guimanual/stategui/stateview.html
+
+  - text: 皮肤机制
+    fenter: false
+    element: skingui
+    des: 讲解GUI的皮肤机制。
+    url: post/guimanual/skingui/skinadapter.html
+
+  - text: GUI框架解读
+    enter: true
+    fenter: false
+    element: designgui
+    des: GUI框架底层原理解析。
+    url: post/manual/other/gui1.html
+
+
 
 platform:
   - text: 广告接入

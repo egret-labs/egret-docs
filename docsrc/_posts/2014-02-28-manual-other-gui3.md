@@ -2,8 +2,8 @@
 layout: post
 title:  "EGRET GUI AFL自适应流式布局"
 permalink: post/manual/other/gui3.html
-type: manual
-element: manualgui
+type: guimanual
+element: designgui
 version: Egret引擎 v1.x
 ---
 ####1.什么是AFL？

@@ -2,8 +2,8 @@
 layout: post
 title:  "EGRET GUI 失效验证机制"
 permalink: post/manual/other/gui2.html
-type: manual
-element: manualgui
+type: guimanual
+element: designgui
 version: Egret引擎 v1.x
 ---
 

@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "弹出窗体"
+permalink: post/guimanual/window/popup.html
+type: guimanual
+element: window
+version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/" target="_blank">郭少瑞</a>同学撰写此文档
+---
+
+在上节我们提到了，TitleWindow是用egret.gui.PopUpManager来弹出的。而egret.gui.PopUpManager并不限定弹出的类型，您可以将一个普通GUI组件或容器传递给addPopUp方法来实现弹出。
+
+把上节的例子，改成一个Panel版本的，就是类似这样的：
+
+{% highlight java linenos %}
+module uidemo
+{
+    export class PopUpDemo extends egret.gui.Group
+    {
+        private panel:egret.gui.Panel;
+
+        public constructor() {
+            super();
+        }
+        public createChildren(): void {
+            super.createChildren();
+            this.panel = new egret.gui.Panel();
+            this.panel.title = "Hello Panel";
+            this.panel.width = 400;
+            var btn:egret.gui.Button = new egret.gui.Button();
+            btn.label = "touch me";
+            btn.horizontalCenter = 0;
+            btn.verticalCenter = 0;
+            btn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.btnTouchHandler,this);
+            this.panel.addElement(btn);
+            egret.gui.PopUpManager.addPopUp(this.panel,true,true);
+        }
+        private btnTouchHandler(evt:egret.TouchEvent):void {
+            egret.gui.PopUpManager.removePopUp(this.panel);
+        }
+    }
+}
+{% endhighlight %}
+
+效果：
+
+![github]({{site.baseurl}}/assets/img/popup1.png "Egret")
