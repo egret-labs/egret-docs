@@ -148,12 +148,13 @@ manual:
     element: manualdebug
     url: post/manual/debug/chromedebug.html
     des: 详细介绍了Egret可以使用的开发工具与相关工具的配置方法。
+    enter: true
 
   - text: 移动APP打包
     element: manualnative
     url: post/tools/native/androidforwindows.html
     des: 详细介绍了iOS，Android和Windows Phone平台的APP打包解决方案是打包方法。
-    enter: true
+    
   - text: 第三方库
     element: threelibs
     url: post/manual/threelibs/uselibs.html
