@@ -25,12 +25,12 @@ version: Egret引擎 v1.x
 Button.ts
 
 {% highlight java linenos %}
-class Button extends egret.SkinnableComponent{
+class Button extends egret.gui.SkinnableComponent{
     public constructor(){
         super();       
     }
  
-    public labelDisplay:egret.Label;
+    public labelDisplay:egret.gui.Label;
  
     private _label:string = "";
  
@@ -63,7 +63,7 @@ class Button extends egret.SkinnableComponent{
 ButtonSkin.ts
 
 {% highlight java linenos %}
-class ButtonSkin extends egret.Skin{
+class ButtonSkin extends egret.gui.Skin{
  
     public constructor(){
         super();
@@ -74,22 +74,22 @@ class ButtonSkin extends egret.Skin{
  
     public skinParts:Array<string> = ["labelDisplay"];
  
-    public labelDisplay:egret.Label;
+    public labelDisplay:egret.gui.Label;
  
     public createChildren():void{
         super.createChildren();
-        var background = new egret.UIAsset();
+        var background = new egret.gui.UIAsset();
         background.percentHeight = background.percentWidth = 100;
         background.source = "assets/button-up.png";
         this.addElement(background);
  
-        this.labelDisplay = new egret.Label();
+        this.labelDisplay = new egret.gui.Label();
         this.labelDisplay.left = 10;
         this.labelDisplay.right = 10;
         this.labelDisplay.top = 10;
         this.labelDisplay.bottom = 10;
-        this.labelDisplay.textAlign = egret.HorizontalAlign.CENTER;
-        this.labelDisplay.verticalAlign = egret.VerticalAlign.MIDDLE;
+        this.labelDisplay.textAlign = egret.gui.HorizontalAlign.CENTER;
+        this.labelDisplay.verticalAlign = egret.gui.VerticalAlign.MIDDLE;
         this.addElement(this.labelDisplay);
     }
 }
@@ -107,7 +107,7 @@ Button是逻辑组件，ButtonSkin是皮肤。我们通过设置button.skinName=
 Button.ts
 
 {% highlight java linenos %}
-class Button extends egret.SkinnableComponent{
+class Button extends egret.gui.SkinnableComponent{
     public constructor(){
         super();   
         this.addEventListener(TouchEvent.TOUCH_BEGIN, this.mouseEventHandler, this);
@@ -148,7 +148,7 @@ class Button extends egret.SkinnableComponent{
 ButtonSkin.ts
 
 {% highlight java linenos %}
-class ButtonSkin extends egret.Skin{
+class ButtonSkin extends egret.gui.Skin{
     public constructor(){
         super();   
         this.states = ["up","down","disabled"]; 
@@ -219,4 +219,4 @@ XML的文件结构用来描述UI具有先天的优势，前文那个冗长的But
 
 ####6.皮肤适配器
 
-前文有提到我们通过设置button实例的skinName属性来给一个按钮设置皮肤，而我们会发现skinName的类型其实是any，意味着可以任何类型，例如字符串或其他对象。而负责解析这个skinName并返回皮肤实例的是一个ISkinAdapter对象。当开发者给一个逻辑组件初始化时，它会调用这个全局的ISkinAdapter，传入自己的组件名称以及skinName的值，以获取皮肤实例。用户可以根据自己的需要自定义一个皮肤适配器，并在程序初始化的地方调用:egret.Injector.mapClass(“egret.ISkinAdapter”,MySkinAdapter)来注入自己的MySkinAdapter到框架，替换默认的解析规则。这个适配器可以有多种用途。其中之一就是当组件传入的skinName为空是，可以根据传入的hostComponentKey，给指定组件返回一个默认皮肤。这样就可以不用每个实例都显式赋值skinName。这部分内容建议结合GUIExample里的SkinAdapter来看：<a href="https://github.com/egret-labs/egret-examples" target="_blank">https://github.com/egret-labs/egret-examples</a>
+前文有提到我们通过设置button实例的skinName属性来给一个按钮设置皮肤，而我们会发现skinName的类型其实是any，意味着可以任何类型，例如字符串或其他对象。而负责解析这个skinName并返回皮肤实例的是一个ISkinAdapter对象。当开发者给一个逻辑组件初始化时，它会调用这个全局的ISkinAdapter，传入自己的组件名称以及skinName的值，以获取皮肤实例。用户可以根据自己的需要自定义一个皮肤适配器，并在程序初始化的地方调用:egret.gui.Injector.mapClass(“egret.gui.ISkinAdapter”,MySkinAdapter)来注入自己的MySkinAdapter到框架，替换默认的解析规则。这个适配器可以有多种用途。其中之一就是当组件传入的skinName为空是，可以根据传入的hostComponentKey，给指定组件返回一个默认皮肤。这样就可以不用每个实例都显式赋值skinName。这部分内容建议结合GUIExample里的SkinAdapter来看：<a href="https://github.com/egret-labs/egret-examples" target="_blank">https://github.com/egret-labs/egret-examples</a>
