@@ -6,7 +6,7 @@ type: codewebgl
 version: Egret引擎 v1.x
 ---
 
-webgl的graphics示例，<a href="http://egret-game.b0.upaiyun.com/webgl/graphics/launcher/release.html" target="_blank">点击查看演示</a>。
+webgl的graphics示例，<a href="http://static.egret-labs.org/egret-game/webgl/graphics/launcher/release.html" target="_blank">点击查看演示</a>。
 
 ####ActionScript 3 Code
 

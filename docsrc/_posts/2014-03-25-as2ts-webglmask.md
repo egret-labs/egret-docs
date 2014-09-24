@@ -6,7 +6,7 @@ type: codewebgl
 version: Egret引擎 v1.x
 ---
 
-webgl遮罩实现，<a href="http://egret-game.b0.upaiyun.com/webgl/mask/launcher/release.html" target="_blank">点击查看演示</a>。
+webgl遮罩实现，<a href="http://static.egret-labs.org/egret-game/webgl/mask/launcher/release.html" target="_blank">点击查看演示</a>。
 
 ####ActionScript 3 Code
 

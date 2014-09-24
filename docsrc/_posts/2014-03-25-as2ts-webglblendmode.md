@@ -6,7 +6,7 @@ type: codewebgl
 version: Egret引擎 v1.x
 ---
 
-BlendMode叠加效果，<a href="http://egret-game.b0.upaiyun.com/webgl/blendMode/launcher/release.html" target="_blank">点击查看演示</a>。
+BlendMode叠加效果，<a href="http://static.egret-labs.org/egret-game/webgl/blendMode/launcher/release.html" target="_blank">点击查看演示</a>。
 
 ####ActionScript 3 Code
 

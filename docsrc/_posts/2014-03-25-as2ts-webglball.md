@@ -6,7 +6,7 @@ type: codewebgl
 version: Egret引擎 v1.x
 ---
 
-持续Touch来添加小球，<a href="http://egret-game.b0.upaiyun.com/webgl/ball/launcher/release.html" target="_blank">点击查看演示</a>。
+持续Touch来添加小球，<a href="http://static.egret-labs.org/egret-game/webgl/ball/launcher/release.html" target="_blank">点击查看演示</a>。
 
 ####ActionScript 3 Code
 

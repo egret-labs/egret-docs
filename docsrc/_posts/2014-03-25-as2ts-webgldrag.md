@@ -6,7 +6,7 @@ type: codewebgl
 version: Egret引擎 v1.x
 ---
 
-拖拽移动小球，使用了精确的碰撞检测，<a href="http://egret-game.b0.upaiyun.com/webgl/drag/launcher/release.html" target="_blank">点击查看演示</a>。
+拖拽移动小球，使用了精确的碰撞检测，<a href="http://static.egret-labs.org/egret-game/webgl/drag/launcher/release.html" target="_blank">点击查看演示</a>。
 
 ####ActionScript 3 Code
 
