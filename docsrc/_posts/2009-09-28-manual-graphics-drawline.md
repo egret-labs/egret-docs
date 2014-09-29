@@ -17,7 +17,7 @@ shp.graphics.moveTo( 10,10 );
 shp.graphics.lineTo( 100, 20 );
 {% endhighlight %}
 
-使用 `moveTo` 来设定线条的起始点，使用 `lineTo` 来设定线条的重点。完整代码如下：
+使用 `moveTo` 来设定线条的起始点，使用 `lineTo` 来设定线条的终点。完整代码如下：
 
 {% highlight java linenos %}
 class GraphicsTest extends egret.DisplayObjectContainer

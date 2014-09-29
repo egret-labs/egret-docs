@@ -7,7 +7,7 @@ element: quitestarthelloworld
 version: Egret引擎 v1.x
 ---
 
-Egret的编译功能依赖于TypeScript的编译功能。实际上TypeScript的编译过程并非传统的将程序源代码翻译为机器可执行的二级制文件过程。由于浏览器能够识别执行的脚本只有JavaScript，所以TypeScript的编译仅仅是把TypeScript翻译为对应的JavaScript脚本。
+Egret的编译功能依赖于TypeScript的编译功能。实际上TypeScript的编译过程并非传统的将程序源代码翻译为机器可执行的二进制文件过程。由于浏览器能够识别执行的脚本只有JavaScript，所以TypeScript的编译仅仅是把TypeScript翻译为对应的JavaScript脚本。
 
 我们无需理解里面复杂的过程，我们仅仅可以把**编译**过程理解为将TypeScript翻译成能够被浏览器执行的JavaScript代码即可。
 

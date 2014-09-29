@@ -73,5 +73,5 @@ class BitmapTest extends egret.DisplayObjectContainer{
 
 ![img]({{site.baseurl}}/assets/img/bitmapfillmode2.png)
 
-我们可以看到，原来一头被拉伸的猪变成了三行两列供六头猪。
+我们可以看到，原来一头被拉伸的猪变成了三行两列共六头猪。
 

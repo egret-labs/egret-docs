@@ -37,12 +37,12 @@ class GraphicsTest extends egret.DisplayObjectContainer
 
 ![img]({{site.baseurl}}/assets/img/drawcircle1.png)
 
-我们绘制了一个半径为50像素的圆心，绘制圆形调用的主要方法如下：
+我们绘制了一个半径为50像素的圆形，绘制圆形调用的主要方法如下：
 
 {% highlight java linenos %}
 shp.graphics.drawCircle( 0, 0, 50 );
 {% endhighlight %}
 
-`drawCircle` 方法接受三个参数，第一个参数为圆心的X轴，第二个参数为圆心的Y轴，第三个参数为圆形半径。
+`drawCircle` 方法接受三个参数，第一个参数为圆形的X轴，第二个参数为圆形的Y轴，第三个参数为圆形半径。
 
 **此处需要注意的是，圆形的X轴和Y轴位置是相对于Shape对象的锚点计算的**
