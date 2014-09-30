@@ -115,5 +115,6 @@ this.system.start();
 ### 演示示例
 访问 <a href="http://static.egret-labs.org/egret-game/example/html5/particle/index.html" target="_blank">[这里]</a> 获取粒子库示例
 
+访问 <a href="http://static.egret-labs.org/egret-game/example/webgl/particle/index.html" target="_blank">[这里]</a> 获取WebGL示例
 
 访问 <a href="https://github.com/egret-labs/egret-game-library/tree/master/particle" target="_blank">[这里]</a> 获取粒子库示例源码
