@@ -231,10 +231,15 @@ guimanual:
 
   - text: GUI框架解读
     enter: true
-    fenter: false
     element: designgui
     des: GUI框架底层原理解析。
     url: post/manual/other/gui1.html
+
+  - text: Egret Wing
+    fenter: false
+    element: wing
+    des: Egret Wing使用手册
+    url: post/guimanual/wing/aboutwing.html
 
 
 
