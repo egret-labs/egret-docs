@@ -73,18 +73,18 @@ manual:
   - text: 视觉编程
     element: manualdisplay
     url: post/manual/display/aboutdisplay.html
-    des: 详细介绍了Egret中显示对象的架构设计以及一些概念
+    des: 详细介绍了Egret中显示对象的架构设计以及一些概念。
     enter: true
 
   - text: 显示对象
     element: manualdisplayobj
     url: post/manual/displayobj/aboutdisplayobj.html
-    des: 详细介绍了Egret中显示对象的基础知识以及使用方法
+    des: 详细介绍了Egret中显示对象的基础知识以及使用方法。
 
   - text: 显示容器
     element: manualdisplaycon
     url: post/manual/displaycon/aboutdisplaycon.html
-    des: 详细介绍了显示容器以及显示列表的使用方法
+    des: 详细介绍了显示容器以及显示列表的使用方法。
     fenter: false
 
   - text: 事件机制
@@ -101,7 +101,7 @@ manual:
   - text: 位图纹理
     element: manualtexture
     url: post/manual/bitmap/createbitmap.html
-    des: 位图和纹理相关的使用方法
+    des: 位图和纹理相关的使用方法。
     fenter: false
 
   - text: 矢量绘图
@@ -165,6 +165,10 @@ manual:
     url: post/manual/particle/aboutparticle.html
     des: 详细介绍了Egret中粒子库的使用于扩展方法。
     enter: true
+  - text: 适配策略
+    element: adaptive
+    url: post/manual/adaptive/screenadaptive.html
+    des: 介绍Egret在不同设备中的一些适配策略。
     fenter: false
 
 # - text: 打包发布
