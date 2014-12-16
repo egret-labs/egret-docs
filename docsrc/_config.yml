@@ -160,15 +160,23 @@ manual:
     url: post/manual/threelibs/uselibs.html
     des: 详细介绍了Egret中第三方库的使用。
     fenter: false
+
   - text: 粒子系统
     element: particle
     url: post/manual/particle/aboutparticle.html
     des: 详细介绍了Egret中粒子库的使用于扩展方法。
-    enter: true
+    enter: true 
+
   - text: 适配策略
     element: adaptive
     url: post/manual/adaptive/screenadaptive.html
     des: 介绍Egret在不同设备中的一些适配策略。
+    fenter: true
+
+  - text:  物理引擎
+    element: manual-physical-engine
+    url: jkdoc/manual-physical-engine.html
+    des: 介绍可以打造超酷物理效果的物理引擎。
     fenter: false
 
 # - text: 打包发布

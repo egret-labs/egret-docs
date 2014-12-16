@@ -1,5 +1,5 @@
 ---
-layout: codeonline
+layout: post
 title:  "Sprite相关代码对比"
 permalink: as2ts/displaycode/sprite.html
 type: codedisplay
