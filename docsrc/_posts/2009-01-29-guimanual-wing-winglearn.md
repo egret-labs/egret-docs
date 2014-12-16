@@ -71,6 +71,8 @@ Egret Wing包含以下名词解释：
 
 通过“状态”面板可以方便查看Exml皮肤在不同状态下的呈现效果。同时可以切换到不同状态对Exml皮肤进行编辑。如：按钮的normal, over, down, disabled四个状态。
 
+需要注意一点的是，“[所有状态]”并非是Egret程序中可以看到的，是方便用户使用Wing预览状态而设定，所以他并不会被编译进程序里。在Egret程序中可以看到的是除了“[所有状态]”以外的状态。所以您在编辑的时候注意当前选中的状态。
+
 
 ![img]({{site.baseurl}}/assets/img/wing-image9.png)
 
