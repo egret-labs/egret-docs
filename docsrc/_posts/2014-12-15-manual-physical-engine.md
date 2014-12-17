@@ -99,6 +99,6 @@ world.sleepMode = p2.World.BODY_SLEEPING;
 
 访问 <a href="http://static.egret-labs.org/egret-game/example/html5/physics" target="_blank">这里</a> 查看 egret 演示示例，通过点击来添加刚体
 
-访问 <a href="https://github.com/egret-labs/egret-game-library">这里</a> 获取 egret 演示示例源码
+访问 <a href="https://github.com/egret-labs/egret-game-library" target="_blank">这里</a> 获取 egret 演示示例源码
 
-访问 <a href="https://github.com/schteppe/p2.js">这里</a> 获取 p2源码
+访问 <a href="https://github.com/schteppe/p2.js" target="_blank">这里</a> 获取 p2源码
