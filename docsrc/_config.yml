@@ -326,7 +326,7 @@ tools:
 #    url: post/tools/othertools/texturepacker.html
   - text: 服务器工具
     element: servertools
-#    url: post/tools/servertools/xampp.html
+#    url: post/tools/servertools/xamanualnetworkmpp.html
   - text: 浏览器工具
     fenter: false
     element: browsertools

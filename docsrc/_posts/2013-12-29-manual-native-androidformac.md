@@ -119,7 +119,7 @@ cd ../projects
 
 #####下载Egret Android支持包
 
-下载<a href="http://www.egret-labs.org/download/egret-android-packager-download.html" target="_blank">最新的Egret的Android支持包</a>解压并重命名为`egret-android-support`，然后放置在“labs/egret-support/”文件夹下，如下图：
+下载<a href="http://www.egret-labs.org/androidsupport" target="_blank">最新的Egret的Android支持包</a>解压并重命名为`egret-android-support`，然后放置在“labs/egret-support/”文件夹下，如下图：
 
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-egret-support-finder.png)
 
