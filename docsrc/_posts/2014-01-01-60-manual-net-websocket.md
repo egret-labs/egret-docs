@@ -22,8 +22,10 @@ WebSocket标准在很大程度上简化了复杂的双向网络沟通和连接�
 egret的WebSocket即为H5的WebSocket封装。
 
 
-### 用WebSocket进行通讯的基本过程
 
+
+------
+### 用WebSocket进行通讯的基本过程
 
 #### WebSocket对象
 所有的通讯都是基于一个WebSocket实例，首先创建WebSocket对象:
