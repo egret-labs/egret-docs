@@ -141,7 +141,7 @@ manual:
   - text: 网络
     element: manualnetwork
     url: post/manual/net/createconnect.html
-    des: egret中相关的网络操作。例如，加载数据，服务器通讯等。
+    des: egret中相关的网络操作。例如，加载数据，服务器通讯以及方便的WebSocket等功能。
     fenter: false
 
   - text: 开发工具配置
