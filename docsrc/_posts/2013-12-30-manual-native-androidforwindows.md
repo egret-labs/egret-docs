@@ -96,23 +96,7 @@ D:\Labs>mkdir projects
 ####4、安装Egret
 ---
 
-请将[最新的Egret安装包](http://www.egret-labs.org/download/egret-download.html)下载到本地的“D:\Labs\”，解压并重命名为“egret-core”
-，如图：
-
-![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-egret-core-finder.png)
-
-接下来，安装Egret到npm，之后进入“labs\projects\”文件夹
-
-```
-D:\Labs>cd egret-core
-D:\Labs\egret-core>npm install -g
-D:\Labs\egret-core>cd ../projects
-```
-
-如下图：
-
-![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-cd-projects.png)
-
+传送门：[Windows 系统下安装最新的Egret](http://docs.egret-labs.org/post/quitestart/install/installwin.html)。
 
 ####5、安装Egret的Android支持包
 

@@ -68,21 +68,8 @@ $ mkdir projects
 ####3、安装Egret
 ---
 
-请将[最新的Egret安装包](http://www.egret-labs.org/download/egret-download.html)下载到本地的“labs/”，解压并重命名为“egret-core”
-，如图：
+传送门：[Mac OS X 系统下安装最新的Egret](http://docs.egret-labs.org/post/quitestart/install/instalformac.html)。
 
-![img]({{site.baseurl}}/assets/img/egret-ios-support-egret-core-finder.png)
-
-接下来，安装Egret到npm，之后进入“labs/projects/”文件夹
-
-```
-$ cd egret-core
-$ sudo npm install -g
-$ cd ../projects
-```
-如下图：
-
-![img]({{site.baseurl}}/assets/img/egret-ios-support-cd-projects.png)
 
 ####4、下载Egret的iOS支持包
 ---

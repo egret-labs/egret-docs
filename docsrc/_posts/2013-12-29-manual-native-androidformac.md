@@ -92,22 +92,9 @@ b. **Android Studio**。因为Android Studio只使用新的Gradle模式，因为
 
 ####4、安装Egret
 ---
-请将[最新的Egret安装包](http://www.egret-labs.org/download/egret-download.html)下载到本地的“labs/”，解压并重命名为“egret-core”
-，如图：
 
-![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-egret-core-finder.png)
+传送门：[Mac OS X 系统下安装最新的Egret](http://docs.egret-labs.org/post/quitestart/install/instalformac.html)。
 
-接下来，安装Egret到npm，
-
-{% highlight java %}
-cd egret-core
-sudo npm install -g
-cd ../projects
-{% endhighlight %}
-
-如下图：
-
-![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-cd-projects.png)
 
 ####5、安装Egret的Android支持包
 ---
