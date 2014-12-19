@@ -52,14 +52,14 @@ class AssetAdapter implements egret.IAssetAdapter{
 完成注入后，我们可以忽略异步加载过程。要显示一个位图，可以这样写：
 
 {% highlight java linenos %}
-var sky:egret.UIAsset = new egret.UIAsset();
+var sky:egret.gui.UIAsset = new egret.gui.UIAsset();
 sky.source = "bgImage";
 {% endhighlight %}
 
 显示一个SpriteSheet里的一张子位图：
 
 {% highlight java linenos %}
-var icon:egret.UIAsset = new egret.UIAsset();
+var icon:egret.gui.UIAsset = new egret.gui.UIAsset();
 icon.source = "icons.activity_10";
 {% endhighlight %}
 
