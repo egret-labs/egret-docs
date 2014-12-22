@@ -42,8 +42,16 @@ interface ITextElement {
 {"textColor":0xFF0000}
 {% endhighlight %}
     
+`style`属性里，可以包含若干这样的样式组合定义。
+内部结构了解清楚了，那尝试一个最简单的组合，给一段文字定义一个红色字号16格式的代码：
+     
+{% highlight java %}
+var tx:egret.TextField = new egret.TextField;
+tx.textFlow = <Array<egret.ITextElement>>[ {"textColor":0xFF0000, "size":"16"} ];
+this.addChild( tx );
+{% endhighlight %}
     
-    
+
     
     
     
