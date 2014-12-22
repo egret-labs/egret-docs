@@ -312,21 +312,26 @@ tools:
     enter: true
     element: egrettools
 #    url: post/tools/egrettools/conversiontool.html
+
   - text: 官方插件
     element: egretplugin
-    des: Comming Soon...
-#    url: post/tools/egretplugin/index.html
+#    des: Comming Soon...
+#    url: jkdoc/tools-plugin-inspector.html
+
   - text: 代码编辑器
     fenter: false
     element: ide
 #    url: post/tools/ide/webstorm.html
+
   - text: 第三方工具
     enter: true
     element: othertools
-#    url: post/tools/othertools/texturepacker.html
+#    url: jkdoc/tools-othertools-dragonbones.html
+
   - text: 服务器工具
     element: servertools
 #    url: post/tools/servertools/xamanualnetworkmpp.html
+
   - text: 浏览器工具
     fenter: false
     element: browsertools
