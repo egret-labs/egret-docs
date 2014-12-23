@@ -17,7 +17,7 @@ publish 命令用于发布项目，使用 GoogleClosureCompiler 压缩代码
     
 命令原型：    
 {% highlight PowerShell %}
-egret publish [project_name] --version [version] [--runtime html5|native]
+egret publish [project_name] -compile [--runtime html5|native]
 {% endhighlight %}
       
 -----
@@ -25,10 +25,9 @@ egret publish [project_name] --version [version] [--runtime html5|native]
 ### 参数说明
        
 {% highlight java %}
---version    设置发布之后的版本号，可以不设置
---runtime    设置发布方式为 html5 或者是 native 方式，默认值为 html5
--zip         设置发布后生成 launcher 文件夹的 zip 文件
---password   设置发布 zip 文件的解压密码
+--runtime     设置发布方式为 html5 或者是 native方式，默认值为html5
+-compile       设置发布后js文件是否需要压缩
+--password   设置发布zip文件的解压密码
 {% endhighlight %}
      
      
