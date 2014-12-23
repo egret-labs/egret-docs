@@ -179,15 +179,11 @@ manual:
     des: 介绍可以打造超酷物理效果的物理引擎。
     fenter: false
 
-# - text: 打包发布
-#   element: manualpublish
-#   url: #
-#   des: 编辑努力码字中...
-
-# - text: 高级开发
-#   element: manualother
-#   url: post/manual/other/gui1.html
-#   des: 一些关于Egret引擎的高级知识，涉及到引擎的架构和一些模块的设计思想。同时还包含一些高级应用文档。
+  - text: 命令行大全
+    element: cmd-set
+    url: jkdoc/manual-cmd-build.html
+    des: 详细介绍了Egret中主要的控制台命令的用法。
+    enter: true 
 
 guimanual:
   - text: 关于GUI库

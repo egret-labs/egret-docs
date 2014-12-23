@@ -7,7 +7,6 @@ element: manualtext
 version: Egret引擎 v1.5
 ---
 
-(该部分内容撰写中，撰写完毕将删除改行，谢谢理解！)
 
 前面的几节分别说明如何设置一个TextField实例的某种属性。
     
