@@ -45,7 +45,7 @@ interface ITextElement {
 {% endhighlight %}
     
 `style`属性里，可以包含若干这样的样式组合定义。
-内部结构了解清楚了，那尝试一个最简单的组合，给一段文字定义一个红色字号16格式的代码：
+内部结构了解清楚了，那尝试一个最简单的组合，给一段文字定义一个红色、字号30样式的代码：
      
 {% highlight java %}
 var tx:egret.TextField = new egret.TextField;
@@ -58,39 +58,38 @@ this.addChild( tx );
 那一段带样式文本的写法已经简易而明了。要实现我们图1中的效果，也非常容易了：    
     
 {% highlight java %}
-        var tx:egret.TextField = new egret.TextField;
+var tx:egret.TextField = new egret.TextField;
 
-        tx.width = 400;
-        tx.x = 10;
-        tx.y = 10;
-        tx.textColor = 0;
-        tx.size = 20;
-        tx.fontFamily = "微软雅黑";
-        tx.textAlign = egret.HorizontalAlign.CENTER;
-        tx.textFlow = <Array<egret.ITextElement>>[
-             {text:"妈妈再也不用担心我在",style:{"size":"12"}}
-            ,{text:"Egret",style:{"textColor":0x336699,"size":"60","strokeColor":0x6699cc, "stroke":"2"}}
-            ,{text:"里说一句话不能包含各种",style:{"fontFamily":"楷体"}}
-            ,{text:"五",style:{"textColor": 0xff0000}}
-            ,{text:"彩",style:{"textColor": 0x00ff00}}
-            ,{text:"缤",style:{"textColor": 0xf000f0}}
-            ,{text:"纷",style:{"textColor": 0x00ffff}}
-            ,{text:"、",style:{}}
-            ,{text:"大",style:{"size":"36"}}
-            ,{text:"小",style:{"size":"6"}}
-            ,{text:"不",style:{"size":"16"}}
-            ,{text:"一",style:{"size":"24"}}
-            ,{text:"、",style:{}}
-            ,{text:"格",style:{"italic":"true" ,"textColor": 0x00ff00} }
-            ,{text:"式",style:{"size":"16", "textColor": 0xf000f0 } }
-            ,{text:"各",style:{"italic":"true", "textColor": 0xf06f00} }
-            ,{text:"样",style:{"fontFamily":"楷体"}}
-            ,{text:"",style:{}}
-            ,{text:"的文字了！",style:{} }
-        ];
+tx.width = 400;
+tx.x = 10;
+tx.y = 10;
+tx.textColor = 0;
+tx.size = 20;
+tx.fontFamily = "微软雅黑";
+tx.textAlign = egret.HorizontalAlign.CENTER;
+tx.textFlow = <Array<egret.ITextElement>>[
+     {text:"妈妈再也不用担心我在",style:{"size":"12"}}
+    ,{text:"Egret",style:{"textColor":0x336699,"size":"60","strokeColor":0x6699cc, "stroke":"2"}}
+    ,{text:"里说一句话不能包含各种",style:{"fontFamily":"楷体"}}
+    ,{text:"五",style:{"textColor": 0xff0000}}
+    ,{text:"彩",style:{"textColor": 0x00ff00}}
+    ,{text:"缤",style:{"textColor": 0xf000f0}}
+    ,{text:"纷",style:{"textColor": 0x00ffff}}
+    ,{text:"、",style:{}}
+    ,{text:"大",style:{"size":"36"}}
+    ,{text:"小",style:{"size":"6"}}
+    ,{text:"不",style:{"size":"16"}}
+    ,{text:"一",style:{"size":"24"}}
+    ,{text:"、",style:{}}
+    ,{text:"格",style:{"italic":"true" ,"textColor": 0x00ff00} }
+    ,{text:"式",style:{"size":"16", "textColor": 0xf000f0 } }
+    ,{text:"各",style:{"italic":"true", "textColor": 0xf06f00} }
+    ,{text:"样",style:{"fontFamily":"楷体"}}
+    ,{text:"",style:{}}
+    ,{text:"的文字了！",style:{} }
+];
 
-        this.layTxBg( tx );
-        super.addChild( tx );
+super.addChild( tx );
 {% endhighlight %}
      
      
