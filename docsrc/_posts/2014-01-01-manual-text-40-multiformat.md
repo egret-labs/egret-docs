@@ -47,7 +47,9 @@ interface ITextElement {
      
 {% highlight java %}
 var tx:egret.TextField = new egret.TextField;
-tx.textFlow = <Array<egret.ITextElement>>[ {"textColor":0xFF0000, "size":"16"} ];
+tx.textFlow = <Array<egret.ITextElement>>[ 
+    { text:"Egret", style:{"textColor":0xFF0000, "size":"30"} }
+];
 this.addChild( tx );
 {% endhighlight %}
     

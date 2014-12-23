@@ -17,7 +17,7 @@ create_manifest 命令用于在工程目录下生成 manifest.json 清单文件
 
 命令原型：    
 {% highlight PowerShell %}
-egret create_manifest { your_project }
+egret create_manifest [project_name] -all
 {% endhighlight %}
       
 -----
