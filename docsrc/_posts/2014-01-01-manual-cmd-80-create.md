@@ -6,7 +6,7 @@ type: manual
 element: cmd-set
 version: Egret引擎 v1.x
 ---
-   f
+   
 ### 概述
    
 create 命令用于创建一个新的 egret 项目
