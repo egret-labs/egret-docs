@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "publish命令"
+title:  "upgrade命令"
 permalink: jkdoc/manual-cmd-upgrade.html  
 type: manual
 element: cmd-set

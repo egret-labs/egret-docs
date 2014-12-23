@@ -181,7 +181,7 @@ manual:
 
   - text: 命令行大全
     element: cmd-set
-    url: jkdoc/manual-cmd-build.html
+    url: jkdoc/manual-cmd-intro.html
     des: 详细介绍了Egret中主要的控制台命令的用法。
     enter: true 
 

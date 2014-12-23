@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "create_manifest命令"
+title:  "info命令"
 permalink: jkdoc/manual-cmd-info.html  
 type: manual
 element: cmd-set
