@@ -9,7 +9,8 @@ version: Egret引擎 v1.5
    
      
 ![Egret Inspector](http://www.egret-labs.org/images/egret-inspector-.png)
-     
+      
+**适应平台：**Windows
      
 Egret Inspector 是一款Chrome开发者工具插件。
    
