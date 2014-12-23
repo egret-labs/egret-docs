@@ -19,7 +19,8 @@ Egret引擎无疑在这方面更受开发者喜爱，因为设置样式的关键
 
 废话说到这里，先给出结果，看看我们的多种样式文本混合功能所能达到的效果：
     
-![about display]({{site.baseurl}}/assets/img-jk/manual-text-multiformat.jpg)
+![about display]({{site.baseurl}}/assets/img-jk/manual-text-multiformat.jpg)     
+图1 一段样式丰富的文本
     
 这样似显零乱但足够丰富的效果对大多数文本显示的需求，应该够用了吧！那么接下来，一步步看，我们怎么组装起来的！
    
@@ -51,17 +52,41 @@ tx.textFlow = <Array<egret.ITextElement>>[ {"textColor":0xFF0000, "size":"16"} ]
 this.addChild( tx );
 {% endhighlight %}
     
+那一段带样式文本的写法已经简易而明了。要实现我们图1中的效果，也非常容易了：    
+    
+{% highlight java %}
+        var tx:egret.TextField = new egret.TextField;
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        tx.width = 400;
+        tx.x = 10;
+        tx.y = 10;
+        tx.textColor = 0;
+        tx.size = 20;
+        tx.fontFamily = "微软雅黑";
+        tx.textAlign = egret.HorizontalAlign.CENTER;
+        tx.textFlow = <Array<egret.ITextElement>>[
+             {text:"妈妈再也不用担心我在",style:{"size":"12"}}
+            ,{text:"Egret",style:{"textColor":0x336699,"size":"60","strokeColor":0x6699cc, "stroke":"2"}}
+            ,{text:"里说一句话不能包含各种",style:{"fontFamily":"楷体"}}
+            ,{text:"五",style:{"textColor": 0xff0000}}
+            ,{text:"彩",style:{"textColor": 0x00ff00}}
+            ,{text:"缤",style:{"textColor": 0xf000f0}}
+            ,{text:"纷",style:{"textColor": 0x00ffff}}
+            ,{text:"、",style:{}}
+            ,{text:"大",style:{"size":"36"}}
+            ,{text:"小",style:{"size":"6"}}
+            ,{text:"不",style:{"size":"16"}}
+            ,{text:"一",style:{"size":"24"}}
+            ,{text:"、",style:{}}
+            ,{text:"格",style:{"italic":"true" ,"textColor": 0x00ff00} }
+            ,{text:"式",style:{"size":"16", "textColor": 0xf000f0 } }
+            ,{text:"各",style:{"italic":"true", "textColor": 0xf06f00} }
+            ,{text:"样",style:{"fontFamily":"楷体"}}
+            ,{text:"",style:{}}
+            ,{text:"的文字了！",style:{} }
+        ];
 
-
-
+        this.layTxBg( tx );
+        super.addChild( tx );
+{% endhighlight %}
+    

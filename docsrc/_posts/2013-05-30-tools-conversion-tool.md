@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  AS3代码到TypeScript代码转换器
+title:  TS Conversion
 permalink: post/tools/egrettools/conversiontool.html
 type: tools
 element: egrettools
-version: Conversion Tool v1.x
+version: TS Conversion v1.x
 ---
 
-![Converision Tool]({{site.baseurl}}/assets/img/ctoollogo.png)
+![Converision Tool]({{site.baseurl}}/assets/img/teclogo.png)
 
 **适应平台：**Windows、Mac OS X
 
-**下载地址：**<a href="http://www.egret-labs.org/download/conversion-tool-download.html" target="_blank">点击进入官方下载地址</a>
+**下载地址：**<a href="http://www.egret-labs.org/tsconversion" target="_blank">点击进入官方下载地址</a>
 
 Conversion Tool是一款非常方便的代码转换工具，可以将ActionScript 3代码转换为TypeScript代码。
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  iOS APP打包方案
+title:  Egret iOS Support
 permalink: post/tools/egrettools/egretiossupport.html
 type: tools
 element: egrettools

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Android APP打包方案
+title:  Egret Android Support
 permalink: post/tools/egrettools/egretandroidsupport.html
 type: tools
 element: egrettools
