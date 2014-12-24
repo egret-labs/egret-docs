@@ -332,11 +332,11 @@ tools:
 
 
 #subj类目文件
-codePageTitle: Egret开发专题讲解
-codeType:
+subjPageTitle: Egret开发专题讲解
+subjType:
   - text: 通用
     type: proj-normal
-    uiid: collapseOne
+    uiid: proj-normal
 
 #AS3 TS代码对比参考目录 及参数
 codePageTitle: Flash ActionScript 3代码迁移Egret在线参考

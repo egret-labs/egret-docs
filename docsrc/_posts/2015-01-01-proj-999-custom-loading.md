@@ -1,7 +1,7 @@
 ---
-layout: codeonline
+layout: subjs
 title:  "自定义Loading"
-permalink: jksubj/999-custom-loading.html
+permalink: jksubj/custom-loading.html
 type: proj-normal
 version: Egret引擎 v1.x
 ---
