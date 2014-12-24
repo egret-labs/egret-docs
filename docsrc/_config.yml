@@ -28,6 +28,10 @@ nav:
 #    url: /flash.html
   - text: AS3对比参考
     url: /as2ts/index.html
+
+  - text: 专题讲解
+    url: /subj/index.html
+
   - text: FAQ
     url: /faq.html
 
@@ -295,13 +299,6 @@ demo:
 #    url: demo/movie.html
 #  - text: GUI
     fenter: false
-#    element: demogui
- #   des: 编辑努力码字中...
-#    url: demo/gui.html
-#  - text: 高级
-#    fenter: false
-#    element: demoother
-#    url: demo/other.html
 
 tools:
   - text: 官方工具
@@ -332,6 +329,14 @@ tools:
     fenter: false
     element: browsertools
 #    url: post/tools/browser/chrome.html
+
+
+#subj类目文件
+codePageTitle: Egret开发专题讲解
+codeType:
+  - text: 通用
+    type: proj-normal
+    uiid: collapseOne
 
 #AS3 TS代码对比参考目录 及参数
 codePageTitle: Flash ActionScript 3代码迁移Egret在线参考
