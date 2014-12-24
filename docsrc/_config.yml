@@ -22,15 +22,16 @@ nav:
     url: http://www.egret-labs.org
   - text: 文档
     url: /home.html
+
+  - text: 专题讲解
+    url: /subj/index.html
+
   - text: API文档
     url: /api/api.html
 #  - text: Flash移植教程
 #    url: /flash.html
   - text: AS3对比参考
     url: /as2ts/index.html
-
-  - text: 专题讲解
-    url: /subj/index.html
 
   - text: FAQ
     url: /faq.html
