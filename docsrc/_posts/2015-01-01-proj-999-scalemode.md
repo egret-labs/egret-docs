@@ -5,14 +5,19 @@ permalink: jksubj/scalemode.html
 type: proj-normal
 version: Egret引擎 v1.x
 ---
-
+    
+       
+       
+##理解Egret中的各种屏幕适配策略       
+   
+  
 ###概述
 
 测试Egret环境： Egret 1.5.0，Firefox浏览器。
 
 根据不同的项目需求，可能需要不同的屏幕适配策略。本文将用一个简单的例子对不同的适配模式进行逐一测试。
 
-为了简化问题，并且便于理解，我们用一个简单的用例来测试： 载入一张560*560的图片castle-560.jpg，并以占据整个Egret舞台的方式显示出来。该图原始显示效果：
+为了简化问题，并且便于理解，我们用一个简单的用例来测试： 载入一张560*560的图片castle-560.jpg。该图原始显示效果：
  
 ![about display]({{site.baseurl}}/assets/img-subj/scalemode/castle-560.jpg)      
 图1  测试原图    
@@ -28,11 +33,16 @@ version: Egret引擎 v1.x
 egret.StageDelegate.getInstance().setDesignSize( 560, 560 );
 {% endhighlight %}
 
-写简单的程序，载入castle-560.jpg，并且设置其宽高为Egret舞台的宽高，即占据整个Egret舞台：
+写简单的程序，载入castle-560.jpg，并以原始大小直接显示。最下边铺一个纯色背景，用以在图片未达到的区域显示舞台区域：
 {% highlight java %}
+var shp:egret.Shape = new egret.Shape;
+shp.graphics.lineStyle( 0, 0x00ffff );
+shp.graphics.beginFill( 0x336699 );
+shp.graphics.drawRoundRect( 0, 0, this.stage.stageWidth, this.stage.stageHeight, 3, 3 );
+shp.graphics.endFill();
+this.addChild( shp );
+
 var bg:egret.Bitmap = new egret.Bitmap( Res.getRes( "castle" ) );
-bg.width = this.stage.stageWidth;
-bg.height = this.stage.stageHeight;
 super.addChild( bg );
 {% endhighlight %}
 
@@ -78,6 +88,7 @@ super.addChild( tx );
     
 ![about display]({{site.baseurl}}/assets/img-subj/scalemode/firefox-mobile-mode.jpg)    
       
+      
 设置自定义分辨率为`320*504`，这是由于iPhone5的默认浏览器显示区域为`320*504`：   
      
 ![about display]({{site.baseurl}}/assets/img-subj/scalemode/firefox-iphone5.jpg)   
@@ -108,11 +119,12 @@ context.stage.scaleMode = scaleMode;
          
 ![about display]({{site.baseurl}}/assets/img-subj/scalemode/EXACT_FIT-illustrate.jpg)   
         
-舞台本身的大小是我们的设计尺寸，然后，`EXACT_FIT`适配模式会把Egret Canvas按照浏览器可视区域来进行缩放。即把宽度缩放到320响应像素。高度缩放到504响应像素。    
+舞台本身的大小(即Egret Canvas)是我们的设计尺寸，然后，`EXACT_FIT`适配模式会把舞台按照浏览器可视区域来进行缩放。即把宽度缩放到320响应像素。高度缩放到504响应像素。    
            
 很显然，这种适配模式完全没有可控性，大部分实际的成品游戏，或动态宣传海报，为了完整的视觉体验。都不会允许宽高比例失真的情况。所以，这种适配模式实际采用很少。     
            
-从易用性来看，`EXACT_FIT`适配模式也许可以得到较高星，但我们做项目始终要以产品为导向。那么，从产品角度来看`EXACT_FIT`适配模式推荐指数：★☆☆☆☆。如果产品阶段不需要该模式，那么调试阶段也同样不需要。     
+从易用性来看，`EXACT_FIT`适配模式也许可以得到较高星，但我们做项目始终要以产品为导向。那么，从产品角度来看`EXACT_FIT`适配模式推荐指数：★☆☆☆☆。    
+如果产品阶段不需要该模式，那么调试阶段也同样不需要。     
 
       
     
@@ -205,11 +217,11 @@ context.stage.scaleMode = scaleMode;
 ------
 
 ###总结   
-最后，来一个总结是必要的： 
+最后，来一个简明的总结是必要的： 
          
 ![about display]({{site.baseurl}}/assets/img-subj/scalemode/compares.jpg)   
         
-对于大部分开发，来说黑边并不是很大的问题， 而且开发过程，你不需要考虑不同设备可视区域的适配。对于黑边敏感的要求比较高的产品，NO_BORDER是最佳选择。
+对于大部分开发来说，黑边并不是很大的问题， 而且开发过程，你不需要考虑不同设备可视区域的适配。对于黑边敏感的要求比较高的产品，NO_BORDER是最佳选择。
 
 
 
