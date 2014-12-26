@@ -1,16 +1,19 @@
 ---
 layout: subjs-template
-title:  "理解Egret中的各种屏幕适配策略"
+title:  "理解Egret中的各种屏幕适配策略并做出选择"
 permalink: jksubj/scalemode.html
 type: proj-normal
 version: Egret引擎 v1.x
 ---
+       
+          
+        
+      
+##理解Egret中的各种屏幕适配策略并做出选择
+     
+      
     
-       
-       
-##理解Egret中的各种屏幕适配策略       
-   
-  
+------
 ###概述
 
 测试Egret环境： Egret 1.5.0，Firefox浏览器。
