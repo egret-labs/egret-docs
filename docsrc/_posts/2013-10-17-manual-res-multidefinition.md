@@ -4,7 +4,7 @@ title:  "多套素材的适配方案"
 permalink: post/manual/loader/multidefinition.html
 type: manual
 element: manualloader
-version: Egret引擎 v1.5
+version: Egret引擎 v1.5.1
 ---
 
 
