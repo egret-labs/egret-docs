@@ -10,9 +10,7 @@ version: DragonBones v3.0
 ![DragonBones]({{site.baseurl}}/assets/img/dragonbones-logo.png)
 
 DragonBones已经支持Egret，您可以通过DragonBones制作自己的骨骼动画应用在Egret游戏中。
-
-![DragonBones]({{site.baseurl}}/assets/img/dragonbones1.png)
-    
+     
      
 **下载地址**：<a href="http://update.egret-labs.org/DragonBones/DragonBones-v3.0.0.zip">DragonBones工具及库下载</a>   
    
