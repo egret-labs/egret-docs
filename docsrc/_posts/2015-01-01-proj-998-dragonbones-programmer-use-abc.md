@@ -14,7 +14,7 @@ version: Egret引擎 v1.5.1
       
     
 ------
-前提性知识：有基本的Egret项目开发经验         
+前提知识：有基本的Egret项目开发经验         
 技术等级：中级             
 必需产品：Egret Engine 1.5.1(<a href="http://www.egret-labs.org/egretengine" target="_blank">下载地址</a>，如当前版本小于1.5.1，请安装后打开检查社区体验版更新开关，再进行更新)       
 开发工具：WebStorm或Visual Studio + EgretVS (<a href="http://www.egret-labs.org/egretvs" target="_blank">下载地址</a>)        
