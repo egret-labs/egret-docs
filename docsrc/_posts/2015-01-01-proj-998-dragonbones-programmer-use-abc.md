@@ -22,9 +22,9 @@ version: Egret引擎 v1.5.1
           
       
     
+------
 
 ### DragonBones概述
-------
              
 相信熟悉AS3的小伙伴，一定对DragonBones不陌生，当今火爆的手游《刀塔传奇》正是因为使用了DragonBones而得以效果如此丰富生动。当然还有大量不那么出名的游戏背后都有DragonBones的强力驱动。      
              
@@ -44,9 +44,9 @@ DragonBones的使用主要分为两大阶段。
           
       
     
+------
  
 ### 为Egret项目增加DragonBones支持
-------
          
 作为Egret官方的扩展模块，创建空白Egret项目后，可以很简单的增加DragonBones支持。修改`egretProperties.json`中的`"modules"`，成为：        
          
@@ -66,9 +66,9 @@ egret build -e
              
       
     
+------
      
 ### 读取DragonBones资源并解析到工厂
-------
            
 DragonBones资源，主要包含显示数据和各种骨骼动画的控制数据。       
          
@@ -140,9 +140,9 @@ factory.addTextureAtlas(new dragonBones.EgretTextureAtlas(texture, textureData))
         
       
     
+------
       
 ### 播放一个DragonBones动作
-------
         
 前面说过，一种角色对应一套骨架。当我们需要显示某种角色时，首先将其DragonBones资源解析到工厂。
           
@@ -216,9 +216,9 @@ egret.Ticker.getInstance().register(function (advancedTime) {
       
       
     
+------
 
 ### 加入另一个骨架角色，并播放各自的动作
-------
     
 在resource.json中，加入机器人相关的资源配置：         
           
@@ -297,9 +297,10 @@ dragonBones.WorldClock.clock.add(amtRobot);
              
       
       
+    
+------
 
 ### 播放另一个骨架的动作，即动画拷贝功能
-------
     
 通常设计不同的骨架，各自都有不同的动作。如果某套骨架在设计时不包含某个动作，而另一套骨架有这样现成的动作，并且可以套用，那将会节省很多设计工作量。   
       
@@ -329,9 +330,9 @@ dragonBones.WorldClock.clock.add(amtWorriorUseRobot);
       
       
     
+------
 
 ### Egret1.5.1新增的其他DragonBones功能
-------
          
 有一个功能是使指定动作停止在指定的秒数，用跟MovieClip类似的`gotoAndStop`方法。    
 另外一个是控制动画倒序播放，在`gotoAndPlay`返回的`AnimationState`上调用`setTimeScale`。    
@@ -381,9 +382,9 @@ private nTimeScale:number;
        
       
     
+------
 
 ### 结语
-------
            
 本教程主要介绍了DragonBones在程序使用阶段的基本用法，以及到目前(Egret 1.5.1)为止的一些新用法。展示了Egret版DragonBones的强大功能。      
         
