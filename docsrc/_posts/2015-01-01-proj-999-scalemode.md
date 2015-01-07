@@ -11,10 +11,15 @@ version: Egret引擎 v1.x
       
 ##理解Egret中的各种屏幕适配策略并做出选择
      
+------
+前提性知识：有基本的Egret项目开发经验         
+技术等级：中级             
+必需产品：Egret Engine (<a href="http://www.egret-labs.org/egretengine" target="_blank">下载地址</a>)       
+开发工具：WebStorm或Visual Studio + EgretVS (<a href="http://www.egret-labs.org/egretvs" target="_blank">下载地址</a>)        
       
     
-------
 ###概述
+------
 
 测试Egret环境： Egret 1.5.0，Firefox浏览器。
 
@@ -28,8 +33,8 @@ version: Egret引擎 v1.x
 其中加入正方形网格，是为了便于检查其在不同适配模式的宽高比例是否能保持，或者说比例失真。
       
     
-------
 ###测试准备工作
+------
 
 新建Egret项目，在其launcher/egret_loader.js中，我们修改设计尺寸为560*560：
 {% highlight java %}
@@ -102,9 +107,8 @@ super.addChild( tx );
 
       
     
-------
-
 ### EXACT_FIT适配模式
+------
    
 在`launcher/egret_loader.js`中，修改`context.stage.scaleMode`为`EXACT_FIT`：
 {% highlight java %}
@@ -131,9 +135,8 @@ context.stage.scaleMode = scaleMode;
 
       
     
-------
-
 ### NO_SCALE适配模式：
+------
 在`launcher/egret_loader.js`中，修改`context.stage.scaleMode`为`NO_SCALE`：
 {% highlight java %}
 var scaleMode = egret.StageScaleMode. NO_SCALE;
@@ -160,9 +163,9 @@ context.stage.scaleMode = scaleMode;
 
       
     
-------
 
 ###SHOW_ALL适配模式：
+------
 在`launcher/egret_loader.js`中，修改`context.stage.scaleMode`为` SHOW_ALL`：
 {% highlight java %}
 var scaleMode = egret.StageScaleMode.SHOW_ALL;
@@ -187,9 +190,9 @@ context.stage.scaleMode = scaleMode;
 
       
     
-------
 
 ###NO_BORDER适配模式：
+------
 在`launcher/egret_loader.js`中，修改`context.stage.scaleMode`为`NO_BORDER`：
 {% highlight java %}
 var scaleMode = egret.StageScaleMode.NO_BORDER;
@@ -217,9 +220,9 @@ context.stage.scaleMode = scaleMode;
 但是在这种模式下，你可能要花更多精力，来维护UI动态布局和显示内容的完整性。
       
     
-------
 
 ###总结   
+------
 最后，来一个简明的总结是必要的： 
          
 ![about display]({{site.baseurl}}/assets/img-subj/scalemode/compares.jpg)   

@@ -16,15 +16,19 @@ version: Egret引擎 v1.5.1
 ------
 前提性知识：有基本的Egret项目开发经验         
 技术等级：中级             
-必需产品：Egret Engine(http://www.egret-labs.org/egretengine)       
-开发工具：WebStorm或Visual Studio + EgretVS (http://www.egret-labs.org/egretvs)        
-教程项目起点： <a href="{{site.baseurl}}/assets/" target="_blank">下载地址</a> 
+必需产品：Egret Engine 1.5.1(<a href="http://www.egret-labs.org/egretengine" target="_blank">下载地址</a>，如当前版本小于1.5.1，请安装后打开检查社区体验版更新开关，再进行更新)       
+开发工具：WebStorm或Visual Studio + EgretVS (<a href="http://www.egret-labs.org/egretvs" target="_blank">下载地址</a>)        
+教程起点项目包： <a href="{{site.baseurl}}/assets/packages/subjs/dragonbones-programmer-use-abc.zip" target="_blank">下载地址</a> 
           
+      
+    
+
 ### DragonBones概述
+------
              
 相信熟悉AS3的小伙伴，一定对DragonBones不陌生，当今火爆的手游《刀塔传奇》正是因为使用了DragonBones而得以效果如此丰富生动。当然还有大量不那么出名的游戏背后都有DragonBones的强力驱动。      
              
-数月前（2014年6月），DragonBones已经正式支持Egret了。但由于DragonBones相对于常规的MovieClip要复杂不少。因此撰写本文，让大家对DragonBones不再那么陌生。也希望推进Egret社群早日出现或多出现DragonBones的上线作品！          
+数月前（2014年6月），DragonBones已经正式支持Egret了。但由于DragonBones相对于常规的MovieClip要复杂不少。因此撰写本文，让大家对DragonBones不再那么陌生。也希望推进Egret社群更快地涌现出更多DragonBones的上线作品！          
           
 本文参考了DragonBones官方的《DragonBones快速入门指南》。但不是对其简单的整理，而是穿插一些DragonBones组成动画的原理介绍，并以理解和实用为目的来介绍其使用方法。其次本文完全结合Egret开发环境来介绍，避免由于Egret与Flash的差异带来的困扰。           
            
@@ -37,22 +41,34 @@ DragonBones的使用主要分为两大阶段。
 对应于资源生成阶段，该阶段可以理解为，对骨骼动画库进行各种调用及组合，产生丰富而生动的游戏动作画面。          
        
 为了让大家快速了解Egret版DragonBones的用法，本教程避重就轻，使用现成的DragonBones资源来呈现动画效果。          
-           
+          
+      
+    
+ 
 ### 为Egret项目增加DragonBones支持
+------
          
-作为Egret官方模块，创建空白Egret项目后，可以很简单的增加DragonBones支持。修改``中的`"modules"`，成为：        
+作为Egret官方的扩展模块，创建空白Egret项目后，可以很简单的增加DragonBones支持。修改`egretProperties.json`中的`"modules"`，成为：        
          
+{% highlight java %}
 "modules": [
   {"name": "core"},
   {"name": "dragonbones"}
 ],   
+{% endhighlight %}
          
-在项目所在目录内执行一次引擎编译：      
+在项目所在目录内执行一次引擎编译：   
+{% highlight java %}   
 egret build -e
+{% endhighlight %}
             
 本步骤已经完成，现在项目中既可以使用DragonBones相关的API了。       
              
+      
+    
+     
 ### 读取DragonBones资源并解析到工厂
+------
            
 DragonBones资源，主要包含显示数据和各种骨骼动画的控制数据。       
          
@@ -76,6 +92,7 @@ DragonBones资源，主要包含显示数据和各种骨骼动画的控制数据
           
 在resource.json中，加入武士相关的资源配置：      
             
+{% highlight java %}
 { 
 	"resources":
 	 [
@@ -88,49 +105,66 @@ DragonBones资源，主要包含显示数据和各种骨骼动画的控制数据
 	 {"name":"warrior","keys":"warrior/skeleton.json,warrior/texture.json,warrior/texture.png"}
 	]
 }
+{% endhighlight %}
           
 在Egret载入`"warrior"`资源组之后，即可开始解析其中的DragonBones资源，首先获得资源数据：         
          
+{% highlight java %}
 var skeletonData = RES.getRes( "warrior/skeleton.json" );
 var textureData = RES.getRes( "warrior/texture.json" );
 var texture = RES.getRes( "warrior/texture.png" );
+{% endhighlight %}
            
 然后开始使用DragonBones解析。           
           
-本教程在Egret默认项目清理的基础上进行，代码除新增函数外，均在基础项目`Main.ts`的`createGameScene`内逐渐加入。         
+本教程在Egret默认项目清理后(即教程起点项目包)的基础上进行，代码除新增函数外，均在基础项目`Main.ts`的`createGameScene`内逐渐加入。         
            
-DragonBones对资源的管理，基本的概念是工厂，可以理解为骨骼动画工厂。在一个游戏中，你可能有很多种角色要显示，但你只需要一个工厂。创建一个工厂的程序：           
+DragonBones对资源的管理，基本的概念是工厂，可以理解为骨骼动画工厂。在一个游戏中，你可能有很多种角色要显示，但你只需要一个工厂。创建一个工厂的程序：  
+{% highlight java %}         
 var factory = new dragonBones.EgretFactory();
+{% endhighlight %}
            
 每一种角色，其实就是一套骨骼皮肤的组合。在DragonBones中，称为一套骨架(armature)。          
                 
 只要我们将一套骨架的纹理显示数据和骨骼控制数据添加到工厂里，就可以用工厂来取出这套骨架。             
             
 接下来两行，就会将我们之前读到的资源添加到工厂：        
+{% highlight java %}
 factory.addSkeletonData(dragonBones.DataParser.parseDragonBonesData(skeletonData));
 factory.addTextureAtlas(new dragonBones.EgretTextureAtlas(texture, textureData));
+{% endhighlight %}
              
 其中"`skeletonData`"(骨骼控制数据)和"`textureData`"(纹理分解数据)都包含骨架名信息。当DragonBones工厂加入多个骨架的数据时，它们之间将通过这个骨架名来区分。而一套骨架的骨骼控制数据和纹理数据也是通过相同的骨架名来合成该套骨架的综合数据。         
          
 本例中，现成的武士骨架名为"warrior"，这是在资源创作阶段就设定好的。       
         
+      
+    
+      
 ### 播放一个DragonBones动作
+------
         
 前面说过，一种角色对应一套骨架。当我们需要显示某种角色时，首先将其DragonBones资源解析到工厂。
           
-接下来，便可以轻易的用工厂建立一套骨架，用以显示其对应的角色。工厂是根据骨架名来建立骨架的：        
+接下来，便可以轻易的用工厂建立一套骨架，用以显示其对应的角色。工厂是根据骨架名来建立骨架的：    
+{% highlight java %}    
 var armature = factory.buildArmature("warrior");
+{% endhighlight %}
         
 骨架可以理解为是某种角色的控制中心，但其不是直接的显示对象。          
           
-为了在舞台上显示该角色，那么我们可以用骨架的一个方法来直接取得其所控制的显示对象：     
+为了在舞台上显示该角色，那么我们可以用骨架的一个方法来直接取得其所控制的显示对象：    
+{% highlight java %} 
 var armatureDisplay = armature.getDisplay();
+{% endhighlight %}
          
 这里得到的是一个`egret.DisplayObject`，这样我们就可以放入Egret的显示列表中，并根据游戏情节需要给其进行定位，如：         
+{% highlight java %}
 /// this.dispContainer 是事先创建好的egret.Sprite，并已经addChild到主文档类
 this.dispContainer.addChild(armatureDisplay);
 armatureDisplay.x = 200;
 armatureDisplay.y = 450;
+{% endhighlight %}
            
 注意骨架显示对象的定位基准是该骨架创作时的注册点。这也是创作时需要规范好的。        
          
@@ -143,7 +177,9 @@ armatureDisplay.y = 450;
       
       
 然后，开始播放一个基本的动作：     
+{% highlight java %}
 armature.animation.gotoAndPlay("ready");    
+{% endhighlight %}
      
 注意，该动作`ready`也是在资源创作阶段约定好的动作名。播放动作时，必须确保该动作名在资源中有定义！   
      
@@ -152,18 +188,24 @@ armature.animation.gotoAndPlay("ready");
 这是由于动作的播放是需要定时推进的，即需要一个类似`ENTER_FRAME`的侦听处理，或者注册一个`Ticker`触发器。     
         
 首先，DragonBones对动作推进使用了一个时钟管理器。      
-当某个现有的骨架需要动作播放时，在时钟管理器上加入该骨架：        
+当某个现有的骨架需要动作播放时，在时钟管理器上加入该骨架：    
+{% highlight java %}    
 dragonBones.WorldClock.clock.add(armature);
+{% endhighlight %}
           
-然后加入一个定时推进触发器。可以用`ENTER_FRAME`：       
+然后加入一个定时推进触发器。可以用`ENTER_FRAME`：      
+{% highlight java %} 
 super.addEventListener( egret.Event.ENTER_FRAME, function():void{
     dragonBones.WorldClock.clock.advanceTime( 0.01 );
 }, this );
+{% endhighlight %}
         
 或者也可以用` Ticker`：      
+{% highlight java %}
 egret.Ticker.getInstance().register(function (advancedTime) {
     dragonBones.WorldClock.clock.advanceTime(advancedTime / 1000);
 }, this); 
+{% endhighlight %}
        
 注意定时推进触发器只需要一个即可，因为两个都加入会产生叠加效果。         
              
@@ -172,10 +214,15 @@ egret.Ticker.getInstance().register(function (advancedTime) {
 现在，再次编译项目，打开页面，没有问题的话，武士应该已经动起来了！注意：`ready`只是一个原地待命的动作。  
         
       
+      
+    
+
 ### 加入另一个骨架角色，并播放各自的动作
+------
     
 在resource.json中，加入机器人相关的资源配置：         
           
+{% highlight java %}
 {
 "resources":
 	[
@@ -193,8 +240,10 @@ egret.Ticker.getInstance().register(function (advancedTime) {
 		,{"name":"robot","keys":"robot/skeleton.json,robot/texture.json,robot/texture.png"}
 	]
 }
+{% endhighlight %}
     
 不同的骨架加入工厂的代码都是一样的，因此将这部分代码整合到一个函数，传入工厂、骨架名称和骨架目录名，即可：       
+{% highlight java %}
 private addArmatureToFactory( factory:dragonBones.EgretFactory, name:string, directory:string ){
     var skeletonData = RES.getRes( directory + "/skeleton.json" );
     var textureData = RES.getRes( directory + "/texture.json" );
@@ -202,13 +251,17 @@ private addArmatureToFactory( factory:dragonBones.EgretFactory, name:string, dir
     factory.addSkeletonData(dragonBones.DataParser.parseDragonBonesData(skeletonData));
     factory.addTextureAtlas(new dragonBones.EgretTextureAtlas(texture, textureData));
 }
+{% endhighlight %}
           
 这样，建立工厂后，我们先把武士和机器人的两套资源加入工厂：         
+{% highlight java %}
 var factory = new dragonBones.EgretFactory();
 this.addArmatureToFactory( factory, "warrior", "warrior" );
 this.addArmatureToFactory( factory, "robot", "robot" );
+{% endhighlight %}
          
 则创建一个武士角色并显示的代码变为：        
+{% highlight java %}
 var amtWorrior:dragonBones.Armature = factory.buildArmature( "warrior" );
 var dispWorrior = amtWorrior.getDisplay();
 
@@ -219,12 +272,14 @@ dispWorrior.scaleX = dispWorrior.scaleY = .7;
 amtWorrior.animation.gotoAndPlay("ready");
 
 dragonBones.WorldClock.clock.add(amtWorrior);
+{% endhighlight %}
          
 注意，为了同时显示两个角色，骨架显示对象的位置进行了调整。     
        
 编译运行，除了位置变化，动作效果应该跟修改前一样。
            
-然后我们类似的，创建一个机器人角色，并播放单脚舞姿动作：      
+然后我们类似的，创建一个机器人角色，并播放单脚舞姿动作：    
+{% highlight java %}  
 var amtRobot:dragonBones.Armature = factory.buildArmature( "robot" );
 var dispRobot = amtRobot.getDisplay();
 
@@ -234,19 +289,24 @@ dispRobot.y = 230;
 amtRobot.animation.gotoAndPlay("oneLegStand");
 
 dragonBones.WorldClock.clock.add(amtRobot);
+{% endhighlight %}
           
 编译运行，两种不同角色有各自的动作同时显示出来，如图所示：      
 ![robot-and-warrior]({{site.baseurl}}/assets/img-subj/dragonbones-programmer-use-abc/robot-and-warrior.jpg)    
          
              
       
+      
+
 ### 播放另一个骨架的动作，即动画拷贝功能
+------
     
 通常设计不同的骨架，各自都有不同的动作。如果某套骨架在设计时不包含某个动作，而另一套骨架有这样现成的动作，并且可以套用，那将会节省很多设计工作量。   
       
 从Egret1.5.1起，已经有了这样的功能！   
     
 比如前一节的单脚舞姿动作，是机器人骨架设计时包含的。那么武士播放这个动作就可以调用工厂的`copyAnimationsToArmature`方法，我们再创建一个骨架，来测试该功能：   
+{% highlight java %}
 var amtWorriorUseRobot:dragonBones.Armature = factory.buildArmature( "warrior" );
 var dispWorriorUseRobot = amtWorriorUseRobot.getDisplay();
 
@@ -259,6 +319,7 @@ dispWorriorUseRobot.scaleX = dispWorriorUseRobot.scaleY = .7;
 amtWorriorUseRobot.animation.gotoAndPlay("oneLegStand");
 
 dragonBones.WorldClock.clock.add(amtWorriorUseRobot);
+{% endhighlight %}
         
 编译运行，会看到武士跟机器人完美地同步进行单脚跳舞动作，如图所示：    
 
@@ -266,13 +327,18 @@ dragonBones.WorldClock.clock.add(amtWorriorUseRobot);
         
           
       
+      
+    
+
 ### Egret1.5.1新增的其他DragonBones功能
+------
          
 有一个功能是使指定动作停止在指定的秒数，用跟MovieClip类似的`gotoAndStop`方法。    
 另外一个是控制动画倒序播放，在`gotoAndPlay`返回的`AnimationState`上调用`setTimeScale`。    
      
 在`createGameScene`最后加入如下代码来测试这两个功能：    
 
+{% highlight java %}
 this.nTap = 0;
 this.nTimeScale = undefined;
 var self:Main = this;
@@ -294,10 +360,13 @@ this.stage.addEventListener( egret.TouchEvent.TOUCH_TAP, function( evt:egret.Tou
             break;
     }
 }, this );
+{% endhighlight %}
 
 代码所需的两个成员需要在类中定义：    
+{% highlight java %}
 private nTap:number;
 private nTimeScale:number;
+{% endhighlight %}
 
 该段测试代码用舞台触摸触发进行。第一次触摸测试`gotoAndStop`功能。        
 第二次及后续触摸均为测试逆序播放动作动画，每次点击切换正逆序。          
@@ -310,7 +379,11 @@ private nTimeScale:number;
           
           
        
+      
+    
+
 ### 结语
+------
            
 本教程主要介绍了DragonBones在程序使用阶段的基本用法，以及到目前(Egret 1.5.1)为止的一些新用法。展示了Egret版DragonBones的强大功能。      
         
