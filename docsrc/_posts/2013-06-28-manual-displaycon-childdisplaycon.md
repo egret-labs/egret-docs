@@ -26,7 +26,7 @@ Egret中容器的深度都是从0开始的，当一个显示对象第一个被�
 
 下面的示例中，我们创建了两个显示对象，并且让他们发生遮挡，一次来查看显示对象的深度值关系。
 
-{% highlight java linenos %}
+{% highlight java %}
 var spr1:egret.Sprite = new egret.Sprite();
 spr1.graphics.beginFill( 0xff0000 );
 spr1.graphics.drawRect( 0, 0, 100, 100);
@@ -61,7 +61,7 @@ this.addChild( spr2 );
 
 我们来看一个具体的演示代码，我们随机绘制四个颜色不同的正方形，将它们依次叠加排列，然后新建一个显示对象，并且放到深度为1的位置。
 
-{% highlight java linenos %}
+{% highlight java %}
 var sprcon:egret.Sprite = new egret.Sprite();
 this.addChild( sprcon );
 sprcon.x = 10;
@@ -97,7 +97,7 @@ sprcon.addChildAt( sprNew, 1 );
 
 我们通过上上面示例代码的修改，将深度值为2的显示对象移除显示列表。
 
-{% highlight java linenos %}
+{% highlight java %}
 var sprcon:egret.Sprite = new egret.Sprite();
 this.addChild( sprcon );
 sprcon.x = 10;
@@ -129,7 +129,7 @@ sprcon.removeChildAt( 2 );
 
 有时候我们想一次性将一个容器内的所有子对象全部删除，那么我们不需要使用复杂的遍历操作来想子对象一一删除，例如：
 
-{% highlight java linenos %}
+{% highlight java %}
 var numChild:number = sprcon.numChildren;
 for(var t:number = 0; t<numChild; t++)
 {
@@ -163,7 +163,7 @@ for(var t:number = 0; t<numChild; t++)
 我们来看一个具体的例子，这个示例中，我们创建一个sprcon容器，并向其中纺织两个颜色不同的方块。然后我们分别使用上面两个方法互换两个方块的深度值。
 
 
-{% highlight java linenos %}
+{% highlight java %}
 var sprcon:egret.Sprite = new egret.Sprite();
 this.addChild( sprcon );
 sprcon.x = 10;
@@ -190,13 +190,13 @@ sprcon.addChild( spr2 );
 
 下面我们使用第一种方法进行两个方块的深度互换。
 
-{% highlight java linenos %}
+{% highlight java %}
 sprcon.swapChildren( spr1, spr2 );
 {% endhighlight %}
 
 第二种方法进行两个方块深度互换。
 
-{% highlight java linenos %}
+{% highlight java %}
 sprcon.swapChildrenAt( 0, 1 );
 {% endhighlight %}
 
@@ -207,7 +207,7 @@ sprcon.swapChildrenAt( 0, 1 );
 ####重设子对象深度
 ---
 
-当我们将一个现实对象添加到现实列表中后，我们还可以手动重设这个现实对象的深度。
+当我们将一个显示对象添加到显示列表中后，我们还可以手动重设这个显示对象的深度。
 
 实现显示对象深度重置的方法是 `setChildIndex` ，使用方法如下：
 
@@ -215,7 +215,7 @@ sprcon.swapChildrenAt( 0, 1 );
 
 示例代码如下：
 
-{% highlight java linenos %}
+{% highlight java %}
 var sprcon:egret.Sprite = new egret.Sprite();
 this.addChild( sprcon );
 sprcon.x = 10;
