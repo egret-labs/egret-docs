@@ -34,4 +34,4 @@ version: Egret引擎 v1.x
 
 在 egret 之前的版本中，引擎中的所有代码都会在 publish 后编译成一个文件，但是开发者很可能不会使用引擎中的所有功能，这带来了额外的网络传输开销。
 
-1.0.4版本中我们重点优化了这个问题。现在egret引擎分为 core / gui / dragonbones / html5 / native 5个模块，开发者只需要在 egretProerties.json 文件中配置你的模块，就可以编译指定模块从而降低编译体积。
+1.0.4版本中我们重点优化了这个问题。现在egret引擎分为 core / gui / dragonbones / html5 / native 5个模块，开发者只需要在 egretProperties.json 文件中配置你的模块，就可以编译指定模块从而降低编译体积。
