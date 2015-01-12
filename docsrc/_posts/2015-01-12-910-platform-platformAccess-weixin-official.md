@@ -27,7 +27,7 @@ version: Egret引擎 v1.x
     
 * 在Egret项目的TS文件中，对照微信公众平台开发者文档，直接调用其相关API。如下为基本用法示例：
 
-```
+{% highlight java %}
 var bodyConfig:BodyConfig = new BodyConfig;
 bodyConfig.appId = "aaabbb";
 bodyConfig.debug = true;
@@ -37,6 +37,6 @@ wx.config( bodyConfig );
 wx.ready( function(){
     /// 在这里调用微信相关功能的 API
 } )
-```
+{% endhighlight %}
 
 
