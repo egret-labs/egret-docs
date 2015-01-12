@@ -14,6 +14,6 @@ RES内置支持的文件类型有：
 * RES.ResourceItem.TYPE_TEXT(text)：解析为string变量
 * RES.ResourceItem.TYPE_JSON(json)：解析为json对象
 * RES.ResourceItem.TYPE_SHEET(sheet)：解析为egret.SpriteSheet对象
-* RES.ResourceItem.TYPE_FONT(font)：解析为egret.BitmapTextSpriteSheet对象
+* RES.ResourceItem.TYPE_FONT(font)：解析为egret.BitmapFont对象      (egret1.5.2新更名，即为之前版本的egret.BitmapTextSpriteSheet)
 * RES.ResourceItem.TYPE_SOUND(sound)：解析为egret.Sound对象
 * RES.ResourceItem.TYPE_XML(xml)：解析为egret.XML对象
