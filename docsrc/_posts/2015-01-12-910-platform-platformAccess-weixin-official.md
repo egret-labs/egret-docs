@@ -21,7 +21,12 @@ version: Egret引擎 v1.x
 
 * 下载并复制一份 [微信公众平台官方SDK文件jweixin-1.0.0.js](http://res.wx.qq.com/open/js/jweixin-1.0.0.js)  为Egret项目中的 ```launcher/jweixin-1.0.0.js```     
 
-* 在游戏项目的 ```index.html``` 和 ```release.html``` 中添加 ``` <script src="launcher/jweixin-1.0.0.js" async="false"></script> ```
+* 复制本项目的 ```jweixin-1.0.0-additional.js``` 为Egret项目中的 ```launcher/jweixin-1.0.0-additional.js``` 
+
+* 在游戏项目的 ```index.html``` 和 ```release.html``` 中添加：         
+``` <script src="launcher/jweixin-1.0.0.js" async="false"></script>```
+以及           
+``` <script src="launcher/jweixin-1.0.0-additional.js" async="false"></script>```
    
 * 复制本项目的 ```jweixin-1.0.0.d.ts``` 为Egret项目中的 ```libs/jweixin-1.0.0.d.ts``` 
     
