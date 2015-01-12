@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "微信平台接入"
-permalink: post/platform/platformaccess/weixin.html
+title:  "微信平台接入旧版第三方库"
+permalink: post/platform/platformaccess/weixin-old-third.html
 type: platform
 element: platformAccess
 version: Egret引擎 v1.x
 ---
 
-微信平台分享功能需要接入第三方库，具体项目地址在<a href="https://github.com/WanderWang/EgretWeixinJSBridge" target="_blank">这里</a>。
+注：该接入方式适用于2015年1月初微信JS-SDK放出前，因此不再保证适用。 
 
 具体使用方法如下：
 
