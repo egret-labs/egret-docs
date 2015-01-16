@@ -70,11 +70,11 @@ class BitmapTest extends egret.DisplayObjectContainer{
         this.addEventListener(egret.Event.ADDED_TO_STAGE,this.onAddToStage,this);
     }
     private onAddToStage(event:egret.Event) {
-        RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onGroupComp, this);
+        RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onGroupComplete, this);
         RES.loadConfig("resource/resource.json", "resource/");
         RES.loadGroup("preload");
     }
-    private onGroupComp()
+    private onGroupComplete()
     {
         var img:egret.Bitmap = new egret.Bitmap();
         img.texture = RES.getRes("bgImage");
@@ -85,4 +85,4 @@ class BitmapTest extends egret.DisplayObjectContainer{
 
 编译后运行，效果如图：
 
-![img]({{site.baseurl}}/assets/img/createbitmap1.png)
+![img]({{site.baseurl}}/assets/img/createbitmap1.jpg)
