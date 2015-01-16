@@ -95,10 +95,14 @@ world.sleepMode = p2.World.BODY_SLEEPING;
 
 -----
 
-### 源码地址
+### Egret与p2物理引擎使用相关传送门
 
-访问 <a href="http://static.egret-labs.org/egret-game/example/html5/physics" target="_blank">这里</a> 查看 egret 演示示例，通过点击来添加刚体
+<a href="http://static.egret-labs.org/egret-game/example/html5/physics" target="_blank">Egret使用p2物理引擎演示示例，通过点击来添加刚体</a> 
 
-访问 <a href="https://github.com/egret-labs/egret-game-library" target="_blank">这里</a> 获取 egret 演示示例源码
+<a href="https://github.com/egret-labs/egret-game-library/tree/master/physics" target="_blank">Egret使用p2物理引擎示例源码</a>
 
-访问 <a href="https://github.com/schteppe/p2.js" target="_blank">这里</a> 获取 p2源码
+<a href="https://github.com/schteppe/p2.js" target="_blank">p2物理引擎github首页</a>
+
+<a href="http://schteppe.github.io/p2.js/docs/" target="_blank">p2物理引擎API文档</a>
+
+
