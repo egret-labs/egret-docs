@@ -36,15 +36,7 @@ class SoundPlayLoop extends egret.DisplayObjectContainer
      */
     private onResourceLoadComplete(event:RES.ResourceEvent):void {
         this.sound = RES.getRes("sound");
-        this.sound.play();
-
-        this.sound.addEventListener("ended", this.rePlay.bind(this));
-    }
-
-    //循环播放音频
-    public rePlay():void{
-        this.sound.load();
-        this.sound.play();
+        this.sound.play( true );
     }
 }
 {% endhighlight %}
