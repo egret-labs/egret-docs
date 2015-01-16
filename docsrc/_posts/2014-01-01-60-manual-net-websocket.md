@@ -27,6 +27,24 @@ egret的WebSocket即为H5的WebSocket封装。
 ------
 ### 用WebSocket进行通讯的基本过程
 
+#### 确保项目支持WebSocket
+
+从Egret1.5.0开始，以官方扩展模块的形式支持WebSocket。在现有的Egret项目中，修改`egretProperties.json`中的`"modules"`，成为：        
+         
+{% highlight java %}
+"modules": [
+  {"name": "core"},
+  {"name": "socket"}
+],   
+{% endhighlight %}
+         
+在项目所在目录内执行一次引擎编译：   
+{% highlight java %}   
+egret build -e
+{% endhighlight %}
+            
+本步骤已经完成，现在项目中既可以使用WebSocket相关的API了。       
+
 #### WebSocket对象
 所有的通讯都是基于一个WebSocket实例，首先创建WebSocket对象:
 {% highlight java %}
