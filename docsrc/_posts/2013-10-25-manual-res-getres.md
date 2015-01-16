@@ -29,7 +29,7 @@ RES资源管理模块共含有三种资源获取方式：
 var spriteSheet:egret.SpriteSheet = RES.getRes("icons");
 var texture = spriteSheet.getTexture("activity_10");
 //等同于这样取：
-var texture:egret.Texture = RES.getRes("icons.activity_10");
+var texture:egret.Texture = RES.getRes("activity_10");
 {% endhighlight %}
 
 这种方式在与GUI的UIAsset无缝桥接时将会非常有用。
