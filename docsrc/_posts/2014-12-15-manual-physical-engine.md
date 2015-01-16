@@ -103,6 +103,9 @@ world.sleepMode = p2.World.BODY_SLEEPING;
 
 <a href="https://github.com/schteppe/p2.js" target="_blank">p2物理引擎github首页</a>
 
-<a href="http://schteppe.github.io/p2.js/docs/" target="_blank">p2物理引擎API文档</a>
+<a href="http://schteppe.github.io/p2.js/docs/" target="_blank">p2物理引擎API文档</a>        
+          
+          
+            
 
 
