@@ -41,7 +41,7 @@ class GameApp extends egret.DisplayObjectContainer{
         label.text = "这是一个文本";
         label.textAlign = egret.HorizontalAlign.CENTER;
         label.verticalAlign = egret.VerticalAlign.MIDDLE;
-        //设置秒表属性
+        //设置描边属性
         label.strokeColor = 0x0000ff;
         label.stroke = 2;
     }

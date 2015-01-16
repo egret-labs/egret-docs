@@ -22,7 +22,7 @@ Egret中所使用的动画资源格式可以从Flash软件中制作，然后导�
 
 我们为Flash提供了一个插件，这个插件会帮助你将Flash中的动画导出为能够被Egret播放的动画文件。具体插件安装和使用方法请查看
 
-**[MovieClip Plug-in]({{site.baseurl}}/post/tools/othertools/movieclipplugin.html)**
+**[MovieClip Plug-in](http://bbs.egret-labs.org/thread-127-1-1.html)**
 
 ####如何创建一个MovieClip
 ---

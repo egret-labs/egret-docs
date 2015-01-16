@@ -90,8 +90,7 @@ console.log( label.width + "+"+ label.height);
 
 我们可以看到，第一次文本的宽高值为 `30*180`，而第二次的宽高值仍为 `30*180`。文本宽高并未因文本内容改变而改变。
 
-前面我们看到的都是让TextField自动计算宽高，但在实际开发中，我们并不希望这种“失控”情况发生。我们可以在设置为本之前，手动
-设置文本的宽高值。具体代码如下：
+前面我们看到的都是让TextField自动计算宽高，但在实际开发中，我们并不希望这种“失控”情况发生。我们可以在设置文本内容之前，手动设置文本的宽高值。具体代码如下：
 
 {% highlight java linenos %}
 var label:egret.TextField = new egret.TextField();

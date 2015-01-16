@@ -6,13 +6,8 @@ type: manual
 element: manualnative
 version: egret-android-support v1.x
 ---
-
-**egret-android-support**是Egret打包为原生Android APP的解决方案，你可以使用egret-android-support将你的HTML5游戏打包为APK文件，并提供给用户安装。
-
-具体使用方法如下：
-####-1、预备知识
----
-
+         
+          
 为了顺利完成本教程，请确认您已熟练掌握以下知识：
 
 - 了解**文件**、**文件夹**的概念，以及创建，移动、复制、重命名和删除等知识。
@@ -22,10 +17,14 @@ version: egret-android-support v1.x
   - 编写游戏逻辑需要：JavaScript、TypeScript、nodejs、npm
   - 打包Android App需要：XML、Java、JRE、ADT-Bundle、Android SDK
 - 尽管本文由部分内容覆盖<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>，但是还是强烈建议在阅读本文之前先阅读<a href="{{site.baseurl}}/post/quitestart/helloworld/helloworld.html" target="_blank">HelloWorld</a>
-
-
-####0、文档概述
----
+            
+         
+----
+               
+#### 概述
+             
+**egret-android-support**是Egret打包为原生Android APP的解决方案，你可以使用egret-android-support将你的HTML5游戏打包为APK文件，并提供给用户安装。    
+     
 本文会完整的展示如何在一个已经安装npm管理包的环境中全新安装Egret核心包、Egret的Android支持包，最终在模拟机中运行Demo的过程。
 
 本文分为三部分：第一部分为Android开发环境的安装、第二部分为Egret游戏框架的安装、第三部分创建一个完整Android App的示例。
@@ -50,10 +49,11 @@ Android开发环境的运行需要Java运行时环境（JRE）支持，一个常
 
 ####1、安装Java运行时
 请确保Java被正确安装，请参考[Windows中安装Egret第6节]({{site.baseurl}}/post/quitestart/install/instalformac.html)
-
-
+      
+        
+---     
+          
 ####2 安装Android开发工具包
----
 因为Android开发工具包是绿色软件，所以我们直接放置在我们的工作目录“D:\Labs\”中，工作目录为空文件夹，如下图：
 
 
@@ -78,9 +78,13 @@ a. **Intellij IDEA**。 Intellij IDEA 现在支持两种编译模式Ant(ADT的�
 
 b. **Android Studio**。因为Android Studio只使用新的Gradle模式，因为Gradle要求实时联网编译，暂时不太建议一般用户试用。
 
-###第二部分、安装Egret游戏框架
-####3、预备知识
----
+        
+---     
+          
+###第二部分、安装Egret游戏框架      
+                
+####3、预备知识         
+           
 为方便管理游戏项目，首先我们建立一个projects文件夹用于集中存放游戏项目，执行命令
 
 ```
@@ -93,14 +97,17 @@ D:\Labs>mkdir projects
 
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-projects-finder.png)
 
+        
+---     
+          
 ####4、安装Egret
----
 
 传送门：[Windows 系统下安装最新的Egret](http://docs.egret-labs.org/post/quitestart/install/installwin.html)。
 
-####5、安装Egret的Android支持包
 
----
+---            
+####5、安装Egret的Android支持包         
+           
 #####创建Egret Support文件夹用于集中存放所有egret支持包
 
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-mkdir-egret-support-finder.png)
@@ -111,13 +118,13 @@ D:\Labs>mkdir projects
 
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-egret-support-finder.png)
 
-
-
+     
+        
+--- 
+     
 ###第三部分、创建一个Android打包示例
 
 ####6、创建一个Egret项目
-
----
 
 
 这里创建一个名称为`ACoolHtmlGame`的项目，注意我们的当前目录为“labs/projects/”下，使用命令如下：
@@ -131,17 +138,21 @@ D:\Labs\projects> egret create ACoolHtmlGame
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-egret-create.png)
 
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-egret-create-finder.png)
-
-
-####7、编写你的游戏项目
+         
+        
 ---
+        
+####7、编写你的游戏项目
 
 接下来要做的事情就是编写你的游戏项目逻辑。这里我们不进行操作，使用默认的项目来进行演示。
 
 
 
-####8、创建你的Android项目工程
+         
+        
 ---
+        
+####8、创建你的Android项目工程
 
 
 ###### 从你的HTML5游戏创建android项目工程
@@ -184,8 +195,12 @@ labs/-+
       ...
 ```
 
-####9、编译Android游戏
+         
+        
 ---
+        
+####9、编译Android游戏              
+                 
 
 #####9.1 导入项目
 
@@ -217,8 +232,12 @@ labs/-+
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-build_project.png)
 
 
-####10、测试项目
+         
+        
 ---
+        
+####10、测试项目         
+ 
 
 #####10.1 选择测试环境
 
@@ -246,8 +265,12 @@ labs/-+
 
 自此，完成了使用Egret实现一个Android游戏应用的全过程。
 
-###总结
+         
+        
 ---
+        
+###总结         
+         
 这里我们总结一下项目开发的整体流程：
 
 我们推荐的开发方式：在原有的HTML5游戏项目中进行开发，开发测试ok，再编译到Android平台。下面为大家演示一下流程：
