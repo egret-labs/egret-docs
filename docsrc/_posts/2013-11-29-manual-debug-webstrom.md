@@ -1,10 +1,10 @@
 ---
-layout: post
-title:  "配置WebStorm开发环境"
-permalink: post/manual/debug/webstorm.html
-type: manual
-element: manualdebug
-version: Egret引擎 v1.x
+# layout: post
+# title:  "配置WebStorm开发环境"
+# permalink: post/manual/debug/webstorm.html
+# type: manual
+# element: manualdebug
+# version: Egret引擎 v1.x
 ---
 
 ####前期准备
