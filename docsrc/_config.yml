@@ -78,7 +78,7 @@ manual:
   - text: 视觉编程
     element: manualdisplay
     url: post/manual/display/aboutdisplay.html
-    des: 详细介绍了Egret中显示对象的架构设计以及一些概念。
+    des: 详细介绍了Egret中显示对象的架构设计以及一些概念，还有脏矩形的用法。
     enter: true
 
   - text: 显示对象
