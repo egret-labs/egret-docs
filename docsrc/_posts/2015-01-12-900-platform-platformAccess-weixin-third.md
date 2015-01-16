@@ -1,10 +1,10 @@
 ---
-layout: post
-title:  "微信平台接入旧版第三方库"
-permalink: post/platform/platformaccess/weixin-old-third.html
-type: platform
-element: platformAccess
-version: Egret引擎 v1.x
+# layout: post
+# title:  "微信平台接入旧版第三方库"
+# permalink: post/platform/platformaccess/weixin-old-third.html
+# type: platform
+# element: platformAccess
+# version: Egret引擎 v1.x
 ---
 
 注：该接入方式适用于2015年1月初微信JS-SDK放出前，因此不再保证适用。 
