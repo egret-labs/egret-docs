@@ -68,4 +68,5 @@ label.paddingTop = 20;
 label.paddingBottom = 40;
 {% endhighlight %}
 
-Label不具备输入功能，如果要输入文本，请使用[egret.TextInput](https://github.com/egret-labs/egret-core/blob/master/src/egret/text/TextInput.ts)。
+### 输入文本
+Label不具备输入功能，如果要输入文本，请使用[egret.gui.EditableText](https://github.com/egret-labs/egret-core/blob/39bb7ec1a7abf51029bc2e53a7d02f41590bd946/src/extension/gui/components/EditableText.ts)。

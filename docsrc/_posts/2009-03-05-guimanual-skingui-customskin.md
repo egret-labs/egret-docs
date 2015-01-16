@@ -71,6 +71,8 @@ module uiskins
 工具
 ---------------------
 
-逐行敲代码来编写皮肤，虽然看起来很酷，写起来却是很累的。如果有一个可视化工具来帮助我们制作皮肤，那实在是求之不得的好事。不过不必担心，或许很快您就可以“美梦成真”了。[Egret团队正在开发一款名为"Egret Wing"的工具](http://bbs.egret-labs.org/forum.php?mod=viewthread&tid=188&highlight=wing)，这可是制作GUI的神器哦。等这款工具推出后，后续的教程里，将会讲解如何结合Egret Wing来制作皮肤，敬请期待。
+逐行敲代码来编写皮肤，虽然看起来很酷，写起来却是很累的。  
+        
+不用担心，Egret官方已经推出了可视化工具来帮助我们制作皮肤：["Egret Wing"]({{site.baseurl}}/post/tools/egrettools/egretwing.html)。
 
 ![github]({{site.baseurl}}/assets/img/wing_logo.jpg "Egret")

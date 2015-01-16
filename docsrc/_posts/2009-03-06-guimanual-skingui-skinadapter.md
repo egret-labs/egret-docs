@@ -72,9 +72,7 @@ egret.Injector.mapClass("egret.gui.ISkinAdapter",MySkinAdapter);
 在很多情况下，即便默认主题做的很漂亮，我们也还是需要根据自己游戏的设计风格，做一套自己的主题。那么自定义主题的制作过程，应该是类似下面这样的：
 
 1. 首先先把设计师的图切出来，可以做成分散的图，也可以做成SpriteSheet，视自己情况而定，放到单独的目录里，尽量不要和默认主题的素材混在一起
-2. 制作素材的配置文件，即resource.json，这个可以借助Egret提供的[资源配置工具](http://www.egret-labs.org/download/restool-download.html)来完成
+2. 制作素材的配置文件，即resource.json，这个可以借助Egret提供的[资源配置工具]({{site.baseurl}}/post/tools/egrettools/restool.html)来完成
 3. 定义皮肤文件，如果只是改素材，那就把默认的皮肤(大多是exml文件)拷贝过去，改改里面的资源引用就行了；如果要在皮肤中增加功能，可以在拷贝过去的默认的皮肤上改，也可以自己编写。
 4. 定义主题配置文件，参考默认主题配置文件，新建一个自己的主题配置，写好映射关系
 5. 运行项目，实际测试
-
-> 皮肤的制作，将在Egret未来的GUI工具中提供可视化支持，目前尚未推出，敬请期待

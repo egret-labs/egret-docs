@@ -26,37 +26,37 @@ Button.ts
 
 {% highlight java linenos %}
 class Button extends egret.gui.SkinnableComponent{
-    public constructor(){
-        super();       
-    }
- 
-    public labelDisplay:egret.gui.Label;
- 
-    private _label:string = "";
- 
-    public get label():string{
-        if(this.labelDisplay){
-            return this.labelDisplay.text;
-        }
-        else{
-            return this._label;
-        }
-    }
- 
-    public set label(value:string){
-        this._label = value;
-        if(this.labelDisplay){
-            this.labelDisplay.text = value;
-        }
-    }
- 
-    public partAdded(partName:string, instance:any):void{
-        super.partAdded(partName, instance);
- 
-        if (instance == this.labelDisplay){
-            this.labelDisplay.text = this._label;
-        }
-    }
+    public constructor(){
+        super();       
+    }
+ 
+    public labelDisplay:egret.gui.Label;
+ 
+    private _label:string = "";
+ 
+    public get label():string{
+        if(this.labelDisplay){
+            return this.labelDisplay.text;
+        }
+        else{
+            return this._label;
+        }
+    }
+ 
+    public set label(value:string){
+        this._label = value;
+        if(this.labelDisplay){
+            this.labelDisplay.text = value;
+        }
+    }
+ 
+    public partAdded(partName:string, instance:any):void{
+        super.partAdded(partName, instance);
+ 
+        if (instance == this.labelDisplay){
+            this.labelDisplay.text = this._label;
+        }
+    }
 }
 {% endhighlight %}
 
@@ -64,34 +64,34 @@ ButtonSkin.ts
 
 {% highlight java linenos %}
 class ButtonSkin extends egret.gui.Skin{
- 
-    public constructor(){
-        super();
-        this.minWidth = 140;
-        this.height = 60;
-        this.states = ["up","down","disabled"];
-    }
- 
-    public skinParts:Array<string> = ["labelDisplay"];
- 
-    public labelDisplay:egret.gui.Label;
- 
-    public createChildren():void{
-        super.createChildren();
-        var background = new egret.gui.UIAsset();
-        background.percentHeight = background.percentWidth = 100;
-        background.source = "assets/button-up.png";
-        this.addElement(background);
- 
-        this.labelDisplay = new egret.gui.Label();
-        this.labelDisplay.left = 10;
-        this.labelDisplay.right = 10;
-        this.labelDisplay.top = 10;
-        this.labelDisplay.bottom = 10;
-        this.labelDisplay.textAlign = egret.gui.HorizontalAlign.CENTER;
-        this.labelDisplay.verticalAlign = egret.gui.VerticalAlign.MIDDLE;
-        this.addElement(this.labelDisplay);
-    }
+ 
+    public constructor(){
+        super();
+        this.minWidth = 140;
+        this.height = 60;
+        this.states = ["up","down","disabled"];
+    }
+ 
+    public skinParts:Array<string> = ["labelDisplay"];
+ 
+    public labelDisplay:egret.gui.Label;
+ 
+    public createChildren():void{
+        super.createChildren();
+        var background = new egret.gui.UIAsset();
+        background.percentHeight = background.percentWidth = 100;
+        background.source = "assets/button-up.png";
+        this.addElement(background);
+ 
+        this.labelDisplay = new egret.gui.Label();
+        this.labelDisplay.left = 10;
+        this.labelDisplay.right = 10;
+        this.labelDisplay.top = 10;
+        this.labelDisplay.bottom = 10;
+        this.labelDisplay.textAlign = egret.gui.HorizontalAlign.CENTER;
+        this.labelDisplay.verticalAlign = egret.gui.VerticalAlign.MIDDLE;
+        this.addElement(this.labelDisplay);
+    }
 }
 {% endhighlight %}
 
@@ -108,38 +108,38 @@ Button.ts
 
 {% highlight java linenos %}
 class Button extends egret.gui.SkinnableComponent{
-    public constructor(){
-        super();   
-        this.addEventListener(TouchEvent.TOUCH_BEGIN, this.mouseEventHandler, this);
-        this.addEventListener(TouchEvent.TOUCH_END, this.mouseEventHandler, this);    
-    }
- 
-    //...这里省略上文出现的部分代码
- 
-    private touchDown:boolean = false;
- 
-    public mouseEventHandler(event:TouchEvent):void{
-        switch (event.type){
-            case TouchEvent.TOUCH_BEGIN:{
-                this.touchDown = true;
-                break;
-            }
-            case TouchEvent.TOUCH_END:{
-                this.touchDown = false;
-                break;
-            }            
-        }
-        this.invalidateSkinState();//标记视图状态失效
-    }
- 
-    public getCurrentSkinState():string{
-        if (!this.enabled)
-            return "disabled";
-        if (this.touchDown)
-            return "down";
-        return "up";
-    }
-     
+    public constructor(){
+        super();   
+        this.addEventListener(TouchEvent.TOUCH_BEGIN, this.mouseEventHandler, this);
+        this.addEventListener(TouchEvent.TOUCH_END, this.mouseEventHandler, this);    
+    }
+ 
+    //...这里省略上文出现的部分代码
+ 
+    private touchDown:boolean = false;
+ 
+    public mouseEventHandler(event:TouchEvent):void{
+        switch (event.type){
+            case TouchEvent.TOUCH_BEGIN:{
+                this.touchDown = true;
+                break;
+            }
+            case TouchEvent.TOUCH_END:{
+                this.touchDown = false;
+                break;
+            }            
+        }
+        this.invalidateSkinState();//标记视图状态失效
+    }
+ 
+    public getCurrentSkinState():string{
+        if (!this.enabled)
+            return "disabled";
+        if (this.touchDown)
+            return "down";
+        return "up";
+    }
+     
 }
 {% endhighlight %}
 
@@ -149,27 +149,27 @@ ButtonSkin.ts
 
 {% highlight java linenos %}
 class ButtonSkin extends egret.gui.Skin{
-    public constructor(){
-        super();   
-        this.states = ["up","down","disabled"]; 
-    }
- 
-    //...这里省略上文出现的部分代码
-     
-    public commitCurrentState():void{
-        super.commitCurrentState();
-        switch (this.currentState){
-            case "up":
-                this.backgroud.source = "assets/button-up.png";
-                break;
-            case "down":
-                this.backgroud.source = "assets/button-down.png";
-                break;
-            case "disabled":
-                this.backgroud.source = "assets/button-disabled.png";
-                break;
-        }
-    }
+    public constructor(){
+        super();   
+        this.states = ["up","down","disabled"]; 
+    }
+ 
+    //...这里省略上文出现的部分代码
+     
+    public commitCurrentState():void{
+        super.commitCurrentState();
+        switch (this.currentState){
+            case "up":
+                this.backgroud.source = "assets/button-up.png";
+                break;
+            case "down":
+                this.backgroud.source = "assets/button-down.png";
+                break;
+            case "disabled":
+                this.backgroud.source = "assets/button-disabled.png";
+                break;
+        }
+    }
 {% endhighlight %}
 
 首先我们要在构造函数里给皮肤的states属性赋值，声明这个皮肤接受这几种视图状态名。然后我们复写父类的commitCurrentState()方法即可，当皮肤的currentState改变时这个方法会被调用。这里说明下为什么不直接复写currentState的set方法，因为有可能currentState时，皮肤还没初始化，此时访问background将都是空对象。而commitCurrentState()能确保被调用时，皮肤已经完成了初始化。方法体的代码很简单，就是根据当前的视图状态名切换要显示的背景素材。
@@ -184,13 +184,13 @@ ButtonSkin.exml
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin xmlns:e="http://ns.egret-labs.org/egret">
-    <e:states>
-        <e:State name="up"/>
-        <e:State name="down"/>
-        <e:State name="disabled"/>
-    </e:states>
-    <e:UIAsset id="background" width="100%" height="100%" source.up="assets/button-up.png" source.down="assets/button-down.png" source.disabled="assets/button-disabled.png"/>
-    <e:Label id="labelDisplay" left="10" top="10" right="10" bottom="10" textAlign="center" verticalAlign="middle"/>
+    <e:states>
+        <e:State name="up"/>
+        <e:State name="down"/>
+        <e:State name="disabled"/>
+    </e:states>
+    <e:UIAsset id="background" width="100%" height="100%" source.up="assets/button-up.png" source.down="assets/button-down.png" source.disabled="assets/button-disabled.png"/>
+    <e:Label id="labelDisplay" left="10" top="10" right="10" bottom="10" textAlign="center" verticalAlign="middle"/>
 </e:Skin>
 {% endhighlight %}
 
@@ -203,20 +203,16 @@ XML的文件结构用来描述UI具有先天的优势，前文那个冗长的But
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin xmlns:e="http://ns.egret-labs.org/egret">
-    <e:states>
-        <e:State name="up"/>
-        <e:State name="down"/>
-        <e:State name="disabled"/>
-    </e:states>
-    <e:UIAsset includeIn="up" width="100%" height="100%" source="assets/button-up.png"/>
-    <e:UIAsset includeIn="down" width="100%" height="100%" source="assets/button-down.png"/>
-    <e:UIAsset excludeFrom="up,down" width="100%" height="100%" source="assets/button-disabled.png"/>
-    <e:Label id="labelDisplay" left="10" top="10" right="10" bottom="10" textAlign="center" verticalAlign="middle"/>
+    <e:states>
+        <e:State name="up"/>
+        <e:State name="down"/>
+        <e:State name="disabled"/>
+    </e:states>
+    <e:UIAsset includeIn="up" width="100%" height="100%" source="assets/button-up.png"/>
+    <e:UIAsset includeIn="down" width="100%" height="100%" source="assets/button-down.png"/>
+    <e:UIAsset excludeFrom="up,down" width="100%" height="100%" source="assets/button-disabled.png"/>
+    <e:Label id="labelDisplay" left="10" top="10" right="10" bottom="10" textAlign="center" verticalAlign="middle"/>
 </e:Skin>
 {% endhighlight %}
 
 我们创建了三个UIAsset，分别显示不同的素材。includeIn=”up”表示它只在up状态下显示。其他状态时将会被从显示列表移除。也可以用逗号分隔，填多个视图状态名。excludeFrom是includeIn的反义词，表示不属于哪些视图状态。这里excludeFrom=”up,down”等同于includeIn=”disabled”。
-
-####6.皮肤适配器
-
-前文有提到我们通过设置button实例的skinName属性来给一个按钮设置皮肤，而我们会发现skinName的类型其实是any，意味着可以任何类型，例如字符串或其他对象。而负责解析这个skinName并返回皮肤实例的是一个ISkinAdapter对象。当开发者给一个逻辑组件初始化时，它会调用这个全局的ISkinAdapter，传入自己的组件名称以及skinName的值，以获取皮肤实例。用户可以根据自己的需要自定义一个皮肤适配器，并在程序初始化的地方调用:egret.gui.Injector.mapClass(“egret.gui.ISkinAdapter”,MySkinAdapter)来注入自己的MySkinAdapter到框架，替换默认的解析规则。这个适配器可以有多种用途。其中之一就是当组件传入的skinName为空是，可以根据传入的hostComponentKey，给指定组件返回一个默认皮肤。这样就可以不用每个实例都显式赋值skinName。这部分内容建议结合GUIExample里的SkinAdapter来看：<a href="https://github.com/egret-labs/egret-examples" target="_blank">https://github.com/egret-labs/egret-examples</a>
