@@ -1,10 +1,10 @@
 ---
-layout: post
-title:  "循环播放音频"
-permalink: post/manual/sound/loopplaysound.html
-type: manual
-element: manualsound
-version: Egret引擎 v1.x
+# layout: post
+# title:  "循环播放音频"
+# permalink: post/manual/sound/loopplaysound.html
+# type: manual
+# element: manualsound
+# version: Egret引擎 v1.x
 ---
 
 很多时候我们希望游戏中的背景音乐处于循环播放状态，在Egret中，实现循环播放也是非常简单的。你需要对你的Sound对象进行一些设置即可实现循环播放的效果。
@@ -16,7 +16,6 @@ version: Egret引擎 v1.x
 {% highlight java linenos %}
 private onAddToStage(event:egret.Event)
 {
-	//初始化Resource资源加载库，提示：Resource资源加载库是可选模块，不在egret-core项目里，最新代码请到github上的egret-game-library项目检出。
 	RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE,this.onResourceLoadComplete,this);
 	RES.loadConfig("resource/resource.json","resource/");
 	RES.loadGroup( "soundload" );

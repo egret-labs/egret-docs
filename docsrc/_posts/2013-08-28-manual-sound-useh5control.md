@@ -1,10 +1,10 @@
 ---
-layout: post
-title:  "打开H5级别的声音控制"
-permalink: post/manual/sound/useh5control.html
-type: manual
-element: manualsound
-version: Egret引擎 v1.x
+# layout: post
+# title:  "打开H5级别的声音控制"
+# permalink: post/manual/sound/useh5control.html
+# type: manual
+# element: manualsound
+# version: Egret引擎 v1.x
 ---
      
 在`循环播放音频`一节，为了在声音播放结束时再次启动播放，我们侦听了"ended"事件。      

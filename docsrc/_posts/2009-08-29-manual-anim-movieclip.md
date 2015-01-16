@@ -6,7 +6,10 @@ type: manual
 element: manualmoive
 version: Egret引擎 v1.x
 ---
-
+       
+       
+> MovieClip在目前阶段暂不推荐。因为Egret官方将于近期推出全新重构的MovieClip！
+       
 MovieClip又称之为“影片剪辑“，是Egret中提供的一种动画解决方案。我们通常会将MovieClip简写为 ”mc“。
 实际上一个mc所实现的功能就是播放序列帧动画。这个概念与我们平常所使用的gif图很相似。
 

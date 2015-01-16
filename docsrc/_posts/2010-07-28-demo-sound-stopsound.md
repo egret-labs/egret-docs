@@ -23,7 +23,6 @@ class SoundStopTest extends egret.DisplayObjectContainer
 
     private onAddToStage(event:egret.Event)
     {
-        //初始化Resource资源加载库，提示：Resource资源加载库是可选模块，不在egret-core项目里，最新代码请到github上的egret-game-library项目检出。
         RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE,this.onResourceLoadComplete,this);
         RES.loadConfig("resource/resource.json","resource/");
         RES.loadGroup( "soundload" );
