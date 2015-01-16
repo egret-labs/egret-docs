@@ -13,4 +13,5 @@ version: Egret引擎 v1.x
 {"name":"button","scale9grid":"22,0,10,60","type":"image","url":"assets/button.png"}
 {% endhighlight %}
 
-其中scale9grid属性的四个值分别表示九宫格矩形的:x,y,width,height,与Flash里的九宫格参数表现一致。
+其中scale9grid属性的四个值分别表示九宫格矩形的:x,y,width,height。
+```九宫格```的详细配置方式请参考 [九宫格的使用]({{site.baseurl}}/post/manual/bitmap/scalebitmap.html)。
