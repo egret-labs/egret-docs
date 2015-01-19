@@ -194,7 +194,7 @@ ButtonSkin.exml
 </e:Skin>
 {% endhighlight %}
 
-XML的文件结构用来描述UI具有先天的优势，前文那个冗长的ButtonSkin.ts用EXML文件只需几行就描述清晰了。值得一提的是，最新版本的Egret命令工具已经支持编译EXML文件为JS，还是同样的命令：egret build。这个EXML文件所生成的JS文件，与前文的ButtonSkin.ts所生成的JS文件100%兼容。感兴趣的开发者可以去github上检出最新的master分支，并重装egret 命令行工具试用。
+XML的文件结构用来描述UI具有先天的优势，前文那个冗长的ButtonSkin.ts用EXML文件只需几行就描述清晰了。值得一提的是，最新版本的Egret命令工具已经支持编译EXML文件为JS，还是同样的命令：egret build。这个EXML文件所生成的JS文件，与前文的ButtonSkin.ts所生成的JS文件100%兼容。感兴趣的开发者可以去github上检出最新的master分支，并重装Egret 命令行工具试用。
 
 关于EXML文件的详细语法规范，近期将会在github上的wiki内更新。届时会附上链接。这里唯一要提一下的是，视图状态在EXML里的实现，因为它在EXML极其优雅和易用。我们可以看到UIAsset节点的source属性，例如source.up = “xxx” 这表示在这个source属性在up状态下将会赋为xxx值。任何属性都可以通过这种点语法来指定它在具体视图状态下的值。而且你可以同时设置任意多个不同属性，例如xy等坐标属性。编译器会帮你做好所有的工作。收集所有这种点语法的数据，生成列表，在视图状态切换时，批量切换每个属性的值。这种方式不仅写起来非常方便，而且能够最大限度的复用对象。让一个对象在不同状态下有一套不同的属性值。
 

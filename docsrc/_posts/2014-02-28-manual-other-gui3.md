@@ -79,7 +79,7 @@ GameApp是程序的第一个启动类，也就是文档类。我们在GameApp被
 
 这样定义布局规则后，无论舞台尺寸变成什么比例，最终的显示效果都会自动适应。而不需要改动一行代码。这能有效解决移动开发中的各种屏幕分辨率适配问题。运行结果大致如下图(注:素材来源于Feathers框架):
 
-![egret gui]({{site.baseurl}}/assets/img/egretgui3.jpg)
+![Egret gui]({{site.baseurl}}/assets/img/egretgui3.jpg)
 
 AFL不仅能解决屏幕分辨率适配问题，同样也是皮肤复用的基石。使用ALF方式布局的皮肤，能够自动适应各种逻辑组件尺寸，自动调整内部皮肤部件的位置，从而最大程度上复用皮肤。
 

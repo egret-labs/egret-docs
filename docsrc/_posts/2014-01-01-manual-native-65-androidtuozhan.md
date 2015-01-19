@@ -4,7 +4,7 @@ title:  Android 第三方 SDK接入方式
 permalink: post/tools/native/androidtuozhan.html
 type: platform
 element: sdkAccess
-version: egret v1.x
+version: Egret v1.x
 ---
 
 

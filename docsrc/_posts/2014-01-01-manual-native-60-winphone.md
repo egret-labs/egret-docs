@@ -4,7 +4,7 @@ title:  WinPhone打包方案
 permalink: post/tools/native/winphone.html
 type: manual
 element: manualnative
-version: egret v1.x
+version: Egret v1.x
 ---
 
 使用Egret开发的HTML5游戏，可以被轻松的打包成为WinPhone原生APP程序。

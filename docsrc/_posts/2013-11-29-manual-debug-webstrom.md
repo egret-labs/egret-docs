@@ -10,7 +10,7 @@
 ####前期准备
 
 1. 准备 WebStorm 开发环境
-2. 安装 egret
+2. 安装 Egret
 3. 执行 egret create HelloEgret ，创建一个名为 HelloEgret 的项目
 
 >文本目前为草稿，只支持 MacOS WebStorm 8.0 环境，欢迎使用其他操作系统的开发者在开发者论坛中提出改进意见

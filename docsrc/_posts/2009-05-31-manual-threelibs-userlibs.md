@@ -9,15 +9,15 @@ version: Egret引擎 v1.x
 
 #### 概述
 
-每一个 egret 项目中都有一个名为 ` egretProperties.json ` 的文件，这个文件描述了此项目的配置信息，其中包含一个 ` modules ` 字段，用于标记项目中依赖的模块。
+每一个 Egret 项目中都有一个名为 ` egretProperties.json ` 的文件，这个文件描述了此项目的配置信息，其中包含一个 ` modules ` 字段，用于标记项目中依赖的模块。
 
 
-在默认情况下，egret 只有一个名为 ` core ` 的模块，egret中目前集成了两个官方扩展  ` dragonbones ` 和 ` gui ` 。 从 egret 1.0.5 版开始，开发者可以编写自己的模块，集成到项目中。
+在默认情况下，Egret 只有一个名为 ` core ` 的模块，Egret中目前集成了两个官方扩展  ` dragonbones ` 和 ` gui ` 。 从 Egret 1.0.5 版开始，开发者可以编写自己的模块，集成到项目中。
 
 
 #### 引入第三方模块
 
-* 创建一个新的 egret 项目 ， 或者打开一个现有的 egret 项目
+* 创建一个新的 Egret 项目 ， 或者打开一个现有的 Egret 项目
 * 将第三方模块的 JavaScript 文件或者 TypeScript 文件复制到 src 文件夹中
 * 在项目的根目录创建一个 ` module.json ` 文件，此文件的文件名最好和你的 module名字相同
 * 在 ` module.json ` 中编写以下配置
