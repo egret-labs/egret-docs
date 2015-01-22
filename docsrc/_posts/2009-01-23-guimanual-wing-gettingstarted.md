@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Getting Start"
-permalink: post/guimanual/wing/gettingstart.html
+title:  "Getting Started"
+permalink: post/guimanual/wing/gettingstarted.html
 type: guimanual
 element: wing
 version: Egret引擎 v1.x
