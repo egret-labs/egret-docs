@@ -7,7 +7,7 @@ element: adaptive
 version: Egret引擎 v1.x
 ---
 
-本教程适用于 Egret 1.1+ 版本，请在阅读本教程之前，使用 ``` egret info ``` 命令确认您的版本号。
+>本教程适用于 Egret 1.1+ 版本，请在阅读本教程之前，使用 ``` egret info ``` 命令确认您的版本号。
 
 
 ### 基础概念

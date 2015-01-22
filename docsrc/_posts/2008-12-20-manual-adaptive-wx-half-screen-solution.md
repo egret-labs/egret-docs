@@ -7,7 +7,7 @@ element: adaptive
 version: Egret引擎 v1.x
 ---
 
-本教程适用于 Egret 1.1+ 版本，请在阅读本教程之前，使用 ``` egret info ``` 命令确认您的版本号。      
+>本教程适用于 Egret 1.1+ 版本，请在阅读本教程之前，使用 ``` egret info ``` 命令确认您的版本号。      
               
 微信对webview进行了某种定制，使得有些情况下页面在手机浏览器正常显示，但在微信里却可能显示不全。        
                 
@@ -27,6 +27,6 @@ HTML5CanvasRenderer.prototype.clearRect = function (x, y, w, h) {
 setTimeout( egret_h5.startGame, 800 );
 {% endhighlight %}
            
-*注意，因为引擎升级等原因重新编译引擎(egret build -e)后，需要重新做此修改！*
+>注意，因为引擎升级等原因重新编译引擎(egret build -e)后，需要重新做此修改！
       
          
