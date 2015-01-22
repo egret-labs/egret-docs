@@ -1,9 +1,9 @@
 ---
-layout: subjs-template
-title:  "将Egret游戏接入2015年微信官方SDK"
-permalink: jksubj/how-to-use-weixin-sdk.html
-type: proj-normal
-version: Egret引擎 v1.5.1
+# layout: subjs-template
+# title:  "将Egret游戏接入2015年微信官方SDK"
+# permalink: jksubj/how-to-use-weixin-sdk.html
+# type: proj-normal
+# version: Egret引擎 v1.5.1
 ---
        
           
