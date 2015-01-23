@@ -18,7 +18,11 @@ Egret在1.5.3版推出了全新的MovieClip实现，以弥补之前的不足。
 ---
 #### 如何制作MovieClip动画资源
 
-使用TextureMerger将swf或者gif文件转换成Egret动画资源文件。              
+我们提供两种方式制作Egret动画资源文件，两种方式二选一即可
+1.我们为Flash提供了一个插件，这个插件会帮助你将Flash中的动画导出为能够被Egret播放的动画文件。具体插件安装和使用方法请查看：
+**[MovieClip Plug-in](http://bbs.egret-labs.org/thread-127-1-1.html)**
+  
+2.使用TextureMerger将swf或者gif文件转换成Egret动画资源文件。              
 具体使用方法请查看：<a href="http://bbs.egret-labs.org/thread-918-1-1.html" target="_blank">TextureMerger 使用说明</a>
 
 ---
@@ -60,7 +64,7 @@ var txtr = RES.getRes("abc.png");
 var mcFactory = new egret.MovieClipDataFactory( data, txtr );
 {% endhighlight %}
 
-一个MC资源合集可以包含多个MovieClip，之前我们提到，一个swf/gif对应一个MovieClip。那么，如果我们把一个名为`mc1.swf`的swf文件打包到MC资源合集,其MCID为`mc1`，则在程序中解析该MovieClip的方法为：
+一个MC资源合集可以包含多个MovieClip，之前我们提到，一个swf/gif对应一个MovieClip。那么，如果我们把一个名为`mc1.swf`的swf文件打包到MC资源合集，其MCID为`mc1`，则在程序中解析该MovieClip的方法为：
 {% highlight java %}
 var mc1:egret.MovieClip = new egret.MovieClip( mcFactory.generateMovieClipData( "mc1" ) );
 {% endhighlight %}
