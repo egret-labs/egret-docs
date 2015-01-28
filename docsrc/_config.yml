@@ -115,11 +115,6 @@ manual:
     des: 关于绘图API的使用方法与技巧。
     enter: true
 
-#  - text: GUI
-#    element: manualgui
-#    url: post/manual/other/gui1.html
-#    des: 这部分内容介绍了Egret中的GUI模块设计思想以及使用方法。
-
   - text: 文本
     element: manualtext
     url: post/manual/text/createtext.html
@@ -189,6 +184,12 @@ manual:
     url: jkdoc/manual-cmd-intro.html
     des: 详细介绍了Egret中主要的控制台命令的用法。
     enter: true 
+
+  - text: 性能基准测试
+    element: benchmark
+    url: jkdoc/benchmark-bitmap.html
+    des: 对Egret开发的各种场景进行性能基准测试，每个基准针对一项功能。便于开发者在特定机型下进行性能瓶颈分析。
+    fenter: true
 
 guimanual:
   - text: 关于GUI库
