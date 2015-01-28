@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  DragonBones
-permalink: jkdoc/tools-othertools-dragonbones.html
+permalink: post/tools/othertools/dragonbones.html
 type: tools
 element: othertools
 version: DragonBones v3.0
