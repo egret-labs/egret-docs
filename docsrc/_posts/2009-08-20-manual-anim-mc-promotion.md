@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MovieClip旧版升迁指南"
-permalink: post/manual/displaycon/mc-promotion.html
+permalink: post/manual/anim/mc-promotion.html
 type: manual
 element: manualmoive
 version: Egret引擎 v1.5.3
