@@ -7,7 +7,7 @@ element: quitestartabout
 version: Egret引擎 v1.x
 ---
 
-Egret引擎是一款开源免费的2D游戏引擎。我们遵循**<a href="http://zh.wikipedia.org/wiki/BSD%E8%AE%B8%E5%8F%AF%E8%AF%81" target="_blank">BSD（Berkly Software Distribution，伯克利软件套件）</a>**开源协议。
+Egret引擎是一款开源免费的2D游戏引擎。我们遵循**<a href="http://zh.wikipedia.org/wiki/BSD%E8%AE%B8%E5%8F%AF%E8%AF%81" target="_blank">BSD（Berkly Software Distribution，伯克利软件发行）</a>**开源协议。
 
 BSD协议是一个给予使用者很大自由的协议。基本上使用者可以”为所欲为”,可以自由的使用，修改源代码，也可以将修改后的代码作为开源或者专有软件再发布。
 
