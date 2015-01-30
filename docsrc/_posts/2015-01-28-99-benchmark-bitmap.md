@@ -11,7 +11,7 @@ version: Egret引擎 v1.5.3
 
 本benchmark主要测试同时渲染大量位图时的性能表现。   
             
-![]({{site.baseurl}}/assets/img-bench/sample-bitmap.png)         
+![]({{site.baseurl}}/assets/img-bench/sample-bitmap.jpg)         
              
 请用智能手机扫描以下二维码，用浏览器打开页面进行测试：
             
