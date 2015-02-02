@@ -100,7 +100,7 @@ b. **Android Studio**。因为Android Studio只使用新的Gradle模式，因为
 ---
 #####创建Egret Support文件夹用于集中存放所有egret支持包
 
-![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-mkdir-egret-support.png)
+![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-mkdir-egret-support.jpg)
 
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-mkdir-egret-support-finder.png)
 
@@ -122,7 +122,7 @@ b. **Android Studio**。因为Android Studio只使用新的Gradle模式，因为
 
 如图：
 
-![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-egret-create.png)
+![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-egret-create.jpg)
 
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-egret-create-finder.png)
 
@@ -152,7 +152,7 @@ egret create_app ACoolAndroidGame -f ACoolHtmlGame -t ../egret_support/egret-and
 
 下图为运行命令演示：
 
-![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-egret-create-app.png)
+![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-egret-create-app.jpg)
 
 运行命令后，你将看到新生成的ACoolAndroidGame项目文件夹，该文件夹结构如下：
 
