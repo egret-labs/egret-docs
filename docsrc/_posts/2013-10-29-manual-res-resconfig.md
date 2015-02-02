@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "资源加载模块配置"
+title:  "资源加载配置"
 permalink: post/manual/loader/resconfig.html
 type: manual
 element: manualloader
@@ -11,10 +11,12 @@ version: Egret引擎 v1.x
 
 RES资源管理模块则支持将这些资源分组，在游戏开发时，开发者可以对游戏所有资源进行分组，这样可以避免不必要的网络流量消耗和过多的资源消耗。
 
-####RES资源管理模块配置
+####RES资源加载配置
 ---
 
-在Egret中，我们使用json格式文件作为RES资源管理模块的配置文件格式。这中格式使用方便，你甚至可以用记事本来编写它。同时，json格式也是模式JavaScript支持的一种解析格式。我们可以得到最快的解析处理。
+如果资源是我们要购买的若干物品，资源加载配置就好比是购物清单。我们首先把需要购买的物品条理清晰地列在清单上，就可以按步骤有条不紊的去购买其上所列出的物品。
+
+在Egret中，我们使用json格式作为RES资源加载配置文件的格式。这中格式使用方便，你甚至可以用记事本来编写它。同时，json格式也是模式JavaScript支持的一种解析格式。我们可以得到最快的解析处理。
 
 以Egret模板项目的resource.json为例：
 
