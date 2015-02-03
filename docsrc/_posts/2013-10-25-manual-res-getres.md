@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "获取资源"
+title:  "获取资源的几种方式"
 permalink: post/manual/loader/getres.html
 type: manual
 element: manualloader
@@ -33,3 +33,10 @@ var texture:egret.Texture = RES.getRes("activity_10");
 {% endhighlight %}
 
 这种方式在与GUI的UIAsset无缝桥接时将会非常有用。
+
+不过在不同的SpriteSheet中，可能有重复的纹理，此时最好用资源ID全路径的方式：
+
+{% highlight java %}
+var texture:egret.Texture = RES.getRes("icons.activity_10");
+{% endhighlight %}
+
