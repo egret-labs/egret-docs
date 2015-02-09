@@ -12,7 +12,7 @@ version: Egret引擎 v1.x
 ###1.使用Egret工具运行游戏
 运行Egret项目，我们需要一个已运行的HTTP服务器。在前面安装Egret的教程中，我们已经为大家推荐了一款HTTP服务器。现在我们来看一下如何使用我们egret提供的最简单的HTTP服务器来运行我们的项目。
 
-和前面的教程一样，我们首先在终端中定位我们的项目，使用`cd`命令。
+和前面的教程一样，我们首相在终端中定位我们的项目，使用`cd`命令。
 
 然后我们执行一个简单的命令来启动Egret的HTTP服务器，命令如下：
 
@@ -31,6 +31,8 @@ version: Egret引擎 v1.x
 ![Egret Run Pro]({{site.baseurl}}/assets/img/egrethelloworld2.png)
 
 这里我们简单对服务器地址进行以下是说明，默认提供的服务器地址为`http://localhost:3000/HelloWorld/launcher/index.html`。egret为我们启动的HTTP服务器访问地址为`http://localhost:3000/`，其中`http://localhost`为本机访问地址，`3000`为我们使用的<a href="http://zh.wikipedia.org/wiki/TCP/UDP%E7%AB%AF%E5%8F%A3%E5%88%97%E8%A1%A8" target="_blank">端口号</a>，egret默认使用的端口号为“**3000**”。请确保在启动服务器之前，3000端口为未使用状态。
+
+**如果您想关闭当前服务器，可以使用`Control + c`快捷键退出。**
 
 ###2.使用第三方HTTP服务器工具运行游戏
 如果你安装了其他HTTP工具，那么现在你可以将其打开并运行

@@ -12,7 +12,7 @@ Egret中的显示对象类DisplayObject拥有四个派生类，分别为：
 * Bitmap
 * Shape
 * TextField
-* TextInput
+* BitmapText
 
 这四个派生类实现了不同的功能
 

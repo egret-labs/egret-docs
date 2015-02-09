@@ -12,7 +12,7 @@ version: Egret引擎 v1.x
 ####默认文档类
 ---
 
-默认的程序文档类名称为**GameApp**，在项目文件夹中路径为`src/GameApp.ts`。当程序运行时，我们的游戏会从GameApp开始运行。通常情况下，我们会自己添加一个文档类，作为项目的文档类。
+默认的程序文档类名称为**Main**，在项目文件夹中路径为`src/Main.ts`。当程序运行时，我们的游戏会从Main开始运行。通常情况下，我们会自己添加一个文档类，作为项目的文档类。
 
 ####创建文档类
 ---
@@ -37,7 +37,7 @@ class HelloWorld extends egret.DisplayObjectContainer
 
 Egret在创建时会加载默认的库文件与游戏逻辑，加载完成后会创建相应的运行环境。当一切环境创建工作完成后，Egret会向用户抛出一个名称为`ADDED_TO_STAGE`的事件，该事件表示当前舞台已经创建完毕。在文档类中，接收到此事件之后即可运行自己的游戏逻辑。具体代码如下：
 
->有关“事件”的详细文档，请参考XXX
+>有关“事件”的详细文档，请参考<a href="http://docs.egret-labs.org/post/manual/event/useevent.html" target="_blank">事件机制</a>
 
 {% highlight java linenos %}
 class HelloWorld extends egret.DisplayObjectContainer
@@ -79,8 +79,8 @@ private onAddToStage(event:egret.Event)
 前面我们创建了新的文档类，如果想让新的文档类起效，我们还需要进行一步设置。这一步就是将原有文档类修改，修改为我们新创建的文档类。具体步骤如下：
 
 1. 打开 `HelloWorld/egretProperties.json` 文件。
-2. 找到第2行，`"document_class" : "GameApp"`。
-3. 将其中的`GameApp`修改为现在文档类的名称，这里我们改为`HelloWorld`。
+2. 找到第2行，`"document_class" : "Main"`。
+3. 将其中的`Main`修改为现在文档类的名称，这里我们改为`HelloWorld`。
 4. 修改完成之后保存文件。
 
 ####打包测试
