@@ -108,7 +108,8 @@ D:\Labs>mkdir projects
 ---            
 ####5、安装Egret的Android支持包         
            
-#####创建Egret Support文件夹用于集中存放所有egret支持包
+#####创建Egret Support文件夹用于集中存放所有egret支持包       
+(此处请忽略 egret-core目录，3月份将更新全篇教程)
 
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-mkdir-egret-support-finder.png)
 
@@ -133,7 +134,7 @@ D:\Labs>mkdir projects
 D:\Labs\projects> egret create ACoolHtmlGame
 ```
 
-如图：
+如图：(此处请忽略 npm install -g，3月份将更新全篇教程)
 
 ![img]({{site.baseurl}}/assets/img/egrentandroidsupportwin-egret-create.png)
 
