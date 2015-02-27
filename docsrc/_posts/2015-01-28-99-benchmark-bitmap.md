@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "benchmark之位图测试" 
+title:  "benchmark之位图渲染" 
 permalink: jkdoc/benchmark-bitmap.html
 type: manual
 element: benchmark
