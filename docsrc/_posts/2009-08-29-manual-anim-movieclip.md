@@ -62,7 +62,7 @@ Egret的新MovieClip采用工厂模式，MovieClip工厂类为：`MovieClipDataF
 var data = RES.getRes("abc.json");
 var txtr = RES.getRes("abc.png");
 
-var mcFactory = new egret.MovieClipDataFactory( data, txtr );
+var mcFactory:egret.MovieClipDataFactory = new egret.MovieClipDataFactory( data, txtr );
 {% endhighlight %}
 
 一个MC资源合集可以包含多个MovieClip，之前我们提到，一个swf/gif对应一个MovieClip。那么，如果我们把一个名为`mc1.swf`的swf文件打包到MC资源合集，其MCID为`mc1`，则在程序中解析该MovieClip的方法为：
