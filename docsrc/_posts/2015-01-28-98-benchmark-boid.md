@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "benchmark之数学运算和矢量线条" 
+title:  "benchmark之数学运算" 
 permalink: jkdoc/benchmark-boid.html
 type: manual
 element: benchmark
