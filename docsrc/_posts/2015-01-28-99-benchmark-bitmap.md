@@ -45,3 +45,9 @@ version: Egret引擎 v1.5.3
 
 **无缝切换：**  切换渲染模式时，随机图片数量将会自动保持，方便高效率进行横向性能对比。
 
+
+
+-------
+     
+**项目源码：** <a href="{{site.baseurl}}/assets/packages/benchmark/egret-benchmark-bitmap.zip" target="_blank">下载地址</a> 
+

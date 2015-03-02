@@ -50,6 +50,9 @@ version: Egret引擎 v1.5.3
 **数学运算性能：** 本项测试主要针对数学运算性能，因为所使用的集群算法的运算复杂度，对集群的单位数量非常敏感，通过增加单位数量，可以明显观察到运算性能消耗，注意该项消耗对应`FPS字段`中`cost`的第一个数字。可以通过设置`draw`为`false`，并保持`run`为`true`来停止渲染部分的性能消耗，来针对性测试数学运算性能。         
 
 
+-------
+     
+**项目源码：** <a href="{{site.baseurl}}/assets/packages/benchmark/egret-benchmark-boid.zip" target="_blank">下载地址</a> 
 
 
 
