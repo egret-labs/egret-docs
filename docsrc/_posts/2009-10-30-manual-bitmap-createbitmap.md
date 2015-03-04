@@ -86,3 +86,12 @@ class BitmapTest extends egret.DisplayObjectContainer{
 编译后运行，效果如图：
 
 ![img]({{site.baseurl}}/assets/img/createbitmap1.jpg)
+     
+     
+----
+
+### 相关链接
+
+<a href="{{site.baseurl}}/jkdoc/benchmark-bitmap.html" target="_blank">benchmark之位图渲染</a>
+
+
