@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "粒子系统使用"
-permalink: post/manual/particle/useparticle.html
+permalink: post/manual/particle/particle-use.html
 type: manual
 element: particle
 version: Egret引擎 v1.x
@@ -112,9 +112,11 @@ this.system.start();
 
 ----
 
-### 演示示例
-访问 <a href="http://static.egret-labs.org/egret-game/example/html5/particle/index.html" target="_blank">[这里]</a> 获取粒子库示例
+### 粒子系统相关链接
+<a href="http://static.egret-labs.org/egret-game/example/html5/particle/index.html" target="_blank">粒子系统传统显示示例</a>
 
-访问 <a href="http://static.egret-labs.org/egret-game/example/webgl/particle/index.html" target="_blank">[这里]</a> 获取WebGL示例
+<a href="http://static.egret-labs.org/egret-game/example/webgl/particle/index.html" target="_blank">粒子系统WebGL显示示例</a> 
 
-访问 <a href="https://github.com/egret-labs/egret-game-library/tree/master/particle" target="_blank">[这里]</a> 获取粒子库示例源码
+<a href="https://github.com/egret-labs/egret-game-library/tree/master/particle" target="_blank">粒子系统示例源码</a> 
+
+<a href="{{site.baseurl}}/jkdoc/benchmark-particle.html" target="_blank">benchmark之粒子系统</a>
