@@ -39,8 +39,9 @@ egret.ExternalInterface.addCallback( "egret_dosth", function( msg ){
 } );
 {% endhighlight %}
 
-在Android代码部分，Egret官方的`Egret-Android-Support`内提供的Android库同样有一个`ExternalInterface`类来处理通讯。
+在Android代码部分，Egret官方的`Egret-Android-Support`内提供的Android库同样有一个`ExternalInterface`类来处理通讯。    
 我们就在用户轻触Menu时调用该回调。在Android的主Activity中，覆盖onKeyDown方法里加入调用代码：
+{% highlight Java %}
 @Override
 public boolean onKeyDown(int keyCode, KeyEvent event) {
 	switch (keyCode) {
@@ -53,6 +54,7 @@ public boolean onKeyDown(int keyCode, KeyEvent event) {
 		return super.onKeyDown(keyCode, event);	
 	}
 }
+{% endhighlight %}
 这样，当用户在应用内轻触Menu，就可以将`msg`消息发送到Egret。
 
 ---  
