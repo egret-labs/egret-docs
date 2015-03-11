@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  Android Native热更新
-permalink: jkdoc/manual-native-hot-upgrade.html
+permalink: post/tools/native/hot-upgrade.html
 type: manual
 element: manualnative
-version: Egret-Android-support 1.5.0
+version: Egret-Android-support 1.5.0+
 ---
 
 

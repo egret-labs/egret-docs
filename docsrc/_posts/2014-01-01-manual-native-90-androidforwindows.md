@@ -4,7 +4,7 @@ title: Windows下Android封装Egret项目
 permalink: post/tools/native/androidforwindows.html
 type: manual
 element: manualnative
-version: egret-android-support v1.x
+version: egret-android-support v1.0+
 ---
          
 前提知识：有基本的Egret项目开发经验，会部署Android开发环境    
