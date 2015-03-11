@@ -11,7 +11,8 @@ version: egret-android-support v1.0+
 技术等级：中级    
 必需产品：Egret Engine 1.5+(<a href="http://www.egret-labs.org/egretengine" target="_blank">下载地址</a>)    
 Egret开发工具：WebStorm或Visual Studio + EgretVS (<a href="http://www.egret-labs.org/egretvs" target="_blank">下载地址</a>)    
-Android开发工具：IntelliJ IDEA 
+Android开发工具：IntelliJ IDEA     
+
    
 ---  
 #### 说明
@@ -30,7 +31,7 @@ Android封装Egret项目，即为之前所说的Android打包App。也就是让�
 1) runtime使用Native方式渲染，将Egret标准项目封装AndroidApp后将使游戏性能得到质的飞跃。    
 2) runtime解决了碎片化的问题，因此不同的Android设备上对H5播放多声道声音的支持差异，不同Android版本对于硬件加速的支持差异，均统一得到了解决，统统都支持！    
 3) 更多runtime带来的提升可参考
-<a href=" http://www.egret-labs.org/runtime " target="_blank"> Egret Runtime 白皮书</a>    
+<a href=" http://www.egret-labs.org/runtime " target="_blank"> Egret Runtime 白皮书</a>。    
 
 ---  
 #### 从标准的Egret项目开始
@@ -221,3 +222,9 @@ native拷贝共计耗时：0.387秒
 ##### 自动同步并不总是需要       
 自动同步命令的执行时间并非很短，有时可能会超过20秒，这有时候是一种负担。    
 当某一阶段的开发工作主要集中在Android部分时，也就是Egret部分长期没有变化，那就建议将该自动工具从`Before launch`中删除，以避免不必要的时间浪费。    
+
+
+
+---  
+#### 实例项目下载
+项目全部源码：<a href="{{site.baseurl}}/assets/packages/doc/win-android-package/Win-Android-Package.zip" target="_blank">下载地址</a>
