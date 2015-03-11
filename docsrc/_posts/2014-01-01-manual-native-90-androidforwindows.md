@@ -216,6 +216,8 @@ native拷贝共计耗时：0.387秒
 按`OK`，到此已经配置捆绑同步成功。再次`Run/Debug`项目，首先会在底部的`Run`Tab显示我们刚刚配置的`Sync Egret`工具运行：
 ![image]({{site.baseurl}}/assets/img-doc/native-androidforwindows/190-Sync-Run-Tool.jpg)  
 工具运行结束后会立即进入之前的`Run/Debug`流程。     
-如此，我们再无须手工同步，同步Egret在`Run/Debug`时将完全自动完成！
+如此，我们再无须手工同步，同步Egret在`Run/Debug`时将完全自动完成！    
 
-
+##### 自动同步并不总是需要       
+自动同步命令的执行时间并非很短，有时可能会超过20秒，这有时候是一种负担。    
+当某一阶段的开发工作主要集中在Android部分时，也就是Egret部分长期没有变化，那就建议将该自动工具从`Before launch`中删除，以避免不必要的时间浪费。    
