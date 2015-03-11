@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Android 第三方 SDK接入方式
+title:  Android接入第三方SDK
 permalink: post/tools/native/androidtuozhan.html
 type: platform
 element: sdkAccess
