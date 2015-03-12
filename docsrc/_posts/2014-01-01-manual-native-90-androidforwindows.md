@@ -87,7 +87,7 @@ egret create_app app_name -f h5_game_path -t template_path
 {% endhighlight %}
 `app_name`参数即我们要创建的Android封装项目的目录名称，我们在前一节已经约定该名称为`app`。    
 `-f`参数用来指定标准的Egret项目路径。    
-`-t`参数用来制定创建Android封装项目的模板路径。直接使用上一节准备好的路径即可。
+`-t`参数用来指定创建Android封装项目的模板路径。直接使用上一节准备好的路径即可。
 
 在`runner`目录下，使用该命令建立Android项目：
 {% highlight PowerShell %}
@@ -198,7 +198,7 @@ native拷贝共计耗时：0.387秒
 
 还好，强大的IntelliJ已经为我们准备好了工具，来将该步骤完全省略，严格来说是捆绑到Run/Debug过程。以下来具体说明做法。     
 
-在主项目目录`runner`内新建一个批处理文件`sync.bat`，编辑内容为前一节的同步命令行。
+在主项目目录`runner`内新建一个批处理文件`sync.bat`，编辑内容为前一节的同步命令行。    
 ![image]({{site.baseurl}}/assets/img-doc/native-androidforwindows/140-Sync-bat-file.jpg)    
 
 在IntelliJ打开`Settings`(`File`-->`Settings`)，在左栏的`Tools`下选择`External Tools`，在右栏顶部按`+`号，在打开的`Create Tool`对话框输入如图的内容：
@@ -224,7 +224,23 @@ native拷贝共计耗时：0.387秒
 当某一阶段的开发工作主要集中在Android部分时，也就是Egret部分长期没有变化，那就建议将该自动工具从`Before launch`中删除，以避免不必要的时间浪费。    
 
 
+   
+---  
+#### 发布Release版本
+到目前位置，Android封装项目的`assets/egret-game`目录中，仍然是Egret项目开发状态的结构。    
+大家都熟悉，Egret标准项目发布运行是分为debug版和release版的。同样在Android封装项目Release阶段，Egret同步目录中的内容也需要提供为release版。    
+同步release版也同样需要在主项目目录执行一条命令：    
+{% highlight PowerShell %}
+...\runner>egret publish proj.egret -compile --runtime native
+{% endhighlight %}
+    
+注意同步Egret项目的命令只需要一条，即在debug阶段执行**Egret层面开发流程**一节所述的`egret build ...`命令，在release阶段执行本节所述的`egret publish ...`命令。    
+执行该条命令后，再确保Android封装项目中Android相关设定为Release，即可发布Release版本。    
 
 ---  
 #### 实例项目下载
-项目全部源码：<a href="{{site.baseurl}}/assets/packages/doc/win-android-package/Win-Android-Package.zip" target="_blank">下载地址</a>
+项目全部源码：<a href="{{site.baseurl}}/assets/packages/doc/win-android-package/Win-Android-Package.zip" target="_blank">下载地址</a>     
+
+
+
+
