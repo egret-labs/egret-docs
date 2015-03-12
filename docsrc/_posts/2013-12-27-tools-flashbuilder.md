@@ -1,10 +1,10 @@
 ---
-layout: post
-title:  Flash Builder
-permalink: post/tools/ide/flashbuilder.html
-type: tools
-element: ide
-version: Flash Builder v4.x
+--layout: post
+--title:  Flash Builder
+--permalink: post/tools/ide/flashbuilder.html
+--type: tools
+--element: ide
+--version: Flash Builder v4.x
 ---
 
 **本文基于 Flash Builder 4.6 ( Eclipse 3.8 ) 撰写**
