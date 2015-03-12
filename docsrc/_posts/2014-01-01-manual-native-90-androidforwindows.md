@@ -198,7 +198,7 @@ native拷贝共计耗时：0.387秒
 
 还好，强大的IntelliJ已经为我们准备好了工具，来将该步骤完全省略，严格来说是捆绑到Run/Debug过程。以下来具体说明做法。     
 
-在主项目目录`runner`内新建一个批处理文件`sync.bat`，编辑内容为前一节的同步命令行。    
+在主项目目录`runner`内新建一个批处理文件`sync.bat`，编辑内容为前一节的同步命令行：    
 ![image]({{site.baseurl}}/assets/img-doc/native-androidforwindows/140-Sync-bat-file.jpg)    
 
 在IntelliJ打开`Settings`(`File`-->`Settings`)，在左栏的`Tools`下选择`External Tools`，在右栏顶部按`+`号，在打开的`Create Tool`对话框输入如图的内容：
@@ -227,15 +227,18 @@ native拷贝共计耗时：0.387秒
    
 ---  
 #### 发布Release版本
-到目前位置，Android封装项目的`assets/egret-game`目录中，仍然是Egret项目开发状态的结构。    
-大家都熟悉，Egret标准项目发布运行是分为debug版和release版的。同样在Android封装项目Release阶段，Egret同步目录中的内容也需要提供为release版。    
+到目前为止，Android封装项目的`assets/egret-game`目录中，仍然是Egret项目开发状态的结构。其中还包含`bin-debug`这样明显是debug版才有的目录。    
+大家都熟悉，Egret标准项目发布运行是分为debug版和release版的。同样在Android封装项目release阶段，Egret同步目录中的内容也需要提供为release版。    
 同步release版也同样需要在主项目目录执行一条命令：    
 {% highlight PowerShell %}
 ...\runner>egret publish proj.egret -compile --runtime native
 {% endhighlight %}
     
 注意同步Egret项目的命令只需要一条，即在debug阶段执行**Egret层面开发流程**一节所述的`egret build ...`命令，在release阶段执行本节所述的`egret publish ...`命令。    
-执行该条命令后，再确保Android封装项目中Android相关设定为Release，即可发布Release版本。    
+执行该条命令后，再注意`assets/egret-game`目录内的结构，即发现`bin-debug`、`luancher`、`libs`已经消失，取而代之的是新增一个zip文件：   
+![image]({{site.baseurl}}/assets/img-doc/native-androidforwindows/200-Sync-Release.jpg)  
+我们不需要继续深究里边的内容结构。只需确保该命令正常运行，并更新`assets/egret-game`目录里的内容为这种结构。至于zip文件的文件名，包含一个随机数字，这个也无需关心。    
+接下来确保Android封装项目中Android相关设定为Release，即可发布Release版本！    
 
 ---  
 #### 实例项目下载
