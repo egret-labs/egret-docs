@@ -7,7 +7,7 @@ element: manualtext
 version: Egret引擎 v1.5
 ---
 
-
+#### JSON方式分段设置样式
 前面的几节分别说明如何设置一个TextField实例的某种属性。
     
 但实际情况，往往需要在一段文字，甚至一行文字内有丰富的样式变化来突出不同文字的含义提高语句的可读性、或者给简单的文字较强的表现力，就像HTML所擅长的一样。
@@ -92,6 +92,23 @@ tx.textFlow = <Array<egret.ITextElement>>[
 super.addChild( tx );
 {% endhighlight %}
      
-     
+
+#### 类HTML方式设置样式     
+有些开发者习惯用HTML来设置文字的样式，我们也提供了这种方式，目前支持的标签有`b`和`i`，支持的`font标签`属性有`color`、`size`、`face`。
+
+{% highlight java %}
+var tx:egret.TextField = new egret.TextField;
+tx.width = this._container.stage.stageWidth - 20;
+tx.textFlow = (new egret.HtmlTextParser).parser(
+    '没有任何格式初始文本，' +
+    '<font color="#0000ff" size="30" fontFamily="Verdana">Verdana blue large</font>' +
+    '<font color="#ff7f50" size="10">珊瑚色<b>局部加粗</b>小字体</font>' +
+    '<i>斜体</i>'
+);
+tx.x = 10;
+tx.y = 90;
+this._container.addChild( tx );
+{% endhighlight %}
+将得到与JSON方式设置样式类似的结果。
      
 -----
