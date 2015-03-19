@@ -82,3 +82,5 @@ class BitmapTest extends egret.DisplayObjectContainer{
 3. 40：区域2 的宽度值
 4. 41：区域4 的高度值
 
+>注意：设置九宫宽高的时候尽量使用整数，否则有些浏览器可能会出现“黑线”。
+
