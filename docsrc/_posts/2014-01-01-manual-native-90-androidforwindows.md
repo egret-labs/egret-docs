@@ -137,16 +137,15 @@ Next，该选择Android SDK了，选择准备好的Android SDK：
 
 删除后点`Apply`按钮生效。   
 然后我们还需要添加egret的Android支持库，在`Dependencies`标签页右侧点`+`选择`Library`:    
-![image]({{site.baseurl}}/assets/img-doc/native-androidforwindows/101-intelliJ-IDEA-Project-Structure-Modules-add-Library.jpg)
+![image]({{site.baseurl}}/assets/img-doc/native-androidforwindows/101-intelliJ-IDEA-Project-Structure-Modules-add-Library.jpg)    
 
 在弹出的小对话框中选择`egret`库：
-![image]({{site.baseurl}}/assets/img-doc/native-androidforwindows/102-intelliJ-IDEA-Project-Structure-Modules-Choose-Library.jpg)
+![image]({{site.baseurl}}/assets/img-doc/native-androidforwindows/102-intelliJ-IDEA-Project-Structure-Modules-Choose-Library.jpg)    
 `Add Selected`确认，之后`Dependencies`标签页内容应该是如图所示：
 
-![image]({{site.baseurl}}/assets/img-doc/native-androidforwindows/103-intelliJ-IDEA-Project-Structure-Modules-Choose-Library-OK.jpg)
-
+![image]({{site.baseurl}}/assets/img-doc/native-androidforwindows/103-intelliJ-IDEA-Project-Structure-Modules-Choose-Library-OK.jpg)    
 最后，还要确认一下语言等级正确，左侧选择`Project`，在`Project language level`中选择`6`开头的选项：    
-![image]({{site.baseurl}}/assets/img-doc/native-androidforwindows/105-intelliJ-IDEA-Project-Structure-Project.jpg)
+![image]({{site.baseurl}}/assets/img-doc/native-androidforwindows/105-intelliJ-IDEA-Project-Structure-Project.jpg)    
 按`OK`！至此，已经导入项目，并完成项目的基本配置过程。
 
    
