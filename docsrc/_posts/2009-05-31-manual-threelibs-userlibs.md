@@ -19,7 +19,7 @@ version: Egret引擎 v1.x
 
 * 创建一个新的 Egret 项目 ， 或者打开一个现有的 Egret 项目
 * 将第三方模块的 JavaScript 文件或者 TypeScript 文件复制到 src 文件夹中
-* 在项目的根目录创建一个 ` module.json ` 文件，此文件的文件名最好和你的 module名字相同
+* 在项目的根目录创建一个 ` module.json ` 文件，此文件的文件名最好和你的 module名字相同，称为模块配置文件
 * 在 ` module.json ` 中编写以下配置
 
 {% highlight java linenos %}
@@ -48,7 +48,10 @@ version: Egret引擎 v1.x
 {% highlight java linenos %}
 modules:
 [
- {"name":module , "path":"."}
+ {
+    "name":"module" 
+   ,"path":"."
+ }
 ]
 {% endhighlight %}
 
@@ -56,7 +59,7 @@ modules:
 
 * name ： 模块名称,影响文件生成路径（会生成在libs中）
 * path : 路径， ` . ` 代表当前目录下
-
+>要点： 模块名称在项目配置文件和模块配置文件中要保持一致，并且模块配置文件的主文件名也必须是模块名称。
 
 
 添加好上述代码后，执行 ` egret build -e ` 就会把模块编译。
