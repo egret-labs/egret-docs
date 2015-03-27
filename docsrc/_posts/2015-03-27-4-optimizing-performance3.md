@@ -1,13 +1,12 @@
-﻿---
+---
 layout: post
-title:  "简介" 
+title:  "第三章： CPU优化"
 permalink:  post/manual/optimizing/performance3.html
 type: manual
 element: optimizing
 version: Egret引擎 v1.6.1
 ---
- 
-# 第三章： CPU优化
+
 
 ### 触控交互
 
@@ -22,7 +21,7 @@ version: Egret引擎 v1.6.1
 
 还有一种方式禁用对象的touchEnabled，父容器创建如遮罩容器并侦听点击事件，寻找对象坐标标点
 
-![]({{site.baseurl}}/assets/img-optimzing-performance/performance3-1.png)  
+![]({{site.baseurl}}/assets/img-optimzing-performance/performance3-1.png)
 
 例如：上图需要判断点击哪个滑块的需求，实现方式是在滑块上创建Bitmap阻止点击事件深入冒泡，再通过Bitmap上的点击坐标来计算出具体点击的哪个方块。
 
@@ -32,7 +31,7 @@ egret.MainContext.instance.touchContext.onTouchMove = function():void
 {
 
       //逻辑处理
-      
+
 }
 
 ### TypeScript
@@ -49,7 +48,7 @@ egret.MainContext.instance.touchContext.onTouchMove = function():void
 
 * 避免双重解释，如eval函数，会使JavaScript创建解析器，产生额外的性能消耗。
 
-    ![]({{site.baseurl}}/assets/img-optimzing-performance/performance3-2.png)  
+    ![]({{site.baseurl}}/assets/img-optimzing-performance/performance3-2.png)
 
 * 推荐使用正则表达式处理字符串遍历。
 
@@ -66,7 +65,7 @@ egret.MainContext.instance.touchContext.onTouchMove = function():void
 * 代码中Getter ，Setter ，Try-catch会使性能下降。
 
 * 请保持数组中类型的一致。
- 
+
 ### 计时器与enterFrame事件
 
 显示停止定时器，移除enterFrame侦听。
@@ -92,4 +91,3 @@ egret.MainContext.instance.touchContext.onTouchMove = function():void
 使用StalingSwf制作动画时，导出文件之前删除合并fla中多余帧，可以减少Json体积。
 
 处理动画移动，使用帧时间差计算而不要使用帧率，不要相信帧率，它在各种环境中是不稳定的。
-

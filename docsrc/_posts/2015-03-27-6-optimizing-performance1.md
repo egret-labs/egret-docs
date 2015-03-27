@@ -1,18 +1,17 @@
-﻿---
+---
 layout: post
-title:  "简介" 
-permalink:  post/manual/optimizing/performance1.html
+title:  "第一章：简介"
+permalink: post/manual/optimizing/performance1.html
 type: manual
 element: optimizing
 version: Egret引擎 v1.6.1
 ---
-       
-# 第一章：简介
+
 
 本文档通过开发中所遇到的问题，为部署与优化程序的开发人员介绍最佳实践。
 
 优化游戏性能以便获得最佳体验是非常重要的，针对移动设备尤其重要。通过下面几个技巧使你开发的移动游戏更好的运行在移动设备：
-        
+
 * 少使用Alpha混合。
 * 显式停止计时器，让它们准备好进行垃圾回收。
 * 使用弱事件侦听器并在不需要时删除这些侦听器。
@@ -21,7 +20,7 @@ version: Egret引擎 v1.6.1
 * 尽可能重用对象，建立对象池，而不创建对象并对其执行垃圾回收。
 * 多次调用类属性时，避免直接使用this.att，建立局部变量赋值。
 * Event.ENTER_FRAME数量控制。
-* 减少不必要的引用。 
+* 减少不必要的引用。
 * 减少显示对象的旋转缩放。
 * 使用SpriteSheet合并的图片尺寸要优于单张图片的总尺寸，尤其是带透明通道的。
 * 在Http请求中，加载单个文件速度要优于加载多个文件。
@@ -36,7 +35,7 @@ https://github.com/egret-labs/egret-core
 在阅读中发现有误， 我们会最快响应：
 E-mail：yangxiao@egret.com
 
-  
+
 
 ### 运行时代码执行基本原理
 
@@ -68,4 +67,3 @@ E-mail：yangxiao@egret.com
 * 开启egret.Profiler.getInstance().run();
 
 通过上述度量，了解程序代码的执行性能方法，这里只是部分，如果有更好的，欢迎给我们E-mail。
-

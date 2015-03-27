@@ -1,13 +1,12 @@
-﻿---
+---
 layout: post
-title:  "简介" 
+title:  "第五章：网络优化"
 permalink:  post/manual/optimizing/performance5.html
 type: manual
 element: optimizing
 version: Egret引擎 v1.6.1
 ---
- 
-# 第五章：网络优化
+
 
 ### 资源划分
 
@@ -29,4 +28,3 @@ version: Egret引擎 v1.6.1
 ![]({{site.baseurl}}/assets/img-optimzing-performance/performance5-1.png)  加载完成后----------》 ![]({{site.baseurl}}/assets/img-optimzing-performance/performance5-2.png)
 
 如果不做预加载处理，用户并不了解屏幕中呈现的最终效果，也许认为游戏有问题，给予用户感知思考是非常友好的体验。
-

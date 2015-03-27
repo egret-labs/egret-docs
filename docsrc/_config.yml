@@ -193,7 +193,7 @@ manual:
 
   - text: 最佳实践 - 性能优化
     element: optimizing
-    url:  post/manual/optimizing/platform1.html
+    url:  post/manual/optimizing/performance1.html
     des: 对Egret开发中遇到的一些性能问题进行分析与说明，最大程度优化游戏性能。
     fenter: false
 

@@ -1,17 +1,16 @@
-﻿---
+---
 layout: post
-title:  "简介" 
+title:  "第四章：重绘优化"
 permalink:  post/manual/optimizing/performance4.html
 type: manual
 element: optimizing
 version: Egret引擎 v1.6.1
 ---
- 
-# 第四章：重绘优化
+
 
 ### 渲染对象
 
-![]({{site.baseurl}}/assets/img-optimzing-performance/performance4-1.png)  
+![]({{site.baseurl}}/assets/img-optimzing-performance/performance4-1.png)
 
 要改进渲染，务必考虑显示列表的嵌套。每个显示对象都是独立，当对象放入显示列表后参与整个渲染过程。
 
@@ -84,14 +83,14 @@ Egret提供了更加高级的API优化性能，可以通过制定重绘矩形范
         this.addChild(this.context);
     }
 
-![]({{site.baseurl}}/assets/img-optimzing-performance/performance4-2.png) 
+![]({{site.baseurl}}/assets/img-optimzing-performance/performance4-2.png)
 
 当前draw的数量为60，每帧执行60次draw操作。
 
 将代码简单的修改一下：
 
     private context:egret.Sprite = new egret.Sprite();
-    private createGameScene(): void 
+    private createGameScene(): void
     {
         egret.Profiler.getInstance().run();
         for( var i:number=0; i<12;i++ )
@@ -113,8 +112,6 @@ Egret提供了更加高级的API优化性能，可以通过制定重绘矩形范
 
 运行效果：
 
-![]({{site.baseurl}}/assets/img-optimzing-performance/performance4-3.png) 
+![]({{site.baseurl}}/assets/img-optimzing-performance/performance4-3.png)
 
 此时，我们的draw重绘为1，合理的使用位图缓存，可以极大程度提高渲染性能。
-
-

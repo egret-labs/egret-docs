@@ -1,13 +1,12 @@
-﻿---
+---
 layout: post
-title:  "简介" 
+title:  "第六章：环境优化"
 permalink:  post/manual/optimizing/performance6.html
 type: manual
 element: optimizing
 version: Egret引擎 v1.6.1
 ---
- 
-# 第六章：环境优化
+
 
 ### IOS
 
@@ -26,7 +25,7 @@ version: Egret引擎 v1.6.1
 
 Chrome的profiles可以帮助我们确定代码执行效率，从而确定性能原因。
 
-g-optimzing-performance/performance6-1.png)![]({{site.baseurl}}/assets/img-optimzing-performance/performance6-2.png)
+![]({{site.baseurl}}/assets/img-optimzing-performance/performance6-1.png)![]({{site.baseurl}}/assets/img-optimzing-performance/performance6-2.png)
 
 其他参考：
 

@@ -1,13 +1,12 @@
-﻿---
+---
 layout: post
-title:  "简介" 
+title:  "第二章：内存优化"
 permalink:  post/manual/optimizing/performance2.html
 type: manual
 element: optimizing
 version: Egret引擎 v1.6.1
 ---
- 
-# 第二章：内存优化
+
 
 ### 显示对象
 
