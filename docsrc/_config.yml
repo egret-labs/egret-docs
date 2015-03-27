@@ -191,9 +191,9 @@ manual:
     des: 对Egret开发的各种场景进行性能基准测试，每个基准针对一项功能。便于开发者在特定机型下进行性能瓶颈分析。
     fenter: true
 
-  - text: 开发实践性能优化
-    element: optimizingPerformance
-    url: jkdoc/optimizing-performance-for-the-egret-platform1.html
+  - text: 最佳实践 - 性能优化
+    element: optimizing
+    url:  post/manual/optimizing/platform1.html
     des: 对Egret开发中遇到的一些性能问题进行分析与说明，最大程度优化游戏性能。
     fenter: false
 

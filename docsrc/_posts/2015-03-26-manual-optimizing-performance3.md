@@ -1,9 +1,9 @@
 ﻿---
 layout: post
 title:  "简介" 
-permalink: jkdoc/performance1.html
+permalink:  post/manual/optimizing/performance3.html
 type: manual
-element: optimizingPerformance
+element: optimizing
 version: Egret引擎 v1.6.1
 ---
  
