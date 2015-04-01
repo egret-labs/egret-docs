@@ -127,9 +127,9 @@ manual:
     des: 介绍了Egret中多种动画方案的使用方法。
     fenter: false
 
-  - text: 计时器
+  - text: 时间控制
     url: post/manual/timer/timer.html
-    des: 介绍了Egret中关于计时器的使用方法。
+    des: 介绍了Egret中关于时间控制的方法，主要介绍了计时器和超时触发器的使用方法。
     element: manualtime
     enter: true
 
