@@ -1,14 +1,20 @@
 ---
 layout: post
-title:  Android Native热更新
+title:  Egret Native项目热更新
 permalink: post/tools/native/hot-upgrade.html
 type: manual
 element: manualnative
 version: Egret-Android-support 1.5.0+
+
 ---
 
 
-## 说明
+#### 概述
+
+Egret的封装项目无论在Android还是iOS平台，均支持热更新。    
+以下主要以Android平台为例来说明，iOS平台只需要在相应的配置和iOS入口类代码中进行不同的修改配置即可。
+
+#### 基本配置
 * 首先我们先来说下native在egretProperties.json中的相关配置数据。
 
   ![]({{site.baseurl}}/assets/img-jk/manual-native-hot-upgrade/publish_2.png)  
@@ -30,13 +36,13 @@ version: Egret-Android-support 1.5.0+
   ![]({{site.baseurl}}/assets/img-jk/manual-native-hot-upgrade/publish_6.png)
 
 -------
-## Native更新机制原理   
+#### Native更新机制原理   
    
 在Android的入口代码中，有个方法`getLoaderUrl`，它提供了Android以何方式来读取文件。
 
 ![]({{site.baseurl}}/assets/img-jk/manual-native-hot-upgrade/publish_3.png)
 
- 1、空字符串。即当前包使用最原始的格式。`egret -b -e --runtime native` 之后的数据结构。
+ 1、空字符串。即当前包使用最原始的格式。`egret b -e --runtime native` 之后的数据结构。
 
 ![]({{site.baseurl}}/assets/img-jk/manual-native-hot-upgrade/publish_4.png)
 
@@ -51,8 +57,8 @@ version: Egret-Android-support 1.5.0+
    
    
 -------
-## 版本发布步骤 
-* 执行 ```egret -b -e --runtime native```，编译native项目。
+#### 版本发布步骤 
+* 执行 ```egret b -e --runtime native```，编译native项目。
 * 执行 ```egret publish --runtime native -compile```，发布最新的可更新的资源包。
 
 ![]({{site.baseurl}}/assets/img-jk/manual-native-hot-upgrade/publish_1.png)
@@ -61,7 +67,7 @@ version: Egret-Android-support 1.5.0+
 
 * 修改服务器配置的game_code.zip包的最新地址（绝对地址并且包括"http://"头），如"http://www.example.com/game_code_1418351650.zip"。
 
-## 自定义加载页面
+#### 自定义加载页面
 * 有更新，必然需要更新相关的加载进度显示。在native_loader.js里，提供了一个简单的加载进度代码。
 	
 	egret_native.initLoadingUI()初始化加载页面。
@@ -80,6 +86,6 @@ version: Egret-Android-support 1.5.0+
   
   
 ------
-## 注意事项
+#### 注意事项
 * 如果需要native包中拥有热更新，那么getLoaderUrl()方法返回的服务器的zip包地址就不能写死。
 * native项目请不要在H5工程内创建。
