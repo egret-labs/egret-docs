@@ -38,6 +38,8 @@ egret.MainContext.instance.touchContext.onTouchMove = function():void
 
 由于TypeScript最终会被编译为JavaScript，而JavaScript是一种解释型语言，执行速度要比编译型语言慢得多，随着作用域中的作用域数量的增加，访问当前作用域以外的变量的时间也在增加。所以，访问全局变量总是比访问局部变量要慢，因为需要遍历作用域链。只要能减少花费在作用域链上的时间，就能增加脚本的整体性能，对于写法的技巧非常重要，下面是一些简单常用技巧。
 
+对于V8虚拟机的优化方法是，避免动态添加属性与修改变量类型，显而易见的好处是减少创建新类的开销，V8中当试图修改动态变量或属性时，虚拟机会把function类缓存为一个固定的C++类并触发虚拟机的重新编译。
+
 * 类方法中，将this赋值给另外一个临时变量，如self，再用self进行提高1/3的效率。
 
     测试：https://github.com/xinfangke/egretDocsTest/blob/master/test3.ts
@@ -64,7 +66,7 @@ egret.MainContext.instance.touchContext.onTouchMove = function():void
 
 * 代码中Getter ，Setter ，Try-catch会使性能下降。
 
-* 请保持数组中类型的一致。
+* 请保持数组中类型的一致，数组中第一个对象类型是确定的会提供性能。
 
 ### 计时器与enterFrame事件
 
