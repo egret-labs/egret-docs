@@ -68,5 +68,10 @@ modules:
 * 编译后，libs里应该有一个 ` module名称 ` 的文件夹
 
 
+#### 官方库需要进行模块化配置的模块
 
+Egret官方库不是所有的模块都可以直接使用，这是为了减少最终代码的体积，这4个库是需要模块化配置的：
+res、DragonBones、WebSocket及gui。
+进行配置的模块名，即在modules配置项的列表中添加的name名称分别为：
+res、dragonbones、socket及gui。
 
