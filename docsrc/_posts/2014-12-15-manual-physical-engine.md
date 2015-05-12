@@ -32,12 +32,13 @@ var body:p2.Body = new p2.Body();
 实际显示可能有多种不同的形状，p2引擎已经准备了丰富的类型，以适应各种不同的需要。
 我们举两个简单的栗子，一个是矩形，一个是平面：
 {% highlight java %}
-//创建宽200、高100的矩形形状
-var shpRect:p2.Shape = new p2.Rectangle( 200, 100 );
+//创建宽4单位、高2单位的矩形形状
+var shpRect:p2.Shape = new p2.Rectangle( 4, 2 );
 
 //创建平面形状
 var shpPlane:p2.Plane = new p2.Plane();
-{% endhighlight %}
+{% endhighlight %}     
+其中的单位是在物理引擎中设置的单位，跟实际的像素不是一个概念。具体的用法demo有提及，如果希望深入理解请学习底部的```进阶详细教程```。
 ------
 
 
@@ -103,7 +104,14 @@ world.sleepMode = p2.World.BODY_SLEEPING;
 
 <a href="https://github.com/schteppe/p2.js" target="_blank">p2物理引擎github首页</a>
 
-<a href="http://schteppe.github.io/p2.js/docs/" target="_blank">p2物理引擎API文档</a>        
+<a href="http://schteppe.github.io/p2.js/docs/" target="_blank">p2物理引擎API文档</a>     
+      
+      
+### 进阶详细教程
+      
+<a href="http://docs.egret-labs.org/jksubj/p2-jump-game.html" target="_blank">如何使用p2物理引擎做一个跳跃游戏</a>      
+  
+  
           
           
             
