@@ -17,8 +17,8 @@ version: Egret引擎 v1.5.3
 ------
 前提知识：有基本的Egret项目开发经验         
 技术等级：中级             
-必需产品：Egret Engine 1.5.x(<a href="http://www.egret-labs.org/egretengine" target="_blank">下载地址</a>)           
-开发工具：WebStorm或Visual Studio + EgretVS (<a href="http://www.egret-labs.org/egretvs" target="_blank">下载地址</a>)        
+必需产品：Egret Engine 1.5.x(<a href="http://www.egret.com/egretengine" target="_blank">下载地址</a>)           
+开发工具：WebStorm或Visual Studio + EgretVS (<a href="http://www.egret.com/egretvs" target="_blank">下载地址</a>)        
 教程项目包： <a href="{{site.baseurl}}/assets/packages/subjs/p2-jump-game.zip" target="_blank">下载地址</a>            
 项目运行地址：
             
@@ -31,7 +31,7 @@ version: Egret引擎 v1.5.3
 ###概述
      
 
-文档中心对物理引擎做了[简单的介绍](http://docs.egret-labs.org/jkdoc/manual-physical-engine.html)。但是实际使用远远不止这么简单！物理引擎推出后，不少开发者都很关注，但使用物理引擎涉及很多概念。新手很难从demo学习物理引擎的具体用法，本文将详细介绍如何做一个简单的跳跃游戏。
+文档中心对物理引擎做了[简单的介绍](http://docs.egret.com/jkdoc/manual-physical-engine.html)。但是实际使用远远不止这么简单！物理引擎推出后，不少开发者都很关注，但使用物理引擎涉及很多概念。新手很难从demo学习物理引擎的具体用法，本文将详细介绍如何做一个简单的跳跃游戏。
 
 ###物理对象的创建和使用
 首先创建一个物理世界：

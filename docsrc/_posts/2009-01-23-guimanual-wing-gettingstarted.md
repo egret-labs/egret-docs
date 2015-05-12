@@ -13,7 +13,7 @@ version: Egret引擎 v1.x
 Egret Wing是一款可以创建、编辑和管理Exml皮肤的GUI工具。需要注意的一点是，目前Egret Wing并不是IDE，所以你还无法在Egret Wing中进行ts的编码工作。Wing的主要功能全部是针对Exml皮肤而言的。
 
 Exml皮肤简单而言，就是通过标签语言描述皮肤内各个组件的一个皮肤文件。Exml最终会被编译器编译成ts文件。
-如果您想详细了解此内容，请访问网址：<a href="{{site.baseurl}}/post/manual/other/gui1.html" target="_blank">http://docs.egret-labs.org/post/manual/other/gui1.html</a>
+如果您想详细了解此内容，请访问网址：<a href="{{site.baseurl}}/post/manual/other/gui1.html" target="_blank">http://docs.egret.com/post/manual/other/gui1.html</a>
 
 基于上述介绍，将Egret Wing这样一个可视化GUI编辑工具，融入到你的开发工作中，势必将提升不少工作效率。那么如何将Egret Wing融入到你的开发工作中呢？
 
@@ -22,7 +22,7 @@ Exml皮肤简单而言，就是通过标签语言描述皮肤内各个组件的�
 ####创建项目
 ---
 
-Egret Wing是基于Egret Engine而运行的，如果你还没有安装Egret Engine，请到如下链接下载安装：<a href="http://www.egret-labs.org/download/egret-download.html" target="_blank">http://www.egret-labs.org/download/egret-download.html</a>
+Egret Wing是基于Egret Engine而运行的，如果你还没有安装Egret Engine，请到如下链接下载安装：<a href="http://www.egret.com/download/egret-download.html" target="_blank">http://www.egret.com/download/egret-download.html</a>
 
 Egret Wing的项目，其实就是Egret项目。不过Egret Wing为您提供了可视化的项目创建流程：文件->新建项目。
 
@@ -87,7 +87,7 @@ Egret Wing的项目，其实就是Egret项目。不过Egret Wing为您提供了�
 您也许会有疑问，那刚刚的皮肤exml文件是如何与现在拖出来的组件相对应上的呢？
 下面将为大家解答皮肤组件与逻辑组件之间的对应。
 
-关于什么是逻辑组件和皮肤组件，可以访问网址：<a href="{{site.baseurl}}/post/manual/other/gui1.html" target="_blank">http://docs.egret-labs.org/post/manual/other/gui1.html</a>
+关于什么是逻辑组件和皮肤组件，可以访问网址：<a href="{{site.baseurl}}/post/manual/other/gui1.html" target="_blank">http://docs.egret.com/post/manual/other/gui1.html</a>
 
 实现皮肤组件与逻辑组件之间的对应可以有如下三种方式：
 * 在ts代码中显示设置
@@ -235,6 +235,6 @@ class PanelTest extends egret.gui.Panel{
 ![img]({{site.baseurl}}/assets/img/winggs-image24.png)
 
 其他
-如果您想学习更多Egret相关内容，请访问网址：<a href="http://docs.egret-labs.org/home.html" target="_blank">http://docs.egret-labs.org/home.html</a>
+如果您想学习更多Egret相关内容，请访问网址：<a href="http://docs.egret.com/home.html" target="_blank">http://docs.egret.com/home.html</a>
 
-如果您想参阅Egret Wing的详细用户手册，请访问网址：<a href="{{site.baseurl}}/post/guimanual/wing/aboutwing.html" target="_blank">http://docs.egret-labs.org/post/guimanual/wing/aboutwing.html</a>
+如果您想参阅Egret Wing的详细用户手册，请访问网址：<a href="{{site.baseurl}}/post/guimanual/wing/aboutwing.html" target="_blank">http://docs.egret.com/post/guimanual/wing/aboutwing.html</a>

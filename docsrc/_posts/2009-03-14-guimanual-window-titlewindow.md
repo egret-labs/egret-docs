@@ -65,7 +65,7 @@ TitleWindows是可以定制皮肤的，如果您设定的主题是simple，那�
 首先拷贝skins/simple/TitleWindowSkin.exml，到您自己的皮肤目录，比如uiskins下面。然后打开该文件，修改为如下内容：
 
 {% highlight java linenos %}
-<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing"
+<e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing"
         minHeight="230" minWidth="470" maxWidth="710">
     <w:HostComponent name="egret.TitleWindow" />
     <e:Rect width="100%" height="100%" strokeAlpha="1" strokeColor="0x888888" strokeWeight=".5" fillColor="0xff0000" fillAlpha="1"></e:Rect>

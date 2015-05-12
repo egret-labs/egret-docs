@@ -95,7 +95,7 @@ ItemRenderer的皮肤
 和上面的LabelRenderer对应，我们来创建一个显示文本的皮肤：
 
 {% highlight java linenos %}
-<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing"
+<e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing"
         height="80">
     <e:states>
         <e:State name="up" />

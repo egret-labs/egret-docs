@@ -31,6 +31,6 @@ Chrome的profiles可以帮助我们确定代码执行效率，从而确定性能
 
 关于profiles使用：http://www.qingdou.me/3719.html
 
-写出性能最优的代码(1) ：http://bbs.egret-labs.org/thread-6198-1-1.html
+写出性能最优的代码(1) ：http://bbs.egret.com/thread-6198-1-1.html
 
-写出性能最优的代码(2) ： http://bbs.egret-labs.org/thread-6197-1-2.html
+写出性能最优的代码(2) ： http://bbs.egret.com/thread-6197-1-2.html

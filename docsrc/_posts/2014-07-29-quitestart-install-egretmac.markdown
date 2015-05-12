@@ -18,7 +18,7 @@ version: Egret引擎 v1.x
 
 从Egret网站下载专区下载最新的Egret一键安装包（Mac版本）。 本向导以Egret Engine 1.1.4版本为例
 
-<a href="http://www.egret-labs.org/downloads" target="_blank">http://www.egret-labs.org/downloads</a>
+<a href="http://www.egret.com/downloads" target="_blank">http://www.egret.com/downloads</a>
 
 ###2.安装前的准备
 ---

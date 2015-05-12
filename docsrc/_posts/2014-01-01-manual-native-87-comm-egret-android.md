@@ -9,8 +9,8 @@ version: egret-android-support v1.7.1+
 
 前提知识：有基本的Egret项目开发经验，会部署Android开发环境    
 技术等级：中级    
-必需产品：Egret Engine 1.5+(<a href="http://www.egret-labs.org/egretengine" target="_blank">下载地址</a>)    
-Egret开发工具：WebStorm或Visual Studio + EgretVS (<a href="http://www.egret-labs.org/egretvs" target="_blank">下载地址</a>)    
+必需产品：Egret Engine 1.5+(<a href="http://www.egret.com/egretengine" target="_blank">下载地址</a>)    
+Egret开发工具：WebStorm或Visual Studio + EgretVS (<a href="http://www.egret.com/egretvs" target="_blank">下载地址</a>)    
 Android开发工具：IntelliJ IDEA 
    
 ---  

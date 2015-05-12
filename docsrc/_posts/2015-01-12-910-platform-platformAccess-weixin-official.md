@@ -22,7 +22,7 @@ version: Egret引擎 v1.x
 
 * 下载或更新[第三方库](https://github.com/egret-labs/egret-game-library)
 
-* 在项目中接入weixinapi第三方库，[参考文档](http://docs.egret-labs.org/post/manual/threelibs/uselibs.html)
+* 在项目中接入weixinapi第三方库，[参考文档](http://docs.egret.com/post/manual/threelibs/uselibs.html)
     
 * 在Egret项目的TS文件中，对照微信公众平台开发者文档，直接调用其相关API。如下为基本用法示例：
 

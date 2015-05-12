@@ -128,7 +128,7 @@ List有一个useVirtualLayout属性，默认是true，这个属性决定了列�
 
 {% highlight java linenos %}
 //ListSkin.exml
-<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+<e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing">
     <e:Scroller width="100%" height="100%">
         <e:DataGroup id="dataGroup" itemRendererSkinName="skins.simple.ItemRendererSkin">
             <e:layout>
@@ -178,7 +178,7 @@ module skins.simple
 我们来扩展一下这个列表皮肤，增加一个背景显示(BgListSkin.exml)：
 
 {% highlight java linenos %}
-<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+<e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing">
     <e:UIAsset id="bg" width="100%" height="100%"
                source="app_egret_labs_jpg"/>
     <e:Scroller top="20" bottom="20" left="20" right="20" horizontalScrollPolicy="off">
@@ -241,7 +241,7 @@ module uiskins
 然后定义这个ItemRenderer的皮肤(ToggleRendererSkin.exml)：
 
 {% highlight java linenos %}
-<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing"
+<e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing"
         height="80">
     <e:states>
         <e:State name="up" />

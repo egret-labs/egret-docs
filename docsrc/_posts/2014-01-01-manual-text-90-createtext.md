@@ -38,7 +38,7 @@ label.text = "这是一个文本";
 我们的内容设置为 “这是一个文本”。
 
 由于 `TextField` 也继承自 `DisplayObject` （
-你可以参考<a href="http://docs.egret-labs.org/post/manual/display/displayclass.html" target="_blank">显示对象种类</a>
+你可以参考<a href="http://docs.egret.com/post/manual/display/displayclass.html" target="_blank">显示对象种类</a>
 这篇文档，了解显示对象继承关系）,我们可以直接将 `TextField` 对象添加到显示列表中，如下面代码：
 
 {% highlight java linenos %}

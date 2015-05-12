@@ -28,5 +28,5 @@ version: Egret引擎 v1.x
 4. <a href="{{site.baseurl}}/post/quitestart/helloworld/pushpro.html" target="_blank">发布项目</a>
 5. <a href="{{site.baseurl}}/post/quitestart/helloworld/morehelp.html" target="_blank">更多帮助</a>
 
-如果你在实际操作中遇到任何问题，请到我们的<a href="http://bbs.egret-labs.org/" target="_blank">开发者社区</a>寻求帮助。
+如果你在实际操作中遇到任何问题，请到我们的<a href="http://bbs.egret.com/" target="_blank">开发者社区</a>寻求帮助。
 

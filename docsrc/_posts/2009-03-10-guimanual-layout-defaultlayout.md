@@ -138,7 +138,7 @@ TileLayout(格子布局)
 * padding属性，设置容器内间距，如果需要分开设置可以使用paddingTop,paddingBottom,paddingLeft,paddingRight
 * requestedColumnCount属性，明确指定要显示的列数
 
-> 其中columnAlign和rowAlign的设置对于边界对齐起重要作用，不同的设置形成的效果也不尽相同，关于这些属性的详细分析参见[这篇文档](http://bbs.egret-labs.org/thread-102-1-1.html)。
+> 其中columnAlign和rowAlign的设置对于边界对齐起重要作用，不同的设置形成的效果也不尽相同，关于这些属性的详细分析参见[这篇文档](http://bbs.egret.com/thread-102-1-1.html)。
 
 示例：
 

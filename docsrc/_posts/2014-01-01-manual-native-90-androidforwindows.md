@@ -9,8 +9,8 @@ version: egret-android-support v1.0+
          
 前提知识：有基本的Egret项目开发经验，会部署Android开发环境    
 技术等级：中级    
-必需产品：Egret Engine 1.5+(<a href="http://www.egret-labs.org/egretengine" target="_blank">下载地址</a>)    
-Egret开发工具：WebStorm或Visual Studio + EgretVS (<a href="http://www.egret-labs.org/egretvs" target="_blank">下载地址</a>)    
+必需产品：Egret Engine 1.5+(<a href="http://www.egret.com/egretengine" target="_blank">下载地址</a>)    
+Egret开发工具：WebStorm或Visual Studio + EgretVS (<a href="http://www.egret.com/egretvs" target="_blank">下载地址</a>)    
 Android开发工具：IntelliJ IDEA     
 
    
@@ -31,7 +31,7 @@ Android封装Egret项目，即为之前所说的Android打包App。也就是让�
 1) runtime使用Native方式渲染，将Egret标准项目封装AndroidApp后将使游戏性能得到质的飞跃。    
 2) runtime解决了碎片化的问题，因此不同的Android设备上对H5播放多声道声音的支持差异，不同Android版本对于硬件加速的支持差异，均统一得到了解决，统统都支持！    
 3) 更多runtime带来的提升可参考
-<a href=" http://www.egret-labs.org/runtime " target="_blank"> Egret Runtime 白皮书</a>。    
+<a href=" http://www.egret.com/runtime " target="_blank"> Egret Runtime 白皮书</a>。    
 
 ---  
 #### 从标准的Egret项目开始
@@ -73,7 +73,7 @@ b. ***Android Studio***。因为Android Studio只使用新的Gradle模式，因�
 
 Egret打包Android App的项目依赖我们准备好的Egret标准项目，并且从`Egret-Android-Support`模板开始。所以进行Android封装前，我们要部署好该模板。    
 
-进入<a href="http://www.egret-labs.org/androidsupport" target="_blank">官方Egret-Android-support</a>下载最新版`Egret-Android-Support`，解压到一个相对稳定的路径。这样我们建立不同的Android App打包项目时，命令的模板参数都指向该路径即可。    
+进入<a href="http://www.egret.com/androidsupport" target="_blank">官方Egret-Android-support</a>下载最新版`Egret-Android-Support`，解压到一个相对稳定的路径。这样我们建立不同的Android App打包项目时，命令的模板参数都指向该路径即可。    
 
 比如，解压到路径`D:\_env\egret-android-support`。该路径内结构如图：    
 ![image]({{site.baseurl}}/assets/img-doc/native-androidforwindows/20-egret-android-support-structure.jpg)  

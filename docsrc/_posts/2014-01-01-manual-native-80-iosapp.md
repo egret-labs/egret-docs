@@ -68,7 +68,7 @@ $ mkdir projects
 ####3、安装Egret
 ---
 
-传送门：[Mac OS X 系统下安装最新的Egret](http://docs.egret-labs.org/post/quitestart/install/instalformac.html)。
+传送门：[Mac OS X 系统下安装最新的Egret](http://docs.egret.com/post/quitestart/install/instalformac.html)。
 
 
 ####4、下载Egret的iOS支持包
@@ -79,7 +79,7 @@ $ mkdir projects
 
 #####下载Egret ios支持包
 
-下载<a href="http://www.egret-labs.org/download/egret-ios-packager-download.html" target="_blank">egret-ios-support</a>，将`egret-ios-support`放置在“labs/egret-support/”文件夹下，如下图：
+下载<a href="http://www.egret.com/download/egret-ios-packager-download.html" target="_blank">egret-ios-support</a>，将`egret-ios-support`放置在“labs/egret-support/”文件夹下，如下图：
 
 ![img]({{site.baseurl}}/assets/img/egret-ios-support-egret-support-ios.png)
 

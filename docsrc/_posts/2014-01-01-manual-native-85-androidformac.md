@@ -93,7 +93,7 @@ b. **Android Studio**。因为Android Studio只使用新的Gradle模式，因为
 ####4、安装Egret
 ---
 
-传送门：[Mac OS X 系统下安装最新的Egret](http://docs.egret-labs.org/post/quitestart/install/instalformac.html)。
+传送门：[Mac OS X 系统下安装最新的Egret](http://docs.egret.com/post/quitestart/install/instalformac.html)。
 
 
 ####5、安装Egret的Android支持包
@@ -106,7 +106,7 @@ b. **Android Studio**。因为Android Studio只使用新的Gradle模式，因为
 
 #####下载Egret Android支持包
 
-下载<a href="http://www.egret-labs.org/androidsupport" target="_blank">最新的Egret的Android支持包</a>解压并重命名为`egret-android-support`，然后放置在“labs/egret-support/”文件夹下，如下图：
+下载<a href="http://www.egret.com/androidsupport" target="_blank">最新的Egret的Android支持包</a>解压并重命名为`egret-android-support`，然后放置在“labs/egret-support/”文件夹下，如下图：
 
 ![egret-android-support]({{site.baseurl}}/assets/img/egrentandroidsupport-egret-support-finder.png)
 

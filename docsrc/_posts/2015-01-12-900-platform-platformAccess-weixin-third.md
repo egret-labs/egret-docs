@@ -31,7 +31,7 @@
             var info:WeixinShareInfo = new WeixinShareInfo();
             info.title = "HelloEgret";
             info.desc = "欢迎使用Egret";
-            info.link = "www.egret-labs.org"; 
+            info.link = "www.egret.com"; 
             info.imgUrl = "";
 
 

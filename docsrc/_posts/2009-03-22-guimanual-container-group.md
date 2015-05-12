@@ -22,7 +22,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 * 不可以使用swapChildrenAt，用swapElementsAt代替
 * 不可以使用numChildren，用numElements代替
 
-您也许已经注意到了，之所以有上面相对应的方法替换，是因为Egret GUI中的容器，不能直接接受egret.DisplayObject类型，所以Egret GUI不得已“封锁”了原先egret.DisplayObejctContainer所定义的一些方法，用一组包含"Element"关键字的方法代替，主要是为了限制可操作的类型。那么什么样的类型可以添加到Group容器里？通过方法定义可以发现，只有实现了egret.gui.IVisualElement接口的类型才能被接受。Egret GUI自身的组件，都是实现了这个接口的，比如按钮，复选框等等，所以这些都是没有问题的。关于详细说明信息，您可以参考[《为何要使用addElement()等方法》](http://bbs.egret-labs.org/thread-102-1-1.html)。
+您也许已经注意到了，之所以有上面相对应的方法替换，是因为Egret GUI中的容器，不能直接接受egret.DisplayObject类型，所以Egret GUI不得已“封锁”了原先egret.DisplayObejctContainer所定义的一些方法，用一组包含"Element"关键字的方法代替，主要是为了限制可操作的类型。那么什么样的类型可以添加到Group容器里？通过方法定义可以发现，只有实现了egret.gui.IVisualElement接口的类型才能被接受。Egret GUI自身的组件，都是实现了这个接口的，比如按钮，复选框等等，所以这些都是没有问题的。关于详细说明信息，您可以参考[《为何要使用addElement()等方法》](http://bbs.egret.com/thread-102-1-1.html)。
 
 或许您会有疑问，如果是自己写了一个Bitmap之类的，就不能添加到Group里面吗？答案是可以的，但您需要先用UIAsset做一层封装，比如：
 

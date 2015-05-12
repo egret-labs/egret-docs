@@ -32,7 +32,7 @@ module uicomp
 然后我们在这个按钮的皮肤，即`uiskins/AssetButtonSkin.exml`里面，为素材的引用加上特殊标记：
 
 {% highlight java linenos %}
-<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing"
+<e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing"
         height="60" minWidth="140">
     <w:HostComponent name="egret.Button" />
     <e:states>

@@ -7,7 +7,7 @@ element: aboutgui
 version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/" target="_blank">郭少瑞</a>同学撰写此文档
 ---
 
-本教程系列是Egret GUI的入门教程，假定您已经掌握了Egret的一些基本使用经验，比如显示对象，事件等等，如果您还不具备这些基础知识，建议先从<a href="http://docs.egret-labs.org/home.html" target="_blank">文档中心的基础教程</a>学起。
+本教程系列是Egret GUI的入门教程，假定您已经掌握了Egret的一些基本使用经验，比如显示对象，事件等等，如果您还不具备这些基础知识，建议先从<a href="http://docs.egret.com/home.html" target="_blank">文档中心的基础教程</a>学起。
 
 很有意思的一点是，Egret无论是核心库，还是GUI库，都和Flash体系有着很相似的地方。如果您曾经做过Flash相关的开发，那么会对Egret提供的API感到非常的亲切。同样，如果您用过Flex框架，也会对Egret GUI体系不会感到陌生(其实Egret GUI的开发者，原先也是Flex开发者，对原Flex UI体系的优缺点非常熟悉，在精简和优化上也很有心得)。如果您没用过Flex框架，也没有关系，本教程系列将尽可能细致的讲解各个UI组件的用法，以及布局，数据整合等各个方面。
 
@@ -85,6 +85,6 @@ RES.loadConfig("resource/resource.json","resource/");
 
 最后建议您阅读下面的参考资料，由Egret GUI作者撰写，深入剖析了Egret GUI的底层机制，刚开始看不太懂也没关系，可以先有个粗略的印象，后面使用Egret GUI的时候，碰到一些具体的问题，再回想这些文章，应该会让您有"顿悟"的感觉。
 
-* [深入浅出EGRET GUI (一):皮肤分离机制](http://bbs.egret-labs.org/forum.php?mod=viewthread&tid=43)
-* [深入浅出EGRET GUI (二):失效验证机制](http://bbs.egret-labs.org/forum.php?mod=viewthread&tid=73)
-* [深入浅出EGRET GUI (三):AFL自适应流式布局](http://bbs.egret-labs.org/forum.php?mod=viewthread&tid=102&highlight=gui)
+* [深入浅出EGRET GUI (一):皮肤分离机制](http://bbs.egret.com/forum.php?mod=viewthread&tid=43)
+* [深入浅出EGRET GUI (二):失效验证机制](http://bbs.egret.com/forum.php?mod=viewthread&tid=73)
+* [深入浅出EGRET GUI (三):AFL自适应流式布局](http://bbs.egret.com/forum.php?mod=viewthread&tid=102&highlight=gui)

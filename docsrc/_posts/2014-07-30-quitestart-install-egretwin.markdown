@@ -17,7 +17,7 @@ version: Egret引擎 v1.x
 
 从Egret网站下载专区下载最新的Egret一键安装包（windows版本）。 本向导以Egret Engine 1.1.4版本为例
 
-<a href="http://www.egret-labs.org/downloads" target="_blank">http://www.egret-labs.org/downloads</a>
+<a href="http://www.egret.com/downloads" target="_blank">http://www.egret.com/downloads</a>
 
 
 
@@ -38,14 +38,24 @@ version: Egret引擎 v1.x
 
 ![win]({{site.baseurl}}/assets/img/wini4.png)
 
-修改完成后点击“立即安装”。注意，如果windows弹出用户账户控制窗口，询问是否允许对计算机的更改，请点击允许。引擎正在安装
-
+修改完成后点击“立即安装”。
+注意，如果windows弹出用户账户控制窗口，询问是否允许对计算机的更改，请点击允许。
+
+引擎正在安装
+
+
 ![win]({{site.baseurl}}/assets/img/wini5.png)
-引擎安装完成
 
-![win]({{site.baseurl}}/assets/img/wini6.png)点击“立即运行”会打开引擎管理的界面。提供了“修复安装”、“文档资料”和“检查更新”三个按钮。
+引擎安装完成
 
-![win]({{site.baseurl}}/assets/img/wini7.png)修复安装。点击修复安装后Egret 会帮你修复被破坏的环境变量和命令行程序
+![win]({{site.baseurl}}/assets/img/wini6.png)
+
+点击“立即运行”会打开引擎管理的界面。提供了“修复安装”、“文档资料”和“检查更新”三个按钮。
+
+![win]({{site.baseurl}}/assets/img/wini7.png)
+
+修复安装。点击修复安装后Egret 会帮你修复被破坏的环境变量和命令行程序
+
 ![win]({{site.baseurl}}/assets/img/wini8.png)
 
 文档资料。通过文档资料可以快速打开官方文档资料

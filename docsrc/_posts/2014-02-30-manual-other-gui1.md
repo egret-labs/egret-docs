@@ -183,7 +183,7 @@ ButtonSkin.exml
 
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin xmlns:e="http://ns.egret-labs.org/egret">
+<e:Skin xmlns:e="http://ns.egret.com/egret">
     <e:states>
         <e:State name="up"/>
         <e:State name="down"/>
@@ -202,7 +202,7 @@ XML的文件结构用来描述UI具有先天的优势，前文那个冗长的But
 
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin xmlns:e="http://ns.egret-labs.org/egret">
+<e:Skin xmlns:e="http://ns.egret.com/egret">
     <e:states>
         <e:State name="up"/>
         <e:State name="down"/>

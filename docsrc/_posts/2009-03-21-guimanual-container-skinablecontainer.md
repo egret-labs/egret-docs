@@ -41,7 +41,7 @@ EXML皮肤简介
 很熟悉的标签吧。跟HTML类似，EXML也是一种遵循XML语法的标记语言(严格来说，HTML并不遵循严谨的XML语法，它允许一些不闭合的标签，而EXML则必须严格遵循XML语法)。EXML要描述一个界面，也是由若干个标签组成，只是这些标签是Egret框架特有的：
 
 {% highlight java linenos %}
-<e:Skin xmlns:e="http://ns.egret-labs.org/egret">
+<e:Skin xmlns:e="http://ns.egret.com/egret">
     <e:UIAsset />
     <e:Label />
     <e:Button />
@@ -49,7 +49,7 @@ EXML皮肤简介
 </e:Skin>
 {% endhighlight %}
 
-> 这里面用到了命名空间，Egret GUI为自己单独定义了命名空间，它的前缀是e，URI是`http://ns.egret-labs.org/egret`。在使用Egret GUI内置组件对应的标签时，都需要加上e这个前缀。
+> 这里面用到了命名空间，Egret GUI为自己单独定义了命名空间，它的前缀是e，URI是`http://ns.egret.com/egret`。在使用Egret GUI内置组件对应的标签时，都需要加上e这个前缀。
 
 使用EXML添加一个标签，并且设置标签的属性，在编译的时候，就会把这些属性设置到生成的组件上，比如：
 
@@ -74,7 +74,7 @@ this.addElement(loc1);
 那么都有哪些标签可以使用呢？您可以通过下面的方式，逐步了解常见标签的用法：
 
 * 查看默认皮肤的源码，从这些默认皮肤的EXML代码中，您可以学习到很多用法和技巧。
-* 使用EXML，可以借助.xsd文件来实现WebStorm的语法提示，这样写起来真是事半功倍。配置过程[参见这里](http://bbs.egret-labs.org/thread-155-1-1.html)，配置好以后，您在编写的时候就可以得到IDE的实时提示，有哪些标签和属性可用，自然也就一目了然了。
+* 使用EXML，可以借助.xsd文件来实现WebStorm的语法提示，这样写起来真是事半功倍。配置过程[参见这里](http://bbs.egret.com/thread-155-1-1.html)，配置好以后，您在编写的时候就可以得到IDE的实时提示，有哪些标签和属性可用，自然也就一目了然了。
 
 您或许还是感到一丝神秘，EXML最终是如何被使用的呢？是像JSON配置一样，运行时加载然后解析吗？答案是，EXML并不是在运行时使用的，它和TypeScript一样，只是作为开发语言，最终是需要编译为JS文件使用的。JS文件？是的，您没看错。EXML会被Egret内置的编译工具，转换为JS文件哦，就像把TypeScript文件转换为JS一样。
 
@@ -86,7 +86,7 @@ this.addElement(loc1);
 回到这个例子中，我们来写一个自定义的皮肤类`uiskins/BackgroundSkin.exml`，这个皮肤类的作用是显示一个背景图片，它的代码如下：
 
 {% highlight java linenos %}
-<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+<e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing">
     <e:UIAsset id="bg" width="100%" height="100%"
                source="app_egret_labs_jpg" />
     <e:Group id="contentGroup" width="100%" height="100%" />
@@ -95,7 +95,7 @@ this.addElement(loc1);
 
 在上面的皮肤实现中，有几个需要注意的地方：
 
-1.对于可定义皮肤的容器，它的皮肤中[必须包含contentGroup属性](http://bbs.egret-labs.org/thread-43-1-1.html)，并且应该为这个属性指定一个egret.gui.Group的实例。这是因为，对于SkinnableContainer来说，您调用addElement添加的对象，都会被添加到名字是contentGroup的那个容器中。同理，关键词包含"Element"的那组方法，也全部被覆盖，关联到这个contentGroup上，防止混淆和错误。
+1.对于可定义皮肤的容器，它的皮肤中[必须包含contentGroup属性](http://bbs.egret.com/thread-43-1-1.html)，并且应该为这个属性指定一个egret.gui.Group的实例。这是因为，对于SkinnableContainer来说，您调用addElement添加的对象，都会被添加到名字是contentGroup的那个容器中。同理，关键词包含"Element"的那组方法，也全部被覆盖，关联到这个contentGroup上，防止混淆和错误。
 
 比如，您在创建SkinnableContainer之后，为它添加一个按钮：
 

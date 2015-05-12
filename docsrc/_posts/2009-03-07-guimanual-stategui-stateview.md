@@ -97,7 +97,7 @@ export class MyContainerDemo extends egret.gui.SkinnableContainer
 然后在自定义皮肤上，也要声明您的自定义状态：
 
 {% highlight java linenos %}
-<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+<e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing">
     <e:states>
         <e:State name="normal" />
         <e:State name="highlight" />

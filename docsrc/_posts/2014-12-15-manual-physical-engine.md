@@ -113,7 +113,7 @@ world.sleepMode = p2.World.BODY_SLEEPING;
       
 ### 进阶详细教程
       
-<a href="http://docs.egret-labs.org/jksubj/p2-jump-game.html" target="_blank">如何使用p2物理引擎做一个跳跃游戏</a>      
+<a href="http://docs.egret.com/jksubj/p2-jump-game.html" target="_blank">如何使用p2物理引擎做一个跳跃游戏</a>      
   
   
           

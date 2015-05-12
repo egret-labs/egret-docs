@@ -153,7 +153,7 @@ tx.size = 32;
 super.addChild( tx );
 
 跟绘制背景类似，
-可以在http://www.egret-labs.org/api
+可以在http://www.egret.com/api
 
 编译运行，结果如图：
 
@@ -344,7 +344,7 @@ super.addChild( batman );
 其实，之前我们绘制背景也用了几个方法，但是都直接给出代码。
 如果自己写程序，应该给出怎样的参数，这些都是我们使用每一个API首先需要了解的。这里就说明一下如何来查阅API参考。
 
-首先，我们官方提供了所有可用的类及其API参考网站：http://www.egret-labs.org/api。
+首先，我们官方提供了所有可用的类及其API参考网站：http://www.egret.com/api。
 
 导航栏最上面是模块划分，`Egret`即表示核心的`egret`模块，`GUI`表示`gui`模块，`RES`表示`RES`模块,`DB`表示`dragonBones`模块。
 首先选定所需模块，然后在导航栏会显示该模块所有可用的类，是按字母排序的。

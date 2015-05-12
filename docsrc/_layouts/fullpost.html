@@ -48,7 +48,7 @@
         var comment = $('input[name="comment"]:checked').val()
         $.ajax({
         type: "POST",
-        url: "http://download.egret-labs.org/comment.php",
+        url: "http://download.egret.com/comment.php",
         data: "title=" + title+ '&comment=' + comment,
         dataType : "json",
         success: function(msg){

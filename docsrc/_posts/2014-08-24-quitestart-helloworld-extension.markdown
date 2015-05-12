@@ -37,7 +37,7 @@ class HelloWorld extends egret.DisplayObjectContainer
 
 Egret在创建时会加载默认的库文件与游戏逻辑，加载完成后会创建相应的运行环境。当一切环境创建工作完成后，Egret会向用户抛出一个名称为`ADDED_TO_STAGE`的事件，该事件表示当前舞台已经创建完毕。在文档类中，接收到此事件之后即可运行自己的游戏逻辑。具体代码如下：
 
->有关“事件”的详细文档，请参考<a href="http://docs.egret-labs.org/post/manual/event/useevent.html" target="_blank">事件机制</a>
+>有关“事件”的详细文档，请参考<a href="http://docs.egret.com/post/manual/event/useevent.html" target="_blank">事件机制</a>
 
 {% highlight java linenos %}
 class HelloWorld extends egret.DisplayObjectContainer

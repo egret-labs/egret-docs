@@ -97,7 +97,7 @@ module uicomp
 然后我们还是用EXML来为StateButton定制一个皮肤(uiskins/StateButtonSkin.exml)：
 
 {% highlight java linenos %}
-<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing"
+<e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing"
         height="60" minWidth="140">
     <w:HostComponent name="uicomp.StateButton" />
     <e:states>
@@ -144,8 +144,8 @@ private changeSkinHandler(evt:egret.Event):void {
 假如您要在其他组件的EXML皮肤中，使用自定义的StateButton，那也是很简单的，只要注意下命名空间的处理就可以了：
 
 {% highlight java linenos %}
-<e:Skin xmlns:e="http://ns.egret-labs.org/egret"
-        xmlns:w="http://ns.egret-labs.org/wing"
+<e:Skin xmlns:e="http://ns.egret.com/egret"
+        xmlns:w="http://ns.egret.com/wing"
         xmlns:comps="uicomp.*">
     <w:HostComponent name="egret.gui.Panel" />
     <e:states>
