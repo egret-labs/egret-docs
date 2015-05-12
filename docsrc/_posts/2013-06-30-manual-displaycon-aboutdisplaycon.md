@@ -57,7 +57,7 @@ class GridSprite extends egret.Sprite
         this.graphics.endFill();
     }
 }
-{% endhighlight %}
+{% endhighlight %}  
 
 在文档类中，我们实例化 `GridSprite` 即可。
 
