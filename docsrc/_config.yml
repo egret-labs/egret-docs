@@ -73,11 +73,11 @@ quitestart:
     element: helloworld
     url: post/quitestart/helloworld/helloworld.html
     des: 使用Egret创建并、运行并发布你的第一个项目。
-  - text: 4、Egret小白快速上手
+  - text: 4、Egret小白快速上手(长篇)
     enter: true
     element: quitestart
     url: post/quitestart/quitestart.html
-    des: Egret完全小白看过来~跟着走完这篇教程，你将对Egret开发的主要方面都了然于胸，你可以告诉他们：“我已经不是小白了！”
+    des: Egret完全小白看过来~跟着走完这篇教程，你将对Egret开发的主要方面都了然于胸。
 
 manual:
   - text: 视觉编程

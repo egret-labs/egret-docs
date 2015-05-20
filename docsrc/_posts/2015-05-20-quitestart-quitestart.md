@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Egret小白快速上手"
+title:  "Egret小白快速上手(长篇)"
 permalink: post/quitestart/quitestart.html
 type: quitestart
 element: quitestart
