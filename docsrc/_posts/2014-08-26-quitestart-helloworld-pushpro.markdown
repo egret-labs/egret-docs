@@ -3,7 +3,7 @@ layout: post
 title:  "发布项目"
 permalink: post/quitestart/helloworld/pushpro.html
 type: quitestart
-element: quitestarthelloworld
+element: helloworld
 version: Egret引擎 v1.x
 ---
 

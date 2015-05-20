@@ -3,7 +3,7 @@ layout: post
 title:  "编译项目"
 permalink: post/quitestart/helloworld/buildpro.html
 type: quitestart
-element: quitestarthelloworld
+element: helloworld
 version: Egret引擎 v1.x
 ---
 

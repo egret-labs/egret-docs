@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "快速入门"
-permalink: post/quitestart/helloworld/helloworld2.html
+title:  "Egret小白快速上手"
+permalink: post/quitestart/quitestart.html
 type: quitestart
-element: quitestarthelloworld
+element: quitestart
 version: Egret引擎 v1.x
 ---
 

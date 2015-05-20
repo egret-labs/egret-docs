@@ -3,7 +3,7 @@ layout: post
 title:  "运行项目"
 permalink: post/quitestart/helloworld/runpro.html
 type: quitestart
-element: quitestarthelloworld
+element: helloworld
 version: Egret引擎 v1.x
 ---
 

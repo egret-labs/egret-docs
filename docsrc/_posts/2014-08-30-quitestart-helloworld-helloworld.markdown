@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Hello World"
+title:  "第一个Egret项目"
 permalink: post/quitestart/helloworld/helloworld.html
 type: quitestart
-element: quitestarthelloworld
+element: helloworld
 version: Egret引擎 v1.x
 ---
 

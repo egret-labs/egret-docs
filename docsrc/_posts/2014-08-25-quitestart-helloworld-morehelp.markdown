@@ -3,7 +3,7 @@ layout: post
 title:  "更多帮助"
 permalink: post/quitestart/helloworld/morehelp.html
 type: quitestart
-element: quitestarthelloworld
+element: helloworld
 version: Egret引擎 v1.x
 ---
 
