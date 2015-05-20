@@ -63,7 +63,7 @@ quitestart:
     element: quitestartinstall
     url: post/quitestart/install/installwin.html
     des: Egret引擎安装文档说明。
-  - text: 3、快如入门
+  - text: 3、快速入门
     enter: false
     element: quitestarthelloworld
     url: post/quitestart/helloworld/helloworld2.html
