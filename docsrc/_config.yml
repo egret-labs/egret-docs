@@ -59,11 +59,17 @@ quitestart:
     url: post/quitestart/about/aboutegret.html
     des: Egret引擎以及相关产品介绍。
   - text: 2、安装与部署
+    enter: false
     element: quitestartinstall
     url: post/quitestart/install/installwin.html
     des: Egret引擎安装文档说明。
-  - text: 3、Hello World
-    fenter: false
+  - text: 3、快如入门
+    enter: false
+    element: quitestarthelloworld
+    url: post/quitestart/helloworld/helloworld2.html
+    des: 使用Egret创建你的第一个游戏。
+  - text: 4、Hello World
+    enter: true
     element: quitestarthelloworld
     url: post/quitestart/helloworld/helloworld.html
     des: 使用Egret创建你的第一个游戏。
