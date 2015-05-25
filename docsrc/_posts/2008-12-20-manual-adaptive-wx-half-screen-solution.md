@@ -17,7 +17,7 @@ version: Egret引擎 v1.x
               
 {% highlight java %}
 HTML5CanvasRenderer.prototype.clearRect = function (x, y, w, h) {
-    this.canvasContext.clearRect(x, y, w * window.devicePixelRatio, h * window.devicePixelRatio);
+    this.canvasContext.clearRect( x, y, w * window.devicePixelRatio, h * window.devicePixelRatio );
 };
 {% endhighlight %}
            

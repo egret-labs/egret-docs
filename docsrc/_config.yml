@@ -160,10 +160,10 @@ manual:
     url: post/tools/native/androidforwindows.html
     des: 详细介绍了iOS，Android和Windows Phone平台的APP打包解决方案是打包方法。
     
-  - text: 第三方库
+  - text: 模块化配置及第三方库
     element: threelibs
     url: post/manual/threelibs/uselibs.html
-    des: 详细介绍了Egret中第三方库的使用。
+    des: 详细介绍了Egret中模块化配置以及第三方库的使用。
     fenter: false
 
   - text: 粒子系统
