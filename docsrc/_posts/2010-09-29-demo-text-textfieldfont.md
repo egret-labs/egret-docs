@@ -11,7 +11,7 @@ documentclass: TextFieldFontTest
 
 ###Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 class TextFieldFontTest extends egret.DisplayObjectContainer
 {
 

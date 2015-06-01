@@ -19,7 +19,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 比如我们打开theme_simple.thm文件，看到如下的代码(截取的片段)：
 
-{% highlight java linenos %}
+{% highlight java  %}
 {
 "skins":
 	{
@@ -34,14 +34,14 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 映射所需的key，可以是两种格式：1是组件的类名称，2是自定义的hostComponentKey(实际上在引擎内部，Egret GUI的组件也是将hostComponentKey设置为自己的类名称字符串)。假如您有一个List组件，需要使用一个特殊皮肤，来代替默认皮肤，那您可以这样设置：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var list:egret.gui.List = new egret.gui.List();
 list.hostComponentKey = "CustomList";
 {% endhighlight %}
 
 主题配置文件中：
 
-{% highlight java linenos %}
+{% highlight java  %}
 {
 "skins":
 	{
@@ -53,14 +53,14 @@ list.hostComponentKey = "CustomList";
 
 假如您要使用"simple"主题，就需要使用egret.gui.Theme类，加载该主题的配置文件：
 
-{% highlight java linenos %}
+{% highlight java  %}
 egret.gui.Theme.load("resource/theme/theme_simple.thm");//主题配置文件
 RES.loadConfig("resource/config/resource_simple.json");//主题对应的素材配置文件
 {% endhighlight %}
 
 在Theme类中，是通过getDefaultSkin方法实现皮肤映射的，但对开发者而言基本不用接触这个方法。如果您有特殊的需求需要自己实现皮肤解析规则，可以通过注入一个SkinAdapter来实现。Theme的这个方法只是在SkinAdapter没有返回结果的时候才会被调用。
 
-{% highlight java linenos %}
+{% highlight java  %}
 egret.Injector.mapClass("egret.gui.ISkinAdapter",MySkinAdapter);
 {% endhighlight %}
 

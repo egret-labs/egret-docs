@@ -19,7 +19,7 @@ Egret提供的网络操作中，封装了其中两种方法，这两种方法也
 
 具体代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var urlreq:egret.URLRequest = new egret.URLRequest();
 urlreq.method = egret.URLRequestMethod.POST;
 {% endhighlight %}

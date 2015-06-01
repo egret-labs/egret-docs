@@ -11,7 +11,7 @@ version: Egret引擎 v1.x
 我们可以通过 `textColor` 来修改TextField对象中文本的颜色。
 具体代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var label:egret.TextField = new egret.TextField();
 this.addChild( label );
 label.width = 70;

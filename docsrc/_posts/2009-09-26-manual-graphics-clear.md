@@ -11,6 +11,6 @@ version: Egret引擎 v1.x
 
 当需要清除一个对象的绘图时候，我们可以执行下面语句
 
-{% highlight java linenos %}
+{% highlight java  %}
 shp.graphics.clear();
 {% endhighlight %}

@@ -14,7 +14,7 @@ StateButton的实现
 
 创建一个StateButton类，仍然扩展egret.gui.Button类：
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uicomp
 {
     export class StateButton extends egret.gui.Button
@@ -96,7 +96,7 @@ module uicomp
 
 然后我们还是用EXML来为StateButton定制一个皮肤(uiskins/StateButtonSkin.exml)：
 
-{% highlight java linenos %}
+{% highlight java  %}
 <e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing"
         height="60" minWidth="140">
     <w:HostComponent name="uicomp.StateButton" />
@@ -119,7 +119,7 @@ module uicomp
 
 测试：
 
-{% highlight java linenos %}
+{% highlight java  %}
 //自定义按钮
 this.stateBtn = new uicomp.StateButton("app_egret_labs_jpg","button_down_png","app_egret_labs_jpg");
 this.stateBtn.width = 200;
@@ -143,7 +143,7 @@ private changeSkinHandler(evt:egret.Event):void {
 
 假如您要在其他组件的EXML皮肤中，使用自定义的StateButton，那也是很简单的，只要注意下命名空间的处理就可以了：
 
-{% highlight java linenos %}
+{% highlight java  %}
 <e:Skin xmlns:e="http://ns.egret.com/egret"
         xmlns:w="http://ns.egret.com/wing"
         xmlns:comps="uicomp.*">
@@ -158,14 +158,14 @@ private changeSkinHandler(evt:egret.Event):void {
 
 在EXML中，您的自定义组件需要使用自定义的命名空间，规则是URI要使用"模块名称+点+星号"，比如我们上面编写的StateButton的类定义是uicomp.StateButton，则命名空间定义为：
 
-{% highlight java linenos %}
+{% highlight java  %}
 xmlns:comps="uicomp.*"
 {% endhighlight %}
 
 > 注意comps是命名空间前缀，您可以自己决定用什么字符串，比如叫MySpace什么的都行，但要和下文的使用相对应。另外要注意，TypeScript中的模块名称和文件夹路径是无关的，所以这里一定要写模块名称，而不是写文件夹路径哦。
 
-> 如果没有模块名称，则可以直接写{% highlight java linenos %}xmlns:comps="*"{% endhighlight %}
+> 如果没有模块名称，则可以直接写{% highlight java  %}xmlns:comps="*"{% endhighlight %}
 
-{% highlight java linenos %}
+{% highlight java  %}
 <comps:StateButton ...
 {% endhighlight %}

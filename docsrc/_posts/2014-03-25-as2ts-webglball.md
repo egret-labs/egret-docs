@@ -10,7 +10,7 @@ version: Egret引擎 v1.x
 
 ####ActionScript 3 Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 private var isTouching:Boolean = false;
 private function onTouchBegin(event:MouseEvent):void {
     this.isTouching = true;
@@ -51,7 +51,7 @@ private function onEnterFrame(event:Event):void {
 
 ####Egret Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 private isTouching:boolean = false;
 private onTouchBegin(event:egret.TouchEvent):void {
     this.isTouching = true;

@@ -11,15 +11,15 @@ DataGroup，可以直译为"数据容器"。但叫"容器"又不太严谨，因�
 
 那么它是怎么实现这种"数据绑定+展示"的过程呢？如果您之前做过前端开发，应该对"模板"这种机制不陌生。假设有10条数据，需要用列表标签
 
-{% highlight java linenos %}<ul></ul>{% endhighlight %}
+{% highlight java  %}<ul></ul>{% endhighlight %}
 
 显示出来，您所需要做的就是定义一条
 
-{% highlight java linenos %}<li>{% endhighlight %}
+{% highlight java  %}<li>{% endhighlight %}
 
 的格式，至于数据条数就不是问题了，那是循环要解决的事情。
 
-{% highlight java linenos %}
+{% highlight java  %}
 //伪代码
 <ul>
 	<%for(data each collection)%>
@@ -32,7 +32,7 @@ DataGroup，可以直译为"数据容器"。但叫"容器"又不太严谨，因�
 
 来看看一个DataGroup的例子吧。首先，先创建数据源：
 
-{% highlight java linenos %}
+{% highlight java  %}
 //先创建一个数组
 var sourceArr:any[] = [];
 for (var i:number = 1; i < 5; i++)
@@ -45,7 +45,7 @@ var myCollection:egret.gui.ArrayCollection = new egret.gui.ArrayCollection(sourc
 
 然后创建DataGroup的实例，并设置数据源(属性名称是dataProvider)：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var dataGroup:egret.gui.DataGroup = new egret.gui.DataGroup();
 dataGroup.dataProvider = myCollection;
 dataGroup.percentWidth = 100;
@@ -60,7 +60,7 @@ ItemRenderer
 
 这个例子里，我们只需要为每一条数据显示文本即可，所以我们来创建一个简单的ItemRenderer:
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uiskins
 {
     export class LabelRenderer extends egret.gui.ItemRenderer
@@ -83,7 +83,7 @@ module uiskins
 
 然后我们将自定义的ItemRenderer设置到DataGroup上：
 
-{% highlight java linenos %}
+{% highlight java  %}
 dataGroup.itemRenderer = new egret.gui.ClassFactory(uiskins.LabelRenderer);
 {% endhighlight %}
 
@@ -94,7 +94,7 @@ ItemRenderer的皮肤
 
 和上面的LabelRenderer对应，我们来创建一个显示文本的皮肤：
 
-{% highlight java linenos %}
+{% highlight java  %}
 <e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing"
         height="80">
     <e:states>
@@ -120,7 +120,7 @@ ItemRenderer的皮肤
 
 同样需要把这个ItemRenderer的皮肤设置到DataGroup上面：
 
-{% highlight java linenos %}
+{% highlight java  %}
 dataGroup.itemRendererSkinName = "uiskins.LabelRendererSkin";
 {% endhighlight %}
 
@@ -130,7 +130,7 @@ dataGroup.itemRendererSkinName = "uiskins.LabelRendererSkin";
 
 挤到一起了，加个布局类优化一下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var vLayout:egret.gui.VerticalLayout = new egret.gui.VerticalLayout();
 vLayout.horizontalAlign = egret.HorizontalAlign.CONTENT_JUSTIFY;
 vLayout.gap = 5;
@@ -141,7 +141,7 @@ dataGroup.layout = vLayout;
 
 竖着不爽？改成格子布局的：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var gridLayout:egret.gui.TileLayout = new egret.gui.TileLayout();
 gridLayout.columnWidth = 240;
 gridLayout.requestedColumnCount = 2;

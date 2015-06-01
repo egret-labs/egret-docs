@@ -26,14 +26,14 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 或许您会有疑问，如果是自己写了一个Bitmap之类的，就不能添加到Group里面吗？答案是可以的，但您需要先用UIAsset做一层封装，比如：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var shapeUI:egret.gui.UIAsset = new egret.gui.UIAsset("file_icon");
 myGroup.addElement(shapeUI);
 {% endhighlight %}
 
 如果您自定义一个类，继承自Group，那么注意，内部的其它对象应该在createChildren()方法中创建和添加，也就是说，您要覆盖Group的createChildren()方法。参见下面的例子：
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uidemo
 {
     export class GroupDemo extends egret.gui.Group
@@ -55,7 +55,7 @@ module uidemo
 
 Egret GUI中的容器的一个显著特点是，可以配置一个layout对象，来实现不同的布局方式。这对我们的开发工作是非常有好处的，我们可以使用默认的几个布局类，来节省大量的编码工作。在下面的例子中，我们在Group里面放了4个按钮，点击按钮，可以切换4种布局模式：绝对定位，横向布局，垂直布局，格子布局。
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uidemo
 {
     export class GroupDemo extends egret.gui.Group

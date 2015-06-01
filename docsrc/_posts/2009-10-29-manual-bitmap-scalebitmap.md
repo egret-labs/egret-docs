@@ -39,7 +39,7 @@ version: Egret引擎 v1.x
 但其中一个添加九宫格数据，另外一个不添加九宫格数据。具体代码如下：
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 class BitmapTest extends egret.DisplayObjectContainer{
     public constructor()
     {

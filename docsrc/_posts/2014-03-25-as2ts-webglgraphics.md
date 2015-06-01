@@ -10,7 +10,7 @@ webgl的graphics示例，<a href="http://static.egret-labs.org/egret-game/webgl/
 
 ####ActionScript 3 Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 private function createGameScene():void {
     this.shape = new Shape();
     this.addChild(this.shape);
@@ -40,7 +40,7 @@ private function onEnterFrame(event:Event):void {
 
 ####Egret Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 private createGameScene():void {
     this.shape = new egret.Shape();
     this.addChild(this.shape);

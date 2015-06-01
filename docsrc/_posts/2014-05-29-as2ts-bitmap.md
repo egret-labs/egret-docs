@@ -10,7 +10,7 @@ Bitmap类表示用于位图图像的显示对象。用法和as一样，创建之
 
 ####ActionScript 3 Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 var bitmap:Bitmap = new Bitmap();
 bitmap.bitmapData = bitmapData;
 bitmap.x = 100;
@@ -20,7 +20,7 @@ stage.addChild(bitmap);
 
 ####Egret Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 var bitmap:egret.Bitmap = new egret.Bitmap();
 //设置纹理，类似bitmapData
 bitmap.texture = texture;

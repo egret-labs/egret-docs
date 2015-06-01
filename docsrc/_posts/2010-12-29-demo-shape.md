@@ -11,7 +11,7 @@ documentclass: ShapeTest
 
 ###Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 class ShapeTest extends egret.DisplayObjectContainer
 {
 

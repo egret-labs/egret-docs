@@ -16,7 +16,7 @@ version: Egret引擎 v1.x
 
 示例代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var label:egret.TextField = new egret.TextField();
 this.addChild( label );
 label.width = 70;

@@ -10,7 +10,7 @@ webgl遮罩实现，<a href="http://static.egret-labs.org/egret-game/webgl/mask/
 
 ####ActionScript 3 Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 private var ballContainer:Sprite;
 
 private function createGameScene():void {
@@ -47,7 +47,7 @@ private function createGameScene():void {
 
 ####Egret Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 private ballContainer:egret.DisplayObjectContainer;
 
 private createGameScene():void {

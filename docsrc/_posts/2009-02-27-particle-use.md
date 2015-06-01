@@ -12,7 +12,7 @@ version: Egret引擎 v1.x
 通过RES模块获得 GravityParticleSystem 所需要的纹理以及配置，然后创建particle.GravityParticleSystem对象。注：纹理和配置需要加载过的
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 var texture = RES.getRes("texture");
 var config = RES.getRes("texture_json");
 this.system = new particle.GravityParticleSystem(texture, config);
@@ -27,7 +27,7 @@ this.system = new particle.GravityParticleSystem(texture, config);
 下面以json的配置文件为例，配置文件中的参数命名基本上和 GravityParticleSystem 中的属性名称一致
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 {
     "emitter": {
         "x": 240,
@@ -70,7 +70,7 @@ this.system = new particle.GravityParticleSystem(texture, config);
 通过 start 函数启动粒子系统
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 this.system.start();
 {% endhighlight %}
 
@@ -80,7 +80,7 @@ this.system.start();
 通过 stop 函数停止粒子系统
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 this.system.stop();
 {% endhighlight %}
 -----
@@ -88,7 +88,7 @@ this.system.stop();
 通过 changeTexture 函数更换粒子纹理
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 var newTexture = RES.getRes("newTexture");
 this.system.changeTexture(newTexture);
 {% endhighlight %}
@@ -99,7 +99,7 @@ this.system.changeTexture(newTexture);
 通过以下代码可以创建粒子系统并启动
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 //获取纹理
 var texture = RES.getRes("texture");
 //获取配置

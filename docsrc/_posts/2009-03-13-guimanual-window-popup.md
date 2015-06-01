@@ -11,7 +11,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 把上节的例子，改成一个Panel版本的，就是类似这样的：
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uidemo
 {
     export class PopUpDemo extends egret.gui.Group

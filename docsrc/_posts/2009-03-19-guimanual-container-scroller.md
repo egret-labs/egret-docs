@@ -17,7 +17,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 这里我们还是用"egret_labs"这个图片做例子，这是一个比较大的图片，手机屏幕是显示不下的，然后我们看看如何交给Scroller来处理：
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uidemo
 {
     export class ScrollerDemo extends egret.gui.Group

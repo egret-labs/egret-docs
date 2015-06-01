@@ -19,7 +19,7 @@ BasicLayout(基本布局)
 
 这是Group的默认布局模式。在基本布局模式下，容器内的子项的定位方式，取决于每个子项的坐标设置。比如：
 
-{% highlight java linenos %}
+{% highlight java  %}
 this.myGroup.layout = new egret.gui.BasicLayout();//用绝对定位，控制xy坐标
 for(var i:number=0;i<4;i++) {
     var btn:egret.gui.Button = new egret.gui.Button();
@@ -40,7 +40,7 @@ for(var i:number=0;i<4;i++) {
 
 您可以认为这两个值就是定义对象的中心点与容器的中心点之间的差值。如果两项都设置为0，代表中心点完全重合，也就实现了我们所需要的自动居中功能。
 
-{% highlight java linenos %}
+{% highlight java  %}
 btn.horizontalCenter = 0;
 btn.verticalCenter = 0;
 {% endhighlight %}
@@ -56,7 +56,7 @@ btn.verticalCenter = 0;
 
 top的值，就是定义对象的上边界和容器的上边界之间的距离，其他3个值以此类推。回到上面那个问题，应该在按钮上这样设置：
 
-{% highlight java linenos %}
+{% highlight java  %}
 btn.top = 20;
 btn.bottom = 20;
 btn.left = 20;
@@ -67,7 +67,7 @@ btn.right = 20;
 
 在尺寸的定义上，您还可以使用百分比。比如要让按钮和容器的尺寸一致，可以设置：
 
-{% highlight java linenos %}
+{% highlight java  %}
 btn.percentWidth = 100;
 btn.percentHeight = 100;
 {% endhighlight %}
@@ -76,7 +76,7 @@ btn.percentHeight = 100;
 
 这些属性您可以综合利用(相矛盾的设置除外)，比如尺寸是容器的一半，并且居中，应该这样设置：
 
-{% highlight java linenos %}
+{% highlight java  %}
 btn.percentWidth = 50;
 btn.percentHeight = 50;
 btn.horizontalCenter = 0;
@@ -99,7 +99,7 @@ HorizontalLayout(横向布局)
 
 示例：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var hLayout:egret.gui.HorizontalLayout = new egret.gui.HorizontalLayout();
 hLayout.gap = 10;
 hLayout.horizontalAlign = egret.HorizontalAlign.CENTER;
@@ -115,7 +115,7 @@ VerticalLayout(垂直布局)
 
 垂直布局的行为和横向布局类似，只不过方向变了，从水平方向变为竖直方向。示例：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var vLayout:egret.gui.VerticalLayout = new egret.gui.VerticalLayout();
 vLayout.gap = 10;
 vLayout.horizontalAlign = egret.HorizontalAlign.CENTER;
@@ -142,7 +142,7 @@ TileLayout(格子布局)
 
 示例：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var tileLayout:egret.gui.TileLayout = new egret.gui.TileLayout();//格子布局
 tileLayout.horizontalGap = 10;
 tileLayout.verticalGap = 10;

@@ -9,7 +9,7 @@ version: Egret引擎 v1.5.5
 
 TextField本身可以响应Touch事件。但这是针对整个TextField的。      
 有时有这样的需求：在一大段文字中，有某一段儿需要作为热区，响应Touch事件。我们可以通过对该段文字设置`href`来实现，类似于html中的`href`。我们通过如下代码来学习这个功能：    
-{% highlight java linenos %}
+{% highlight java  %}
 var tx:egret.TextField = new egret.TextField;
 tx.textFlow = new Array<egret.ITextElement>(
       { text:"这段文字有链接", style: { "href" : "event:text event triggered" } }

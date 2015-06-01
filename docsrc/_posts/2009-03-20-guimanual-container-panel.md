@@ -17,7 +17,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 下面来看一下，如何为Panel制作一个皮肤。和上节的SkinnableContainer类似，Panel的皮肤也必须包含两个部件：titleDisplay和contentGroup，其中titleDisplay的类型是egret.gui.Label，作用是显示标题，contentGroup的作用则是承载添加到Panel的对象。
 
-{% highlight java linenos %}
+{% highlight java  %}
 <e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing"
         minHeight="230" minWidth="470" maxWidth="710">
     <e:UIAsset width="100%" height="100%" source="panel_back_png" />
@@ -31,7 +31,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 有了皮肤，我们就可以创建一个Panel并把它显示出来了：
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uidemo
 {
     export class PanelDemo extends egret.gui.Group

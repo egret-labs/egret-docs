@@ -9,7 +9,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 按钮是做交互的时候必不可少的组件，来看看按钮的用法：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var btn:egret.gui.Button = new egret.gui.Button();
 btn.label = "我是按钮";
 this.addElement(btn);
@@ -22,7 +22,7 @@ this.addElement(btn);
 
 按钮可以设置禁用，禁用的按钮会以另外一种样式显示，且不再响应交互，设置enabled属性可以控制是否禁用：
 
-{% highlight java linenos %}
+{% highlight java  %}
 btn.enabled = false;
 {% endhighlight %}
 
@@ -30,7 +30,7 @@ btn.enabled = false;
 
 在按钮上，您可以添加事件侦听，判断当用户按下按钮后，下一步要执行的方法：
 
-{% highlight java linenos %}
+{% highlight java  %}
 btn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.btnTouchHandler,this);
 private btnTouchHandler(evt:egret.TouchEvent):void {
     console.log("button touched");
@@ -41,7 +41,7 @@ private btnTouchHandler(evt:egret.TouchEvent):void {
 
 您可以在按钮上设置宽度和高度，按钮上的文本会自动居中，以适应不同的按钮尺寸：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var btn2:egret.gui.Button = new egret.gui.Button();
 btn2.width = 200;
 btn2.height = 200;

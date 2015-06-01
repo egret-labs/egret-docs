@@ -15,7 +15,7 @@ version: Egret引擎 v1.x
 
 以下代码就是失效验证机制的最简单实现:
 
-{% highlight java linenos %}
+{% highlight java  %}
 class UIComponent extends egret.Sprite{
  
     public constructor(){
@@ -90,7 +90,7 @@ redrawBackground()就是根据当前宽高绘制背景的方法。当UIComponent
 
 以上仅仅是一个简单的例子，试想下把这个机制运用到方方面面，尤其是包含巨大计算量的地方，带来的性能优化是非常显著的。所以我们在框架里提供了一个LayoutManager来专门负责管理失效验证。前面的例子改为调用LayoutManager的方式，只需要改动invalidateProperties()和validateProperties()两个方法：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class UIComponent extends egret.Sprite{
  
     //...这里省略上文出现的部分代码
@@ -114,7 +114,7 @@ class UIComponent extends egret.Sprite{
 
 LayoutManager和UIComponent相当于是定了一个契约，在需要延迟验证的属性发生改变时，UIComponent先标记下这个变化的属性，然后把自己注册到LayoutManager上，让它延迟一段时间后回调自己的某个方法来集中处理这些变化的属性。这里我们说”延迟一段时间后”而不是”在下一帧”，是因为LayoutManager并不仅监听ENTER_FRAME事件，还监听了RENDER事件。由于LayoutManager的代码量比较大，请大家自行阅读，这里只贴出关键的代码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class LayoutMananger extends EventDispatcher{
      
     private attachListeners():void{
@@ -154,7 +154,7 @@ LayoutMananger接管了UIComponent里具体执行失效验证的触发和回调�
 
 LayoutManager只提供了三种失效验证，但是其中的属性失效验证是通用的。所以我们可以用它扩展出其他有专门功能的失效验证(其实测量验证和布局验证也可以认为是属性失效验证的两个特殊扩展)。这里举一个例子，上一篇教程中提到的视图状态，大家还记得那一对invalidateSkinState()和commitCurrentState()方法吗：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class SkinnableComponent extends UIComponent{
  
     private stateIsDirty:boolean = false;

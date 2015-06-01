@@ -9,7 +9,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 在上节我们介绍了不可定义皮肤的容器Group，那么相对应的，GUI中还有一个可定义皮肤的容器，就是SkinnableContainer。它的基本用法和Group是一致的，我们来看看如何为它添加一个皮肤：
 
-{% highlight java linenos %}
+{% highlight java  %}
 this.myContainer = new egret.gui.SkinnableContainer();
 this.myContainer.skinName = "uiskins.BackgroundSkin";//设置皮肤
 this.myContainer.width = 300;
@@ -31,7 +31,7 @@ EXML皮肤简介
 
 您是否有写过HTML的经历？HTML是典型的文本标记语言，这种语言用在描述用户界面的领域，有得天独厚的优势。从组成结构的角度来说，这种语言的一个重要组成部分就是Tag，可以译为"标签"。想想HTML中都有什么标签？
 
-{% highlight java linenos %}
+{% highlight java  %}
 <body>
 <p>
 <a>
@@ -40,7 +40,7 @@ EXML皮肤简介
 
 很熟悉的标签吧。跟HTML类似，EXML也是一种遵循XML语法的标记语言(严格来说，HTML并不遵循严谨的XML语法，它允许一些不闭合的标签，而EXML则必须严格遵循XML语法)。EXML要描述一个界面，也是由若干个标签组成，只是这些标签是Egret框架特有的：
 
-{% highlight java linenos %}
+{% highlight java  %}
 <e:Skin xmlns:e="http://ns.egret.com/egret">
     <e:UIAsset />
     <e:Label />
@@ -53,7 +53,7 @@ EXML皮肤简介
 
 使用EXML添加一个标签，并且设置标签的属性，在编译的时候，就会把这些属性设置到生成的组件上，比如：
 
-{% highlight java linenos %}
+{% highlight java  %}
 <e:UIAsset width="100%" height="100%" source="button_normal_png" />
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ EXML皮肤简介
 
 上面的设置，等同于：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var loc1:egret.gui.UIAsset = new egret.gui.UIAsset();
 loc1.percentWidth = 100;
 loc1.percentHeight = 100;
@@ -85,7 +85,7 @@ this.addElement(loc1);
 
 回到这个例子中，我们来写一个自定义的皮肤类`uiskins/BackgroundSkin.exml`，这个皮肤类的作用是显示一个背景图片，它的代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 <e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing">
     <e:UIAsset id="bg" width="100%" height="100%"
                source="app_egret_labs_jpg" />
@@ -99,7 +99,7 @@ this.addElement(loc1);
 
 比如，您在创建SkinnableContainer之后，为它添加一个按钮：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var btn:egret.gui.Button = new egret.gui.Button();
 btn.label = "Button";
 this.myContainer.addElement(btn);
@@ -115,7 +115,7 @@ this.myContainer.addElement(btn);
 
 关于SkinnableContainer创建方式的完整代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uidemo
 {
     export class SkinnableContainerDemo extends egret.gui.Group
@@ -154,7 +154,7 @@ TypeScript皮肤
 
 为了便于理解，这里展示一下，刚才创建的BackgroundSkin.exml，如果换成对等的TypeScript来实现，应该是这样的：
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uiskins
 {
     export class BackgroundSkin extends egret.gui.Skin

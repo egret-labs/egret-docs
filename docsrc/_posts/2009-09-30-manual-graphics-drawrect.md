@@ -17,7 +17,7 @@ Egret中可以直接使用程序来绘制一些简单的图形，这些图形在
 
 我们可以使用 `Shape` 对象来学习绘图方法。下面是一个绘制矩形的示例：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class GraphicsTest extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -43,7 +43,7 @@ class GraphicsTest extends egret.DisplayObjectContainer
 
 这段代码中最主要的绘图方法是下面这三行
 
-{% highlight java linenos %}
+{% highlight java  %}
 shp.graphics.beginFill( 0xff0000, 1);
 shp.graphics.drawRect( 0, 0, 100, 200 );
 shp.graphics.endFill();
@@ -61,7 +61,7 @@ shp.graphics.endFill();
 
 我们可以为绘图代码添加一行
 
-{% highlight java linenos %}
+{% highlight java  %}
 shp.graphics.lineStyle( 10, 0x00ff00 );
 {% endhighlight %}
 
@@ -69,7 +69,7 @@ shp.graphics.lineStyle( 10, 0x00ff00 );
 
 具体修改后的代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class GraphicsTest extends egret.DisplayObjectContainer
 {
     public constructor()

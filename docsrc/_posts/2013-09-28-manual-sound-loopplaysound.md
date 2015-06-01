@@ -13,7 +13,7 @@
 
 首先我们加载音频资源文件，并且通过 `play` 方法来播放音频，具体代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 private onAddToStage(event:egret.Event)
 {
 	RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE,this.onResourceLoadComplete,this);
@@ -32,13 +32,13 @@ private onResourceLoadComplete(event:RES.ResourceEvent):void
 
 现在你可以build你的项目，同时进行测试。你可以听到预先设置的音频播放了一遍，下面我们添加一个对音频播放状态的事件侦听器。用来检测当前音频是否播放完成，代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 this.sound.addEventListener("ended", this.rePlay.bind(this));
 {% endhighlight %}
 
 这行代码，我们对sound对象进行了事件侦听，侦听的事件为 `ended` ，表示当音频播放完毕之后调用 `rePlay` 函数。我们再来实现 `rePlay` 函数中的内容。
 
-{% highlight java linenos %}
+{% highlight java  %}
 private rePlay():void{
 	this.sound.load();
 	this.sound.play();

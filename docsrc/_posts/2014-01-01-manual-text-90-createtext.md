@@ -18,7 +18,7 @@ version: Egret引擎 v1.x
 
 创建普通文本，我们可以直接创建一个 `TextField` ，并设置一些相关的属性，来控制我们的文本样式。我们添加如下代码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var label:egret.TextField = new egret.TextField();
 label.text = "这是一个文本";
 this.addChild( label );
@@ -31,7 +31,7 @@ this.addChild( label );
 我们来讲解一下这段代码，当我们创建一个 `TextField` 对象后，我们拥有了一个**“普通文本”**对象。这个文本对象在创建之初并没有任何
 显示内容。而显示内容来自 `text` 属性。所以我们在第二行对文本内容进行了设置。也就是下面这句话：
 
-{% highlight java linenos %}
+{% highlight java  %}
 label.text = "这是一个文本";
 {% endhighlight %}
 
@@ -41,7 +41,7 @@ label.text = "这是一个文本";
 你可以参考<a href="http://docs.egret.com/post/manual/display/displayclass.html" target="_blank">显示对象种类</a>
 这篇文档，了解显示对象继承关系）,我们可以直接将 `TextField` 对象添加到显示列表中，如下面代码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 this.addChild( label );
 {% endhighlight %}
 
@@ -49,7 +49,7 @@ this.addChild( label );
 
 为了找到我们的答案，我们在程序中继续编写代码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 console.log( label.width + "+" + label.height);
 {% endhighlight %}
 
@@ -75,7 +75,7 @@ console.log( label.width + "+" + label.height);
 出合适的大小。我们通过对程序的修改来验证这一效果。
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 var label:egret.TextField = new egret.TextField();
 this.addChild( label );
 label.text = "这\n是\n一\n个\n文\n本";
@@ -92,7 +92,7 @@ console.log( label.width + "+"+ label.height);
 
 前面我们看到的都是让TextField自动计算宽高，但在实际开发中，我们并不希望这种“失控”情况发生。我们可以在设置文本内容之前，手动设置文本的宽高值。具体代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var label:egret.TextField = new egret.TextField();
 this.addChild( label );
 label.width = 70;

@@ -60,7 +60,7 @@ Egret中的音频系统接种HTML5的Audio系统，这使得Egret的音频兼容
 
 加载音频资源代码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 //加载资源配置文件以及音频文件组
 private loadsound(event:egret.Event)
 {

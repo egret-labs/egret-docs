@@ -23,7 +23,7 @@ version: Egret引擎 v1.x
 
 在"HelloWorld.ts"中编写代码如下
 
-{% highlight java linenos %}
+{% highlight java  %}
 class HelloWorld extends egret.DisplayObjectContainer
 {	
 
@@ -39,7 +39,7 @@ Egret在创建时会加载默认的库文件与游戏逻辑，加载完成后会
 
 >有关“事件”的详细文档，请参考<a href="http://docs.egret.com/post/manual/event/useevent.html" target="_blank">事件机制</a>
 
-{% highlight java linenos %}
+{% highlight java  %}
 class HelloWorld extends egret.DisplayObjectContainer
 {	
 	public constructor() {
@@ -58,7 +58,7 @@ class HelloWorld extends egret.DisplayObjectContainer
 
 我们在`constructor`函数中对系统的`ADDED_TO_STAGE`的事件进行监测即可。当事件触发后，会执行`onAddToStage`函数。该函数由下面语句指定。
 
-{% highlight java linenos %}
+{% highlight java  %}
 this.addEventListener(egret.Event.ADDED_TO_STAGE,this.onAddToStage,this);
 {% endhighlight %}
 
@@ -67,7 +67,7 @@ this.addEventListener(egret.Event.ADDED_TO_STAGE,this.onAddToStage,this);
 
 我们在`onAddToStage`函数中添加相应代码来开启我们的监测面板，代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 private onAddToStage(event:egret.Event)
 {
    	egret.Profiler.getInstance().run();
@@ -105,7 +105,7 @@ private onAddToStage(event:egret.Event)
 
 代码添加在`onAddToStage`函数中，添加语句`console.log("Hello World!");`。修改后的函数如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 private onAddToStage(event:egret.Event)
 {
    	egret.Profiler.getInstance().run();

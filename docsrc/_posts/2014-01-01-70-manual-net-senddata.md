@@ -20,7 +20,7 @@ version: Egret引擎 v1.x
  具体示例代码如下：
  
  
-{% highlight java linenos %}
+{% highlight java  %}
 class NetDemo extends egret.DisplayObjectContainer
 {
     public constructor()

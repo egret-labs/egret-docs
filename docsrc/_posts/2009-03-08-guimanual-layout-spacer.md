@@ -9,7 +9,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 Spacer用于辅助布局，填充空间，作用类似于“占位符”。假如在一个横向布局的Group里面，两个按钮，一个在左侧，一个在右侧，该如何做呢？可以这样：
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uidemo
 {
     export class SpacerDemo extends egret.gui.Group

@@ -21,7 +21,7 @@
 * 参考 GameApp.ts 中的调用方式，实现开发者的分享需求
 
 
-{% highlight java linenos %}
+{% highlight java  %}
    //  当游戏结束，开发者引导用户去分享时调用此代码
 
   WeixinApi.ready(function(api:WeixinApi){

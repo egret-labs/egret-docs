@@ -15,7 +15,7 @@ Egret对网络部分进行了封装，将网络访问请求与网络通信数据
 
 创建一个最简单通信请求我们需要使用 `URLLoader` 和 `URLRequest` 两个类。
 
-{% highlight java linenos %}
+{% highlight java  %}
 private urlloader:egret.URLLoader;
 this.urlloader = new egret.URLLoader();
 {% endhighlight %}
@@ -25,7 +25,7 @@ this.urlloader = new egret.URLLoader();
 在执行加载数据时，我们需要给入通信地址，一般为网址或者服务器后台地址。添加网络地址，需要 `URLRequest` 对象。
 我们以“http://httpbin.org/user-agent”这个测试地址为例。代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var urlreq:egret.URLRequest = new egret.URLRequest();
 urlreq.url = "http://httpbin.org/user-agent";
 {% endhighlight %}
@@ -34,14 +34,14 @@ urlreq.url = "http://httpbin.org/user-agent";
 
 加载数据的方法是 `load`，你可以将刚刚创建的 `URLRequest` 对象作为参数传递进去。
 
-{% highlight java linenos %}
+{% highlight java  %}
  this.urlloader.load( urlreq );
 {% endhighlight %}
 
 此时编译运行不会看到任何效果，因为我们没有对网络通信的状态进行任何监听或响应处理。我们继续添加代码，对网络加载的 `COMPLETE` 事件
 进行监听。当网络加载完成后，则调用对应的函数。
 
-{% highlight java linenos %}
+{% highlight java  %}
 this.urlloader.addEventListener(egret.Event.COMPLETE, this.onComplete, this);
 
 private onComplete(event:egret.Event):void
@@ -54,7 +54,7 @@ private onComplete(event:egret.Event):void
 
 上面的内容完整源码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class NetDemo extends egret.DisplayObjectContainer
 {
     public constructor()

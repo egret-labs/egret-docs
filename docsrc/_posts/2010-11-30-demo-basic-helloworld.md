@@ -11,7 +11,7 @@ documentclass: HelloWorld
 
 ###Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 class HelloWorld extends egret.DisplayObjectContainer
 {
     /**

@@ -17,7 +17,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 来看看List的基本用法：
 
-{% highlight java linenos %}
+{% highlight java  %}
 //先创建一个数组
 var sourceArr:any[] = [];
 for (var i:number = 1; i < 50; i++)
@@ -40,7 +40,7 @@ this.addElement(dataList);
 
 可以看到列表中文本显示的是"Object"，因为我们的数据上，没有"label"属性，而是一个"name"属性，所以列表不知道应该取哪个属性作为显示文本。这里需要您用labelField或labelFunction显式定义一下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 //二选一，如果同时定义，以labelFunction为准
 dataList.labelField = "name";
 //dataList.labelFunction = this.myLabelFunction;
@@ -54,7 +54,7 @@ private myLabelFunction(item:any):string {
 
 您可以设置，默认选中哪一项：
 
-{% highlight java linenos %}
+{% highlight java  %}
 //默认选项
 dataList.selectedIndex = 1;
 dataList.selectedItem = myCollection.getItemAt(2);//索引从0开始计算，所以2代表第三项数据
@@ -69,7 +69,7 @@ dataList.selectedItem = myCollection.getItemAt(2);//索引从0开始计算，所
 
 在列表中，您可以侦听change事件，了解选项的变化：
 
-{% highlight java linenos %}
+{% highlight java  %}
 dataList.addEventListener(egret.gui.IndexChangeEvent.CHANGE,this.listChangeHandler,this);
 /**事件侦听*/
 private listChangeHandler(evt:egret.gui.IndexChangeEvent):void {
@@ -83,7 +83,7 @@ private listChangeHandler(evt:egret.gui.IndexChangeEvent):void {
 
 注意change事件是必须选项改变后才会被触发的，如果您想要的是点击即触发(选项不一定改变)，可以侦听itemClick事件：
 
-{% highlight java linenos %}
+{% highlight java  %}
 dataList.addEventListener(egret.gui.ListEvent.ITEM_CLICK,this.listClickhandler,this);
 /**事件侦听*/
 private listClickhandler(evt:egret.gui.ListEvent):void {
@@ -94,7 +94,7 @@ private listClickhandler(evt:egret.gui.ListEvent):void {
 
 另外您还可以侦听IndexChangeEvent.CHANGING事件，这个事件派发在选项即将改变之前，如果您想阻止选项的发生，可以这样做：
 
-{% highlight java linenos %}
+{% highlight java  %}
 dataList.addEventListener(egret.gui.IndexChangeEvent.CHANGING,this.listChangingHandler,this);
 /**事件侦听*/
 private listChangingHandler(evt:egret.gui.IndexChangeEvent):void {
@@ -126,7 +126,7 @@ List有一个useVirtualLayout属性，默认是true，这个属性决定了列�
 
 如果您使用了simple主题，那默认的列表皮肤是skins.simple.ListSkin，来看看这个Skin里都包含了哪些内容：
 
-{% highlight java linenos %}
+{% highlight java  %}
 //ListSkin.exml
 <e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing">
     <e:Scroller width="100%" height="100%">
@@ -141,7 +141,7 @@ List有一个useVirtualLayout属性，默认是true，这个属性决定了列�
 
 这个皮肤是用exml描述的，但应该不难理解。里面呢，就是一个Scroller包含一个DataGroup，结构很简单。如果翻译成对等的TS文件，应该是这样：
 
-{% highlight java linenos %}
+{% highlight java  %}
 module skins.simple
 {
     export class ListSkin extends egret.gui.Skin
@@ -177,7 +177,7 @@ module skins.simple
 
 我们来扩展一下这个列表皮肤，增加一个背景显示(BgListSkin.exml)：
 
-{% highlight java linenos %}
+{% highlight java  %}
 <e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing">
     <e:UIAsset id="bg" width="100%" height="100%"
                source="app_egret_labs_jpg"/>
@@ -193,7 +193,7 @@ module skins.simple
 
 然后设置列表的皮肤为我们扩展的这个：
 
-{% highlight java linenos %}
+{% highlight java  %}
 dataList.skinName = "uiskins.BgListSkin";
 {% endhighlight %}
 
@@ -208,7 +208,7 @@ dataList.skinName = "uiskins.BgListSkin";
 
 先编写一个有ToggleButton的ItemRenderer:
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uiskins
 {
     export class ToggleRenderer extends egret.gui.ItemRenderer
@@ -240,7 +240,7 @@ module uiskins
 
 然后定义这个ItemRenderer的皮肤(ToggleRendererSkin.exml)：
 
-{% highlight java linenos %}
+{% highlight java  %}
 <e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing"
         height="80">
     <e:states>
@@ -276,7 +276,7 @@ module uiskins
 
 如果需要为同一个列表指定不同的ItemRenderer，您可以使用itemRendererFunction，示例：
 
-{% highlight java linenos %}
+{% highlight java  %}
 dataList.itemRendererFunction = this.myItemRendererFunction;
 
 private fact1:egret.gui.ClassFactory = new egret.gui.ClassFactory(ItemRendererClass1);

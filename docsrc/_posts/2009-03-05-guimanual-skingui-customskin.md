@@ -25,7 +25,7 @@ TypeScript皮肤
 
 比如我们在SkinnableContainer的章节中，编写过一个显示背景的皮肤：
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uiskins
 {
     export class BackgroundSkinT extends egret.gui.Skin

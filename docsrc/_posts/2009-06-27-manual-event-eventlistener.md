@@ -17,7 +17,7 @@ Egret中，事件的侦听器必须是一个函数。事件的发送者必须是
 
 我们来看一下注册侦听函数的定义。
 
-{% highlight java linenos %}
+{% highlight java  %}
 public addEventListener(type:string, listener:Function, thisObject:any, useCapture:boolean = false, priority:number = 0)
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ thisObject比较特殊，一般我们填写this。因为TypeScript与JavaScript�
 一个侦听器必须是函数，它可以是一个独立函数，也可以是一个实例的方法。侦听器必须有一个参数，并且这个参数必须是 `Event` 类实例或其子类的实例，
 同时，侦听器的返回值必须为空（void）。范例代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 listenerName(evt:Event):void {...}
 {% endhighlight %}
 
@@ -47,12 +47,12 @@ listenerName(evt:Event):void {...}
 侦听器都是成对出现。
 
 注册侦听器
-{% highlight java linenos %}
+{% highlight java  %}
 事件发送者.addEventListener(事件类型, 侦听器, this);
 {% endhighlight %}
 
 移除侦听器
-{% highlight java linenos %}
+{% highlight java  %}
 事件发送者.removeEventListener(事件类型, 侦听器, this);
 {% endhighlight %}
       
@@ -64,7 +64,7 @@ listenerName(evt:Event):void {...}
 
 如果该事件类型已经被注册过，返回 `true`，如果没有被注册过，返回 `false`。
 
-{% highlight java linenos %}
+{% highlight java  %}
 事件发送者.hasEventListener(事件类型);
 {% endhighlight %}
 
@@ -74,12 +74,12 @@ listenerName(evt:Event):void {...}
 
 为了避免不必要的性能消耗，Egret对显示对象的TouchEvent侦听有个开关，并默认关闭。
 这个开关就是`touchEnabled`，当需要侦探TouchEvent时，请不要忘记打开这个开关：          
-{% highlight java linenos %}
+{% highlight java  %}
 显示对象实例.touchEnabled = true;
 {% endhighlight %}
 
 实际使用过程，如果某些显示对象不再需要侦听TouchEvent，那就及时关闭吧：        
-{% highlight java linenos %}
+{% highlight java  %}
 显示对象实例.touchEnabled = false;
 {% endhighlight %}
 

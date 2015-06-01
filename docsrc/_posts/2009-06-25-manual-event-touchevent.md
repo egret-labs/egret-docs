@@ -13,7 +13,7 @@ version: Egret引擎 v1.x
 我们来看一段代码片段
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 class TouchEventTest extends egret.DisplayObjectContainer
 {
 

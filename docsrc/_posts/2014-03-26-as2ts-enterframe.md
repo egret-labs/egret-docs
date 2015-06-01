@@ -10,7 +10,7 @@ version: Egret引擎 v1.x
 
 ####ActionScript 3 Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 var sprite:Sprite = new Sprite();
 sprite.addEventListener(Event.ENTER_FRAME, onEnterFrame);
 function onEnterFrame()
@@ -20,7 +20,7 @@ function onEnterFrame()
 
 ####Egret Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 var sprite:egret.Sprite = new egret.Sprite();
 sprite.addEventListener(egret.Event.ENTER_FRAME, onEnterFrame, this);
 function onEnterFrame()

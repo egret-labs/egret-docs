@@ -10,7 +10,7 @@ version: Egret引擎 v1.x
 
 ####ActionScript 3 Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 private var currentBall:Bitmap;
 private var localX:int;
 private var localY:int;
@@ -59,7 +59,7 @@ private function onTouchEnd(event:MouseEvent):void {
 
 ####Egret Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 private currentBall:egret.Bitmap;
 private localX:number;
 private localY:number;

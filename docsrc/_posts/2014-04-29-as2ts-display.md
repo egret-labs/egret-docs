@@ -10,7 +10,7 @@ version: Egret引擎 v1.x
 
 ####ActionScript 3 Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 var container:Sprite = new Sprite();
 container.x = 100;
 container.y = 200;
@@ -29,7 +29,7 @@ container.removeChildAt(0);
 
 ####Egret Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 var container:egret.Sprite = new egret.Sprite();
 container.x = 100;
 container.y = 200;

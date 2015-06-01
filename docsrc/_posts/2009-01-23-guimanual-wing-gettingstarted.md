@@ -154,7 +154,7 @@ Egret Wing的项目，其实就是Egret项目。不过Egret Wing为您提供了�
 
 类内容如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class PanelTest extends egret.gui.Panel{
     public constructor(){
         super();
@@ -194,7 +194,7 @@ class PanelTest extends egret.gui.Panel{
 
 同时再修改项目中Main.ts类中的createScene()方法：
 
-{% highlight java linenos %}
+{% highlight java  %}
     private createScene():void{
         //游戏场景层，游戏场景相关内容可以放在这里面。
         this.gameLayer = new egret.DisplayObjectContainer();

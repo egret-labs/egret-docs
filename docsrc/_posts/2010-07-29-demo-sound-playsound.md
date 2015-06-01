@@ -11,7 +11,7 @@ documentclass: SoundTest
 
 ###Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 class SoundTest extends egret.DisplayObjectContainer
 {
 

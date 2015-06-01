@@ -23,7 +23,7 @@ Egret中提供的曲线绘制是一个二次贝塞尔曲线，绘图方法为 `G
 我们来看一下具体示例代码：
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 class GraphicsTest extends egret.DisplayObjectContainer
 {
     public constructor()

@@ -18,7 +18,7 @@ version: Egret引擎 v1.x
 
 我们来看一段示例代码，这段代码中我们向一个容器中存放了两个方块，通过深度来获取其中一个方块，并调整他的透明度值。
 
-{% highlight java linenos %}
+{% highlight java  %}
 var sprcon:egret.Sprite = new egret.Sprite();
 this.addChild( sprcon );
 sprcon.x = 10;
@@ -53,7 +53,7 @@ _spr.alpha = 0.5;
 
 第二种方式是通过显示对象的 `name` 属性来获取，这种方式更加直接简单。我们来看一下示例代码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var sprcon:egret.Sprite = new egret.Sprite();
 this.addChild( sprcon );
 sprcon.x = 10;

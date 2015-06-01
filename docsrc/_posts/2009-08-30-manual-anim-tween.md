@@ -20,7 +20,7 @@ version: Egret引擎 v1.x
 
 具体代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class TweenTest extends egret.DisplayObjectContainer
 {
     public constructor()

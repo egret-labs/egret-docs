@@ -11,7 +11,7 @@ documentclass: TextFieldLayoutTest
 
 ###Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 class TextFieldLayoutTest extends egret.DisplayObjectContainer
 {
 

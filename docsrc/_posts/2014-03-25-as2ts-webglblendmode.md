@@ -10,7 +10,7 @@ BlendMode叠加效果，<a href="http://static.egret-labs.org/egret-game/webgl/b
 
 ####ActionScript 3 Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 private function createGameScene():void {
     this.laserList = [];
     this.p1 = new Point();
@@ -81,7 +81,7 @@ private function addLaser(type:int):void {
 
 ####Egret Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 private createGameScene():void {
     this.laserList = [];
     this.p1 = new egret.Point();

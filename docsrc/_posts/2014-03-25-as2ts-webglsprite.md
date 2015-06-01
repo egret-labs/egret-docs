@@ -10,7 +10,7 @@ version: Egret引擎 v1.x
 
 ####ActionScript 3 Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 private var ball:Sprite;
 private function createGameScene():void {
     //flash中没有锚点属性
@@ -31,7 +31,7 @@ private function onEnterFrame(event:Event):void {
 
 ####Egret Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 private var ball:egret.Bitmap;
 private createGameScene():void {
     egret.Profiler.getInstance().run();

@@ -16,7 +16,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 看一个实例：
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uidemo
 {
     export class TitleWindowDemo extends egret.gui.Group
@@ -64,7 +64,7 @@ TitleWindows是可以定制皮肤的，如果您设定的主题是simple，那�
 
 首先拷贝skins/simple/TitleWindowSkin.exml，到您自己的皮肤目录，比如uiskins下面。然后打开该文件，修改为如下内容：
 
-{% highlight java linenos %}
+{% highlight java  %}
 <e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing"
         minHeight="230" minWidth="470" maxWidth="710">
     <w:HostComponent name="egret.TitleWindow" />
@@ -85,7 +85,7 @@ TitleWindows是可以定制皮肤的，如果您设定的主题是simple，那�
 
 为TitleWindow设置皮肤：
 
-{% highlight java linenos %}
+{% highlight java  %}
 this.win.skinName = "uiskins.TitleWindowSkin";
 {% endhighlight %}
 

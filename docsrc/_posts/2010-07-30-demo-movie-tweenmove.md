@@ -11,7 +11,7 @@ documentclass: TweenMoveTest
 
 ###Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 class TweenMoveTest extends egret.DisplayObjectContainer
 {
 

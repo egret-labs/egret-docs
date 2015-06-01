@@ -20,7 +20,7 @@ version: Egret引擎 v1.x
 * 修改项目egretProperties.json，增加adsense引用
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 	{
     "document_class": "Main",
     "modules": [
@@ -47,7 +47,7 @@ version: Egret引擎 v1.x
 * 在游戏中调用new AdSense().show(url, width, height, x, y);
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 var url:string = "http://googleads.g.doubleclick.net/pagead/ads?ad_type=video_image_text_flash&client=ca-games-pub-4968145218643279&videoad_start_delay=0&description_url=http%3A%2F%2Fwww.google.com&hl=en&max_ad_duration=40000&adtest=on";
         
 new AdSense().show(url, 480, 70, 0, egret.MainContext.instance.stage.stageHeight - 70);

@@ -9,7 +9,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 您还记得手机上的亮度调节工具吗？在Egret GUI中也有类似的组件，就是滑动选择器。这个实际上是两个组件，根据方向，分为egret.gui.HSlider和egret.gui.VSlider。比如要创建一个水平方向的Slider，代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var hSlider:egret.gui.HSlider = new egret.gui.HSlider();
 hSlider.width = 200;
 hSlider.x = 20;
@@ -33,7 +33,7 @@ private changeHandler(evt:egret.TouchEvent):void {
 
 VSlider的使用方式也是类似的：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var vSlider:egret.gui.VSlider = new egret.gui.VSlider();
 vSlider.height = 200;
 vSlider.x = 100;

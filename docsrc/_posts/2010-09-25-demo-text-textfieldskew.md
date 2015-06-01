@@ -11,7 +11,7 @@ documentclass: TextFieldSkewTest
 
 ###Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 class TextFieldSkewTest extends egret.DisplayObjectContainer
 {
 

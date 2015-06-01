@@ -11,7 +11,7 @@ documentclass: SoundStopTest
 
 ###Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 class SoundStopTest extends egret.DisplayObjectContainer
 {
     //入口函数

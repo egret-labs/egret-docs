@@ -19,7 +19,7 @@ version: Egret引擎 v1.5.3
 技术等级：中级             
 必需产品：Egret Engine 1.7.1+(<a href="http://www.egret.com/egretengine" target="_blank">下载地址</a>)           
 开发工具：WebStorm或Visual Studio + EgretVS (<a href="http://www.egret.com/egretvs" target="_blank">下载地址</a>)        
-教程项目包： <a href="{{site.baseurl}}/assets/packages/subjs/p2-jump-game.zip" target="_blank">下载地址</a>            
+教程项目包： <a href="{{site.baseurl}}/assets/packages/subjs/p2-jump-game(since1.7.2).rar" target="_blank">下载地址</a>            
 项目运行地址：
             
 ![]({{site.baseurl}}/assets/img-subj/p2-jump-game/QRCode.png)               

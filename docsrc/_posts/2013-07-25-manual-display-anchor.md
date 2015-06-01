@@ -11,7 +11,7 @@ version: Egret引擎 v1.x
 
 当设置一个显示对象的坐标位置时，我们会以锚点为参照改变显示对象绘图位置。同时，锚点相对于显示对象的位置也是可以改变的，我们来看一个示例。
 
-{% highlight java linenos %}
+{% highlight java  %}
 class AnchorTest extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -39,7 +39,7 @@ class AnchorTest extends egret.DisplayObjectContainer
 
 现在我们来修改锚点的位置，让锚点居于正方形左上角x轴 50 像素的位置，代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 shp.anchorOffsetX = 50;
 {% endhighlight %}
 

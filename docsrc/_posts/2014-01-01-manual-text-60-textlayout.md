@@ -12,7 +12,7 @@ shape绘制一个正方形，该正方形的宽高与文本宽高相同。
 
 我们将这个shape看做是文本对象的范围标示。
 
-{% highlight java linenos %}
+{% highlight java  %}
 var shape:egret.Shape = new egret.Shape();
 shape.graphics.beginFill(0xff0000);
 shape.graphics.drawRect( 0, 0, 400, 400 );
@@ -52,7 +52,7 @@ label.text = "这是一个文本";
 
 在上面的代码后添加一个设置对齐方式的代码
 
-{% highlight java linenos %}
+{% highlight java  %}
 label.textAlign = egret.HorizontalAlign.RIGHT;
 {% endhighlight %}
 
@@ -64,7 +64,7 @@ label.textAlign = egret.HorizontalAlign.RIGHT;
 
 同理，我们也可以设置为本水平居中对齐。
 
-{% highlight java linenos %}
+{% highlight java  %}
 label.textAlign = egret.HorizontalAlign.CENTER;
 {% endhighlight %}
 
@@ -84,7 +84,7 @@ label.textAlign = egret.HorizontalAlign.CENTER;
 
 我们继续修改上面的代码，添加垂直对齐属性，将设置纵向的底对齐。
 
-{% highlight java linenos %}
+{% highlight java  %}
 label.verticalAlign = egret.VerticalAlign.BOTTOM;
 {% endhighlight %}
 
@@ -94,7 +94,7 @@ label.verticalAlign = egret.VerticalAlign.BOTTOM;
 
 同理，我们也可以设置文本居垂直居中对齐。
 
-{% highlight java linenos %}
+{% highlight java  %}
 label.verticalAlign = egret.VerticalAlign.MIDDLE;
 {% endhighlight %}
 
@@ -104,7 +104,7 @@ label.verticalAlign = egret.VerticalAlign.MIDDLE;
 
 下面是完整代码
 
-{% highlight java linenos %}
+{% highlight java  %}
 class GameApp extends egret.DisplayObjectContainer{
     public constructor() {
         super();

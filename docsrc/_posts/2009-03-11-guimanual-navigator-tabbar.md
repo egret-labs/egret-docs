@@ -14,7 +14,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 我们修改上一节的例子，不再用timer控制ViewStack的切换，而是绑定到TabBar上面：
 
-{% highlight java linenos %}
+{% highlight java  %}
 private createTabWithViewStack():void {
     this.viewStack = new egret.gui.ViewStack();
     for(var i:number=0;i<3;i++) {
@@ -48,7 +48,7 @@ private createTabWithViewStack():void {
 
 TabBar也是可以单独使用的，将数据源设置为一个ArrayCollection实例即可。并且您可以通过侦听itemClick事件，来获取TabBar的选中项。示意代码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 private createTabWithArrayCollection():void {
     //tabBar
     this.tabBar = new egret.gui.TabBar();

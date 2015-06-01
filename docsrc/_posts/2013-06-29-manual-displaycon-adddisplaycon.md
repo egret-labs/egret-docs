@@ -14,7 +14,7 @@ version: Egret引擎 v1.x
 
 当我们创建一个显示对象后，就可以将其添加到显示列表中，首先我们绘制一个Sprite，这个Sprite是一个宽高为100的绿色正方形。
 
-{% highlight java linenos %}
+{% highlight java  %}
 var spr:egret.Sprite = new egret.Sprite();
 spr.graphics.beginFill( 0x00ff00 );
 spr.graphics.drawRect(0, 0, 100, 100);
@@ -23,7 +23,7 @@ spr.graphics.endFill();
 
 上面的代码就是我们所说的建立显示对象的过程，这一步完成后我们可以测试一下程序，在舞台中看不到任何内容。接下来我们将 `spr` 添加到显示列表中。
 
-{% highlight java linenos %}
+{% highlight java  %}
 this.addChild( spr );
 {% endhighlight %}
 
@@ -44,7 +44,7 @@ this.addChild( spr );
 
 执行删除的函数非常简单，使用 `removeChild` 方法即可删除一个显示对象。
 
-{% highlight java linenos %}
+{% highlight java  %}
 this.removeChild( spr );
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ this.removeChild( spr );
 
 我们来通过一段代码来观察一下显示对象在容器中的操作与状态改变。
 
-{% highlight java linenos %}
+{% highlight java  %}
 //创建了一个类型为Sprite的显示对象
 var spr:egret.Sprite = new egret.Sprite();
 spr.graphics.beginFill( 0x00ff00 );
@@ -88,7 +88,7 @@ this.removeChild( spr );
 
 将两个容器都添加到显示列表中，他们的父级都是文档类。下面是示例代码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var sprcon1:egret.Sprite = new egret.Sprite();
 sprcon1.graphics.beginFill( 0x00ff00 );
 sprcon1.graphics.drawRect(0, 0, 100, 100);
@@ -112,7 +112,7 @@ sprcon2.y = 130;
 
 创建并绘制一个蓝色正方形的代码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var spr:egret.Sprite = new egret.Sprite();
 spr.graphics.beginFill( 0x0000ff );
 spr.graphics.drawRect( 0, 0, 50, 50 );
@@ -123,7 +123,7 @@ spr.y = 10;
 
 添加到文档类的显示容器中：
 
-{% highlight java linenos %}
+{% highlight java  %}
 this.addChild( spr );
 {% endhighlight %}
 
@@ -133,7 +133,7 @@ this.addChild( spr );
 
 添加到sprcon1绿色容器中：
 
-{% highlight java linenos %}
+{% highlight java  %}
 sprcon1.addChild( spr );
 {% endhighlight %}
 
@@ -143,7 +143,7 @@ sprcon1.addChild( spr );
 
 添加到sprcon2红色容器中：
 
-{% highlight java linenos %}
+{% highlight java  %}
 sprcon2.addChild( spr );
 {% endhighlight %}
 
@@ -169,7 +169,7 @@ sprcon2.addChild( spr );
 
 避免这种问题的处理方法非常简单，就是当你每次removeChild之前，你都对即将要被删除的显示对象做一次判断，判断它是否拥有父级。判断的代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 if( spr.parent )
 {
     spr.parent.removeChild( spr );

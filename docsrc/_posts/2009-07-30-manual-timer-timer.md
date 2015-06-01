@@ -22,7 +22,7 @@ version: Egret引擎 v1.x
 我们通过一个简单的实例来演示 `Timer` 的用法。
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 class TimerDemo extends egret.DisplayObjectContainer
 {
 	public constructor()

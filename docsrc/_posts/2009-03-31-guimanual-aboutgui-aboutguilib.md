@@ -47,7 +47,7 @@ egret create HelloGUI --type gui
 然后在Main.ts中，新增了加载主题的相关代码：
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 //注入自定义的素材解析器
 egret.Injector.mapClass("egret.gui.IAssetAdapter",AssetAdapter);
 //加载皮肤主题配置文件,可以手动修改这个文件。替换默认皮肤。

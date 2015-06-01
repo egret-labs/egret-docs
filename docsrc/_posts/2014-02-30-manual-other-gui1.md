@@ -24,7 +24,7 @@ version: Egret引擎 v1.x
 先来看一个最简单的Button逻辑类和对应的ButtonSkin皮肤例子：
 Button.ts
 
-{% highlight java linenos %}
+{% highlight java  %}
 class Button extends egret.gui.SkinnableComponent{
     public constructor(){
         super();       
@@ -62,7 +62,7 @@ class Button extends egret.gui.SkinnableComponent{
 
 ButtonSkin.ts
 
-{% highlight java linenos %}
+{% highlight java  %}
 class ButtonSkin extends egret.gui.Skin{
  
     public constructor(){
@@ -106,7 +106,7 @@ Button是逻辑组件，ButtonSkin是皮肤。我们通过设置button.skinName=
 皮肤并不是总是静态的。通常大部分组件的皮肤都包含有规律的状态切换。例如按钮的按下，弹起等。因此我们引入了视图状态的概念。视图状态是一系列由逻辑组件定义的字符串集合。用于在逻辑组件发生指定属性或交互状态变化时，通知皮肤当前应该切换为呈现哪套外观模式。这里还是以Button为例，我们为它增加几个方法：
 Button.ts
 
-{% highlight java linenos %}
+{% highlight java  %}
 class Button extends egret.gui.SkinnableComponent{
     public constructor(){
         super();   
@@ -147,7 +147,7 @@ class Button extends egret.gui.SkinnableComponent{
 
 ButtonSkin.ts
 
-{% highlight java linenos %}
+{% highlight java  %}
 class ButtonSkin extends egret.gui.Skin{
     public constructor(){
         super();   

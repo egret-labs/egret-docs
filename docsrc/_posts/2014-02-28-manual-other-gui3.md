@@ -10,7 +10,7 @@ version: Egret引擎 v1.x
 
 Egret GUI采用了AFL(Adaptive Fluid Layout)自适应流式布局的布局体系。AFL是对组件坐标和容器布局的一系列高层封装，让开发者能以更符合自然语言的方式，用各种相对属性去设计布局规则，并且在显示列表发生改变时，能自动应用当前布局规则以适应新的尺寸。下面是AFL的一个简单例子：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class GameApp extends egret.DisplayObjectContainer{
  
     public constructor(){
@@ -97,7 +97,7 @@ updateDisplayList()方法负责布局子项(即设置子项的x,y,width,height),
 
 总之，如果你希望你自定义的组件像框架里的标准组件一样，能加入AFL的布局体系，就必须要同时复写measure()和updateDisplayList()这两个方法。而我们在UIComponent里可以看到，这两个方法的方法体是空的，也就是说UIComponent本身是不具有测量和布局功能的，它的子项组件才有。那我们就先来看GroupBase这个容器基类。它是Group和DataGroup的基类，也就是说，所有容器和列表容器，都是继承自它的布局方法。而它就一个类，是如何实现的多种多样的布局方式的呢？答案是：它不负责具体的布局规则，而是做了一个解耦处理。增加了一个layout的属性，类型为LayoutBase。我们先看下GroupBase的那两个方法体里写了什么：
 
-{% highlight java linenos %}
+{% highlight java  %}
 public measure():void{
     if(!this._layout||!this._layoutInvalidateSizeFlag)
     return;

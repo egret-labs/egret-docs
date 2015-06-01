@@ -16,7 +16,7 @@ Egret启用遮罩功能非常的简单，在DisplayObject中，我们暴露了�
 代码如下：
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 class Test extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -50,7 +50,7 @@ class Test extends egret.DisplayObjectContainer
 
 现在对 `shp` 添加遮罩，具体代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var rect:egret.Rectangle = new egret.Rectangle(20,20,30,50);
 shp.mask = rect;
 {% endhighlight %}

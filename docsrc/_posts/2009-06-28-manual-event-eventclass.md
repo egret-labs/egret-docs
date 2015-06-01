@@ -26,7 +26,7 @@ cancelable表示是否要取消Event对象。
 
 通常情况下，游戏中都会编写一些自定义事件，在上一小节中，我们已经编写过一个“约会”的自定义事件了，我们来看一下详细代码。
 
-{% highlight java linenos %}
+{% highlight java  %}
 class DateEvent extends egret.Event
 {
     public static DATE:string = "约会";

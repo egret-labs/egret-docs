@@ -11,7 +11,7 @@ documentclass: TextFieldRotationTest
 
 ###Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 class TextFieldRotationTest extends egret.DisplayObjectContainer
 {
 

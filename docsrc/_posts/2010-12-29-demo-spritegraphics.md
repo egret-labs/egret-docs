@@ -11,7 +11,7 @@ documentclass: SpriteGraphicsTest
 
 ###Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 class SpriteGraphicsTest extends egret.DisplayObjectContainer
 {
 

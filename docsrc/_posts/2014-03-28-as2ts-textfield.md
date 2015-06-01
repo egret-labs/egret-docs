@@ -10,7 +10,7 @@ TextField是egret的文本渲染类，采用浏览器/设备的API进行渲染�
 
 ####ActionScript 3 Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 var txt:TextField = new TextField();
 txt.text = "Egret";
 txt.textColor = 0xff0000;
@@ -23,7 +23,7 @@ format.leading = 3;
 
 ####Egret Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 var txt:egret.TextField = new egret.TextField();
 txt.text = "Egret";
 txt.textColor = 0xff0000;

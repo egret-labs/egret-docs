@@ -15,7 +15,7 @@ version: Egret引擎 v1.x
 
 准备好音频资源后，我们创建一个 `Sound` 对象，用来操作我们的音频资源。具体创建代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var _curSound:egret.Sound = RES.getRes("sound");
 {% endhighlight %}
 
@@ -23,7 +23,7 @@ var _curSound:egret.Sound = RES.getRes("sound");
 
 完成上面步骤后，我们就可以执行音频播放工作了，具体播放代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 _curSound.play();
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ _curSound.play();
 
 一下是demo的完整代码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class SoundTest extends egret.DisplayObjectContainer
 {
 
@@ -64,7 +64,7 @@ class SoundTest extends egret.DisplayObjectContainer
           
           
 如需循环播放音频，只需要设置play参数为true即可：
-{% highlight java linenos %}
+{% highlight java  %}
 _curSound.play( true );
 {% endhighlight %}        
 

@@ -12,14 +12,14 @@ version: Egret引擎 v1.x
 在使用绘图函数前，我们先制定线条的样式，设置 `lineStyle` 方法，将线条宽度设置为 `2`，颜色设置为 `0x00ff00` 。
 然后执行绘图。
 
-{% highlight java linenos %}
+{% highlight java  %}
 shp.graphics.moveTo( 10,10 );
 shp.graphics.lineTo( 100, 20 );
 {% endhighlight %}
 
 使用 `moveTo` 来设定线条的起始点，使用 `lineTo` 来设定线条的终点。完整代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class GraphicsTest extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -48,7 +48,7 @@ class GraphicsTest extends egret.DisplayObjectContainer
 
 我们修改代码，连续绘制多条直线，使其首尾相接，形成一条折线。
 
-{% highlight java linenos %}
+{% highlight java  %}
 var shp:egret.Shape = new egret.Shape();
 shp.graphics.lineStyle( 2, 0x00ff00 );
 shp.graphics.moveTo( 68, 84 );

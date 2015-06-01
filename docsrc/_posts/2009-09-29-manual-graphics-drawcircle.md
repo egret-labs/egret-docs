@@ -10,7 +10,7 @@ version: Egret引擎 v1.x
 与绘制矩形一样，我们可以通过 `Graphics` 中的方法来绘制一个圆形，具体代码示例如下：
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 class GraphicsTest extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -39,7 +39,7 @@ class GraphicsTest extends egret.DisplayObjectContainer
 
 我们绘制了一个半径为50像素的圆形，绘制圆形调用的主要方法如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 shp.graphics.drawCircle( 0, 0, 50 );
 {% endhighlight %}
 

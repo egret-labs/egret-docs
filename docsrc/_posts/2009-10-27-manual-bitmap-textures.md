@@ -21,7 +21,7 @@ Egret内置了纹理集的支持，在编写代码之前，我们需要先制作
 
 同时生成的对应的json文件如下：
 
-{% highlight json linenos %}
+{% highlight json  %}
 {
     "file": "dogs.png",
     "frames": {
@@ -93,7 +93,7 @@ Egret内置了纹理集的支持，在编写代码之前，我们需要先制作
 
 资源配置文件内容如下：
 
-{% highlight json linenos %}
+{% highlight json  %}
 {
 "resources":
 	[
@@ -110,7 +110,7 @@ Egret内置了纹理集的支持，在编写代码之前，我们需要先制作
 然后我们来编写代码：
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 class BitmapTest extends egret.DisplayObjectContainer{
     public constructor()
     {
@@ -134,7 +134,7 @@ class BitmapTest extends egret.DisplayObjectContainer{
 
 我们注意其中一行
 
-{% highlight java linenos %}
+{% highlight java  %}
 var txtr:egret.Texture = RES.getRes( "dogs.id" );
 {% endhighlight %}
 

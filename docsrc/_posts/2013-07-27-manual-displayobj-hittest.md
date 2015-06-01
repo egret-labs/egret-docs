@@ -16,7 +16,7 @@ version: Egret引擎 v1.x
 
 我们来看一下具体代码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class HitTest extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -76,7 +76,7 @@ class HitTest extends egret.DisplayObjectContainer
 我们来看一下具体代码：
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 var shp:egret.Shape = new egret.Shape();
 shp.graphics.beginFill( 0xff0000 );
 shp.graphics.drawRect( 0,0,100,100);
@@ -95,7 +95,7 @@ this.infoText.text = "碰撞结果" + isHit;
 
 我们稍微修改一下代码，将原来宽高为100的正方形修改为一个半径为20的圆形。代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var shp:egret.Shape = new egret.Shape();
 shp.graphics.beginFill( 0xff0000 );
 shp.graphics.drawCircle( 0, 0, 20);

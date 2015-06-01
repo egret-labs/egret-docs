@@ -11,7 +11,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 然后我们再来看一段代码，了解进度条的创建和使用方式。注意其中的hostComponentKey设置，这个是和主题中的配置相对应的，如果对于一个组件，需要根据情况设置不同的皮肤，那使用hostComponentKey将是非常理想的方式。
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uidemo
 {
     export class ProgressBarDemo extends egret.gui.Group
@@ -51,7 +51,7 @@ module uidemo
 
 除了做水平的进度条，我们也可以制作垂直方向的进度条，只需要设置一下skinName和动画的方向即可，示例：
 
-{% highlight java linenos %}
+{% highlight java  %}
 //垂直进度条
 this.vBar = new egret.gui.ProgressBar();
 this.vBar.direction = "bottomToTop";
@@ -70,7 +70,7 @@ this.addElement(this.vBar);
 
 您还可以通过labelFunction属性，设置进度条上显示的文字内容。参考下面的例子：
 
-{% highlight java linenos %}
+{% highlight java  %}
 this.pBar.labelFunction = this.barLabelFunction;
 private barLabelFunction(value:number,maximum:number):string {
     return "加载中... "+Math.ceil(value/maximum*100)+"%";

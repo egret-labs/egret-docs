@@ -11,7 +11,7 @@ documentclass: PostRequestTest
 
 ###Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 class PostRequestTest extends egret.DisplayObjectContainer
 {
 

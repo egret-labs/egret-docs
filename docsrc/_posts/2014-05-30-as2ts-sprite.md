@@ -10,7 +10,7 @@ Sprite类提供了绘图功能，同时它也是一个容器。
 
 ####ActionScript 3 Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 var sprite1:Sprite = new Sprite();
 sprite1.graphics.beginFill(0xff0000,1);
 sprite1.graphics.drawRect(0,0,100,100);
@@ -21,7 +21,7 @@ sprite2.addChild(sprite1);
 
 ####TypeScript Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 var sprite1:egret.Sprite = new egret.Sprite();
 //与Flash一样，alpha默认值为1
 sprite1.graphics.beginFill(0xff0000,1);

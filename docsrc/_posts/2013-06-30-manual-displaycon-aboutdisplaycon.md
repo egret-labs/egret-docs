@@ -35,7 +35,7 @@ version: Egret引擎 v1.x
 
 下面是一个自定义容器类的示例，这里我们定义了一个`GridSprite`。这个类默认会绘制一个红蓝相间的格子。
 
-{% highlight java linenos %}
+{% highlight java  %}
 class GridSprite extends egret.Sprite
 {
     public constructor()
@@ -61,7 +61,7 @@ class GridSprite extends egret.Sprite
 
 在文档类中，我们实例化 `GridSprite` 即可。
 
-{% highlight java linenos %}
+{% highlight java  %}
 var _myGrid:GridSprite = new GridSprite();
 this.addChild( _myGrid );
 {% endhighlight %}

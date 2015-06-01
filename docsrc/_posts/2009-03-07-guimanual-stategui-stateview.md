@@ -19,7 +19,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 如果只是在皮肤中定义几个视图状态，而不使用的话，那么视图状态也就没有什么意义。我们可以根据视图状态，改变皮肤的显示，比如当按钮进入禁用视图状态的时候，把文字变灰。要实现这一点，在exml中是非常方便的，请看这样的设置：
 
-{% highlight java linenos %}
+{% highlight java  %}
 <e:Label id="labelDisplay" 
              textColor.up="0x111111"
              textColor.down="0x222222" 
@@ -31,7 +31,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 如果您的皮肤是使用TypeScript编写的，那么可以使用视图状态吗？当然是可以的。上面那段exml片段翻译成TypeScript代码，应该是类似这样的：
 
-{% highlight java linenos %}
+{% highlight java  %}
 this.states = [
     new egret.gui.State("up", [
         new egret.gui.SetProperty("labelDisplay", "textColor", 0x1e7465)
@@ -50,7 +50,7 @@ this.states = [
 
 如果您不需要使用egret.gui.SetProperty，只是定义视图状态名称，那可以这样简化：
 
-{% highlight java linenos %}
+{% highlight java  %}
 this.states = ["up","down","disabled"];
 {% endhighlight %}
 
@@ -66,7 +66,7 @@ this.states = ["up","down","disabled"];
 
 如果您需要使用自定义视图状态，首先需要在自定义组件上，重写getCurrentSkinState方法：
 
-{% highlight java linenos %}
+{% highlight java  %}
 export class MyContainerDemo extends egret.gui.SkinnableContainer
 {
     private _highlight:boolean = false;
@@ -96,7 +96,7 @@ export class MyContainerDemo extends egret.gui.SkinnableContainer
 
 然后在自定义皮肤上，也要声明您的自定义状态：
 
-{% highlight java linenos %}
+{% highlight java  %}
 <e:Skin xmlns:e="http://ns.egret.com/egret" xmlns:w="http://ns.egret.com/wing">
     <e:states>
         <e:State name="normal" />
@@ -113,7 +113,7 @@ export class MyContainerDemo extends egret.gui.SkinnableContainer
 
 然后我们重写原先可定义皮肤容器的一个例子，测试状态的切换：
 
-{% highlight java linenos %}
+{% highlight java  %}
 export class SkinnableContainerDemo extends egret.gui.Group
 {
     private myContainer:MyContainerDemo;

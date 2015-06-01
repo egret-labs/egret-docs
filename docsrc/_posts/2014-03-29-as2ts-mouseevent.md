@@ -10,7 +10,7 @@ version: Egret引擎 v1.x
 
 ####ActionScript 3 Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 var sprite:Sprite = new Sprite();
 sprite.addEventListener(MouseEvent.CLICK, onMouseHandler);
 sprite.addEventListener(MouseEvent.MOUSE_DOWN, onMouseHandler);
@@ -30,7 +30,7 @@ function onMouseHandler(event:MouseEvent):void
 
 ####Egret Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 var sprite:egret.Sprite = new egret.Sprite();
 sprite.addEventListener(egret.TouchEvent.TOUCH_TAP, onMouseHandler, this);
 sprite.addEventListener(egret.TouchEvent.TOUCH_BEGIN, onMouseHandler, this);

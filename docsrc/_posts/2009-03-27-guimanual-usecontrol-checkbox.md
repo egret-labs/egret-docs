@@ -9,7 +9,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 复选框(egret.gui.CheckBox)其实跟ToggleButton非常相似，只是样子换了而已。当它被选中，selected属性将变为true，反之则是false。示例：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var cbx:egret.gui.CheckBox = new egret.gui.CheckBox();
 cbx.addEventListener(egret.Event.CHANGE,this.btnTouchHandler,this);
 cbx.label = "选择我1";

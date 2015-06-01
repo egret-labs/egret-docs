@@ -11,7 +11,7 @@ ViewStack也是一个容器，您可以在这个容器中添加多个子项，�
 
 实例：
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uidemo
 {
     export class ViewStackDemo extends egret.gui.Group

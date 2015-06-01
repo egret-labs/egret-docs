@@ -11,7 +11,7 @@ documentclass: SoundPlayLoop
 
 ###Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 class SoundPlayLoop extends egret.DisplayObjectContainer
 {
     //入口函数

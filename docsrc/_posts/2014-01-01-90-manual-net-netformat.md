@@ -21,7 +21,7 @@ version: Egret引擎 v1.x
 以上五种数据格式的设置均需要 `URLLOaderDataFormat` 类。如果想更改默认的文本格式，可以修改 `URLLoader` 中的 `dataFormat` 属性。
 具体示例代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class NetDemo extends egret.DisplayObjectContainer
 {
     public constructor()

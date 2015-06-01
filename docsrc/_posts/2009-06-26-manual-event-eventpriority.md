@@ -11,7 +11,7 @@ version: Egret引擎 v1.x
 
 你可以在注册侦听器的时候制定事件的优先级。
 
-{% highlight java linenos %}
+{% highlight java  %}
 public addEventListener(type:string, listener:Function, thisObject:any, useCapture:boolean = false, priority:number = 0)
 {% endhighlight %}
 

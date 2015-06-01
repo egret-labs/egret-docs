@@ -22,7 +22,7 @@ ParticleSystem 是支持开发者自定义扩展的，开发者可以根据自�
 ##### initParticle
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 /**
  * @param particle {particle:particle.Particle} 粒子对象
  */
@@ -33,7 +33,7 @@ public initParticle(particle:particle.Particle):void {
 
 ##### advanceParticle
 
-{% highlight java linenos %}
+{% highlight java  %}
 /**
  * @param particle {particle:particle.Particle} 粒子对象
  * @param dt {number} 间隔时间，单位毫秒
@@ -48,6 +48,6 @@ public advanceParticle(particle:particle.Particle, dt:number):void {
 ###注意事项
 自定义扩展时，initParticle 方法和 advanceParticle 方法的参数类型仍然是 Particle，可以通过强制类型转换实现业务需求。
 
-{% highlight java linenos %}
+{% highlight java  %}
 var locParticle:GravityParticle = <GravityParticle>particle;
 {% endhighlight %}

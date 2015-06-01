@@ -12,7 +12,7 @@ version: Egret引擎 v1.x
 填充方式，使用的纹理图片为一张100*100的图片。我们将图像宽度设置为2倍，高度设置为3倍。
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 class BitmapTest extends egret.DisplayObjectContainer{
     public constructor()
     {
@@ -44,7 +44,7 @@ class BitmapTest extends egret.DisplayObjectContainer{
 
 设置填充方法需要改变 `Bitmap` 中的 `fillMode` 属性。具体示例代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class BitmapTest extends egret.DisplayObjectContainer{
     public constructor()
     {

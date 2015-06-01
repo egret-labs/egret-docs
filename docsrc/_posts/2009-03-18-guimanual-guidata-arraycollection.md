@@ -13,7 +13,7 @@ ArrayCollection是Egret GUI中专用的一个数据封装类。一个典型的�
 
 来看看如何创建一个ArrayCollection:
 
-{% highlight java linenos %}
+{% highlight java  %}
 //先创建一个数组
 var sourceArr:any[] = [{name:"one",value:1},{name:"two",value:2}];
 //用ArrayCollection包装
@@ -24,7 +24,7 @@ var myCollection:egret.gui.ArrayCollection = new egret.gui.ArrayCollection(sourc
 
 封装的最大意义在于事件，您可以在ArrayCollection上添加事件侦听，当数据改变，您就可以获知：
 
-{% highlight java linenos %}
+{% highlight java  %}
 //当数据改变的时候，ArrayCollection会派发事件
 myCollection.addEventListener(egret.gui.CollectionEvent.COLLECTION_CHANGE,this.collectionChangeHandler,this);
 private collectionChangeHandler(evt:egret.gui.CollectionEvent):void {
@@ -34,7 +34,7 @@ private collectionChangeHandler(evt:egret.gui.CollectionEvent):void {
 
 然后我们给ArrayCollection添加数据，来看看事件侦听的效果：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var itemData:Object = {name:"three",value:3};
 myCollection.addItem(itemData);//相当于push
 myCollection.addItemAt({name:"zero",value:0},0);//添加的指定的索引位置
@@ -44,7 +44,7 @@ myCollection.addItemAt({name:"zero",value:0},0);//添加的指定的索引位置
 
 如果要获取ArrayCollection中的数据，可以这样：
 
-{% highlight java linenos %}
+{% highlight java  %}
 //获取
 console.log(myCollection.getItemAt(0).name);//根据索引位置获取某一项数据
 console.log(myCollection.getItemIndex(itemData));//获取某一项数据所在的索引值
@@ -55,19 +55,19 @@ console.log(myCollection.length);//获取数组长度
 
 如果要调换某一项数据的位置，可以：
 
-{% highlight java linenos %}
+{% highlight java  %}
 myCollection.moveItemAt(0,1);
 {% endhighlight %}
 
 如果要替换某一项数据，可以：
 
-{% highlight java linenos %}
+{% highlight java  %}
 myCollection.replaceItemAt({name:"zero",value:-1},0);
 {% endhighlight %}
 
 做删除操作，可以这样：
 
-{% highlight java linenos %}
+{% highlight java  %}
 myCollection.removeItemAt(0);//删除某一个
 myCollection.removeAll();//全部删除
 {% endhighlight %}

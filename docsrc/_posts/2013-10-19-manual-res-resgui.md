@@ -15,7 +15,7 @@ RES资源管理模块中，没有预加载的资源仍需异步回调的方式�
 
 实现一个自定义的素材解析器AssetAdapter
 
-{% highlight java linenos %}
+{% highlight java  %}
 class AssetAdapter implements egret.IAssetAdapter{
     public getAsset(source:any,compFunc:Function,thisObject:any,oldContent:any):void{
         var content:any = source;
@@ -51,14 +51,14 @@ class AssetAdapter implements egret.IAssetAdapter{
 
 完成注入后，我们可以忽略异步加载过程。要显示一个位图，可以这样写：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var sky:egret.gui.UIAsset = new egret.gui.UIAsset();
 sky.source = "bgImage";
 {% endhighlight %}
 
 显示一个SpriteSheet里的一张子位图：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var icon:egret.gui.UIAsset = new egret.gui.UIAsset();
 icon.source = "icons.activity_10";
 {% endhighlight %}

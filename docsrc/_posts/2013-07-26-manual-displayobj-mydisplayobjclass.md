@@ -13,7 +13,7 @@ version: Egret引擎 v1.x
 
 创建一个名称为 `MyGrid` 的类，并且继承自 `Shape` 。具体代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class MyGrid extends egret.Shape
 {
     public constructor()
@@ -37,7 +37,7 @@ class MyGrid extends egret.Shape
 
 在 `MyGrid` 我们绘制了一个红蓝相间的2*2格子，然后我们创建一个新的文档类，名称为 `GridMain` ，在文档类中创建并显示我们的 `MyGrid`，具体代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class GridMain extends egret.DisplayObjectContainer
 {
     public constructor()

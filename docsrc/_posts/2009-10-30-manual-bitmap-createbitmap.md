@@ -13,7 +13,7 @@ version: Egret引擎 v1.x
 
 创建一个图片对象需要使用 `Bitmap` 类，代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 private img:egret.Bitmap = new egret.Bitmap();
 {% endhighlight %}
 
@@ -22,7 +22,7 @@ private img:egret.Bitmap = new egret.Bitmap();
 
 指定纹理的方式是设置 `Bitmap` 中的 `texture` 属性。
 
-{% highlight java linenos %}
+{% highlight java  %}
 img.texture = RES.getRes("图片ID");
 {% endhighlight %}
 
@@ -62,7 +62,7 @@ img.texture = RES.getRes("图片ID");
 包含在“groups”中，组的概念是将不同的资源分类，当逻辑启动加载后，我们可以选择以组为单位进行加载。
 我们来看一个具体的示例。
 
-{% highlight java linenos %}
+{% highlight java  %}
 class BitmapTest extends egret.DisplayObjectContainer{
     public constructor()
     {

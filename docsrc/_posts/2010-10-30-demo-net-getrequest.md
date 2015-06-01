@@ -11,7 +11,7 @@ documentclass: GetRequestTest
 
 ###Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 class GetRequestTest extends egret.DisplayObjectContainer
 {
     //入口函数

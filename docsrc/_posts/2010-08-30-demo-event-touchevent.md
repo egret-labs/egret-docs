@@ -11,7 +11,7 @@ documentclass: TouchEventTest
 
 ###Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 class TouchEventTest extends egret.DisplayObjectContainer
 {
 

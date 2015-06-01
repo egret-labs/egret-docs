@@ -20,7 +20,7 @@ TextField中包含了众多文本样式属性，我们可以通过对这些样�
 
 具体代码如下：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class GameApp extends egret.DisplayObjectContainer{
     public constructor() {
         super();
@@ -64,7 +64,7 @@ class GameApp extends egret.DisplayObjectContainer{
 
 我们来看一下具体代码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 class GameApp extends egret.DisplayObjectContainer{
     public constructor() {
         super();

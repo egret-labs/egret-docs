@@ -14,7 +14,7 @@ version: Egret引擎 v1.x
 完整的暂停播放实例代码如下：
 
 
-{% highlight java linenos %}
+{% highlight java  %}
 class SoundStopTest extends egret.DisplayObjectContainer
 {
     //入口函数

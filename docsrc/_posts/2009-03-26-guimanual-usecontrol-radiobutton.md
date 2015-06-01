@@ -11,7 +11,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 创建一个单选按钮的方式非常简单：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var rdb:egret.gui.RadioButton = new egret.gui.RadioButton();
 rdb.label = "选择我1";
 rdb.value = 1;
@@ -26,7 +26,7 @@ rdb.value = 1;
 
 您可以为每个单选按钮设置groupName属性，对应的类型是字符串。当若干个单选按钮的groupName是同一个字符串，则系统自动将它们归结到一组。参见下面的代码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 private initRadioButton():void {
     var rdb:egret.gui.RadioButton = new egret.gui.RadioButton();
     rdb.label = "选择我1";
@@ -58,7 +58,7 @@ private radioChangeHandler(evt:egret.Event):void {
 
 这种方式是，我们创建一个egret.gui.RadioButtonGroup的实例，并设置到每个单选按钮的group属性上。这样的好处在于，我们只需要处理RadioButtonGroup实例上的事件侦听，就能捕获数值的变化，要取得最终选择的那个值，也是从这个RadioButtonGroup实例上直接获取即可。示例代码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 private initRadioButtonWithGroup():void {
     //单选按钮需要绑定到一个组上
     var radioGroup:egret.gui.RadioButtonGroup = new egret.gui.RadioButtonGroup();

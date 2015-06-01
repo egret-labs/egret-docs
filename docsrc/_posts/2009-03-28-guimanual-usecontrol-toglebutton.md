@@ -9,7 +9,7 @@ version: Egret引擎 v1.x        特别鸣谢<a href="https://github.com/NeoGuo/
 
 ToggleButton，顾名思义就是一个具备状态的按钮，这个状态就是selected属性，类型是布尔量，默认为false，当您点击一下按钮，selected将变为true，再点击一下，重新变成false。在显示上也是有区别的，选中和非选中的外观是不一样的。示例代码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 var btn:egret.gui.ToggleButton = new egret.gui.ToggleButton();
 btn.x = btn.y = 20;
 btn.label = "我是ToggleButton";
@@ -28,7 +28,7 @@ private changeHandler(evt:egret.Event):void {
 
 源码：
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uidemo
 {
     export class ToggleButtonDemo extends egret.gui.Group

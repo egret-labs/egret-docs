@@ -12,7 +12,7 @@ Egret GUI内置的4个布局类基本上可以满足我们大部分的需求了�
 
 新建一个MyLayout.ts，扩展自egret.gui.LayoutBase:
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uilayout {
     /**自定义的环形布局类*/
     export class MyLayout extends egret.gui.LayoutBase{
@@ -62,7 +62,7 @@ module uilayout {
 
 然后修改上节的例子，改为使用自定义布局类(通过设置group.layout属性)：
 
-{% highlight java linenos %}
+{% highlight java  %}
 module uidemo
 {
     export class CustomLayoutDemo extends egret.gui.Group

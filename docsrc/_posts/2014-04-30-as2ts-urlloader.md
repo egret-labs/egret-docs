@@ -10,7 +10,7 @@ URLLoader 类以文本、二进制数据或 URL 编码变量的形式从 URL 下
 
 ####ActionScript 3 Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 var loader:URLLoader = new URLLoader();
 loader.addEventListener(Event.COMPLETE, onLoadComplete);
 loader.load(new URLRequest(url));
@@ -23,7 +23,7 @@ function onLoadComplete(event:Event):void
 
 ####Egret Code
 
-{% highlight java linenos %}
+{% highlight java  %}
 var loader:egret.URLLoader = new egret.URLLoader();
 loader.addEventListener(egret.Event.COMPLETE, onLoadComplete, this);
 loader.load(new egret.URLRequest(url));
