@@ -1,9 +1,12 @@
 egret-docs
 ==========
-
-egret-docs是Egret官方网站中文档中心的源码。该文档中心域名为[http://docs.egret.com/home.html](http://docs.egret.com/home.html)
-
+新版本的文档中心：http://edn.egret.com
 ---
+
+
+废弃内容
+------------------------
+egret-docs是Egret官方网站中文档中心的源码。该文档中心域名为[http://docs.egret.com/home.html](http://docs.egret.com/home.html)
 
 ##工具版本
 
