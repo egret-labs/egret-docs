@@ -1,0 +1,16 @@
+[
+  {
+    "children":[
+      {
+        "filename":"/platform/weixin/weixin/",
+        "text":"微信平台接入",
+        "des":"微信平台接入相关文档",
+        "in_use":true
+      }
+    ],
+    "isFolder":true,
+    "text":"微信平台接入",
+    "des":"微信平台接入相关文档",
+    "in_use":true
+  }
+]
