@@ -92,4 +92,3 @@ class BitmapTest extends egret.DisplayObjectContainer{
 #### 相关链接
 
 [benchmark之位图渲染](http://edn.egret.com/cn/docs/page/786)
-
