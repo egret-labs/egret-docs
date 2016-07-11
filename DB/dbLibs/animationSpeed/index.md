@@ -45,3 +45,5 @@ armature.gotoAndPlay("walk").setTimeScale(0.5);
 
 可以访问示例中心查看参考示例的效果和下载源码：
 [DragonBones 高级特性](http://edn.egret.com/cn/index.php/article/index/id/713)
+
+
