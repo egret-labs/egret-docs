@@ -75,3 +75,4 @@ if (this.bmp.texture == this.renderTexture) {
 
 更新画板的纹理时使用与当前不同的 RenderTexture 对象保证上一次的纹理不被清空。
 
+
