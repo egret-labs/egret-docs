@@ -2,6 +2,147 @@
   {
     "children":[
       {
+        "filename":"/Engine2D/releaseNote/egret-3-1-2/",
+        "text":"Egret Engine 3.1.2",
+        "des":"Egret Engine 3.1.2",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-3-1-1/",
+        "text":"Egret Engine 3.1.1",
+        "des":"Egret Engine 3.1.1",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-3-1-0/",
+        "text":"Egret Engine 3.1.0",
+        "des":"Egret Engine 3.1.0",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-3-0-8/",
+        "text":"Egret Engine 3.0.8",
+        "des":"Egret Engine 3.0.8",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-3-0-7/",
+        "text":"Egret Engine 3.0.7",
+        "des":"Egret Engine 3.0.7",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-3-0-6/",
+        "text":"Egret Engine 3.0.6",
+        "des":"Egret Engine 3.0.6",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-3-0-5/",
+        "text":"Egret Engine 3.0.5",
+        "des":"Egret Engine 3.0.5",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-3-0-4/",
+        "text":"Egret Engine 3.0.4",
+        "des":"Egret Engine 3.0.4",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-3-0-3/",
+        "text":"Egret Engine 3.0.3",
+        "des":"Egret Engine 3.0.3",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-3-0-2/",
+        "text":"Egret Engine 3.0.2",
+        "des":"Egret Engine 3.0.2",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-3-0-1/",
+        "text":"Egret Engine 3.0.1",
+        "des":"Egret Engine 3.0.1",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-3-0-0/",
+        "text":"Egret Engine 3.0.0",
+        "des":"Egret Engine 3.0.0",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-2-5-7/",
+        "text":"Egret Engine 2.5.7",
+        "des":"Egret Engine 2.5.7",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-2-5-6/",
+        "text":"Egret Engine 2.5.6",
+        "des":"Egret Engine 2.5.6",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-2-5-5/",
+        "text":"Egret Engine 2.5.5",
+        "des":"Egret Engine 2.5.5",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-2-5-4/",
+        "text":"Egret Engine 2.5.4",
+        "des":"Egret Engine 2.5.4",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-2-5-3/",
+        "text":"Egret Engine 2.5.3",
+        "des":"Egret Engine 2.5.3",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-2-5-2/",
+        "text":"Egret Engine 2.5.2",
+        "des":"Egret Engine 2.5.2",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-2-5-1/",
+        "text":"Egret Engine 2.5.1",
+        "des":"Egret Engine 2.5.1",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-2-5-0/",
+        "text":"Egret Engine 2.5.0",
+        "des":"Egret Engine 2.5.0",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-2-0-0/",
+        "text":"Egret Engine 2.0.0",
+        "des":"Egret Engine 2.0.0",
+        "in_use":false
+      },
+      {
+        "filename":"/Engine2D/releaseNote/egret-all-version/",
+        "text":"Egret Engine 全部版本列表",
+        "des":"Egret Engine 全部版本列表",
+        "in_use":true
+      }
+    ],
+    "isFolder":true,
+
+    "text":"Egret Engine 更新详解",
+    "des":"Egret Engine 更新详解",
+    "in_use":true
+  },
+  {
+    "children":[
+      {
         "filename":"/Engine2D/projectConfig/installation/",
         "text":"安装与部署",
         "des":"安装与部署",

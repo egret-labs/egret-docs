@@ -4,7 +4,7 @@
 - 项目配置
 	- 启动器说明
 - 显示对象
-	- 斜切
+	- [斜切](Engine2D/displayObject/skew/index.md)
 - 混合模式
 	- NORMAL
 	- ADD
