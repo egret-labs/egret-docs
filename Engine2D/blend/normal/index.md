@@ -1,1 +1,0 @@
-## Ìí¼Ó»ìºÏ   ![skewX_compare][]    ![skewY_compare][]    [skewX_compare]: skewX_compare.jpg[skewY_compare]: skewY_compare.jpg 

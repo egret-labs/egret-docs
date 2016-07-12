@@ -1,1 +1,1 @@
-## 添加混合   ![skewX_compare][]    ![skewY_compare][]    [skewX_compare]: skewX_compare.jpg[skewY_compare]: skewY_compare.jpg 
+## 覆盖混合      该显示对象出现在背景前面。显示对象的像素值将覆盖背景的像素值。在显示对象为透明的区域，背景是可见的。"add" ：将显示对象的原色值添加到它的背景颜色中，上限值为 0xFF。此设置通常用于使两个对象间的加亮溶解产生动画效果。## 添加混合   ## 擦除混合   ![skewX_compare][]    ![skewY_compare][]    [skewX_compare]: skewX_compare.jpg[skewY_compare]: skewY_compare.jpg 
