@@ -73,3 +73,4 @@ this.factory.replaceSlotDisplay( "NewProject", "Armature", "ti", "bb", ar.armatu
 ar.armature.replaceTexture(RES.getRes("new_db_texture_png"));
 ```
 
+ 
