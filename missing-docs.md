@@ -1,6 +1,6 @@
 ## Egret Engine 2D
 - Get Started
-	- Get Started
+	- Get Started  --Egret小白快速上手 http://edn.egret.com/cn/docs/page/639
 - 项目配置
 	- 启动器说明
 - 显示对象
@@ -10,15 +10,15 @@
 	- [发光滤镜](Engine2D/filter/glowFilter/index.md)
     - [投影滤镜](Engine2D/filter/dropShadowFilter/index.md)
 - 时间控制
-	- Tick心跳
+	- [Tick心跳](Engine2D/timeControl/tick/index.md)
 - 调试
 
-	- 性能优化
+	- 性能优化   深入了解性能优化   http://edn.egret.com/cn/docs/page/287
 - 调用原生JS
-	- ts 与 js 互调
+	- ts 与 js 互调   ts(Egret) 与 js 的调用   http://edn.egret.com/cn/docs/page/777
 - 打包发布
-	- 打包HTML5
-	- 打包Android app
+	- 打包HTML5      这个文档不需要！
+	- 打包Android app   IntelliJ IDEA中Andorid APP打包(http://edn.egret.com/cn/index.php/article/index/id/166)  
 
 ### 平台接入
 
