@@ -5,13 +5,10 @@
 	- 启动器说明
 - 显示对象
 	- [斜切](Engine2D/displayObject/skew/index.md)
-- 混合模式
-	- NORMAL
-	- ADD
-	- ERASE
+- [混合模式](Engine2D/blend/index.md)
 - 滤镜
-	- 发光滤镜
-    - 投影滤镜
+	- [发光滤镜](Engine2D/filter/glowFilter/index.md)
+    - [投影滤镜](Engine2D/filter/dropShadowFilter/index.md)
 - 时间控制
 	- Tick心跳
 - 调试
