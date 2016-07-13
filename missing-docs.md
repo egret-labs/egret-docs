@@ -31,8 +31,8 @@
 - 历史更新
 - DragonBones Pro
 	- 界面
-		- 显示继承工具
-    - 创建项目
+		- [显示继承工具](DB/dbPro/interface/inheritanceTools/index.md)
+    - [创建项目](DB/dbLibs/createProj/index.md)
 		- 创建骨骼动画项目
 		- 创建普通动画项目
 		- 创建交互动漫项目
@@ -44,9 +44,9 @@
 		- 骨架装配模式与动画制作模式（视频）
 		- 预览动画 （视频）
     - 导出
-		- 导出HTML网页
-- DragonBones 程序库
-	- 数据格式说明
+		- [导出HTML网页](DB/dbPro/export/html/index.md)
+	- DragonBones 程序库
+		- [数据格式说明](DB/dbLibs/dataFormat/index.md)
 
 ### Lakeshore
 
