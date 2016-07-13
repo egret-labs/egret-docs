@@ -47,4 +47,4 @@ armature.gotoAndPlay("walk").setTimeScale(0.5);
 [DragonBones 高级特性](http://edn.egret.com/cn/index.php/article/index/id/713)
 
  
-  
+   
