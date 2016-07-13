@@ -12,7 +12,6 @@
 - 时间控制
 	- [Tick心跳](Engine2D/timeControl/tick/index.md)
 - 调试
-
 	- 性能优化   深入了解性能优化   http://edn.egret.com/cn/docs/page/287
 - 调用原生JS
 	- ts 与 js 互调   ts(Egret) 与 js 的调用   http://edn.egret.com/cn/docs/page/777
