@@ -1,6 +1,13 @@
-必需产品：Egret Engine 1.7.1+(下载地址)
+必需产品
+
+- Egret Engine 1.7.1+ ：[下载地址](http://edn.egret.com/cn/docs/page/785)
+- p2物理引擎库 ：[下载地址](https://github.com/egret-labs/egret-game-library)
+- 第三方库配置方法：http://edn.egret.com/cn/docs/page/172
+
+
 
 项目（演示与下载）： [下载地址](http://edn.egret.com/cn/index.php?g=&m=article&a=index&id=91)
+
 
 ##基本用法
 
