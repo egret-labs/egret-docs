@@ -74,6 +74,3 @@ if (this.bmp.texture == this.renderTexture) {
 其中 this.bmp 是保存画板的位图对象，this.renderTexture 和 this.renderTexture2 是用来保存纹理的 RenderTexture 对象。
 
 更新画板的纹理时使用与当前不同的 RenderTexture 对象保证上一次的纹理不被清空。
-
-
- 
