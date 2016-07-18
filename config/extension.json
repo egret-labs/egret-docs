@@ -2,7 +2,7 @@
   {
     "children":[
       {
-        "filename":"/extension/threes/instruction/",
+        "filename":"/extension/threes/instructions/",
         "text":"第三方库的使用方法",
         "des":"第三方库的使用方法",
         "in_use":true
