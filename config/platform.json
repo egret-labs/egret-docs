@@ -48,7 +48,7 @@
   {
     "children":[
       {
-        "filename":"platform/TV/TV/",
+        "filename":"/platform/TV/TV/",
         "text":"电视操作的接入",
         "des":"智能电视接入相关文档"
       }
