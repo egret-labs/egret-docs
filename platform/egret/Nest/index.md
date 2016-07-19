@@ -479,7 +479,7 @@ platInfo=open\_```my_appId```_9166&egret.runtime.spid=9166&appId=```my_appId```&
 
 * 下面以游戏appId `88888` 为例代替上面参数中的 `my_appId`，最后测试的网址应该是（如果有跳转，请务必把参数也一起加上，一句话，最终的游戏运行的地址中必须要看到有上面的参数）
 
-	http://localhost:63342/HelloGUI/launcher/index.html?platInfo=open\_```88888```_9166&egret.runtime.spid=9166&appId=```88888```&channelId=9166&egretSdkDomain=http://api.egret-labs.org/v2&egretServerDomain=http://api.egret-labs.org/v2
+	http://localhost:63342/HelloGUI/launcher/index.html?platInfo=open\_88888_9166&egret.runtime.spid=9166&appId=88888&channelId=9166&egretSdkDomain=http://api.egret-labs.org/v2&egretServerDomain=http://api.egret-labs.org/v2
 
 
 
