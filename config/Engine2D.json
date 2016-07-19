@@ -98,31 +98,31 @@
         "in_use":true
       },
       {
-        "filename":"/Engine2D/projectConfig/translation",
+        "filename":"/Engine2D/displayObject/translation",
         "text":"平移",
         "des":"平移",
         "in_use":true
       },
       {
-        "filename":"/Engine2D/projectConfig/size/",
+        "filename":"/Engine2D/displayObject/size/",
         "text":"尺寸",
         "des":"尺寸",
         "in_use":true
       },
       {
-        "filename":"/Engine2D/projectConfig/scale/",
+        "filename":"/Engine2D/displayObject/scale/",
         "text":"缩放",
         "des":"缩放",
         "in_use":true
       },
       {
-        "filename":"/Engine2D/projectConfig/rotation/",
+        "filename":"/Engine2D/displayObject/rotation/",
         "text":"旋转",
         "des":"旋转",
         "in_use":true
       },
       {
-        "filename":"/Engine2D/projectConfig/miter/",
+        "filename":"/Engine2D/displayObject/miter/",
         "text":"斜切",
         "des":"斜切",
         "in_use":false
