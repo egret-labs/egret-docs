@@ -33,7 +33,7 @@ envMethod.environmentTexture = cubeTexture;
 #### Bug列表
 * 修复骨骼动画缺少帧数的bug
 * 修复CubeTexture上传为null时导致的bug
-* 修复华为手机不能使用egret3d引擎的bug
+* 修复华为手机不能使用egret3d引擎的bug 
 
 #### 工具
 * 修复Unity3d导出插件坐标轴bug
