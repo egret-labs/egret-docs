@@ -3,9 +3,7 @@
    {
 
       "children":[
-
          {
-
             "filename":"Engine2D.json",
 
             "des":"2D引擎相关文档",
@@ -36,18 +34,19 @@
             
             "in_use":"true"
 
-         },
-          {
+         }
+     	],
 
-            "filename":"platform.json",
+		"isFolder":true,
 
-            "des":"平台接入相关文档",
+		"text":"引擎",
 
-            "text":"平台接入",
-            
-            "in_use":"true"
+		"des":"引擎分类",
 
-         },
+		"in_use":true
+	},
+	 {
+      "children":[
           {
 
             "filename":"Wing.json",
@@ -136,7 +135,40 @@
             "in_use":"false"
 
          }
-        ]
+         ],
+
+		"isFolder":true,
+
+		"text":"工具",
+
+		"des":"工具分类",
+
+		"in_use":true
+	},
+	 {
+
+      "children":[
+      	{
+
+            "filename":"platform.json",
+
+            "des":"平台接入相关文档",
+
+            "text":"平台接入",
+            
+            "in_use":"true"
+
+         }
+
+        ],
+
+		"isFolder":true,
+
+		"text":"平台",
+
+		"des":"平台分类",
+		
+		"in_use":true
 
     }
 
