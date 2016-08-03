@@ -26,7 +26,7 @@ RES.ResourceItem.TYPE_XML(xml)：解析为egret.XML对象
 {"name":"button","scale9grid":"22,0,10,60","type":"image","url":"assets/button.png"}
 ```
 
-其中scale9grid属性的四个值分别表示九宫格矩形的:x,y,width,height。 九宫格的详细配置方式请参考 [九宫格的使用](http://edn.egret.com/cn/index.php?g=&m=article&a=index&id=133&terms1_id=25&terms2_id=31)。
+其中scale9grid属性的四个值分别表示九宫格矩形的:x,y,width,height。 九宫格的详细配置方式请参考 [九宫格的使用](../../../Engine2D/bitmapTexture/scale9Grid/)。
 
 ## 三、配置声音资源
 

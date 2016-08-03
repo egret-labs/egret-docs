@@ -89,9 +89,6 @@ class BitmapTest extends egret.DisplayObjectContainer{
 
 ![](56614ea87fa1a.jpg)
 
-#### 相关链接
-
-[benchmark之位图渲染](http://edn.egret.com/cn/docs/page/786)
 
 
 

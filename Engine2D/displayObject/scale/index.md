@@ -7,4 +7,4 @@ mySprite.scaleX = 2;
 mySprite.scaleY = 2;
 ```
 
-这里将显示对象的宽和高同时放大了2倍。缩放是相对于显示对象的锚点来缩放的。关于锚点的操作可以参考[锚点的操作](http://edn.egret.com/cn/index.php/article/index/id/107)。
+这里将显示对象的宽和高同时放大了2倍。缩放是相对于显示对象的锚点来缩放的。关于锚点的操作可以参考[锚点的操作](../../../Engine2D/displayObject/anchor/)。

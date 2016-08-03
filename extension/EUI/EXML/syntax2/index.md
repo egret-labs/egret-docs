@@ -55,4 +55,4 @@ MyGroup.exml
 
 ### 引用自定义组件
 
-请参考：[在EXML中使用自定义组件](http://edn.egret.com/cn/docs/page/870)
+请参考：[在EXML中使用自定义组件](../../../../extension/EUI/advancedSkills/useComponents/)

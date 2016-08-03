@@ -32,7 +32,7 @@
 
 
 ### 文本条件
-文本组件除特有条件外，也适用部分通用条件（文本不支持“碰撞”相关条件）。参见：[通用条件](http://edn.egret.com/cn/index.php/portal/article/index/id/707)
+文本组件除特有条件外，也适用部分通用条件（文本不支持“碰撞”相关条件）。参见：[通用条件](../../../../Lakeshore/manual/commonElements/conditions/)
 
 ![](564ad9fa5cfc5.png)
 #### 比较文本内容

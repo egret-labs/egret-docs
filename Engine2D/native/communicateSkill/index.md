@@ -2,11 +2,9 @@
 
 1、了解通过 egret-ios-support 打包为原生项目的方案，这里可以参考：
 
-[iOS APP打包方案](http://edn.egret.com/cn/index.php/article/index/id/169) 
+[打包iOS app](../../../Engine2D/publish/publishIOS/)
 
-[Win中Android APP打包](http://edn.egret.com/cn/index.php/article/index/id/648) 
-
-[Mac中Android APP打包](http://edn.egret.com/cn/index.php/article/index/id/649)
+[打包Android app](../../../Engine2D/publish/publishAndroid/)
 
 2、了解 Egret 项目内的基本操作和 IOS 和 Android 编程基本技巧。
 

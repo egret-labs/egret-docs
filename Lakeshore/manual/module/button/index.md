@@ -17,7 +17,7 @@
 
 
 ### 按钮条件
-按钮组件除特有条件外，也适用部分通用条件（按钮不支持“碰撞”相关条件），参看：[通用条件](http://edn.egret.com/cn/index.php/portal/article/index/id/707)
+按钮组件除特有条件外，也适用部分通用条件（按钮不支持“碰撞”相关条件），参看：[通用条件](../../../../Lakeshore/manual/commonElements/conditions/)
 
 ![](564ac01e6ec2e.png)
 #### 当按住时

@@ -12,7 +12,7 @@
 
 
 ### 瓦片平铺条件
-瓦片平铺组件无特有条件，适用所有通用条件。参见：[通用条件](http://edn.egret.com/cn/index.php/portal/article/index/id/707)
+瓦片平铺组件无特有条件，适用所有通用条件。参见：[通用条件](../../../../Lakeshore/manual/commonElements/conditions/)
 
 ------------
 

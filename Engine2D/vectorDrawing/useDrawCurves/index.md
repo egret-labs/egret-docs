@@ -181,6 +181,5 @@ private drawBorderProgress():egret.DisplayObjectContainer {
 
 ![](569f036ba015a.png)   ![](569f036bbe628.png)
 
-### 完整的demo地址请到这里 [arc](http://edn.egret.com/cn/index.php/portal/article/index/id/672)
 
 > 虽然这种方式非常好的实现进度条，但是由于 mask 本身不停的修改，会导致极大的消耗 cpu，导致性能不佳，因此建议大家请少用此种方式做 mask（少用不停修改 mask 的方式来做动画）。

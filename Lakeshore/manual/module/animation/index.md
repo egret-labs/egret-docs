@@ -41,7 +41,7 @@
 - 参与碰撞：设置动画实例是否参与碰撞。默认值为“否”。
 
 ### 动画条件
-动画组件除特有条件外，也适用所有通用条件，参看：[通用条件](http://edn.egret.com/cn/index.php/portal/article/index/id/707)
+动画组件除特有条件外，也适用所有通用条件，参看：[通用条件](../../../../Lakeshore/manual/commonElements/conditions/)
 
 ![](565bf97ec1734.png)
 #### 全部播放完毕

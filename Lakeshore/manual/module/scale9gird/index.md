@@ -31,7 +31,7 @@ Width和Height分别表示井字线中心口字的宽和高。如下图所示：
 
 
 ### 九宫格条件
-九宫格组件无特有条件，适用所有通用条件。参见：[通用条件](http://edn.egret.com/cn/index.php/portal/article/index/id/707)
+九宫格组件无特有条件，适用所有通用条件。参见：[通用条件](../../../../Lakeshore/manual/commonElements/conditions/)
 
 ------------
 

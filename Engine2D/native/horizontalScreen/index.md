@@ -4,8 +4,8 @@ Eget 的 H5 项目通过 Egret Android Suppord 或 Egret IOS Support 可以生�
 
 生成 Native 项目的基本过程是相同的，可以参考以下文档：
 
-* Android APP打包：[Win中Android APP打包](http://edn.egret.com/cn/docs/page/648) [Mac中Android APP打包](http://edn.egret.com/cn/docs/page/649)
-* IOS APP 打包: [iOS APP打包方案](http://edn.egret.com/cn/docs/page/169)
+* Android APP打包：[打包Android app](../../../Engine2D/publish/publishAndroid/)
+* IOS APP 打包: [打包iOS app](../../../Engine2D/publish/publishIOS/)
 
 ### Android 横竖屏设置
 

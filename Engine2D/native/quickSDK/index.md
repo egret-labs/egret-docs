@@ -82,8 +82,7 @@ egret create_app app_name -f h5_game_path -t template_path
 ![](572b16ee79acd.png)
 
 参考教程:
-[Win中Android APP打包](http://edn.egret.com/cn/docs/page/648)
-[Mac中Android APP打包](http://edn.egret.com/cn/docs/page/649)
+[打包Android app](../../../Engine2D/publish/publishAndroid/)
 
 
 #### 编译到原生项目
