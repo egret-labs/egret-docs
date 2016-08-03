@@ -2,6 +2,12 @@
 	{
     "children":[
       {
+        "filename":"/Engine2D/getStarted/helloWorld/",
+        "text":"Hello World",
+        "des":"Hello World",
+        "in_use":true
+      },
+      {
         "filename":"/Engine2D/getStarted/getStarted/",
         "text":"Get Started",
         "des":"Get Started",
@@ -20,6 +26,12 @@
         "filename":"/Engine2D/projectConfig/installation/",
         "text":"安装与部署",
         "des":"安装与部署",
+        "in_use":true
+      },
+      {
+        "filename":"/Engine2D/projectConfig/launcherManager/",
+        "text":"引擎和工具的管理",
+        "des":"引擎和工具的管理",
         "in_use":true
       },
       {

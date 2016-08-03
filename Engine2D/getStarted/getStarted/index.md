@@ -28,7 +28,7 @@ Egret 采用 TypeScript 进行编程，它是 JavaScript 的一个超集，而�
 
 ### 打开项目
 
-[前一章](http://edn.egret.com/cn/docs/page/827)我们已经建立了一个HelloWorld项目，我们就以此为基础，用Wing来打开该项目。启动Wing程序，菜单选择导入项目：
+[前一章](../../../Engine2D/getStarted/helloWorld)我们已经建立了一个HelloWorld项目，我们就以此为基础，用Wing来打开该项目。启动Wing程序，菜单选择导入项目：
 
 ![](568e421f6b918.jpg)
 
