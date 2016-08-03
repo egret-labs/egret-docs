@@ -121,7 +121,7 @@ class LabelRenderer extends eui.ItemRenderer {
     }
 }
 ```
-**如何给 ItemRenderer 设置皮肤，请看后面的[自定义项呈示器](http://edn.egret.com/cn/index.php/article/index/id/645)章节**
+**如何给 ItemRenderer 设置皮肤，请看后面的[自定义项呈示器](../../../../extension/EUI/dataCollection/itemRenderer/)章节**
 
 ### 大数据优化
 DataGroup 中有一个属性 useVirtualLayout，默认为 true，这个属性决定了列表创建内部对象的策略：
@@ -130,7 +130,7 @@ useVirtualLayout = false;
 有多少条数据就创建多少个 ItemRenderer 的实例
 **策略2**
 useVirtualLayout = true;
-**一般配合 [Scroller](http://edn.egret.com/cn/index.php/article/index/id/611) 使用。**
+**一般配合 [Scroller](../../../../extension/EUI/container/scroller/) 使用。**
 DataGroup 会根据组件的尺寸，计算同时最多能显示多少个组件，根据这个数字创建一组 ItemRenderer 并循环使用。当您滚动切换数据的时候，只是这一组 ItemRenderer 循环切换自己的位置和显示，这个过程是顺畅的无缝衔接的。
 
 举个例子，比如 ItemRenderer 的高度是10，DataGroup 的高度是100，DataGroup 的 dataProvider 中有1000条数据。这种情况下，DataGroup 中只会创建 11 个 ItemRenderer 的实例，当您向下滚动 DataGroup 的时候，移出舞台的那个 ItemRenderer 会自动移到最顶端，根据下一条数据改变自己的样式，而不需要再创建一个新的实例。

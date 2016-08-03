@@ -14,9 +14,8 @@ Egret的封装项目无论在Android还是iOS平台，均支持热更新。
 
 在进行热更新之前，我们需要创建Eclipse的 Andorid 项目。对于导入 Eclipse 封装项目有疑惑的可以查阅以下文章：
 
-- [Win中Android APP打包](http://edn.egret.com/cn/index.php/article/index/id/648)
-- [Mac中Android APP打包](http://edn.egret.com/cn/index.php/article/index/id/649)
-- [IOS APP打包方案](http://edn.egret.com/cn/index.php/article/index/id/169)
+- [打包Android app](../../../Engine2D/publish/publishAndroid/)
+- [打包iOS app](../../../Engine2D/publish/publishIOS/)
 
 ## 配置文件
 在进行热更新发布之前，需要进行H5项目中 egretProperties.json 的配置。
@@ -58,7 +57,7 @@ Egret的封装项目无论在Android还是iOS平台，均支持热更新。
 		]
 	}
 
-字段描述请查阅：[项目模块化配置](http://edn.egret.com/cn/index.php/article/index/id/644) ，了解其中 “path_ignore”、“android_path”、“path” 即可。
+字段描述请查阅：[项目配置文件说明](../../../Engine2D/projectConfig/configFile/) ，了解其中 “path_ignore”、“android_path”、“path” 即可。
 
 > android_path是在执行`egret create_app`后自动添加。
 

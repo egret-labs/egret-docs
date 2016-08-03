@@ -1,6 +1,6 @@
 ScrollView 即为滚动视图，开启一个滚动窗口，可以在里面添加显示内容，内容可以在此固定大小的窗口内左右上下滑动。ScrollView 和其他显示对象一样，需要添加到显示列表中才能被显示出来。下面介绍如何使用 ScrollView 并演示其效果。
 
-> 在Egret 2.5 以上的版本中需要注意的是 `egret.ScrollView` 类位于`game`库当中，如果使用的话需要确保项目中引用了`game`库。方法操作可以参考：[模块化配置和第三方库的使用方法](http://edn.egret.com/cn/index.php/article/index/id/172)
+> 在Egret 2.5 以上的版本中需要注意的是 `egret.ScrollView` 类位于`game`库当中，如果使用的话需要确保项目中引用了`game`库。方法操作可以参考：[模块化配置和第三方库的使用方法](../../../extension/threes/instructions/)
 
 ### 创建滚动视图
 

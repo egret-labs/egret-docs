@@ -44,7 +44,7 @@
 
 
 ### 文本动作
-文本组件除特有动作外，也适用部分通用动作（文本不支持“碰撞”相关动作）。参见：[通用动作](http://edn.egret.com/cn/index.php/portal/article/index/id/708)
+文本组件除特有动作外，也适用部分通用动作（文本不支持“碰撞”相关动作）。参见：[通用动作](../../../../Lakeshore/manual/commonElements/action/)
 
 ![](564ad9f917a87.png)
 #### 文本内容

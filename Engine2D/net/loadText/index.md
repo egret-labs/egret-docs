@@ -68,5 +68,5 @@ request.send( );
 数据加载完成后可从 response 属性取到 ArrayBuffer 对象，即可进行进一步读取操作。  
 
 >文档适用于 Egret 2.5 。通过 URLLoader 构建通信请求请访问：
-[构建通信请求](http://edn.egret.com/cn/index.php/article/index/id/601)
+[URLLoader网络通讯](../../../extension/game/URLLoaderNetwork/)
 URLLoader 类已移动到 game 扩展库中。

@@ -62,6 +62,6 @@ list.requireSelection = true;
 
 列表配合 Scroller 使用可以实现滚动效果。
 
-具体参考文档：[定位滚动位置](http://edn.egret.com/cn/docs/page/611#定位滚动位置)
+具体参考文档：[定位滚动位置](../../../../extension/EUI/container/scroller/#定位滚动位置)
 
 自定义滚动列表参考示例:[卡牌游戏EUI使用](http://edn.egret.com/cn/article/index/id/833)

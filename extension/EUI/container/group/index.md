@@ -1,6 +1,6 @@
 在 EUI 提供的容器中，Group 是最轻量级的，它本身不可以设置皮肤，也不具备外观，它的呈现只取决于内部的显示对象。如果您需要使用容器，并且没有设置皮肤的需求，那么请尽量使用 Group。
 
-Group 操作内部对象的方法和 Sprite 基本一致，只是增加了2个方法getElementAt  和 numElements，在后面的 [数据容器](http://edn.egret.com/cn/index.php/article/index/id/527) 章节我们会详细说明。
+Group 操作内部对象的方法和 Sprite 基本一致，只是增加了2个方法getElementAt  和 numElements，在后面的 [数据容器](../../../../extension/EUI/dataCollection/dataGroup/) 章节我们会详细说明。
 
 
 如果您自定义一个类，继承自Group，那么请注意，内部的其它对象应该在 createChildren() 方法中创建和添加，也就是说，您要覆盖 Group 的 createChildren() 方法。参见下面的例子：
@@ -17,7 +17,7 @@ class GroupDemo extends eui.Group {
 	}
 }
 ```
-eui 中容器的一个显著特点是，可以配置一个 layout 对象，来实现不同的布局方式。这对我们的开发工作是非常有好处的，可以使用默认的几个布局类，来节省大量的编码工作。布局的详细内容，请看 [使用布局类](http://edn.egret.com/cn/index.php/article/index/id/521) 。下面的示例演示了使用垂直布局来排列4个按钮:
+eui 中容器的一个显著特点是，可以配置一个 layout 对象，来实现不同的布局方式。这对我们的开发工作是非常有好处的，可以使用默认的几个布局类，来节省大量的编码工作。布局的详细内容，请看 [使用布局类](../../../../extension/EUI/useLayout/basiclayout/) 。下面的示例演示了使用垂直布局来排列4个按钮:
 
 ``` TypeScript
 /**

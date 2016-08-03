@@ -18,4 +18,4 @@
 
 
 ### 精灵动作
-精灵组件无特有动作，适用所有通用动作。参见：[通用动作](http://edn.egret.com/cn/index.php/portal/article/index/id/708)
+精灵组件无特有动作，适用所有通用动作。参见：[通用动作](../../../../Lakeshore/manual/commonElements/action/)

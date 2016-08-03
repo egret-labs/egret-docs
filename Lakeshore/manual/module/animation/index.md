@@ -77,7 +77,7 @@
 ![](565bf97f56518.png)
 
 ### 动画动作
-动画组件除特有动作外，也适用所有通用动作，参看：[通用动作](http://edn.egret.com/cn/index.php/portal/article/index/id/708)
+动画组件除特有动作外，也适用所有通用动作，参看：[通用动作](../../../../Lakeshore/manual/commonElements/action/)
 
 ![](565bf96f7d716.png)
 #### 跳到指定帧播放

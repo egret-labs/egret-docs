@@ -1,8 +1,8 @@
-在 [层叠容器](http://edn.egret.com/cn/index.php/article/index/id/609) 章节，我们介绍了 ViewStack，那么应该用什么来控制 ViewStack 的显示比较好呢？TabBar 是个不错的选择。TabBar 会根据数据源，显示一组按钮，并且在同一时间，只有一个按钮会被选中，并且如果数据源是一个ViewStack 的话，那么 TabBar 的选中项索引将和 ViewStack 的选中项索引保持一致。
+在 [层叠容器](../../../../extension/EUI/container/viewStack/) 章节，我们介绍了 ViewStack，那么应该用什么来控制 ViewStack 的显示比较好呢？TabBar 是个不错的选择。TabBar 会根据数据源，显示一组按钮，并且在同一时间，只有一个按钮会被选中，并且如果数据源是一个ViewStack 的话，那么 TabBar 的选中项索引将和 ViewStack 的选中项索引保持一致。
 
 #####  用法1：结合ViewStack
 
-我们修改 [层叠容器](http://edn.egret.com/cn/index.php/article/index/id/609) 章节的例子，不再用 timer 控制 ViewStack 的切换，而是绑定到 TabBar 上面：
+我们修改 [层叠容器](../../../../extension/EUI/container/viewStack/) 章节的例子，不再用 timer 控制 ViewStack 的切换，而是绑定到 TabBar 上面：
 
 ``` TypeScript
 

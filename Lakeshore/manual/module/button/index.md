@@ -50,7 +50,7 @@
 
 
 ###按钮动作
-按钮组件除特有动作外，也适用部分通用动作（按钮不支持“碰撞”相关动作），参看：[通用动作](http://edn.egret.com/cn/index.php/portal/article/index/id/708)
+按钮组件除特有动作外，也适用部分通用动作（按钮不支持“碰撞”相关动作），参看：[通用动作](../../../../Lakeshore/manual/commonElements/action/)
 
 ![](564ac024888b3.png)
 ####文本内容

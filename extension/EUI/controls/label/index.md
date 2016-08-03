@@ -1,6 +1,6 @@
 文本控件对应的类是 eui.Label。eui.Label 继承自 egret.TextField，实现了 eui.UIComponent 接口。因此它不仅拥有基本的文本功能(egret.TextField)，还有自动布局功能(eui.UIComponent)。
 
-基本的文本使用请参考 [Egret Engine - 处理文本](http://edn.egret.com/cn/index.php/article/index/id/141)
+基本的文本使用请参考 [Egret Engine - 处理文本](../../../../Engine2D/textField/createText/)
 
 使用方式也非常简单，比如下面的例子：
 ```  TypeScript

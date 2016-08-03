@@ -23,7 +23,7 @@ class Main extends egret.Sprite{
 }
 ```
 
-Main是程序的入口类，我们在Main被添加到舞台时，开始创建一系列的子项:首先要创建一个UILayer，它是UI的根容器，它的宽高会自动跟舞台宽高保持一致，起到最外层的自适应作用。然后我们使用EXML快速实例化一些列的组件，简便起见，这里直接将EXML的内容嵌入到代码中，（请参考[如何使用EXML](http://edn.egret.com/cn/index.php/article/index/id/512)的 `嵌入EXML到代码` 一节）。下面简单介绍EXML里实例化的内容：
+Main是程序的入口类，我们在Main被添加到舞台时，开始创建一系列的子项:首先要创建一个UILayer，它是UI的根容器，它的宽高会自动跟舞台宽高保持一致，起到最外层的自适应作用。然后我们使用EXML快速实例化一些列的组件，简便起见，这里直接将EXML的内容嵌入到代码中，（请参考[如何使用EXML](../../../../extension/EUI/EXML/useEXML/)的 `嵌入EXML到代码` 一节）。下面简单介绍EXML里实例化的内容：
 
 (1)标题栏背景:显式设置高度为90像素，宽度设置为父级容器的100%(percentWidth = 100)，也就是始终跟uiStage一样宽。
 
