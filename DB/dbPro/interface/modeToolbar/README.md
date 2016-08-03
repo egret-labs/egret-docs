@@ -1,0 +1,1 @@
+<p><span style="font-size: 14px;">编辑模式切换工具</span></p><p><img alt="模式切换.png" src="http://sedn.egret.com/ueditor/20150609/5576b75a1e9f9.png" title="模式切换.png"/></p><p><span style="font-size: 14px;">编辑模式切换控件用于切换骨架装配和动画制作。</span></p>
