@@ -12,10 +12,10 @@
 
 
 ### 精灵条件
-精灵组件无特有条件，适用所有通用条件。参见：[通用条件](../../../../Lakeshore/manual/commonElements/conditions/)
+精灵组件无特有条件，适用所有通用条件。参见：[通用条件](../../../../Lakeshore/manual/commonElements/conditions/README.md)
 
 ------------
 
 
 ### 精灵动作
-精灵组件无特有动作，适用所有通用动作。参见：[通用动作](../../../../Lakeshore/manual/commonElements/action/)
+精灵组件无特有动作，适用所有通用动作。参见：[通用动作](../../../../Lakeshore/manual/commonElements/action/README.md)

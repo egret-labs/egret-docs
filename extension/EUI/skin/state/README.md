@@ -47,7 +47,7 @@ ButtonSkin.exml
     <e:Image source="image/button_disabled.png" includeIn="disabled" width="100%" height="100%"/> 
     <e:Label id="labelDisplay" left="20" right="20" top="10" bottom="10"/> 
 </e:Skin>```
-这个EXML里声明了 "up,down,disabled" 三种视图状态名，并放置了三张不同的背景图片，分别只在三个状态中显示。EXML内视图状态的具体用法可以参考 [EXML基本语法(二)](../../../../extension/EUI/EXML/syntax2/) 的视图状态一节。当逻辑组件上接收到触摸按下事件时，就会触发invalidateState()方法，从而触发getCurrentState()方法，我们在这里面根据当前的状态返回了"down"字符串，ButtonSkin.exml接受到"down"状态后就会只显示button_down.png那张图片，隐藏其余图片。
+这个EXML里声明了 "up,down,disabled" 三种视图状态名，并放置了三张不同的背景图片，分别只在三个状态中显示。EXML内视图状态的具体用法可以参考 [EXML基本语法(二)](../../../../extension/EUI/EXML/syntax2/README.md) 的视图状态一节。当逻辑组件上接收到触摸按下事件时，就会触发invalidateState()方法，从而触发getCurrentState()方法，我们在这里面根据当前的状态返回了"down"字符串，ButtonSkin.exml接受到"down"状态后就会只显示button_down.png那张图片，隐藏其余图片。
 
 可以看出自定义逻辑组件中扩展视图状态的方法就是使用invalidateState()和getCurrentState()这一对方法。这种方法通常用于标准组件内的实现。我们还提供了一种在组件外快速设置视图状态的方法。就是直接对组件的currentState属性赋值即可，例如：`button.currentState = "down"；`
 

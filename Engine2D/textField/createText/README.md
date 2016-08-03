@@ -32,7 +32,7 @@ label.text = "这是一个文本";
 
 我们的内容设置为 “这是一个文本”。
 
-由于 TextField 也继承自 DisplayObject （ 你可以参考[视觉编程](../../../Engine2D/displayObject/visualProgram/) 这篇文档，了解显示对象继承关系）,我们可以直接将 TextField 对象添加到显示列表中，如下面代码：
+由于 TextField 也继承自 DisplayObject （ 你可以参考[视觉编程](../../../Engine2D/displayObject/visualProgram/README.md) 这篇文档，了解显示对象继承关系）,我们可以直接将 TextField 对象添加到显示列表中，如下面代码：
 
 ```
 this.addChild( label );

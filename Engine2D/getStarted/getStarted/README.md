@@ -28,7 +28,7 @@ Egret 采用 TypeScript 进行编程，它是 JavaScript 的一个超集，而�
 
 ### 打开项目
 
-[前一章](../../../Engine2D/getStarted/helloWorld)我们已经建立了一个HelloWorld项目，我们就以此为基础，用Wing来打开该项目。启动Wing程序，菜单选择导入项目：
+[前一章](../../../Engine2D/getStarted/helloWorld/README.md)我们已经建立了一个HelloWorld项目，我们就以此为基础，用Wing来打开该项目。启动Wing程序，菜单选择导入项目：
 
 ![](568e421f6b918.jpg)
 
@@ -589,7 +589,7 @@ egret.Tween.get( hulk ).to( { scaleX:.4, scaleY:.4 }, 500, egret.Ease.circIn ).t
 
 注意，以上三个步骤的代码分别写在之前`switch-case`的三个`case`中。
 
-**注意** 在 Egret 2.5 之前的版本中，Tween包含在 egret 核心中。在 Egret 2.5 中，tween成为一个单独的模块。对于不需要此功能的项目可以去掉该模块。项目模块化配置可以参考：[项目配置文件说明](../../../Engine2D/projectConfig/configFile/) 。
+**注意** 在 Egret 2.5 之前的版本中，Tween包含在 egret 核心中。在 Egret 2.5 中，tween成为一个单独的模块。对于不需要此功能的项目可以去掉该模块。项目模块化配置可以参考：[项目配置文件说明](../../../Engine2D/projectConfig/configFile/README.md) 。
 
 ### 加入声音
 
@@ -628,7 +628,7 @@ var channel:egret.SoundChannel = sound.play(0,1);
 
 ### 常规网络通讯
 
-**注意** 在 Egret 2.5 中，这部分内容包括在`game`兼容扩展库中，若要使用该部分内容，请确保项目中包括了`game`扩展库。项目模块化配置可以参考：[项目配置文件说明](../../../Engine2D/projectConfig/configFile/)。
+**注意** 在 Egret 2.5 中，这部分内容包括在`game`兼容扩展库中，若要使用该部分内容，请确保项目中包括了`game`扩展库。项目模块化配置可以参考：[项目配置文件说明](../../../Engine2D/projectConfig/configFile/README.md)。
 
 在游戏开发项目中，数据的通讯无疑是不可或缺的因素。
 

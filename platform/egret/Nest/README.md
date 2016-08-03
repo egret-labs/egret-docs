@@ -2,7 +2,7 @@
 
 * nest [下载地址](https://github.com/egret-labs/Nest) 
 
-	egret 引擎：下载完后按照 [第三方库接入流程](../../../extension/threes/instructions/) 将Nest添加到项目中，path 指向到 ```nest/libsrc``` 下。
+	egret 引擎：下载完后按照 [第三方库接入流程](../../../extension/threes/instructions/README.md) 将Nest添加到项目中，path 指向到 ```nest/libsrc``` 下。
 
 	非 egret 引擎：下载完后，请将 ```libsrc/bin/nest/nest.min.js``` 文件按普通 js 一样加入到项目中。
 

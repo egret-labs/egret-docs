@@ -22,7 +22,7 @@ default.res.json 中 resources 节点下配置的每个资源加载项，在第�
 
 ## Native版本控制
 
-native涉及到[热更新机制](../../../Engine2D/native/hotUpdate/)，由于热更新机制每次资源更新后，会产生一个临时的本地命名，所以 RES 模块提供了两个方法用户处理版本控制。
+native涉及到[热更新机制](../../../Engine2D/native/hotUpdate/README.md)，由于热更新机制每次资源更新后，会产生一个临时的本地命名，所以 RES 模块提供了两个方法用户处理版本控制。
 
 
 正常情况下，代码一般放置于 onAddToStage 方法中：

@@ -8,7 +8,7 @@ EXMl现在已经支持了数据绑定功能，数据绑定相当于是给静态�
 
 注意目前数据绑定只支持属性链访问，即`a.b.c.d.x`这种形式,还不支持直接声明复杂表达式的绑定。若遇到复杂表达式的情况，需要自行在外部完成转换，将最终计算结果赋值到数据对象上。
 
-使用数据绑定特性请参考：[数据容器](../../../../extension/EUI/dataCollection/dataGroup/)
+使用数据绑定特性请参考：[数据容器](../../../../extension/EUI/dataCollection/dataGroup/README.md)
 
 ### 内部类
 
@@ -55,4 +55,4 @@ MyGroup.exml
 
 ### 引用自定义组件
 
-请参考：[在EXML中使用自定义组件](../../../../extension/EUI/advancedSkills/useComponents/)
+请参考：[在EXML中使用自定义组件](../../../../extension/EUI/advancedSkills/useComponents/README.md)

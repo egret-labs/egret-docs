@@ -6,4 +6,4 @@
 mySprite.width = 50;
 mySprite.height = 100;
 ```
-更改显示对象的 height 或 width 会导致[缩放](../../../Engine2D/displayObject/scale/)对象。
+更改显示对象的 height 或 width 会导致[缩放](../../../Engine2D/displayObject/scale/README.md)对象。

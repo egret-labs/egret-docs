@@ -4,7 +4,7 @@
 
 #### 引擎与工具
 
-首先当然是获得 Egret Engine 了。可以在官网[下载](http://www.egret.com/products/engine.html)。安装过程很简单。如果需要的话可以参考具：[安装与部署](../../../Engine2D/projectConfig/installation/)和[引擎和工具的管理](../../../Engine2D/projectConfig/launcherManager/)。安装好后以后我们可以方便的管理 Egret 引擎和工具了。
+首先当然是获得 Egret Engine 了。可以在官网[下载](http://www.egret.com/products/engine.html)。安装过程很简单。如果需要的话可以参考具：[安装与部署](../../../Engine2D/projectConfig/installation/README.md)和[引擎和工具的管理](../../../Engine2D/projectConfig/launcherManager/README.md)。安装好后以后我们可以方便的管理 Egret 引擎和工具了。
 
 打开引擎管理工具，可以看到有工具选项卡，可以在这里找到 Egret Wing。Egret Wing 是针对 Egret 项目的 IDE。下面的教程都以 Egret Wing 来做演示。
 
@@ -50,7 +50,7 @@ Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超
 
 这里还可以选择舞台的背景颜色，可以根据项目的具体需要设定。如果舞台是空的情况下就会只显示该颜色。
 
-更多关于旋转和缩放模式的介绍可以参考：[缩放模式和旋转模式说明](../../../Engine2D/screenAdaptation/explanation/)
+更多关于旋转和缩放模式的介绍可以参考：[缩放模式和旋转模式说明](../../../Engine2D/screenAdaptation/explanation/README.md)
 
 当然这些设置都是可以更改的，下面将进一步介绍。
 
@@ -136,7 +136,7 @@ background: #888888;
 
 我们比较常用的设置就是添加模块和第三方库。
 
-具体的配置说明可以参考：[EgretProperties说明](../../../Engine2D/projectConfig/configFile/)
+具体的配置说明可以参考：[EgretProperties说明](../../../Engine2D/projectConfig/configFile/README.md)
 
 ### 调试项目
 

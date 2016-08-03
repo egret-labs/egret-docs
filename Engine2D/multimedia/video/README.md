@@ -15,7 +15,7 @@
 egret create VideoTest --type eui
 ```
 
-来创建默认的 EUI 项目。更多关于使用 EUI 方法参考:[EUI库 快速入门](../../../extension/EUI/getStarted/getStarted/)
+来创建默认的 EUI 项目。更多关于使用 EUI 方法参考:[EUI库 快速入门](../../../extension/EUI/getStarted/getStarted/README.md)
 
 ### 创建Video
 

@@ -18,7 +18,7 @@ egret-ios-support是Egret打包为原生ios APP的方案，你可以使用egret-
 
     * 打包iOS App需要：Objective-C、C++、Xcode
 
-尽管本文由部分内容覆盖 [Get Started](../../../Engine2D/getStarted/getStarted/)，但是还是强烈建议在阅读本文之前先阅读 [Get Started](../../../Engine2D/getStarted/getStarted/)
+尽管本文由部分内容覆盖 [Get Started](../../../Engine2D/getStarted/getStarted/README.md)，但是还是强烈建议在阅读本文之前先阅读 [Get Started](../../../Engine2D/getStarted/getStarted/README.md)
 
 ### 0、文档概述
 

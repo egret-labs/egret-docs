@@ -43,7 +43,7 @@ class ViewStackDemo extends eui.Group {
 
 
 ## TabBar
-ViewStack通常都同时配合导航条使用，这部分内容请参考 [选项卡](../../../../extension/EUI/dataCollection/tabBar/) 章节
+ViewStack通常都同时配合导航条使用，这部分内容请参考 [选项卡](../../../../extension/EUI/dataCollection/tabBar/README.md) 章节
 
 [8-2-stack-A]: /cn/data/upload/5608f2da1e4ac.png
 

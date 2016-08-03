@@ -108,5 +108,5 @@ egret build -e
 * [文档中心](http://edn.egret.com/cn/)  可以访问 Egret 教程视频示例和文档。EDN（Egret开发者中心），是为了更好的服务Egret开发者而建立的。你可以在EDN找到各种示例、视频、FAQ和大量文档、API及其用法。
 * [Egret论坛](http://bbs.egret.com/portal.php) 访问 Egret 社区。Egret社区是一个开放式的HTML5游戏开发交流社区，我们致力于为大家提供更好的交流环境。帮助开发者解决HTML5游戏开发中的种种技术问题。
 * [示例项目](https://github.com/egret-labs/egret-examples) 最新的 Egret 示例项目。其中包含 `CoreExample` `EUIExample` `GUIExample` 三个示例项目的完整源码和资源。可以通过根目录下的 `README` 文件来查看示例项目的用法。
-* [第三方库](https://github.com/egret-labs/egret-game-library) 最新的 Egret 官方提供的第三方库。使用第三方库可以参考[模块化配置和第三方库的使用方法](../../../extension/threes/instructions/)。
+* [第三方库](https://github.com/egret-labs/egret-game-library) 最新的 Egret 官方提供的第三方库。使用第三方库可以参考[模块化配置和第三方库的使用方法](../../../extension/threes/instructions/README.md)。
 * [Egret 源码](https://github.com/egret-labs/egret-core)  Egret 引擎的 GitHub 开源地址，可以在此获取到最新的 Egret 源码。欢迎大家给 Egret 打星。

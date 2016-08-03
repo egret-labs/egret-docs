@@ -6,7 +6,7 @@
 
 2、在项目中设置微信第三方库
 
-参考：[第三方库的使用方法](../../../extension/threes/instructions/)
+参考：[第三方库的使用方法](../../../extension/threes/instructions/README.md)
 
 2.1 将下载好的weixinapi文件放置在项目外的任意文件夹内。例如，新建一个testWeixin的egret项目，将weixinapi放置在其外的libsrc文件夹内，例如：
 
@@ -26,7 +26,7 @@ C:\wamp\www\egret\testWeixin
 
 2.2 配置项目内文件
 
-进入到 Egret 项目内，(如何新建 Egret项目详见：[Get Started](../../../Engine2D/getStarted/getStarted/)  或通过 egret wing 文件-- 新建egret 项目)。
+进入到 Egret 项目内，(如何新建 Egret项目详见：[Get Started](../../../Engine2D/getStarted/getStarted/README.md)  或通过 egret wing 文件-- 新建egret 项目)。
 
 ![](56b169b550020.png)
 

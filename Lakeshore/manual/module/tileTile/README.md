@@ -12,10 +12,10 @@
 
 
 ### 瓦片平铺条件
-瓦片平铺组件无特有条件，适用所有通用条件。参见：[通用条件](../../../../Lakeshore/manual/commonElements/conditions/)
+瓦片平铺组件无特有条件，适用所有通用条件。参见：[通用条件](../../../../Lakeshore/manual/commonElements/conditions/README.md)
 
 ------------
 
 
 ### 瓦片平铺动作
-瓦片平铺组件无特有动作，适用所有通用动作。参见：[通用动作](../../../../Lakeshore/manual/commonElements/action/)
+瓦片平铺组件无特有动作，适用所有通用动作。参见：[通用动作](../../../../Lakeshore/manual/commonElements/action/README.md)

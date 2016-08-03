@@ -12,7 +12,7 @@
 
 * 找到 js 调用 js 的方法。
 
-* 增加方法调用的声明。 请参考 [如何生成 .d.ts](../../../extension/threes/dts/) 。
+* 增加方法调用的声明。 请参考 [如何生成 .d.ts](../../../extension/threes/dts/README.md) 。
 
 ###### 示例
 
