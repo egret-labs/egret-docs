@@ -2,15 +2,83 @@
   {
     "children":[
       {
-        "filename":"/platform/weixin/weixin/",
-        "text":"微信平台接入",
-        "des":"微信平台接入相关文档",
+        "filename":"/Wing/2dImport/",
+        "text":"Egret 2D 项目向导",
+        "des":"Egret 2D 项目向导",
+        "in_use":true
+      },
+      {
+        "filename":"/Wing/guide/",
+        "text":"EgretWing3入门指南",
+        "des":"EgretWing3入门指南",
+        "in_use":true
+      },
+      {
+        "filename":"/Wing/base/",
+        "text":"Egret Wing 3.0 基础介绍",
+        "des":"Egret Wing 3.0 基础介绍",
+        "in_use":true
+      },
+      {
+        "filename":"/Wing/exml/",
+        "text":"EXML 可视化编辑器",
+        "des":"EXML 可视化编辑器",
+        "in_use":true
+      },
+      {
+        "filename":"/Wing/resdepot/",
+        "text":"资源编辑器（RES可视化编辑器）",
+        "des":"资源编辑器（RES可视化编辑器）",
+        "in_use":true
+      },
+      {
+        "filename":"/Wing/inspector/",
+        "text":"EgretWing Chrome调试",
+        "des":"EgretWing Chrome调试",
+        "in_use":true
+      },
+      {
+        "filename":"/Wing/publish/",
+        "text":"发布介绍",
+        "des":"发布介绍",
+        "in_use":true
+      },
+      {
+        "filename":"/Wing/weixin/",
+        "text":"Android/iOS 打包测试工具",
+        "des":"Android/iOS 打包测试工具",
+        "in_use":true
+      },
+      {
+        "filename":"/Wing/FTP/",
+        "text":"FTP工具介绍",
+        "des":"FTP工具介绍",
+        "in_use":true
+      },
+      {
+        "filename":"/Wing/buildBug/",
+        "text":"修复 Wing 3.0.6 之后 Egret build 报错的问题",
+        "des":"修复 Wing 3.0.6 之后 Egret build 报错的问题",
+        "in_use":true
+      },
+      {
+        "children":[
+        {
+          "filename":"/Wing/update/logs",
+          "text":"Egret Wing 3.0 更新日志",
+          "des":"Egret Wing 3.0 更新日志",
+          "in_use":true
+        }
+        ],
+        "isFolder":true,
+        "text":"更新日志",
+        "des":"更新日志",
         "in_use":true
       }
     ],
     "isFolder":true,
-    "text":"微信平台接入",
-    "des":"微信平台接入相关文档",
+    "text":"Wing",
+    "des":"Wing",
     "in_use":true
   }
 ]
