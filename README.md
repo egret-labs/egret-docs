@@ -418,6 +418,36 @@
 
 
 
+## Egret Wing说明文档
+
+#### Wing
+
+* [Egret 2D 项目向导](Wing/2dImport/README.md)
+
+* [EgretWing3入门指南](Wing/guide/README.md)
+
+* [Egret Wing 3.0 基础介绍](Wing/base/README.md)
+
+* [EXML 可视化编辑器](Wing/exml/README.md)
+
+* [资源编辑器（RES可视化编辑器）](Wing/resdepot/README.md)
+
+* [EgretWing Chrome调试](Wing/inspector/README.md)
+
+* [发布介绍](Wing/publish/README.md)
+
+* [Android/iOS 打包测试工具](Wing/weixin/README.md)
+
+* [FTP工具介绍](Wing/FTP/README.md)
+
+* [修复 Wing 3.0.6 之后 Egret build 报错的问题](Wing/buildBug/README.md)
+
+###### 更新日志
+
+* [Egret Wing 3.0 更新日志](Wing/update/logsREADME.md)
+
+
+
 ## DragonBones相关文档
 
 #### DragonBones Pro
