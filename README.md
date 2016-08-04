@@ -662,17 +662,25 @@
 
 ## Res Depot说明文档
 
-#### 使用手册
+#### ResDepot
 
-* [操作](tools/ResDepot/README.md)
+* [使用手册](tools/ResDepot/README.md)
+
+
+
+## Egret Inspector说明文档
+
+#### Inspector
+
+* [使用手册](tools/Inspector/README.md)
 
 
 
 ## Egret Feather说明文档
 
-#### 使用手册
+#### Feather
 
-* [界面](tools/Feather/README.md)
+* [使用手册](tools/Feather/README.md)
 
 
 
