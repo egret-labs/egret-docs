@@ -676,6 +676,34 @@
 
 
 
+## Egret Conversion说明文档
+
+#### Conversion
+
+* [产品白皮书](Conversion/whitePaper/README.md)
+
+* [新手入门](Conversion/guide/README.md)
+
+* [准备与安装](Conversion/installation/README.md)
+
+* [工具界面介绍](Conversion/introduction/README.md)
+
+* [导入示例项目](Conversion/importProj/README.md)
+
+* [API转换填充配置](Conversion/fillingConfiguration/README.md)
+
+* [SWF转换工具](Conversion/SWFTool/README.md)
+
+* [AS代码转换工具](Conversion/ASCodeTool/README.md)
+
+* [调试与运行](Conversion/debugger/README.md)
+
+* [报错处理](Conversion/errorDeal/README.md)
+
+* [常见问题](Conversion/questions/README.md)
+
+
+
 ## Egret Feather说明文档
 
 #### Feather

@@ -43,7 +43,7 @@ RES资源管理模块则支持将这些资源分组，在游戏开发时，开�
 
 * keys：表示这个资源组包含哪些资源，里面的逗号分隔的每一个字符串，都与“resource”下的资源name对应。同一个资源可以存在于多个资源组里。
 
-如果你有大量资源需要处理，编写配置文件，我们提供了可视化资源配置文件处理软件，可参考[Res Depot](http://edn.egret.com/cn/index.php?g=&m=article&a=index&id=234&terms1_id=73&terms2_id=74)
+如果你有大量资源需要处理，编写配置文件，我们提供了可视化资源配置文件处理软件，可参考[Res Depot](../../../tools/ResDepot/README.md)
 
 ## 载入资源加载配置
 
