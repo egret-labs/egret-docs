@@ -230,14 +230,6 @@
 
 
 
-## 3D引擎相关文档
-
-#### 微信平台接入
-
-* [微信平台接入](platform/weixin/weixin/README.md)
-
-
-
 ## Egret 扩展库相关文档
 
 #### 第三方库制作和使用方法
@@ -423,14 +415,6 @@
 #### 组件实体系统
 
 * [简介](extension/PhysicalSystemComponents/introduction/README.md)
-
-
-
-## Egret Wing说明文档
-
-#### 微信平台接入
-
-* [微信平台接入](platform/weixin/weixin/README.md)
 
 
 
@@ -678,41 +662,17 @@
 
 ## Res Depot说明文档
 
-#### 微信平台接入
+#### 使用手册
 
-* [微信平台接入](platform/weixin/weixin/README.md)
-
-
-
-## Texture Merger说明文档
-
-#### 微信平台接入
-
-* [微信平台接入](platform/weixin/weixin/README.md)
-
-
-
-## Egret Inspector说明文档
-
-#### 微信平台接入
-
-* [微信平台接入](platform/weixin/weixin/README.md)
-
-
-
-## Egret Conversion说明文档
-
-#### 微信平台接入
-
-* [微信平台接入](platform/weixin/weixin/README.md)
+* [操作](tools/ResDepot/README.md)
 
 
 
 ## Egret Feather说明文档
 
-#### 微信平台接入
+#### 使用手册
 
-* [微信平台接入](platform/weixin/weixin/README.md)
+* [界面](tools/Feather/README.md)
 
 
 
