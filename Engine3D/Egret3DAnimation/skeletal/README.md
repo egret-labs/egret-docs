@@ -14,7 +14,7 @@
 目前Egret3D骨骼动画是从3DSMax或Unity导出的，3DSMax使用量更大。     
 [这里](https://github.com/egret-labs/egret-3d/tree/master/ExportTools/3Dmax%20Export%20tool)有插件安装和使用的说明。       
 以 3DSMax 为例来说，最后导出的界面是：    
-![Egret3D-Exporter][]    
+![image](575cd8ceb9cf4.png)    
 下文中，统称为3D创作工具。
 
 ### 骨骼静态模型          
@@ -74,6 +74,3 @@ this.model.animation.skeletonAnimationController.play(clip.animationName);
 ```    
 其中的`clip`即为所需播放的骨骼动画剪辑`SkeletonAnimationClip`对象。
 
-
-
-[Egret3D-Exporter]: /cn/data/upload/asset/20160612/575cd8ceb9cf4.png

@@ -6,7 +6,7 @@
 ### 呈现UV精灵表动画      
 本节完整的测试项目，请使用Egret3D的官方例子库中：[UV精灵表动画例子](https://github.com/egret-labs/egret-3d/blob/master/Sample-wing/src/SampleUvSpriteSheet.ts)，可以运行`Sample-wing`项目，并修改`Main.ts`中的`sample`所在行为`var sample = new SampleUvSpriteSheet;`即可。            
 本例所用的精灵表纹理集图片为：   
-![UVSpriteSheet-Lion][]    
+![image](575cd8fe67128.png)    
 
 
 首先，创建一个UV精灵表对象：    
@@ -28,5 +28,3 @@ protected onLoadDiffuse(evt: egret3d.LoaderEvent3D) {
 	this.matPlane.diffuseTexture = evt.loader.data;
 }
 ```    
-
-[UVSpriteSheet-Lion]: /cn/data/upload/asset/20160612/575cd8fe67128.png
