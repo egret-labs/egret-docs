@@ -134,6 +134,17 @@
             
             "in_use":"true"
 
+         },
+          {
+
+            "filename":"EgretVS.json",
+
+            "des":"EgretVS说明文档",
+
+            "text":"EgretVS",
+            
+            "in_use":"true"
+
          }
          ],
 

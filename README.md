@@ -766,6 +766,14 @@
 
 
 
+## EgretVS说明文档
+
+#### EgretVS
+
+* [使用手册](tools/EgretVS/README.md)
+
+
+
 ## 平台接入相关文档
 
 #### 白鹭开放平台接入
