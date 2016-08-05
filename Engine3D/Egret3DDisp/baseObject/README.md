@@ -1,0 +1,16 @@
+# 基本显示对象
+
+
+- IRender：渲染接口
+- Camera3D：摄像机，继承自Object3D
+- Billboard：公告板，继承自Mesh
+- Entity：实体对象，继承自Object3D
+- Mesh：网格，实现IRender接口
+- Object3D：显示对象
+- Sky：天空盒，继承自Mesh
+- SphereSky：球形天空盒，继承自Mesh
+- Wireframe：渲染线框，继承自Mesh
+- LightBase：灯光基类
+- DirectLight：平行光
+- PointLight：点光源
+- SpotLight：聚光灯
