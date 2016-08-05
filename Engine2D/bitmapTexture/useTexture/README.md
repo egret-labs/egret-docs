@@ -2,7 +2,7 @@
 
 使用纹理集的好处很多，我们通过将大量的图片拼合为一张图片从而减少网络请求，原先加载数次的图片资源现在加载一次即可。 同时，在引擎渲染的时候也会较少IO读取，从而提高性能。
 
-Egret内置了纹理集的支持，在编写代码之前，我们需要先制作一张纹理集，具体使用的工具可以选择业内比较流行的 Texture Merger。 具体使用方法请参考[Texture Merger](http://edn.egret.com/cn/index.php?g=portal&m=article&a=index&id=238)。
+Egret内置了纹理集的支持，在编写代码之前，我们需要先制作一张纹理集，具体使用的工具可以选择业内比较流行的 Texture Merger。 具体使用方法请参考[Texture Merger](../../../tools/TextureMerger/README.md)。
 
 我们首先制作一张纹理集，拼合后的效果如下：
 

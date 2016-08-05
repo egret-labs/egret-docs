@@ -98,7 +98,7 @@
  - **preLaunchTask** 执行任务之前运行的任务。
  - **port** web服务器指定的端口号。
 
-[点击调试详情](http://edn.egret.com/cn/docs/page/952) 
+[点击调试详情](../../Wing/inspector/README.md) 
 		
 
 ## Egret Support 插件菜单
@@ -109,7 +109,7 @@
 	- 启动项目 等于在命令窗口输入egret startserver 
 - 编译引擎
 	- 编译当前项目引用的引擎，适用于自己修改了引擎代码
-- [发布Egret项目](http://edn.egret.com/cn/docs/page/955)
+- [发布Egret项目](../../Wing/publish/README.md)
 
 ## 目录结构介绍
 - wing项目目录	
@@ -186,7 +186,7 @@
 		
 		
 
-- 详细内容 [EXML可视化编辑](http://edn.egret.com/cn/docs/page/954) 
+- 详细内容 [EXML可视化编辑](../../Wing/exml/README.md) 
 
-### 资源管理 [点击详情](http://edn.egret.com/cn/docs/page/957) 
+### 资源管理 [点击详情](../../Wing/resdepot/README.md) 
 

@@ -44,7 +44,7 @@
         "in_use":true
       },
       {
-        "filename":"/Wing/weixin/",
+        "filename":"/Wing/packageTool/",
         "text":"Android/iOS 打包测试工具",
         "des":"Android/iOS 打包测试工具",
         "in_use":true
@@ -59,6 +59,56 @@
         "filename":"/Wing/buildBug/",
         "text":"修复 Wing 3.0.6 之后 Egret build 报错的问题",
         "des":"修复 Wing 3.0.6 之后 Egret build 报错的问题",
+        "in_use":true
+      },
+      {
+        "children":[
+        {
+          "filename":"/Wing/plugin/introduction/",
+          "text":"EgretWing插件项目",
+          "des":"EgretWing插件项目",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/plugin/helloWing/",
+          "text":"快速入门 - HelloWing",
+          "des":"快速入门 - HelloWing",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/plugin/configDes/",
+          "text":"插件描述文件",
+          "des":"插件描述文件",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/plugin/extendPoint/",
+          "text":"扩展点",
+          "des":"扩展点",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/plugin/activation/",
+          "text":"激活事件",
+          "des":"激活事件",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/plugin/submit/",
+          "text":"提交插件",
+          "des":"提交插件",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/plugin/debug/",
+          "text":"调试插件",
+          "des":"调试插件",
+          "in_use":true
+        }
+        ],
+        "isFolder":true,
+        "text":"插件开发",
+        "des":"插件开发",
         "in_use":true
       },
       {

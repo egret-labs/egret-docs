@@ -436,11 +436,27 @@
 
 * [发布介绍](Wing/publish/README.md)
 
-* [Android/iOS 打包测试工具](Wing/weixin/README.md)
+* [Android/iOS 打包测试工具](Wing/packageTool/README.md)
 
 * [FTP工具介绍](Wing/FTP/README.md)
 
 * [修复 Wing 3.0.6 之后 Egret build 报错的问题](Wing/buildBug/README.md)
+
+###### 插件开发
+
+* [EgretWing插件项目](Wing/plugin/introduction/README.md)
+
+* [快速入门 - HelloWing](Wing/plugin/helloWing/README.md)
+
+* [插件描述文件](Wing/plugin/configDes/README.md)
+
+* [扩展点](Wing/plugin/extendPoint/README.md)
+
+* [激活事件](Wing/plugin/activation/README.md)
+
+* [提交插件](Wing/plugin/submit/README.md)
+
+* [调试插件](Wing/plugin/debug/README.md)
 
 ###### 更新日志
 
@@ -695,6 +711,14 @@
 #### ResDepot
 
 * [使用手册](tools/ResDepot/README.md)
+
+
+
+## Texture Merger说明文档
+
+#### Texture Merger
+
+* [使用手册](tools/TextureMerger/README.md)
 
 
 
