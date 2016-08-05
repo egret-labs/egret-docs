@@ -1,7 +1,21 @@
 [
   {
     "children":[
-      {
+	   {
+        "children":[
+        {
+          "filename":"/Wing/update/logs/",
+          "text":"Egret Wing 3.0 更新日志",
+          "des":"Egret Wing 3.0 更新日志",
+          "in_use":true
+        }
+        ],
+        "isFolder":true,
+        "text":"更新日志",
+        "des":"更新日志",
+        "in_use":true
+      },
+	  {
         "filename":"/Wing/2dImport/",
         "text":"Egret 2D 项目向导",
         "des":"Egret 2D 项目向导",
@@ -109,20 +123,6 @@
         "isFolder":true,
         "text":"插件开发",
         "des":"插件开发",
-        "in_use":true
-      },
-      {
-        "children":[
-        {
-          "filename":"/Wing/update/logs",
-          "text":"Egret Wing 3.0 更新日志",
-          "des":"Egret Wing 3.0 更新日志",
-          "in_use":true
-        }
-        ],
-        "isFolder":true,
-        "text":"更新日志",
-        "des":"更新日志",
         "in_use":true
       }
     ],
