@@ -1,4 +1,4 @@
-##概述
+## 概述
 测试Egret环境： Egret 1.5.0，Firefox浏览器。
 
 >本文适用于 Egret 2.5 之前的引擎版本。
@@ -13,7 +13,7 @@
 
 其中加入正方形网格，是为了便于检查其在不同适配模式的宽高比例是否能保持，或者说比例失真。
 
-##测试准备工作
+## 测试准备工作
 新建Egret项目，在其launcher/egret_loader.js中，我们修改设计尺寸为560*560：
 
 ```
@@ -87,7 +87,7 @@ this.addChild( tx );
 
 基本都准备好了，然后我们对几种适配模式逐一测试。
 
-##EXACT_FIT适配模式
+## EXACT_FIT适配模式
 在launcher/egret_loader.js中，修改context.stage.scaleMode为EXACT_FIT：
 
 ```
@@ -112,7 +112,7 @@ EXACT_FIT适配模式效果：
 从易用性来看，EXACT_FIT适配模式也许可以得到较高星，但我们做项目始终要以产品为导向。那么，从产品角度来看EXACT_FIT适配模式推荐指数：★☆☆☆☆。
 如果产品阶段不需要该模式，那么调试阶段也同样不需要。
 
-##NO_SCALE适配模式：
+## NO_SCALE适配模式：
 在launcher/egret_loader.js中，修改context.stage.scaleMode为NO_SCALE：
 
 ```
@@ -138,7 +138,7 @@ NO_SCALE模式原理图解：
 
 那么，从产品角度来看NO_SCALE适配模式推荐指数：☆☆☆☆☆！
 
-##SHOW_ALL适配模式：
+## SHOW_ALL适配模式：
 在launcher/egret_loader.js中，修改context.stage.scaleMode为SHOW_ALL：
 
 ```
@@ -162,7 +162,7 @@ SHOW_ALL模式原理图解：
 
 前两种适配模式的产品价值都几乎为零，到这里终于算是一种产品适用的适配模式了。但是由于黑边问题的存在，我们还不能给这款适配模式满分。那么，从产品角度来看SHOW_ALL适配模式推荐指数：★★★★☆。
 
-##NO_BORDER适配模式：
+## NO_BORDER适配模式：
 在launcher/egret_loader.js中，修改context.stage.scaleMode为NO_BORDER：
 
 ```
@@ -190,7 +190,7 @@ NO_BORDER适配模式的显示效果：
 
 但是在这种模式下，你可能要花更多精力，来维护UI动态布局和显示内容的完整性。
 
-##总结
+## 总结
 最后，来一个简明的总结是必要的：
 
 ![](5566955f55a0c.jpg)

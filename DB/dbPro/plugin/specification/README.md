@@ -1,13 +1,13 @@
-#概述
+# 概述
 DragonBonesPro4.2 开放了插件规范，并实现了导入插件的管理，目的是让用户可以方便的将任意格式动画数据通过插件导入到DragbonesPro中来进行二次编辑，并生成DragonBones格式动画，从而在包括Egret在内的任意的支持DragonBones的引擎中运行动画。本文会介绍编写插件的基本规范，以及目前版本中如何编写一个DragonBones的导入插件。
 
-#插件命名规范
+# 插件命名规范
 插件统一扩展名为expl，本质是个zip包，内部至少需要包含*.excfg，*.png，*.js，3个文件。其中：
 - *.excfg为json格式的插件配置文件。
 - *.png为插件的图标，标准尺寸为32x32。
 - *.js文件为插件的主脚本文件。不同类型的插件，js脚本的内容标准可能不同。例如DBPro的导入插件，需要继承egretPluginSdk.js中的DBImportTemplate类，重写所有的方法。（注：egretPluginSdk 是用于编写egret工具链中可扩展插件的框架，目前只包含DBPro的导入插件需要的基础类和方法。egretPluginSdk.js在DragonBonesPro安装目录下的plugins目录下）
 
-####插件编写规范
+#### 插件编写规范
 *.excfg 文件格式具体如下，例如Spine插件
 ``` TypeScript
 {
@@ -109,5 +109,5 @@ var main = (function (_super) {
 
 最后，DragonBonesPro中自带的两个插件就在安装目录的plugins文件夹中，“Cocos 1.x Importer.expl” 和“Spine 2.x Importer.expl”可以做为完整的例子用于参考。
 
-#插件的安装使用：
+# 插件的安装使用：
 目前DragonBonesPro插件的安装方式是在帮助菜单下打开插件管理面板，点击右上角安装插件，选择expl格式的文件，即可完成安装。接下来的版本会支持双击安装。
