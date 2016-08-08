@@ -1,4 +1,3 @@
-# HoverController控制相机
 
 `HoverController`相机控制器与`LookAtController`非常相似。你可以通过`HoverController`进行摄像机的绕点旋转功能。但与`LookAtController`不同点在于`HoverController`允许你对绕点旋转的角度和缓动速度进行控制。
 

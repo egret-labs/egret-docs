@@ -1,5 +1,3 @@
-# 基本显示对象
-
 
 - IRender：渲染接口
 - Camera3D：摄像机，继承自Object3D

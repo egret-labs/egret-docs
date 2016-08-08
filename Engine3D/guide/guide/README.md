@@ -1,4 +1,3 @@
-# Egret3D入门
 
 ## Egret3D 基础
 

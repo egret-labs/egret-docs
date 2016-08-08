@@ -1,5 +1,3 @@
-# Get Started
-
 
 ## IDE
 

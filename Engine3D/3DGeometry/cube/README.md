@@ -1,4 +1,3 @@
-# Egret3D中的立方体
 
 Egret3D中的立方体由`CubeGeometry`类负责实现，通过`CubeGeometry`可快速创建一个宽度，高度和深度均为80的立方体模型。
 

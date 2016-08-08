@@ -1,4 +1,3 @@
-# 3ds max插件使用说明 #
 ## 需要的环境 ##
 1.安装3dmax 2012 64或32 版本  
 2.安装vs2013 运行库 http://www.microsoft.com/zh-CN/download/details.aspx?id=40784  

@@ -1,4 +1,3 @@
-## AudioManager的使用
 
 AudioManager 类允许您在应用程序中 播放 HTML5 Audio 和 Web Audio。它集合了加载声音文件、播放2D或者3D效果方法，可以使我们方便的控制声音播放。
 

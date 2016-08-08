@@ -1,4 +1,3 @@
-# Egret3D中的平面
 
 Egret3D中的几何体中的平面几何体由`PlaneGeometry`类实现。通过`PlaneGeometry`可以快速创建一个默认边长为500的正方形平面。下面的代码，展示了如何创建一个正方形平面。
 

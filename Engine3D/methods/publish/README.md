@@ -1,4 +1,3 @@
-## 发布Egret3D项目
 ![alt](575e573a75404.jpg)
 > `使用插件`->`Egret Support`->`发布Egret项目`即可
 

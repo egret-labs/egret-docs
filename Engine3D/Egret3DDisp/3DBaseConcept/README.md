@@ -1,4 +1,3 @@
-#3D显示对象的基本概念
 
 如果你熟悉Egret 2D，那么你应该对DisplayObject非常的熟悉，在Egret 2D中所有的显示对象均继承自DisplayObject。Egret 3D引擎中也包含显示对象的概念，但于2D有很大的不同。本小节针对3D中的显示对象做整体讲解。
 
