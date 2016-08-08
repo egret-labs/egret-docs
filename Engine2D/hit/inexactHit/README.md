@@ -45,7 +45,7 @@ class HitTest extends egret.DisplayObjectContainer
 
 编译并测试上面的代码后，我们可以看到效果如图：
 
-![](5565345c3987a.png)
+![](5565345c3d61d.png)
 
 文本中返回碰撞的结果，显示为 `true`,表示发生了碰撞。这里示例中执行碰撞检测的语句是
 
