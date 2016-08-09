@@ -39,8 +39,7 @@ class ViewStackDemo extends eui.Group {
 
 可以看到 ViewStack 中的两个按钮按照设定的间隔自动变换的效果： 
 
-![][5608f2da1e4ac.png]  ![][5608f2da5e32a.png]
-
+![](5608f2da1e4ac.png)  ![](5608f2da5e32a.png)
 
 ### TabBar
 ViewStack通常都同时配合导航条使用，这部分内容请参考 [选项卡](../../../../extension/EUI/dataCollection/tabBar/README.md) 章节
