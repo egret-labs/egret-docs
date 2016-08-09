@@ -1,9 +1,4 @@
-
-## Egret3D 基础
-
 > Egret3D 有几个基本的元素，基本上会围绕这些元素节点做引擎结构 
-
-### Egret3D主要元素
 
 #### Egret3DCanvas
 
