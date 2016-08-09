@@ -1,4 +1,4 @@
-* MouseEvent3D（pc 使用）：是引擎中所有可操作鼠标事件节点的事件类型标记。只能作用于 egret3d.Input。
+MouseEvent3D（pc 使用）：是引擎中所有可操作鼠标事件节点的事件类型标记。只能作用于 egret3d.Input。
 
 示例：
 

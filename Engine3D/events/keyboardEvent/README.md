@@ -1,5 +1,4 @@
-
-* KeyEvent3D：按键事件，只能作用于 egret3d.Input。
+KeyEvent3D：按键事件，只能作用于 egret3d.Input。
 
 示例：
 
