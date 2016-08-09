@@ -1,5 +1,3 @@
-### 常用事件
-  
 * Event3D
 	* egret3d.Event3D.ENTER_FRAME：帧事件。即每帧都会触发的事件。
 	
