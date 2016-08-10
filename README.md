@@ -530,15 +530,13 @@
 
 ## Egret Wing说明文档
 
-#### Wing
-
-###### 更新日志
+#### 更新日志
 
 * [Egret Wing 3.0 更新日志](Wing/update/logs/README.md)
 
 * [修复 Wing 3.0.6 之后 Egret build 报错的问题](Wing/buildBug/README.md)
 
-###### 入门介绍
+#### 入门介绍
 
 * [Egret 2D 项目向导](Wing/2dImport/README.md)
 
@@ -546,7 +544,7 @@
 
 * [Egret Wing 3.0 基础介绍](Wing/base/README.md)
 
-###### 界面
+#### 界面
 
 * [调试控制台](Wing/view/debugger/README.md)
 
@@ -554,11 +552,11 @@
 
 * [命令面板](Wing/view/command/README.md)
 
-###### 快捷键
+#### 快捷键
 
 * [快捷键设置](Wing/keys/setting/README.md)
 
-###### 编辑器
+#### 编辑器
 
 * [代码编辑器](Wing/editor/code/README.md)
 
@@ -566,7 +564,7 @@
 
 * [资源编辑器](Wing/editor/resdepot/README.md)
 
-###### 功能
+#### 功能
 
 * [FTP](Wing/features/FTP/README.md)
 
@@ -584,13 +582,13 @@
 
 * [终端](Wing/features/terminal/README.md)
 
-###### 调试
+#### 调试
 
 * [Chrome联机调试](Wing/debug/inspector/README.md)
 
 * [移动平台打包测试](Wing/debug/packageTool/README.md)
 
-###### 插件开发
+#### 插件开发
 
 * [EgretWing插件项目](Wing/plugin/introduction/README.md)
 
