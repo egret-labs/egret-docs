@@ -14,8 +14,6 @@
 
 * [引擎和工具的管理](Engine2D/projectConfig/launcherManager/README.md)
 
-* [启动器说明](Engine2D/projectConfig/startDescription/README.md)
-
 * [命令行手册](Engine2D/projectConfig/cmdManual/README.md)
 
 * [入口文件说明](Engine2D/projectConfig/indexFile/README.md)
@@ -46,8 +44,6 @@
 
 * [旋转](Engine2D/displayObject/rotation/README.md)
 
-* [斜切](Engine2D/displayObject/miter/README.md)
-
 #### 显示容器
 
 * [显示容器的概念与实现](Engine2D/displayObjecContainer/concept/README.md)
@@ -70,8 +66,6 @@
 
 * [绘制圆弧](Engine2D/vectorDrawing/drawArc/README.md)
 
-* [Graphics Arc 高级使用](Engine2D/vectorDrawing/useDrawCurves/README.md)
-
 * [多个形状的绘制](Engine2D/vectorDrawing/drawShapes/README.md)
 
 #### 遮罩
@@ -83,8 +77,6 @@
 * [非精确碰撞检测](Engine2D/hit/inexactHit/README.md)
 
 * [精确碰撞检测](Engine2D/hit/accurateHit/README.md)
-
-* [包围盒碰撞检测](Engine2D/hit/boundingBoxHit/README.md)
 
 #### 文本
 
@@ -140,29 +132,15 @@
 
 * [截屏功能](Engine2D/bitmapTexture/screenshots/README.md)
 
-#### 混合模式
-
-* [NORMAL](Engine2D/mixedMode/normal/README.md)
-
-* [ADD](Engine2D/mixedMode/add/README.md)
-
-* [ERASE](Engine2D/mixedMode/erase/README.md)
-
 #### 滤镜
-
-* [发光滤镜](Engine2D/filter/glowFilter/README.md)
 
 * [颜色矩阵滤镜](Engine2D/filter/colorMatrixFilter/README.md)
 
 * [模糊滤镜](Engine2D/filter/blurFilter/README.md)
 
-* [投影滤镜](Engine2D/filter/shadowFilter/README.md)
-
 #### 时间控制
 
 * [Timer计时器](Engine2D/timeControl/timer/README.md)
-
-* [Tick心跳](Engine2D/timeControl/tick/README.md)
 
 * [帧事件](Engine2D/timeControl/enterFrame/README.md)
 
@@ -198,12 +176,6 @@
 
 * [FPS 面板](Engine2D/debug/fpsPanel/README.md)
 
-* [性能优化](Engine2D/debug/performanceOptimization/README.md)
-
-#### 调用原生JS
-
-* [ts 与 js 互调](Engine2D/callJS/tsCallJs/README.md)
-
 #### 原生支持
 
 * [原生横屏设置](Engine2D/native/horizontalScreen/README.md)
@@ -217,8 +189,6 @@
 * [接入 QuickSDK](Engine2D/native/quickSDK/README.md)
 
 #### 打包发布
-
-* [打包HTML5](Engine2D/publish/publishH5/README.md)
 
 * [打包runtime](Engine2D/publish/publishRuntime/README.md)
 
@@ -566,25 +536,59 @@
 
 * [Egret Wing 3.0 更新日志](Wing/update/logs/README.md)
 
+* [修复 Wing 3.0.6 之后 Egret build 报错的问题](Wing/buildBug/README.md)
+
+###### 入门介绍
+
 * [Egret 2D 项目向导](Wing/2dImport/README.md)
 
 * [EgretWing3入门指南](Wing/guide/README.md)
 
 * [Egret Wing 3.0 基础介绍](Wing/base/README.md)
 
-* [EXML 可视化编辑器](Wing/exml/README.md)
+###### 界面
 
-* [资源编辑器（RES可视化编辑器）](Wing/resdepot/README.md)
+* [调试控制台](Wing/view/debugger/README.md)
 
-* [EgretWing Chrome调试](Wing/inspector/README.md)
+* [输出面板](Wing/view/console/README.md)
 
-* [发布介绍](Wing/publish/README.md)
+* [命令面板](Wing/view/command/README.md)
 
-* [Android/iOS 打包测试工具](Wing/packageTool/README.md)
+###### 快捷键
 
-* [FTP工具介绍](Wing/FTP/README.md)
+* [快捷键设置](Wing/keys/setting/README.md)
 
-* [修复 Wing 3.0.6 之后 Egret build 报错的问题](Wing/buildBug/README.md)
+###### 编辑器
+
+* [代码编辑器](Wing/editor/code/README.md)
+
+* [EXML可视化编辑器](Wing/editor/exml/README.md)
+
+* [资源编辑器](Wing/editor/resdepot/README.md)
+
+###### 功能
+
+* [FTP](Wing/features/FTP/README.md)
+
+* [GIT](Wing/features/GIT/README.md)
+
+* [用户设置和工作空间设置](Wing/features/userAndSpace/README.md)
+
+* [任务配置](Wing/features/task/README.md)
+
+* [启动配置](Wing/features/run/README.md)
+
+* [文件操作](Wing/features/file/README.md)
+
+* [全局搜索](Wing/features/search/README.md)
+
+* [终端](Wing/features/terminal/README.md)
+
+###### 调试
+
+* [Chrome联机调试](Wing/debug/inspector/README.md)
+
+* [移动平台打包测试](Wing/debug/packageTool/README.md)
 
 ###### 插件开发
 
@@ -622,8 +626,6 @@
 
 * [模式切换工具](DB/dbPro/interface/modeToolbar/README.md)
 
-* [显示继承工具](DB/dbPro/interface/inheritToolbar/README.md)
-
 * [场景树面板](DB/dbPro/interface/sceneTreePanel/README.md)
 
 * [变换面板](DB/dbPro/interface/transformPanel/README.md)
@@ -656,99 +658,11 @@
 
 * [继承](DB/dbPro/basicConcept/inherit/README.md)
 
-###### 创建项目
-
-* [创建骨骼动画项目](DB/dbPro/createProject/skeletalAnimation/README.md)
-
-* [创建普通动画项目](DB/dbPro/createProject/commonAnimation/README.md)
-
-* [创建交互动漫项目](DB/dbPro/createProject/interactiveAnimation/README.md)
-
-###### 动画制作
-
-* [关键帧操作（视频）](DB/dbPro/animation/keyframe/README.md)
-
-* [制作骨骼动画（视频）](DB/dbPro/animation/productionSkeletalAnimation/README.md)
-
-* [骨架与骨骼操作（视频）](DB/dbPro/animation/skeletonOperation/README.md)
-
-* [骨架装配模式与动画制作模式（视频）](DB/dbPro/animation/mode/README.md)
-
-* [预览动画 （视频）](DB/dbPro/animation/preview/README.md)
-
-###### 高级功能
-
-* [洋葱皮](DB/dbPro/advancedFeatures/yangCongPi/README.md)
-
-* [曲线编辑器](DB/dbPro/advancedFeatures/curveEditor/README.md)
-
-* [IK约束](DB/dbPro/advancedFeatures/IK/README.md)
-
-* [网格](DB/dbPro/advancedFeatures/grid/README.md)
-
-* [蒙皮权重](DB/dbPro/advancedFeatures/skinWeights/README.md)
-
-###### 导入
-
-* [导入zip包项目](DB/dbPro/import/importZip/README.md)
-
-* [导入项目文件夹](DB/dbPro/import/importFolder/README.md)
-
-* [导入集成数据PNG](DB/dbPro/import/importPNG/README.md)
-
-* [导入PhotoShop设计图](DB/dbPro/import/importPSD/README.md)
-
-* [导入Cocos、Spine项目](DB/dbPro/import/importCosos/README.md)
-
-* [命令行导入](DB/dbPro/import/importCommandLine/README.md)
-
-###### 导出
-
-* [导出动画数据](DB/dbPro/export/exportAnimation/README.md)
-
-* [导出HTML网页](DB/dbPro/export/exportHTML/README.md)
-
-###### 插件
-
-* [插件管理](DB/dbPro/plugin/pluginManager/README.md)
-
-* [插件开发规范](DB/dbPro/plugin/specification/README.md)
-
-#### DragonBones 程序库
-
-* [数据格式说明](DB/dbLibs/dataFormat/README.md)
-
-* [创建项目](DB/dbLibs/createProject/README.md)
-
-* [创建骨骼动画](DB/dbLibs/createAnimation/README.md)
-
-* [多人物动画](DB/dbLibs/morePeopleAnimation/README.md)
-
-* [控制骨骼运动](DB/dbLibs/motionControlskeleton/README.md)
-
-* [改变动画速度](DB/dbLibs/animationSpeed/README.md)
-
-* [动画遮罩与混合](DB/dbLibs/maskAndMixed/README.md)
-
-* [动画拷贝](DB/dbLibs/copy/README.md)
-
-* [骨骼动画事件](DB/dbLibs/events/README.md)
-
-* [极速模式](DB/dbLibs/speedMode/README.md)
-
 
 
 ## Lakeshore相关文档
 
 #### 使用手册
-
-###### 安装
-
-* [安装](Lakeshore/manual/installation/installation/README.md)
-
-###### 界面
-
-* [主界面](Lakeshore/manual/interface/MainInterface/README.md)
 
 ###### 基本概念
 
@@ -821,28 +735,6 @@
 * [微信](Lakeshore/manual/module/weixin/README.md)
 
 * [函数](Lakeshore/manual/module/function/README.md)
-
-###### 项目设置
-
-* [屏幕适配](Lakeshore/manual/projectSettings/adaptation/README.md)
-
-* [FPS显示](Lakeshore/manual/projectSettings/fps/README.md)
-
-* [项目名称](Lakeshore/manual/projectSettings/projectName/README.md)
-
-* [设置起始场景](Lakeshore/manual/projectSettings/startScene/README.md)
-
-* [场景尺寸](Lakeshore/manual/projectSettings/sceneSize/README.md)
-
-* [图层名](Lakeshore/manual/projectSettings/layerName/README.md)
-
-###### 示例项目
-
-* [新建项目](Lakeshore/manual/example/newProject/README.md)
-
-* [打飞机项目](Lakeshore/manual/example/dafeiji/README.md)
-
-* [添加微信分享](Lakeshore/manual/example/weixinShare/README.md)
 
 
 

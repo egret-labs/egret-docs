@@ -1,6 +1,6 @@
-# Android/iOS 打包测试工具
+
 ## 功能简介：
-- 该插件可以快速方便地在对应移动平台下进行工程&lt;font color=red&gt;打包测试&lt;/font&gt;- 是对Egret EDN中[iOS APP打包方案](../../Engine2D/publish/publishIOS/README.md), [Android APP打包](../../Engine2D/publish/publishAndroid/README.md)中打包过程的集成
+- 该插件可以快速方便地在对应移动平台下进行工程&lt;font color=red&gt;打包测试&lt;/font&gt;- 是对Egret EDN中[iOS APP打包方案](../../../Engine2D/publish/publishIOS/README.md), [Android APP打包](../../../Engine2D/publish/publishAndroid/README.md)中打包过程的集成
 - 插件自动完成了两步操作：
   - 将egret项目转化成android／ios对应的native项目
   - 对native项目进行构建

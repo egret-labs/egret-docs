@@ -1,4 +1,4 @@
-# EgretWing Chrome调试
+
 
 EgretWing支持对JavaScript代码的调试在Chrome浏览器，或者支持Chome调试协议的程序。
 
@@ -7,7 +7,7 @@ EgretWing支持三种调试模式，`Node.js` 、`Chrome` 、`EgretWing` 扩展�
 
 
 ## launch
-- 创建Egret项目debugTest [Egret 2D 项目向导](../../Wing/2dImport/README.md)
+- 创建Egret项目debugTest [Egret 2D 项目向导](../../../Wing/2dImport/README.md)
 
 ![image](573af07f84aea.png)
 

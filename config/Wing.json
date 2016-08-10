@@ -8,6 +8,12 @@
           "text":"Egret Wing 3.0 更新日志",
           "des":"Egret Wing 3.0 更新日志",
           "in_use":true
+        },
+        {
+          "filename":"/Wing/buildBug/",
+          "text":"修复 Wing 3.0.6 之后 Egret build 报错的问题",
+          "des":"修复 Wing 3.0.6 之后 Egret build 报错的问题",
+          "in_use":true
         }
         ],
         "isFolder":true,
@@ -15,64 +21,186 @@
         "des":"更新日志",
         "in_use":true
       },
-	  {
-        "filename":"/Wing/2dImport/",
-        "text":"Egret 2D 项目向导",
-        "des":"Egret 2D 项目向导",
+      {
+        "children":[
+        {
+          "filename":"/Wing/2dImport/",
+          "text":"Egret 2D 项目向导",
+          "des":"Egret 2D 项目向导",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/guide/",
+          "text":"EgretWing3入门指南",
+          "des":"EgretWing3入门指南",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/base/",
+          "text":"Egret Wing 3.0 基础介绍",
+          "des":"Egret Wing 3.0 基础介绍",
+          "in_use":true
+        }
+        ],
+        "isFolder":true,
+        "text":"入门介绍",
+        "des":"入门介绍",
         "in_use":true
       },
       {
-        "filename":"/Wing/guide/",
-        "text":"EgretWing3入门指南",
-        "des":"EgretWing3入门指南",
+        "children": [
+        {
+          "filename":"/Wing/view/",
+          "text":"主界面",
+          "des":"主界面",
+          "in_use":false
+        },
+        {
+          "filename":"/Wing/view/debugger/",
+          "text":"调试控制台",
+          "des":"调试控制台",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/view/console/",
+          "text":"输出面板",
+          "des":"输出面板",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/view/command/",
+          "text":"命令面板",
+          "des":"命令面板",
+          "in_use":true
+        }
+        ],
+        "isFolder":true,
+        "text":"界面",
+        "des":"界面",
         "in_use":true
-      },
-      {
-        "filename":"/Wing/base/",
-        "text":"Egret Wing 3.0 基础介绍",
-        "des":"Egret Wing 3.0 基础介绍",
+      },{
+        "children": [
+        {
+          "filename":"/Wing/keys/",
+          "text":"快捷键",
+          "des":"快捷键",
+          "in_use":false
+        },
+        {
+          "filename":"/Wing/keys/setting/",
+          "text":"快捷键设置",
+          "des":"快捷键设置",
+          "in_use":true
+        }
+        ],
+        "isFolder":true,
+        "text":"快捷键",
+        "des":"快捷键",
         "in_use":true
-      },
-      {
-        "filename":"/Wing/exml/",
-        "text":"EXML 可视化编辑器",
-        "des":"EXML 可视化编辑器",
+      },{
+        "children": [
+        {
+          "filename":"/Wing/editor/code/",
+          "text":"代码编辑器",
+          "des":"代码编辑器",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/editor/exml/",
+          "text":"EXML可视化编辑器",
+          "des":"EXML可视化编辑器",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/editor/resdepot/",
+          "text":"资源编辑器",
+          "des":"资源编辑器",
+          "in_use":true
+        }
+        ],
+        "isFolder":true,
+        "text":"编辑器",
+        "des":"编辑器",
         "in_use":true
-      },
-      {
-        "filename":"/Wing/resdepot/",
-        "text":"资源编辑器（RES可视化编辑器）",
-        "des":"资源编辑器（RES可视化编辑器）",
+      },{
+        "children": [
+        {
+          "filename":"/Wing/features/FTP/",
+          "text":"FTP",
+          "des":"FTP",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/features/GIT/",
+          "text":"GIT",
+          "des":"GIT",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/features/userAndSpace/",
+          "text":"用户设置和工作空间设置",
+          "des":"用户设置和工作空间设置",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/features/task/",
+          "text":"任务配置",
+          "des":"任务配置",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/features/run/",
+          "text":"启动配置",
+          "des":"启动配置",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/features/file/",
+          "text":"文件操作",
+          "des":"文件操作",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/features/search/",
+          "text":"全局搜索",
+          "des":"全局搜索",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/features/terminal/",
+          "text":"终端",
+          "des":"终端",
+          "in_use":true
+        }
+        ],
+        "isFolder":true,
+        "text":"功能",
+        "des":"功能",
         "in_use":true
-      },
-      {
-        "filename":"/Wing/inspector/",
-        "text":"EgretWing Chrome调试",
-        "des":"EgretWing Chrome调试",
-        "in_use":true
-      },
-      {
-        "filename":"/Wing/publish/",
-        "text":"发布介绍",
-        "des":"发布介绍",
-        "in_use":true
-      },
-      {
-        "filename":"/Wing/packageTool/",
-        "text":"Android/iOS 打包测试工具",
-        "des":"Android/iOS 打包测试工具",
-        "in_use":true
-      },
-      {
-        "filename":"/Wing/FTP/",
-        "text":"FTP工具介绍",
-        "des":"FTP工具介绍",
-        "in_use":true
-      },
-      {
-        "filename":"/Wing/buildBug/",
-        "text":"修复 Wing 3.0.6 之后 Egret build 报错的问题",
-        "des":"修复 Wing 3.0.6 之后 Egret build 报错的问题",
+      },{
+        "children": [
+        {
+          "filename":"/Wing/debug/code/",
+          "text":"断点调试",
+          "des":"断点调试",
+          "in_use":false
+        },
+        {
+          "filename":"/Wing/debug/inspector/",
+          "text":"Chrome联机调试",
+          "des":"Chrome联机调试",
+          "in_use":true
+        },
+        {
+          "filename":"/Wing/debug/packageTool/",
+          "text":"移动平台打包测试",
+          "des":"移动平台打包测试",
+          "in_use":true
+        }
+        ],
+        "isFolder":true,
+        "text":"调试",
+        "des":"调试",
         "in_use":true
       },
       {
