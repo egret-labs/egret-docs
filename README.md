@@ -36,7 +36,7 @@
 
 * [位置](Engine2D/displayObject/position/README.md)
 
-* [平移](Engine2D/displayObject/translationREADME.md)
+* [平移](Engine2D/displayObject/translation/README.md)
 
 * [尺寸](Engine2D/displayObject/size/README.md)
 

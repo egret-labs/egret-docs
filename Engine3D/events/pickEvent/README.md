@@ -1,7 +1,4 @@
-
-### 拣选事件
-
-* PickEvent3D。拣选事件，作用于 Object3D 对象，并且该对象需要设置 enablePick 为 true 才会产生效果。类似于 2d 中的 TouchEvent。它封装了 MouseEvent3D（pc 下使用）、TouchEvent3D（mobile 下使用）。
+PickEvent3D。拣选事件，作用于 Object3D 对象，并且该对象需要设置 enablePick 为 true 才会产生效果。类似于 2d 中的 TouchEvent。它封装了 MouseEvent3D（pc 下使用）、TouchEvent3D（mobile 下使用）。
 
 示例：
 

@@ -1,9 +1,6 @@
+ParserEvent3D：使用 ParserUtils 加载资源的事件返回对象。
 
-### 加载事件
-         
-* ParserEvent3D：使用 ParserUtils 加载资源的事件返回对象。
-
-* LoaderEvent3D：使用URLLoader加载资源的事件返回对象只有URLLoader对象调用addEventListener 才会产生下类事件
+LoaderEvent3D：使用URLLoader加载资源的事件返回对象只有URLLoader对象调用addEventListener 才会产生下类事件
 
 示例：
         

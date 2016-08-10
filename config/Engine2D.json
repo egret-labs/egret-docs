@@ -110,7 +110,7 @@
         "in_use":true
       },
       {
-        "filename":"/Engine2D/displayObject/translation",
+        "filename":"/Engine2D/displayObject/translation/",
         "text":"平移",
         "des":"平移",
         "in_use":true
