@@ -536,7 +536,9 @@
 
 * [修复 Wing 3.0.6 之后 Egret build 报错的问题](Wing/buildBug/README.md)
 
-#### 入门介绍
+#### 使用手册
+
+###### 入门介绍
 
 * [Egret 2D 项目向导](Wing/2dImport/README.md)
 
@@ -544,19 +546,19 @@
 
 * [Egret Wing 3.0 基础介绍](Wing/base/README.md)
 
-#### 界面
+###### 界面
+
+* [命令面板](Wing/view/command/README.md)
 
 * [调试控制台](Wing/view/debugger/README.md)
 
 * [输出面板](Wing/view/console/README.md)
 
-* [命令面板](Wing/view/command/README.md)
-
-#### 快捷键
+###### 快捷键
 
 * [快捷键设置](Wing/keys/setting/README.md)
 
-#### 编辑器
+###### 编辑器
 
 * [代码编辑器](Wing/editor/code/README.md)
 
@@ -564,7 +566,7 @@
 
 * [资源编辑器](Wing/editor/resdepot/README.md)
 
-#### 功能
+###### 功能
 
 * [FTP](Wing/features/FTP/README.md)
 
@@ -582,13 +584,13 @@
 
 * [终端](Wing/features/terminal/README.md)
 
-#### 调试
+###### 调试
 
 * [Chrome联机调试](Wing/debug/inspector/README.md)
 
 * [移动平台打包测试](Wing/debug/packageTool/README.md)
 
-#### 插件开发
+###### 插件开发
 
 * [EgretWing插件项目](Wing/plugin/introduction/README.md)
 
@@ -624,6 +626,8 @@
 
 * [模式切换工具](DB/dbPro/interface/modeToolbar/README.md)
 
+* [显示继承工具](DB/dbPro/interface/inheritToolbar/README.md)
+
 * [场景树面板](DB/dbPro/interface/sceneTreePanel/README.md)
 
 * [变换面板](DB/dbPro/interface/transformPanel/README.md)
@@ -655,6 +659,78 @@
 * [图片](DB/dbPro/basicConcept/image/README.md)
 
 * [继承](DB/dbPro/basicConcept/inherit/README.md)
+
+###### 动画制作
+
+* [关键帧操作（视频）](DB/dbPro/animation/keyframe/README.md)
+
+* [制作骨骼动画（视频）](DB/dbPro/animation/skeletonCreated/README.md)
+
+* [插槽与图片操作（视频）](DB/dbPro/animation/slotOperation/README.md)
+
+* [骨架与骨骼操作（视频）](DB/dbPro/animation/skeletonOperation/README.md)
+
+* [骨架装配模式与动画制作模式（视频）](DB/dbPro/animation/mode/README.md)
+
+* [预览动画 （视频）](DB/dbPro/animation/preview/README.md)
+
+###### 高级功能
+
+* [洋葱皮](DB/dbPro/advancedFeatures/yangCongPi/README.md)
+
+* [曲线编辑器](DB/dbPro/advancedFeatures/curveEditor/README.md)
+
+* [IK约束](DB/dbPro/advancedFeatures/IK/README.md)
+
+* [网格](DB/dbPro/advancedFeatures/grid/README.md)
+
+* [蒙皮权重](DB/dbPro/advancedFeatures/skinWeights/README.md)
+
+###### 导入
+
+* [导入zip包项目](DB/dbPro/import/importZip/README.md)
+
+* [导入项目文件夹](DB/dbPro/import/importFolder/README.md)
+
+* [导入集成数据PNG](DB/dbPro/import/importPNG/README.md)
+
+* [导入PhotoShop设计图](DB/dbPro/import/importPSD/README.md)
+
+* [导入Cocos、Spine项目](DB/dbPro/import/importCosos/README.md)
+
+* [命令行导入](DB/dbPro/import/importCommandLine/README.md)
+
+###### 导出
+
+* [导出动画数据](DB/dbPro/export/exportAnimation/README.md)
+
+###### 插件
+
+* [插件管理](DB/dbPro/plugin/pluginManager/README.md)
+
+* [插件开发规范](DB/dbPro/plugin/specification/README.md)
+
+#### DragonBones 程序库
+
+* [数据格式说明](DB/dbLibs/dataFormat/README.md)
+
+* [创建项目](DB/dbLibs/createProject/README.md)
+
+* [创建骨骼动画](DB/dbLibs/createAnimation/README.md)
+
+* [多人物动画](DB/dbLibs/morePeopleAnimation/README.md)
+
+* [控制骨骼运动](DB/dbLibs/motionControlskeleton/README.md)
+
+* [改变动画速度](DB/dbLibs/animationSpeed/README.md)
+
+* [动画遮罩与混合](DB/dbLibs/maskAndMixed/README.md)
+
+* [动画拷贝](DB/dbLibs/copy/README.md)
+
+* [骨骼动画事件](DB/dbLibs/events/README.md)
+
+* [极速模式](DB/dbLibs/speedMode/README.md)
 
 
 
@@ -793,6 +869,8 @@
 #### Feather
 
 * [使用手册](tools/Feather/README.md)
+
+* [排版测试](tools/Feather/testREADME.md)
 
 
 

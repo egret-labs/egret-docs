@@ -45,7 +45,7 @@
 	        "filename":"/DB/dbPro/interface/inheritToolbar/",
 	        "text":"显示继承工具",
 	        "des":"显示继承工具",
-	        "in_use":false
+	        "in_use":true
 	      },
 	      {
 	        "filename":"/DB/dbPro/interface/sceneTreePanel/",
@@ -188,9 +188,15 @@
 	        "in_use":true
 	      },
 	      {
-	        "filename":"/DB/dbPro/animation/productionSkeletalAnimation/",
+	        "filename":"/DB/dbPro/animation/skeletonCreated/",
 	        "text":"制作骨骼动画（视频）",
 	        "des":"制作骨骼动画（视频）",
+	        "in_use":true
+	      },
+	      {
+	        "filename":"/DB/dbPro/animation/slotOperation/",
+	        "text":"插槽与图片操作（视频）",
+	        "des":"插槽与图片操作（视频）",
 	        "in_use":true
 	      },
 	      {
@@ -215,7 +221,7 @@
 	    "isFolder":true,
 	    "text":"动画制作",
 	    "des":"DragonBones Pro动画制作",
-	    "in_use":false
+	    "in_use":true
       },
       {
       	"children":[
@@ -253,7 +259,7 @@
 	    "isFolder":true,
 	    "text":"高级功能",
 	    "des":"DragonBones Pro高级功能",
-	    "in_use":false
+	    "in_use":true
       },
       {
       	"children":[
@@ -297,7 +303,7 @@
 	    "isFolder":true,
 	    "text":"导入",
 	    "des":"DragonBones Pro导入",
-	    "in_use":false
+	    "in_use":true
       },
       {
       	"children":[
@@ -317,7 +323,7 @@
 	    "isFolder":true,
 	    "text":"导出",
 	    "des":"DragonBones Pro导出项目",
-	    "in_use":false
+	    "in_use":true
       },
       {
       	"children":[
@@ -337,7 +343,7 @@
 	    "isFolder":true,
 	    "text":"插件",
 	    "des":"DragonBones Pro插件",
-	    "in_use":false
+	    "in_use":true
       }
     ],
     "isFolder":true,

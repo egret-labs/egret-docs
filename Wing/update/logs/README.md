@@ -69,4 +69,4 @@ Wing 3.0 增加了简单的 FTP 同步功能. 可以将本地文件同步至 FTP
 ## Extension API 改动
  - 添加右边栏 API, 可以定义一个固定在右边的工具栏
  - 增加插件弹出窗口拖动 API
-详情请查看 [插件开发文档](http://edn.egret.com/cn/docs/page/778)
+详情请查看 [插件开发文档](../../../Wing/plugin/introduction/README.md)
