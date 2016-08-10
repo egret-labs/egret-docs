@@ -30,15 +30,9 @@
       },
       {
         "filename":"/Engine2D/projectConfig/launcherManager/",
-        "text":"引擎和工具的管理",
+        "text":"启动器",
         "des":"引擎和工具的管理",
         "in_use":true
-      },
-      {
-        "filename":"/Engine2D/projectConfig/startDescription/",
-        "text":"启动器说明",
-        "des":"启动器说明",
-        "in_use":false
       },
       {
         "filename":"/Engine2D/projectConfig/cmdManual/",
