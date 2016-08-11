@@ -1,5 +1,3 @@
-## Egret Engine 2D    
-
 * 新增 egret run 命令可以配置启动参数
 在项目配置文件中新增`urlParams`属性标签，可针对egret run命令添加URL参数。
 ![](57a83048c27c7.png)
