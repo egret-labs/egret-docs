@@ -2,9 +2,9 @@
 	{
     "children":[
       {
-        "filename":"/Coversion/update/update/",
-        "text":"Egret Coversion v2.5.3",
-        "des":"Egret Coversion v2.5.3",
+        "filename":"/Conversion/update/update/",
+        "text":"Egret Conversion v2.5.3",
+        "des":"Egret Conversion v2.5.3",
         "in_use":true
       }
     ],
