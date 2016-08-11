@@ -281,8 +281,8 @@
     "children":[
       {
         "filename":"/Engine2D/textField/createText/",
-        "text":"创建文本",
-        "des":"创建文本",
+        "text":"使用文本",
+        "des":"使用文本",
         "in_use":true
       },
       {
