@@ -3,20 +3,14 @@
       "children":[
       {
         "filename":"/Wing/update/logs/",
-        "text":"Egret Wing 3.0 更新日志",
-        "des":"Egret Wing 3.0 更新日志",
-        "in_use":true
-      },
-      {
-        "filename":"/Wing/buildBug/",
-        "text":"修复 Wing 3.0.6 之后 Egret build 报错的问题",
-        "des":"修复 Wing 3.0.6 之后 Egret build 报错的问题",
+        "text":"Egret Wing 3.1.6",
+        "des":"Egret Wing 3.1.6",
         "in_use":true
       }
       ],
       "isFolder":true,
-      "text":"更新日志",
-      "des":"更新日志",
+      "text":"历史更新",
+      "des":"历史更新",
       "in_use":true
     },
     {
