@@ -2,6 +2,21 @@
 	{
     "children":[
       {
+        "filename":"/Engine2D/update/update/",
+        "text":"Egret Engine 3.1.6",
+        "des":"Egret Engine 3.1.6",
+        "in_use":true
+      }
+    ],
+
+    "isFolder":true,
+    "text":"历史更新",
+    "des":"历史更新",
+    "in_use":true
+  },  
+	{
+    "children":[
+      {
         "filename":"/Engine2D/getStarted/helloWorld/",
         "text":"Hello World",
         "des":"Hello World",
