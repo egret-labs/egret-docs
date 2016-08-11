@@ -1,4 +1,19 @@
 [
+	{
+    "children":[
+      {
+        "filename":"/DB/Lakeshore/update/",
+        "text":"Lakeshore 2.0.2",
+        "des":"Lakeshore 2.0.2",
+        "in_use":true
+      }
+    ],
+
+    "isFolder":true,
+    "text":"历史更新",
+    "des":"历史更新",
+    "in_use":true
+  },   
   {
     "children":[
       {
