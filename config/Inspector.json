@@ -1,4 +1,19 @@
 [
+	{
+    "children":[
+      {
+        "filename":"/tools/Inspector/update/update/",
+        "text":"Egret Inspector 2.5.4",
+        "des":"Egret Inspector 2.5.4",
+        "in_use":true
+      }
+    ],
+
+    "isFolder":true,
+    "text":"历史更新",
+    "des":"历史更新",
+    "in_use":true
+  },    
   {
     "children":[
       {

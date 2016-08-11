@@ -1,4 +1,19 @@
 [
+	{
+    "children":[
+      {
+        "filename":"/tools/Feather/update/update/",
+        "text":"Egret Feather 1.2.2",
+        "des":"Egret Feather 1.2.2",
+        "in_use":true
+      }
+    ],
+
+    "isFolder":true,
+    "text":"历史更新",
+    "des":"历史更新",
+    "in_use":true
+  },    
   {
     "children":[
       {

@@ -1,4 +1,19 @@
 [
+	{
+    "children":[
+      {
+        "filename":"/Coversion/update/update/",
+        "text":"Egret Coversion v2.5.3",
+        "des":"Egret Coversion v2.5.3",
+        "in_use":true
+      }
+    ],
+
+    "isFolder":true,
+    "text":"历史更新",
+    "des":"历史更新",
+    "in_use":true
+  },   
   {
     "children":[
       {
