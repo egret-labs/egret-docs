@@ -2,7 +2,7 @@
 	{
     "children":[
       {
-        "filename":"/tools/Merger/update/update/",
+        "filename":"/tools/TextureMerger/update/update/",
         "text":"Texture Merger 1.6.0",
         "des":"Texture Merger 1.6.0",
         "in_use":true
