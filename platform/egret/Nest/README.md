@@ -105,15 +105,24 @@
 * 示例
 
 		var loginTypes:Array<nest.easyuser.ILoginType> = nest.easyuser.getLoginTypes();
-        if (loginTypes.length) {//需要显示对应的登录按钮
-			//按照获取到的类型，显示全部的按钮，其中，qq（qq对应按钮）、 wx（微信对应按钮）、default（游戏内自己进入按钮），请可能兼容多种按钮同时存在的页面
-			//如果传入的参数带有 accInfo 信息，请根据 accInfo.avatarUrl 来显示头像，并修改名称为 XX一键登录。
-			//按钮点击后，请调用 nest.easyuser.login，并传入对应的登录类型
-        }
+		if (loginTypes.length) {//需要显示对应的登录按钮
+			var typeInfo:nest.easyuser.ILoginType = loginTypes[0];
+		    if (loginTypes.length == 1 && (typeInfo.loginType == "wx" || typeInfo.loginType == "qq")) {
+		    	//直接调用 nest.easyuser.login，传入 typeInfo 即可。
+		    }
+		    else {
+		        //按照获取到的类型，显示全部的按钮，其中，qq（qq对应按钮）、 wx（微信对应按钮）、default（游戏内自己进入按钮），请可能兼容多种按钮同时存在的页面
+				//如果传入的参数带有 accInfo 信息，请根据 accInfo.avatarUrl 来显示头像，并修改名称为 XX一键登录。
+				//按钮点击后，请调用 nest.easyuser.login，并传入对应的登录类型
+			
+		    }
+
+		}
 		else {//直接调用 nest.easyuser.login，传入 {} 即可。
 			
 		}
-![image](login3.jpg) ![image](login4.jpg)
+
+	![image](login3.jpg) ![image](login4.jpg)
 
 > 第二个图为游戏内第一个页面，第一个图为平台登录需求的页面，需要是全屏页面显示而不是简单的弹窗。
 
