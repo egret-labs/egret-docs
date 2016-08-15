@@ -169,6 +169,16 @@
             
             "in_use":"true"
 
+         },
+		 {
+
+            "filename":"Developer.json",
+
+            "des":"Developer更新日志",
+
+            "text":"Developer更新日志",
+            
+            "in_use":"false"
          }
 
         ],
