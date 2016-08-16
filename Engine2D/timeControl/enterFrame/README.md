@@ -2,7 +2,7 @@
 
 ### 获取相对时间
 
-在介绍`ENTER_FRAME`和`startTick`之前需要了解一个常用的全局函数`getTimer()`用以获取全局的 Egert 框架启动时间毫秒数。
+在介绍`ENTER_FRAME`和`startTick`之前需要了解一个常用的全局函数`getTimer()`用以获取全局的 Egret 框架启动时间毫秒数。
 
 ```
 console.log(egret.getTimer());
