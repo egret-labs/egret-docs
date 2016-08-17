@@ -2,15 +2,15 @@
 	{
     "children":[
       {
-        "filename":"/DB/update/update/",
-        "text":"DragonBones 4.7.1",
-        "des":"DragonBones 4.7.1",
-        "in_use":true
-      },
-      {
         "filename":"/DB/update/update4.7.2/",
         "text":"DragonBones 4.7.2",
         "des":"DragonBones 4.7.2",
+        "in_use":true
+      },      
+			{
+        "filename":"/DB/update/update/",
+        "text":"DragonBones 4.7.1",
+        "des":"DragonBones 4.7.1",
         "in_use":true
       }
     ],
