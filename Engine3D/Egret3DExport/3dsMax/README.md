@@ -3,6 +3,8 @@
 2.安装vs2013 运行库 http://www.microsoft.com/zh-CN/download/details.aspx?id=40784  
 3.安装插件：[3Dmax Export tool](https://github.com/egret-labs/egret-3d/tree/master/ExportTools/3Dmax Export tool/3ds Max 2012 "3Dmax Export tool")
 
+注意：请使用GitHub最新插件使用。
+
 ## 导出文件介绍 ##
 1.esm 模型数据文件  
 2.eam 模型动画文件  
