@@ -309,12 +309,6 @@
             "in_use":true
           },
           {
-            "filename":"/extension/EUI/controls/progressBar/",
-            "text":"进度条",
-            "des":"EUI进度条",
-            "in_use":true
-          },
-          {
             "filename":"/extension/EUI/controls/textInput/",
             "text":"输入文本",
             "des":"EUI输入文本",
