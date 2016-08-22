@@ -691,7 +691,8 @@ WebSocket客户端用法
 首先看基本代码。
 ```
 private webSocket:egret.WebSocket;
-    private createGameScene():void { this.webSocket = new egret.WebSocket();
+private createGameScene():void { 
+	this.webSocket = new egret.WebSocket();
     this.webSocket.addEventListener(egret.ProgressEvent.SOCKET_DATA, this.onReceiveMessage, this);
     this.webSocket.addEventListener(egret.Event.CONNECT, this.onSocketOpen, this);
     this.webSocket.connect("echo.websocket.org", 80);
