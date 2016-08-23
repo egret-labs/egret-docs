@@ -2,15 +2,57 @@
 	{
     "children":[
       {
-        "filename":"/DB/update/update4.7.2/",
+        "filename":"/DB/update/update472/",
         "text":"DragonBones 4.7.2",
         "des":"DragonBones 4.7.2",
         "in_use":true
       },      
-			{
-        "filename":"/DB/update/update/",
+	  {
+        "filename":"/DB/update/update471/",
         "text":"DragonBones 4.7.1",
         "des":"DragonBones 4.7.1",
+        "in_use":true
+      },      
+	  {
+        "filename":"/DB/update/update470/",
+        "text":"DragonBones 4.7.0",
+        "des":"DragonBones 4.7.0",
+        "in_use":true
+      },      
+	  {
+        "filename":"/DB/update/update461/",
+        "text":"DragonBones 4.6.1",
+        "des":"DragonBones 4.6.1",
+        "in_use":true
+      },      
+	  {
+        "filename":"/DB/update/update451/",
+        "text":"DragonBones 4.5.1",
+        "des":"DragonBones 4.5.1",
+        "in_use":true
+      },      
+	  {
+        "filename":"/DB/update/update432/",
+        "text":"DragonBones 4.3.2",
+        "des":"DragonBones 4.3.2",
+        "in_use":true
+      },      
+	  {
+        "filename":"/DB/update/update421/",
+        "text":"DragonBones 4.2.1",
+        "des":"DragonBones 4.2.1",
+        "in_use":true
+      },      
+	  {
+        "filename":"/DB/update/update411/",
+        "text":"DragonBones 4.1.1",
+        "des":"DragonBones 4.1.1",
+        "in_use":true
+      },      
+	  {
+        "filename":"/DB/update/update400/",
+        "text":"DragonBones 4.0.0",
+        "des":"DragonBones 4.0.0",
         "in_use":true
       }
     ],

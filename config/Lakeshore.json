@@ -2,9 +2,15 @@
 	{
     "children":[
       {
-        "filename":"/Lakeshore/update/update/",
+        "filename":"/Lakeshore/update/update202/",
         "text":"Lakeshore 2.0.2",
         "des":"Lakeshore 2.0.2",
+        "in_use":true
+      },
+      {
+        "filename":"/Lakeshore/update/update121/",
+        "text":"Lakeshore 1.2.1",
+        "des":"Lakeshore 1.2.1",
         "in_use":true
       }
     ],
