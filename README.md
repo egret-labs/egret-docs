@@ -186,9 +186,13 @@
 
 #### 滤镜
 
+* [发光滤镜](Engine2D/filter/glowFilter/README.md)
+
 * [颜色矩阵滤镜](Engine2D/filter/colorMatrixFilter/README.md)
 
 * [模糊滤镜](Engine2D/filter/blurFilter/README.md)
+
+* [投影滤镜](Engine2D/filter/shadowFilter/README.md)
 
 #### 时间控制
 

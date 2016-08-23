@@ -622,7 +622,7 @@
         "filename":"/Engine2D/filter/glowFilter/",
         "text":"发光滤镜",
         "des":"发光滤镜",
-        "in_use":false
+        "in_use":true
       },
       {
         "filename":"/Engine2D/filter/colorMatrixFilter/",
@@ -640,7 +640,7 @@
         "filename":"/Engine2D/filter/shadowFilter/",
         "text":"投影滤镜",
         "des":"投影滤镜",
-        "in_use":false
+        "in_use":true
       }
     ],
     "isFolder":true,
