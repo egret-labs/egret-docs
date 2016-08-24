@@ -29,7 +29,7 @@ class MyGrid extends egret.Shape{
         this.graphics.endFill();               
     }
 }
-````
+```
 
 在 `MyGrid` 我们绘制了一个红蓝相间的2*2格子，然后我们修改文档类`Main`，在文档类中创建并显示我们的 `MyGrid`，具体代码如下：
 

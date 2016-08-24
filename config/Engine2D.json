@@ -286,10 +286,10 @@
         "in_use":true
       },
       {
-        "filename":"/Engine2D/displayObject/miter/",
+        "filename":"/Engine2D/displayObject/skew/",
         "text":"斜切",
         "des":"斜切",
-        "in_use":false
+        "in_use":true
       }
     ],
 
@@ -366,7 +366,7 @@
         "filename":"/Engine2D/vectorDrawing/useDrawCurves/",
         "text":"Graphics Arc 高级使用",
         "des":"Graphics Arc 高级使用",
-        "in_use":false
+        "in_use":true
       } ,
       {
         "filename":"/Engine2D/vectorDrawing/drawShapes/",
