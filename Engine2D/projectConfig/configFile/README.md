@@ -1,7 +1,6 @@
-EgretProperties说明
----------------
 
-配置文档说明
+
+## 结构信息
 
 ![image](5604f755ba98b.png)
 
@@ -48,3 +47,11 @@ native相关配置，只对native有用，即在发布 Web 项目时，不会使
 
 ### egret_version
 项目当前的egret的版本。此版本号不可以回退，如果想回退，请手动修改。
+
+### urlParams (3.1.6 以上支持)
+
+* 针对```egret startserver```命令添加URL参数，比如执行```egret startserver```后打开的地址：
+
+	```http://10.0.4.63:3001/index.html?okok=12&id=455464564```
+
+
