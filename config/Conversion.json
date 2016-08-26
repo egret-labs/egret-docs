@@ -3,8 +3,8 @@
     "children": [
       {
         "filename": "/Conversion/update/update253/",
-        "text": "Egret Conversion v2.5.3",
-        "des": "Egret Conversion v2.5.3",
+        "text": "Egret Conversion 2.5.3",
+        "des": "Egret Conversion 2.5.3",
         "in_use": true
       },
       {
@@ -15,14 +15,14 @@
         "children": [
           {
             "filename": "/Conversion/update/update220/",
-            "text": "Egret Conversion v2.2.0",
-            "des": "Egret Conversion v2.2.0",
+            "text": "Egret Conversion 2.2.0",
+            "des": "Egret Conversion 2.2.0",
             "in_use": true
           },
           {
             "filename": "/Conversion/update/update201/",
-            "text": "Egret Conversion v2.0.1",
-            "des": "Egret Conversion v2.0.1",
+            "text": "Egret Conversion 2.0.1",
+            "des": "Egret Conversion 2.0.1",
             "in_use": true
           }
         ]
