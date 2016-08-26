@@ -73,20 +73,3 @@ DragoneBones 工具的使用教程:[IK约束](http://edn.egret.com/cn/docs/page/
 DragoneBones 相关代码使用教程计划近期更新。
 
 DragonBones 的 API 参考：[DragonBones](http://localhost/cn/apidoc/index/name/dragonBones.Animation)
-
-### Egret Engine 3D
-
-近期 Egret Engine 3D 正在进行重构，本期没有内容更新。
-   
-#### 联系我们
-
-获取 Egret Engine 3D 的源码: [Egret Engine 3D](https://github.com/egret-labs/egret-3d)。
-
-查阅 Egret Engine 3D API: [Egret Engine 3D API](http://edn.egret.com/cn/apidoc/index/name/egret3D.AnimaNodeCollection)。
-
-更多关于 Egret Engine 3D 的教程欢迎关注 EDN [Egret Engine 3D 分类](http://edn.egret.com/cn/docs/page/775)。
-
-在体验的过程中如果遇到任何问题希望您能留下宝贵意见，更欢迎大家在 Egret Engine 3D 论坛交流:[Egret3D 交流贴](http://bbs.egret.com/forum.php?mod=viewthread&tid=15653)。
-
-Egret Engine 3D 官方交流群: 180593985 。
-
