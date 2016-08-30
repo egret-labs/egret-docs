@@ -303,7 +303,7 @@ Egret的资源加载方式，是以一个资源加载清单为基础的。 如�
 
 注意，在`onConfigComplete`的最后，有一行加载资源组的代码： `RES.loadGroup("preload");`
 
-很显然，`loadGroup`就是用来加载资源组的。由于我们将资源组命名为`heroes`，因此这里代码中的`preload`需要改成`heroes`。 资源加载结束后，我们需要判断所加载的资源是哪个资源组的，所以`onResourceLoadComplete`中的`preload`也需要改成`heroe`s。
+很显然，`loadGroup`就是用来加载资源组的。由于我们将资源组命名为`heroes`，因此这里代码中的`preload`需要改成`heroes`。 资源加载结束后，我们需要判断所加载的资源是哪个资源组的，所以`onResourceLoadComplete`中的`preload`也需要改成`heroes`。
 
 完成这些改动后，Egret将会加载`heroes`资源组，并且程序执行到`createGameScene`时，资源组已经加载完成。
 
