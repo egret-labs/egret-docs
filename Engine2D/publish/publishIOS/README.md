@@ -62,7 +62,7 @@ $ mkdir projects
 
 ### 3、安装Egret
 
-传送门：[Mac OS X 系统下安装最新的Egret](http://edn.egret.com/cn/docs/page/580#Egret Engine 在 Mac OS X 系统下安装)。
+传送门：[Mac OS X 系统下安装最新的Egret](../../../Engine2D/projectConfig/installation/README.md)。
 
 ### 4、下载Egret的iOS支持包
 
@@ -72,7 +72,7 @@ $ mkdir projects
 
 *下载Egret ios支持包*
 
-下载[egret-ios-support](http://www.egret.com/iossupport)，将egret-ios-support放置在“labs/egret-support/”文件夹下，如下图：
+下载[egret-ios-support](http://www.egret.com/downloads/ios.html)，将egret-ios-support放置在“labs/egret-support/”文件夹下，如下图：
 
 ![](56664989d5c4a.png)
 

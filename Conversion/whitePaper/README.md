@@ -92,7 +92,7 @@ Egret Conversion的产品特性：
 
 ## Egret Conversion 2.0 入门
 
-**使用Egret Conversion 2.0之前需要先下载更新Egret Engine 最新版本。从官网下载Egret Engine:[http://www.egret.com/egretengine](http://www.egret.com/egretengine)**
+**使用Egret Conversion 2.0之前需要先下载更新Egret Engine 最新版本。从官网下载Egret Engine:[http://www.egret.com/products/engine.html](http://www.egret.com/products/engine.html)**
 
 * 新建一个转换项目
 

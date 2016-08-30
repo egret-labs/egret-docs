@@ -4,7 +4,7 @@
 
 我们在 Egret Engine 2.5 版本中将应用引擎及游戏引擎合并统一。由底层白鹭核心库+第三方库的集合的方式，来灵活的满足开发者各种应用和游戏的开发需求。降低开发成本提高开发效率。下面为您详细讲述此次更新的特性和功能。
 
-点击此处下载Egret Engine： [获得 Egret Engine 2.5](http://www.egret.com/egretengine)
+点击此处下载Egret Engine： [获得 Egret Engine 2.5](http://www.egret.com/products/engine.html)
 
 * Egret Engine 2.5.1 更新特性详解请点击：[Egret Engine 2.5.1](http://edn.egret.com/cn/index.php/portal/article/index/id/651)
 
