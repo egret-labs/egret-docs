@@ -4,7 +4,7 @@
 
 转换工具EgretConversion可将Flash的项目转换为基于Egret的项目。因此需要事先安装Egret Engine，否则工具无法运作。
 
-Egret Engine下载地址在[http://www.egret.com/egretengine](http://www.egret.com/egretengine)，这里提供了Egret最新发行版和各个历史版本，目前提供的有Windows和Mac两个版本的下载。
+Egret Engine下载地址在[http://www.egret.com/products/engine.html](http://www.egret.com/products/engine.html)，这里提供了Egret最新发行版和各个历史版本，目前提供的有Windows和Mac两个版本的下载。
 
 下载之后直接双击安装。
 
@@ -16,7 +16,7 @@ Egret Engine下载地址在[http://www.egret.com/egretengine](http://www.egret.c
 
 二. 使用EgretConversion所需的Egret版本
 
-工具使用特定版本的Egret，当前EgretConversion使用的是 [2.0版本的Egret](http://www.egret.com/egretengine)。
+工具使用特定版本的Egret，当前EgretConversion使用的是 [2.0版本的Egret](http://www.egret.com/products/engine.html)。
 
 如果本机正在使用的Egret版本低于EgretConversion所要求的版本号，则可能出现转换后项目报错情况。
 
