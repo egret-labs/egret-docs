@@ -54,11 +54,11 @@ listenerName(evt:Event):void {...}
 
 ## TouchEvent的启动开关
 
-TouchEvent的启动开关 `touchEnabled` 指定此对象是否接收触摸或其他用户输入。默认值为 true，这表示默认情况下，显示列表上的任何 DisplayObject 实例都会接收触摸事件或其他用户输入事件。如果将 touchEnabled 设置为 false，则实例将不接收任何触摸事件（或其他用户输入事件）。显示列表上的该实例的任何子级都不会受到影响。要更改显示列表上对象的所有子级的 touchEnabled 行为，请使用 `DisplayObjectContainer.touchChildren`。
+TouchEvent的启动开关 `touchEnabled` 指定此对象是否接收触摸或其他用户输入。默认值为 false，实例将不接收任何触摸事件（或其他用户输入事件）。如果将 touchEnabled 设置为 true，则显示对象实例将会接收触摸事件或其他用户输入事件。要更改显示对象的所有子级的 touchEnabled 行为，请使用 `DisplayObjectContainer.touchChildren`。
 
-实际使用过程，如果某些显示对象不再需要侦听TouchEvent，那就及时关闭吧：
+实际使用过程，如果某些显示对象需要侦听TouchEvent，请先打开：
 ```
-显示对象实例.touchEnabled = false;
+显示对象实例.touchEnabled = true;
 ```
 
 ## 事件的优先级
