@@ -388,9 +388,15 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/mask/useMask/",
-        "text": "遮罩的使用",
-        "des": "遮罩的使用",
+        "filename": "/Engine2D/mask/rectangleMask/",
+        "text": "矩形遮罩",
+        "des": "矩形遮罩",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/mask/displayMask/",
+        "text": "显示对象遮罩",
+        "des": "显示对象遮罩",
         "in_use": true
       }
     ],
