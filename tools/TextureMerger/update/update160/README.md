@@ -1,4 +1,3 @@
-Texture Merger 1.6.0
 
 更新日志
 
