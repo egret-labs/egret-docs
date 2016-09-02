@@ -30,8 +30,6 @@ class textEventDemo extends egret.DisplayObjectContainer {
 
 ### 打开 URL 
 
-> 适用于 Egret 2.5 以后的引擎。
-
 将上面的 href 对应的字符串修改为 url 即可打开相应的 url。下面代码即可打开 Egret 的首页。
 
 修改的代码如下：
@@ -51,3 +49,5 @@ tx.touchEnabled = true;
 ![](569c85528f453.png)
 
 ![](569c8552dd0b0.png)
+
+> 适用于 Egret 2.5 以后的引擎，且只适用 web 端。
