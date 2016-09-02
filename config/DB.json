@@ -1,0 +1,492 @@
+[
+	{
+		"children": [
+			{
+				"filename": "/DB/update/update472/",
+				"text": "DragonBones 4.7.2",
+				"des": "DragonBones 4.7.2",
+				"in_use": true
+			},
+			{
+				"isFolder": true,
+				"text": "历史更新",
+				"des": "历史更新",
+				"in_use": true,
+				"children": [
+					{
+						"filename": "/DB/update/update471/",
+						"text": "DragonBones 4.7.1",
+						"des": "DragonBones 4.7.1",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/update/update470/",
+						"text": "DragonBones 4.7.0",
+						"des": "DragonBones 4.7.0",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/update/update461/",
+						"text": "DragonBones 4.6.1",
+						"des": "DragonBones 4.6.1",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/update/update451/",
+						"text": "DragonBones 4.5.1",
+						"des": "DragonBones 4.5.1",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/update/update432/",
+						"text": "DragonBones 4.3.2",
+						"des": "DragonBones 4.3.2",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/update/update421/",
+						"text": "DragonBones 4.2.1",
+						"des": "DragonBones 4.2.1",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/update/update411/",
+						"text": "DragonBones 4.1.1",
+						"des": "DragonBones 4.1.1",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/update/update400/",
+						"text": "DragonBones 4.0.0",
+						"des": "DragonBones 4.0.0",
+						"in_use": true
+					}
+				]
+			}
+		],
+		"isFolder": true,
+		"text": "更新详情",
+		"des": "更新详情",
+		"in_use": true
+	},
+	{
+		"children": [
+			{
+				"children": [
+					{
+						"filename": "/DB/dbPro/introduction/introduction/",
+						"text": "简介",
+						"des": "简介",
+						"in_use": true
+					}
+				],
+				"isFolder": true,
+				"text": "简介",
+				"des": "DragonBones Pro简介",
+				"in_use": true
+			},
+			{
+				"children": [
+					{
+						"filename": "/DB/dbPro/interface/mainInterface/",
+						"text": "主界面",
+						"des": "主界面",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/interface/firstChoice/",
+						"text": "首选项",
+						"des": "首选项",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/interface/systemToolbar/",
+						"text": "系统工具栏",
+						"des": "系统工具栏",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/interface/modeToolbar/",
+						"text": "模式切换工具",
+						"des": "模式切换工具",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/interface/inheritToolbar/",
+						"text": "显示继承工具",
+						"des": "显示继承工具",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/interface/sceneTreePanel/",
+						"text": "场景树面板",
+						"des": "场景树面板",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/interface/transformPanel/",
+						"text": "变换面板",
+						"des": "变换面板",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/interface/propertiesPanel/",
+						"text": "属性面板",
+						"des": "属性面板",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/interface/levelPanel/",
+						"text": "层级面板",
+						"des": "层级面板",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/interface/resourcesPanel/",
+						"text": "资源面板",
+						"des": "资源面板",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/interface/animationPanel/",
+						"text": "动画面板",
+						"des": "动画面板",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/interface/timelinePanel/",
+						"text": "时间轴面板",
+						"des": "时间轴面板",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/interface/sharePanel/",
+						"text": "作品分享面板",
+						"des": "作品分享面板",
+						"in_use": true
+					}
+				],
+				"isFolder": true,
+				"text": "界面",
+				"des": "DragonBones Pro界面",
+				"in_use": true
+			},
+			{
+				"children": [
+					{
+						"filename": "/DB/dbPro/hotkey/hotkey/",
+						"text": "快捷键",
+						"des": "快捷键",
+						"in_use": true
+					}
+				],
+				"isFolder": true,
+				"text": "快捷键",
+				"des": "DragonBones Pro快捷键",
+				"in_use": true
+			},
+			{
+				"children": [
+					{
+						"filename": "/DB/dbPro/basicConcept/framework/",
+						"text": "骨架",
+						"des": "骨架",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/basicConcept/skeleton/",
+						"text": "骨骼",
+						"des": "骨骼",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/basicConcept/slot/",
+						"text": "插槽",
+						"des": "插槽",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/basicConcept/image/",
+						"text": "图片",
+						"des": "图片",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/basicConcept/inherit/",
+						"text": "继承",
+						"des": "继承",
+						"in_use": true
+					}
+				],
+				"isFolder": true,
+				"text": "基本概念",
+				"des": "DragonBones Pro基本概念",
+				"in_use": true
+			},
+			{
+				"children": [
+					{
+						"filename": "/DB/dbPro/createProject/skeletalAnimation/",
+						"text": "创建骨骼动画项目",
+						"des": "创建骨骼动画项目",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/createProject/commonAnimation/",
+						"text": "创建普通动画项目",
+						"des": "创建普通动画项目",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/createProject/interactiveAnimation/",
+						"text": "创建交互动漫项目",
+						"des": "创建交互动漫项目",
+						"in_use": true
+					}
+				],
+				"isFolder": true,
+				"text": "创建项目",
+				"des": "DragonBones Pro创建项目",
+				"in_use": false
+			},
+			{
+				"children": [
+					{
+						"filename": "/DB/dbPro/animation/keyframe/",
+						"text": "关键帧操作（视频）",
+						"des": "关键帧操作（视频）",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/animation/skeletonCreated/",
+						"text": "制作骨骼动画（视频）",
+						"des": "制作骨骼动画（视频）",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/animation/slotOperation/",
+						"text": "插槽与图片操作（视频）",
+						"des": "插槽与图片操作（视频）",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/animation/skeletonOperation/",
+						"text": "骨架与骨骼操作（视频）",
+						"des": "骨架与骨骼操作（视频）",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/animation/mode/",
+						"text": "骨架装配模式与动画制作模式（视频）",
+						"des": "骨架装配模式与动画制作模式（视频）",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/animation/preview/",
+						"text": "预览动画 （视频）",
+						"des": "预览动画 （视频）",
+						"in_use": true
+					}
+				],
+				"isFolder": true,
+				"text": "动画制作",
+				"des": "DragonBones Pro动画制作",
+				"in_use": true
+			},
+			{
+				"children": [
+					{
+						"filename": "/DB/dbPro/advancedFeatures/yangCongPi/",
+						"text": "洋葱皮",
+						"des": "洋葱皮",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/advancedFeatures/curveEditor/",
+						"text": "曲线编辑器",
+						"des": "曲线编辑器",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/advancedFeatures/IK/",
+						"text": "IK约束",
+						"des": "IK约束",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/advancedFeatures/grid/",
+						"text": "网格",
+						"des": "网格",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/advancedFeatures/skinWeights/",
+						"text": "蒙皮权重",
+						"des": "蒙皮权重",
+						"in_use": true
+					}
+				],
+				"isFolder": true,
+				"text": "高级功能",
+				"des": "DragonBones Pro高级功能",
+				"in_use": true
+			},
+			{
+				"children": [
+					{
+						"filename": "/DB/dbPro/import/importZip/",
+						"text": "导入zip包项目",
+						"des": "导入zip包项目",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/import/importFolder/",
+						"text": "导入项目文件夹",
+						"des": "导入项目文件夹",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/import/importPNG/",
+						"text": "导入集成数据PNG",
+						"des": "导入集成数据PNG",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/import/importPSD/",
+						"text": "导入PhotoShop设计图",
+						"des": "导入PhotoShop设计图",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/import/importCosos/",
+						"text": "导入Cocos、Spine项目",
+						"des": "导入Cocos、Spine项目",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/import/importCommandLine/",
+						"text": "命令行导入",
+						"des": "命令行导入",
+						"in_use": true
+					}
+				],
+				"isFolder": true,
+				"text": "导入",
+				"des": "DragonBones Pro导入",
+				"in_use": true
+			},
+			{
+				"children": [
+					{
+						"filename": "/DB/dbPro/export/exportAnimation/",
+						"text": "导出动画数据",
+						"des": "导出动画数据",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/export/exportHTML/",
+						"text": "导出HTML网页",
+						"des": "导出HTML网页",
+						"in_use": false
+					}
+				],
+				"isFolder": true,
+				"text": "导出",
+				"des": "DragonBones Pro导出项目",
+				"in_use": true
+			},
+			{
+				"children": [
+					{
+						"filename": "/DB/dbPro/plugin/pluginManager/",
+						"text": "插件管理",
+						"des": "插件管理",
+						"in_use": true
+					},
+					{
+						"filename": "/DB/dbPro/plugin/specification/",
+						"text": "插件开发规范",
+						"des": "插件开发规范",
+						"in_use": true
+					}
+				],
+				"isFolder": true,
+				"text": "插件",
+				"des": "DragonBones Pro插件",
+				"in_use": true
+			}
+		],
+		"isFolder": true,
+		"text": "DragonBones Pro",
+		"des": "DragonBones Pro相关文档",
+		"in_use": true
+	},
+	{
+		"children": [
+			{
+				"filename": "/DB/dbLibs/dataFormat/",
+				"text": "数据格式说明",
+				"des": "数据格式说明",
+				"in_use": true
+			},
+			{
+				"filename": "/DB/dbLibs/createProject/",
+				"text": "创建项目",
+				"des": "创建项目",
+				"in_use": true
+			},
+			{
+				"filename": "/DB/dbLibs/createAnimation/",
+				"text": "创建骨骼动画",
+				"des": "创建骨骼动画",
+				"in_use": true
+			},
+			{
+				"filename": "/DB/dbLibs/morePeopleAnimation/",
+				"text": "多人物动画",
+				"des": "多人物动画",
+				"in_use": true
+			},
+			{
+				"filename": "/DB/dbLibs/motionControlskeleton/",
+				"text": "控制骨骼运动",
+				"des": "控制骨骼运动",
+				"in_use": true
+			},
+			{
+				"filename": "/DB/dbLibs/animationSpeed/",
+				"text": "改变动画速度",
+				"des": "改变动画速度",
+				"in_use": true
+			},
+			{
+				"filename": "/DB/dbLibs/maskAndMixed/",
+				"text": "动画遮罩与混合",
+				"des": "动画遮罩与混合",
+				"in_use": true
+			},
+			{
+				"filename": "/DB/dbLibs/copy/",
+				"text": "动画拷贝",
+				"des": "动画拷贝",
+				"in_use": true
+			},
+			{
+				"filename": "/DB/dbLibs/events/",
+				"text": "骨骼动画事件",
+				"des": "骨骼动画事件",
+				"in_use": true
+			},
+			{
+				"filename": "/DB/dbLibs/speedMode/",
+				"text": "极速模式",
+				"des": "极速模式",
+				"in_use": true
+			}
+		],
+		"isFolder": true,
+		"text": "DragonBones 程序库",
+		"des": "DragonBones 程序库",
+		"in_use": true
+	}
+]
