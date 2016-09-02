@@ -1,0 +1,894 @@
+[
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/update/update318/",
+        "text": "Egret Engine2D 3.1.8",
+        "des": "Egret Engine2D 3.1.8",
+        "in_use": true
+      },
+      {
+        "isFolder": true,
+        "text": "历史更新",
+        "des": "历史更新",
+        "in_use": true,
+        "children": [
+          {
+            "filename": "/Engine2D/update/update317/",
+            "text": "Egret Engine2D 3.1.7",
+            "des": "Egret Engine2D 3.1.7",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update316/",
+            "text": "Egret Engine2D 3.1.6",
+            "des": "Egret Engine2D 3.1.6",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update315/",
+            "text": "Egret Engine2D 3.1.5",
+            "des": "Egret Engine2D 3.1.5",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update314/",
+            "text": "Egret Engine2D 3.1.4",
+            "des": "Egret Engine2D 3.1.4",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update313/",
+            "text": "Egret Engine2D 3.1.3",
+            "des": "Egret Engine2D 3.1.3",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update312/",
+            "text": "Egret Engine2D 3.1.2",
+            "des": "Egret Engine2D 3.1.2",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update311/",
+            "text": "Egret Engine2D 3.1.1",
+            "des": "Egret Engine2D 3.1.1",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update310/",
+            "text": "Egret Engine2D 3.1.0",
+            "des": "Egret Engine2D 3.1.0",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update308/",
+            "text": "Egret Engine2D 3.0.8",
+            "des": "Egret Engine2D 3.0.8",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update307/",
+            "text": "Egret Engine2D 3.0.7",
+            "des": "Egret Engine2D 3.0.7",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update306/",
+            "text": "Egret Engine2D 3.0.6",
+            "des": "Egret Engine2D 3.0.6",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update305/",
+            "text": "Egret Engine2D 3.0.5",
+            "des": "Egret Engine2D 3.0.5",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update304/",
+            "text": "Egret Engine2D 3.0.4",
+            "des": "Egret Engine2D 3.0.4",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update303/",
+            "text": "Egret Engine2D 3.0.3",
+            "des": "Egret Engine2D 3.0.3",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update302/",
+            "text": "Egret Engine2D 3.0.2",
+            "des": "Egret Engine2D 3.0.2",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update301/",
+            "text": "Egret Engine2D 3.0.1",
+            "des": "Egret Engine2D 3.0.1",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update300/",
+            "text": "Egret Engine2D 3.0.0",
+            "des": "Egret Engine2D 3.0.0",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update257/",
+            "text": "Egret Engine2D 2.5.7",
+            "des": "Egret Engine2D 2.5.7",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update256/",
+            "text": "Egret Engine2D 2.5.6",
+            "des": "Egret Engine2D 2.5.6",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update255/",
+            "text": "Egret Engine2D 2.5.5",
+            "des": "Egret Engine2D 2.5.5",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update254/",
+            "text": "Egret Engine2D 2.5.4",
+            "des": "Egret Engine2D 2.5.4",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update253/",
+            "text": "Egret Engine2D 2.5.3",
+            "des": "Egret Engine2D 2.5.3",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update252/",
+            "text": "Egret Engine2D 2.5.2",
+            "des": "Egret Engine2D 2.5.2",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update251/",
+            "text": "Egret Engine2D 2.5.1",
+            "des": "Egret Engine2D 2.5.1",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update250/",
+            "text": "Egret Engine2D 2.5.0",
+            "des": "Egret Engine2D 2.5.0",
+            "in_use": true
+          }
+        ]
+      }
+    ],
+    "isFolder": true,
+    "text": "更新详情",
+    "des": "更新详情",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/getStarted/helloWorld/",
+        "text": "Hello World",
+        "des": "Hello World",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/getStarted/getStarted/",
+        "text": "Get Started",
+        "des": "Get Started",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "Get Started",
+    "des": "Get Started",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/projectConfig/installation/",
+        "text": "安装与部署",
+        "des": "安装与部署",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/projectConfig/launcherManager/",
+        "text": "启动器",
+        "des": "引擎和工具的管理",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/projectConfig/cmdManual/",
+        "text": "命令行手册",
+        "des": "命令行手册",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/projectConfig/indexFile/",
+        "text": "入口文件说明",
+        "des": "入口文件说明",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/projectConfig/configFile/",
+        "text": "项目配置文件说明",
+        "des": "项目配置文件说明",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/projectConfig/tsconfig/",
+        "text": "tsconfig 配置文件",
+        "des": "tsconfig 配置文件",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/projectConfig/compileOrder/",
+        "text": "编译顺序说明",
+        "des": "编译顺序说明",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "项目配置",
+    "des": "项目配置相关文档",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/displayObject/visualProgram/",
+        "text": "视觉编程",
+        "des": "视觉编程",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/displayObject/basicConcept/",
+        "text": "显示对象的基本概念",
+        "des": "显示对象的基本概念",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/displayObject/classes/",
+        "text": "创建自己的显示对象类",
+        "des": "创建自己的显示对象类",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/displayObject/anchor/",
+        "text": "锚点的操作",
+        "des": "锚点的操作",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/displayObject/position/",
+        "text": "位置",
+        "des": "位置",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/displayObject/translation/",
+        "text": "平移",
+        "des": "平移",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/displayObject/size/",
+        "text": "尺寸",
+        "des": "尺寸",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/displayObject/scale/",
+        "text": "缩放",
+        "des": "缩放",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/displayObject/rotation/",
+        "text": "旋转",
+        "des": "旋转",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/displayObject/skew/",
+        "text": "斜切",
+        "des": "斜切",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "显示对象",
+    "des": "显示对象",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/displayObjecContainer/concept/",
+        "text": "显示容器的概念与实现",
+        "des": "显示容器的概念与实现",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/displayObjecContainer/addAndRemove/",
+        "text": "添加与删除显示对象",
+        "des": "添加与删除显示对象",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/displayObjecContainer/depthManagement/",
+        "text": "深度管理",
+        "des": "深度管理",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/displayObjecContainer/childen/",
+        "text": "访问容器子对象",
+        "des": "访问容器子对象",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "显示容器",
+    "des": "显示容器",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/vectorDrawing/useVectorDrawing/",
+        "text": "使用矢量绘图",
+        "des": "使用矢量绘图",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/vectorDrawing/drawCircle/",
+        "text": "绘制圆形",
+        "des": "绘制圆形",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/vectorDrawing/drawLine/",
+        "text": "绘制直线",
+        "des": "绘制直线",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/vectorDrawing/drawCurves/",
+        "text": "绘制曲线",
+        "des": "绘制曲线",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/vectorDrawing/drawArc/",
+        "text": "绘制圆弧",
+        "des": "绘制圆弧",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/vectorDrawing/useDrawCurves/",
+        "text": "Graphics Arc 高级使用",
+        "des": "Graphics Arc 高级使用",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/vectorDrawing/drawShapes/",
+        "text": "多个形状的绘制",
+        "des": "多个形状的绘制",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "矢量绘图",
+    "des": "矢量绘图",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/mask/rectangleMask/",
+        "text": "矩形遮罩",
+        "des": "矩形遮罩",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/mask/displayMask/",
+        "text": "显示对象遮罩",
+        "des": "显示对象遮罩",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "遮罩",
+    "des": "遮罩",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/hit/inexactHit/",
+        "text": "非精确碰撞检测",
+        "des": "非精确碰撞检测",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/hit/accurateHit/",
+        "text": "精确碰撞检测",
+        "des": "精确碰撞检测",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/hit/boundingBoxHit/",
+        "text": "包围盒碰撞检测",
+        "des": "包围盒碰撞检测",
+        "in_use": false
+      }
+    ],
+    "isFolder": true,
+    "text": "碰撞检测",
+    "des": "碰撞检测",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/textField/createText/",
+        "text": "使用文本",
+        "des": "使用文本",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/textField/textColor/",
+        "text": "文本颜色",
+        "des": "文本颜色",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/textField/textFonts/",
+        "text": "文本字体",
+        "des": "文本字体",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/textField/textLayout/",
+        "text": "文本布局",
+        "des": "文本布局",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/textField/textStyle/",
+        "text": "文本样式",
+        "des": "文本样式",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/textField/textMixed/",
+        "text": "多种样式文本混合",
+        "des": "多种样式文本混合",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/textField/textLinkEvent/",
+        "text": "文本超链接事件",
+        "des": "文本超链接事件",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/textField/textInput/",
+        "text": "输入文本",
+        "des": "输入文本",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "文本",
+    "des": "文本",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/event/principle/",
+        "text": "事件处理机制的原理",
+        "des": "事件处理机制的原理",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/event/process/",
+        "text": "事件的执行流程",
+        "des": "事件的执行流程",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/event/event/",
+        "text": "Event类",
+        "des": "Event类",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/event/listener/",
+        "text": "事件侦听器",
+        "des": "事件侦听器",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/event/priority/",
+        "text": "事件的优先级",
+        "des": "事件的优先级",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/event/touchEvent/",
+        "text": "触摸事件",
+        "des": "触摸事件",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/event/touchCanel/",
+        "text": "取消触摸事件",
+        "des": "取消触摸事件",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "事件机制",
+    "des": "事件机制",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/net/sendHTTP/",
+        "text": "发送HTTP请求",
+        "des": "发送HTTP请求",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/net/loadBitmap/",
+        "text": "加载位图文件",
+        "des": "加载位图文件",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/net/loadText/",
+        "text": "加载文本和二进制文件",
+        "des": "加载文本和二进制文件",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "网络",
+    "des": "网络",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/bitmapTexture/creatBitmap/",
+        "text": "创建位图",
+        "des": "创建位图",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/bitmapTexture/scale9Grid/",
+        "text": "九宫格",
+        "des": "九宫格",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/bitmapTexture/fillMode/",
+        "text": "纹理的填充方式",
+        "des": "纹理的填充方式",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/bitmapTexture/useTexture/",
+        "text": "纹理集的使用",
+        "des": "纹理集的使用",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/bitmapTexture/screenshots/",
+        "text": "截屏功能",
+        "des": "截屏功能",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "位图纹理",
+    "des": "位图纹理",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/mixedMode/normal/",
+        "text": "NORMAL",
+        "des": "NORMAL",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/mixedMode/add/",
+        "text": "ADD",
+        "des": "ADD",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/mixedMode/erase/",
+        "text": "ERASE",
+        "des": "ERASE",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "混合模式",
+    "des": "混合模式",
+    "in_use": false
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/filter/glowFilter/",
+        "text": "发光滤镜",
+        "des": "发光滤镜",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/filter/colorMatrixFilter/",
+        "text": "颜色矩阵滤镜",
+        "des": "颜色矩阵滤镜",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/filter/blurFilter/",
+        "text": "模糊滤镜",
+        "des": "模糊滤镜",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/filter/shadowFilter/",
+        "text": "投影滤镜",
+        "des": "投影滤镜",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "滤镜",
+    "des": "滤镜",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/timeControl/timer/",
+        "text": "Timer计时器",
+        "des": "Timer计时器",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/timeControl/tick/",
+        "text": "Tick心跳",
+        "des": "Tick心跳",
+        "in_use": false
+      },
+      {
+        "filename": "/Engine2D/timeControl/enterFrame/",
+        "text": "帧事件",
+        "des": "帧事件",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "时间控制",
+    "des": "时间控制",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/multimedia/audio/",
+        "text": "音频",
+        "des": "音频",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/multimedia/video/",
+        "text": "视频",
+        "des": "视频",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/multimedia/system/",
+        "text": "系统信息",
+        "des": "系统信息",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/multimedia/gyro/",
+        "text": "陀螺仪",
+        "des": "陀螺仪",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/multimedia/location/",
+        "text": "地理位置",
+        "des": "地理位置",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "多媒体",
+    "des": "多媒体",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/renderMode/webgl/",
+        "text": "WebGL渲染",
+        "des": "WebGL渲染",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "渲染模式",
+    "des": "渲染模式",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/screenAdaptation/explanation/",
+        "text": "缩放模式和旋转模式说明",
+        "des": "缩放模式和旋转模式说明",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/screenAdaptation/insight/",
+        "text": "深入了解屏幕适配",
+        "des": "深入了解屏幕适配",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "屏幕适配",
+    "des": "屏幕适配",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/debug/useDebug/",
+        "text": "使用 DEBUG 编译参数",
+        "des": "使用 DEBUG 编译参数",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/debug/consolePanel/",
+        "text": "使用内置日志输出面板",
+        "des": "使用内置日志输出面板",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/debug/showDebug/",
+        "text": "显示脏矩形和帧频信息",
+        "des": "显示脏矩形和帧频信息",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/debug/fpsPanel/",
+        "text": "FPS 面板",
+        "des": "FPS 面板",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/debug/performanceOptimization/",
+        "text": "性能优化",
+        "des": "性能优化",
+        "in_use": false
+      }
+    ],
+    "isFolder": true,
+    "text": "调试",
+    "des": "调试",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/callJS/tsCallJs/",
+        "text": "ts 与 js 互调",
+        "des": "ts 与 js 互调",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "调用原生JS",
+    "des": "调用原生JS",
+    "in_use": false
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/native/horizontalScreen/",
+        "text": "原生横屏设置",
+        "des": "原生横屏设置",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/native/hotUpdate/",
+        "text": "热更新",
+        "des": "热更新",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/native/debugSkill/",
+        "text": "调试技巧",
+        "des": "调试技巧",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/native/communicateSkill/",
+        "text": "Egret 与 Native 通信基本技巧",
+        "des": "Egret 与 Native 通信基本技巧",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/native/quickSDK/",
+        "text": "接入 QuickSDK",
+        "des": "接入 QuickSDK",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "原生支持",
+    "des": "原生支持",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/Engine2D/publish/publishH5/",
+        "text": "打包HTML5",
+        "des": "打包HTML5",
+        "in_use": false
+      },
+      {
+        "filename": "/Engine2D/publish/publishRuntime/",
+        "text": "打包runtime",
+        "des": "打包runtime",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/publish/publishAndroid/",
+        "text": "打包Android app",
+        "des": "打包Android app",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/publish/publishIOS/",
+        "text": "打包iOS app",
+        "des": "打包iOS app",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/publish/publishWinPhone/",
+        "text": "打包 WinPhone app",
+        "des": "打包 WinPhone app",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "打包发布",
+    "des": "打包发布",
+    "in_use": true
+  }
+]
