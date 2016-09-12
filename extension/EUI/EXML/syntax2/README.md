@@ -51,23 +51,20 @@ MyGroup.exml
 
 这种写法能够有效减少EXML的文件数量，仅当皮肤需要复用时我们创建独立的EXML文件。
 
-除了皮肤，ItemRenderer也是一个典型的使用率很高且不复用的组件。我们现在也可以直接内嵌ItemRender到List节点中：
+除了皮肤，ItemRenderer也是一个典型的使用率很高且不复用的组件。我们现在也可以直接内嵌ItemRender的皮肤到List节点中：
 
 ```
 <e:Group class="skins.MyGroup" xmlns:e="http://ns.egret.com/eui"> 
 	<e:List id="list"> 
-		<e:itemRenderer> 
-			<e:ItemRenderer>
-				<e:Skin>
-					<e:Label id="labelDisplay" text="{data.label}"/> 
-				</e:Skin>
-			</e:ItemRenderer>
-		</e:itemRenderer> 
+		<e:itemRendererSkinName> 
+			<e:Skin> 
+				<e:Label id="labelDisplay" text="{data.label}"/> 
+			</e:Skin>
+		</e:itemRendererSkinName>  
 	</e:List> 
 </e:Group>
 ```
 
-这里注意，第一个`<e:itemRenderer>`是小写开头，表示List.itemRenderer属性，第二个`<e:ItemRenderer>`才是内部类的根节点。表示自定义一个继承自eui.ItemRenderer的内部类。目前只有Skin和ItemRenderer这两种使用场景下支持内部类。
 
 ### 视图状态
 
