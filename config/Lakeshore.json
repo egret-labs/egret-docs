@@ -359,7 +359,7 @@
         "isFolder": true,
         "text": "项目设置",
         "des": "项目设置",
-        "in_use": false
+        "in_use": true
       },
       {
         "children": [
@@ -385,7 +385,7 @@
         "isFolder": true,
         "text": "示例项目",
         "des": "示例项目",
-        "in_use": false
+        "in_use": true
       }
     ],
     "isFolder": true,
