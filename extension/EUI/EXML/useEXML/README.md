@@ -1,11 +1,17 @@
 在EUI中，EXML是可以运行时加载解析的。您可以把它当做标准的文本文件加载后解析，或者直接将exml文本内容嵌入代码中解析。在下一节我们将详细讲解EXML的语法，这节我们先来看一下如何在代码中使用EXML文件。下面是一个EXML文件内容示例，它描述了一个按钮的皮肤：
 
 ```
-<?xml version="1.0" encoding="utf-8" ?> <e:Skin class="skins.ButtonSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui"> <e:Image width="100%" height="100%" scale9Grid="1,3,8,8" alpha.disabled="0.5"
+<?xml version="1.0" encoding="utf-8" ?> 
+<e:Skin class="skins.ButtonSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui"> 
+	<e:Image width="100%" height="100%" scale9Grid="1,3,8,8" alpha.disabled="0.5"
              source="button_up_png"
-             source.down="button_down_png"/> <e:Label id="labelDisplay" top="8" bottom="8" left="8" right="8"
+             source.down="button_down_png"/> 
+    <e:Label id="labelDisplay" top="8" bottom="8" left="8" right="8"
              size="20" fontFamily="Tahoma 'Microsoft Yahei'"
-             verticalAlign="middle" textAlign="center" text="按钮" textColor="0x000000"/> <e:Image id="iconDisplay" horizontalCenter="0" verticalCenter="0"/> </e:Skin>```
+             verticalAlign="middle" textAlign="center" text="按钮" textColor="0x000000"/> 
+    <e:Image id="iconDisplay" horizontalCenter="0" verticalCenter="0"/> 
+</e:Skin>
+```
 
 运行时显示结果如下：
 
@@ -42,11 +48,16 @@ private onLoaded(clazz:any,url:string):void{
 EXML同样也提供了文本的解析方式，这个过程大家可以直接类比对JSON文件的处理，因为几乎是一样的。您可以使用HttpRequest去加载EXML文件的文本内容，然后运行时调用EXML.parse(exmlText)方法去解析即可，会立即返回解析后的类定义。当然，您也可以跳过异步加载，直接在代码中嵌入EXML文本内容：
 
 ```
-var exmlText = `<?xml version="1.0" encoding="utf-8" ?> <e:Skin class="skins.ButtonSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui"> <e:Image width="100%" height="100%" scale9Grid="1,3,8,8" alpha.disabled="0.5"
+var exmlText = `<?xml version="1.0" encoding="utf-8" ?> 
+<e:Skin class="skins.ButtonSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui"> 
+	<e:Image width="100%" height="100%" scale9Grid="1,3,8,8" alpha.disabled="0.5"
              source="button_up_png"
-             source.down="button_down_png"/> <e:Label id="labelDisplay" top="8" bottom="8" left="8" right="8"
+             source.down="button_down_png"/> 
+    <e:Label id="labelDisplay" top="8" bottom="8" left="8" right="8"
              size="20" fontFamily="Tahoma 'Microsoft Yahei'"
-             verticalAlign="middle" textAlign="center" text="按钮" textColor="0x000000"/> <e:Image id="iconDisplay" horizontalCenter="0" verticalCenter="0"/> </e:Skin>`;
+             verticalAlign="middle" textAlign="center" text="按钮" textColor="0x000000"/> 
+    <e:Image id="iconDisplay" horizontalCenter="0" verticalCenter="0"/> 
+</e:Skin>`;
 
 
 var button = new eui.Button();

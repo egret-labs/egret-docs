@@ -5,7 +5,9 @@ EXML是一种严格遵循XML语法的标记语言，通常用于描述静态UI�
 我们先来分析一个最简单EXML文件内容：
 
 ```
-<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> </e:Group>```
+<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> 
+</e:Group>
+```
 
 可以看到它跟XML一样，是由一个个标签组成的。每个标签都有个命名空间前缀，例如`<e:Group>`中的`e`,它的对应命名空间声明也在根节点上：`xmlns:e="http://ns.egret.com/eui"`。以e这个命名空间开头的节点，表示在EUI这个UI库中的组件。而`<e:Group>`中的`Group`就是对应代码中`eui.Group`这个类。
 
@@ -29,7 +31,9 @@ module app {
 上面的例子只有一个根节点，我们将它扩展一下，添加一个Image子项：
 
 ```
-<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> <e:Image /> </e:Group>```
+<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> 	<e:Image /> 
+</e:Group>
+```
 
 以上内容等价于如下代码：
 
@@ -49,7 +53,10 @@ module app {
 刚刚的例子只添加了一个空图片，什么都显示不出来，我们接下来给它设置一些属性：
 
 ```
-<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> <e:Image source="image/button_up.png" x="10"/> </e:Group>```
+<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> 
+	<e:Image source="image/button_up.png" x="10"/> 
+</e:Group>
+```
 
 这个比较好理解，就是直接给Image节点加了source属性，它解析后相当于如下代码：
 
@@ -64,7 +71,11 @@ this.addChild(image);
 以上是最常见的属性写法，当通常只能描述简单数据类型的赋值，如果是复杂数据类型，比如要对属性赋值为另一个节点时，我们可以采用另一种写法：
 
 ```
-<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> <e:Image source="image/button_up.png" x="10"> <e:scale9Grid> <e:Rectangle x="10" y="10" width="45" height="35"/> </e:scale9Grid> </e:Image> </e:Group>```
+<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> 
+	<e:Image source="image/button_up.png" x="10"> <e:scale9Grid> <e:Rectangle x="10" y="10" width="45" height="35"/> </e:scale9Grid> 
+	</e:Image> 
+</e:Group>
+```
 
 `<e:scale9Grid>`这个是属性节点，表示父级节点Image的scale9Grid属性，这个属性要接受一个Rectangle对象的实例。以上内容等价为：
 
@@ -85,7 +96,10 @@ this.addChild(image);
 我们可以在节点上声明一个id属性，注意这个id属性与HTML中的id并不是一回事，它的结果相当于给解析后的类声明了一个公开变量。例如：
 
 ```
-<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> <e:Image id="iconDisplay" /> </e:Group>```
+<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> 
+	<e:Image id="iconDisplay" /> 
+</e:Group>
+```
 
 等价于：
 
@@ -110,12 +124,18 @@ module app {
 前面的例子描述了如何给Image设置scale9Grid(九宫格)属性,看起来非常麻烦是不是？幸好我们准备了一系列的语法糖可以简化属性的声明，九宫格的属性还可以这么声明：
 
 ```
-<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> <e:Image source="image/button_up.png" x="10" scale9Grid="10,10,45,35" /> </e:Group>```
+<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> 
+	<e:Image source="image/button_up.png" x="10" scale9Grid="10,10,45,35" /> 
+</e:Group>
+```
 
 是不是简洁多了？而且解析的结果跟前面完全一致。对于特别常用的属性，解析器会内置一些语法糖让您编写起来更加简洁。再介绍另一个语法糖，就是width或height属性可以直接写百分比：
 
 ```
-<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> <e:Image source="image/button_up.png" width=“100%” height="100%" /> </e:Group>```
+<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> 
+	<e:Image source="image/button_up.png" width=“100%” height="100%" /> 
+</e:Group>
+```
 
 解析器在处理这两个属性时，若赋值的是具体数字，那按默认规则走，生成对width/height的赋值代码，若赋值的是百分比字符串，那么就会生成percentWidth等属性的赋值代码：
 
@@ -134,16 +154,31 @@ this.addChild(image);
 我们已经知道了复杂属性节点的声明方式，要先显式声明一个属性名称的节点，内部再跟上要赋值的节点。这里还有一个类似语法糖的写法，eui库内的组件，通常都会有一个默认属性，如果子节点是赋值给父节点的默认属性，那么可以省略属性名节点。我们来看一个例子：
 
 ```
-<e:Scroller class="app.MyScroller" xmlns:e="http://ns.egret.com/eui"> <e:viewport> <e:Group/> </e:viewport> </e:Scroller>```
+<e:Scroller class="app.MyScroller" xmlns:e="http://ns.egret.com/eui"> 
+	<e:viewport> 
+		<e:Group/> 
+	</e:viewport> 
+</e:Scroller>
+```
 
 这个例子中，我们将Group实例赋值给了一个滚动容器Scroller的viewport属性。由于viewport是Scroller的默认属性，因此我们可以直接省略`<e:viewport>`节点，改成如下写法：
 
 ```
-<e:Scroller class="app.MyScroller" xmlns:e="http://ns.egret.com/eui"> <e:Group/> </e:Scroller>```
+<e:Scroller class="app.MyScroller" xmlns:e="http://ns.egret.com/eui"> 
+	<e:Group/> 
+</e:Scroller>
+```
 
 默认属性除了支持省略属性名节点外，若默认属性的类型是一个数组，还可以省略Array节点。其实添加子项也只是省略默认属性的一种特例，因为容器的默认属性是`elementsContent`,类型正是数组。最开始添加子项的那个例子完整写法如下：
 
 ```
-<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> <e:elementsContent> <e:Array> <e:Image/> </e:Array> </e:elementsContent> </e:Group>```
+<e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui"> 
+	<e:elementsContent> 
+		<e:Array> 
+			<e:Image/> 
+		</e:Array> 
+	</e:elementsContent> 
+</e:Group>
+```
 
 当然，我们直接用最简洁的省略默认属性写法即可。
