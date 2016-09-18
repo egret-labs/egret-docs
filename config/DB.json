@@ -484,6 +484,12 @@
 				"in_use": true
 			},
 			{
+				"filename": "/DB/dbLibs/replaceTexture/",
+				"text": "骨骼换装",
+				"des": "骨骼换装",
+				"in_use": true
+			},
+			{
 				"filename": "/DB/dbLibs/speedMode/",
 				"text": "极速模式",
 				"des": "极速模式",
