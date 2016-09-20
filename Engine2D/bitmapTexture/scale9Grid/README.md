@@ -1,7 +1,5 @@
 通常情况下为了游戏画面中的美观程度，我们或多或少都会使用一些圆角矩形或者边缘不规则的矩形。 在游戏中，我们经常会对这些图形进行拉伸。那么拉伸后的图形会发生变形。为了让边缘不会因为拉伸而变形，我们需要一个解决办法。 这个办法就是“九宫格”。
 
-九宫格在使用的时候有两种方法，这里我们仅仅介绍其中一种，另外一种会在GUI系统中进行介绍。
-
 先来看一下一个圆角矩形的样子。
 
 ![](556564e1ddd8d.png)
@@ -26,8 +24,7 @@
 
 ```
 class BitmapTest extends egret.DisplayObjectContainer{
-    public constructor()
-    {
+    public constructor() {
         super();
         this.addEventListener(egret.Event.ADDED_TO_STAGE,this.onAddToStage,this);
     }
@@ -37,8 +34,7 @@ class BitmapTest extends egret.DisplayObjectContainer{
         RES.loadConfig("resource/resource.json", "resource/");
         RES.loadGroup("preload");
     }
-    private onGroupComp()
-    {
+    private onGroupComp() {
         var img:egret.Bitmap = new egret.Bitmap();
         img.texture = RES.getRes("box");
         img.width *= 2;
