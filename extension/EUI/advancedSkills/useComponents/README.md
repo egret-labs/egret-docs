@@ -3,7 +3,8 @@
 之前例子中用到的节点都是EUI标准库中的组件，如果我们在项目中自定义了一个组件呢？例如我们有一个自定义的按钮类：`control.MyButton` ,在EXML中描述自定义组件的方式如下：
 
 ```
-<e:Group class="skins.MyGroup" xmlns:e="http://ns.egret.com/eui" con="control.*"> <con:MyButton/> </e:Group>```
+<e:Group class="skins.MyGroup" xmlns:e="http://ns.egret.com/eui" con="control.*"> <con:MyButton/> </e:Group>
+```
 
 首先我们要在根节点添加一个自定义的命名空间：`con="control.*"` ，等号之前的 `con` 表示命名空间前缀，这个可以随意写，只要不跟现有的前缀重名即可。等号后面的部分 `control.*` 表示在`control`这个模块名下的类。声明了命名空间后，我们就可以合法地引用自定义组件了：`<con:MyButton/>` 表示的类就是 `control.MyButton`。这是类含有模块名的情况，那要是类不在任何模块下呢？这时候可以直接声明命名空间为：`local="*"`即可，同理前缀是可以随意起的，等号后面只需要一个`*`即表示不含模块名。
 
