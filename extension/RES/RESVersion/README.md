@@ -20,6 +20,8 @@ default.res.json 中 resources 节点下配置的每个资源加载项，在第�
 
 ![](572970d038066.png)
 
+> 由于此中方式在 Native 下不可使用，因此建议在发布 Web 版本时在发布的配置文件里加上版本。
+
 ### Native版本控制
 
 native涉及到[热更新机制](../../../Engine2D/native/hotUpdate/README.md)，由于热更新机制每次资源更新后，会产生一个临时的本地命名，所以 RES 模块提供了两个方法用户处理版本控制。
