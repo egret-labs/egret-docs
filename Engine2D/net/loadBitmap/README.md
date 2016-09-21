@@ -1,3 +1,4 @@
+## 使用
 Egret 为加载位图文件准备了专门的类 ImageLoader 。
 假如 ImageLoader 类通过如下代码加载位于 'resource/egret.png' 的图片： 
 ``` TypeScript
@@ -14,3 +15,9 @@ imgLoadHandler( evt:egret.Event ):void{
     this.addChild(bmp);
 }
 ```
+
+## 跨域处理
+
+* 服务器设置访问权限。
+* 可以通过尝试修改 `imgLoader.crossOrigin = 'anonymous'` 来以匿名的方式访问。不过在使用 `texture.toDataURL` 时会报跨域问题。
+* webgl 渲染下，暂不支持跨域图片处理。

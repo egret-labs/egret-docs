@@ -19,7 +19,6 @@ class GeolocationTest extends egret.DisplayObjectContainer {
         this.label.x = STAGEWIDTH / 2;
         this.addChild(this.label);
         this.label.size = 20;
-        this.label.fontFamily = "楷体";
         this.label.text = "暂未获取到经纬度信息";
         this.label.anchorOffsetX = this.label.width / 2;
 

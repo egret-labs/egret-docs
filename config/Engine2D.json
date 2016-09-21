@@ -677,7 +677,7 @@
         "filename": "/Engine2D/timeControl/tick/",
         "text": "Tick心跳",
         "des": "Tick心跳",
-        "in_use": false
+        "in_use": true
       },
       {
         "filename": "/Engine2D/timeControl/enterFrame/",
@@ -755,7 +755,7 @@
         "filename": "/Engine2D/screenAdaptation/insight/",
         "text": "深入了解屏幕适配",
         "des": "深入了解屏幕适配",
-        "in_use": true
+        "in_use": false
       }
     ],
     "isFolder": true,
@@ -813,7 +813,7 @@
     "isFolder": true,
     "text": "调用原生JS",
     "des": "调用原生JS",
-    "in_use": false
+    "in_use": true
   },
   {
     "children": [

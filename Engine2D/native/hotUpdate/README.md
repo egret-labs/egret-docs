@@ -4,7 +4,7 @@
 
 ## 概述
 
-本文调试环境为引擎2.5.3
+本文适用 2.5.3 以上。
 
 Egret的封装项目无论在Android还是iOS平台，均支持热更新。
 
@@ -76,7 +76,7 @@ Egret的封装项目无论在Android还是iOS平台，均支持热更新。
 ![](562da618ca122.png)  
 
 - case 2, 空字符串。即当前包使用最原始的格式。`egret build [-e] --runtime native` 之后的数据结构。
-- default, 本地使用zip包方式。`egret publish -compile --runtime native --version xxx -log` 之后，会将最新的资源包拷贝到Android项目中。此时如果需要在Android项目中测试。
+- default, 本地使用zip包方式。`egret publish --runtime native --version xxx` 之后，会将最新的资源包拷贝到Android项目中。此时如果需要在Android项目中测试。
 - case 1, 只有使用这种方式才会有热更新机制，引擎会根据提供的game_code.zip的名称进行更新。
 
 **我们以 case 1 为例：**
@@ -132,7 +132,7 @@ APP每次启动会从事先设置好的HTTP（loaderUrl）地址请求更新内�
 我们需要熟悉一下发布命令：
 
 	//version 后为自定义的版本文件夹，如果没有，则会自动生成一个数字串的文件夹,一般会省略。
-    egret publish -compile --runtime native --version xxx -log
+    egret publish --runtime native --version xxx
 
 找到开始时建立的 h5Demo 所在目录，执行发布命令，如图：
 
@@ -148,7 +148,7 @@ APP每次启动会从事先设置好的HTTP（loaderUrl）地址请求更新内�
 
 最终egret.php输出的路径，可匹配 151026111628 文件即可。
 
-现在我们可以修改背景 resource&#47;assetsbg.jpg 文件，执行` egret publish --runtime native` 后更新文件夹到服务器，修改egret.php。打开你的APP，查看背景是否更新。
+现在我们可以修改背景 resource/assetsbg.jpg 文件，执行` egret publish --runtime native` 后更新文件夹到服务器，修改egret.php。打开你的APP，查看背景是否更新。
 
 > 注：每次发布项目后，andorid 项目可能会被更新，需重新设置 setLoaderUrl 相关参数与内容。
 
@@ -159,5 +159,4 @@ APP每次启动会从事先设置好的HTTP（loaderUrl）地址请求更新内�
 1. 修改 Android 封装项目入口文件的 setLoaderUrl 方法,并发布正式版本APP。
 2. 每次H5版本有资源或代码修改，执行`egret publish --runtime native`发布命令。
 3. 拷贝所生成的文件夹到WEB服务器，并修改服务器中更新路径。
-
-源码下载：[点击下载](/cn/data/upload/562da676ab121.zip "点击下次")
+4. 确保每次 zip 包的名称不一样。

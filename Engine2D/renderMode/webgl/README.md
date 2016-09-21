@@ -31,7 +31,7 @@ WebGL 提供了底层的渲染 API，对于传统 Web 开发者来说使用 WebG
 
 在 Egret Engine 2D 3.0.6 中我们可以自由开启 WebGL 渲染模式。默认的渲染模式任然使用 Canvas ，开启 WebGL 渲染模式只需要在 Egret 启动时指定渲染模式即可。在 Egret 项目根目录中我们可以找到 index.html 文件。该文件是 Egret 项目的入口,包含很多初始化设置。
 
-在 index.html 中找到第 58 行。可以看到 Egret 的启动函数。如果要开启 WebGL 渲染只需要在其中传入参数即可。
+在 index.html 中可以看到 Egret 的启动函数。如果要开启 WebGL 渲染只需要在其中传入参数即可。
 
 ```
 egret.runEgret({renderMode:"webgl"});
@@ -57,7 +57,7 @@ console.log(egret.Capabilities.renderMode);
 
 ### WebGL 与脏矩形
 
-在 Egret Engine 3.0.7 开始 WebGL 渲染模式下开始支持脏矩形。自动脏矩形脏矩形只重绘屏幕发生改变的区域，可以获得性能的提升。需要注意的是由于和 Canvas 模式的渲染机制不同，自动脏矩形对 WebGL 渲染的性能提升比较小，可以手动关闭脏矩形渲染。
+在 Egret Engine 3.0.7 开始 WebGL 渲染模式下开始支持脏矩形。自动脏矩形脏矩形只重绘屏幕发生改变的区域，可以获得性能的提升。
 
 ### 其他注意事项
 
