@@ -246,8 +246,9 @@ HTTP请求方式：POST
 
 #### 附录一：签名生成规则
 
-签名生成规则：
-1. 对参与签名的参数的键值进行***正序排列***
+##### 签名生成规则：
+
+1. 对参与签名的参数的键值进行`正序排列`
 2. 生成待加密字符串
    * 第一步：对排好序的参与签名加密的参数按照排序顺序以 key1=value1key2=value2...keyn=valuen 形式连接成字符串(sign不参与签名)
    * 第二步：在已经连接好的字符串尾部连接appkey(appkey在开放平台获取) ，最终形成的待加密字符串格式为key1=value1key2=value2...keyn=valuenappkey
@@ -266,6 +267,10 @@ function createSign($params, $appkey){
 		return md5($str.$appkey);
 }
 ```
+
+##### 在线验证：
+
+[http://open.egret.com/checkSign](http://open.egret.com/checkSign) 
 
 #### 附录二：游戏接入前需提供信息
 
