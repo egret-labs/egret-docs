@@ -2,6 +2,11 @@
   {
     "children":[
       {
+        "filename":"/platform/egret/online/",
+        "text":"新版游戏上线流程",
+        "des":"新版游戏上线流程"
+      },
+      {
         "filename":"/platform/egret/developers/",
         "text":"开发者接入文档",
         "des":"开发者接入说明文档"
@@ -10,6 +15,11 @@
         "filename":"/platform/egret/Nest/",
         "text":"Nest使用说明",
         "des":"Nest使用说明文档"
+      },
+      {
+        "filename":"/platform/egret/runtime/",
+        "text":"Runtime打包说明",
+        "des":"Runtime打包说明"
       },
       {
         "filename":"/platform/egret/statistics/",
