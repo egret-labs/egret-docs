@@ -208,6 +208,8 @@
 
 * [Timer计时器](Engine2D/timeControl/timer/README.md)
 
+* [Tick心跳](Engine2D/timeControl/tick/README.md)
+
 * [帧事件](Engine2D/timeControl/enterFrame/README.md)
 
 #### 多媒体
@@ -230,8 +232,6 @@
 
 * [缩放模式和旋转模式说明](Engine2D/screenAdaptation/explanation/README.md)
 
-* [深入了解屏幕适配](Engine2D/screenAdaptation/insight/README.md)
-
 #### 调试
 
 * [使用 DEBUG 编译参数](Engine2D/debug/useDebug/README.md)
@@ -241,6 +241,10 @@
 * [显示脏矩形和帧频信息](Engine2D/debug/showDebug/README.md)
 
 * [FPS 面板](Engine2D/debug/fpsPanel/README.md)
+
+#### 调用原生JS
+
+* [ts 与 js 互调](Engine2D/callJS/tsCallJs/README.md)
 
 #### 原生支持
 
@@ -744,9 +748,11 @@
 
 #### 更新详情
 
-* [DragonBones 4.7.3](DB/update/update473/README.md)
+* [DragonBones 4.7.4](DB/update/update474/README.md)
 
 ###### 历史更新
+
+* [DragonBones 4.7.3](DB/update/update473/README.md)
 
 * [DragonBones 4.7.2](DB/update/update472/README.md)
 
@@ -885,6 +891,8 @@
 * [动画拷贝](DB/dbLibs/copy/README.md)
 
 * [骨骼动画事件](DB/dbLibs/events/README.md)
+
+* [骨骼换装](DB/dbLibs/replaceTexture/README.md)
 
 * [极速模式](DB/dbLibs/speedMode/README.md)
 
@@ -1082,9 +1090,13 @@
 
 #### 白鹭开放平台接入
 
+* [新版游戏上线流程](platform/egret/online/README.md)
+
 * [开发者接入文档](platform/egret/developers/README.md)
 
 * [Nest使用说明](platform/egret/Nest/README.md)
+
+* [Runtime打包说明](platform/egret/runtime/README.md)
 
 * [Egret统计接入](platform/egret/statistics/README.md)
 
