@@ -499,7 +499,7 @@
 				"filename": "/DB/dbLibs/speedMode/",
 				"text": "极速模式",
 				"des": "极速模式",
-				"in_use": true
+				"in_use": false
 			}
 		],
 		"isFolder": true,
