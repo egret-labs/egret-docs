@@ -51,7 +51,7 @@ this.addChild(movie); // 添加 Movie 到显示列表
  Movie 使用 MovieEvent 事件，支持开始、循环、结束、帧、声音等事件，对 Movie 的更多了解可以参考 [API 文档](http://developer.egret.com/cn/apidoc/)和[例子代码](http://developer.egret.com/cn/portal/article/index/id/1046)。
 
 ### 导出二进制数据
-DragonBonesPro 暂时无法导出 Movie 支持的二进制数据格式（当前版本4.7.4），将在下一个版本支持该功能，目前提供一个 Air 程序 [Armature to Movie （点击下载）](http://cdn.dev.egret.com/soft/dragonbones/DragonBonesDataCacher.air)将 JSON 格式转换成二进制数据格式，如果没有 Air 运行时，在安装该程序之前先安装 [Air 运行时](https://get.adobe.com/air/?loc=cn)。
+DragonBonesPro 暂时无法导出 Movie 支持的二进制数据格式（当前版本4.7.4），将在下一个版本支持该功能。
 
 
 #### 路线图
