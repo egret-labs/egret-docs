@@ -57,7 +57,7 @@ console.log(egret.Capabilities.renderMode);
 
 ### WebGL 与脏矩形
 
-在 Egret Engine 3.0.7 开始 WebGL 渲染模式下开始支持脏矩形。自动脏矩形脏矩形只重绘屏幕发生改变的区域，可以获得性能的提升。
+由于在一些浏览器上兼容性问题比较严重，目前暂时在 WebGL 下关闭了的脏矩形渲染。
 
 ### 其他注意事项
 
