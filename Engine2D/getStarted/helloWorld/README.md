@@ -20,9 +20,9 @@ Egret 也支持在命令行完成编译，运行，发布等操作。在下面�
 
 Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超集，具体内容可以参考[TyptScript语言手册](http://bbs.egret.com/thread-1441-1-1.html)。在下的教程中会一点一点讲解具体的语法与使用规则。Egret 的 API 和 AS3 有很多相似之处，如果您熟悉的话肯定容易上手。 
 
-### 创建空项目
+### 创建新项目
 
-当大家熟悉 Egret 开发之后可以直接创建Egret游戏项目或者Egret EUI 项目等，里面包含了很多默认的配置。现在学习 Egret 第一步还是从一个完全空的项目来开始。
+当大家熟悉 Egret 开发之后可以直接创建Egret游戏项目或者Egret EUI 项目等，里面包含了很多默认的配置。这里以新建游戏项目为例。
 
 #### 使用 Egret Wing 创建项目
 
@@ -116,7 +116,7 @@ class Main extends egret.DisplayObjectContainer
 
 ```
 private createGameScene():void {
-        
+        //插入 log
         console.log("Hello World");
         
         var sky:egret.Bitmap = this.createBitmapByName("bgImage");
@@ -125,45 +125,7 @@ private createGameScene():void {
         var stageH:number = this.stage.stageHeight;
         sky.width = stageW;
         sky.height = stageH;
-
-        var topMask:egret.Shape = new egret.Shape();
-        topMask.graphics.beginFill(0x000000, 0.5);
-        topMask.graphics.drawRect(0, 0, stageW, stageH);
-        topMask.graphics.endFill();
-        topMask.width = stageW;
-        topMask.height = stageH;
-        this.addChild(topMask);
-
-        var icon:egret.Bitmap = this.createBitmapByName("egretIcon");
-        this.addChild(icon);
-        icon.scaleX = 0.55;
-        icon.scaleY = 0.55;
-        icon.anchorOffsetX = icon.width / 2;
-        icon.anchorOffsetY = icon.height / 2;
-        icon.x = stageW / 2;
-        icon.y = stageH / 2 - 60;
-
-        var colorLabel:egret.TextField = new egret.TextField();
-        colorLabel.textColor = 0xffffff;
-        colorLabel.textAlign = "center";
-        colorLabel.text = "Hello Egret";
-        colorLabel.size = 20;
-        colorLabel.x = stageW - colorLabel.width >> 1;
-        colorLabel.y = (stageH - colorLabel.height >> 1) + 50;
-        this.addChild(colorLabel);
-
-        var textfield:egret.TextField = new egret.TextField();
-        this.addChild(textfield);
-        textfield.alpha = 0;
-        textfield.width = stageW;
-        textfield.textAlign = egret.HorizontalAlign.CENTER;
-        textfield.x = 0;
-        textfield.y = stageH / 2 + 100;
-        this.textfield = textfield;
-
-        //根据name关键字，异步获取一个json配置文件，name属性请参考resources/resource.json配置文件的内容。
-        // Get asynchronously a json configuration file according to name keyword. As for the property of name please refer to the configuration file of resources/resource.json.
-        RES.getResAsync("description", this.startAnimation, this)
+		//以下省略
     }
 ```
 这里我们调用了一条常用的调试命令，`console.log("需要显示的log内容")`将在浏览器的开发者工具下显示出来我们的log。我们推荐使用 Chrome 来调试 Egret 项目。
@@ -180,7 +142,11 @@ egret build
 ```
 构建完成之后点击调试按钮，可打开调试模式，这里选择 Wing 内置播放器模式。
 
-点击![](arrow.png)，即可运行起来。打开菜单“EgretWing”->“切换开发者工具”即可看到输出的log。
+点击![](arrow.png)，即可运行起来。
+
+![](debug1.png)
+
+打开菜单“EgretWing”->“切换开发者工具”即可看到输出的log。
 
 ![](debug.png)
 
