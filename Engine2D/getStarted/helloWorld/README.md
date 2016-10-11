@@ -26,33 +26,49 @@ Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超
 
 #### 使用 Egret Wing 创建项目
 
-安装好Egret Wing 之后，打开 Wing 可以看到欢迎界面。在欢迎界面上面可以快速创建项目。
+1、安装好Egret Wing 之后，点击菜单“文件”-》“新建项目”来快速创建项目。
 
 ![](56a1a8c31defc.png)
 
-这里我们需要的是创建新的项目。当然也可以在文件菜单下的新建项目来创建我们的新项目。
+2、选择“Egret 游戏项目”来创建拥有游戏模板的项目。同样“Egret EUI 项目”将会包含EUI项目模板
+![](create2.png)
 
-选择建新项目之后会弹出新建项目的面板，在这里需要选择项目的基本配置。
+> 如果想使用 EUI 库，请使用创建 EUI 项目来创建而不是通过创建游戏项目再加入 EUI 库来实现。
 
-![](56a1a8c37594b.png)
+3、选择建新项目之后会弹出新建项目的面板，在这里需要选择项目的基本配置。
 
-这里我们从一个游戏项目开始。游戏项目将会包含一套 HelloWorld 的模板，并包含我们常用的库几个库，`game`,`tween`,`res`。 选择其他项目将会创建包含相应项目模板的项目，比如，EUI项目将会包含EUI项目模板。 项目下面需要填写项目的名称和路径，这里大家应该都不陌生，项目名称是必填的字段，填写完成好后才能点击下一步。
+![](create3.png)
 
-这里填入项目的名称 `HelloWorld` ,目录选择我的常用目录,当然也可以自定义。
+* 项目名称 
+这里填上项目名称，比如 `HelloWorld`。
 
-点击下一步会弹出项目属性设置面板：
+* 项目路径
+目录选择自己的工作目录。
 
-![](56a1a8c398b33.png)
+* 扩展库选择
+这里包含默认的几个库，`egret`，`game`,`tween`,`res`。如果需要其他的库也可以自行勾上。
 
-这里可以设置舞台的宽度和高度，这里的舞台是我们呈现游戏的地方。当我们的项目运行在不同的平台上面比如桌面浏览器和手机浏览器上面时，设备本身的宽度和高度是不同的。这时就需要缩放舞台来达到更好的用户体验。舞台的宽和高在选择不同的缩放模式下会有不同的展现方式，如图例所示，在该模式下舞台会保持宽高比，当我们设计好舞台的尺寸之后会保持它的宽高比，当设备的窗口不同的时候，缩放后应用程序内容向较宽方向填满播放器窗口，另一个方向的两侧可能会不够宽而留有黑边。在此模式下，舞台尺(stage.stageWidth,stage.stageHeight)始终等于初始化时外部传入的应用程序内容尺寸。
 
-而当我们的游戏运行在移动端的时候，会面临屏幕旋转的问题。这里我们旋转`AUTO`选项，舞台将随设备旋转而旋转。
+![](create4.png)
 
-这里还可以选择舞台的背景颜色，可以根据项目的具体需要设定。如果舞台是空的情况下就会只显示该颜色。
+* 舞台宽度、高度
+  游戏呈现的分辨率。和机器本身的分辨率不同，这个是会根据“缩放模式”、“旋转设置”将游戏呈现的区分按照这个比例来分成若干等分，而不是简单的等同于机器的分辨率。最终的游戏的分辨率可能和设计的不太一样，可以通过(stage.stageWidth,stage.stageHeight)来获取最终分辨率。
 
-更多关于旋转和缩放模式的介绍可以参考：[缩放模式和旋转模式说明](../../../Engine2D/screenAdaptation/explanation/README.md)
+* 引擎版本号
+  
+  创建的项目使用的 Egret 的版本。
+  
+* 舞台背景色
+	
+	根据项目的具体需要设定。如果舞台是空的情况下就会只显示该颜色。
 
-当然这些设置都是可以更改的，下面将进一步介绍。
+* 缩放模式
+  游戏的适配方式。更多关于缩放模式的介绍可以参考：[缩放模式和旋转模式说明](../../../Engine2D/screenAdaptation/explanation/README.md)
+	
+* 旋转设置
+	
+	当游戏运行在移动端的时候，会面临屏幕旋转的问题。这里旋转`AUTO`选项，舞台将随设备旋转而旋转。更多关于旋转设置的介绍可以参考：[缩放模式和旋转模式说明](../../../Engine2D/screenAdaptation/explanation/README.md)
+
 
 #### 使用命令行创建项目
 
@@ -74,69 +90,15 @@ egret create HelloWorld
 ![](56a1a8c3b9412.png)
 
 * Fighter 我们的项目名称
-* * src 目录，存放我们的代码。我们编写的代码都放在src目录下面。
-* * bin-debug 目录，项目编译和运行的debug目录，一般我们不要修改该目录下的内容。
-* * libs 目录，这里面存放我们的库文件，包括 Egret 核心库和其他扩展库。当然以后添加了第三方库的话也会放在这里。
-* * resource 目录，这里放置我们的资源文件，这里面有一个`default.res.json` 配置文件，用来配置资源。
-* * template 目录，这里是项目调试过程中所需的目录，一般我们不需要修改该目录下的内容。
-* * egretProperties.json 项目的配置文件，一般我们会用到里面的`modules` 字段来配置项目的模块。
-* * index.html 项目访问的入口文件，我们可以在这里面配置项目的旋转缩放模式背景颜色等。
-* * favicon.ico 一个ico。
+	* src 目录，存放我们的代码。我们编写的代码都放在src目录下面。
+	* bin-debug 目录，项目编译和运行的debug目录，一般我们不要修改该目录下的内容。
+	* libs 目录，这里面存放我们的库文件，包括 Egret 核心库和其他扩展库。当然以后添加了第三方库的话也会放在这里。
+	* resource 目录，这里放置我们的资源文件，这里面有一个`default.res.json` 配置文件，用来配置资源。
+	* template 目录，这里是项目调试过程中所需的目录，一般我们不需要修改该目录下的内容。
+	* egretProperties.json 项目的配置文件，一般我们会用到里面的`modules` 字段来配置项目的模块。具体的配置说明可以参考：[EgretProperties说明](../../../Engine2D/projectConfig/configFile/README.md)
 
-#### index.html
-
-在 index.html 文件里可以完成很多配置。打开文件，在第15行可以看到：
-
-```
-background: #888888;
-```
-
-这里可以设置舞台的背景颜色。
-
-在第29行到第31行可以看到：
-
-```
-<!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。--> <!--other_libs_files_start--> <!--other_libs_files_end-->```  
-
-这里是添加自定义的第三方库文件的引用，需要放置在`<!--other_libs_files_start-->`和`<!--other_libs_files_end-->`之间。一般情况下这种第三方库是包含 `.js` 和 `.d.ts` 文件,不要包含`.ts`文件。 
-
-在第40到第52行可以看到:
-```
-    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
-         data-entry-class="Main"
-         data-orientation="auto"
-         data-scale-mode="showAll"
-         data-resolution-mode="retina"
-         data-frame-rate="30"
-         data-content-width="480"
-         data-content-height="800"
-         data-show-paint-rect="false"
-         data-multi-fingered="2"
-         data-show-fps="false" data-show-log="false"
-         data-log-filter="" data-show-fps-style="x:0,y:0,size:30,textColor:0x00c200,bgAlpha:0.9"> </div>```    
-
-在这里可以配置项目的很多设置：
-
-* data-entry-class="Main" 设置项目的入口文件，表示项目的入口类，默认为`Main`,如果需要自定义的话需要在项目中先创建类，然后在这里配置类的名字。
-* data-orientation="auto" 设置旋转模式。
-* data-scale-mode="showAll" 设置缩放模式。
-* data-frame-rate="30" 这里是运行的帧率。
-* data-content-width="480" 和 data-content-height="800" 用来设置舞台的设计宽和高
-* data-show-paint-rect="false" 设置显示脏矩形的重绘区域。
-* data-multi-fingered="2" 设置多指触摸
-* data-show-fps="false" data-show-log="false" 这里设置显示帧率和log，只有在调试时会显示，发布的版本会去掉。
-* data-log-filter=""  设置一个正则表达式过滤条件，日志文本匹配这个正则表达式的时候才显示这条日志。如 `data-log-filter="^egret"` 表示仅显示以 `egret` 开头的日志。
-* data-show-fps-style="x:0,y:0,size:30,textColor:0x00c200,bgAlpha:0.9" 这里设置fps面板的样式。目前支持默认的这几种设置，修改其值即可，比如修改面板位置可以设置`x`和`y`,改变大小可以设置`size`,改变文字颜色`textColor`，改变背景面板的透明度`bgAlpha`。
-
-> 不要随意修改其他代码，包括其中的注释。
-
-#### egretProperties.json
-
-这个文件里面进行项目配置,包括模块和第三方库的配置，发布和native相关配置。
-
-我们比较常用的设置就是添加模块和第三方库。
-
-具体的配置说明可以参考：[EgretProperties说明](../../../Engine2D/projectConfig/configFile/README.md)
+	* index.html 项目访问的入口文件，我们可以在这里面配置项目的旋转缩放模式背景颜色等。具体的配置说明可以参考：[入口文件说明](../../../Engine2D/projectConfig/indexFile/README.md)
+	* favicon.ico 一个ico。
 
 ### 调试项目
 
@@ -147,6 +109,7 @@ background: #888888;
 ```
 class Main extends egret.DisplayObjectContainer 
 ```
+
 第一行我们看到 `class` 关键字，表示类。如果熟悉面向对象编程的开发者肯定熟悉。表示我们声明一个类，而类名就是 `Main`,我们的入口类。这个是我们可以自己定义的。如果修改之后需要在上面的 `index.html` 里面修改。下一个关键字 `extends` 表示该类继承自什么地方。Egret Engine 规定入口的文档类必须继承自显示容器`DisplayObjectContainer`或其子类。关于显示对象的具体知识下面会讲到。
 
 下面编写我们的项目的第一行代码,在默认的代码中找到第 119 行，`createGameScene()`函数里面下面一行添加`console.log("Hello World");`。变成了下面的样子：
@@ -207,25 +170,24 @@ private createGameScene():void {
 
 #### 调试项目
 
-编写好代码后需要构建项目才会生效，把`TypeScript`代码编译成`JavaScript`代码，这样是使用`TypeScipt`的一大特性。Wing 里面默认是开启自动构建的，即按快捷键`Ctrl + s` 即可自动构建项目。如果需要关闭自动构建的话可以在项目里面把自动构建的勾去掉，然后手动点击构建项目按钮。
+编写好代码后需要构建项目才会生效，把`TypeScript`代码编译成`JavaScript`代码，这样是使用`TypeScipt`的一大特性。Wing 菜单“项目”-》“构建”可进行一次项目的编译。
 
-![](56a1a8c3eb90a.png)
+![](build.png)
 
-用命令行的情况下，使用下面代码可以构建项目：
+用命令行的情况下，使用下面代码同样可以构建项目：
 ```
 egret build
 ```
-构建完成之后点击调试按钮将自动打开浏览器,打开浏览器之后可以打开发者工具(Chrome 默认快捷键为F12)，即可看到我们上面的log输出出来了。
+构建完成之后点击调试按钮，可打开调试模式，这里选择 Wing 内置播放器模式。
 
-![](56a1a8c4064d3.png)
+点击![](arrow.png)，即可运行起来。打开菜单“EgretWing”->“切换开发者工具”即可看到输出的log。
+
+![](debug.png)
 
 ![](56a1a8c418700.png)
 
-也可以使用命令行来运行项目：
+同样也可以使用命令行来运行项目：
 
 ```
 egret startserver
 ```
-
-当我们修改代码后只需刷新页面即可看到效果。
-到目前为止我们程序还没有什么实际功能，只是打印出来一行字符。下面将慢慢深化我们的程序。
