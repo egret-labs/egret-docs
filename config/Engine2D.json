@@ -862,27 +862,27 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/publish/publishH5/",
-        "text": "打包HTML5",
-        "des": "打包HTML5",
-        "in_use": false
+        "filename": "/Engine2D/publish/publishHTML5/",
+        "text": "打包 HTML5",
+        "des": "打包 HTML5",
+        "in_use": true
       },
       {
         "filename": "/Engine2D/publish/publishRuntime/",
-        "text": "打包runtime",
-        "des": "打包runtime",
+        "text": "打包 Runtime",
+        "des": "打包 Runtime",
         "in_use": true
       },
       {
         "filename": "/Engine2D/publish/publishAndroid/",
-        "text": "打包Android app",
-        "des": "打包Android app",
+        "text": "打包 Android app",
+        "des": "打包 Android app",
         "in_use": true
       },
       {
         "filename": "/Engine2D/publish/publishIOS/",
-        "text": "打包iOS app",
-        "des": "打包iOS app",
+        "text": "打包 iOS app",
+        "des": "打包 iOS app",
         "in_use": true
       },
       {
