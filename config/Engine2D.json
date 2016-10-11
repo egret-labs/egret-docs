@@ -189,7 +189,7 @@
         "filename": "/Engine2D/getStarted/getStarted/",
         "text": "Get Started",
         "des": "Get Started",
-        "in_use": true
+        "in_use": false
       }
     ],
     "isFolder": true,
