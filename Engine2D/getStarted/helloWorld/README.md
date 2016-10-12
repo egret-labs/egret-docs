@@ -8,7 +8,7 @@
 
 打开引擎管理工具，可以看到有工具选项卡，可以在这里找到 Egret Wing。Egret Wing 是针对 Egret 项目的 IDE。下面的教程都以 Egret Wing 来做演示。
 
-![](56a1a8c2eb61b.png)
+![](down.png)
 
 新用户可能还没有安装 Egret Wing,上图打开部分显示为安装，点击即可。
 
@@ -28,7 +28,7 @@ Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超
 
 1、安装好Egret Wing 之后，点击菜单“文件”-》“新建项目”来快速创建项目。
 
-![](56a1a8c31defc.png)
+![](create1.png)
 
 2、选择“Egret 游戏项目”来创建拥有游戏模板的项目。同样“Egret EUI 项目”将会包含EUI项目模板
 ![](create2.png)
