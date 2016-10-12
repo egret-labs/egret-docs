@@ -8,7 +8,7 @@
 
 2、如果还有问题，请再转一次。
 
-3、如果还有问题，请裁减音频再次转换。
+3、如果还有问题，请裁减音频再次转换。再有问题截取播放时间长度重新转换。
 
 4、如果还有问题，请到论坛联系我们 [开发者论坛](http://bbs.egret.com/portal.php)，并提供对应的音频文件。
 
@@ -17,6 +17,8 @@
 > 对于更专业的转换工具比如 audition，在测试中发现转换后的文件并不能解决在所有的浏览器中的播放问题，所以以目前的测试结果不推荐大家使用。
 
 > 在 iOS 系统（所有设备，包括IPAD）中，使用者在可能付费的网络环境中需要等待用户交互操作后才能播放媒体。为了获得在 iOS 系统中最大的兼容性，请避免使用自动播放音频（载入完成即播放），应添加合适的触发条件（比如播放按钮）。
+
+> 如果使用 WebAudio 方式还不能自动播放的话，那么目前来说没有其他方式来解决自动播放的问题。
 
 ----
 
@@ -71,15 +73,28 @@
 目前引擎内提供了4种声音的兼容模式，分别是 Audio、 WebAudio、QQAudio（qzone提供的声音解决方案）、以及 NativeAudio（打包方案Audio）
 
 
-* WebAudio：IOS系统版本大于等于7的所有IOS版本的浏览器。
+* WebAudio：IOS系统版本大于等于7的所有IOS版本的浏览器，Egret 3.2.0 以后 Android 默认也使用 WebAudio，如果不支持 WebAudio 的 app 则会自动改成 Audio 方式。
 
-* QQAudio：在html页面指定了 “http://qzonestyle.gtimg.cn/qzone/phone/m/v4/widget/mobile/jsbridge.js” （Qzone使用的js api）并且运行在 qq空间的 的android机型。
+* QQAudio：在html页面指定了 “http://qzonestyle.gtimg.cn/qzone/phone/m/v4/widget/mobile/jsbridge.js” （Qzone使用的js api）并且运行在`qq空间`的 android 机型。
 
-* Audio：除使用WebAudio以及QQAudio外的其他所有的Web浏览器或者平台。可能出现的问题是声音播放有延迟，同一时间只能有一个音频的存在。
+* Audio：除使用 WebAudio 以及 QQAudio 外的其他所有的 Web 浏览器或者平台。可能出现的问题是声音播放有延迟，同一时间只能有一个音频的存在。
 
 * NativeAudio：打包方案使用的audio。
 
+### 自定义播放类型
 
+在 Egret 3.1.4 中，加入了自定义播放类型，修改完后将会使用设置的类型。
+
+```
+/**
+ * {
+ * "renderMode":, //引擎渲染模式，"canvas" 或者 "webgl"
+ * "audioType": "" //使用的音频类型，0:默认，1:qq audio，2:web audio，3:audio
+ * "antialias": //WebGL模式下是否开启抗锯齿，true:开启，false:关闭，默认为false
+ * }
+ **/
+egret.runEgret({renderMode:"webgl", audioType:0});
+```
 
 ### 其他
 
@@ -91,9 +106,9 @@
 
 1. 由于一些浏览器不支持直接加载后播放，因此建议大家先预加载音乐文件，再在点击事件时直接调用 sound.play()（是直接调用，不要增加时间延迟或者加载什么的）。
 
-1. 由于 webAudio 对声音的格式有特定要求，在 ios 系统上如果测试碰到音频文件解码失败的情况，请使用具体来转换下格式（码率 44100Hz 96kbs ；工具推荐 格式工厂）。
+2. 由于 webAudio 对声音的格式有特定要求，如果测试碰到音频文件解码失败的情况，请使用具体来转换下格式（码率 44100Hz 96kbs ；工具推荐 格式工厂）。
 
-1. 在 android 系统中，不是所有的浏览器都能支持同时播放2种及以上的声音（这个也是为什么qzone单独提供了声音解决方案）。
+3. 非 WebAudio 方式播放的音频，很有可能在浏览器只能同时播放一种声音（这个也是为什么qzone单独提供了声音解决方案）。
 
 ### 音频示例
 
