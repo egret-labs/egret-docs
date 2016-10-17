@@ -36,7 +36,6 @@ function onClick():void{
     //重新定位圆，可以看到圆形移到了屏幕的左上角
     circle.x = targetPoint.x;
     circle.y = targetPoint.y;
-    }
 }
   ```
 同样，也可以使用 DisplayObject 类的 localToGlobal() 方法将本地坐标转换为舞台坐标。
@@ -100,6 +99,7 @@ circle.addEventListener(egret.TouchEvent.TOUCH_BEGIN,startMove,this);
 circle.addEventListener(egret.TouchEvent.TOUCH_END,stopMove,this);
 
 //增加正方形的触摸监听
+square.touchEnabled = true;
 square.addEventListener(egret.TouchEvent.TOUCH_BEGIN,startMove,this);
 square.addEventListener(egret.TouchEvent.TOUCH_END,stopMove,this);
 
