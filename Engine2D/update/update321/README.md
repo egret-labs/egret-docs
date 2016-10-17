@@ -33,3 +33,14 @@ TextField新增两个属性，分别为`egret.TextField.default_size`和`egret.T
 在.exml文件中如需使用该样式，可设置其`style`属性，如下图：
 
 ![](39253C5BF3570D760C4213AA175DFE3F.jpg)
+
+### Egret资源管理框架公测版发布
+资源管理模块目前作为白鹭引擎的全新特性，本次开放发布希望获得开发者的广泛反馈意见，目前暂时不建议开发者用于正式项目中。
+核心功能有：
+* 友好的资源加载 API
+* 版本控制支持
+* 针对不同平台发布不同的资源
+* 更容易开发者进行扩展的结构
+* 80% 兼容旧版 API
+
+下载地址 https://github.com/egret-labs/resourcemanager
