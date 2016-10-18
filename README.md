@@ -4,9 +4,13 @@
 
 #### 更新详情
 
-* [Egret Engine2D 3.1.8](Engine2D/update/update318/README.md)
+* [Egret Engine2D 3.2.1](Engine2D/update/update321/README.md)
 
 ###### 历史更新
+
+* [Egret Engine2D 3.2.0](Engine2D/update/update320/README.md)
+
+* [Egret Engine2D 3.1.8](Engine2D/update/update318/README.md)
 
 * [Egret Engine2D 3.1.7](Engine2D/update/update317/README.md)
 
@@ -61,8 +65,6 @@
 #### Get Started
 
 * [Hello World](Engine2D/getStarted/helloWorld/README.md)
-
-* [Get Started](Engine2D/getStarted/getStarted/README.md)
 
 #### 项目配置
 
@@ -260,11 +262,13 @@
 
 #### 打包发布
 
-* [打包runtime](Engine2D/publish/publishRuntime/README.md)
+* [打包 HTML5](Engine2D/publish/publishHTML5/README.md)
 
-* [打包Android app](Engine2D/publish/publishAndroid/README.md)
+* [打包 Runtime](Engine2D/publish/publishRuntime/README.md)
 
-* [打包iOS app](Engine2D/publish/publishIOS/README.md)
+* [打包 Android app](Engine2D/publish/publishAndroid/README.md)
+
+* [打包 iOS app](Engine2D/publish/publishIOS/README.md)
 
 * [打包 WinPhone app](Engine2D/publish/publishWinPhone/README.md)
 
@@ -274,9 +278,13 @@
 
 #### 更新详情
 
-* [Egret Engine3D 3.1.5](Engine3D/update/update315/README.md)
+* [Egret Engine3D 3.2.1](Engine3D/update/update321/README.md)
 
 ###### 历史更新
+
+* [Egret Engine3D 3.2.0](Engine3D/update/update320/README.md)
+
+* [Egret Engine3D 3.1.5](Engine3D/update/update315/README.md)
 
 * [Egret Engine3D 3.1.4](Engine3D/update/update314/README.md)
 
@@ -634,9 +642,11 @@
 
 #### 更新详情
 
-* [Egret Wing 3.1.8](Wing/update/update318/README.md)
+* [Egret Wing 3.2.0](Wing/update/update320/README.md)
 
 ###### 历史更新
+
+* [Egret Wing 3.1.8](Wing/update/update318/README.md)
 
 * [Egret Wing 3.1.7](Wing/update/update317/README.md)
 
@@ -748,9 +758,11 @@
 
 #### 更新详情
 
-* [DragonBones 4.7.4](DB/update/update474/README.md)
+* [DragonBones 4.8.1](DB/update/update481/README.md)
 
 ###### 历史更新
+
+* [DragonBones 4.7.4](DB/update/update474/README.md)
 
 * [DragonBones 4.7.3](DB/update/update473/README.md)
 
@@ -893,8 +905,6 @@
 * [骨骼动画事件](DB/dbLibs/events/README.md)
 
 * [骨骼换装](DB/dbLibs/replaceTexture/README.md)
-
-* [极速模式](DB/dbLibs/speedMode/README.md)
 
 
 
