@@ -4,7 +4,7 @@
 
 ----
 
-具体创建方法请参考[Get Started](../../../Engine2D/getStarted/getStarted/README.md)
+具体创建方法请参考[Get Started](../../../Engine2D/getStarted/helloWorld/README.md)
 
 由于WinPhone打包支持的编码格式为 UTF-8+，而egret提供的为UTF-8，因此需要开发者在拷贝文件后将 bin-debug（如果js代码压缩过，则换成压缩文件而不需要bin-debug文件夹） 和 launcher下的文件转成UTF-8+的格式。（大家可以使用 批量转文件格式的 软件。如 GB2UTF8 批量文件编码转换工具 v1.3） 如果软件中不让UTF-8转UTF-8+或者UTF-8（带BOM）的，大家可以通过 gb转UTF-8（带BOM）的方式转换。
 
