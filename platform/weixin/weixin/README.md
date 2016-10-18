@@ -26,7 +26,7 @@ C:\wamp\www\egret\testWeixin
 
 2.2 配置项目内文件
 
-进入到 Egret 项目内，(如何新建 Egret项目详见：[Get Started](../../../Engine2D/getStarted/getStarted/README.md)  或通过 egret wing 文件-- 新建egret 项目)。
+进入到 Egret 项目内，(如何新建 Egret项目详见：[Get Started](../../../Engine2D/getStarted/helloWorld/README.md)  或通过 egret wing 文件-- 新建egret 项目)。
 
 ![](56b169b550020.png)
 
