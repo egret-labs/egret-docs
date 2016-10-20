@@ -1,3 +1,4 @@
+## 缩放模式
 引擎在更新到2.4版本后，有6种屏幕缩放模式。有新增的，也有改变的(比如noBorder模式)。下面我们详细说一下它们的区别和效果。
 
 >之前的适配策略请参考:[2.0 版本屏幕适配策略](http://edn.egret.com/cn20/index.php/article/index/id/181)
@@ -10,14 +11,16 @@
 
 ```
 <body> <div
-        data-scale-mode="noScale" > </div> </body>```
+        data-scale-mode="noScale" > </div> </body>
+```
 你还可以在项目代码里随时修改
+
 ~~~
 this.stage.scaleMode = egret.StageScaleMode.FIXED_WIDTH;
 ~~~
 
 
-#### 各种模式的效果示意图
+### 效果示意图
 ![](56580ea991851.jpg)
 蓝色背景代表舞台尺寸，屏幕适配模式只解决舞台宽高和屏幕尺寸之间的关系。这只实现了完整屏幕适配的第一步，第二步是根据获得的舞台宽高去调整内部元素的位置。使用EUI的自适应流式布局将很容易实现第二步。
 
@@ -81,8 +84,8 @@ fixedHeight 是新增的一种缩放模式，和 fixedWidth 相反，高度固�
 this.stage.orientation = egret.OrientationMode.AUTO;
 ~~~
 
-旋转模式目前有4种，下面我们就详细的说一下。
-#### 效果图的缩放模式均为 showAll
+旋转模式目前有4种，下面我们就以缩放模式均为 showAll详细的说一下。
+
 ### auto 模式
 ![](563973426403f.png)
 

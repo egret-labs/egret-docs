@@ -1,6 +1,6 @@
 在移动设备中，一般支持获取设备本身的旋转角度的变化。`egret.DeviceOrientation` 可以监听设备方向的变化。
 
-#### 获取设备旋转角度
+## 获取设备旋转角度
 
 演示了如何监听旋转的变化并获得旋转的值：
 
@@ -41,5 +41,6 @@ class DeviceOrientationExample extends egret.DisplayObjectContainer {
 
 * `gamma` 表示设备绕 Y 轴的角度，单位是 角度 范围是 -90 到 90.这个值表示设备从左到右的旋转状态。
 
+## 参考
 更完整应用代码可以参考示例：[获取硬件信息](http://edn.egret.com/cn/index.php/article/index/id/659)
 

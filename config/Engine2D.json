@@ -681,14 +681,14 @@
     "children": [
       {
         "filename": "/Engine2D/timeControl/timer/",
-        "text": "Timer计时器",
-        "des": "Timer计时器",
+        "text": "Timer 计时器",
+        "des": "Timer 计时器",
         "in_use": true
       },
       {
-        "filename": "/Engine2D/timeControl/tick/",
-        "text": "Tick心跳",
-        "des": "Tick心跳",
+        "filename": "/Engine2D/timeControl/ticker/",
+        "text": "Ticker 心跳",
+        "des": "Ticker 心跳",
         "in_use": true
       },
       {

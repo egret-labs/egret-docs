@@ -3,12 +3,13 @@ Egret 加载资源主要使用 egret.HttpRequest 类。该类封装了在异步�
 本节讲解的主要是加载静态文件，分为两种类型：文本和二进制数据。
 加载静态文件的特点是可以进行进度跟踪。
 
-#### 加载文本   
+## 加载文本   
 
 HttpRequest 对象最核心的方法就是 open() 和 send() 。  open 方法接收该请求所要访问的URL。 作为可选项还可以传入加载方式，这个参数通常用HttpMethod取常量即可，默认是最常用的 GET 方式。       
 在加载完成时，通过HttpRequest 对象的 response 属性来获取返回的数据。    
 首先从最简单的加载文本来看如何完成加载和获取数据的过程：   
-``` TypeScript
+
+```
 var url = "resource/config/description.json";
 var  request:egret.HttpRequest = new egret.HttpRequest();
         
@@ -39,9 +40,9 @@ HttpRequest默认的加载类型是 TEXT ，因此不需要专门设定。
 当然也要考虑意外的情况，在 IO_ERROR 做这些情况的处理。
 加载进度事件是 ProgressEvent.PROGRESS , 这在加载size较大的资源时比较有用。
 
-#### 加载二进制   
+## 加载二进制   
 
-``` TypeScript
+```
 var url = "resource/assets/egret_icon.png";
 var  request:egret.HttpRequest = new egret.HttpRequest();
 request.responseType = egret.HttpResponseType.ARRAY_BUFFER;

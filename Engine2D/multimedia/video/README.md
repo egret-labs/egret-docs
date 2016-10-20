@@ -2,7 +2,7 @@
 
 > 需要注意的是，大部分移动设备只支持全屏播放。
 
-### 准备工作
+## 准备工作
 
 我们可以使用 W3C 提供的在线地址来测试 HTML5 的视频功能。地址为：`http://media.w3.org/2010/05/sintel/trailer.mp4`。
 下面的代码里我们将使用这个视频作为素材。
@@ -17,7 +17,7 @@ egret create VideoTest --type eui
 
 来创建默认的 EUI 项目。更多关于使用 EUI 方法参考:[EUI库 快速入门](../../../extension/EUI/getStarted/getStarted/README.md)
 
-### 创建Video
+## 创建Video
 
 先来看一下创建`Video`的代码:
 
@@ -95,7 +95,7 @@ class Main extends eui.UILayer {
 
 这里视频的`play()`方法有两个参数，为播放的位置和是否循环。默认的从头开始播放，并且不循环。
 
-#### 暂停视频
+### 暂停视频
 
 通过Video的`pause()`,方法将暂停视频。
 继续完善上面的程序，添加暂停按钮的功能。在`onLoad`函数中，绘制一个暂停的按钮，并监听其行为：
@@ -119,7 +119,7 @@ public pause(e:egret.TouchEvent) {
 
 点击该按钮视频将暂停播放，再一次点击播放按钮视频将继续播放。
 
-#### 设置音量
+### 设置音量
 
 通过设置`Video`的`volume`属性可以设置其音量的大小。其属性值为0到1。
 下面通过 EUI 的水平滑块来控制。同样在`onLoad`函数中添加如下代码：
@@ -146,7 +146,7 @@ public setVoluem(e:egret.Event) {
 ```
 这里滑块设置的最大值和最小值是0和100，由于`volume`的默认值为0到1,所以要除以100.
 
-#### 全屏播放
+### 全屏播放
 
 这里只有在桌面浏览器上才能控制非全屏的效果。通过设置`fullscreen`属性来控制是否全屏。默认值为`true`，即全屏播放。
 
@@ -171,7 +171,7 @@ public setFullScreen(e:egret.Event) {
 }
 ```
 
-#### 显示播放时间
+### 显示播放时间
 
 `Video`的`position`属性表示当播放视频时，position 属性表示视频文件中当前播放的位置（以秒为单位）。
 
@@ -194,7 +194,7 @@ public showPosition(e:egret.Event) {
 }
 ```
 
-#### 获取视频的`bitmapData` 
+### 获取视频的`bitmapData` 
 
 通过视频的`bitmapData`属性可以获得其当前帧的纹理信息。可以将它绘制到舞台上。
 
@@ -223,7 +223,7 @@ public printScreen(e:egret.Event) {
 
 这里创建了一个位图，并将它的`bitmapData`属性设置为视频的`bitmapData`属性。将该位图添加到舞台上面就可以显示截图了。
 
-#### 获取视频长度
+### 获取视频长度
 
 通过 Egret 3.0.8 新增的 length 属性可以获得视频的长度。
 
@@ -232,7 +232,7 @@ public printScreen(e:egret.Event) {
 console.log(this.video.length);
 ```
 
-### 完整代码与示例
+## 视频示例
 
 可以在[视频示例](http://edn.egret.com/cn/index.php/article/index/id/656)处获得完整的项目代码。
 
