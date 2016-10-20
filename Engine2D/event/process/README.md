@@ -6,7 +6,7 @@
 
 下面我们来通过一个实例了解一下“约会”这个事件发送过程，以及代码编写过程。
 
-### 文档类
+## 文档类
 
 ```
 class SampleDate extends egret.DisplayObjectContainer
@@ -31,7 +31,7 @@ class SampleDate extends egret.DisplayObjectContainer
 }
 ```
 
-### 男朋友类
+## 男朋友类
 
 ```
 class Boy extends egret.Sprite
@@ -56,7 +56,7 @@ class Boy extends egret.Sprite
 }
 ```
 
-### 女朋友类
+## 女朋友类
 
 ```
 class Girl extends egret.Sprite
@@ -74,7 +74,7 @@ class Girl extends egret.Sprite
 }
 ```
 
-### 约会事件类
+## 约会事件类
 
 ```
 class DateEvent extends egret.Event

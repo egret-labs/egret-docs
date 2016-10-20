@@ -137,7 +137,7 @@ android:screenOrientation="portrait"
 
 #### 添加 assets,libs,res
 
-** 1、添加 assests ** 
+1. 添加 assests 
 
 在[示例项目](http://sedn.egret.com/soft/quicksdk/egret_quicksdk_guider_and_demo_2.0.zip)中我们可以找到 quicksdk.xml 和 quickVersion 这两个文件。
 
@@ -147,7 +147,7 @@ android:screenOrientation="portrait"
 
 ![](572b16eec51ac.png)
 
-** 2、添加 libs **
+2. 添加 libs
 
 将示例项目中的以下文件拷贝到 libs 文件下。
 
@@ -157,7 +157,7 @@ android:screenOrientation="portrait"
 
 ![](572b16eeb44bb.png)
 
-** 3、添加 res **
+3. 添加 res
 
 示例项目中 res 文件夹下的文件有选择的添加。将以下文件：
 
@@ -195,7 +195,7 @@ android:screenOrientation="portrait"
 
 这里需要注意需要我们先准备好 QuickSDK 的 productCode 和 productKey。
 
-##### 添加 org.egret.plugin.quicksdk
+* 添加 org.egret.plugin.quicksdk
 
 添加 org.egret.plugin.quicksdk ，源代码可以在示例项目中获取到。
 
@@ -204,13 +204,13 @@ android:screenOrientation="portrait"
 ![](572b16f7265fe.png)
 
 
-##### 配置 QuickSDK 参数
+* 配置 QuickSDK 参数
 
 找到我们导入的 EgretQuickSDKActivity 类，找到其中的配置参数，将其配置为我们自己注册的参数。
 
 ![](572b16f73e065.png)
 
-##### 修改原游戏 Activity
+* 修改原游戏 Activity
 
 修改我们原来游戏的 Activity ，使其继承自 EgretQuickSDKActivity：
 

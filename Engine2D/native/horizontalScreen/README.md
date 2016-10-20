@@ -7,9 +7,9 @@ Eget 的 H5 项目通过 Egret Android Suppord 或 Egret IOS Support 可以生�
 * Android APP打包：[打包Android app](../../../Engine2D/publish/publishAndroid/README.md)
 * IOS APP 打包: [打包iOS app](../../../Engine2D/publish/publishIOS/README.md)
 
-### Android 横竖屏设置
+## Android 横竖屏设置
 
-#### 在 Java 代码中设置
+### 在 Java 代码中设置
 
 在 Java 代码中可以像下面这样设置屏幕的旋转方向强制为横屏：
 
@@ -29,7 +29,7 @@ ActivityInfo.SCREEN_ORIENTATION_SENSOR,//由物理感应器决定显示方向
 ActivityInfo.SCREEN_ORIENTATION_NOSENSOR,//忽略物理感应器——即显示方向与物理感应器无关
 ```
 
-#### 在 AndroidManifest.xml 中设置
+### 在 AndroidManifest.xml 中设置
 
 在我们生成的 Android 项目的 proj.android 目录下可以找到 AndroidManifest.xml 配置文件,它是每个 Android 项目都必须的配置文件，提供了各项属性来详细描述应用程序的元数据。当然，在程序中修改的屏幕方向时要比在配置文件中的优先级要高的。
 
@@ -49,7 +49,7 @@ ActivityInfo.SCREEN_ORIENTATION_NOSENSOR,//忽略物理感应器——即显示�
 
 * "nosensor":忽略物理感应器，这样就不会随着用户旋转设备而更改了("unspecified"设置除外)。
 
-** 设置横屏 **
+#### 设置横屏
 
 设置项目的横屏可以这样配置:
 
@@ -59,7 +59,7 @@ android:screenOrientation="landscape"
 
 这样项目将横屏显示。
 
-** 设置竖屏 **
+#### 设置竖屏
 
 设置项目的竖屏可以这样配置:
 
@@ -88,7 +88,7 @@ iOS 项目内的屏幕方向可以使用 ViewController 或者 info.plist 来设
 
 #### 在 info.plist 中进行设置
 
-还可以在 info.plist 中进行设置，找到 **Supported Interface Orientations** ，在 iOS APP 默认支持四种屏幕方向即：
+还可以在 info.plist 中进行设置，找到 `Supported Interface Orientations` ，在 iOS APP 默认支持四种屏幕方向即：
 
 * Portrait:正常的竖屏(top home button)
 
@@ -103,7 +103,7 @@ iOS 项目内的屏幕方向可以使用 ViewController 或者 info.plist 来设
 
 如果要设置横屏，可以将竖屏的两种模式删除，反之同理。
 
-一般情况下不推荐修改 info.plist。 
+> 一般情况下不推荐修改 info.plist。 
 
 
 

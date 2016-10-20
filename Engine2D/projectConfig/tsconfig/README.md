@@ -8,7 +8,7 @@ https://github.com/Microsoft/TypeScript/wiki/tsconfig.json
 
 TypeScript详细手册参考：[TypeScript Handbook（中文版）](https://www.gitbook.com/book/zhongsp/typescript-handbook/details)
 
-#### 如何使用 tsconfig.json
+## 使用
 
 1 ) 在 egret 项目的文件夹里，创建一个名为 "tsconfig.json" 的文本文件
 
@@ -31,7 +31,7 @@ TypeScript详细手册参考：[TypeScript Handbook（中文版）](https://www.
 
 如果您对 tsconfig 熟悉的话，应该会知道，除了 `compilerOptions` ，还有很多其他属性可以设置。但我们目前只支持 `compilerOptions` 这个编译属性，其他的还暂不支持。
 
-#### 不支持的编译参数
+## 不支持的编译参数
 因为 egret 项目有很多自定义的功能，有一些编译参数是不可以修改的，请不要在 tsconfig 里设置。如果您设置了，也不会起作用，还是按照默认的参数编译，cmd 里会有提示信息。
 下面这 7 个为不支持的参数
 

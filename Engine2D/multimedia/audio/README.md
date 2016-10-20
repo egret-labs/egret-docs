@@ -1,16 +1,16 @@
 在 Egret 3.0.1 版本中，解决了大家一直以来对声音问题的烦恼。包括声音不能播放、播放有延迟、播放会重新加载、火狐加载卡住、进入游戏破音爆音等在 Android 手机浏览器上会出现的问题。另外一个部分浏览器声音只能同时播放一个声音的问题，由于浏览器底层的实现，引擎暂时无法解决。
 
-### 注意事项
+## 注意事项
 
 声音资源的格式生成请严格按照此步骤来，不然兼容性会小很多。
 
-1、使用格式工厂。选择 44100Hz，96kbps 转换。
+1. 使用格式工厂。选择 44100Hz，96kbps 转换。
 
-2、如果还有问题，请再转一次。
+2. 如果还有问题，请再转一次。
 
-3、如果还有问题，请裁减音频长度再次转换。
+3. 如果还有问题，请裁减音频长度再次转换。
 
-4、如果还有问题，请到论坛联系我们 [开发者论坛](http://bbs.egret.com/portal.php)，并提供对应的音频文件。
+4. 如果还有问题，请到论坛联系我们 [开发者论坛](http://bbs.egret.com/portal.php)，并提供对应的音频文件。
 
 > 说这么多其实就是一句话，如果有问题，请多转几次。
  
@@ -26,8 +26,8 @@
 
 下面我们来讲下具体的使用方法。
 
-### 创建Sound
-1、通过Sound加装音频。
+## 创建Sound
+### 通过Sound加装音频。
 
 * 通过 ```var sound:egret.Sound = new egret.Sound()``` 创建 Sound 对象，再通过 ```sound.load(url)```来加载，Sound 类支持的事件类型只有加载的2个事件结果：egret.Event.COMPLETE 音频加载完成时抛出；egret.IOErrorEvent.IO_ERROR 音频加载失败时抛出.
 
@@ -41,7 +41,7 @@
         sound.load("resource/sound/sound.mp3");
 
 
-2、通过 URLLoader 加装音频。
+### 通过 URLLoader 加装音频。
 
 * 具体调用如下。
 
@@ -53,14 +53,14 @@
 		loader.dataFormat = egret.URLLoaderDataFormat.SOUND;
 		loader.load(new egret.URLRequest("resource/sound/sound.mp3"));
 
-3、通过 res 加载获取。
+### 通过 res 加载获取。
 
 * 具体调用如下。
  	
 		var sound:egret.Sound = RES.getRes("sound_mp3");
 		sound.play();
         
-### 播放Sound
+## 播放Sound
 
 * play 的2个参数。startTime：声音开始播放的位置，默认为0。loops：声音播放的次数，小于等于0均为无限循环播放，大于0按照对应的值播放次数。
 
@@ -68,7 +68,7 @@
 
 * 对于声音的播放完成的事件监听，从原来对 Sound 进行监听，变成对 play 后创建的 SoundChannel 进行监听，并且去掉了 Sound 的 pause 和 resume方法。如果想要实现此方法，可以根据 SoundChannel 返回的 position 和 Sound 的 play 来实现。
 
-### 播放类型
+## 播放类型
 
 目前引擎内提供了4种声音的兼容模式，分别是 Audio、 WebAudio、QQAudio（qzone提供的声音解决方案）、以及 NativeAudio（打包方案Audio）
 
@@ -96,7 +96,7 @@
 egret.runEgret({renderMode:"webgl", audioType:0});
 ```
 
-### 其他
+## 其他
 
 * 新版不再需要手动调用 Sound 的 preload 以及 destroy 来将资源从本地加载到内存以及销毁，这些都会在内部自动实现。
 
@@ -110,7 +110,7 @@ egret.runEgret({renderMode:"webgl", audioType:0});
 
 3. 非 WebAudio 方式播放的音频，很有可能在浏览器只能同时播放一种声音（这个也是为什么qzone单独提供了声音解决方案）。
 
-### 音频示例
+## 音频示例
 
 播放音频的简单示例代码如下 :
 
@@ -197,7 +197,7 @@ class SoundExample extends egret.DisplayObjectContainer {
 
 如果需要停止声音，可以调用`SoundChannel`对象的`stop`方法。
 
-##### 获取声音长度
+### 获取声音长度
  
 在 Egret Engine 2D 3.0.4 中，新增了一个 API ，用以获取当前播放声音的长度。通过获取 `egret.Sound`的 length 属性来获取当前播放声音的长度。需要注意的是该属性是只读的，我们并不能改变播放声音的长度。上面例子中的代码：
 
@@ -206,11 +206,3 @@ console.log(sound.length);
 ```
 
 用来获取音频的长度。
-
-#### 更多参考
-
-查看 Egret 2.5 的 Sound 类 API 以及其示例：[egret.Sound](http://edn.egret.com/cn/apidoc/index/name/egret.Sound)
-
-查看 Egret 2.5 音频示例: [音频播放器](http://edn.egret.com/cn/article/index/id/663)
-
-查看 Egret 2.0 音频示例: [声音示例](http://edn.egret.com/cn/article/index/id/41)

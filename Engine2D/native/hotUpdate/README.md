@@ -71,20 +71,14 @@ Egret的封装项目无论在Android还是iOS平台，均支持热更新。
 
 ![](562da618bac78.png)
 
--  修改 setLoaderUrl 方法中 case 为 1 的 loaderUrl 与 updateUrl 变量，如图：
+- 修改 setLoaderUrl 方法中 case 为 1 的 loaderUrl 与 updateUrl 变量，如图：
 
 ![](562da618ca122.png)  
 
 - case 2, 空字符串。即当前包使用最原始的格式。`egret build [-e] --runtime native` 之后的数据结构。
 - default, 本地使用zip包方式。`egret publish --runtime native --version xxx` 之后，会将最新的资源包拷贝到Android项目中。此时如果需要在Android项目中测试。
-- case 1, 只有使用这种方式才会有热更新机制，引擎会根据提供的game_code.zip的名称进行更新。
+- case 1, 一般这里为动态地址，根据请求的内容返回具体的 json 内容。只有使用这种方式才会有热更新机制，引擎会根据提供的 game_code.zip 的名称进行更新。
 
-**我们以 case 1 为例：**
-
-- loaderUrl 更新的路径（HTTP://），一般这里为动态地址，根据请求的内容返回具体的 json 内容。这里我们使用PHP处理。
-- updateUrl 资源路径，在case 1可直接设置为空。
-
-**设置好 loaderUrl 地址，既可以发布 APP。**
 
 ## 服务器端设置
 

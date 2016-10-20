@@ -8,7 +8,7 @@
 
 TypeScript详细手册参考：[TypeScript Handbook（中文版）](https://www.gitbook.com/book/zhongsp/typescript-handbook/details)
 
-### 测试依赖关系
+## 测试依赖关系
 
 首先我们需要新建一个 Egret 项目，这里使用 `egret create test` 创建一个 Egret 默认项目。
 
@@ -52,7 +52,7 @@ class TestCall{
 
 上面的调用关系在代码中显然是成立的，编译器并没有报错。而编译器并没有生成正确的载入顺序，主要是因为其无法确认这种类的静态成员的互相引用的顺序。当在 TestCall.ts 中引用了TestB.ts 中的内容时自动将 TestB.js 放在 TestCall.js 之前进行加载。由于无法检测到 TestB.ts 中对 TestA.ts 的静态成员的引用，所以导致了以上情况的发生。
 
-### 解决方法
+## 解决方法
 
 这种情况解决方法也很简单，就是告诉编译器我们的类的依赖关系。在 TypeScript 中，使用`<reference>`标签来表示引用关系。在 reference 标签中可以标记依赖文件的相对路径。所以只需要在 TestB 类之前加入如下注释即可：
 

@@ -2,6 +2,7 @@
 
 下面我们来创建一个自己的显示对象。我们把这个显示对象称之为 `MyGrid` 。
 
+## 创建
 创建一个名称为 `MyGrid` 的类，并且继承自 `Shape` 。具体代码如下：
 
 ```
@@ -33,6 +34,7 @@ class MyGrid extends egret.Shape{
 
 在 `MyGrid` 我们绘制了一个红蓝相间的2*2格子，然后我们修改文档类`Main`，在文档类中创建并显示我们的 `MyGrid`，具体代码如下：
 
+
 ```
 class Main extends egret.DisplayObjectContainer{
     public constructor(){
@@ -47,6 +49,7 @@ class Main extends egret.DisplayObjectContainer{
 }
 ```
 
+## 效果
 编译并测试，你会在浏览器中看到如下图效果。
 
 ![](556534d84ca7f.png)

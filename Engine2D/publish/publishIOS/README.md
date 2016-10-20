@@ -2,7 +2,7 @@ egret-ios-support是Egret打包为原生ios APP的方案，你可以使用egret-
 
 具体使用方法如下：
 
-### -1、预备知识
+## 预备知识
 
 为了顺利完成本教程，请确认您已熟练掌握以下知识：
 
@@ -20,23 +20,23 @@ egret-ios-support是Egret打包为原生ios APP的方案，你可以使用egret-
 
 > 建议在阅读本文之前先阅读 [Get Started](../../../Engine2D/getStarted/helloWorld/README.md)
 
-### 0、文档概述
+## 文档概述
 
 本文会完整的展示如何在一个已经安装npm管理包的环境中全新安装Egret核心包、Egret的iOS支持包，最终在模拟机中运行Demo的过程。
 
 本文分为三部分：第一部分为iOS开发环境的安装、第二部分为Egret游戏框架的安装、第三部分创建一个完整iOS App的示例。
 
-## 第一部分、iOS开发环境安装
+## iOS开发环境安装
 
-### 1、安装iOS开发环境——Xcode
+### 安装iOS开发环境——Xcode
 
 运行App Store，在搜索项查找“Xcode”，下载并安装即可
 
 ![](56664988d7d76.png)
 
-## 第二部分、安装Egret游戏框架
+## 安装Egret游戏框架
 
-### 2、预备知识
+### 预备知识
 
 运行Mac OS X的Terimal应用：在Finder中打开Applications文件夹，再打开Utilities文件夹，找到Termial应用，双击运行。如下图：
 
@@ -60,11 +60,11 @@ $ mkdir projects
 
 ![](566649898fba5.png)
 
-### 3、安装Egret
+### 安装Egret
 
 传送门：[Mac OS X 系统下安装最新的Egret](../../../Engine2D/projectConfig/installation/README.md)。
 
-### 4、下载Egret的iOS支持包
+### 下载Egret的iOS支持包
 
 创建Egret Support文件夹
 
@@ -76,9 +76,9 @@ $ mkdir projects
 
 ![](56664989d5c4a.png)
 
-## 第三部分、创建一个iOS打包的示例
+## 创建一个iOS打包的示例
 
-### 5、创建一个Egret项目
+### 创建一个Egret项目
 
 这里创建一个名称为`ACoolHtmlGame`的项目，使用命令如下：
 
@@ -93,11 +93,11 @@ $ egret create ACoolHtmlGame
 ![](5666498a4f6be.png)
 
 
-### 6、编写你的游戏项目
+### 编写你的游戏项目
 
 接下来要做的事情就是编写你的游戏项目逻辑。这里我们不进行操作，使用默认的项目来进行演示。
 
-### 7、创建你的ios项目工程
+### 创建你的ios项目工程
 
 #### 从你的HTML5游戏创建ios项目工程
 
@@ -136,15 +136,15 @@ labs/-+
       ...
 ```
 
-### 8、编译iOS游戏
+### 编译iOS游戏
 
-#### 8.1 导入项目
+#### 导入项目
 
 打开ACoolIosGame文件夹，双击“ACoolIosGame.xcodeproj”，等待Xcode加载完成
 
 ![](5666498ac908d.png)
 
-### 9、测试项目
+### 测试项目
 
 点击Xcode的Run命令，直接进入iOS模拟器运行
 
@@ -158,21 +158,21 @@ labs/-+
 
 自此，完成了使用Egret实现一个iOS游戏应用的全过程。
 
-### 10、项目开发的整体流程
+### 项目开发的整体流程
 
 我们推荐的开发方式：在原有的HTML5游戏项目中进行开发，开发测试ok，再编译到iOS平台。下面为大家演示一下流程：
 
-1.创建一个HTML5游戏：
+1、创建一个HTML5游戏：
 
 `egret create ACoolHtmlGame`
 
-2.创建对应的iOS游戏
+2、创建对应的iOS游戏
 
 `egret create_app ACoolIosGame -f ACoolHtmlGame -t ../egret-support/egret-ios-support`
 
-3.测试一下各个平台游戏
+3、测试一下各个平台游戏
 
-4.在ACoolHtmlGame中开发游戏，一个小步进的开发后，我们要开始编译我们的游戏并在浏览器上测试，这是使用
+4、在ACoolHtmlGame中开发游戏，一个小步进的开发后，我们要开始编译我们的游戏并在浏览器上测试，这是使用
 
 `egret build ACoolHtmlGame --runtime native -e`
 
@@ -182,8 +182,8 @@ labs/-+
 
 来使得HTML5项目生效，此时iOS项目失效。
 
-5.此时可以使用egret startserver ACoolHtmlGame 启动游戏服务，这样浏览器就能观察到实现的游戏逻辑了。
+5、此时可以使用egret startserver ACoolHtmlGame 启动游戏服务，这样浏览器就能观察到实现的游戏逻辑了。
 
-6.接下来回到ACoolIosGame的Xcode工程中，使用Xcode来清除、重新编译、调试项目，这样就可以在手机上得到和HTML项目的游戏逻辑了。
+6、接下来回到ACoolIosGame的Xcode工程中，使用Xcode来清除、重新编译、调试项目，这样就可以在手机上得到和HTML项目的游戏逻辑了。
 
-7.返回4，不断的迭代。
+7、返回4，不断的迭代。

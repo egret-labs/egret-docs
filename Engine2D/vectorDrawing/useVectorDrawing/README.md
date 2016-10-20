@@ -10,7 +10,7 @@ Egret中可以直接使用程序来绘制一些简单的图形，这些图形在
 
 * 绘制圆弧
 
-### 绘制矩形
+## 绘制矩形
 
 我们可以使用 Shape 对象来学习绘图方法。下面是一个绘制矩形的示例：
 
@@ -91,7 +91,7 @@ class GraphicsTest extends egret.DisplayObjectContainer
 
 ![](5565675e02ce3.png)
 
-### 清空绘图
+## 清空绘图
 
 清空绘图操作是将已经绘制的图像全部清空，对于清空操作可以执行 Graphics 中的 clear 操作。
 

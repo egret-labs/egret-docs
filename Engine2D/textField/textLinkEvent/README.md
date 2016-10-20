@@ -1,3 +1,5 @@
+
+## Touch 事件 
 TextField本身可以响应Touch事件。但这是针对整个TextField的。
 有时有这样的需求：在一大段文字中，有某一段儿需要作为热区，响应Touch事件。我们可以通过对该段文字设置href来实现，类似于html中的`href`。我们通过如下代码来学习这个功能：
 
@@ -28,7 +30,7 @@ class textEventDemo extends egret.DisplayObjectContainer {
 
 编译运行，打开 console ，当点击上一行文字时，console 即会输出 text event triggered。而点击下一行文字，就不会有任何反应。
 
-### 打开 URL 
+## 打开 URL 
 
 将上面的 href 对应的字符串修改为 url 即可打开相应的 url。下面代码即可打开 Egret 的首页。
 
@@ -50,4 +52,4 @@ tx.touchEnabled = true;
 
 ![](569c8552dd0b0.png)
 
-> 适用于 Egret 2.5 以后的引擎，且只适用 web 端。
+> 适用于 Egret 2.5 以后的引擎，且`只适用 web 端`。

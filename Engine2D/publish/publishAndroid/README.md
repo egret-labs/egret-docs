@@ -25,7 +25,11 @@
 ### 使用
 使用方式同Android Support。例：
 
-`egret create_app HelloEgretAndroidAS -f HelloEgretH5 -t /Users/egret-android-support-as`
+`egret create_app HelloEgretAndroidAS -f HelloEgretH5 -t /Users/egret-android-support-3.2.0/egret-android-support-as-3.2.0`
+
+> egret-android-support-3.1.5 之后包含 `eclipse` 和  `Android Studio` 2 个版本项目，选择工具时一定要选到对应的项目。
+> 文件夹名称多了 ‘as’ 的为 `Android Studio` 工程，没有的是 `eclipse` 工程。
+> egret-android-support-3.1.4 之前版本只有 `eclipse` 工程，选主目录就行。
 
 ### 导入工程
 1.使用Android Studio导入生成的工程。Android Studio会检查项目配置等。可能会自动更新一些组件。需要点时间。
@@ -64,7 +68,12 @@
 ### 使用
 使用方式同Android Support。例：
 
-`D:\egret-proje>egret create_app HelloEgretAndroidAS -f HelloEgretH5 -t D:\android-support\egret-android-support-as\`
+`D:\egret-proje>egret create_app HelloEgretAndroidAS -f HelloEgretH5 -t D:\egret-android-support-3.2.0\egret-android-support-as-3.2.0\`
+
+> egret-android-support-3.1.5 之后包含 `eclipse` 和  `Android Studio` 2 个版本项目，选择工具时一定要选到对应的项目。
+> 文件夹名称多了 ‘as’ 的为 `Android Studio` 工程，没有的是 `eclipse` 工程。
+> egret-android-support-3.1.4 之前版本只有 `eclipse` 工程，选主目录就行。
+
 
 ### 导入工程
 1.使用Android Studio导入生成的工程。Android Studio会检查项目配置等。可能会自动更新一些组件。需要点时间。

@@ -622,19 +622,19 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/mixedMode/normal/",
+        "filename": "/Engine2D/blendMode/normal/",
         "text": "NORMAL",
         "des": "NORMAL",
         "in_use": true
       },
       {
-        "filename": "/Engine2D/mixedMode/add/",
+        "filename": "/Engine2D/blendMode/add/",
         "text": "ADD",
         "des": "ADD",
         "in_use": true
       },
       {
-        "filename": "/Engine2D/mixedMode/erase/",
+        "filename": "/Engine2D/blendMode/erase/",
         "text": "ERASE",
         "des": "ERASE",
         "in_use": true
@@ -643,7 +643,7 @@
     "isFolder": true,
     "text": "混合模式",
     "des": "混合模式",
-    "in_use": false
+    "in_use": true
   },
   {
     "children": [
@@ -681,14 +681,14 @@
     "children": [
       {
         "filename": "/Engine2D/timeControl/timer/",
-        "text": "Timer计时器",
-        "des": "Timer计时器",
+        "text": "Timer 计时器",
+        "des": "Timer 计时器",
         "in_use": true
       },
       {
-        "filename": "/Engine2D/timeControl/tick/",
-        "text": "Tick心跳",
-        "des": "Tick心跳",
+        "filename": "/Engine2D/timeControl/ticker/",
+        "text": "Ticker 心跳",
+        "des": "Ticker 心跳",
         "in_use": true
       },
       {

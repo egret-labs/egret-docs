@@ -1,8 +1,8 @@
 相信大家都是从打印一行 Hellow World 开始来学习的。下面就从创建一个默认的 HelloWorld 项目开始。
 
-### 准备工作
+## 准备工作
 
-#### 引擎与工具
+### 引擎与工具
 
 首先当然是获得 Egret Engine 了。可以在官网[下载](http://www.egret.com/products/engine.html)。安装过程很简单。如果需要的话可以参考具：[安装与部署](../../../Engine2D/projectConfig/installation/README.md)和[引擎和工具的管理](../../../Engine2D/projectConfig/launcherManager/README.md)。安装好后以后我们可以方便的管理 Egret 引擎和工具了。
 
@@ -16,15 +16,15 @@
 
 Egret 也支持在命令行完成编译，运行，发布等操作。在下面的教程中会穿插对应操作的命令行代码。
 
-#### TypeScript
+### TypeScript
 
 Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超集，具体内容可以参考[TyptScript语言手册](http://bbs.egret.com/thread-1441-1-1.html)。在下的教程中会一点一点讲解具体的语法与使用规则。Egret 的 API 和 AS3 有很多相似之处，如果您熟悉的话肯定容易上手。 
 
-### 创建新项目
+## 创建新项目
 
 当大家熟悉 Egret 开发之后可以直接创建Egret游戏项目或者Egret EUI 项目等，里面包含了很多默认的配置。这里以新建游戏项目为例。
 
-#### 使用 Egret Wing 创建项目
+### 使用 Egret Wing 创建项目
 
 1、安装好Egret Wing 之后，点击菜单“文件”-》“新建项目”来快速创建项目。
 
@@ -70,7 +70,7 @@ Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超
 	当游戏运行在移动端的时候，会面临屏幕旋转的问题。这里旋转`AUTO`选项，舞台将随设备旋转而旋转。更多关于旋转设置的介绍可以参考：[缩放模式和旋转模式说明](../../../Engine2D/screenAdaptation/explanation/README.md)
 
 
-#### 使用命令行创建项目
+### 使用命令行创建项目
 
 可以使用
 
@@ -83,7 +83,7 @@ egret create HelloWorld
 如果需要设置项目的旋转和缩放模式，需要在项目内来修改，在下面会介绍。
 
 
-### 项目结构
+## 项目结构
 
 选择好舞台的设置之后点击下一步，我们的项目就创建好了。在 Wing 的左上角可以看到有我们项目的目录结构：
 
@@ -100,9 +100,9 @@ egret create HelloWorld
 	* index.html 项目访问的入口文件，我们可以在这里面配置项目的旋转缩放模式背景颜色等。具体的配置说明可以参考：[入口文件说明](../../../Engine2D/projectConfig/indexFile/README.md)
 	* favicon.ico 一个ico。
 
-### 调试项目
+## 调试项目
 
-#### 编写第一行代码
+### 编写第一行代码
 
 项目的入口类默认在`src/Main.ts`里面，在上面创建的项目里面默认包含下面代码：
 
@@ -130,7 +130,7 @@ private createGameScene():void {
 ```
 这里我们调用了一条常用的调试命令，`console.log("需要显示的log内容")`将在浏览器的开发者工具下显示出来我们的log。我们推荐使用 Chrome 来调试 Egret 项目。
 
-#### 调试项目
+### 调试项目
 
 编写好代码后需要构建项目才会生效，把`TypeScript`代码编译成`JavaScript`代码，这样是使用`TypeScipt`的一大特性。Wing 菜单“项目”-》“构建”可进行一次项目的编译。
 

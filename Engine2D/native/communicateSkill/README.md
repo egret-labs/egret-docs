@@ -1,4 +1,4 @@
-### 准备工作
+## 准备工作
 
 1、了解通过 egret-ios-support 打包为原生项目的方案，这里可以参考：
 
@@ -57,7 +57,7 @@ IOS 对应发送消息代码：
 
 ### Native 监听消息
 
-##### Android 内监听消息
+#### Android 内监听消息
 
 在 Android 内监听消息通过调用`EgretGameEngine`实例的`setRuntimeInterface`方法来实现。第一个参数仍然是需要监听的 ID,第二个参数需要实例化一个`IRuntimeInterface`,并重写他的`callback`方法。在其中接收回调的字符串。
 

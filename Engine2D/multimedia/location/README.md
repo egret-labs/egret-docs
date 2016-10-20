@@ -2,7 +2,7 @@
 
 通过 Egret 的 `Geolocation`类来获取设备的当前位置。当开始监听位置改变信息时将派发`CHANGE`事件，并将改变的位置信息传递给回调函数。通过`GeolocationEvent`类型的回调参数可以获取到相应的经纬度，速度，海拔等信息。
 
-#### 获取位置信息 
+## 获取位置信息 
 
 先来看以下使用的整体代码：
 
@@ -48,7 +48,7 @@ class GeolocationTest extends egret.DisplayObjectContainer {
 
 这里需要注意的是`altitude`和`speed`可能是null
 
-#### 获取信息失败的处理
+## 获取信息失败的处理
 
 要获得用户的位置信息时需要用户允许的。如果当用户选择了不共享当前的位置信息,将抛出`GeolocationEvent`的`PERMISSION_DENIED`事件。
 
@@ -85,4 +85,5 @@ private unAvailable (e:egret.GeolocationEvent) {
 
 这里的`errorMessage`表示获取位置信息失败的具体信息，`errorType`表示错误的类型。
 
+## 参考
 上面代码的完整应用可以参考示例：[获取硬件信息](http://edn.egret.com/cn/index.php/article/index/id/659)
