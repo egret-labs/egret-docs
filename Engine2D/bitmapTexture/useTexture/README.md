@@ -4,13 +4,16 @@
 
 Egret内置了纹理集的支持，在编写代码之前，我们需要先制作一张纹理集，具体使用的工具可以选择业内比较流行的 Texture Merger。 具体使用方法请参考[Texture Merger](../../../tools/TextureMerger/manual/README.md)。
 
-我们首先制作一张纹理集，拼合后的效果如下：
+## 使用步骤
 
-![](566150114f41c.png)
+* 首先制作一张纹理集，拼合后的效果如下：
 
-同时生成的对应的json文件如下：
+  ![](566150114f41c.png)
 
-```
+
+  同时生成的对应的json文件如下：
+  
+   ```
 {
     "file": "dogs.png",
     "frames": {
@@ -78,11 +81,12 @@ Egret内置了纹理集的支持，在编写代码之前，我们需要先制作
 }
 ```
 
-然后我们将资源文件拷贝到项目文件夹中的 `resource/assets/` 目录下，同时我们修改资源配置文件 `resource.json` 。
 
-资源配置文件内容如下：
+* 将资源文件拷贝到项目文件夹中的 `resource/assets/` 目录下，同时我们修改资源配置文件 `default.des.json` 。
 
-```
+  资源配置文件内容如下：
+
+  ```
 {
 "resources":
     [
@@ -95,9 +99,9 @@ Egret内置了纹理集的支持，在编写代码之前，我们需要先制作
 }
 ```
 
-然后我们来编写代码：
+* 编写代码：
 
-```
+   ```
 class BitmapTest extends egret.DisplayObjectContainer{
     public constructor()
     {
@@ -118,15 +122,15 @@ class BitmapTest extends egret.DisplayObjectContainer{
 }
 ```
 
-我们注意其中一行
+  我们注意其中一行
 
-```
+  ```
 var txtr:egret.Texture = RES.getRes( "dogs.dog1" );
 ```
 
-其中dogs为纹理集，id为该纹理集中的一个资源id。
+   其中dogs为纹理集，id为该纹理集中的一个资源id。
 
-编译后运行，效果如图：
+   编译后运行，效果如图：
 
 
 ![](5661501178058.png)
