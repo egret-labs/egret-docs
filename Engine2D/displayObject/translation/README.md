@@ -3,8 +3,9 @@
 scrollRect 属性是 Rectangle 类的实例，Rectangle 类包括将矩形区域定义为单个对象所需的有关值。最初定义显示对象的可查看区域时，请创建一个新的 Rectangle 实例并为该实例分配显示对象的 scrollRect 属性。以后进行滚动或平移时，请将 scrollRect 属性读入单独的 Rectangle 变量，然后更改所需的属性（例如，更改 Rectangle 实例的 x 属性进行平移，或更改 y 属性进行滚动）。然后将该 Rectangle 实例重新分配给 scrollRect 属性，将更改的值通知显示对象。
 
 例如，下面的代码定义名为 bigText 的 TextField 对象的可查看区域。单击名为 btnLeft 和 btnRight 的两个按钮时，它们调用的函数通过修改 scrollRect Rectangle 实例的 x 属性而使 TextField 对象的内容向左或向右平移。
-```  TypeScript
-        //创建一个文本框,设定一个scrollRect限制显示范围
+
+```
+//创建一个文本框,设定一个scrollRect限制显示范围
 var bigText: egret.TextField = new egret.TextField();
 bigText.text = "平移和滚动显示对象,平移和滚动显示对象";
 bigText.scrollRect = new egret.Rectangle(0, 0, 200, 50);

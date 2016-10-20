@@ -5,7 +5,7 @@
 
 ![显示日志](575e991fdd5f8.png)
 
-### 打开日志显示开关
+## 打开日志显示开关
 
 在 template/index.html 中能够很方便的控制日志的显示状态。
 
@@ -24,10 +24,8 @@
      </div>
 ```
 
-#### data-show-log="true/false"
-        
-   设置是否在屏幕中显示日志。
+* data-show-log： 设置是否在屏幕中显示日志。 true 显示，false 不显示。
 
-### 输出日志
+## 输出日志
 
 在代码中可以直接调用 `egret.log(message?:any, ...optionalParams:any[])` 来输出日志。

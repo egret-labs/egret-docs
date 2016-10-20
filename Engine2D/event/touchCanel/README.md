@@ -2,9 +2,10 @@ TouchEvent 是一个常用的功能，用于监听触摸事件的不同阶段。
 
 在 Egret 版本 3.0.1 中，我们新增了一个 TouchCancel 事件，顾名思义就是取消触摸。这个功能目前主要用于 EUI 中，比如 Scroller 滚动列表，当你的手点中它后，首先抛出一个 TouchBegin，如果此时没有滚动，直接离开屏幕，那么还是原来标准的流程，抛出 TouchEnd 和 TouchTap。但是当你滚动它以后，则会抛出一个 TouchCancel 事件，而后续的 TouchEnd 和 TouchTap 事件就不会被触发了。
 
+## 示例
 下面是一个示例代码，创建一个滚动列表并增加监听
 
-~~~ Typescript
+~~~
 var scroller = new eui.Scroller();
 var list = new eui.List();  
 list.itemRendererSkinName = `
@@ -31,7 +32,7 @@ scroller.addEventListener(egret.TouchEvent.TOUCH_CANCEL,()=>{console.log("44 Scr
 list.addEventListener(egret.TouchEvent.TOUCH_CANCEL,()=>{console.log("44 List cancel")},this);
 ~~~
 
-#### 没有滚动时
+### 没有滚动时
 
 当没有滚动，点击列表后，会依次抛出以下事件。
 
@@ -48,7 +49,7 @@ list.addEventListener(egret.TouchEvent.TOUCH_CANCEL,()=>{console.log("44 List ca
 
 上图为点击后的样子
 
-#### 滚动后
+### 滚动后
 
 当你滚动 scroller 以后，会抛出 TouchCancel，后续的 touch 事件不会被触发。
 

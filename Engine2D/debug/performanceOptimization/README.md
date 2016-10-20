@@ -138,7 +138,7 @@ sp.touchEnabled = false; //此对象是否接受触摸事件，默认true
 
 对于V8虚拟机的优化方法是，避免动态添加属性与修改变量类型，好处是减少创建新类的开销，V8中当试图修改动态变量或属性时，虚拟机会把function类缓存为一个固定的C++类并触发虚拟机的重新编译。当你使用TypeScript显而易见的好处是类型的声明以及语法规范会使你避免这种情况发生。
 
-* 类方法中，将 this 赋值给另外一个临时变量，使用方法详见测试用例。
+* 类方法中，将对象属性赋值给另外一个临时变量，使用方法详见测试用例。
 
   测试：[this测试](https://github.com/xinfangke/egretDocsTest/blob/master/test3.ts)
   
@@ -358,7 +358,7 @@ private createGameScene(): void
 
 预加载资源非常多，会使整个游戏帧率降低，合理的将零散位图合并为独立纹理集，减少配置文件数目，不是必要的文件放入游戏后加载。
 
-### QQ浏览器
+### QQ 浏览器
 
 推荐位图的宽高限定在1024*1024。
 
@@ -372,7 +372,7 @@ private createGameScene(): void
 
 > 在 Egret 2.5 以上版本的引擎中会自动处理`cacheAsBitmap`所占用的 Canvas 数量。
 
-### 利用Chrome 调优
+### 利用 Chrome 调优
 Chrome的profiles可以帮助我们确定代码执行效率，从而确定性能原因。
 
 ![](55659f95c69cb.png) 

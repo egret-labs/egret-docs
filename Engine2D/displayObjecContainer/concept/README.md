@@ -1,4 +1,4 @@
-## 关于显示容器
+## 概念
 
 所有的容器全部继承自 `DisplayObjectContainer` 类，这个名称为 `DisplayObjectContainer` 的类又继承自 `DisplayObject` 。也就是说，在Egret中，所有的容器其实也继承自 `DisplayObject`。
 
@@ -12,13 +12,13 @@
 
 * 设置叠放次序
 
-## 其他容器
+## Sprite
 
 在Egret中，我们还有一个其他的容器：`Sprite`。
 
 如果你查看Sprite类的内容,你会发现，`Sprite`仅仅是继承 `DisplayObjectContainer`。同时添加了一个Graphics功能。
 
->关于Graphics功能我们会在矢量绘图部分进行详细讲解。
+> 关于Graphics功能我们会在矢量绘图部分进行详细讲解。
 
 ## 自定义容器
 
