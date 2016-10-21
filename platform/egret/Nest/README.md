@@ -1,4 +1,4 @@
-# Nest
+
 
 * nest [下载地址](https://github.com/egret-labs/Nest) 
 
@@ -65,7 +65,7 @@
 
 ## api 详解
 
-##### nest.easyuser.startup 初始化项目数据
+### nest.easyuser.startup 初始化项目数据
 
 ``` 这个是其他 api 调用的前提，请确保首先调用此 api ```
 
@@ -97,7 +97,7 @@
 		    }
 		})
 
-##### nest.easyuser.getLoginTypes 获取当前平台有几种登录方式
+### nest.easyuser.getLoginTypes 获取当前平台有几种登录方式
 
 有则需要在进入游戏登录页面前先显示带有登录按钮方式的界面；没有则直接调用 ```nest.easyuser.login``` 进入到游戏。如果调用登出api后，需要重新调用此api获取登录方式
 
@@ -126,7 +126,7 @@
 
 > 第二个图为游戏内第一个页面，第一个图为平台登录需求的页面，需要是全屏页面显示而不是简单的弹窗。
 
-##### nest.easyuser.login 登录
+### nest.easyuser.login 登录
 
 ```请确保已经调用过  nest.easyuser.startup ```，并且需要调用根据 ```nest.easyuser.getLoginTypes();``` 来传入相应的参数。登录 api 的处理需要在进入游戏自己的第一页面前处理完（比如游戏默认的登录页面）。
 
@@ -151,7 +151,7 @@
 			}
 		})
 
-##### nest.easyuser.isSupport 检测是否支持 getInfo 方法调用
+### nest.easyuser.isSupport 检测是否支持 getInfo 方法调用
 
 * 参数说明
 		
@@ -167,7 +167,7 @@
 		    var getInfo = data.getInfo;
 		})
 
-###### nest.easyuser.getInfo 获取用户信息，目前只有qq浏览器支持
+### nest.easyuser.getInfo 获取用户信息，目前只有qq浏览器支持
 
 ```调用前，请确保 nest.easyuser.isSupport 返回结果支持调用```
 
@@ -203,7 +203,7 @@
 
 
 
-###### nest.easyuser.logout 登出
+### nest.easyuser.logout 登出
 * 参数说明
 
 		loginInfo:nest.user.LoginInfo 请传入 {}
@@ -227,7 +227,7 @@
 		    }
 		});
 		
-###### nest.iap.pay 支付
+### nest.iap.pay 支付
 * 参数说明
 
 		orderInfo:nest.iap.PayInfo 支付信息
@@ -268,7 +268,7 @@
 
 
 
-###### nest.share.isSupport 是否支持分享
+### nest.share.isSupport 是否支持分享
 * 示例
 
 		nest.share.isSupport({}, function (data) {
@@ -276,7 +276,7 @@
 		    var share = data.share;
 		})
 	
-###### nest.share.setDefaultData 设置默认分享信息接口
+### nest.share.setDefaultData 设置默认分享信息接口
 
 
 * 示例
@@ -304,7 +304,7 @@
 		    }
 		})
 		
-###### nest.share.share 分享
+### nest.share.share 分享
 
 ```调用此接口前请先使用 nest.share.isSupport 判断是否支持该功能```
 
@@ -335,7 +335,7 @@
 		})	
 
 
-###### nest.social.isSupport 社交相关支持
+### nest.social.isSupport 社交相关支持
 
 * 示例
 
@@ -346,14 +346,14 @@
 		})
 		
 		
-###### nest.social.getFriends 获取好友列表
+### nest.social.getFriends 获取好友列表
 
 ```调用此接口前请先使用 nest.social.isSupport 判断是否支持该功能```
 
 * 示例
 
 		
-###### nest.social.openBBS 打开论坛
+### nest.social.openBBS 打开论坛
 
 ```调用此接口前请先使用 nest.social.isSupport 判断是否支持该功能```
 
@@ -371,7 +371,7 @@
 		    }
 		})
 
-###### nest.app.isSupport 是否支持特定功能
+### nest.app.isSupport 是否支持特定功能
 
 * 示例
 
@@ -388,7 +388,7 @@
 		})
 		
 		
-###### nest.app.attention 关注
+### nest.app.attention 关注
 
 ```调用此接口前请先使用 nest.app.isSupport 判断是否支持该功能```
 
@@ -409,7 +409,7 @@
 		    }
 		})
 				
-###### nest.app.exitGame 退出游戏，回到 App 界面
+### nest.app.exitGame 退出游戏，回到 App 界面
 
 ```调用此接口前请先使用 nest.app.isSupport 判断是否支持该功能```
 
@@ -424,7 +424,7 @@
 		    }
 		})
 				
-###### nest.app.sendToDesktop 发送到桌面
+### nest.app.sendToDesktop 发送到桌面
 
 ```调用此接口前请先使用 nest.app.isSupport 判断是否支持该功能```
 
@@ -442,7 +442,7 @@
 		    }
 		})
 		
-###### nest.app.getInfo 获取客服信息
+### nest.app.getInfo 获取客服信息
 
 ```调用此接口前请先使用 nest.app.isSupport 判断是否支持该功能```
 
@@ -472,7 +472,7 @@
 ## 本地测试 （使用测试gameId 88888 测试）
 
 
-###### h5测试
+### h5测试
 
 * 步骤
 
@@ -493,7 +493,7 @@ platInfo=open\_```my_appId```_9166&egret.runtime.spid=9166&appId=```my_appId```&
 
 
 
-###### runtime
+### runtime
 
 * runtime目前只支持android系统。
 

@@ -10,7 +10,7 @@
 [附录三：游戏接入注意事项](#附录三：游戏接入注意事项)
 [附录四：状态码（code）对照表](#附录四：状态码（code）对照表)
 
-#### 一、获取玩家信息数据
+## 一、获取玩家信息数据
 
 接口URL : http://api.egret-labs.org/v2/user/getInfo
 HTTP请求方式：POST
@@ -54,7 +54,7 @@ data数据说明：
 | name | 用户名 | 张三（值不一定有） |
 | pic | 用户头像 | （值不一定有） |
 
-#### 二、支付回调通知
+## 二、支付回调通知
 
 根据游戏方提供的支付回调地址，把支付数据通知到游戏方
 通知方式：POST
@@ -96,7 +96,7 @@ code说明：
 `有部分渠道玩家点击高档充值档，打开渠道充值页面后玩家还可以选择低挡充值档，这时候传给游戏的goodsId`
 `还是玩家原来选择的高档的goodsId，这时候需要游戏根据money兑换成游戏币发放给玩家`
 
-#### 三、获取当前渠道是否开启玩家好友列表功能
+## 三、获取当前渠道是否开启玩家好友列表功能
 
 接口URL : http://api.egret-labs.org/v2/friend/isOpen
 HTTP请求方式：POST
@@ -134,7 +134,7 @@ HTTP请求方式：POST
 data数据说明：
 status  1为开启，0为未开启
 
-#### 四、获取玩家好友列表
+## 四、获取玩家好友列表
 
 接口URL : http://api.egret-labs.org/v2/friend/getList
 HTTP请求方式：POST
@@ -174,7 +174,7 @@ HTTP请求方式：POST
 data数据说明：
 好友id数组
 
-#### 五、多区多服游戏设置选服
+## 五、多区多服游戏设置选服
 `（如果已经对接egret统计接口，不需要再对接该接口）`
 
 接口URL : http://api.egret-labs.org/v2/user/setServer
@@ -209,7 +209,7 @@ HTTP请求方式：POST
 }
 ```
 
-#### 六、数据上报
+## 六、数据上报
 
 接口URL : http://api.egret-labs.org/v2/user/setAchievement
 HTTP请求方式：POST
@@ -244,9 +244,9 @@ HTTP请求方式：POST
 }
 ```
 
-#### 附录一：签名生成规则
+## 附录一：签名生成规则
 
-##### 签名生成规则：
+### 签名生成规则：
 
 1. 对参与签名的参数的键值进行`正序排列`
 2. 生成待加密字符串
@@ -268,11 +268,11 @@ function createSign($params, $appkey){
 }
 ```
 
-##### 在线验证：
+### 在线验证：
 
 [http://open.egret.com/checkSign](http://open.egret.com/checkSign) 
 
-#### 附录二：游戏接入前需提供信息
+## 附录二：游戏接入前需提供信息
 
 游戏接入前需提供信息：
 1. 游戏客户端访问地址
@@ -286,7 +286,7 @@ function createSign($params, $appkey){
 | 3 | 10 | 100钻石 |
 | 4 | 30 | 月卡 |
 
-#### 附录三：游戏接入注意事项
+## 附录三：游戏接入注意事项
 
 `1、调用api前需要先把游戏提交到http://open.egret.com`
 
@@ -304,7 +304,7 @@ function createSign($params, $appkey){
 
 `6、游戏接入台湾渠道时，相关域名地址 http://api.egret-labs.org 需要更改为http://tw.api.egret.com`
 
-#### 附录四：状态码（code）对照表
+## 附录四：状态码（code）对照表
 
 | code | 对应含义 |
 | :------------: | :------------- |
