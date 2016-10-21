@@ -1,7 +1,7 @@
 
 AudioManager 类允许您在应用程序中 播放 HTML5 Audio 和 Web Audio。它集合了加载声音文件、播放2D或者3D效果方法，可以使我们方便的控制声音播放。
 
-### 1、AudioManager属性
+## 1、AudioManager属性
 
 
 * `context : any` AudioContext 上下文
@@ -15,7 +15,7 @@ egret3d.AudioManager
 
 但是必须在初始化的时候设置，或者在play之前设置。通过对这些属性的设置，能够产生具有空间属性的声音效果。
 
-### 2、AudioManager方法
+## 2、AudioManager方法
 
 * `AudioManager ()` 创建一个新的 AudioManager 对象
 * `createSound ( url :string, success :Function, error :Function ):egret3d.Sound` 生成一个新的 Sound 对象 ，将声音数据加载到 Sound 对象中
@@ -25,7 +25,7 @@ egret3d.AudioManager
 * `playSound ( sound :egret3d.Sound, options :any )` 生成一个新的 Channel 对象来播放该声音
 * `playSound3d ( sound :egret3d.Sound, position :egret3d.Vector3D, options :any ):egret3d.Channel3d` 生成一个新的 Channel3d 对象来播放该声音
 
-### 3、代码示例
+## 3、代码示例
 ```
     public constructor() {
         super();

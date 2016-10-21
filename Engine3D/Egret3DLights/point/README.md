@@ -68,6 +68,3 @@ class PointLigthDemo extends LoadingUI
 
 ![](575cd48ddaf18.png)
 
-### radius 灯光半径
-
-### 	falloff 灯光衰减度

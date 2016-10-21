@@ -1,5 +1,5 @@
 
-### 1、查看项目结构
+## 1、查看项目结构
 
 ![alt](575e571ee66bc.jpg)
 
@@ -9,8 +9,8 @@
 
 接下来咱们详细分析一下默认项目代码。
 
-### 2、查看Main.ts文件
-#### 2.1 基本概念
+## 2、查看Main.ts文件
+### 2.1 基本概念
 ```
     // Canvas操作对象
     protected _egret3DCanvas: egret3d.Egret3DCanvas;
@@ -43,7 +43,7 @@
 
 我们目前先不做详细解释，先知道怎么用，在后续文档中会详细介绍各个概念的用法。
 
-#### 2.2 查看构造方法
+### 2.2 查看构造方法
 
 ```
 	super();
@@ -102,7 +102,7 @@
 只需要在帧循环事件中调用`this.cameraCtl.update();`即可实现如下功能。
     * 1.按下鼠标左键并移动鼠标可以使摄像机绕着目标进行旋转。</p>    * 2.按下键盘的(w s a d) 可以摄像机(上 下 左 右)移动。</p>    * 3.滑动鼠标滚轮可以控制摄像机的视距。</p>* 最后就是LoadingUI实例化，开始初始化，后续会调用加载进度，最后素材加载完毕后移除LoadingUI，下一个小节我们专门解释一下LoadingUI
 
-#### 2.3 相机方法相关
+### 2.3 相机方法相关
 接下来我们单独解释一下各个方法功能以及用法。
 ```
     public update(e: egret3d.Event3D) {
@@ -133,7 +133,7 @@
 
 这句话则是调整摄像机的x轴角度为0.
 
-#### 2.4 窗口尺寸变化监听
+### 2.4 窗口尺寸变化监听
 ```
     /**
     * 窗口尺寸变化事件
@@ -148,7 +148,7 @@
 ```
 这个方法是当浏览器窗口变化时，保证3D场景能够及时更新。
 
-#### 2.5 模型加载数据处理
+### 2.5 模型加载数据处理
 ```
     //创建加载类
     var load: egret3d.URLLoader = new egret3d.URLLoader();
@@ -242,7 +242,9 @@
     loadAniIdle.load("resource/LingTong/Idle.eam");
 ```
 接下来加载贴图素材，加载动画素材。
-#### 2.6 模型加载贴图
+
+### 2.6 模型加载贴图
+
 ```
     /**
     * 漫反射贴图加载回调
@@ -261,7 +263,7 @@
 
 ![alt](575e571f1be44.jpg)
 
-#### 2.7 模型加载动画文件
+### 2.7 模型加载动画文件
 ```
     /**
     * 动画加载回调
@@ -285,7 +287,7 @@
 将骨骼动画添加到模型上，3D模型就可以包含动作了。如果没有骨骼动画，3D模型就没有动作，像一个雕塑你养。
 ### 3、查看LoadingUI.ts文件
 `LoadingUI`包含了四个方法，`构造方法`、`OnInitLoadingView`、`OnLoadFinished`、`CloseLoadingView`。
-#### 3.1 构造方法
+### 3.1 构造方法
 > this.div = document.getElementById('descCon');
 
 看代码我们发现，这是通过`document`获取了`html`中的一个id为`descCon`的元素。
@@ -293,7 +295,7 @@
 ```
     <div id="loadingCon" style="position:absolute;width:100%;height:100%;background:#ffffff"> <img id="loadingIcon" width="72" height="72" src="resource/logo.png" style="position:absolute;top:50%;left:50%;margin-top:-116px;margin-left:-36px" /> <div id='descCon'  width="100" height="50" style="position:absolute;top:50%;left:50%;margin-top:-36px;margin-left:-50px"></div> </div>```
 `inidex.html`提前添加了两个元素，一个是加载`icon`，一个是放置加载`loading`文字的`div`。而构造方法就是获取了加载`loading`文字的`div`，然后动态放入文本。
-#### 3.2 OnInitLoadingView
+### 3.2 OnInitLoadingView
 ```
     public OnInitLoadingView(max: number) {
         this.max = max;
@@ -308,7 +310,7 @@
 ```
 前边在`Main.ts`的构造方法中，初始化了`LoadingUI`，即调用了`OnInitLoadingView`方法。这个方法在`descCon`中动态加入了加载文字。
 这里注意一下，`max`代表了加载资源的个数，当加载完毕后即调用`OnLoadFinished`
-#### 3.3 OnLoadFinished
+### 3.3 OnLoadFinished
 ```
     public OnLoadFinished(): void {
         if(this.cur == this.max) {
@@ -324,7 +326,7 @@
     }
 ```
 每次加载素材完毕后会调用`OnLoadFinished`，这个方法将会判断是否将全部素材加载完毕，如果没有则显示进度，如果没有则调用`CloseLoadingView`隐藏`LoadingUI`。
-#### 3.4 CloseLoadingView
+### 3.4 CloseLoadingView
 ```
     public CloseLoadingView(): void {
         this.div.innerHTML = "正在加载:100%";
@@ -335,14 +337,14 @@
     }
 ```
 很显然当前方法就是隐藏加载界面。
-### 4、调试Egret3D项目
-#### 4.1 命令行
+## 4、调试Egret3D项目
+### 4.1 命令行
 * 编译3D项目
 > `Egret build`
 * 运行3D项目
 > `Egret run`
 
-#### 4.2 快捷键
+### 4.2 快捷键
 * 编译3D项目
 > `command shift b`
 
@@ -352,7 +354,7 @@
 * 调试运行3D项目
 > `F5`
 
-#### 4.3 可视化界面
+### 4.3 可视化界面
 * 点击调试按钮
 ![alt](575e571f2ecc6.jpg)
 可以选择使用`wing内置播放器`调试或者使用浏览器调试。我们这里使用`Wing内置播放器`调试。
@@ -366,7 +368,7 @@
     * 右键`切换开发者工具`可以查看网络、`console`等数据
     ![alt](575e571f4e779.jpg)
     
-#### 4.4 修改代码调试
+### 4.4 修改代码调试
 我们简单修改一下
 ```
     /**

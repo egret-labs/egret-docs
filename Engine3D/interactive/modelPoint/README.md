@@ -1,8 +1,8 @@
 
-### 模型与点碰撞
+## 模型与点碰撞
 
 
-##### 原理：
+### 原理：
 
 * 检测模型与点碰撞其实就是检测一个点是否在模型内。在 egret3d 中，模型与点碰撞，是通过模型的 bound 来检测是否包含这个点（egret3d.Vector3D）来实现。
 
@@ -17,7 +17,7 @@
 	![image](575cd7a1ab7fb.png)
 
 
-##### api（egret3d.Bound）:
+### api（egret3d.Bound）:
 
 ~~~
 pointIntersect ( pos :egret3d.Vector3D ):boolean
@@ -27,7 +27,7 @@ pointIntersect ( pos :egret3d.Vector3D ):boolean
 pos:egret3d.Vector3D — 检测的点
 ~~~
 
-##### 示例：
+### 示例：
 
 ```
 var vector3d:egret3d.Vector3D = new egret3d.Vector3D(ball.x, ball.y, ball.z);

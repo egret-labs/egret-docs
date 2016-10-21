@@ -1,9 +1,9 @@
 
-### Mesh网格
+## Mesh网格
 
 网格是由无数个三角面片组成的边富有贴图的物体，是3D物体的核心。当你创建一个模型的时候，需要借助网格来渲染你的模型。当创建一个Mesh时，需要指定对应的几何体与材质。
 
-#### 创建Mesh网格
+### 创建Mesh网格
 
 创建Mesh的方法如下：
 
@@ -20,7 +20,7 @@ var view:egret3d.View3D = new egret3d.View3D(0,0,window.innerWidth,window.innerH
 view.addChild3D( mesh );
 ```
 
-### 添加材质
+## 添加材质
 
 ```
 var colmat:egret3d.ColorMaterial = new egret3d.ColorMaterial(0xff00ff00);
@@ -32,7 +32,7 @@ var mesh:egret3d.Mesh = new egret3d.Mesh(geometery, colmat);
 mesh.addSubMaterial(2, colmat);
 ```
 
-### 移除材质
+## 移除材质
 
 ```
 var mesh:egret3d.Mesh = new egret3d.Mesh(geometery, colmat);
@@ -42,7 +42,7 @@ mesh.addSubMaterial(2, colmat2);
 mesh.removeSubMaterial(2);
 ```
 
-### 获取材质数量
+## 获取材质数量
 
 ```
 var matCount:number = mesh.materialCount();
