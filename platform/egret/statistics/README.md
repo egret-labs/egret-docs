@@ -1,6 +1,6 @@
 Egret 统计接入根据游戏是否是用Egret 引擎开发分两种，遇到问题请加QQ群:386278100 
 
-#### 一、Egret 引擎开发的游戏
+## 一、Egret 引擎开发的游戏
 
 1、[下载](http://open.egret.com/wiki/misc/doc/egretSA.zip "下载")统计接入文档
 2、选择导入的第三方库，分 2.0 和 2.5 两个版本分别对应Egret引擎 2.0 和 2.5
@@ -200,7 +200,7 @@ esa.EgretSA.onLeave();
 查看 浏览器审查元素里 loadingStat.php 返回值 {"code":0,"msg":"ok"} 表示接入成功否则返回失败原因
 如果找不到 loadingStat.php 请查看 EgretSA.init() debug 参数是否是true，true 默认是不会发送统计的，需要改成false
 
-#### 二、非Egret 引擎开发的游戏
+## 二、非Egret 引擎开发的游戏
 
 
 1、[下载](http://open.egret.com/wiki/misc/doc/egretSA.zip "下载")统计接入文档
@@ -392,7 +392,7 @@ EgretSA.onLeave();
 查看 浏览器审查元素里 loadingStat.php 返回值 {"code":0,"msg":"ok"} 表示接入成功否则返回失败原因
 如果找不到 loadingStat.php 请查看 EgretSA.init() debug 参数是否是true，true 默认是不会发送统计的，需要改成false
 
-#### 三、常见问题
+## 三、常见问题
 
 1）编译不能通过 Cannot find name 'esa' ，编译项目的时候用 egret build -e 把引擎和项目一起编译一下。
 

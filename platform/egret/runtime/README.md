@@ -1,4 +1,4 @@
-### 一、概述
+## 一、概述
 
 游戏如果采用 Egret Runtime 发布，需要执行以下步骤
 
@@ -14,7 +14,7 @@
 
 6、准备上线，并在正式上线前执行 egret publish --runtime native -compile 确保发布代码已被压缩和混淆
 
-### 二、Runtime 入口文件编写规范
+## 二、Runtime 入口文件编写规范
 
 
 ~~~
@@ -33,7 +33,7 @@
 
 入口文件请确认是动态文件（如php等）而非静态文件，以便在产品上线后进行白名单测试
 
-### 三、Runtime Android包测试入口
+## 三、Runtime Android包测试入口
 
 1、在 Android 测试机上安装 [Egret Runtime 测试包](http://arena.egret.com/Egret_Guidance/EgretRuntimeCheck.zip)
 
@@ -41,7 +41,7 @@
 
 3、在测试包App 中扫描二维码，即可启动游戏。
 
-### 四、Runtime游戏规范
+## 四、Runtime游戏规范
 
 1、Runtime游戏的启动入口为 runtime_loader.js
 
@@ -52,7 +52,7 @@
 ~~~
 egret.MainContext.runtimeType //值为 egret.MainContext.RUNTIME_HTML5或egret.MainContext.RUNTIME_NATIVE;
 ~~~
-### 五、渠道测试入口
+## 五、渠道测试入口
 
 目前支持QQ浏览器和猎豹浏览器
 
@@ -70,14 +70,14 @@ egret.MainContext.runtimeType //值为 egret.MainContext.RUNTIME_HTML5或egret.M
 
 点击“开始游戏”按钮
 
-### 六、渠道白名单测试方法
+## 六、渠道白名单测试方法
 
 用户场景：渠道上游戏已经上线，需要在先在开发者的本地测试机上进行新版本测试，同时不影响线上用户。
 
 测试方法：Runtime在启动时，回向 Runtime 入口文件发一下请求 `http://{your-runtime-file}?egretDeviceId=abcdefg` 
 其中 egretDeviceId 是一个加密后的设备id，开发者可以在Runtime入口文件中解析这个请求，根据不同的egretDeviceId 派发不同的 `code_url` 即可
 
-### 七、Runtime 启动流程
+## 七、Runtime 启动流程
 
 在 Egret Runtime 的启动流程如下：
 
@@ -91,7 +91,7 @@ egret.MainContext.runtimeType //值为 egret.MainContext.RUNTIME_HTML5或egret.M
 
 5、游戏启动
 
-### 八、解决游戏启动瞬间黑屏问题
+## 八、解决游戏启动瞬间黑屏问题
 
 在 Runtime 默认的启动流程中，存在一个体验问题，即 从 Runtime Loading 关闭到游戏启动显示游戏Loading这个过程中，可能存在几秒的黑屏时间，因为此时 Loading 资源尚未加载。
 
