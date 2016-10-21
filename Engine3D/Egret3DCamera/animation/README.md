@@ -144,9 +144,9 @@ class CameraAni extends LoadingUI
 
 编译并运行，效果如图：
 
-![](8.gif)
+![](575cd31ce7598.gif)
 
-#### 摄像机帧数据
+## 摄像机帧数据
 
 由于摄像机动画相对比较简单，不涉及变形等信息，只包含了时间和摄像机在三维空间中的运动轨迹于姿态。你可以通过`CameraAnimationController`类中的`cameraAnimationFrames`属性获取当前摄像机动画的全部帧数据。每个帧数据的内容可参考`CameraAnimationFrame`类的API内容。
 

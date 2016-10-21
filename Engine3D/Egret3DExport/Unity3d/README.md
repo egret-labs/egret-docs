@@ -1,4 +1,4 @@
-# unity3d插件使用说明 #
+
 ## 需要的环境 ##
 	1.安装unity3d 4.x版本，推荐4.7.1,暂时不兼容5.x版本。  
 	2.运行环境配置：将Setting目录内DLL解压缩，将包中Dll文件置于C:\Windows\System32目录下。

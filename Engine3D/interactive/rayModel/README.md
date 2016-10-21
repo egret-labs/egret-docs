@@ -1,7 +1,7 @@
 
-### 射线与模型碰撞
+## 射线与模型碰撞
 
-##### 原理：检测一条射线是否穿透一个模型。
+### 原理：检测一条射线是否穿透一个模型。
 
 * 未碰撞：
 
@@ -12,7 +12,7 @@
 	![image](575cd7bd6d4a1.png)
 
 
-##### api（egret3d.Bound）:
+### api（egret3d.Bound）:
 
 * 射线与模型具体数据相交
 
@@ -54,7 +54,7 @@ IntersectTriangle ( v0 :egret3d.Vector3D, v1 :egret3d.Vector3D, v2 :egret3d.Vect
 
 
 
-##### 示例：
+### 示例：
 
 ```
 var pickResult:egret3d.PickResult = new egret3d.PickResult();

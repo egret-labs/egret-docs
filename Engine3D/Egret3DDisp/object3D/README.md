@@ -3,7 +3,7 @@
 
 `Object3D`是3D空间中的实体对象。场景图中的`Object3D`对象是一个树型结构，对象中包含了变换信息.这些变换信息应用于所有的子对象,子对象也有自己的变换信息,最终的变换信息要结合父对象的变换信息每个`Object3D`对象在生成时会创建一个包围盒。
 
-### 创建`Object3D`对象
+## 创建`Object3D`对象
 
 创建语法如下：
 
@@ -11,7 +11,7 @@
 var obj3d:egret3d.Object3D = new egret3d.Object3D();
 ```
 
-### 作为容器，添加子对象
+## 作为容器，添加子对象
 
 ```
 var target:egret3d.Object3D = new egret3d.Object3D();
@@ -20,7 +20,7 @@ var container:egret3d.Object3D = new egret3d.Object3D();
 container.addChild( target );
 ```
 
-### 添加子对象，并指定下标
+## 添加子对象，并指定下标
 
 ```
 var target:egret3d.Object3D = new egret3d.Object3D();
@@ -35,7 +35,7 @@ container.addChildAt( target, 5 );
 var obj3d:egret3d.Object3D = container.childs[5];
 ```
 
-### 移除子物体
+## 移除子物体
 
 ```
 var target:egret3d.Object3D = new egret3d.Object3D();
@@ -46,7 +46,7 @@ container.addChildAt( target, 5 );
 container.removeChild( target );
 ```
 
-### 查找子物体
+## 查找子物体
 
 ```
 var target:egret3d.Object3D = new egret3d.Object3D();
@@ -65,7 +65,7 @@ var obj2:egret3d.Object3D = container. findObject3D("myObj");
 
 ```
 
-### 旋转、位移与缩放
+## 旋转、位移与缩放
 
 ```
 var obj3d:egret3d.Object3D = new egret3d.Object3D();
