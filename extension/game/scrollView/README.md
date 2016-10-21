@@ -2,7 +2,7 @@ ScrollView 即为滚动视图，开启一个滚动窗口，可以在里面添加
 
 > 在Egret 2.5 以上的版本中需要注意的是 `egret.ScrollView` 类位于`game`库当中，如果使用的话需要确保项目中引用了`game`库。方法操作可以参考：[模块化配置和第三方库的使用方法](../../../extension/threes/instructions/README.md)
 
-### 创建滚动视图
+## 创建滚动视图
 
 创建一个 `ScrollView` 实例很简单，与其他类一样:
 ```
@@ -23,7 +23,7 @@ myscrollView.height = 高;
 ```
 当然`myscrollView`里面的"内容"是不需要添加到显示列表中的，放到`ScorllView`里面即可。
 
-### ScrollView 的其他设置
+## ScrollView 的其他设置
 
 首先来完善上面的程序，如下:
 ```
@@ -87,7 +87,7 @@ class ScrollViewDemo extends egret.DisplayObjectContainer {
 
 ![](563212070fdc9.gif)
 
-#### 启用回弹
+### 启用回弹
 
 `ScrollView`的`bounces`是否启用回弹，当启用回弹后，ScrollView中内容在到达边界后允许继续拖动，在用户拖动操作结束后，再反弹回边界位置。
 默认情况下是启用回弹的，下面关闭回弹来看看效果。
@@ -97,7 +97,7 @@ myscrollView.bounces = false;
 ```
 ![](56321207eb04a.gif)
 
-#### 滚动策略
+### 滚动策略
 
 ScrollView 有可以设置两种滚动策略，水平滚动策略(horizontalScrollPolicy)和垂直滚动策略(verticalScrollPolicy)。都有三个具体的值，`on`,`off`和`auto`，默认为`auto`。
 以水平滚动策略为例，如果设置为`on`,表示ScrollView里面的"内容"可以水平拖动，相反如果设置为`off`将不能拖动。设置为`auto`时有所不同，只有当"内容"大于ScrollView的宽度时才可以拖动。具体可以看下面的代码，我们先把格子缩小，修改其宽度，然后设置ScrollView的水平滚动策略为`auto`,垂直滚动策略为`on`,来看看效果。
@@ -117,7 +117,7 @@ myscrollView.horizontalScrollPolicy = "auto";
 
 可以看到只能在垂直方向滚动，而水平方向不能滚动。当然默认的滚动策略为`auto`,我们可以按需要更改。
 
-#### 监听事件
+### 监听事件
 
 当拖动 ScrollView 里面的内容时会抛出 `egret.Event.CHANGE` 事件。完成一次拖动在下一次开始之前会抛出`egret.Event.COMPLETE`,继续添加下面代码：
 ```

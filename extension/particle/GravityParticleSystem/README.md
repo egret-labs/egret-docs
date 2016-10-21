@@ -1,8 +1,8 @@
-### 概述
+## 概述
 
 GravityParticleSystem 是继承自 ParticleSystem 扩展的重力粒子系统，在该系统中通过设置重力、速度、径向加速度以及切向加速度实现粒子不同的运动轨迹。
 
-### 说明
+## 说明
 
 该系统中大部分的参数都是由2个数值决定的：基础值和差值。粒子在被创建时的属性值是由基础值加上随机的差值浮动决定的，差值的浮动在正负差值之间。例如：粒子存活时间的基础值是1000，差值是500，那么创建粒子的时候粒子的存活时间是 基础值 + 差值 * (Math.random() * 2 - 1)，也就是500到1500之间随机。
 
@@ -164,7 +164,7 @@ GravityParticleSystem 是继承自 ParticleSystem 扩展的重力粒子系统，
  @brief 粒子消失时的 Alpha 透明度差值，取值范围[-Number.MAX_VALUE,Number.MAX_VALUE]
 ```
 
-### 方法
+## 方法
 
 ** constructor(texture:egret.Texture, config:any) **
 

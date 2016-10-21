@@ -1,10 +1,10 @@
 一直以来，有不少开发者对于如何写自己的 “.d.ts” 而苦恼。下面我们将介绍下如何生成自己的js的头文件 “.d.ts” 。
 
-### 前提
+## 前提
 
 本教程只介绍如何通过已知的 js 相关 api 来生成 “.d.ts” 文件，如果你还不知道 js api 怎么调用，那么请到下载 js 的地方去查看相关文档。这里不会告诉你 js 文件里有哪些方法或者变量，也不会帮助你通过 js 文件来自动生成 ".d.ts" 文件。
 
-### 说明
+## 说明
 
 * 什么是 “.d.ts” 文件，简单一点讲，就是你可以在 ts 中调用的 js 的声明文件，类似c++中的 “.h” 头文件，不过和 “.h” 不一样的是，它完全是个声明文件，没有任何实现代码。
 
@@ -28,10 +28,10 @@ declare var aa: string;
 ~~~
 
 
-### 写法
+## 写法
 下面我们介绍下 “.d.ts” 的几种声明的写法。
 
-##### 模块 module
+### 模块 module
 
 * 单模块声明
 
@@ -56,7 +56,7 @@ declare module a {
 }
 ~~~
 
-##### 类 class 
+### 类 class 
 
 ~~~
 declare class A1 {
@@ -68,7 +68,7 @@ declare module m {
 }
 ~~~
 
-##### 接口 interface
+### 接口 interface
 
 ~~~
 interface I1 {
@@ -82,7 +82,7 @@ declare module m {
 
 >>> 接口和类的区别是，接口是不可以 new 出来的。class 和 interface 只能包含函数和变量，不能再有 module、class、interface。
 
-##### 函数
+### 函数
 
 ~~~
 declare function f1(): void;
@@ -99,7 +99,7 @@ declare class A {
 
 >>> 函数体内不能再声明其他，其实也很明显，没有地方可以嵌套。
 
-##### 变量
+### 变量
 
 ~~~
 declare var a1: string;
@@ -116,7 +116,7 @@ declare class A {
 
 >>> 和函数体一样，不可以嵌套。
 
-##### 特殊变量
+### 特殊变量
 为什么要把这个单独拿出来，因为这个其实和普通的变量不太一样，它的声明类似 class 和 interface，如果是在纯 ts（非".d.ts"）中写的话，它是和 interface 一样，不会生成到最终的 js 文件中去。
 
 写法
@@ -143,11 +143,11 @@ AAA.f("egret");
 
 >>> 特殊变量中不能嵌套 module、class、interface。
 
-### 示例
+## 示例
 
 下面我们将以之前一位开发者提问的关于 talkingData 的一个 api 如何写对应的 .d.ts 文件来讲解。
 
-##### 代码
+### 代码
 
 ~~~
 //注册、登录、切换帐户、唤醒游戏时传入玩家账户信息
@@ -169,7 +169,7 @@ TDGA.Account.setAge(25)
 TDGA.Account.setGameServer('死亡之城')
 ~~~
 
-##### 分析
+### 分析
 
 * 从整体来看很好判断除了第一个外，其他的几个调用的都是函数体。
  

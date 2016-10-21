@@ -3,7 +3,7 @@
 <?xml version="1.0" encoding="utf-8"?> <e:Skin class="mySkin.TestSkin" xmlns:e="http://ns.egret.com/eui"> <e:DataGroup> <e:itemRendererSkinName> <e:Skin> <e:Label textColor="0xfd0000" text="{data.label}"/> </e:Skin> </e:itemRendererSkinName> <e:ArrayCollection> <e:Array> <e:Object label="item1"/> <e:Object label="item2"/> <e:Object label="item3"/> </e:Array> </e:ArrayCollection> </e:DataGroup> </e:Skin>~~~
 
 
-### 方式1 加载文件
+## 方式1 加载文件
 ~~~ typescript
 class TestSkin extends eui.Component {
     constructor() {
@@ -25,7 +25,7 @@ class TestSkin extends eui.Component {
 
 需要注意的是:如果已经在主题中加载了 EXML 文件，会先输出 onComplete 再输出 createChildren.
 
-### 方式2 通过Theme主题管理使用
+## 方式2 通过Theme主题管理使用
 ~~~
 egret create euiDemo --type eui
 ~~~

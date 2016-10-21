@@ -1,4 +1,4 @@
-### 一、RES内置文件类型解析器
+## 一、RES内置文件类型解析器
 
 RES内置支持的文件类型有：
 
@@ -18,7 +18,7 @@ RES.ResourceItem.TYPE_SOUND(sound)：解析为egret.Sound对象
 
 RES.ResourceItem.TYPE_XML(xml)：解析为egret.XML对象
 
-### 二、配置九宫格参数
+## 二、配置九宫格参数
 
 图片类型的解析器是支持九宫格参数的，只要在资源项上加上"scale9grid"属性即可，示例：
 
@@ -28,7 +28,7 @@ RES.ResourceItem.TYPE_XML(xml)：解析为egret.XML对象
 
 其中scale9grid属性的四个值分别表示九宫格矩形的:x,y,width,height。 九宫格的详细配置方式请参考 [九宫格的使用](../../../Engine2D/bitmapTexture/scale9Grid/README.md)。
 
-### 三、配置声音资源
+## 三、配置声音资源
 
 声音资源需要配置soundType属性，在native和runtime上会根据soundType对声音进行不同的处理。
 
@@ -38,7 +38,7 @@ RES.ResourceItem.TYPE_XML(xml)：解析为egret.XML对象
 
 值得注意的是：音效的播放时长尽量不要过长，采样频率不要过大。
 
-### 四、读取并解析二进制文件
+## 四、读取并解析二进制文件
 
 在游戏开发使用的资源中，除了常用的图片和文本格式，还有其他现有或自定义的二进制格式也被广泛使用。
 

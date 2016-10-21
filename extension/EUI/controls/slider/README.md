@@ -1,6 +1,6 @@
 您还记得手机上的亮度调节工具吗？在eui中也有类似的组件，就是滑块控件。这个实际上是两个组件，根据方向，分为eui.HSlider 水平滑块控件和 eui.VSlider 垂直滑块控件。
 
-#### 水平滑块控件
+## 水平滑块控件
 ``` TypeScript
 private initHSlider():void {
     var hSlider: eui.HSlider = new eui.HSlider();
@@ -21,7 +21,7 @@ private changeHandler(evt: eui.UIEvent): void {
 
 ![](56015a0c6ebed.png)
 
-#### 垂直滑块控件
+## 垂直滑块控件
 ``` TypeScript
 private initVSlider():void {
     var vSlider: eui.VSlider = new eui.VSlider();

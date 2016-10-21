@@ -10,8 +10,7 @@ var sourceArr:any[] = [{name:"one",value:1},{name:"two",value:2}];
 //用 ArrayCollection 包装
 var myCollection:eui.ArrayCollection = new eui.ArrayCollection(sourceArr);
 ```
-
-**也可以不创建数组，直接使用new eui.ArrayCollection()，这样将在内部默认创建一个空数组**
+> 也可以不创建数组，直接使用new eui.ArrayCollection()，这样将在内部默认创建一个空数组。
 
 封装的最大意义在于事件，您可以在 ArrayCollection 上添加事件侦听，每当数据改变时，您就可以获取消息：
 

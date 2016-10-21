@@ -1,4 +1,4 @@
-### 使用示例项目
+## 使用示例项目
 
 最简单的开始学习EUI扩展库的方式，就是运行我们的示例项目，在 github 的 egret-examples 项目下有一个[EUIExamples](https://github.com/egret-labs/egret-examples/tree/rc/v2.5/EUIExample)项目。可以将示例项目克隆到本地。然后您可以在命令行进入相应的目录，执行 
 ```
@@ -14,7 +14,7 @@ egret startserver
 
 >现在也可以使用 `egret run` 来查看项目运行效果。 
 
-### 创建一个新的eui项目
+## 创建一个新的eui项目
 
 我们在Egret命令行中，为您准备好了包含eui扩展库的项目模板，您只需要按照以下步骤，创建一个标准的eui项目，在模板项目基础上开始编写自己的代码即可。
 

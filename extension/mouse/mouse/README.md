@@ -1,6 +1,6 @@
 通过使用[鼠标支持库](https://github.com/egret-labs/egret-game-library/tree/master/mouse)可以监听 PC 上的鼠标事件。
 
-### 引入鼠标库
+## 引入鼠标库
 
 引入鼠标支持库与引入其他第三方库过程相同，首先[下载](https://github.com/egret-labs/egret-game-library/tree/master/mouse)该库，在 egretProperties.json 中引入该库并编译引擎。需要注意库的位置应放在项目外。
 
@@ -13,7 +13,7 @@
 
 引入到项目中之后编译引擎即可使用鼠标库。
 
-### 支持事件
+## 支持事件
 
 在鼠标支持库中支持以下事件。
 
@@ -25,7 +25,7 @@
 | ROLL_OVER | 当鼠标进入对象所在区域内调用。|
 | ROLL_OUT | 当鼠标移出对象所在区域内时调用。|
 
-### 使用方法
+## 使用方法
 
 使用鼠标支持库时需要开启鼠标支持。
 
@@ -117,7 +117,7 @@ private onMouseOut2(e: egret.TouchEvent): void {
 简单比较可以看出 MOUSE 和 ROLL 的区别，MOUSE_OVER 和 MOUSE_OUT 在显示对象的可见区域上触发，而 ROLL_OUT 和 ROLL_OUT 在显示对象的整体上触发。
 
 
-#### 设置鼠标手型
+### 设置鼠标手型
 
 一般我们希望鼠标移动到可点击区域上时改变鼠标的形状为手型，我们可以通过 setButtonMode 来设置。
 
@@ -129,7 +129,7 @@ mouse.setButtonMode(this.inShape, true);
 setButtonMode 接收两个参数，分别是显示对象和是否开启手型显示。开启之后当鼠标移动到该显示对象上时即可显示为手的形状。
 
 
-#### 监听鼠标移动事件
+### 监听鼠标移动事件
 
 监听鼠标的移动事件需要单独开启，调用 setMouseMoveEnabled() 方法即可。
 

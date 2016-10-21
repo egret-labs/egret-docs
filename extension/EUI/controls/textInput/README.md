@@ -1,4 +1,4 @@
-### 基础输入控件 EditableText
+## 基础输入控件 EditableText
 
 在 EUI 中为我们提供了输入文本控件，使用 eui.EditableText 可以创建可供用户输入的文本控件。 eui.EditableText 继承自 egret.TextInput ,也就是说使用它也可以使用 egret.TextFild 和 egret.TextInput 的属性和方法。文本对象的用法可以参考：[创建文本](../../../../Engine2D/textField/createText/README.md).
 
@@ -94,7 +94,7 @@ private onChang(e:egret.Event){
 
 ![](566a90182b4bc.png)
 
-### 输入控件 TextInput
+## 输入控件 TextInput
 
 在 Egret 2.5.7 中，添加了 TextInput 控件，TextInput 是一个方便的文本输入控件。先来看一下他的默认皮肤：
 

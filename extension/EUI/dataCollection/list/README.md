@@ -38,7 +38,7 @@ list.selectedIndex = 1;
 list.selectedItem
 list.selectedIndex
 ~~~
-### 多选状态
+## 多选状态
  List 还可以开启多选状态
 ~~~ TypeScript
 list.allowMultipleSelection = true;
@@ -58,7 +58,7 @@ list.requireSelection = true;
 ~~~
 该属性设置为 true 后，多选状态下最少有一个条目会被选中，不可以被取消。
 
-### 滚动列表
+## 滚动列表
 
 列表配合 Scroller 使用可以实现滚动效果。
 

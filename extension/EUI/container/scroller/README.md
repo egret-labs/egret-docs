@@ -37,7 +37,7 @@ class ScrollerDemo extends eui.Group {
 
 ![](563b06b8b88fe.jpg)
 
-### 定位滚动位置
+## 定位滚动位置
 除了通过手指控制 Scroller , 我们通过代码也可以获取和控制滚动的位置
 ``` 
 Scroller.viewport.scrollV  纵向滚动的位置
@@ -88,7 +88,7 @@ Scroller.viewport.contentHeight 是滚动内容的高度，这个值是固定的
 ~~~
 通过计算这3个值，就可以判断是否滚动到顶部或者底部了
 
-### 停止滚动动画
+## 停止滚动动画
 
 在 Egret Engine 3.0.2 优化了Scroller 的体验，并新增了`stopAnimation()`方法，可以立即停止当前的滚动动画。这里我们可以扩展上面的代码，在`moveScroller`函数中加入停止动画的方法。
 
@@ -108,7 +108,7 @@ private moveScroller(): void {
 
 在滚动的过程中点击按钮就可以停止滚动动画了。
 
-### 滚动条显示策略
+## 滚动条显示策略
 
 在 Egret Engine 3.0.3 优化了 Scroller 的体验。当我们使用 Scroller 实现一些滚动区域的效果时，会发现右侧有一个滚动条(ScrollBar)，默认是自动隐藏的。即当我们不滚动区域时时不会显示该滚动条的。现在可以使用 ScrollBar （VScrollBar 和 HScrollBar） 的 `autoVisibility`属性，设置是否自动隐藏该滚动条。具体是如下的策略：
 

@@ -2,7 +2,7 @@ MovieClip又称之为 "影片剪辑"，是Egret中提供的一种动画解决方
 
 当我们想实现一个动画效果时，可以把原有的动画制作成为能够被 Egret 识别的动画格式。然后将这些制作好的资源进行加载，最后播放。
 
-### 如何制作 MovieClip 动画资源
+## 如何制作 MovieClip 动画资源
 我们提供两种方式制作 Egret 动画资源文件，两种方式二选一即可：
 
 * 使用 TextureMerger 将 swf 或者 gif 文件转换成 Egret 动画资源文件。
@@ -14,14 +14,14 @@ MovieClip又称之为 "影片剪辑"，是Egret中提供的一种动画解决方
 * 我们为Flash提供了一个插件，这个插件会帮助你将Flash中的动画导出为能够被Egret播放的动画文件。
 具体插件安装和使用方法请查看： [MovieClip Plug-in](http://bbs.egret.com/thread-127-1-1.html)
 
-### 资源约定
+## 资源约定
 
 MovieClip 需要一对 json 配置文件和一个纹理集图片。比如 `abc.json` 和 `abc.png` 。
 
 * 配置文件约定了各个字段标识的用途、
 * 纹理集图片为 MovieClip 所使用的图片集。
 
-#### 配置解析
+### 配置解析
 
 ~~~
 {
@@ -72,7 +72,7 @@ MovieClip 需要一对 json 配置文件和一个纹理集图片。比如 `abc.j
 * file：图集名称。
 * res：纹理集数据。
 
-#### 资源配置
+### 资源配置
 
 在Egret的资源配置文件（默认为 `default.res.json`）中，应该有如下配置：
 
@@ -86,9 +86,9 @@ MovieClip 需要一对 json 配置文件和一个纹理集图片。比如 `abc.j
 ~~~
 
 
-### 使用
+## 使用
 
-#### 创建
+### 创建
 
 egret 的 MovieClip 采用工厂模式，MovieClip 工厂类为：
 `MovieClipDataFactory`。
@@ -101,7 +101,7 @@ var txtr = RES.getRes("abc.png");
 var mcFactory:egret.MovieClipDataFactory = new egret.MovieClipDataFactory( data, txtr );
 ~~~
 
-#### 获取动作
+### 获取动作
 
 比如上面的的 `run`，则在程序中解析该 MovieClip 的方法为：
 
@@ -109,7 +109,7 @@ var mcFactory:egret.MovieClipDataFactory = new egret.MovieClipDataFactory( data,
 var mc1:egret.MovieClip = new egret.MovieClip( mcFactory.generateMovieClipData( "run" ) );
 ~~~
 
-#### 播放
+### 播放
 
 * 帧标签播放
 
@@ -129,9 +129,9 @@ mc1.gotoAndPlay( 3 );
 
 > 注意：为了避免可能的内存泄漏问题，MovieClip只有被加到显示列表上之后才能被正确的播放!
 
-### 事件
+## 事件
 
-#### 帧标签事件
+### 帧标签事件
 
 比如在第动画的第 6 帧有一个 "fall" 帧事件标签，我们还可以为动画增加监听获取这个消息
 
@@ -141,7 +141,7 @@ mc1.addEventListener(egret.MovieClipEvent.FRAME_LABEL,（e:egret.MovieClipEvent�
 },this);
 ~~~
 
-#### 完成事件
+### 完成事件
 比如要播放 3 次动画，每当动画循环播放完成一次，会调用一次 egret.Event.LOOP_COMPLETE 事件。3 次动画播放完后，会调用 egret.Event.COMPLETE 事件。
 
 ~~~
