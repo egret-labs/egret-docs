@@ -66,3 +66,8 @@ class Main extends egret.DisplayObjectContainer {
 
 }
 ~~~
+
+### eui.Image 支持在纹理中设置九宫格
+
+即在 res 配置文件中设置的九宫数据，在 eui.Image 中也会直接支持
+![image](1.png)
