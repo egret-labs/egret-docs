@@ -43,6 +43,7 @@ label.text = "很多的文字很多的文字很多的文字很多的文字很多
 
 ###style属性(3.2.1 以上支持)
 在引擎eui 3.2.1 版本后，label增加了style属性的支持，有点像css的样式。
+
 在default.thm.json中增加style的设置
 
 ![](thmjson.png)
