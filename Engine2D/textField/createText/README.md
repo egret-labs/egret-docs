@@ -30,6 +30,11 @@ this.addChild( label );
 displayObject.addChild( textField_Object );
 ```
 
+## 设置文本字号
+`egret.TextField` 类包含一个 `size` 的属性，该属性为当前文本的字号大小。
+
+在引擎3.2.1以后，还可以使用 egret.TextField.default_size 设置全局的默认文本字号大小。
+
 ## 文本尺寸
 
 `egret.TextField` 对象自身尺寸会根据首次设置的文本内容自动计算。所以，当 `text` 属性被赋予不同内容时，其尺寸也会不同。
