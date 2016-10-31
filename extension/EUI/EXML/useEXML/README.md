@@ -8,7 +8,7 @@
              source.down="button_down_png"/> 
     <e:Label id="labelDisplay" top="8" bottom="8" left="8" right="8"
              size="20" fontFamily="Tahoma 'Microsoft Yahei'"
-             verticalAlign="middle" textAlign="center" text="按钮" textColor="0x000000"/> 
+             verticalAlign="middle" textAlign="center" text="按钮" andtextColor="0x000000"/> 
     <e:Image id="iconDisplay" horizontalCenter="0" verticalCenter="0"/> 
 </e:Skin>
 ```
@@ -17,7 +17,7 @@
 
 ![](5604f3f0f0409.png)
 
-### 直接引用EXML文件
+## 直接引用EXML文件
 第一种方式也是最简单的方式，因为这个EXML的根节点是Skin，表示这个文件描述的是一个皮肤。在EXML根节点是Skin的情况下，可以直接使用组件的skinName接受EXML文件路径，这通常也是最普遍的使用情景。这里我们假设之前那个EXML文件的路径为:[项目根路径]/resource/skins/ButtonSkin.exml，引用那个ButtonSkin.exml的代码如下：
 
 ```
@@ -28,7 +28,7 @@ this.addChild(button);
 
 > 皮肤文件推荐放在resource目录下。
 
-### 动态加载EXML文件
+## 动态加载EXML文件
 
 上面介绍了EXML根节点是Skin的情况，若描述的对象不是皮肤，那么我们就得采用更加通用的一种加载解析方式。可以直接使用EXML.load()方法来加载并解析外部的EXML文件，加载完成后，回调函数的参数会传入解析后的类定义，可以把类定义new出来实例化它，或直接赋值给组件的skinName属性（如果EXML根节点是Skin）。下面看个简单例子：
 
@@ -44,7 +44,7 @@ private onLoaded(clazz:any,url:string):void{
 }
 ```
 
-### 嵌入EXML到代码
+## 嵌入EXML到代码
 EXML同样也提供了文本的解析方式，这个过程大家可以直接类比对JSON文件的处理，因为几乎是一样的。您可以使用HttpRequest去加载EXML文件的文本内容，然后运行时调用EXML.parse(exmlText)方法去解析即可，会立即返回解析后的类定义。当然，您也可以跳过异步加载，直接在代码中嵌入EXML文本内容：
 
 ```

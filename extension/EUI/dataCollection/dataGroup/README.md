@@ -20,7 +20,7 @@ DataGroup，可以直译为"数据容器"。但叫"容器"又不太严谨，因�
 ,
 来看看一个DataGroup的例子，首先创建数据源：
 
-``` TypeScript
+```
 //先创建一个数组
 var sourceArr:any[] = [];
 for (var i:number = 1; i < 5; i++) {
@@ -32,7 +32,7 @@ var myCollection:eui.ArrayCollection = new eui.ArrayCollection(sourceArr);
 
 然后创建DataGroup的实例，并设置数据源(属性名称是dataProvider)：
 
-``` TypeScript
+```
 var dataGroup:eui.DataGroup = new eui.DataGroup();
 dataGroup.dataProvider = myCollection;
 dataGroup.percentWidth = 100;
@@ -44,7 +44,7 @@ this.addChild(dataGroup);
 
 **创建ItemRenderer**
 
-``` TypeScript
+```
 class LabelRenderer extends eui.ItemRenderer {
 	private labelDisplay:eui.Label;
     public constructor(){
@@ -123,15 +123,20 @@ class LabelRenderer extends eui.ItemRenderer {
 ```
 **如何给 ItemRenderer 设置皮肤，请看后面的[自定义项呈示器](../../../../extension/EUI/dataCollection/itemRenderer/README.md)章节**
 
-### 大数据优化
+## 大数据优化
 DataGroup 中有一个属性 useVirtualLayout，默认为 true，这个属性决定了列表创建内部对象的策略：
-**策略1**
-useVirtualLayout = false;
+
+* 策略1
+
+	useVirtualLayout = false;
 有多少条数据就创建多少个 ItemRenderer 的实例
-**策略2**
-useVirtualLayout = true;
-**一般配合 [Scroller](../../../../extension/EUI/container/scroller/README.md) 使用。**
-DataGroup 会根据组件的尺寸，计算同时最多能显示多少个组件，根据这个数字创建一组 ItemRenderer 并循环使用。当您滚动切换数据的时候，只是这一组 ItemRenderer 循环切换自己的位置和显示，这个过程是顺畅的无缝衔接的。
+
+* 策略2
+	useVirtualLayout = true;
+
+* 一般配合 [Scroller](../../../../extension/EUI/container/scroller/README.md) 使用。
+
+	DataGroup 会根据组件的尺寸，计算同时最多能显示多少个组件，根据这个数字创建一组 ItemRenderer 并循环使用。当您滚动切换数据的时候，只是这一组 ItemRenderer 循环切换自己的位置和显示，这个过程是顺畅的无缝衔接的。
 
 举个例子，比如 ItemRenderer 的高度是10，DataGroup 的高度是100，DataGroup 的 dataProvider 中有1000条数据。这种情况下，DataGroup 中只会创建 11 个 ItemRenderer 的实例，当您向下滚动 DataGroup 的时候，移出舞台的那个 ItemRenderer 会自动移到最顶端，根据下一条数据改变自己的样式，而不需要再创建一个新的实例。
 
@@ -141,12 +146,16 @@ DataGroup 会根据组件的尺寸，计算同时最多能显示多少个组件�
 ![](5604efc3d76e3.jpg)
 
 我们在前面 Group 容器章节中提到过，eui 的容器类比 egret.Sprite 多2个方法： getElementAt  和 numElements，他们和 getChildAt 和 numChildren 有什么区别呢？
-**在策略1的情况下**
-两个完全是相同的
+
+* 在策略1的情况下
+
+	两个完全是相同的
 numElements 和 numChildren 都会获得相同的实例数量
 getElementAt 和 getChildAt 获取的对象也是相同的
-**在策略2的情况下**
-numChildren 会获得具体的实例数量，而 numElements 会获得总的数据条数。
+
+* 在策略2的情况下
+
+	numChildren 会获得具体的实例数量，而 numElements 会获得总的数据条数。
 还用之前那个例子，ItemRenderer 的高度是10，DataGroup 的高度是100，DataGroup 的 dataProvider 中有1000条数据。
 numChild 获得的数量是11，而 numElements 获得的数量是 1000。
 getChildAt 可以在0-10的索引中获取具体的实例对象

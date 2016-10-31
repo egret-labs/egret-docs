@@ -1,4 +1,4 @@
-### 默认加载
+## 默认加载
 
 打开主题配置文件 ** default.thm.json **，你会看到类似下面这样的内容
 
@@ -22,7 +22,7 @@
 http://10.0.6.138:3000/resource/eui_skins/ButtonSkin.exml
 ~~~
 
-### 自定义加载
+## 自定义加载
 
 如果你想改变 **resource **文件夹的位置，可以使用 **EXML.prefixURL = xxxx** 这个方法来实现。
 

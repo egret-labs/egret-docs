@@ -2,7 +2,7 @@ Egret 引擎更新到2.5版本后，我们重新构建了引擎，把以前的�
 
 > Egret 2.5 之前版本的方法请参考：[旧版集成第三方库说明](http://edn.egret.com/cn20/index.php/article/index/id/172)
 
-### 扩展模块
+## 扩展模块
 首先我们创建一个不引用任何模块的 Egret 空项目，在命令行中输入
 
 ``` egret create demo --type empty```
@@ -34,8 +34,8 @@ eui 新增的 UI 库，使用起来更加的方便
 
 使用```egret create project_name```命令创建的项目，默认会带4个官方模块：```egret game res tween```
 
-### 标准第三方库
-#### 准备第三方库
+## 标准第三方库
+### 准备第三方库
 第三方库可以是标准的 ts 库，也可是你在网上下载现成的 js 库，或者是自己写的 js 库。
 
 由于 js 与 ts 在语法结构上的差异，在 ts 中不能直接调用 js 库的 API，所以TypeScript 团队提供了一套虚构声明语法，可以把现有代码的 API 用头文件的形式描述出来，扩展名为 d.ts（d.ts 命名会提醒编译器这种文件不需要编译）。这套虚构定义语法，让你不需要去实现函数体里的代码，类似定义interface和抽象类。
@@ -46,7 +46,7 @@ eui 新增的 UI 库，使用起来更加的方便
 
 至于具体修改方法，在对照原 d.ts 的基础上，你可能还需要熟悉 ts 接口方面的语法，可以参考这里：[ts接口教程](http://bbs.egret-labs.org/thread-885-1-1.html)。
 
-#### 创建第三方模块
+### 创建第三方模块
 当我们准备好了要用的第三方库，还需要把它编译成 egret 需要的模块结构。
 比如现在有一个名为 jszip 的 js 库，它包含3个文件
 ~~~
@@ -77,7 +77,7 @@ jszip.min.js
 * **jszip.js**  在 Egret 项目里，debug 模式时使用的 js 库
 * **jszip.min.js** 在 Egret 项目里，发布后的正式版使用的 js 库，经过压缩，体积比 jszip.js 小
 
-#### 使用第三方模块
+### 使用第三方模块
 和使用官方的扩展模块方法类似，在`modules`里填写相关的信息
 
 ![image](5608b85a27dff.png)
@@ -97,7 +97,7 @@ jszip.min.js
 
 >>> 所有需要对 api 的 .d.ts 文件，请放在 src 下面，即需要在 package.json 里配置，其他的请放在 libs 下面。
 
-### 其他第三方库
+## 其他第三方库
 除了使用 egret 提供的标准的第三方库的方式，我们还提供了另外一种可以通过 index.html 来直接配置的方式。
 
 * 代码请放在 libs 目录下面，但是不要放在 libs/modules 下面。

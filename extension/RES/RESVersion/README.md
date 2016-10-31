@@ -2,7 +2,7 @@
 
 本文的调试环境为引擎 3.0.0
 
-### WEB版本控制
+## WEB版本控制
 
 default.res.json 中 resources 节点下配置的每个资源加载项，在第一次加载成功时会用 name 属性作为 key 在内存缓存下来。
 
@@ -22,7 +22,7 @@ default.res.json 中 resources 节点下配置的每个资源加载项，在第�
 
 > 由于此中方式在 Native 下不可使用，因此建议在发布 Web 版本时在发布的配置文件里加上版本。
 
-### Native版本控制
+## Native版本控制
 
 native涉及到[热更新机制](../../../Engine2D/native/hotUpdate/README.md)，由于热更新机制每次资源更新后，会产生一个临时的本地命名，所以 RES 模块提供了两个方法用户处理版本控制。
 
@@ -41,7 +41,7 @@ native涉及到[热更新机制](../../../Engine2D/native/hotUpdate/README.md)�
         RES.loadConfig("resource/default.res.json", "resource/");
     }
 
-#### getChangeList
+### getChangeList
 
 getChangeList 方法用于获取本次热更新后，新增或改变（文件名相同，但更改过的文件）的资源列表，在Web端此列表为空。返回数组形式，如： `[{url:"a.png", size:888}]`
 
@@ -54,7 +54,7 @@ array[0].url 表示资源的新路径，我们每次热更新中，资源文件�
 array[0].size 文件的大小。
 
 
-#### getVirtualUrl
+### getVirtualUrl
 
 getVirtualUrl 获取资源文件实际的URL地址。由于热更新版本控制实际已经对原来的资源文件的URL进行了改变，因此想获取指定资源文件实际的URL时需要调用此方法。
 

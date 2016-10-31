@@ -13,7 +13,7 @@ this.addChild(rdb);
 ```
 当然，一个单选按钮没有实际意义，我们来看看如何创建多个单选按钮并结组：
 
-#### 方式1：使用groupName
+## 方式1：使用groupName
 ``` TypeScript
 private initRadioButton():void {
     var rdb: eui.RadioButton = new eui.RadioButton();
@@ -45,7 +45,7 @@ private radioChangeHandler(evt:eui.UIEvent):void {
 
 这样的实现方式较为简单，但缺点是，如果想监视选项的变化，您需要在每个单选按钮上都添加egret.Event.CHANGE事件侦听。同样，如果您想得到最终选定的那个值，就必须循环判断，找到selected = true的那个单选按钮，取它的值。所以我们更推荐使用第二种方案：
 
-#### 方式2：使用RadioButtonGroup
+## 方式2：使用RadioButtonGroup
 这种方式是，我们创建一个egret.gui.RadioButtonGroup的实例，并设置到每个单选按钮的group属性上。这样的好处在于，我们只需要处理RadioButtonGroup实例上的事件侦听，就能捕获数值的变化，要取得最终选择的那个值，也是从这个RadioButtonGroup实例上直接获取即可。示例代码：
 ``` TypeScript
 private initRadioButtonWithGroup():void {
