@@ -1,7 +1,7 @@
 最新版本下载地址
 
-- [Egret Wing 3.2.2 for Windows](http://tool.egret-labs.org/EgretWing/electron/EgretWing-v3.2.0.exe?d=0707)
-- [Egret Wing 3.2.2 for Mac OS](http://tool.egret-labs.org/EgretWing/electron/EgretWing-v3.2.0.dmg?d=0707)
+- [Egret Wing 3.2.2 for Windows](http://tool.egret-labs.org/EgretWing/electron/EgretWing-v3.2.2.exe?d=0707)
+- [Egret Wing 3.2.2 for Mac OS](http://tool.egret-labs.org/EgretWing/electron/EgretWing-v3.2.2.dmg?d=0707)
 
 Egret Wing在3.2.2中主要重构了EUI可视化编辑器部分的结构，同时增加了设计师模式，简化了部分UI的显示。
 同时重构了微信小程序的单页面预览部分，而且增加了对完整微信小程序项目的预览功能。
