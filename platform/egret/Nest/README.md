@@ -9,7 +9,8 @@
 * 按钮资源
   
   可以使用 loginAssets 下默认的资源或者自行找对应的素材。
-
+	
+	
 ## 新版说明
 
 ```nest.easyuser.startup``` 代替老版本的 ```nest.core.startup```
@@ -20,7 +21,7 @@
 
 ```nest.easyuser.getInfo``` 代替老版本的 ```nest.user.getInfo```
 
-```nest.easyuser.isSupport``` 简化成只判断有没有 ```getInfo``` 这个 api 调用
+```nest.easyuser.isSupport``` 简化成判断有没有 ```getInfo、logout``` 
 
 ## 流程
 
@@ -30,7 +31,7 @@
 
 * nest.easyuser.login 如果有登录方式，则传入登录方式，如果没有，直接传入 {}
 
-* 
+* [测试](#h5测试) 请完全按照下方的测试方式来。 
 
 ## api 参数说明
 
@@ -151,7 +152,7 @@
 			}
 		})
 
-### nest.easyuser.isSupport 检测是否支持 getInfo 方法调用
+### nest.easyuser.isSupport 检测api是否支持
 
 * 参数说明
 		
@@ -159,12 +160,14 @@
 		
 		callback:(resultInfo:nest.easyuser.UserSupportCallbackInfo)=>void 回调结果函数
 			getInfo：获取渠道是否支持获得用户信息接口，1是支持，其他不支持。如果支持可以使用nest.easyuser.getInfo获取用户信息
+			logout：获取渠道是否登出接口，1是支持，其他或者不存在都属于不支持。如果支持可以使用nest.easyuser.logout 
 
 * 示例
 
 		nest.easyuser.isSupport({}, function (data:nest.easyuser.UserSupportCallbackInfo) {
 		    //获取是否支持nest.user.getInfo接口，有该字段并且该字段值为1表示支持
 		    var getInfo = data.getInfo;
+		    var logout = data.logout;
 		})
 
 ### nest.easyuser.getInfo 获取用户信息，目前只有qq浏览器支持
