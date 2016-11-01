@@ -2,6 +2,15 @@
 
 | 版本 | 更新详解 | 下载地址 | 日期 |
 | -- | -- | -- | -- |
+| egret-core-3.2.2 | [更新详解](http://developer.egret.com/cn/github/egret-docs/Engine2D/update/update322/index.html) | [下载地址](https://github.com/egret-labs/egret-core/archive/v3.2.2.zip)|2016-11-01|
+| egret-core-3.2.1 | [更新详解](http://developer.egret.com/cn/github/egret-docs/Engine2D/update/update321/index.html) | [下载地址](https://github.com/egret-labs/egret-core/archive/v3.2.1.zip)|2016-10-17|
+| egret-core-3.2.0 | [更新详解](http://developer.egret.com/cn/github/egret-docs/Engine2D/update/update320/index.html) | [下载地址](https://github.com/egret-labs/egret-core/archive/v3.2.0.zip)|2016-09-26|
+| egret-core-3.1.8 | [更新详解](http://developer.egret.com/cn/github/egret-docs/Engine2D/update/update318/index.html) | [下载地址](https://github.com/egret-labs/egret-core/archive/v3.1.8.zip)|2016-09-12|
+| egret-core-3.1.7 | [更新详解](http://developer.egret.com/cn/github/egret-docs/Engine2D/update/update317/index.html) | [下载地址](https://github.com/egret-labs/egret-core/archive/v3.1.7.zip)|2016-08-22|
+| egret-core-3.1.6 | [更新详解](http://edn.egret.com/cn/docs/page/1045) | [下载地址](https://github.com/egret-labs/egret-core/archive/v3.1.6.zip)|2016-08-08|
+| egret-core-3.1.5 | [更新详解](http://edn.egret.com/cn/docs/page/1042) | [下载地址](https://github.com/egret-labs/egret-core/archive/v3.1.5.zip)|2016-07-25|
+| egret-core-3.1.4 | [更新详解](http://edn.egret.com/cn/docs/page/1037) | [下载地址](https://github.com/egret-labs/egret-core/archive/v3.1.4.zip)|2016-07-11|
+| egret-core-3.1.3 | [更新详解](http://edn.egret.com/cn/docs/page/1028) | [下载地址](http://sedn.egret.com/soft/egret/egret-core-3.1.3.zip)|2016-06-27|
 | egret-core-3.1.2 | [更新详解](http://edn.egret.com/cn/docs/page/1025) | [下载地址](http://sedn.egret.com/soft/egret/egret-core-3.1.2.zip)|2016-06-13|
 | egret-core-3.1.1 | [更新详解](http://edn.egret.com/cn/docs/page/969) | [下载地址](http://sedn.egret.com/soft/egret/egret-core-3.1.1.zip)|2016-05-30|
 | egret-core-3.1.0 | [更新详解](http://edn.egret.com/cn/docs/page/949) | [下载地址](http://sedn.egret.com/soft/egret/egret-core-3.1.0.zip)|2016-05-16|
