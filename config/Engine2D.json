@@ -809,8 +809,8 @@
       },
       {
         "filename": "/Engine2D/debug/performanceOptimization/",
-        "text": "性能优化",
-        "des": "性能优化",
+        "text": "最佳实践",
+        "des": "最佳实践",
         "in_use": true
       }
     ],
