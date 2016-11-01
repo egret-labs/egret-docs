@@ -98,4 +98,4 @@
 * 不要使用特殊的正则表达式（使用时最好测试下 ios，很有可能解析不了）
 * 不要在声明的时候去初始化对象，需要赋值基本类型
 * 类属性不宜过多(<64 包括从集成过来的)，少继承，多引用
-* 如果出现 js 加载列表乱的情况，在文件头加入 /// <reference path="version/NativeVersionController.ts" />
+* 如果出现 js 加载列表乱的情况，在文件头加入 `/// <reference path="version/NativeVersionController.ts" />`
