@@ -811,7 +811,7 @@
         "filename": "/Engine2D/debug/performanceOptimization/",
         "text": "性能优化",
         "des": "性能优化",
-        "in_use": false
+        "in_use": true
       }
     ],
     "isFolder": true,
