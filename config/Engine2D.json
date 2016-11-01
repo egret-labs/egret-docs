@@ -811,7 +811,7 @@
         "filename": "/Engine2D/debug/performanceOptimization/",
         "text": "性能优化",
         "des": "性能优化",
-        "in_use": false
+        "in_use": true
       }
     ],
     "isFolder": true,
@@ -863,6 +863,12 @@
         "filename": "/Engine2D/native/quickSDK/",
         "text": "接入 QuickSDK",
         "des": "接入 QuickSDK",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/native/other/",
+        "text": "其他原生支持",
+        "des": "其他原生支持",
         "in_use": true
       }
     ],
