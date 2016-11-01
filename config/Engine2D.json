@@ -864,6 +864,12 @@
         "text": "接入 QuickSDK",
         "des": "接入 QuickSDK",
         "in_use": true
+      },
+      {
+        "filename": "/Engine2D/native/other/",
+        "text": "其他原生支持",
+        "des": "其他原生支持",
+        "in_use": true
       }
     ],
     "isFolder": true,
