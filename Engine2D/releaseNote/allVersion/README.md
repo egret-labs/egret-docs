@@ -61,4 +61,4 @@
 
 
 >点击下载地址可以下载Egret Engine 的各个 Release 版本。在 EgretEngine 2.5 管理程序中可以方便切换引擎的版本。
->使用方法可以点击 [用 EgretEngine 管理引擎和工具](http://edn.egret.com/cn/index.php/article/index/id/581)
+>使用方法可以点击 [启动器](../../../Engine2D/projectConfig/launcherManager/README.md)
