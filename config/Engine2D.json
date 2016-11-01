@@ -8,6 +8,12 @@
         "in_use": true
       },
       {
+        "filename": "/Engine2D/releaseNote/allVersion/",
+        "text": "全部版本列表",
+        "des": "全部版本列表",
+        "in_use": true
+      },
+      {
         "isFolder": true,
         "text": "历史更新",
         "des": "历史更新",
