@@ -2,9 +2,9 @@
   {
     "children": [
       {
-        "filename": "/Wing/update/update320/",
-        "text": "Egret Wing 3.2.0",
-        "des": "Egret Wing 3.2.0",
+        "filename": "/Wing/update/update322/",
+        "text": "Egret Wing 3.2.2",
+        "des": "Egret Wing 3.2.2",
         "in_use": true
       },
       {
@@ -13,6 +13,12 @@
         "des": "历史更新",
         "in_use": true,
         "children": [
+          {
+            "filename": "/Wing/update/update320/",
+            "text": "Egret Wing 3.2.0",
+            "des": "Egret Wing 3.2.0",
+            "in_use": true
+          },
           {
             "filename": "/Wing/update/update318/",
             "text": "Egret Wing 3.1.8",
