@@ -1,3 +1,5 @@
+
+
 ## 一、配置JSSDK第三方库 
 
 1、下载或更新第三方库 [第三方库github地址点此进入](https://github.com/egret-labs/egret-game-library)
@@ -298,3 +300,5 @@ private onTimeline(e:egret.TouchEvent): void {
         };    
     }
 ```
+
+> 注意：由于此为微信的 JSSDK，所以只支持 web 版本，不支持 native 版本。
