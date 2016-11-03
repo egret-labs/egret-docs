@@ -312,6 +312,12 @@
             "in_use": true
           },
           {
+            "filename": "/Wing/debug/publish/",
+            "text": "新版 Android/iOS 打包工具说明",
+            "des": "新版 Android/iOS 打包工具说明",
+            "in_use": true
+          },
+          {
             "filename": "/Wing/debug/packageTool/",
             "text": "移动平台打包测试",
             "des": "移动平台打包测试",
