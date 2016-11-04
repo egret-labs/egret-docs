@@ -22,7 +22,8 @@ Egret Engine 3.0 包含了白鹭时代研发的遵循HTML5标准的2D引擎及�
 
 ### 命令行脚本支持 TypeScript2.0.3
 
-在命令行中增加 `-exp`，可以开启 tsc 编译实验室功能。增加文件排序准确性，小幅度提升编译速度例如：`egret build -exp`
+在命令行（build\publish\run等所有的）中增加 `-exp`，可以开启 tsc 编译实验室功能。增加文件排序准确性，小幅度提升编译速度
+例如：`egret build -exp`
 
 
 ### 第三方库新增键盘事件库
