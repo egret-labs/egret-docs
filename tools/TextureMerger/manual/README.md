@@ -2,7 +2,7 @@
 Texture Merger 可将零散纹理拼合为整图，同时也可以解析SWF、GIF动画，导出可供Egret使用的配置文件。
 ### 适应平台* Windows* Mac OS X
 ### 适应版本
-* Egret Engine 1.6.0 版本以及以上### 下载地址
+* Egret Engine 1.6.0 版本以及以上### 下载地址
 * [Texture Merger 下载地址](http://www.egret.com/downloads/texture.html)## 类型![name](qidong.png)* Egret MovieClip：将 swf 或者 gif 动画转成 Egret MovieClip 需要的相关资源。* Sprite Sheet：将碎图合成一整张大图。* Bitmap Font：制作 Egret 位图文本需要的资源。### Egret MovieClip
 Egret Engine 1.5.0 版本对 MovieClip 的数据结构做了调整，允许一个文件包含多个动画。工具方面也允许加载多个动画，不过工具对 swf 的解析程度欠佳，目前还是对 SWF 有要求的：swf 本身必须是个多帧 mc，如果只是作为容器嵌套其他 mc 子项的做法将不会被绘制。对 gif 的要求基本没有，都能绘制出来，但是 gif 动画制作方式的存在不同，可能某些帧不能完全绘制出来。![name](donghua.png)下面我们来看一下，最新的mc数据结构：
 ```MovieClip数据格式标准{
