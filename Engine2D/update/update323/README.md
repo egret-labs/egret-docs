@@ -7,7 +7,7 @@ Egret Engine 3.0 包含了白鹭时代研发的遵循HTML5标准的2D引擎及�
 
 本次更新内容汇总了从引擎 3.2.2 到 3.2.3 的改动。
 
-* native 支持多种自定义字体
+* [native 支持多种自定义字体](../../../Engine2D/textField/textFonts/README.md)
 * 修复 MovieClip 设置帧频异常问题
 * 修复 eui.EditableText.prompt 异常问题
 * 修复 native 中不能解析 xml 换行符问题
