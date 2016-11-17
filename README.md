@@ -4,9 +4,15 @@
 
 #### 更新详情
 
-* [Egret Engine2D 3.2.1](Engine2D/update/update321/README.md)
+* [Egret Engine2D 3.2.3](Engine2D/update/update323/README.md)
+
+* [全部版本列表](Engine2D/releaseNote/allVersion/README.md)
 
 ###### 历史更新
+
+* [Egret Engine2D 3.2.2](Engine2D/update/update322/README.md)
+
+* [Egret Engine2D 3.2.1](Engine2D/update/update321/README.md)
 
 * [Egret Engine2D 3.2.0](Engine2D/update/update320/README.md)
 
@@ -196,6 +202,14 @@
 
 * [截屏功能](Engine2D/bitmapTexture/screenshots/README.md)
 
+#### 混合模式
+
+* [NORMAL](Engine2D/blendMode/normal/README.md)
+
+* [ADD](Engine2D/blendMode/add/README.md)
+
+* [ERASE](Engine2D/blendMode/erase/README.md)
+
 #### 滤镜
 
 * [发光滤镜](Engine2D/filter/glowFilter/README.md)
@@ -208,9 +222,9 @@
 
 #### 时间控制
 
-* [Timer计时器](Engine2D/timeControl/timer/README.md)
+* [Timer 计时器](Engine2D/timeControl/timer/README.md)
 
-* [Tick心跳](Engine2D/timeControl/tick/README.md)
+* [Ticker 心跳](Engine2D/timeControl/ticker/README.md)
 
 * [帧事件](Engine2D/timeControl/enterFrame/README.md)
 
@@ -244,6 +258,8 @@
 
 * [FPS 面板](Engine2D/debug/fpsPanel/README.md)
 
+* [最佳实践](Engine2D/debug/performanceOptimization/README.md)
+
 #### 调用原生JS
 
 * [ts 与 js 互调](Engine2D/callJS/tsCallJs/README.md)
@@ -259,6 +275,8 @@
 * [Egret 与 Native 通信基本技巧](Engine2D/native/communicateSkill/README.md)
 
 * [接入 QuickSDK](Engine2D/native/quickSDK/README.md)
+
+* [其他原生支持](Engine2D/native/other/README.md)
 
 #### 打包发布
 
@@ -278,9 +296,11 @@
 
 #### 更新详情
 
-* [Egret Engine3D 3.2.1](Engine3D/update/update321/README.md)
+* [Egret Engine3D 3.2.2](Engine3D/update/update322/README.md)
 
 ###### 历史更新
+
+* [Egret Engine3D 3.2.1](Engine3D/update/update321/README.md)
 
 * [Egret Engine3D 3.2.0](Engine3D/update/update320/README.md)
 
@@ -642,9 +662,13 @@
 
 #### 更新详情
 
-* [Egret Wing 3.2.0](Wing/update/update320/README.md)
+* [Egret Wing 3.2.3](Wing/update/update323/README.md)
 
 ###### 历史更新
+
+* [Egret Wing 3.2.2](Wing/update/update322/README.md)
+
+* [Egret Wing 3.2.0](Wing/update/update320/README.md)
 
 * [Egret Wing 3.1.8](Wing/update/update318/README.md)
 
@@ -733,6 +757,8 @@
 ###### 调试
 
 * [Chrome联机调试](Wing/debug/inspector/README.md)
+
+* [新版打包工具说明](Wing/debug/publish/README.md)
 
 * [移动平台打包测试](Wing/debug/packageTool/README.md)
 
