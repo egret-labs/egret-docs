@@ -1,196 +1,116 @@
 [
-
-   {
-
-      "children":[
-         {
-            "filename":"Engine2D.json",
-
-            "des":"2D引擎相关文档",
-
-            "text":"Egret Engine 2D",
-
-            "in_use":"true"
-
-         },
-          {
-
-            "filename":"Engine3D.json",
-
-            "des":"3D引擎相关文档",
-
-            "text":"Egret Engine 3D",
-            
-            "in_use":"true"
-
-         },
-          {
-
-            "filename":"extension.json",
-
-            "des":"Egret 扩展库相关文档",
-
-            "text":"Egret 扩展库",
-            
-            "in_use":"true"
-
-         }
-     	],
-
-		"isFolder":true,
-
-		"text":"引擎",
-
-		"des":"引擎分类",
-
-		"in_use":true
-	},
-	 {
-      "children":[
-          {
-
-            "filename":"Wing.json",
-
-            "des":"Egret Wing说明文档",
-
-            "text":"Egret Wing",
-            
-            "in_use":"true"
-
-         },
-          {
-
-            "filename":"DB.json",
-
-            "des":"DragonBones相关文档",
-
-            "text":"DragonBones",
-            
-            "in_use":"true"
-
-         },
-          {
-
-            "filename":"Lakeshore.json",
-
-            "des":"Lakeshore相关文档",
-
-            "text":"Lakeshore",
-            
-            "in_use":"true"
-
-         },
-          {
-
-            "filename":"Depot.json",
-
-            "des":"Res Depot说明文档",
-
-            "text":"Res Depot",
-            
-            "in_use":"true"
-
-         },
-          {
-
-            "filename":"Merger.json",
-
-            "des":"Texture Merger说明文档",
-
-            "text":"Texture Merger",
-            
-            "in_use":"true"
-
-         },
-          {
-
-            "filename":"Inspector.json",
-
-            "des":"Egret Inspector说明文档",
-
-            "text":"Egret Inspector",
-            
-            "in_use":"true"
-
-         },
-          {
-
-            "filename":"Conversion.json",
-
-            "des":"Egret Conversion说明文档",
-
-            "text":"Egret Conversion",
-            
-            "in_use":"true"
-
-         },
-          {
-
-            "filename":"Feather.json",
-
-            "des":"Egret Feather说明文档",
-
-            "text":"Egret Feather",
-            
-            "in_use":"true"
-
-         },
-          {
-
-            "filename":"EgretVS.json",
-
-            "des":"EgretVS说明文档",
-
-            "text":"EgretVS",
-            
-            "in_use":"false"
-
-         }
-         ],
-
-		"isFolder":true,
-
-		"text":"工具",
-
-		"des":"工具分类",
-
-		"in_use":true
-	},
-	 {
-
-      "children":[
-      	{
-
-            "filename":"platform.json",
-
-            "des":"平台接入相关文档",
-
-            "text":"平台接入",
-            
-            "in_use":"true"
-
-         },
-		 {
-
-            "filename":"Developer.json",
-
-            "des":"Developer更新日志",
-
-            "text":"Developer更新日志",
-            
-            "in_use":"false"
-         }
-
-        ],
-
-		"isFolder":true,
-
-		"text":"其他",
-
-		"des":"平台分类",
-		
-		"in_use":true
-
-    }
-
+  {
+    "children": [
+      {
+        "filename": "Engine2D.json",
+        "des": "2D引擎相关文档",
+        "text": "Egret Engine 2D",
+        "in_use": "true"
+      },
+      {
+        "filename": "Engine3D.json",
+        "des": "3D引擎相关文档",
+        "text": "Egret Engine 3D",
+        "in_use": "true"
+      },
+      {
+        "filename": "extension.json",
+        "des": "Egret 扩展库相关文档",
+        "text": "Egret 扩展库",
+        "in_use": "true"
+      },
+      {
+        "filename": "Native.json",
+        "des": "Egret Native相关文档",
+        "text": "Egret Native相关文档",
+        "in_use": "true"
+      }
+    ],
+    "isFolder": true,
+    "text": "引擎",
+    "des": "引擎分类",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "Wing.json",
+        "des": "Egret Wing说明文档",
+        "text": "Egret Wing",
+        "in_use": "true"
+      },
+      {
+        "filename": "DB.json",
+        "des": "DragonBones相关文档",
+        "text": "DragonBones",
+        "in_use": "true"
+      },
+      {
+        "filename": "Lakeshore.json",
+        "des": "Lakeshore相关文档",
+        "text": "Lakeshore",
+        "in_use": "true"
+      },
+      {
+        "filename": "Depot.json",
+        "des": "Res Depot说明文档",
+        "text": "Res Depot",
+        "in_use": "true"
+      },
+      {
+        "filename": "Merger.json",
+        "des": "Texture Merger说明文档",
+        "text": "Texture Merger",
+        "in_use": "true"
+      },
+      {
+        "filename": "Inspector.json",
+        "des": "Egret Inspector说明文档",
+        "text": "Egret Inspector",
+        "in_use": "true"
+      },
+      {
+        "filename": "Conversion.json",
+        "des": "Egret Conversion说明文档",
+        "text": "Egret Conversion",
+        "in_use": "true"
+      },
+      {
+        "filename": "Feather.json",
+        "des": "Egret Feather说明文档",
+        "text": "Egret Feather",
+        "in_use": "true"
+      },
+      {
+        "filename": "EgretVS.json",
+        "des": "EgretVS说明文档",
+        "text": "EgretVS",
+        "in_use": "false"
+      }
+    ],
+    "isFolder": true,
+    "text": "工具",
+    "des": "工具分类",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "platform.json",
+        "des": "平台接入相关文档",
+        "text": "平台接入",
+        "in_use": "true"
+      },
+      {
+        "filename": "Developer.json",
+        "des": "Developer更新日志",
+        "text": "Developer更新日志",
+        "in_use": "false"
+      }
+    ],
+    "isFolder": true,
+    "text": "其他",
+    "des": "平台分类",
+    "in_use": true
+  }
 ]
