@@ -18,12 +18,6 @@
         "des": "Egret 扩展库相关文档",
         "text": "Egret 扩展库",
         "in_use": "true"
-      },
-      {
-        "filename": "Native.json",
-        "des": "Egret Native相关文档",
-        "text": "Egret Native相关文档",
-        "in_use": "true"
       }
     ],
     "isFolder": true,
