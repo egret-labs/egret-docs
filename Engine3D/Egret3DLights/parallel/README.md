@@ -1,120 +1,104 @@
+平行光
+----------
 
-平行光是一种只有方向，强度和颜色的灯光。
+* 演示准备
 
-Egret3D中，创建平行光可以使用`DirectLight`类。在创建光线过程中，需要指定其方向。
+----------
 
-下面代码创建了一个未添加光照的物体。
+	创建一个演示场景：
+	class Main {
+	
+	    protected _egret3DCanvas: egret3d.Egret3DCanvas;
+	    protected view1: egret3d.View3D;
+	    protected cameraCtl: egret3d.LookAtController;
+	
+	    public constructor() {
+	
+	        ///创建3DCanvas
+	        this._egret3DCanvas = new egret3d.Egret3DCanvas();
+	        this._egret3DCanvas.x = 0;
+	        this._egret3DCanvas.y = 0;
+	        this._egret3DCanvas.width = window.innerWidth;
+	        this._egret3DCanvas.height = window.innerHeight;
+	        this._egret3DCanvas.start();
+	        ///创建View3D
+	        this.view1 = new egret3d.View3D(0, 0, window.innerWidth, window.innerHeight);
+	        this.view1.camera3D.lookAt(new egret3d.Vector3D(0, 100, -100), new egret3d.Vector3D(0, 0, 0));
+	        this.view1.backColor = 0xff888888;
+	        this._egret3DCanvas.addView3D(this.view1);
+	        ///创建相机控制器
+	        this.cameraCtl = new egret3d.LookAtController(this.view1.camera3D, new egret3d.Object3D());
+	        this.cameraCtl.distance = 150;
+	        this.cameraCtl.rotationX = 60;
+	        ///启动3DCanvas，注册每帧更新事件
+	        this._egret3DCanvas.start();
+	        this._egret3DCanvas.addEventListener(egret3d.Event3D.ENTER_FRAME, this.update, this);
+	        ///创建立方体，放置于场景内(0,0,0)位置
+	        var mat_cube: egret3d.TextureMaterial = new egret3d.TextureMaterial();
+	        var geometery_Cube: egret3d.CubeGeometry = new egret3d.CubeGeometry();
+	        var cube = new egret3d.Mesh(geometery_Cube, mat_cube);
+	        this.view1.addChild3D(cube);
+	        ///创建面片，放置于场景内(0,0,0)位置
+	        var mat_Plane: egret3d.TextureMaterial = new egret3d.TextureMaterial();
+	        var geometery_Plane: egret3d.PlaneGeometry = new egret3d.PlaneGeometry();
+	        var plane = new egret3d.Mesh(geometery_Plane, mat_Plane);
+	        this.view1.addChild3D(plane);
+	    }
+	
+	
+	    
+	    public update(e: egret3d.Event3D) {
+	        ///更新控制器
+	        this.cameraCtl.update();
+	    }
+	}  
 
+![](Img_1.png)
 
-```
-class DirectLightDemo extends LoadingUI
-{
-    protected _egret3DCanvas: egret3d.Egret3DCanvas;
-    protected _view3D: egret3d.View3D;
-    protected _sphere: egret3d.Mesh;
+----------
 
-    public constructor() {
-        super();
+* DirectLight 方向光
 
-        ///创建Canvas对象。
-        this._egret3DCanvas = new egret3d.Egret3DCanvas();
-        ///Canvas的起始坐标，页面左上角为起始坐标(0,0)。
-        this._egret3DCanvas.x = 0;
-        this._egret3DCanvas.y = 0;
-        ///设置Canvas页面尺寸。
-        this._egret3DCanvas.width = window.innerWidth;
-        this._egret3DCanvas.height = window.innerHeight;
-        ///创建View3D对象,页面左上角为起始坐标(0,0),其参数依次为:
-        ///@param x: number 起始坐标x,
-        ///@param y: number 起始坐标y
-        ///@param  width: number 显示区域的宽
-        ///@param  height: number 显示区域的高
-        this._view3D = new egret3d.View3D(0,0,window.innerWidth,window.innerHeight);
-        ///当前对象对视位置,其参数依次为:
-        ///@param pos 对象的位置
-        ///@param target 目标的位置
-        this._view3D.camera3D.lookAt(new egret3d.Vector3D(300,300,-300),new egret3d.Vector3D(0,0,0));
-        ///View3D的背景色设置
-        this._view3D.backColor = 0xff333333;
-        ///将View3D添加进Canvas中
-        this._egret3DCanvas.addView3D(this._view3D);
+----------
 
-        ///启动Canvas。
-        this._egret3DCanvas.start();
-        this.CloseLoadingView();
+	1）什么是方向光：
+		平行光又称为方向光（Directional Light），是一组没有衰减的平行的光线，类似太阳光的效果。
 
-        this.loadtexture();
-    }
+	2）方向光的模型如图：
+![](Img_2.jpg)
 
-    private loadtexture()
-    {
-        var loader:egret3d.URLLoader = new egret3d.URLLoader();
-        loader.addEventListener(egret3d.LoaderEvent3D.LOADER_COMPLETE,this.onload,this);
-        loader.load("resource/texture.jpg");
-    }
+	3) 给演示场景添加一个方向光：
+		在演示代码的构造函数尾部我们可以添加如下代码：
 
-    private onload(evt:egret3d.LoaderEvent3D)
-    {
-        ///创建颜色材质
-        var mat: egret3d.TextureMaterial = new egret3d.TextureMaterial(evt.loader.data);
-        ///创建立方体对象
-        var geometery: egret3d.SphereGeometry = new egret3d.SphereGeometry(70,50,50);
-        ///通过材质和立方体对象生成Mesh
-        this._sphere = new egret3d.Mesh(geometery,mat);
-        ///将mesh插入view3D
-        this._view3D.addChild3D(this._sphere);
-    }
-}
-```
+    	///创建一个灯光组，该灯光组将管理场景内的灯光资源
+        var lights: egret3d.LightGroup = new egret3d.LightGroup();
+        ///创建一个方向光对象，其中参数(-0.5, -0.6, 0.2)为方向向量，为灯光方向，默认方向为0, 0, 1)。
+        var dirLight: egret3d.DirectLight = new egret3d.DirectLight(new egret3d.Vector3D(-0.5, -0.6, 0.2));
+        ///灯光漫反射颜色是红色，默认为白色
+        dirLight.diffuse = 0xff0000;
+        ///写入组
+        lights.addLight(dirLight);
+        ///设置灯效组。
+        cube.material.lightGroup = lights;
+        plane.material.lightGroup = lights;
+![](Img_3.png)  
 
-编译，运行效果如下：
+		还可以修改灯光的背光颜色，如下所示：  
 
-![](575cd4729e0ea.png)
+ 		///创建一个灯光组，该灯光组将管理场景内的灯光资源
+        var lights: egret3d.LightGroup = new egret3d.LightGroup();
+        ///创建一个方向光对象，其中参数(-0.5, -0.6, 0.2)为方向向量，为灯光方向，默认方向为0, 0, 1)。
+        var dirLight: egret3d.DirectLight = new egret3d.DirectLight(new egret3d.Vector3D(-0.5, -0.6, 0.2));
+        ///灯光漫反射颜色是红色，默认为白色
+        dirLight.diffuse = 0xff0000;
+        ///灯光背光颜色是灰色，默认为黑色
+        dirLight.ambient = 0x505050;
+        ///写入组
+        lights.addLight(dirLight);
 
-接下来，我们添加一个颜色为白色，强度为1，方向为`(1,-1,0)`的平行光。代码如下：
+        ///设置灯效组。
+        cube.material.lightGroup = lights;
+        plane.material.lightGroup = lights;
+![](Img_4.png)  
 
-```
-private creatLight()
-{
-    var lightGroup:egret3d.LightGroup = new egret3d.LightGroup();
-    var light:egret3d.DirectLight = new egret3d.DirectLight(new egret3d.Vector3D(1, -1, 0));
-    lightGroup.addLight(light);
-    light.diffuse = 0xffffff;
-    light.intensity = 1;  //光线强度
-    this._sphere.material.lightGroup = lightGroup;
-}
-```
-
-在`onload()`函数最后一行调用`createLight()`方法。
-
-编译后运行效果如图：
-
-![](575cd472c171e.png)
-
-我们将光线的颜色改为`0x00ff00`纯绿色，同时将强度修改为`2`，来对比光线对物体成像所产生的不同效果。
-
-修改如下代码：
-
-```
-light.diffuse = 0x00ff00;
-light.intensity = 2;
-```
-
-编译并运行，效果如下：
-
-![](575cd472dca5a.png)
-
-在`DirectLight`类中，提供了一个名称为`ambient`，该属性需要设置一个ARGB颜色值，用来设定你的环境光的颜色。
-
-我们在`createLight()`方法中，添加对于`ambient`属性的设置。
-
-```
-light.ambient = 0xffffffff;
-```
-
-编译后运行，效果如下：
-
-![](575cd472ecb43.png)
-
-
-
+----------
