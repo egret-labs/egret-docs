@@ -137,7 +137,7 @@
             
 示例展示为草动画受小球的挤压影响效果
 
-![](grass/grassAnim.gif)
+![](grassAnim.gif)
 
 ----------
 
@@ -145,30 +145,30 @@
 	
 * 创建地形对象
 
-![](grass/grass1.png)
+![](grass1.png)
 
 * 使Terrain处于选中状态，点击草的图标，获得当前为刷草模式
 
-![](grass/grass2.png)
+![](grass2.png)
 
 * 点击Edit Details进入草动画详细编辑模式
 
-![](grass/grass3.png)
+![](grass3.png)
 
 * 点击Add Grass Texture获得新建一组草的动画
 
-![](grass/grass4.png)
+![](grass4.png)
 
 * 在弹开的编辑草详细内容界面中，编辑贴图，调整各个属性，完成后点击Add按钮，草动画详细信息确认成功
 
-![](grass/grass5.png)
+![](grass5.png)
 
 * 于场景中地形区域，按住鼠标不放松，然后滑动鼠标，开始执行刷草
 
-![](grass/grass6.png)
+![](grass6.png)
 
 * 编辑完毕后，使用Egret3D提供的场景导出插件，导出当前场景。
 
-![](grass/grass7.png)
+![](grass7.png)
 
 * 最后用Egret3D的UnitLoader加载这个场景，查看草的动画。
