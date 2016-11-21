@@ -295,7 +295,7 @@
         "isFolder": true,
         "text": "资源载入",
         "des": "资源载入",
-        "in_use": true
+        "in_use": false
     },
     {
         "children": [
