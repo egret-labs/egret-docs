@@ -280,26 +280,6 @@
     {
         "children": [
             {
-                "filename": "/Engine3D/load/material/",
-                "text": "资源加载",
-                "des": "资源加载",
-                "in_use": true
-            },
-            {
-                "filename": "/Engine3D/load/media/",
-                "text": "音频加载",
-                "des": "音频加载",
-                "in_use": true
-            }
-        ],
-        "isFolder": true,
-        "text": "资源载入",
-        "des": "资源载入",
-        "in_use": false
-    },
-    {
-        "children": [
-            {
                 "filename": "/Engine3D/sound/sound/",
                 "text": "Sound的使用",
                 "des": "Sound的使用",
