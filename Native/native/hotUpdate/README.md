@@ -146,6 +146,23 @@ APP每次启动会从事先设置好的HTTP（loaderUrl）地址请求更新内�
 
 > 注：每次发布项目后，andorid 项目可能会被更新，需重新设置 setLoaderUrl 相关参数与内容。
 
+## 避免第一次启动一定会进行热更新的方法（3.2.4添加）
+
+Android：
+
+在 getGameOptions 里添加属性，指定本地zip包名：
+~~~
+options.put(EgretRuntime.OPTION_PUBLISH_ZIP, "game_code.zip");
+~~~
+
+
+iOS:
+
+在 runGame 中为 _options 添加属性，指定本地zip包名：
+~~~
+options[@OPTION_PUBLISH_ZIP] = @"game_code.zip";
+~~~
+
 ## 总结
 
 热更新的机制比较简单。基本就几步：
