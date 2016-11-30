@@ -2,15 +2,15 @@
   {
     "children": [
       {
-        "filename": "/Native/updateAndroid/update323/",
-        "text": "Android Support 3.2.3",
-        "des": "Android Support 3.2.3",
+        "filename": "/Native/updateAndroid/update324/",
+        "text": "Android Support 3.2.4",
+        "des": "Android Support 3.2.4",
         "in_use": true
       },
       {
-        "filename": "/Native/updateiOS/update323/",
-        "text": "iOS Support 3.2.3",
-        "des": "iOS Support 3.2.3",
+        "filename": "/Native/updateiOS/update324/",
+        "text": "iOS Support 3.2.4",
+        "des": "iOS Support 3.2.4",
         "in_use": true
       },
       {
@@ -19,6 +19,12 @@
         "des": "Android Support 历史更新",
         "in_use": true,
         "children": [
+	      {
+	        "filename": "/Native/updateAndroid/update323/",
+	        "text": "Android Support 3.2.3",
+	        "des": "Android Support 3.2.3",
+	        "in_use": true
+	      },
           {
             "filename": "/Native/updateAndroid/update322/",
             "text": "Android Support 3.2.2",
@@ -225,6 +231,12 @@
         "des": "iOS Support 历史更新",
         "in_use": true,
         "children": [
+	      {
+	        "filename": "/Native/updateiOS/update323/",
+	        "text": "iOS Support 3.2.3",
+	        "des": "iOS Support 3.2.3",
+	        "in_use": true
+	      },
           {
             "filename": "/Native/updateiOS/update322/",
             "text": "iOS Support 3.2.2",
