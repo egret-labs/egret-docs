@@ -6,3 +6,7 @@
 * [修复] 修复部分机型中文字位置偏移的问题；
 * [修复] 处理同时加载音频的数量过多的情况；
 * [修复] 修复其它BUG。
+
+### 下载地址
+
+[http://tool.egret-labs.org/android-support/egret-android-support-3.2.1.zip](http://tool.egret-labs.org/android-support/egret-android-support-3.2.1.zip)
