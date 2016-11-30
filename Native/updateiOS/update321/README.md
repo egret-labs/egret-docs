@@ -14,3 +14,7 @@
 egret_native.egretInit = function () {
     egret_native.sendToC = null; // 添加这句话
 ~~~
+
+### 下载地址
+
+[http://tool.egret-labs.org/ios-support/egret-ios-support-3.2.1.zip](http://tool.egret-labs.org/ios-support/egret-ios-support-3.2.1.zip)
