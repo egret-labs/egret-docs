@@ -230,6 +230,23 @@
 		    }
 		});
 		
+### nest.core.addCallback 添加runtime事件回调
+```有些渠道游戏过程中可能有自有操作会带来一些变化，如登录状态改变，用户信息改变。此时需要注册该函数实现相关响应逻辑```
+
+* 参数说明
+
+		callback:(callbackInfo:nest.core.CallbackInfo)=>void。回调函数
+			callbackInfo：回调函数的参数数据
+				|--- loginState 登录状态发生改变，1表示已登录，2表示未登录
+
+* 示例
+
+		nest.core.addCallback(function (callbackInfo:nest.core.CallbackInfo) {
+		    if (callbackInfo.loginState) {
+		    	//登录状态发生改变，1表示已登录，2表示未登录
+		    }
+		});
+
 ### nest.iap.pay 支付
 * 参数说明
 
