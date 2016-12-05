@@ -1,237 +1,197 @@
-## 简介
 
-> QuickSDK 是一套解决手游快速接入渠道SDK的方案。
+注意，本文档介绍的是接入中间件的内容，在接入成功的基础上才能结合QuickSDK的打包工具接入具体的渠道。
 
-现在在 Egret Android 项目中也可以使用 [QuickSDK](http://www.quicksdk.net/index.html) 了（Egret Android Support 3.0.5 以上，Egret Engine 3.0.5 以上版本）。使用 QuickSDK 的主要流程如下:
+## 一、准备工作
+**step1** 到quicksdk官网申请后台账号，创建测试应用，测试账号并获取必要的 **productKey**和**productCode**待用
 
-* QuickSDK 官网注册账号创建游戏并配置相应参数。
-* 游戏接入 QuickSDK。
-* 一键打包为原生项目。
-* 原生项目中接入 Egret QuickSDK。
+![图片1](3.png)
 
-开始接入之前请先阅读 [QuickSDK](http://www.quicksdk.net/doc.html?aid=13) 官方教程。
+![图片2](2.png)
 
-> 本篇主要介绍基于 Egret Android Support 的接入指导。
+**step2** 将`node` 和 `npm`(安装node时已包含)安装到本地，确保最新
+	
+**step3** 将`android sdk`安装到本地
+	
+**step4** 下载[refactor-for-nest分支](https://github.com/egret-labs/egret-android-support/tree/refactor-for-nest)的android_support工程
 
-## 开始接入
-
-下面主要介绍在使用 Egret Android Support 生成的原生项目中接入 QuickSDK 并接入 EgretQuickSDK。
-
-### 准备工作
-
-#### 创建 QuickSDK 账号
-
-在开始之前需要到 QuickSDK 官网[注册账号](http://www.quicksdk.net/register.html)，并创建游戏。接入 QuickSDK 主要需要获取产品参数(Product_Code,Product_Key,Callback_Key).如下图所示：
-
-![](572b16ee63ebe.png)
-
-#### 获取示例项目
-
-我们需要示例项目中的部分配置项目，所以直接获取[示例项目](http://sedn.egret.com/soft/quicksdk/egret_quicksdk_guider_and_demo2.zip)并拷贝到自己的工程中是很必要的。在开始之前请下载[示例项目](http://sedn.egret.com/soft/quicksdk/egret_quicksdk_guider_and_demo2.zip).
-
-### Egret 项目接入 QuickSDK
-
-我们在原生项目接入之前可以先在 Egret H5 项目中接入 TypeScript 版的 EgretQuickSDK 程序包。
-
-> 需要注意的是 EgretQuickSDK 只在 Egret Android Support 生成的原生项目中有效。在 Egret HTML 5 项目中接入可以方便再以后原生项目中调试接口。
-
-在上面的[示例项目](http://sedn.egret.com/soft/quicksdk/egret_quicksdk_guider_and_demo2.zip)中可以找到 TypeScript 版的 EgretQuickSDK 程序包。
-
-#### 添加 EgretQuickSDK 程序包
-
-在我们的游戏项目中添加 EgretQuickSDK 程序包。如下图所示：
-
-![](572b16f76ee73.png)
-
-#### 初始化 QuickSDK
-
-初始化 QuickSDK，在程序逻辑中添加初始化：
+**step5** 安装新命令行工具 `egret-cli`
 
 ```
-private quickSDKOperator: egret_quickSDK.QuickSDKOperator;
+npm install -g egret-cli 
+```
+安装完成后确保执行一下`egret-cli`看是否有帮助信息输出
+如果有如下信息则表示安装成功
 
-public initQuickSDKOperator(): void {
-    this.quickSDKOperator = new egret_quickSDK.QuickSDKOperator();
+```
+localhost:~ yourmacname$ egret-cli
+
+  Usage: egret-cli [options] [command]
+
+
+  Commands:
+
+    native [name]      deploy one or more packages
+    config [name]      get config
+    nest [subcommand]  create/set/run a nest egret project
+    publish            publish
+    resource           resource
+    libraries          lib
+    help [cmd]         display help for [cmd]
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
+```
+
+## 二、配置工作
+
+创建android工程前需要首先设置全局变量 
+
+**step1** 利用 `config set` 命令配置 `android sdk` 位置
+
+```		
+egret-cli config set --key android-sdk --value <准备工作step3中的目录位置>
+```
+**step2** 利用 `config set` 命令配置 `android support` 位置
+
+```
+egret-cli config set --key android_support --value <准备工作step4中的目录位置>
+```
+
+注:利用 `config get` 命令查看配置是否正确
+若正确配置，你应该会看到刚刚配置的路径
+
+```
+localhost:~ yourmacname$ egret-cli config get --key android-sdk
+/Applications/sdk
+localhost:~ yourmacname$ egret-cli config get --key android_support
+/Users/yourmacname/Egret-Android/egret-android-support
+```
+**step3** 进入H5游戏项目目录，创建文件 `egret.config`
+
+手动配置以下参数,以下给出范例：
+
+```
+{
+	//相对于egret工程的相对路径
+	"androidProjectPath":"../TESTQUICKV112",
+	
+	//要生成的android工程包名
+	"packageName":"com.jack.testquickv112",
+	
+	//可选的sdk种类 目前仅支持国内渠道的quicksdk和apus
+	"sdk":"quicksdk"
 }
 ```
-
-在程序逻辑中调用 initQuickSDKOperator 即可初始化 QuickSDK.
-
-#### 手动释放
-
-需要注意的是，我们使用完 QuickSDK 之后需要手动释放 QuickSDK，以免循环引用。
+> 注:这些参数也可以在命令行中输入,区别在于后者每次部署都需要输入一遍参数,如下
 
 ```
-public clear(): void {
-    this.quickSDKOperator.clear();
-}
+localhost:~ jackyanjiaqi$ egret-cli native help create
+
+  Usage: egret-cli native create <egretH5path> [options]
+
+  Options:
+
+    -h, --help                              output usage information
+    -p, --androidProjectPath <projectName>  androidProjectName
+    -n, --packageName <packageName>         packageName
+    -s, --sdk <quicksdk|sdk>                sdk
 ```
-
-### 打包原生项目
-
-可以使用如下命令一键打包为原生项目：
-
-```
-egret create_app app_name -f h5_game_path -t template_path
-```
-
-其中 app_name 是我们要生成的原生项目， h5_game_path 是 app 所对应的 H5 项目的路径，template_path 是 Android Support 模板项目的路径。
-
-将我们上面的项目打包为原生项目：
- 
-![](572b16ee79acd.png)
-
-参考教程:
-[打包Android app](../../../Engine2D/publish/publishAndroid/README.md)
-
-
-#### 编译到原生项目
-
-在有对应原生项目的情况下，可以使用命令：
+## 三、创建QuickSDK工程并导入Eclipse
+创建接入QuickSDK的AndroidNest工程
 
 ```
-egret build [project_name] --runtime native
+egret-cli native create <配置了egret.config的H5游戏目录>
 ```
+使用`egret-cli native create`命令，如在本例中使用的参数，则在上一章节第三步用于配置egret.config的H5游戏目录的同级目录下生成TESTQUICKV112和TESTQUICKV112.quicksdk两个android项目目录。
 
-将项 Egret H5 项目编译到对应的已生成的 Native 项目中去。
+将两个项目同时导入到Eclipse中，未有quicksdk后缀的目录为标准android support游戏项目(以下简称 `游戏AndroidSupport工程` )，已默认作为带有quicksdk后缀的目录项目（以下简称 `QuickSDK工程` ）的<b style="color:red">引用库</b>，若去掉作为库项目的配置时则可以单独运行，与QuickSDK接入相关的参数都在带有后缀的quicksdk的项目中配置。
+
+## 四、配置QuickSDK工程
+
+### 1.白鹭开放平台配置
+
+白鹭开放平台提供的游戏ID设置到 `游戏AndroidSupport工程` 下`主Activity`内的`getGameOptions`方法内，如图：
+
+![图片3](4.png)
+
+向白鹭开放平台索要渠道号和appkey并配置到 `QuickSDK工程` 下`主Activity`内的`getGameOptions`方法内，如图：
+
+![图片4](6.png)
+
+### 2.QuickSDK配置
+
+将第一章节“准备工作”step1的productKey和productCode配置到 `QuickSDK工程` 下`Constants.java`类下，如图：
+
+![图片5](5.png)
 
 
-### 原生项目中接入 QuickSDK
 
-我们将上面生成好的原生项目 EgretQuickTest 导入到 eclipse 中，开始接入 QuickSDK。
-
-#### 接入前检查
-
-首先需要检查项目下的配置文件 AndroidManifest.xml ，为在以后接入渠道时不出问题，应确保有下面的设置。
-
-* AndroidManifest.xml 中 android:targetSdkVersion="19"
-
-避免渠道sdk不兼android 5.0的问题。
-
-* 为Activity 添加横竖屏设置。根据游戏的横竖屏，将 activity 做横竖屏设置：
-
-android:screenOrientation="sensorLandscape"
-
-android:screenOrientation="sensorPortrait"
-
-或者
-
-android:screenOrientation="landscape"
-
-android:screenOrientation="portrait"
-
-* 检查权限:
+## 五、部署h5游戏资源
+此时工程内尚未包含h5游戏，请使用 `egret-cli native deploy`命令并指定拷贝h5项目的游戏到android工程中，使得h5端的游戏改动能够在android端同步。
 
 ```
-<uses-permission android:name="android.permission.GET_TASKS" /> 
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> 
-<uses-permission android:name="android.permission.INTERNET" /> 
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> 
-<uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> 
-<uses-permission android:name="android.permission.BLUETOOTH" /> 
-<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+egret-cli native deploy <配置了egret.config的H5游戏目录>
+```
+此时将在android目标工程的assets目录下出现egret游戏
+此种方法在android端运行适用于本地调试，正式上线时应用线上地址的配置方式用户自动下载和热更新。
+
+运行QuickSDK工程将看到第七节的接入效果，则接入完成。否则返回至第二节查看配置是否正确。
+
+## 六、快速创建一个H5的Nest工程
+注意以上用于创建QuickSDK的Android工程的源H5工程必须接入Nest第三方库，若未接入，可以使用 `egret-cli` 提供的 `nest` 子命令快速创建并运行一个Nest工程范例，该范例工程以默认的参数配置于根目录下egretProperties.json的nest字段下
+
+> 注:该命令依赖于旧版 `egret` 命令
+
+### Web版Nest示例工程创建指南
+
+#### 1 create 创建命令
+
+```
+egret-cli nest create [relativePathToCwd] | -p <absolutePath>
+```
+参数说明:
+    [relativePathToCwd]       要创建项目的相对路径(相对于当前执行目录)
+    -p, --path <absolutePath> 要创建的项目的绝对路径(必须指定-p 否则会当做相对路径处理)
+
+#### 2 run 运行命令(web端)
+
+```
+egret-cli nest run [relativePathToCwd | -p <absolutePath>] [-a]
 ```
 
-#### 添加 assets,libs,res
+用法示例:
 
-1. 添加 assests 
+```
+egret-cli nest run
+egret-cli nest run -a
+egret-cli nest run test -a
+egret-cli nest run -p /Users/testuser/test -a 
+```
 
-在[示例项目](http://sedn.egret.com/soft/quicksdk/egret_quicksdk_guider_and_demo_2.0.zip)中我们可以找到 quicksdk.xml 和 quickVersion 这两个文件。
+可选参数说明:
+    relativePathToCwd         要执行项目的相对路径
+    -p, --path <absolutePath> 要执行的项目的绝对路径(必须指定-p)
+    -a, --autoBuild           打开自动编译
 
-![](572b16ee850c6.png)
+#### 3 set 设置运行参数
 
-将它们拷贝到我们的项目中的 assets 文件夹下。
+在当前目录执行，默认运行参数为测试参数,具体游戏参数需要向开放平台申请 详询 http://open.egret.com/Wiki
 
-![](572b16eec51ac.png)
+```
+egret-cli nest set [options]
+```
+可选参数说明:
+    --appId <appId>               游戏id,必传 原始值88888
+    --channelId <channelId>       渠道id,必传 原始值9166
+    --platInfo [platInfo]         平台信息,可选 默认值为open`<appId>`<channelId>
+    --spId [spId]                 spId,可选 默认值为<channelId>
+    --sdkDomain [sdkDomain]       可选,默认值为 http://api.egret-labs.org/v2
+    --serverDomain [serverDomain] 可选,默认值为 http://api.egret-labs.org/v2
 
-2. 添加 libs
+## 七、接入效果和后续渠道接入
 
-将示例项目中的以下文件拷贝到 libs 文件下。
+到此，一个通用的QuickSDK工程完成了，若由使用了`egret-cli nest create`命令创建的H5工程创建的QuickSDK工程，依次点击 app -> user -> login 将会弹出一个模拟的登陆框 使用我们在QuickSDK后台配置的账号登陆并手动点击成功则会弹出浮动窗，用于显示测试信息，点击 back -> back -> iap -> pay 唤起支付界面，手动输入支付金额并点击按钮模拟成功。此时到QuickSDK后台查看金额，若有相应的金额减少，则登陆和支付至此调通。
 
-![](572b16eea3e91.png)
-
-拷贝到项目的 libs 文件夹下。
-
-![](572b16eeb44bb.png)
-
-3. 添加 res
-
-示例项目中 res 文件夹下的文件有选择的添加。将以下文件：
-
-![](572b16ef32375.png)
-
-添加到相应文件夹。
-
-#### 添加 Java 文件
-
-直接将示例项目中的 GameApplication.java ， SplashActivity.java 复制粘贴到自己的项目中就行。注意要和自己的Activity在一个文件夹 下。
-
-示例项目中将以下文件：
-
-![](572b16eee51de.png)
-
-拷贝到我们项目相应文件夹下：
-
-![](572b16ef026c8.png)
-
-需要注意修改包名我们新创建的包名。
-
-![](572b16ef12aff.png)
-
-并注意在 AndroidMainfest.xml 中 添加application name:
-
-![](572b16ef48904.png)
-
-到目前为止接入 QuickSDK 工作基本完成，运行该原生项目可以看到 QuickSDK 的 Splash，然后显示游戏画面。
-
-![](572b16ef53e9c.jpg)
-
-#### Android 接入 EgretQuickSDK 
-
-下面要做的就是给我们的项目接入 EgretQuickSDK。在我们的示例项目中可以找到 EgretQuickSDK 的源码。接入 EgretQuickSDK 之后即可对 QuickSDK 功能进行调试。
-
-这里需要注意需要我们先准备好 QuickSDK 的 productCode 和 productKey。
-
-* 添加 org.egret.plugin.quicksdk
-
-添加 org.egret.plugin.quicksdk ，源代码可以在示例项目中获取到。
-
-![](572b16f7318fb.png)
-
-![](572b16f7265fe.png)
-
-
-* 配置 QuickSDK 参数
-
-找到我们导入的 EgretQuickSDKActivity 类，找到其中的配置参数，将其配置为我们自己注册的参数。
-
-![](572b16f73e065.png)
-
-* 修改原游戏 Activity
-
-修改我们原来游戏的 Activity ，使其继承自 EgretQuickSDKActivity：
-
-![](572b16f74f23f.png)
-
-并在游戏开始时初始化 EgretQuickSDK 环境。
-
-![](572b16f75f139.png)
-
-至此，在 Egret 的原生 Android 接入 QuickSDK 已经完成。
-
-## 注意事项
-
-* 需要注意的是 EgretQuickSDK 只在 Egret Android Support 生成的原生项目中有效。
-* 打包生成 Native 的过程中各个项目要放在同一盘符下，比如 D 盘。同时应避免放到 C 盘或桌面下。
-
-
-
-
-
-
-
-
-
+后续接入具体渠道需要与QuickSDK建立联调机制。
