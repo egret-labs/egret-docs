@@ -2,9 +2,9 @@
   {
     "children": [
       {
-        "filename": "/Lakeshore/update/update210/",
-        "text": "Lakeshore 2.1.0",
-        "des": "Lakeshore 2.1.0",
+        "filename": "/Lakeshore/update/update212/",
+        "text": "Lakeshore 2.1.2",
+        "des": "Lakeshore 2.1.2",
         "in_use": true
       },
       {
@@ -13,6 +13,12 @@
         "des": "历史更新",
         "in_use": true,
         "children": [
+          {
+            "filename": "/Lakeshore/update/update210/",
+            "text": "Lakeshore 2.1.0",
+            "des": "Lakeshore 2.1.0",
+            "in_use": true
+          },
           {
             "filename": "/Lakeshore/update/update202/",
             "text": "Lakeshore 2.0.2",
@@ -385,7 +391,7 @@
         "isFolder": true,
         "text": "示例项目",
         "des": "示例项目",
-        "in_use": false
+        "in_use": true
       }
     ],
     "isFolder": true,
