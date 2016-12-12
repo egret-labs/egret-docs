@@ -2,9 +2,9 @@
     {
         "children": [
             {
-                "filename": "/Engine3D/update/update324/",
-                "text": "Egret Engine3D 3.2.4",
-                "des": "Egret Engine3D 3.2.4",
+                "filename": "/Engine3D/update/update325/",
+                "text": "Egret Engine3D 3.2.5",
+                "des": "Egret Engine3D 3.2.5",
                 "in_use": true
             },
             {
@@ -13,6 +13,12 @@
                 "des": "历史更新",
                 "in_use": true,
                 "children": [
+                    {
+                        "filename": "/Engine3D/update/update324/",
+                        "text": "Egret Engine3D 3.2.4",
+                        "des": "Egret Engine3D 3.2.4",
+                        "in_use": true
+                    },
                     {
                         "filename": "/Engine3D/update/update322/",
                         "text": "Egret Engine3D 3.2.2",
