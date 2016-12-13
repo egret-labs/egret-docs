@@ -252,6 +252,12 @@
             "text": "资源编辑器",
             "des": "资源编辑器",
             "in_use": true
+          },
+          {
+            "filename": "/Wing/editor/animation/",
+            "text": "动画编辑器",
+            "des": "动画编辑器",
+            "in_use": true
           }
         ],
         "isFolder": true,

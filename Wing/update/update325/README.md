@@ -3,10 +3,18 @@
 - [Egret Wing 3.2.5 for Windows](http://tool.egret-labs.org/EgretWing/electron/EgretWing-v3.2.5.exe?d=0707)
 - [Egret Wing 3.2.5 for Mac OS](http://tool.egret-labs.org/EgretWing/electron/EgretWing-v3.2.5.dmg?d=0707)
 
-本版本最大的改变是重构了eui可视化编辑区的结构，实现在切换编辑器的时候eui可视化编辑区域不会再闪烁。
-同时，我们也对可视化编辑的细节和体验做了优化。
+本版本最大的改变是增加了Tween动画的可视化编辑功能。同时重构了eui可视化编辑区的结构，实现在切换编辑器的时候eui可视化编辑区域不会再闪烁。
+并且，我们也对可视化编辑的细节和体验做了优化。
 
 ## 新特性介绍：
+
+### Tween可视化动画编辑功能
+
+全新的Tween动画可视化编辑功能，熟悉的时间轴操作，可以更方便的实现EUI界面中的动画需求。
+
+[教程链接](../../../Wing/editor/animation/README.md)
+
+![](7.gif)
 
 ### 切换可视化编辑器不再闪烁
 
