@@ -163,6 +163,13 @@ iOS:
 options[@OPTION_PUBLISH_ZIP] = @"game_code.zip";
 ~~~
 
+## 不进行热更新仍然显示GameLoadingView的方法（Android support 3.2.5添加）
+
+在设置GameLoadingView时添加最短持续时间的参数:
+~~~
+gameEngine.game_engine_set_loading_view(new GameLoadingView(this), 5); // GameLoadingView将最少持续5秒
+~~~
+
 ## 总结
 
 热更新的机制比较简单。基本就几步：
