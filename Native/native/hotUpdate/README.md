@@ -151,6 +151,7 @@ APP每次启动会从事先设置好的HTTP（loaderUrl）地址请求更新内�
 Android：
 
 在 getGameOptions 里添加属性，指定本地zip包名：
+
 ~~~
 options.put(EgretRuntime.OPTION_PUBLISH_ZIP, "game_code.zip");
 ~~~
@@ -159,8 +160,18 @@ options.put(EgretRuntime.OPTION_PUBLISH_ZIP, "game_code.zip");
 iOS:
 
 在 runGame 中为 _options 添加属性，指定本地zip包名：
+
 ~~~
 options[@OPTION_PUBLISH_ZIP] = @"game_code.zip";
+~~~
+
+## 不进行热更新仍然显示GameLoadingView的方法（Android support 3.2.5添加）
+
+
+在设置GameLoadingView时添加最短持续时间的参数:
+
+~~~
+gameEngine.game_engine_set_loading_view(new GameLoadingView(this), 5); // GameLoadingView将最少持续5秒
 ~~~
 
 ## 总结
