@@ -2,7 +2,7 @@ Egret 统计接入根据游戏是否是用Egret 引擎开发分两种，遇到�
 
 ## 一、Egret 引擎开发的游戏
 
-1、[下载](http://open.egret.com/wiki/misc/doc/egretSA.zip "下载")统计接入文档
+1、[下载](http://open.egret.com/misc/doc/egretSA.zip "下载")统计接入文档
 2、选择导入的第三方库，分 2.0 和 2.5 两个版本分别对应Egret引擎 2.0 和 2.5
 3、开始对接
 
@@ -203,7 +203,7 @@ esa.EgretSA.onLeave();
 ## 二、非Egret 引擎开发的游戏
 
 
-1、[下载](http://open.egret.com/wiki/misc/doc/egretSA.zip "下载")统计接入文档
+1、[下载](http://open.egret.com/misc/doc/egretSA.zip "下载")统计接入文档
 2、加载游戏统计js &lsaquo;script src="http://gameanalysis.egret.com/js/egretSA.js" &rsaquo;&lsaquo;/script&rsaquo;
 3、开始对接
 1）===初始化打开游戏暂未加载资源时调用===
