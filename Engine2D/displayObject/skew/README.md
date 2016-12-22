@@ -5,6 +5,11 @@
 ![skewX_compare][]    
 如上图所示，这是对白鹭小鸟进行X方向斜切10所达到的结果。这是两个同样的小鸟叠加在一起便于比较变形前后变化的，半透明的是未变形的原始图片，没有透明效果的是变形后的图片。    
 
+```
+//设定对象的X方向斜切
+mySprite.skewX = 10;
+```
+
 同理，对Y方向的斜切将导致矩形的右侧边在Y方向发生相应的偏移。    
 ![skewY_compare][]    
 如上图所示，这是对白鹭小鸟进行Y方向斜切10所达到的结果。   
@@ -13,3 +18,8 @@
 
 [skewX_compare]: skewX_compare.jpg
 [skewY_compare]: skewY_compare.jpg
+
+```
+//设定对象的Y方向斜切
+mySprite.skewY = 10;
+```
