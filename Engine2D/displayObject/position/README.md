@@ -3,7 +3,8 @@
 ``` 
 container.x = 17;
 container.y = 212;
- ```
+```
+
  显示对象定位系统将舞台视为一个笛卡尔坐标系（带有水平 x 轴和垂直 y 轴的常见网格系统）。坐标系的原点（x 和 y 轴相交的 0,0 坐标）位于舞台的左上角。从原点开始，x 轴的值向右为正，向左为负，而 y 轴的值向下为正，向上为负（与典型的图形系统相反）。例如，通过前面的代码行可以将对象 container 移到 x 轴坐标 17（原点向右 17 个像素）和 y 轴坐标 212（原点向下 212 个像素）。
 
  默认创建显示对象时，x 和 y 属性均设置为 0，从而可将对象放在其父内容的左上角。
@@ -12,7 +13,7 @@ container.y = 212;
 
  x 和 y 属性始终是指显示对象相对于其父显示对象坐标轴的 (0,0) 坐标的位置，记住这一点很重要。因此，对于包含在 DisplayObjectContainer 实例内的 Shape 实例（如圆），如果将 Shape 对象的 x 和 y 属性设置为 0，则会将圆放在 DisplayObjectContainer 的左上角，该位置不一定是舞台的左上角。若要确定对象相对于全局舞台坐标的位置，可以使用任何显示对象的 globalToLocal() 方法将坐标从全局（舞台）坐标转换为本地（显示对象容器）坐标，如下所示：
  
- ```
+```
 //创建一个空的 DisplayObjectContainer，把它的 x 和 y 坐标都改为
 var container: egret.DisplayObjectContainer = new egret.DisplayObjectContainer();
 container.x = 200;
@@ -38,7 +39,8 @@ function onClick():void{
     circle.y = targetPoint.y;
     }
 }
-  ```
+```
+
 同样，也可以使用 DisplayObject 类的 localToGlobal() 方法将本地坐标转换为舞台坐标。
 
 ## 通过触摸移动显示对象
@@ -68,8 +70,20 @@ function startMove(e:egret.TouchEvent):void{
   offsetX = e.stageX - circle.x;
   offsetY = e.stageY - circle.y;
   //手指在屏幕上移动，会触发 onMove 方法
-  circle.addEventListener(egret.TouchEvent.TOUCH_MOVE,onMove,this);
- ```
+  this.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE,onMove,this);
+}
+
+function stopMove(e:egret.TouchEvent) {console.log(22);
+   //手指离开屏幕，移除手指移动的监听
+   this.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE,onMove,this);
+}
+function onMove(e:egret.TouchEvent):void{
+   //通过计算手指在屏幕上的位置，计算当前对象的坐标，达到跟随手指移动的效果
+   circle.x = e.stageX - offsetX;
+   circle.y = e.stageY - offsetY;
+}
+```
+ 
  除了使显示对象跟随手指移动之外，经常需要将拖动的对象移动到显示列表的前方，就像是浮动在其他对象上面。
 
  以下代码（根据上一示例改写）使两个显示对象（一个圆形和一个正方形）可跟随手指移动。只要手指在任意显示对象上按下，该显示对象就会移到舞台显示列表的顶部，所以拖动的对象始终出现在顶部。
@@ -100,6 +114,7 @@ circle.addEventListener(egret.TouchEvent.TOUCH_BEGIN,startMove,this);
 circle.addEventListener(egret.TouchEvent.TOUCH_END,stopMove,this);
 
 //增加正方形的触摸监听
+square.touchEnabled = true;
 square.addEventListener(egret.TouchEvent.TOUCH_BEGIN,startMove,this);
 square.addEventListener(egret.TouchEvent.TOUCH_END,stopMove,this);
 

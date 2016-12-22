@@ -22,6 +22,11 @@
         "des":"Runtime打包说明"
       },
       {
+        "filename":"/platform/egret/channel/",
+        "text":"渠道接入文档",
+        "des":"渠道接入文档"
+      },
+      {
         "filename":"/platform/egret/statistics/",
         "text":"Egret统计接入",
         "des":"Egret统计接入说明文档"
