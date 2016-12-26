@@ -1,5 +1,4 @@
-EUI-BOOSTER-TOOL
-================================================
+
 将运行时解析exml修改为编译时解析,eui加载提速10倍以上
 
 
@@ -17,7 +16,7 @@ EUI-BOOSTER-TOOL
 npm install -g cli-eui-new
 ```
 
-###1.加速一个游戏项目
+### 1.加速一个游戏项目
 
 ```
 euibooster [-i] <egretProjectDir> <egretPublishDir> [ -out <outDir> ] [--fixedConfig] [-cfg <configFilePath>]
@@ -46,7 +45,7 @@ euibooster [-i] <egretProjectDir> <egretPublishDir> [ -out <outDir> ] [--fixedCo
 
 ![完整命令](3.png)
 
-###2.从加速项目恢复成普通项目(非必须)
+### 2.从加速项目恢复成普通项目(非必须)
 
 ```
 euibooster clean <egretProjectDir> <egretPublishDir> [ -out <outDir> ]
