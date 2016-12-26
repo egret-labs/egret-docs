@@ -2,9 +2,9 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/update/update325/",
-        "text": "Egret Engine2D 3.2.5",
-        "des": "Egret Engine2D 3.2.5",
+        "filename": "/Engine2D/update/update326/",
+        "text": "Egret Engine2D 3.2.6",
+        "des": "Egret Engine2D 3.2.6",
         "in_use": true
       },
       {
@@ -19,6 +19,12 @@
         "des": "历史更新",
         "in_use": true,
         "children": [
+          {
+            "filename": "/Engine2D/update/update325/",
+            "text": "Egret Engine2D 3.2.5",
+            "des": "Egret Engine2D 3.2.5",
+            "in_use": true
+          },
           {
             "filename": "/Engine2D/update/update324/",
             "text": "Egret Engine2D 3.2.4",
