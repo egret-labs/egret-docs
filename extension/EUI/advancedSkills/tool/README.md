@@ -40,11 +40,11 @@ euibooster [-i] <egretProjectDir> <egretPublishDir> [ -out <outDir> ] [--fixedCo
 
 以下是使用实例:
 
-![目录结构](pic/目录结构.png)
+![目录结构](1.png)
 
-![普通命令](pic/普通命令.png)
+![普通命令](2.png)
 
-![完整命令](pic/完整命令.png)
+![完整命令](3.png)
 
 ###2.从加速项目恢复成普通项目(非必须)
 
