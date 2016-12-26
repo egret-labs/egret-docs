@@ -392,6 +392,12 @@
       {
         "children": [
           {
+            "filename": "/extension/EUI/advancedSkills/tool/",
+            "text": "EUI-BOOSTER-TOOL",
+            "des": "EUI-BOOSTER-TOOL",
+            "in_use": true
+          },
+          {
             "filename": "/extension/EUI/advancedSkills/useComponents/",
             "text": "在EXML中使用自定义组件",
             "des": "在EXML中使用自定义组件",
