@@ -34,38 +34,29 @@
 
 	**<font color=red>如下图3</font>：**
 	
-	![image](573afd2b87942.png)
+	![image](573afd2b67802.png)
 - 1区域：代码树
    
 - 2区域：项目输出日志信息
 	
 
 ## 项目菜单
+	
 - ### 构建
- - 点击“`窗口`”->"`切换输出面板`"。
- 
- - 点击“`项目`”->"`编译`"，在输入面板显示输出日志。
- 
- - 在bin-debug生成*.js.map ,例：Main.js Main.js.map；
-   
-  **<font color=red> 如下图5：</font>**
-	
-  ![image](573afd2b67802.png)
-	
+	- 编译当前项目  
 
 - ### 清理
 	- 清理项目，清理bin-debug中所有文件，然后生成js
 
 - ### 调试\F5
+  **<font color=red> 如下图6：</font>**
+  
+  ![image](573afd2bd6cb9.png)
    - 点击项目->调试 
    - 1区域：变量
    - 2区域：观察表达式
    - 3区域：调用栈
    - 4区域：调试操作，`继续`、`单步跳过`、`单步跳入`、`单步跳出`、`重启`、`结束`
-	
-  **<font color=red> 如下图6：</font>**
-  
-  ![image](573afd2bd6cb9.png)
 
 - ### launch.json
 		{
@@ -97,8 +88,7 @@
  - **preLaunchTask** 执行任务之前运行的任务。
  - **port** web服务器指定的端口号。
 
-[点击调试详情](../../Wing/inspector/README.md) 
-		
+[点击调试详情](../debug/inspector/README.md) 		
 
 ## Egret Support 插件菜单
 
@@ -108,7 +98,8 @@
 	- 启动项目 等于在命令窗口输入egret startserver 
 - 编译引擎
 	- 编译当前项目引用的引擎，适用于自己修改了引擎代码
-- [发布Egret项目](../../Wing/publish/README.md)
+- 发布Egret项目
+	- 将当前项目发布成正式版本，同时压缩项目代码
 
 ## 目录结构介绍
 - wing项目目录	
@@ -185,7 +176,7 @@
 		
 		
 
-- 详细内容 [EXML可视化编辑](../../Wing/exml/README.md) 
+- 详细内容 [EXML可视化编辑](../editor/exml/README.md) 
 
-### 资源管理 [点击详情](../../Wing/resdepot/README.md) 
+### 资源管理 [点击详情](../editor/resdepot/README.md) 
 

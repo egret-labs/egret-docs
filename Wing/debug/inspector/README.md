@@ -70,5 +70,4 @@ EgretWing支持三种调试模式，`Node.js` 、`Chrome` 、`EgretWing` 扩展�
 	- **port** web服务器指定的端口号。
 	
 - 操作演示如下：
-
 ![image](573af07f2e7ff.gif)

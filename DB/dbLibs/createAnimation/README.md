@@ -45,70 +45,25 @@ armature.display.scaleY = 0.5;
 
 ![](56c3144fce23f.png)
 
-DragonBones的动画播放系统由一个WorldClock（世界时钟）控制。你需要手动激活WorldClock。
-
-播放骨架动画，需要三步操作。
-
-第一步：将当前骨架添加到世界时钟当中
+dragonBones.EgretFactory中内置文件解析器，可以方便的设置骨骼动画数据，同时新增buildArmatureDisplay方法，快速获取骨骼动画所需要的显示对象。
 
 ```
-dragonBones.WorldClock.clock.add( armature );
+//定义dragonBones.EgretFactory对象
+private factory:dragonBones.EgretFactory;
+
+this.factory = new dragonBones.EgretFactory();
+this.factory.parseDragonBonesData(RES.getRes("man_json"));
+this.factory.parseTextureAtlasData(RES.getRes("man_texture_json"), RES.getRes("man_texture_png"));
+
+//直接生成骨骼动画显示对象，该对象实现IArmatureDisplay接口
+var ar:dragonBones.EgretArmatureDisplay = this.factory.buildArmatureDisplay("man");
+ar.animation.play("runFront",0);
+ar.x = 200;
+ar.y = 800;
+this.addChild( ar );
 ```
 
-第二步：设置骨架动画，指定播放的动画。
-
-```
-armature.animation.gotoAndPlay("Run");
-```
-
-每个骨架中都包含一个Animation对象，负责操作当前骨架的所有动画数据。执行`gotoAndPlay`时，需要指定即将播放的动画名称。当前实例中的`Run`动画我们可以在DragonBones Pro中进行编辑查看。
+需要播放的动画名称，可参考下图，在DragonBones Pro中，动画面板罗列了所有可播放的动画名称。
 
 ![](56c314504fd66.png)
 
-第三步：手动刷新世界时钟
-
-刷新WorldClock，在Egret中有两种方法。一种使用EnterFrame事件，另外一种使用Ticker心跳控制器。
-
-推荐第二种方式，可绕过Egret事件系统，提高执行性能。 
-
-```
-egret.Ticker.getInstance().register(  
-          function(frameTime:number){dragonBones.WorldClock.clock.advanceTime(0.01)},  
-    this  
-);
-```
-
-这里这个参数传的是0.01，会让帧频固定在20帧，应该传-1，或者传frameTime/1000。
-
-编译程序预览，你可以看到机器人在舞台中进行跑步动作。
-你也可以使用更加简便的API来创建骨骼动画。
-
-完整代码如下：
-
-```
-private createGameScene(): void {
-      
-    var dragonbonesData = RES.getRes( "RobotGame_1_json" );
-    var textureData = RES.getRes( "texture_json" );
-    var texture = RES.getRes( "texture_png" );
-      
-    var dragonbonesFactory:dragonBones.EgretFactory = new dragonBones.EgretFactory();
-          dragonbonesFactory.addDragonBonesData(dragonBones.DataParser.parseDragonBonesData(dragonbonesData));
-    dragonbonesFactory.addTextureAtlas(new dragonBones.EgretTextureAtlas(texture,textureData));  
-    var armature: dragonBones.Armature = dragonbonesFactory.buildArmature("robot");  
-       this.addChild(armature.display);  
-     
-       armature.display.x = 200;  
-       armature.display.y = 300;  
-       armature.display.scaleX = 0.5;  
-       armature.display.scaleY = 0.5;  
-     
-       dragonBones.WorldClock.clock.add( armature );  
-       armature.animation.gotoAndPlay("Run");  
-     
-       egret.Ticker.getInstance().register(  
-       function(frameTime:number){dragonBones.WorldClock.clock.advanceTime(0.01)},  
-       this  
-       );  
-      }
-```      
