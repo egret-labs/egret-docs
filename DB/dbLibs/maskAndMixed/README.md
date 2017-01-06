@@ -5,7 +5,7 @@
 动画遮罩就是只将动画的一部分呈现出来，例如下面的代码，将只播放head和body两个骨头的跑步动画，其他骨头将维持原姿势不动。
 
 ```
-var animationState:dragonBones.AnimationState = armature.animation.gotoAndPlay("run");
+var animationState:dragonBones.AnimationState = armature.animation.fadeIn("run");
 animationState.addBoneMask("head");
 animationState.addBoneMask("body");
 ```
@@ -16,8 +16,8 @@ animationState.addBoneMask("body");
 动画混合是指一个骨架同时可以播放多个动画。例如下面的代码,可以让角色同时播放跑步和开火的动画。
 
 ```
-armature.animation.gotoAndPlay("run",0,-1,0,0,"UPPER_BODY_GROUP",dragonBones.Animation.SAME_GROUP);
-armature.animation.gotoAndPlay("fire",0,-1,0,0,"LOWER_BODY_GROUP",dragonBones.Animation.SAME_GROUP);
+armature.animation.fadeIn("run",0,-1,0,0,"UPPER_BODY_GROUP",dragonBones.Animation.SAME_GROUP);
+armature.animation.fadeIn("fire",0,-1,0,0,"LOWER_BODY_GROUP",dragonBones.Animation.SAME_GROUP);
 ```
 
 这里需要解释的一点就是DragonBones骨骼动画在运行时有一个组的概念，我们可以让动画在一个组中播放，当另一个动画被设置为在相同组中播放时，之前播放的同组动画就会停止，所以我们可以把希望同时播放的动画放在不同的组里。就像上面的代码中，我们可以把开火放到上半身组，跑步放到下半身组，这样角色就可以同时开火和跑步了。
@@ -25,13 +25,10 @@ armature.animation.gotoAndPlay("fire",0,-1,0,0,"LOWER_BODY_GROUP",dragonBones.An
 最后将动画遮罩和动画混合一起使用，代码如下
 
 ```
-var upperBodyAnimationState:dragonBones.AnimationStage = armature.animation.gotoAndPlay("run",0,-1,0,0,"UPPER_BODY_GROUP",dragonBones.Animation.SAME_GROUP);
-var lowerBodyAnimationState:dragonBones.AnimationStage = armature.animation.gotoAndPlay("fire",0,-1,0,0,"LOWER_BODY_GROUP",dragonBones.Animation.SAME_GROUP);
+var upperBodyAnimationState:dragonBones.AnimationStage = armature.animation.fadeIn("run",0,-1,0,0,"UPPER_BODY_GROUP",dragonBones.Animation.SAME_GROUP);
+var lowerBodyAnimationState:dragonBones.AnimationStage = armature.animation.fadeIn("fire",0,-1,0,0,"LOWER_BODY_GROUP",dragonBones.Animation.SAME_GROUP);
 upperBodyAnimationState.addBoneMask("head");
 upperBodyAnimationState.addBoneMask("body");
 lowerBodyAnimationState.addBoneMask("leg");
 lowerBodyAnimationState.addBoneMask("foot");
 ```
-
-可以访问示例中心查看参考示例的效果和下载源码：
-[DragonBones 高级特性](http://edn.egret.com/cn/index.php/article/index/id/713)
