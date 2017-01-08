@@ -3,7 +3,7 @@ Egret Engine 2.5.6 中开始支持精确碰撞检测。
 
 使用`hitTestPoint`方法的第三个参数。
 
-`shp.hitTestPoint( 10, 10，ture);`
+`shp.hitTestPoint( 10, 10，true);`
 
 ## 示例
 
