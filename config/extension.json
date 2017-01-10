@@ -22,6 +22,12 @@
   {
     "children": [
       {
+        "filename": "/extension/RES/newres/",
+        "text": "资源管理框架",
+        "des": "资源管理框架",
+        "in_use": true
+      },
+      {
         "filename": "/extension/RES/loadModules/",
         "text": "资源加载模块",
         "des": "资源加载模块",
