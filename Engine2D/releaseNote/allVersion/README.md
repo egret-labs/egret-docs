@@ -2,6 +2,7 @@
 
 | 版本 | 更新详解 | 下载地址 | 日期 |
 | -- | -- | -- | -- |
+| egret-core-4.0.0 | [更新详情](../../../Engine2D/update/update400/README.md) | [下载地址](https://github.com/egret-labs/egret-core/archive/v4.0.0.zip) | 2017-01-10 |
 | egret-core-3.2.6 | [更新详情](../../../Engine2D/update/update326/README.md) | [下载地址](https://github.com/egret-labs/egret-core/archive/v3.2.6.zip) | 2016-12-26 |
 | egret-core-3.2.5 | [更新详情](../../../Engine2D/update/update325/README.md) | [下载地址](https://github.com/egret-labs/egret-core/archive/v3.2.5.zip) | 2016-12-12 |
 | egret-core-3.2.4 | [更新详情](../../../Engine2D/update/update324/README.md) | [下载地址](https://github.com/egret-labs/egret-core/archive/v3.2.4.zip) | 2016-11-29 |
