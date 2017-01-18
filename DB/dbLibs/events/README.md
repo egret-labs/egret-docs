@@ -110,7 +110,7 @@ class Main extends egret.DisplayObjectContainer {
         armature.display.scaleY = 0.5;
         dragonBones.WorldClock.clock.add( armature );  
 
-        egret.Ticker.getInstance().register(  
+        egret.startTicker(  
           function(frameTime:number){dragonBones.WorldClock.clock.advanceTime(0.02)},  
             this );
 
@@ -176,7 +176,7 @@ private createGameScene():void {
     armature.display.scaleY = 0.5;
     dragonBones.WorldClock.clock.add( armature );  
 
-    egret.Ticker.getInstance().register(  
+    egret.startTicker(  
       function(frameTime:number){dragonBones.WorldClock.clock.advanceTime(0.02)},  
         this );
 
@@ -238,7 +238,7 @@ private createGameScene():void {
     armature.display.scaleY = 0.5;
     dragonBones.WorldClock.clock.add( armature );  
 
-    egret.Ticker.getInstance().register(  
+    egret.startTicker(  
       function(frameTime:number){dragonBones.WorldClock.clock.advanceTime(0.02)},  
         this );
 

@@ -39,10 +39,6 @@ dragonBones.WorldClock.clock.add( armature );
 dragonBones.WorldClock.clock.add( arm );
 armature.animation.gotoAndPlay("Run");
 arm.animation.gotoAndPlay("walk");
-egret.Ticker.getInstance().register(
-  function(frameTime:number){dragonBones.WorldClock.clock.advanceTime(0.01)},
-  this
-);
 ```
 
 可使用动画拷贝工具，将Robot骨架中得动画数据拷贝到Dragon骨架中。使用`EgretFactory`中的`copyAnimationsToArmature`方法可实现该效果。
