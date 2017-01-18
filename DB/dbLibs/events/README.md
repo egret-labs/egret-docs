@@ -101,19 +101,13 @@ class Main extends egret.DisplayObjectContainer {
         dragonbonesFactory.addDragonBonesData(dragonBones.DataParser.parseDragonBonesData(dragonbonesData));  
         dragonbonesFactory.addTextureAtlas(new dragonBones.EgretTextureAtlas(texture,textureData));
 
-        var armature: dragonBones.Armature = dragonbonesFactory.buildArmature("Dragon");
+        var armature:dragonBones.EgretArmatureDisplay = this.factory.buildArmatureDisplay("Dragon");
 
         this.addChild(armature.display);
         armature.display.x = 200;
         armature.display.y = 300;
         armature.display.scaleX = 0.5;
         armature.display.scaleY = 0.5;
-        dragonBones.WorldClock.clock.add( armature );  
-
-        egret.startTicker(  
-          function(frameTime:number){dragonBones.WorldClock.clock.advanceTime(0.02)},  
-            this );
-
         armature.addEventListener( dragonBones.AnimationEvent.START, this.startPlay,this);
         armature.addEventListener( dragonBones.AnimationEvent.LOOP_COMPLETE, this.loop_com,this);
 
@@ -167,19 +161,13 @@ private createGameScene():void {
     dragonbonesFactory.addDragonBonesData(dragonBones.DataParser.parseDragonBonesData(dragonbonesData));  
     dragonbonesFactory.addTextureAtlas(new dragonBones.EgretTextureAtlas(texture,textureData));
 
-    var armature: dragonBones.Armature = dragonbonesFactory.buildArmature("Dragon");
+    var armature:dragonBones.EgretArmatureDisplay = this.factory.buildArmatureDisplay("Dragon");
 
     this.addChild(armature.display);
     armature.display.x = 200;
     armature.display.y = 300;
     armature.display.scaleX = 0.5;
     armature.display.scaleY = 0.5;
-    dragonBones.WorldClock.clock.add( armature );  
-
-    egret.startTicker(  
-      function(frameTime:number){dragonBones.WorldClock.clock.advanceTime(0.02)},  
-        this );
-
     armature.addEventListener( dragonBones.AnimationEvent.START, this.startPlay,this);
     armature.addEventListener( dragonBones.AnimationEvent.LOOP_COMPLETE, this.loop_com,this);
     armature.addEventListener( dragonBones.FrameEvent.ANIMATION_FRAME_EVENT, this.frame_event,this);
@@ -229,19 +217,13 @@ private createGameScene():void {
     dragonbonesFactory.addDragonBonesData(dragonBones.DataParser.parseDragonBonesData(dragonbonesData));  
     dragonbonesFactory.addTextureAtlas(new dragonBones.EgretTextureAtlas(texture,textureData));
 
-    var armature: dragonBones.Armature = dragonbonesFactory.buildArmature("Dragon");
+    var armature:dragonBones.EgretArmatureDisplay = this.factory.buildArmatureDisplay("Dragon");
 
     this.addChild(armature.display);
     armature.display.x = 200;
     armature.display.y = 300;
     armature.display.scaleX = 0.5;
     armature.display.scaleY = 0.5;
-    dragonBones.WorldClock.clock.add( armature );  
-
-    egret.startTicker(  
-      function(frameTime:number){dragonBones.WorldClock.clock.advanceTime(0.02)},  
-        this );
-
     armature.addEventListener( dragonBones.AnimationEvent.START, this.startPlay,this);
     armature.addEventListener( dragonBones.AnimationEvent.LOOP_COMPLETE, this.loop_com,this);
     armature.addEventListener( dragonBones.FrameEvent.ANIMATION_FRAME_EVENT, this.frame_event,this);

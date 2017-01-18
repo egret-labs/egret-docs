@@ -34,11 +34,6 @@ arm.display.x = 250;
 arm.display.y = 350;
 arm.display.scaleX = 0.5;
 arm.display.scaleY = 0.5;
-//开始动画
-dragonBones.WorldClock.clock.add( armature );
-dragonBones.WorldClock.clock.add( arm );
-armature.animation.gotoAndPlay("Run");
-arm.animation.gotoAndPlay("walk");
 ```
 
 可使用动画拷贝工具，将Robot骨架中得动画数据拷贝到Dragon骨架中。使用`EgretFactory`中的`copyAnimationsToArmature`方法可实现该效果。
