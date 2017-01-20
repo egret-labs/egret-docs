@@ -186,6 +186,7 @@ AnimationPanel.ts
 		 */
 		private onButtonClick(): void {
 			this.tweenGroup.play();
+			//this.tweenGroup.play(0);从头播放
 		}
 	
 		protected createChildren(): void {
