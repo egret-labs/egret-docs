@@ -4,7 +4,7 @@
 
 * (2)explicitWidth，explicitHeight：显式设置的宽高值。默认情况下这两个值是NaN。当你显式调用width或height的setter方法赋值时，就会同时对这两个值赋值。width/height的值不一定会一直是你设置的值。如果你设置了布局属性（top+bottom等），就会导致width/height被父级设置成其他值（父级布局尺寸的优先级高于显式设置尺寸）。所以这两个属性的作用就是保存你显式设置的值。调试的时候也可以根据这个判断，是否是被显式设置了尺寸，还是父级强制布局的。
 
-* (3)maxWidth,minWidth,maxHeight,minHeight：最大和最小尺寸。这里要注意：它们同时影响测量和布局的结果。measure()方法执行完会对measuredWidth，measuredHeight赋值一次。然后交给UIComponent里的validteSize()方法，再次规范测量结果。这时候就根据这四个值来规范的。最终确定measuredWidth，measuredHeight的值。布局时同理。
+* (3)maxWidth,minWidth,maxHeight,minHeight：最大和最小尺寸。这里要注意：它们同时影响测量和布局的结果。measure()方法执行完会对measuredWidth，measuredHeight赋值一次。然后交给UIComponent里的validateSize()方法，再次规范测量结果。这时候就根据这四个值来规范的。最终确定measuredWidth，measuredHeight的值。布局时同理。
 
 * (4)width,height：这两个属性储存组件经过各种布局计算后得到的最终的尺寸值。width和height的取值规则：如果没有显式设置它们，就会根据测量的值赋值到它们上，显式设置了，就以显式设置的值为准，但是如果同时设置top+bottom或percentHeight这种布局属性的值，就会以布局属性为准。总结下优先级顺序是：布局设置的值 &gt; 显式设置的值 &gt; 测量的值。
 
