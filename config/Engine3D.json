@@ -693,6 +693,56 @@
     {
         "children": [
             {
+                "filename": "/Engine3D/unity/0/",
+                "text": "准备",
+                "des": "准备",
+                "in_use": true
+            },
+            {
+                "filename": "/Engine3D/unity/1/",
+                "text": "Mesh导出",
+                "des": "Mesh导出",
+                "in_use": true
+            },
+            {
+                "filename": "/Engine3D/unity/2/",
+                "text": "Material设置",
+                "des": "Material设置",
+                "in_use": true
+            },
+            {
+                "filename": "/Engine3D/unity/3/",
+                "text": "SkinnedMesh导出",
+                "des": "SkinnedMesh导出",
+                "in_use": true
+            },
+            {
+                "filename": "/Engine3D/unity/4/",
+                "text": "EffectGroup导出",
+                "des": "EffectGroup导出",
+                "in_use": true
+            },
+            {
+                "filename": "/Engine3D/unity/5/",
+                "text": "Scene导出",
+                "des": "Scene导出",
+                "in_use": true
+            },
+            {
+                "filename": "/Engine3D/unity/6/",
+                "text": "Particle限制",
+                "des": "Particle限制",
+                "in_use": true
+            },
+        ],
+        "isFolder": true,
+        "text": "Unity插件使用",
+        "des": "Unity插件使用",
+        "in_use": true
+    },
+    {
+        "children": [
+            {
                 "filename": "/Engine3D/gui/gui/",
                 "text": "GUI控件",
                 "des": "GUI控件",
