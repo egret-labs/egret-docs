@@ -694,8 +694,8 @@
         "children": [
             {
                 "filename": "/Engine3D/unity/0/",
-                "text": "准备",
-                "des": "准备",
+                "text": "插件安装",
+                "des": "插件安装",
                 "in_use": true
             },
             {
@@ -732,6 +732,12 @@
                 "filename": "/Engine3D/unity/6/",
                 "text": "Particle限制",
                 "des": "Particle限制",
+                "in_use": true
+            },
+            {
+                "filename": "/Engine3D/unity/7/",
+                "text": "寻路网格导出",
+                "des": "寻路网格导出",
                 "in_use": true
             }
         ],
