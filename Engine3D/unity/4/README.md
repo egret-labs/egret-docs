@@ -1,5 +1,4 @@
-EffectGroup导出
-----------
+
 
 	1）本篇教程将讲述如何输出EffectGroup特效组。
 	2）我们打开Example文件夹下的Example_4场景文件，目录位置如图所示：
@@ -7,12 +6,11 @@ EffectGroup导出
 ![](Img_1.png)
 
 	3）Example_4场景内如图所示：
-![](Img_1_1.png)
-![](Img_1_2.png)
-选择左侧的材质球
+
 ![](Img_2.png)
-会显示出上图所示的粒子动画
-	4）我们选中Fx_Portals_01，打开菜单栏Egret3D-->Tools-->AddEffectsGroup,为Fx_Portals_01添加EffectGroup脚本，脚本内有auto（自动播放）和 Loop（循环）可以勾选，由于该特效制作的时候已经循环，本次的导出只勾选自动，如下图所示：
+
+	4）我们选中Fx_Portals_01，打开菜单栏Egret3D-->Tools-->AddEffectsGroup,为Fx_Portals_01添加EffectGroup脚本，脚本内有auto（自动播放）和
+		Loop（循环）可以勾选，由于该特效制作的时候已经循环，本次的导出只勾选自动，如下图所示：
 
 ![](Img_3.png)
 
@@ -31,7 +29,8 @@ EffectGroup导出
 
 ![](Img_5.png)
 
-	8) 打开压缩资源目录，可以看到两个文件，effect.e3dPack和effect.e3dPackc，其中e3dPackc使用zip压缩，由于游览器限制问题，这里我们使用effect.e3dPack拷贝至main目录下：
+	8) 打开压缩资源目录，可以看到两个文件，effect.e3dPack和effect.e3dPackc，其中e3dPackc使用zip压缩，由于游览器限制问题，这里我们使用
+		effect.e3dPack拷贝至main目录下：
 
 ![](Img_6.png)
 
