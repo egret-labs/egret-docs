@@ -58,7 +58,7 @@ fnt有两种规范，一种是纯文本的，一种是JSON，这里以 Egret 配
 现在，创建新的 Egret 项目后，将会在入口文件 `index.html` 底部发现入口代码：   
 ```egret.runEgret({renderMode:"webgl", audioType:0});```    
 `audioType`参数可以使用如下数字取值，对应含义说明与后：0:默认，1:qq audio，2:web audio，3:audio。    
-这几种音频的具体说明见 [音频系统之播放类型](http://edn.egret.com/cn/docs/page/156#播放类型)   
+这几种音频的具体说明见 [音频系统之播放类型](http://developer.egret.com/cn/github/egret-docs/Engine2D/multimedia/audio/index.html)   
 
 
 #### 其他更新
@@ -77,13 +77,13 @@ fnt有两种规范，一种是纯文本的，一种是JSON，这里以 Egret 配
 DragonBones 4.7的运行库，相对之前的版本有较大的功能增加和改进，同时保证完美的向下兼容。   
 <!-- 全新的 TypeScript / JavaScript、ActionScript、C++ 的运行库支持，支持 DragonBones 4.5数据格式的全部功能。-->
 [DragonBonesGithub ](https://github.com/DragonBones)     
-[DragonBones 4.7 Data Format](https://github.com/DragonBones/DragonBonesAS/blob/master/docs/DragonBones%204.5%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E6%A0%87%E5%87%86%E8%AF%B4%E6%98%8E.md)
+[DragonBones 4.7 Data Format](https://github.com/DragonBones/DragonBonesJS/blob/master/docs/DragonBones_4.7_release_notes_zh.md)
  
 #### 增强了局部换装功能，解决轴点错位问题，支持一键整体换装，支持纹理延迟加载。
 * 增加 Factory.replaceSlotDisplay(), Factory.replaceSlotDisplayList() API 用于解决局部换种轴点错位的问题。
 * 增加 Armature.replaceTexture() API，用于实现替换整个骨架的贴图。
 * 增加骨架脱离贴图运行机制，可以实现贴图延时加载，动画边运行，贴图边加载。
-* 具体的使用文档可以参见[APISpec](http://edn.egret.com/cn/apidoc/)和[DragonBones局部换装与全局换装](http://edn.egret.com/cn/docs/page/1034)
+* 具体的使用文档可以参见[APISpec](http://developer.egret.com/cn/apidoc/)和[DragonBones局部换装与全局换装](http://developer.egret.com/cn/github/egret-docs/DB/dbLibs/replaceTexture/index.html)
 
 #### 规范骨架显示对象的类型，构造简单的骨骼动画更方便
 * 增加 IArmatureDisplay 接口, 规范Armatrue的display显示对象的类型。
