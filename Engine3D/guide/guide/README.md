@@ -36,7 +36,7 @@ Scene3D 作为整个场景显示的管理类，管理场景具备显示，和不
 
 ## Geometry
 
-Geometry是整个3D中使用的模型数据，它可以从3Dmax，blender，3Dmaya，等众多软件中输出，在egret3D有了自定义的模型数据格式，可以通过官方提供的3Dmax到处插件来进行导出，geometry中的数据内容主要有：
+Geometry是整个3D中使用的模型数据，它可以从3Dmax，blender，3Dmaya，等众多软件中输出，在egret3D有了自定义的模型数据格式，geometry中的数据内容主要有：
 
 - vertex position
 - vertex normal

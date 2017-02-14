@@ -677,12 +677,6 @@
                 "text": "Unity3d模型导出插件",
                 "des": "Unity3d模型导出插件",
                 "in_use": true
-            },
-            {
-                "filename": "/Engine3D/Egret3DExport/3dsMax/",
-                "text": "3ds max插件使用说明",
-                "des": "3ds max插件使用说明",
-                "in_use": true
             }
         ],
         "isFolder": true,
