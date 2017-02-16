@@ -1,7 +1,8 @@
 
 
-	1）前往unity3D官方网站，下载版本为4.7.1或其以上windows版本的安装程序,并安装。现阶段插件尚不支持unity3d 5.x版本和Mac版本的程序，使用时需要注意。
-	2）前往白鹭引擎的Github上下载所需导出插件unity4.7.1_Egret3D_Dll_0.0.1.unitypackage，下载完成后如图所示：
+1）前往unity3D官方网站，下载版本为4.7.1或其以上windows版本的安装程序,并安装。现阶段插件尚不支持unity3d 5.x版本和Mac版本的程序，使用时需要注意。
+
+2）下载所需导出插件[unity4.7.1_Egret3D_Dll_0.0.1.unitypackage](https://cdn.www.egret.com/20170204/589543c431dc6.zip)，下载完成后如图所示：
 
 ![](Img_1.png)
 
