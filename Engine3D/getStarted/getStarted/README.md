@@ -112,9 +112,9 @@
 	1）什么是View3D：
 		a) View3D是整个3D引擎的渲染视口，可以控制渲染窗口的大小，渲染的方式。
 		b) View3D内可以控制相机Camera3D，场景元素Scene3D，当前的View3D中会有一个Scene3D的节点和一个Camera3D来进行场景中的渲染。
-		c) View3D创建后，一般会保存在Engre3DCanvas中的View3D列表内，Engre3DCanvas会依次调用列表内View3D的主循环方法:
+		c) View3D创建后，一般会保存在Egret3DCanvas中的View3D列表内，Egret3DCanvas会依次调用列表内View3D的主循环方法:
 			public update(time: number, delay: number)。
-		d）Engre3DCanvas与View3D关系图：
+		d）Egret3DCanvas与View3D关系图：
 
 ![](Img_8.png)
 
