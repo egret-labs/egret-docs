@@ -116,7 +116,7 @@
 			public update(time: number, delay: number)。
 		d）Egret3DCanvas与View3D关系图：
 
-![](Img_8.png)
+![](Img_18.png)
 
 		e) 代码示例：
 
