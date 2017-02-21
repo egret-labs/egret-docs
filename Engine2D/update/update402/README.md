@@ -25,7 +25,9 @@
 * 实验性功能更新，目前只支持 Web 端
     * 新增照片选择器功能，可以选择手机照片并显示
     * 请访问[这里](http://wx.qimi.com/html/1210/love/1/index.html) 查看示例项目
-    * 示例
+   
+    
+    * 示例： egretProperties.json 加入 ”experimental“ 第三方库（和 ”egret“ 一样）
     
     ~~~
     this.stage.addEventListener(egret.TouchEvent.TOUCH_TAP, (e:egret.TouchEvent) => {
