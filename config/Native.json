@@ -2,15 +2,15 @@
   {
     "children": [
       {
-        "filename": "/Native/updateAndroid/update325/",
-        "text": "Android Support 3.2.5",
-        "des": "Android Support 3.2.5",
+        "filename": "/Native/updateAndroid/update402/",
+        "text": "Android Support 4.0.2",
+        "des": "Android Support 4.0.2",
         "in_use": true
       },
       {
-        "filename": "/Native/updateiOS/update325/",
-        "text": "iOS Support 3.2.5",
-        "des": "iOS Support 3.2.5",
+        "filename": "/Native/updateiOS/update402/",
+        "text": "iOS Support 4.0.2",
+        "des": "iOS Support 4.0.2",
         "in_use": true
       },
       {
@@ -19,6 +19,30 @@
         "des": "Android Support 历史更新",
         "in_use": true,
         "children": [
+          {
+            "filename": "/Native/updateAndroid/update401/",
+            "text": "Android Support 4.0.1",
+            "des": "Android Support 4.0.1",
+            "in_use": true
+          },
+          {
+            "filename": "/Native/updateAndroid/update400/",
+            "text": "Android Support 4.0.0",
+            "des": "Android Support 4.0.0",
+            "in_use": true
+          },
+          {
+            "filename": "/Native/updateAndroid/update326/",
+            "text": "Android Support 3.2.6",
+            "des": "Android Support 3.2.6",
+            "in_use": true
+          },
+          {
+            "filename": "/Native/updateAndroid/update325/",
+            "text": "Android Support 3.2.5",
+            "des": "Android Support 3.2.5",
+            "in_use": true
+          },
           {
             "filename": "/Native/updateAndroid/update324/",
             "text": "Android Support 3.2.4",
@@ -237,6 +261,30 @@
         "des": "iOS Support 历史更新",
         "in_use": true,
         "children": [
+          {
+            "filename": "/Native/updateiOS/update401/",
+            "text": "iOS Support 4.0.1",
+            "des": "iOS Support 4.0.1",
+            "in_use": true
+          },
+          {
+            "filename": "/Native/updateiOS/update400/",
+            "text": "iOS Support 4.0.0",
+            "des": "iOS Support 4.0.0",
+            "in_use": true
+          },
+          {
+            "filename": "/Native/updateiOS/update326/",
+            "text": "iOS Support 3.2.6",
+            "des": "iOS Support 3.2.6",
+            "in_use": true
+          },
+          {
+            "filename": "/Native/updateiOS/update325/",
+            "text": "iOS Support 3.2.5",
+            "des": "iOS Support 3.2.5",
+            "in_use": true
+          },
           {
             "filename": "/Native/updateiOS/update324/",
             "text": "iOS Support 3.2.4",
