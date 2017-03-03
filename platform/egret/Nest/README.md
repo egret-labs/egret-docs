@@ -50,7 +50,7 @@
  
 		var info:any = {};
 		//设置游戏id。如果是通过开放平台接入，请在开放平台游戏信息-》基本信息-》游戏ID 找到。
-		info.egretApId = 88888;
+		info.egretAppId = 88888;
 		//设置使用 Nest 版本。请传递2
 		info.version = 2;
 		//在debug模式下，请求nest接口会有日志输出。建议调试时开启
