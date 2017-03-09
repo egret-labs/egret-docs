@@ -8,8 +8,3 @@
 ### 下载地址
 
 [http://tool.egret-labs.org/ios-support/egret-ios-support-4.0.2.zip](http://tool.egret-labs.org/ios-support/egret-ios-support-4.0.2.zip)
-
-## 其他
-
-* 本版本提供了一个使用系统 JavaScriptCore.framework 的试用版，可以去掉原来iOS support提供的的JavaScriptCore.framework，[下载地址：https://github.com/egret-labs/egret-ios-support/tree/system_jsc](https://github.com/egret-labs/egret-ios-support/tree/system_jsc)
-

@@ -10,13 +10,8 @@
 * [修复] 修复进入后台后不能再次响应来电事件的问题；
 * [改进] 部分第三方库不再放在libEgretLib.a中，防止开发者在原生代码中使用这些库时方法名冲突；
 * [改进] 提高稳定性。
-
+* [改进] 本版本开始完全使用系统的 JavaScriptCore.framework。
 
 ### 下载地址
 
 [http://tool.egret-labs.org/ios-support/egret-ios-support-4.0.1.zip](http://tool.egret-labs.org/ios-support/egret-ios-support-4.0.1.zip)
-
-## 其他
-
-* 本版本提供了一个使用系统 JavaScriptCore.framework 的试用版，可以去掉原来iOS support提供的的JavaScriptCore.framework，[下载地址：https://github.com/egret-labs/egret-ios-support/tree/system_jsc](https://github.com/egret-labs/egret-ios-support/tree/system_jsc)
-
