@@ -142,7 +142,7 @@
 
 		nest.easyuser.login({}, function (resultInfo:nest.user.LoginCallbackInfo) {
 		    if (resultInfo.result == 0) {//登录成功
-				
+				//resultInfo.token
 			}
 			else if (resultInfo.result == -3) {//平台登陆账号被踢掉，需要重新登陆
 			
