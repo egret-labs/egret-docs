@@ -74,3 +74,25 @@ _options[@OPTION_GAME_GLVIEW_TRANSPARENT] = @"true";
 **功能：**修改游戏所在View的层级
 
 **使用方法：**将获取 gameEngineView 的方法由 game_engine_get_view 改为 game_engine_get_view_set_top ，将游戏所在的 View 放到最顶层。
+
+
+##  获取原生设备的电池电量信息
+
+**适用于Android/iOS support 3.1.4及以上。**
+
+**功能：**获取原生设备的电池电量信息。
+
+**使用方法：**
+```javascript
+var json_listene = { action: "listenDeviceInfoChanged" };
+var jsonStr_listene = JSON.stringify(json_listene);
+egret.ExternalInterface.call("egret.deviceInfo", jsonStr_listene);
+             
+egret.ExternalInterface.addCallback("egret.deviceInfo", function (message) {
+        console.log("message form native : " + message);
+});
+var json = { action: "getCurrentBatteryInfo" };
+var jsonStr = JSON.stringify(json);
+egret.ExternalInterface.call("egret.deviceInfo", jsonStr);
+```
+
