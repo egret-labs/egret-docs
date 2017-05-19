@@ -1,21 +1,66 @@
 
 
-## 结构信息
+每一个 egret 项目的根文件夹中均包含名为 ```egretProperties.json``` 配置文件，所有引擎所涉及的配置均存储在这个文件中。
+
+
+
+
+## 整体结构
 
 ![image](5604f755ba98b.png)
 
-### modules
-项目所使用的第三方库。根据 egretProperties.json 生成的库文件在 libs/modules 下面。
 
-* 引擎自带的类库（没有写有path路径的库）。如eui（最新的egret gui 库）、gui（旧 gui 库）、dragonBones（db骨骼动画需要的库）、socket（socket使用需要的支持库）、res（引擎提供的资源加载库以及素材的版本控制）、tween（缓动支持库）。
+## 字段描述
 
-* 其他第三方库的引用（带有path路径的库，通过```egret create_lib libName```创建的库）。如 md5 模块，path是相对当前项目的路径，最终指向的是 package.json 所在的目录。
-		
-		因为部分ide的问题，请将第三方库放到项目外面。
-		libs/modules 下的文件均为自动生成进去的，所以不用手动拷贝到 libs/modules 下。
-		使用egret build -e 会清理 libs/modules 下面的文件。
+### egret_version 字段
 
-### publish
+项目当前的使用的 egret 命令行的版本。
+
+在白鹭引擎 4.1 版之前，egret 命令行版本与 egret 的内置类库版本是统一的，从 4.1 版本开始，这两者的概念进行了分离，这意味着开发者可以使用 4.1 版的命令行，但是继续使用老版本的内置类库。
+
+白鹭引擎的设计目标是，所有的开发者均使用命令行的最新版本，而内置类库则使用开发者认为最稳定的版本。更多详情，请参加下一小节 ```modules 字段```
+
+### modules 字段
+
+定义项目中引用的所有库文件。每一个库都是形如 ```{ "name":"moduleName" , "path":"modulePath"}``` 这样的配置信息。
+
+在白鹭引擎4.1版本之前，白鹭引擎内置库不包含 ```path``` 字段，从白鹭引擎4.1版本开始，包括引擎内置库在内的所有库均包含```path```字段，如果没有此字段，编译器内部会为其添加一个名为```${EGRET_DEFAULT}```的默认值。
+
+4.1 版本的白鹭引擎引入了模块化更新机制，这使得开发者可以更自由的升级引擎的特定模块，而非每次升级就会更新项目中的全部引擎内置库。如下所示：
+
+```json
+{
+	"egret_version":"4.1.0",
+	"modules":[
+		{
+			"name":"egret",
+			"path":"${EGRET_DEFAULT}"
+		},
+		{
+			"name":"tween",
+			"path":"${EGRET_APP_DATA}/4.0.3"
+		}
+	]
+}
+```
+
+
+白鹭引擎4.1版本引入了两个环境变量
+
+* ```EGRET_DEFAULT```，表示当前引擎的路径，即执行 ```egret info```命令后输出的路径。
+* ```EGRET_APP_DATA```，表示引擎启动器中的缓存文件夹中的路径，引擎的历史版本会储存在此处。
+
+在上述配置文件中，引擎的 ```egret```模块会使用 ```egret_version```中配置的版本所对应的路径，```tween```模块会使用引擎启动器中下载的 4.0.3 版本所对应的路径。通过这种方式，开发者可以选择性的升级引擎的特定模块，而非一次性全部升级，从而降低因为版本升级带来的稳定性隐患。
+
+
+每个模块的 path 字段所对应的路径可能在项目中，也可能在项目外。
+
+* 如果在项目中，项目运行就会直接加载此路径所对应的库。
+* 如果在项目外，引擎编译时会首先将此路径所对应的库拷贝至项目中的 ```libs/modules``` 文件夹中，然后加载该文件夹中的库。
+
+修改该配置中的内容后，需要执行 ```egret clean``` 命令进行一次重新构建以保证改动生效
+
+### publish 字段
 发布项目所需要的一些配置文件。
 
 * path。发布文件所在的目录，默认创建的为 "bin-release"。 通过 ```egret publish [projectName] [--runtime native] [--version yourVersion]``` 发布后的文件所在的目录。其中，不加 ```--runtime native``` 即发布 web 项目，文件会被发布在 path/web/版本号下，不加 ```--version yourVersion```，即会生成一个当前时间点的文件夹，分别为 年后2位+月2位+日2位+时2位+分2位+秒2位。 Native 发布和 Web 类似。
@@ -31,7 +76,7 @@
 
 目前 Egret 提供的 RES 模块中，支持发布方式为 web = 0、native= 1，如果大家需要自定义版本控制，请修改对应的发布方式。
 
-### native
+### native 字段
 native 相关配置，只对 native 项目有用，在发布 Web 项目时，不会使用此字段相关参数。
 
 * path_ignore。拷贝项目素材到发布目录时所需要忽略的列表，这个里面的字符串会当做一个正则表达式，如果 "anim.*ons"。
@@ -45,16 +90,15 @@ native 相关配置，只对 native 项目有用，在发布 Web 项目时，不
 
 * ios_path（可省字段）。创建的ios工程的目录，这个是在创建ios项目时自动创建的。
 
-### web
+### web 字段
 web 相关配置，只对 web 项目有用，在发布 Native 项目时，不会使用此字段相关参数。
 * path_ignore。(4.0.0 以上支持)拷贝项目素材到发布目录时所需要忽略的列表
 
-### egret_version
-项目当前的egret的版本。此版本号不可以回退，如果想回退，请手动修改。
 
-### urlParams (3.1.6 以上支持)
 
-* 针对```egret startserver```命令添加URL参数，比如执行```egret startserver```后打开的地址：
+### urlParams 字段 (3.1.6 以上支持)
+
+* 针对```egret run```命令添加URL参数，比如执行```egret run```后打开的地址：
 
 	```http://10.0.4.63:3001/index.html?okok=12&id=455464564```
 
