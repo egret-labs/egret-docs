@@ -1,18 +1,14 @@
-在 Egret Engine 3.0 版本中，我们新增了一个使用 tsconfig.json 作为配置文件，自定义编译参数的功能。
+从白鹭引擎 3.0 开始，引擎编译器不再强制设置 TypeScript 编译器的编译参数，而是引入 tsconfig.json 作为配置文件，允许开发者自定义编译参数。
 
-tsconfig.json 是什么呢？熟悉 typescript 的朋友应该对它不陌生，它是一个 typescript 项目的配置文件，可以通过读取它来设置 ts 编译器的编译参数。
+tsconfig.json 是 Typescript 项目的配置文件，TypeScript 编译器编译代码之前，会首先读取这个配置文件，并根据其中的属性来设置这个 TypeScript 项目的编译参数。
 
-https://github.com/Microsoft/TypeScript/wiki/tsconfig.json
 
-这是微软的官方文档，里面有更详细的描述。
 
-TypeScript详细手册参考：[TypeScript Handbook（中文版）](https://www.gitbook.com/book/zhongsp/typescript-handbook/details)
-
-## 使用
+## 使用方式
 
 1 ) 在 egret 项目的文件夹里，创建一个名为 "tsconfig.json" 的文本文件
 
-2 ) 像下面这个例子一样，把您需要的编译参数写到 `compilerOptions` 里。
+2 ) 把您需要的编译参数添加到 `compilerOptions` 字段中，参考以下例子：
 ~~~
 {
     "compilerOptions": {
@@ -21,20 +17,29 @@ TypeScript详细手册参考：[TypeScript Handbook（中文版）](https://www.
     }
 }
 ~~~
-这个例子里有2个编译属性：
-* ` "sourceMap": true` 把 ts 文件编译成 js 文件的时候，同时生成对应的 `map` 文件
-* `"removeComments": true`  编译 js 的时候，删除掉注释
+上述例子中包含2个编译属性：
+* ` "sourceMap": true` 编译 `.ts` 文件至 `.js` 文件同时生成对应的 `.js.map` 文件，使用户调试时可以直接调试 `.ts` 文件而非 `.js` 文件。
+* `"removeComments": true`  编译 `.js` 同时删除原本 `.ts` 文件中的注释
 
 3 ) 执行 `egret build` 命令，这样就可以按照配置文件来编译 egret 项目了。
 
-更多的编译参数，您可以在上面的那个微软官方链接里找到
 
-如果您对 tsconfig 熟悉的话，应该会知道，除了 `compilerOptions` ，还有很多其他属性可以设置。但我们目前只支持 `compilerOptions` 这个编译属性，其他的还暂不支持。
+您可以通过阅读 tsconfig.json 的[官方文档](https://github.com/Microsoft/TypeScript/wiki/tsconfig.json)，了解详细的编译参数。
+
+TypeScript详细手册参考：[TypeScript Handbook（中文版）](https://www.gitbook.com/book/zhongsp/typescript-handbook/details)
+
+
 
 ## 不支持的编译参数
-因为 egret 项目有很多自定义的功能，有一些编译参数是不可以修改的，请不要在 tsconfig 里设置。如果您设置了，也不会起作用，还是按照默认的参数编译，cmd 里会有提示信息。
-下面这 7 个为不支持的参数
+
+因为白鹭引擎编译器对项目结构有一定一定要求，所以部分 TypeScript 编译参数是不可以修改的，请不要在 tsconfig 里设置。如果您设置了这些参数，引擎执行构建时也不会起作用，仍然会按照引擎内置的默认值进行构建，并抛出警告信息。
+
+以下参数暂时不支持开发者自行设置
 
 ```
 "target","outDir","module","noLib","outFile","rootDir","out"
 ```
+
+在白鹭引擎 3.x 中，除了 `compilerOptions` 字段之外，其他 tsconfig.json 可以设置的属性均不支持自定义设置，例如 ```files```,```includes```,```excludes```。
+
+从白鹭引擎 4.x 开始，上述不支持的属性均已支持。
