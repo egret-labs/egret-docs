@@ -55,13 +55,13 @@
             "des": "Egret Engine2D 3.2.4",
             "in_use": true
           },
-        	{
+          {
             "filename": "/Engine2D/update/update323/",
             "text": "Egret Engine2D 3.2.3",
             "des": "Egret Engine2D 3.2.3",
             "in_use": true
           },
-              {
+          {
             "filename": "/Engine2D/update/update322/",
             "text": "Egret Engine2D 3.2.2",
             "des": "Egret Engine2D 3.2.2",
@@ -299,6 +299,12 @@
         "filename": "/Engine2D/projectConfig/tsconfig/",
         "text": "tsconfig 配置文件",
         "des": "tsconfig 配置文件",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/projectConfig/libraryProject/",
+        "text": "库项目配置",
+        "des": "库项目配置",
         "in_use": true
       },
       {
