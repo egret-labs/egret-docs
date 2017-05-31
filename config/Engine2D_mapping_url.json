@@ -55,7 +55,7 @@
     "/Engine2D/net/sendHTTP/":"2d/net/sendHTTP",
     "/Engine2D/net/loadBitmap/":"2d/net/loadBitmap",
     "/Engine2D/net/loadText/":"2d/net/loadText",
-    "/Engine2D/bitmapTexture/creatBitmap/":"2d/bitmapTexture/creatBitmap",
+    "/Engine2D/bitmapTexture/creatBitmap/":"2d/bitmapTexture/createBitmap",
     "/Engine2D/bitmapTexture/scale9Grid/":"2d/bitmapTexture/scale9Grid",
     "/Engine2D/bitmapTexture/fillMode/":"2d/bitmapTexture/fillMode",
     "/Engine2D/bitmapTexture/useTexture/":"2d/bitmapTexture/useTexture",
