@@ -1,10 +1,10 @@
-相信大家都是从打印一行 Hellow World 开始来学习的。下面就从创建一个默认的 HelloWorld 项目开始。
+任何编程语言和框架的教程都是从打印 HelloWorld 开始的，白鹭引擎也不例外，首先请从创建一个的 HelloWorld 项目开始。
 
 ## 准备工作
 
 ### 引擎与工具
 
-首先当然是获得 Egret Engine 了。可以在官网[下载](http://www.egret.com/products/engine.html)。安装过程很简单。如果需要的话可以参考具：[安装与部署](../../../Engine2D/projectConfig/installation/README.md)和[引擎和工具的管理](../../../Engine2D/projectConfig/launcherManager/README.md)。安装好后以后我们可以方便的管理 Egret 引擎和工具了。
+开发者首先需要在白鹭引擎的官网白鹭引擎的[库管理器](http://www.egret.com/products/engine.html)。安装过程很简单。如果需要的话可以参考：[安装与部署](../../../Engine2D/projectConfig/installation/README.md)和[引擎和工具的管理](../../../Engine2D/projectConfig/launcherManager/README.md)。安装好后以后我们可以方便的管理白鹭引擎和工具了。
 
 打开引擎管理工具，可以看到有工具选项卡，可以在这里找到 Egret Wing。Egret Wing 是针对 Egret 项目的 IDE。下面的教程都以 Egret Wing 来做演示。
 
@@ -18,7 +18,7 @@ Egret 也支持在命令行完成编译，运行，发布等操作。在下面�
 
 ### TypeScript
 
-Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超集，具体内容可以参考[TyptScript语言手册](http://bbs.egret.com/thread-1441-1-1.html)。在下的教程中会一点一点讲解具体的语法与使用规则。Egret 的 API 和 AS3 有很多相似之处，如果您熟悉的话肯定容易上手。 
+Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超集，具体内容可以参考[TyptScript语言手册](http://bbs.egret.com/thread-1441-1-1.html)。接下来的教程包含 TypeScript 具体的语法与 API。如果开发者对 Flash 有所了解的话，会发现白鹭引擎的语法和 API 与 Flash 及 ActionScript 3.0 很类似。 
 
 ## 创建新项目
 
