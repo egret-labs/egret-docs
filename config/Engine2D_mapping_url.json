@@ -8,6 +8,7 @@
     "/Engine2D/projectConfig/cmdManual/":"2d/projectConfig/cmdManual",
     "/Engine2D/projectConfig/indexFile/":"2d/projectConfig/indexFile",
     "/Engine2D/projectConfig/configFile/":"2d/projectConfig/configFile",
+    "/Engine2D/projectConfig/modelconfig/":"2d/projectConfig/modelconfig",
     "/Engine2D/projectConfig/tsconfig/":"2d/projectConfig/tsconfig",
     "/Engine2D/projectConfig/libraryProject/":"2d/projectConfig/libraryProject",
     "/Engine2D/projectConfig/compileOrder/":"2d/projectConfig/compileOrder",

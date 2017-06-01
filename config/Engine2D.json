@@ -302,6 +302,12 @@
         "in_use": true
       },
       {
+        "filename": "/Engine2D/projectConfig/modelconfig/",
+        "text": "模块版本配置",
+        "des": "模块版本配置",
+        "in_use": true
+      },
+      {
         "filename": "/Engine2D/projectConfig/tsconfig/",
         "text": "tsconfig 配置文件",
         "des": "tsconfig 配置文件",
