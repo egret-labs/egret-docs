@@ -11,7 +11,7 @@
         "filename": "/Engine2D/releaseNote/allVersion/",
         "text": "全部版本列表",
         "des": "全部版本列表",
-        "in_use": true
+        "in_use": false
       },
       {
         "isFolder": true,
