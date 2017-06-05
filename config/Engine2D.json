@@ -330,6 +330,12 @@
         "text": "编译顺序说明",
         "des": "编译顺序说明",
         "in_use": true
+      },
+      {
+        "filename": "/Engine2D/webassembly/",
+        "text": "webassembly 概述",
+        "des": "webassembly 概述",
+        "in_use": true
       }
     ],
     "isFolder": true,
