@@ -1,4 +1,5 @@
 {
+    "/Engine2D/update/update500/":"2d/update/update500",
     "/Engine2D/update/update410/":"2d/update/update410",
     "/Engine2D/releaseNote/allVersion/":"2d/releaseNote/allVersion",
     "/Engine2D/update/update403/":"2d/update/update403",
@@ -8,6 +9,7 @@
     "/Engine2D/projectConfig/cmdManual/":"2d/projectConfig/cmdManual",
     "/Engine2D/projectConfig/indexFile/":"2d/projectConfig/indexFile",
     "/Engine2D/projectConfig/configFile/":"2d/projectConfig/configFile",
+    "/Engine2D/projectConfig/modelconfig/":"2d/projectConfig/modelconfig",
     "/Engine2D/projectConfig/tsconfig/":"2d/projectConfig/tsconfig",
     "/Engine2D/projectConfig/libraryProject/":"2d/projectConfig/libraryProject",
     "/Engine2D/projectConfig/compileOrder/":"2d/projectConfig/compileOrder",
