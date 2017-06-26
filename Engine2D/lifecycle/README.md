@@ -23,10 +23,12 @@ stage.addEventListener(egret.Event.DEACTIVATE,()=>{
 
 ```typescript
 egret.lifecycle.onPause = ()=> {
-    console.log("app 进入前台");
+    console.log("app 进入后台");
+    egret.ticker.pause(); // 关闭渲染与心跳
 }
 egret.lifecycle.onResume = ()=> {
-    console.log("app 进入后台");
+    console.log("app 进入前台");
+    egret.ticker.resume(); // 打开渲染与心跳
 }
 ```
 
