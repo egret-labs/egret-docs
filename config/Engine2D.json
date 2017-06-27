@@ -274,6 +274,12 @@
         "text": "Get Started",
         "des": "Get Started",
         "in_use": false
+      },
+      {
+        "filename": "/Engine2D/lifecycle/",
+        "text": "生命周期",
+        "des": "生命周期",
+        "in_use": true
       }
     ],
     "isFolder": true,
