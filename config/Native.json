@@ -2,6 +2,24 @@
   {
     "children": [
       {
+        "filename": "/Native/updateAndroid/update501/",
+        "text": "Android Support 5.0.1",
+        "des": "Android Support 5.0.1",
+        "in_use": true
+      },
+      {
+        "filename": "/Native/updateiOS/update501/",
+        "text": "iOS Support 5.0.1",
+        "des": "iOS Support 5.0.1",
+        "in_use": true
+      },
+      {
+        "isFolder": true,
+        "text": "Android Support 历史更新",
+        "des": "Android Support 历史更新",
+        "in_use": true,
+        "children": [
+      {
         "filename": "/Native/updateAndroid/update403/",
         "text": "Android Support 4.0.3",
         "des": "Android Support 4.0.3",
@@ -13,12 +31,6 @@
         "des": "iOS Support 4.0.3",
         "in_use": true
       },
-      {
-        "isFolder": true,
-        "text": "Android Support 历史更新",
-        "des": "Android Support 历史更新",
-        "in_use": true,
-        "children": [
           {
             "filename": "/Native/updateAndroid/update402/",
             "text": "Android Support 4.0.2",
