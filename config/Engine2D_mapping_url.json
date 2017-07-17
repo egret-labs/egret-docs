@@ -11,6 +11,7 @@
     "/Engine2D/projectConfig/launcherManager/":"2d/projectConfig/launcherManager",
     "/Engine2D/projectConfig/cmdManual/":"2d/projectConfig/cmdManual",
     "/Engine2D/projectConfig/indexFile/":"2d/projectConfig/indexFile",
+    "/Engine2D/projectConfig/tempfile/":"2d/projectConfig/tempfile",
     "/Engine2D/projectConfig/configFile/":"2d/projectConfig/configFile",
     "/Engine2D/projectConfig/modelconfig/":"2d/projectConfig/modelconfig",
     "/Engine2D/projectConfig/tsconfig/":"2d/projectConfig/tsconfig",
