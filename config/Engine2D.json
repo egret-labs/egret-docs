@@ -320,6 +320,12 @@
         "in_use": true
       },
       {
+        "filename": "/Engine2D/projectConfig/tempfile/",
+        "text": "入口文件模板",
+        "des": "入口文件模板",
+        "in_use": true
+      },
+      {
         "filename": "/Engine2D/projectConfig/configFile/",
         "text": "项目配置文件说明",
         "des": "项目配置文件说明",
