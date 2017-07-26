@@ -110,6 +110,12 @@
             "text": "快速入门",
             "des": "EUI快速入门",
             "in_use": true
+          },
+          {
+            "filename": "/extension/EUI/getStarted/projectconfig/",
+            "text": "EUI项目配置",
+            "des": "EUI项目配置",
+            "in_use": true
           }
         ],
         "isFolder": true,
