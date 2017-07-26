@@ -18,6 +18,7 @@
     "/Engine2D/projectConfig/tsconfig/":"2d/projectConfig/tsconfig",
     "/Engine2D/projectConfig/libraryProject/":"2d/projectConfig/libraryProject",
     "/Engine2D/projectConfig/compileOrder/":"2d/projectConfig/compileOrder",
+    "/Engine2D/projectConfig/wasmconfig/":"/2d/projectConfig/wasmconfig",
     "/Engine2D/webassembly/":"2d/webassembly",
     "/Engine2D/displayObject/visualProgram/":"2d/displayObject/visualProgram",
     "/Engine2D/displayObject/basicConcept/":"2d/displayObject/basicConcept",
