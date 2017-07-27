@@ -407,7 +407,7 @@
             "filename": "/extension/EUI/advancedSkills/tool/",
             "text": "EUI-BOOSTER-TOOL",
             "des": "EUI-BOOSTER-TOOL",
-            "in_use": true
+            "in_use": false
           },
           {
             "filename": "/extension/EUI/advancedSkills/useComponents/",
