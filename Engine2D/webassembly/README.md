@@ -33,5 +33,9 @@ WebAssembly 的发布并不意味着白鹭引擎已经放弃了基于 4.x 的 Ja
 ## 开发者建议
 
 * 目前由于 WebAssembly 在国内的运行环境尚未普及，所以所有用 WebAssembly 版本创建的项目，除了 Chrome 最新浏览器之外，均会回退到 asm.js 的模式，虽然如此，相比白鹭引擎 4.x 的 JavaScript 渲染器，性能也有很大的提升。
-* 由于 WebAssembly 还具备着一些不确定性因素，强烈建议尝试使用此渲染器的开发者与白鹭引擎官方团队保持密切联系。WebAssembly 渲染器的独有 API 在每个小版本均可能进行调整，并不保证向下兼容。
+* WebAssembly 目前会在类的静态变量声明处创建对象时报错。例如`public static display = new egret.DisplayObject();`这样的代码就会报错。建议把这种静态变量的赋值写到一个初始化函数里面，在文档类的构造函数调用初始化函数。
+
+## 内存管理
+* WebAssembly 会在 egret 启动时申请一块内存，所有 WebAssembly 对象均在这块内存中进行维护。申请内存的大小可以在 inde.html 中 runEgret 的 wasmSize 参数进行配置，默认大小为128MB。建议根据实际项目情况进行设置，如果 WebAssembly 内存不足程序会闪退。
+* WebAssembly 中显示对象和滤镜增加 dispose 方法进行对象销毁。由于 WebAssembly 端对象必须主动释放，所以在希望对象被垃圾回收时必须主动调用 dispose 方法。
 
