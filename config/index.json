@@ -106,6 +106,12 @@
         "des": "Developer更新日志",
         "text": "Developer更新日志",
         "in_use": "false"
+      },
+      {
+        "filename": "microclient.json",
+        "des": "微端解决方案",
+        "text": "微端解决方案",
+        "in_use": "true"
       }
     ],
     "isFolder": true,
