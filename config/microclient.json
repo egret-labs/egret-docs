@@ -1,5 +1,6 @@
 [
-  "children": [
+  {
+    "children": [
       {
         "filename": "/microclient/update/0.0.5/",
         "text": "Egret 微端 0.0.5",
