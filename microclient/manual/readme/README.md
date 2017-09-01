@@ -78,9 +78,9 @@ egret.runEgret({ renderMode: "webgl", audioType: 0 });
 ### 7）相关下载和安卓版本要求
 ##### 技术内测版的 Egret Launcher
 
-[Mac 版下载](http://tool.egret-labs.org/EgretLauncher/EgretLauncherForWeiduan-v0.6.4.dmg)
+[Mac 版下载](http://tool.egret-labs.org/EgretLauncher/EgretLauncherForMicroClient-v0.6.5.dmg)
 
-[Windows 版下载](http://tool.egret-labs.org/EgretLauncher/EgretLauncherForWeiduan-v0.6.4.exe)
+[Windows 版下载](http://tool.egret-labs.org/EgretLauncher/EgretLauncherForMicroClient-v0.6.5.exe)
 
 ##### 微端管理后台：[cloud.egret.com](http://cloud.egret.com)
 
