@@ -2,9 +2,9 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/update/update506/",
-        "text": "Egret Engine2D 5.0.6",
-        "des": "Egret Engine2D 5.0.6",
+        "filename": "/Engine2D/update/update507/",
+        "text": "Egret Engine2D 5.0.7",
+        "des": "Egret Engine2D 5.0.7",
         "in_use": true
       },
       {
@@ -20,53 +20,59 @@
         "in_use": true,
         "children": [
           {
+            "filename": "/Engine2D/update/update506/",
+            "text": "Egret Engine2D 5.0.6",
+            "des": "Egret Engine2D 5.0.6",
+            "in_use": true
+          },
+          {
             "filename": "/Engine2D/update/update505/",
             "text": "Egret Engine2D 5.0.5",
             "des": "Egret Engine2D 5.0.5",
             "in_use": true
           },
-      {
-        "filename": "/Engine2D/update/update504/",
-        "text": "Egret Engine2D 5.0.4",
-        "des": "Egret Engine2D 5.0.4",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/update/update503/",
-        "text": "Egret Engine2D 5.0.3",
-        "des": "Egret Engine2D 5.0.3",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/update/update502/",
-        "text": "Egret Engine2D 5.0.2",
-        "des": "Egret Engine2D 5.0.2",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/update/update501/",
-        "text": "Egret Engine2D 5.0.1",
-        "des": "Egret Engine2D 5.0.1",
-        "in_use": true
-      },
           {
-        "filename": "/Engine2D/update/update500/",
-        "text": "Egret Engine2D 5.0.0",
-        "des": "Egret Engine2D 5.0.0",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/update/update411/",
-        "text": "Egret Engine2D 4.1.1",
-        "des": "Egret Engine2D 4.1.1",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/update/update410/",
-        "text": "Egret Engine2D 4.1.0",
-        "des": "Egret Engine2D 4.1.0",
-        "in_use": true
-      },
+            "filename": "/Engine2D/update/update504/",
+            "text": "Egret Engine2D 5.0.4",
+            "des": "Egret Engine2D 5.0.4",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update503/",
+            "text": "Egret Engine2D 5.0.3",
+            "des": "Egret Engine2D 5.0.3",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update502/",
+            "text": "Egret Engine2D 5.0.2",
+            "des": "Egret Engine2D 5.0.2",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update501/",
+            "text": "Egret Engine2D 5.0.1",
+            "des": "Egret Engine2D 5.0.1",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update500/",
+            "text": "Egret Engine2D 5.0.0",
+            "des": "Egret Engine2D 5.0.0",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update411/",
+            "text": "Egret Engine2D 4.1.1",
+            "des": "Egret Engine2D 4.1.1",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update410/",
+            "text": "Egret Engine2D 4.1.0",
+            "des": "Egret Engine2D 4.1.0",
+            "in_use": true
+          },
           {
             "filename": "/Engine2D/update/update403/",
             "text": "Egret Engine2D 4.0.3",
