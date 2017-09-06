@@ -17,6 +17,8 @@
 
 白鹭引擎本次第三方库调整是为了更改第三方库的构建方式，而非使用方式。如果开发者仅仅是使用第三方库而非自行构建，不会收到任何影响
 
+[具体使用方法](http://developer.egret.com/cn/github/egret-docs/extension/threes/instructions/index.html)
+
 ## 如何用新的方式构建第三方库
 
 * 打开一个第三方库文件夹
