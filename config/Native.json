@@ -44,21 +44,9 @@
             "in_use": true
           },
           {
-            "filename": "/Native/updateiOS/update410/",
-            "text": "iOS Support 4.1.0",
-            "des": "iOS Support 4.1.0",
-            "in_use": true
-          },
-          {
             "filename": "/Native/updateAndroid/update403/",
             "text": "Android Support 4.0.3",
             "des": "Android Support 4.0.3",
-            "in_use": true
-          },
-          {
-            "filename": "/Native/updateiOS/update403/",
-            "text": "iOS Support 4.0.3",
-            "des": "iOS Support 4.0.3",
             "in_use": true
           },
           {
