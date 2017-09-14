@@ -2,9 +2,9 @@
   {
     "children": [
       {
-        "filename": "/microclient/update/0.0.6/",
-        "text": "Egret 微端 0.0.6",
-        "des": "Egret 微端 0.0.6",
+        "filename": "/microclient/update/0.0.7/",
+        "text": "Egret 微端 0.0.7",
+        "des": "Egret 微端 0.0.7",
         "in_use": true
       },
       {
@@ -19,36 +19,42 @@
         "des": "历史更新",
         "in_use": true,
         "children": [
-      {
-        "filename": "/microclient/update/0.0.5/",
-        "text": "Egret 微端 0.0.5",
-        "des": "Egret 微端 0.0.5",
-        "in_use": true
-      },
-      {
-        "filename": "/microclient/update/0.0.4/",
-        "text": "Egret 微端 0.0.4",
-        "des": "Egret 微端 0.0.4",
-        "in_use": true
-      },
-      {
-        "filename": "/microclient/update/0.0.3/",
-        "text": "Egret 微端 0.0.3",
-        "des": "Egret 微端 0.0.3",
-        "in_use": true
-      },
-      {
-        "filename": "/microclient/update/0.0.2/",
-        "text": "Egret 微端 0.0.2",
-        "des": "Egret 微端 0.0.2",
-        "in_use": true
-      },
-      {
-        "filename": "/microclient/update/0.0.1/",
-        "text": "Egret 微端 0.0.1",
-        "des": "Egret 微端 0.0.1",
-        "in_use": true
-      }
+          {
+            "filename": "/microclient/update/0.0.6/",
+            "text": "Egret 微端 0.0.6",
+            "des": "Egret 微端 0.0.6",
+            "in_use": true
+          },
+          {
+            "filename": "/microclient/update/0.0.5/",
+            "text": "Egret 微端 0.0.5",
+            "des": "Egret 微端 0.0.5",
+            "in_use": true
+          },
+          {
+            "filename": "/microclient/update/0.0.4/",
+            "text": "Egret 微端 0.0.4",
+            "des": "Egret 微端 0.0.4",
+            "in_use": true
+          },
+          {
+            "filename": "/microclient/update/0.0.3/",
+            "text": "Egret 微端 0.0.3",
+            "des": "Egret 微端 0.0.3",
+            "in_use": true
+          },
+          {
+            "filename": "/microclient/update/0.0.2/",
+            "text": "Egret 微端 0.0.2",
+            "des": "Egret 微端 0.0.2",
+            "in_use": true
+          },
+          {
+            "filename": "/microclient/update/0.0.1/",
+            "text": "Egret 微端 0.0.1",
+            "des": "Egret 微端 0.0.1",
+            "in_use": true
+          }
         ]
       }
     ],
@@ -58,25 +64,24 @@
     "in_use": true
   },
   {
-    "children":[
+    "children": [
       {
-        "filename":"/microclient/manual/readme/",
-        "text":"微端公测版使用说明",
-        "des":"微端公测版使用说明",
+        "filename": "/microclient/manual/readme/",
+        "text": "微端公测版使用说明",
+        "des": "微端公测版使用说明",
         "in_use": true
       },
       {
-        "filename":"/microclient/manual/useassest/",
-        "text":"使用本地资源",
-        "des":"使用本地资源"
+        "filename": "/microclient/manual/useassest/",
+        "text": "使用本地资源",
+        "des": "使用本地资源"
       },
       {
-        "filename":"/microclient/manual/closelaunchpage/",
-        "text":"关闭启动页",
-        "des":"关闭启动页"
+        "filename": "/microclient/manual/closelaunchpage/",
+        "text": "关闭启动页",
+        "des": "关闭启动页"
       }
     ],
-
     "isFolder": true,
     "text": "使用手册",
     "des": "使用手册",
