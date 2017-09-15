@@ -83,6 +83,7 @@ egret.runEgret({ renderMode: "webgl", audioType: 0 });
 [Windows 版下载](http://tool.egret-labs.org/EgretLauncher/EgretLauncherForMicroClient-v0.6.6.exe)
 
 ##### 微端管理后台：[cloud.egret.com](http://cloud.egret.com)
+[启动页 Demo 下载](http://tool.egret-labs.org/microclient/doc/zip/loadingPage_v4.1.zip)
 
 ##### 安卓版本要求：
 Android默认编译SDK版本：23（19及以上都可以）
