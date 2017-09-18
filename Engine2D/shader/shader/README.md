@@ -23,7 +23,7 @@ CustomFilter 构造函数中需要传入顶点着色器和片段着色器程序�
 ------
 
 ### 使用案例
-访问 [这里](http://developer.egret.com/cn/example/egret2d/index.html#210-egret2d-heibai) 查看演示示例
+访问 [这里](http://developer.egret.com/cn/example/egret2d/index.html#210-egret2d-customefilter) 查看演示示例
 
 ------
 
@@ -102,3 +102,5 @@ this.stage.addEventListener(egret.Event.ENTER_FRAME, function () {
 ```
 
 再运行游戏，会发现每帧格子的大小都会相应变化
+
+访问 [这里](http://developer.egret.com/cn/example/egret2d/index.html#210-egret2d-heibai) 查看演示示例
