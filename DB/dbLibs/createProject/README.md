@@ -39,7 +39,7 @@ DragonBones作为Egret引擎的扩展库已经集成在安装包中。如果你�
 
 通过上述三个步骤操作，你可以在项目中直接使用DragonBones。
 
-测试配置是否成功，可以使用下面语句进行调试。在控制台中直接打印出当前DragonBones数据格式的版本。
+测试配置是否成功，可以使用下面语句进行调试。在控制台中直接打印出当前 DragonBones 的版本。
 
 ```
 console.log(dragonBones.DragonBones.VERSION);
