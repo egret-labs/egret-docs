@@ -38,6 +38,8 @@ armatureDisplay.x = 200;
 armatureDisplay.y = 300;
 armatureDisplay.scaleX = 0.5;
 armatureDisplay.scaleY = 0.5;
+
+armatureDisplay.animation.play("Walk");
 ```
 
 `armatureDisplay`是名称为`robot`的骨架对象的显示对象。将其添加到显示列表中，就可以在舞台中看到当前提取的机器人。效果如图：
