@@ -1,16 +1,19 @@
-DragonBones系统中允许创建多个骨骼动画，用户可以创建多个EgretFactory来管理不同的骨骼动画，也可使用同一个EgretFactory来管理多个骨骼动画。
-
-使用多个EgretFactory时，可以单独操作EgretFactory，以及读取出的骨架和数据。使用同一EgretFactory时，需要对数据进行命名操作，以区分骨架系统与动画数据。
+DragonBones 系统中允许创建多个骨骼动画，用户可以创建多个 EgretFactory 来管理不同的骨骼动画，也可使用同一个 EgretFactory 来管理多个骨骼动画。
+当使用同一 EgretFactory 时，需要注意避免龙骨数据或骨架数据重名。
 
 使用多个EgretFactory方法可参考**创建骨骼动画**一节。
 范例如下：
 
 ```
-var dragonbonesData = RES.getRes( "RobotGame_1_json" );
-var textureData = RES.getRes( "texture_json" );
-var texture = RES.getRes( "texture_png" );
-var dragonbonesFactory:dragonBones.EgretFactory = new dragonBones.EgretFactory();
-var armature:dragonBones.Armature = dragonbonesFactory.buildArmatureUsingArmatureDataFromTextureAtlas(
+let dragonbonesData = RES.getRes( "RobotGame_1_json" );
+let textureData = RES.getRes( "texture_json" );
+let texture = RES.getRes( "texture_png" );
+
+let egretFactory = dragonBones.EgretFactory.factory;
+egretFactory.parseDragonBonesData(dragonbonesData);  
+egretFactory.parseTextureAtlasData(textureData, texture);
+
+let armatureDisplay = egretFactory.buildArmatureDisplay(
   dragonBones.DataParser.parseDragonBonesData(dragonbonesData),
   dragonBones.DataParser.parseDragonBonesData(dragonbonesData).getArmatureDataByName("robot"),
   new dragonBones.EgretTextureAtlas(texture,textureData)
