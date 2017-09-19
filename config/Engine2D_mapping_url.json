@@ -81,7 +81,7 @@
     "/Engine2D/filter/colorMatrixFilter/":"2d/filter/colorMatrixFilter",
     "/Engine2D/filter/blurFilter/":"2d/filter/blurFilter",
     "/Engine2D/filter/shadowFilter/":"2d/filter/shadowFilter",
-    "/Engine2D/shader/shader/":"/2d/shader/shader/",
+    "/Engine2D/shader/shader/":"/2d/shader/shader",
     "/Engine2D/timeControl/timer/":"2d/timeControl/timer",
     "/Engine2D/timeControl/ticker/":"2d/timeControl/ticker",
     "/Engine2D/timeControl/enterFrame/":"2d/timeControl/enterFrame",
