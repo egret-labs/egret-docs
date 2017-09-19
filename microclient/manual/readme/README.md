@@ -71,9 +71,13 @@ egret.runEgret({ renderMode: "webgl", audioType: 0 });
 
 * 2.启动页会被缓存下来，如果要修改，请使用不同的 url 地址。
 * 3.微端仅支持 4.1.0 以上的 Egret 引擎制作的游戏。
-* 4.游戏和启动页的地址，URL 地址最好是 .html 
+* 4.游戏地址的 html 页面里，不要使用 iframe 便签，否则可能无法解析。
 * 5.因为 iOS 访问 http 服务器需要打开 NSAllowsArbitraryLoads，为了能让游戏网页正常访问，我们的模板项目里是默认打开的。
 * 6.因为 iOS 禁止热更新，远程更新 Runtime 的功能仅在安卓系统生效。iOS 需要通过重新发包来实现更新。
+* 7.RES 资源管理模块里有个设置最大并发加载线程数量的方法，在微端里建议改成8，会提高加载速度。
+```
+RES.setMaxLoadingThread(8);
+```
 
 ### 7）相关下载和安卓版本要求
 ##### 技术内测版的 Egret Launcher
