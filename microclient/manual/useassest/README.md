@@ -22,8 +22,6 @@ assets目录的结构如下：
 		
 游戏放在“game”文件夹下，index.html需要在“game”的下一级。
 
-runtime放在“libs”下，目录结构如上所示。
-
 启动页放在“startup”下，index.html需要在“startup”的下一级。
 
 
