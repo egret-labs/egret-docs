@@ -26,21 +26,9 @@
             "in_use": true
           },
           {
-            "filename": "/Native/updateiOS/update508/",
-            "text": "iOS Support 5.0.8",
-            "des": "iOS Support 5.0.8",
-            "in_use": true
-          },
-          {
             "filename": "/Native/updateAndroid/update507/",
             "text": "Android Support 5.0.7",
             "des": "Android Support 5.0.7",
-            "in_use": true
-          },
-          {
-            "filename": "/Native/updateiOS/update507/",
-            "text": "iOS Support 5.0.7",
-            "des": "iOS Support 5.0.7",
             "in_use": true
           },
           {
@@ -327,6 +315,18 @@
         "des": "iOS Support 历史更新",
         "in_use": true,
         "children": [
+          {
+            "filename": "/Native/updateiOS/update508/",
+            "text": "iOS Support 5.0.8",
+            "des": "iOS Support 5.0.8",
+            "in_use": true
+          },
+          {
+            "filename": "/Native/updateiOS/update507/",
+            "text": "iOS Support 5.0.7",
+            "des": "iOS Support 5.0.7",
+            "in_use": true
+          },
           {
             "filename": "/Native/updateiOS/update506/",
             "text": "iOS Support 5.0.6",
