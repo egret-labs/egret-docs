@@ -87,6 +87,7 @@ egret.runEgret({ renderMode: "webgl", audioType: 0 });
 RES.setMaxLoadingThread(8);
 ```
 * 8.Runtime 模式下，[js 与 Native 的交互方式请看此文档](http://developer.egret.com/cn/github/egret-docs/Native/native/communicateSkill/index.html), webView 模式下的交互方式将在下个版本支持。
+* 9.如果游戏是横屏，请将微端工程也设置成横屏，否则会黑屏。
 
 ### 7）相关下载和安卓版本要求
 ##### 技术内测版的 Egret Launcher
