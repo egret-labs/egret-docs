@@ -7,7 +7,7 @@ TextField本身可以响应Touch事件。但这是针对整个TextField的。
 class textEventDemo extends egret.DisplayObjectContainer {
     constructor() {
         super();
-        var tx:egret.TextField = new egret.TextField;
+        var tx:egret.TextField = new egret.TextField();
         tx.textFlow = new Array<egret.ITextElement>(
             { text:"这段文字有链接", style: { "href" : "event:text event triggered" } }
             ,{ text:"\n这段文字没链接", style: {} }
