@@ -1,9 +1,3 @@
----
-title: "HelloWorld"
-author: Egret
-date: Aug 28, 2017
-output: word_document
----
 
 ### 安装引擎
 
