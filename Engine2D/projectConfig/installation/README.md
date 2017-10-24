@@ -1,11 +1,3 @@
----
-title: "Installation"
-author: Egret
-date: Aug 29, 2017
-output: 
-    word_document:
-        path: E:/egret/egret_docs/installation.docx
----
 
 Egret Engine 版本分为两类：“稳定版”，和“社区体验版”，社区体验版采用双周迭代方式发布。
 下面以 Egret Engine v5.0.6 来演示安装和部署流程。
@@ -20,7 +12,7 @@ Egret Engine 版本分为两类：“稳定版”，和“社区体验版”，�
 
 双击下载到的 EgretLauncher-v0.6.3。
 
-![](56023c0081c2b.png)
+![](56023c0081c2c.png)
 
 > 如果弹出警告请允许运行
 
