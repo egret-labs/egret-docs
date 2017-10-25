@@ -1,34 +1,25 @@
-## 自定义Shader
 
-------------------
+### 1.使用说明
+
+egret 5.0.3 以上版本中提供了 `egret.CustomFilter` ，供开发者自由扩展滤镜，实现各种定制化效果。
+> 该功能仅在web和微端环境下支持
 
 
-### 概述
-egret 5.0.3 以上版本中提供了 CustomFilter 可以供开发者自由扩展滤镜，实现各种定制化效果。
-`该功能仅在web和微端环境下支持`
-
-------
-
-### 详细说明
-CustomFilter 构造函数中需要传入顶点着色器和片段着色器程序的字符串，以及 uniforms 对象
+`CustomFilter` 构造函数中需要传入顶点着色器和片段着色器程序的字符串，以及 `uniforms` 对象
 
 * 开发者可以根据项目需求自行编写顶点着色器和片段着色器程序
 
-* 顶点着色器中aVertexPosition，aTextureCoord，aColor，projectionVector属性由引擎传入
+* 顶点着色器中`aVertexPosition`，`aTextureCoord`，`aColor`，`projectionVector`属性由引擎传入
 
-* 引擎渲染之前会将 uniforms 对象的属性上传到着色器中，开发者可以每帧改变 uniforms 对象的属性达到实现不同效果的需求。该属性目前只支持数字和数组
+* 引擎渲染之前会将 `uniforms` 对象的属性上传到着色器中，开发者可以每帧改变 `uniforms` 对象的属性达到实现不同效果的需求。该属性目前只支持数字和数组
 
-* CustomFilter 同时提供了 padding 属性，该属性为滤镜的内边距，如果自定义滤镜所需区域比原区域大（如引擎提供的描边滤镜），需要手动设置该属性。该属性以像素为单位
+* `egret.CustomFilter` 同时提供了 `padding` 属性，该属性为滤镜的内边距，如果自定义滤镜所需区域比原区域大（如引擎提供的描边滤镜），需要手动设置该属性。该属性以像素为单位
 
-------
+更详细的使用方法请参考[API文档](http://developer.egret.com/cn/apidoc/index/name/egret.CustomFilter#methodSummary)。
 
-### 使用案例
-访问 [这里](http://developer.egret.com/cn/example/egret2d/index.html#210-egret2d-customefilter) 查看演示示例
+### 2.实战教程
 
-------
-
-### 实战教程
-这里我们实现一个简单的黑白方块的效果，首先创建一个game项目，之后在Main.ts中createGameScene函数最后插入顶点着色器代码：
+下面示例实现一个黑白方块背景的效果，首先创建一个game项目，之后在Main.ts中createGameScene函数最后插入顶点着色器代码：
 
 ```
 let vertexSrc =
@@ -70,9 +61,9 @@ let fragmentSrc =
     "gl_FragColor = fg;\n" +
     "}";
 ```
-我们在代码中定义了每个格子的宽高，这两个值有uniforms属性传入。之后根据uv信息以及传入的宽高，利用取余函数算出奇偶数，通过奇偶决定格子是黑色还是白色。
+在代码中定义了每个方格的宽高，这两个值由`uniforms`属性传入。之后根据uv信息以及传入的宽高，利用取余函数算出奇偶数，通过奇偶决定方格是黑色还是白色。
 
-这里我们对背景图使用自定义滤镜，设定每个格子大小为50像素：
+对背景图使用自定义滤镜，设定每个方格大小为50像素：
 
 ```
 let size = 50;
@@ -80,11 +71,11 @@ let filter = new egret.CustomFilter(vertexSrc, fragmentSrc, { width: size / stag
 sky.filters = [filter];
 ```
 
-我们来看一下运行效果，发现背景图变成了黑白格子，每个格子大小为50像素。
+运行效果如下图，发现背景图变成了黑白交替的方格，每个方格大小为50像素。
 
 ![](heibai.png)
 
-之后我们通过帧函数改变格子大小(uniforms属性)：
+之后再通过帧函数改变方格大小(uniforms属性)：
 
 ```
 let inc = 1;
@@ -101,6 +92,8 @@ this.stage.addEventListener(egret.Event.ENTER_FRAME, function () {
 }, this);
 ```
 
-再运行游戏，会发现每帧格子的大小都会相应变化
+再次运行游戏，会发现每帧方格的大小都会相应变化
 
-访问 [这里](http://developer.egret.com/cn/example/egret2d/index.html#210-egret2d-heibai) 查看演示示例
+访问 [这里](http://developer.egret.com/cn/example/egret2d/index.html#210-egret2d-heibai) 查看上述演示示例。
+
+访问 [这里](http://developer.egret.com/cn/example/egret2d/index.html#210-egret2d-customefilter) 查看更多演示示例。

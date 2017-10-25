@@ -1,35 +1,8 @@
-在 Egret 3.0.1 版本中，解决了大家一直以来对声音问题的烦恼。包括声音不能播放、播放有延迟、播放会重新加载、火狐加载卡住、进入游戏破音爆音等在 Android 手机浏览器上会出现的问题。另外一个部分浏览器声音只能同时播放一个声音的问题，由于浏览器底层的实现，引擎暂时无法解决。
 
-## 注意事项
+## 1.创建Sound
+### 1.1.通过Sound加装音频
 
-声音资源的格式生成请严格按照此步骤来，不然兼容性会小很多。
-
-1. 使用格式工厂。选择 44100Hz，96kbps 转换。
-
-2. 如果还有问题，请再转一次。
-
-3. 如果还有问题，请裁减音频长度再次转换。
-
-4. 如果还有问题，请到论坛联系我们 [开发者论坛](http://bbs.egret.com/portal.php)，并提供对应的音频文件。
-
-> 说这么多其实就是一句话，如果有问题，请多转几次。
- 
-> 对于更专业的转换工具比如 audition，在测试中发现转换后的文件并不能解决在所有的浏览器中的播放问题，所以以目前的测试结果不推荐大家使用。
-
-> 在 iOS 系统（所有设备，包括IPAD）中，使用者在可能付费的网络环境中需要等待用户交互操作后才能播放媒体。为了获得在 iOS 系统中最大的兼容性，请避免使用自动播放音频（载入完成即播放），应添加合适的触发条件（比如播放按钮）。
-
-> 如果使用 WebAudio 方式还不能自动播放的话，那么目前来说没有其他方式来解决自动播放的问题。
-
-----
-
-在 Egret 2.5 版本中，我们对 Sound 进行了重新设计，解决了可以不能同时播放多个同一个音频的问题（手机必须得支持同时播放多个音频）。另外 Sound 类本身不再支持对音频的 stop 以及声音的大小设置，这些将会在 play 之后创建的 SoundChannel 中去设置。
-
-下面我们来讲下具体的使用方法。
-
-## 创建Sound
-### 通过Sound加装音频。
-
-* 通过 ```var sound:egret.Sound = new egret.Sound()``` 创建 Sound 对象，再通过 ```sound.load(url)```来加载，Sound 类支持的事件类型只有加载的2个事件结果：egret.Event.COMPLETE 音频加载完成时抛出；egret.IOErrorEvent.IO_ERROR 音频加载失败时抛出.
+* 通过 ```var sound:egret.Sound = new egret.Sound()``` 创建 `Sound` 对象，再通过 ```sound.load(url)```加载，`Sound` 类支持的事件类型有两个：`egret.Event.COMPLETE` 音频加载完成时抛出；`egret.IOErrorEvent.IO_ERROR` 音频加载失败时抛出.
 
 		var sound:egret.Sound = new egret.Sound();
         sound.addEventListener(egret.Event.COMPLETE, function loadOver(event:egret.Event) {
@@ -41,7 +14,7 @@
         sound.load("resource/sound/sound.mp3");
 
 
-### 通过 URLLoader 加装音频。
+### 1.2.通过 URLLoader 加装音频。
 
 * 具体调用如下。
 
@@ -53,22 +26,28 @@
 		loader.dataFormat = egret.URLLoaderDataFormat.SOUND;
 		loader.load(new egret.URLRequest("resource/sound/sound.mp3"));
 
-### 通过 res 加载获取。
+### 1.3.通过 res 加装音频。
 
 * 具体调用如下。
  	
 		var sound:egret.Sound = RES.getRes("sound_mp3");
 		sound.play();
         
-## 播放Sound
+## 2.播放Sound
 
-* play 的2个参数。startTime：声音开始播放的位置，默认为0。loops：声音播放的次数，小于等于0均为无限循环播放，大于0按照对应的值播放次数。
+### 2.1.播放方法
 
-* 和之前不一样的是，新版Sound play 之后，会创建一个 SoundChannel 对象，开发者可以直接对 SoundChannel 进行操作，比如设置音量。
+* `play()` 方法播放音频，有2个参数。`startTime`：声音开始播放的位置，默认为0。`loops`：声音播放的次数，小于等于0均为无限循环播放，大于0按照对应的值播放次数。
 
-* 对于声音的播放完成的事件监听，从原来对 Sound 进行监听，变成对 play 后创建的 SoundChannel 进行监听，并且去掉了 Sound 的 pause 和 resume方法。如果想要实现此方法，可以根据 SoundChannel 返回的 position 和 Sound 的 play 来实现。
+* 运行 `play()` 之后，会返回一个 `SoundChannel` 对象，开发者可以直接对 `SoundChannel` 进行操作，比如设置音量等。
 
-## 播放类型
+* `SoundChannel` 对象的 `egret.Event.SOUND_COMPLETE` 事件是播放完成事件。
+
+* 根据 `SoundChannel` 返回的 `position` 属性和 `Sound` 的 `play()` 方法可实现暂停和重播功能。
+
+* `stop()` 方法停止播放。
+
+### 2.2.播放类型
 
 目前引擎内提供了4种声音的兼容模式，分别是 Audio、 WebAudio、QQAudio（qzone提供的声音解决方案）、以及 NativeAudio（打包方案Audio）
 
@@ -81,36 +60,22 @@
 
 * NativeAudio：打包方案使用的audio。
 
-### 自定义播放类型
 
-在 Egret 3.1.4 中，加入了自定义播放类型，修改完后将会使用设置的类型。
+设置播放类型在项目根目录下的 index.html 模板文件中进行： 
 
 ```
-/**
- * {
- * "renderMode":, //引擎渲染模式，"canvas" 或者 "webgl"
- * "audioType": "" //使用的音频类型，0:默认，1:qq audio，2:web audio，3:audio
- * "antialias": //WebGL模式下是否开启抗锯齿，true:开启，false:关闭，默认为false
- * }
- **/
-egret.runEgret({renderMode:"webgl", audioType:0});
+    /**
+    * {
+    * "renderMode":, //引擎渲染模式，"canvas" 或者 "webgl"
+    * "audioType": 0 //使用的音频类型，0:默认，1:qq audio，2:web audio，3:audio
+    * "antialias": //WebGL模式下是否开启抗锯齿，true:开启，false:关闭，默认为false
+    * "retina": //是否基于devicePixelRatio缩放画布
+    * }
+    **/
+    egret.runEgret({renderMode:"webgl", audioType:0});
 ```
 
-## 其他
-
-* 新版不再需要手动调用 Sound 的 preload 以及 destroy 来将资源从本地加载到内存以及销毁，这些都会在内部自动实现。
-
-* 需要注意的是 iOS 游戏的域名必须要在玩吧指定的域下才可以使用上面提到的Qzone的js api(jsBridge)。参考链接：[玩吧js api接口说明](http://qzs.qzone.qq.com/qzone/qzact/act/game/wanba/index.html)。（玩吧需要登录才可以查看说明文档）。
-
-### 其他注意事项
-
-1. 由于一些浏览器不支持直接加载后播放，因此建议大家先预加载音乐文件，再在点击事件时直接调用 sound.play()（是直接调用，不要增加时间延迟或者加载什么的）。
-
-2. 由于 webAudio 对声音的格式有特定要求，如果测试碰到音频文件解码失败的情况，请使用具体来转换下格式（码率 44100Hz 96kbs ；工具推荐 格式工厂）。
-
-3. 非 WebAudio 方式播放的音频，很有可能在浏览器只能同时播放一种声音（这个也是为什么qzone单独提供了声音解决方案）。
-
-## 音频示例
+## 3.音频示例
 
 播放音频的简单示例代码如下 :
 
@@ -189,20 +154,34 @@ class SoundExample extends egret.DisplayObjectContainer {
 }
 ```
 
-首先使用`URLLoader`来载入音频，当然也可以使用上面的其他两种方式来载入音频。并监听这个音频的加载完成事件。当加载完成之后获取到音频的数据并新建`sound`对象。调用`play`方法来播放音频。
-
-`play`方法有两个参数，分别是开始时间`startTime`和播放次数`loops`。其中开始时间的单位为秒。第二个参数播放次数，默认值是 0，循环播放。 大于 0 为播放次数，如 1 为播放 1 次,小于等于 0 , 为循环播放。
-
+首先使用 `URLLoader` 来载入音频，也可以使用上面的其他两种方式载入音频。监听这个音频的加载完成事件，当加载完成之后获取到音频的数据并新建`sound`对象。
+调用`play()`方法来播放音频，本例中，开始时间的单位为0秒，循环播放。
 这里`play`方法会返回一个`SoundChannel`对象，通过控制`SoundChannel`的`volume`属性来设置音量大小,音量范围从 0（静音）至 1（最大音量）。`SoundChannel`对象的`position`属性可以获取到当前播放的时间，单位为秒。需要注意的是`position`属性是一个只读的属性，不能通过设置`position`来设置当前的播放时间。
+如果需要停止声音，可以调用`SoundChannel`对象的 `stop()` 方法。
 
-如果需要停止声音，可以调用`SoundChannel`对象的`stop`方法。
 
-### 获取声音长度
+## 4.注意事项
+
+* 声音资源的格式生成请严格按照此步骤来，不然会影响兼容性。
+
+1. 使用格式工厂。选择 44100Hz，96kbps 转换。
+
+2. 如果还有问题，请再转一次。
+
+3. 如果还有问题，请裁减音频长度再次转换。
+
+4. 如果还有问题，请到论坛联系我们 [开发者论坛](http://bbs.egret.com/portal.php)，并提供对应的音频文件。
+
+> 如果有问题，请尝试多转几次。
  
-在 Egret Engine 2D 3.0.4 中，新增了一个 API ，用以获取当前播放声音的长度。通过获取 `egret.Sound`的 length 属性来获取当前播放声音的长度。需要注意的是该属性是只读的，我们并不能改变播放声音的长度。上面例子中的代码：
+> 对于更专业的转换工具比如 audition，在测试中发现转换后的文件并不能解决在所有的浏览器中的播放问题，所以不推荐大家使用。
 
-```
-console.log(sound.length);
-```
+> 在 iOS 系统（所有设备，包括IPAD）中，使用者在可能付费的网络环境中需要等待用户交互操作后才能播放媒体。为了获得在 iOS 系统中最大的兼容性，请避免使用自动播放音频（载入完成即播放），应添加合适的触发条件（比如播放按钮）。
 
-用来获取音频的长度。
+> 如果使用 WebAudio 方式还不能自动播放的话，那么目前来说没有其他方式来解决自动播放的问题。
+
+* iOS 游戏的域名必须要在玩吧指定的域名下才可以使用上面提到的Qzone的js api(jsBridge)。
+
+* 由于一些浏览器不支持直接加载后播放，因此建议先预加载音乐文件，并在点击事件时直接调用 `sound.play()`。
+
+* 非 WebAudio 方式播放的音频，很有可能在浏览器只能同时播放一种声音（这个也是为什么qzone单独提供了声音解决方案）。

@@ -618,9 +618,9 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/bitmapTexture/creatBitmap/",
-        "text": "创建位图",
-        "des": "创建位图",
+        "filename": "/Engine2D/bitmapTexture/bitmapTexture/",
+        "text": "位图纹理",
+        "des": "位图纹理",
         "in_use": true
       },
       {
@@ -656,21 +656,9 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/blendMode/normal/",
-        "text": "NORMAL",
-        "des": "NORMAL",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/blendMode/add/",
-        "text": "ADD",
-        "des": "ADD",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/blendMode/erase/",
-        "text": "ERASE",
-        "des": "ERASE",
+        "filename": "/Engine2D/blendMode/blendMode/",
+        "text": "混合模式",
+        "des": "混合模式",
         "in_use": true
       }
     ],
@@ -682,27 +670,9 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/filter/glowFilter/",
-        "text": "发光滤镜",
-        "des": "发光滤镜",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/filter/colorMatrixFilter/",
-        "text": "颜色矩阵滤镜",
-        "des": "颜色矩阵滤镜",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/filter/blurFilter/",
-        "text": "模糊滤镜",
-        "des": "模糊滤镜",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/filter/shadowFilter/",
-        "text": "投影滤镜",
-        "des": "投影滤镜",
+        "filename": "/Engine2D/filter/filter/",
+        "text": "滤镜",
+        "des": "滤镜",
         "in_use": true
       },
       {
@@ -720,21 +690,9 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/timeControl/timer/",
-        "text": "Timer 计时器",
-        "des": "Timer 计时器",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/timeControl/ticker/",
-        "text": "Ticker 心跳",
-        "des": "Ticker 心跳",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/timeControl/enterFrame/",
-        "text": "帧事件",
-        "des": "帧事件",
+        "filename": "/Engine2D/timeControl/timeControl/",
+        "text": "时间控制",
+        "des": "时间控制",
         "in_use": true
       }
     ],
@@ -758,21 +716,9 @@
         "in_use": true
       },
       {
-        "filename": "/Engine2D/multimedia/system/",
-        "text": "系统信息",
-        "des": "系统信息",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/multimedia/gyro/",
-        "text": "陀螺仪",
-        "des": "陀螺仪",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/multimedia/location/",
-        "text": "地理位置",
-        "des": "地理位置",
+        "filename": "/Engine2D/multimedia/environment/",
+        "text": "环境信息",
+        "des": "环境信息",
         "in_use": true
       }
     ],

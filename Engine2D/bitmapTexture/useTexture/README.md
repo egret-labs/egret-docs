@@ -1,8 +1,11 @@
-纹理集听上去名称高大上，实则概念非常简单。纹理集实际上就是将一些零碎的小图放到一张大图当中。游戏中也经常使用到纹理集。
+纹理集是将一些零碎的小图放到一张大图当中。游戏中经常使用到纹理集。
 
-使用纹理集的好处很多，我们通过将大量的图片拼合为一张图片从而减少网络请求，原先加载数次的图片资源现在加载一次即可。 同时，在引擎渲染的时候也会较少IO读取，从而提高性能。
+使用纹理集的好处：
 
-Egret内置了纹理集的支持，在编写代码之前，我们需要先制作一张纹理集，具体使用的工具可以选择业内比较流行的 Texture Merger。 具体使用方法请参考[Texture Merger](../../../tools/TextureMerger/manual/README.md)。
+* 将大量的图片拼合为一张图片，从而减少网络请求。原先加载数次的图片资源现在加载一次即可。 
+* 在引擎渲染的时候会较少IO读取，从而提高性能。
+
+Egret内置了纹理集的支持，在编写代码之前，需要先制作一张纹理集，具体使用的工具可以选择业内比较流行的 Texture Merger。 具体使用方法请参考[Texture Merger](../../../tools/TextureMerger/manual/README.md)。
 
 ## 使用步骤
 
@@ -11,9 +14,9 @@ Egret内置了纹理集的支持，在编写代码之前，我们需要先制作
   ![](566150114f41c.png)
 
 
-  同时生成的对应的json文件如下：
+同时生成的对应的json文件如下：
   
-   ```
+```
 {
     "file": "dogs.png",
     "frames": {
@@ -82,11 +85,11 @@ Egret内置了纹理集的支持，在编写代码之前，我们需要先制作
 ```
 
 
-* 将资源文件拷贝到项目文件夹中的 `resource/assets/` 目录下，同时我们修改资源配置文件 `default.des.json` 。
+* 将资源文件拷贝到项目文件夹中的 `resource/assets/` 目录下，同时修改资源配置文件 `default.des.json` 。
 
-  资源配置文件内容如下：
+资源配置文件内容如下：
 
-  ```
+```
 {
 "resources":
     [
@@ -101,7 +104,7 @@ Egret内置了纹理集的支持，在编写代码之前，我们需要先制作
 
 * 编写代码：
 
-   ```
+```
 class BitmapTest extends egret.DisplayObjectContainer{
     public constructor()
     {
@@ -122,15 +125,15 @@ class BitmapTest extends egret.DisplayObjectContainer{
 }
 ```
 
-  我们注意其中一行
+注意其中一行：
 
-  ```
+```
 var txtr:egret.Texture = RES.getRes( "dogs.dog1" );
 ```
 
-   其中dogs为纹理集，id为该纹理集中的一个资源id。
+其中dogs为纹理集，id为该纹理集中的一个资源id。
 
-   编译后运行，效果如图：
+编译后运行，效果如图：
 
 
 ![](5661501178058.png)
