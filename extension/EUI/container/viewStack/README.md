@@ -1,8 +1,8 @@
-## ViewStack
+### ViewStack
 
-您可以在 ViewStack 这个容器中添加多个子项，但只能显示其中的一个。您可以通过设置 selectedIndex 或者 selectedChild 属性，来控制当前应该显示的子项。
+ViewStack 是层叠容器，在 ViewStack 容器中可以添加多个子项，但只能显示其中的一个。通过设置 `selectedIndex` 或者 `selectedChild` 属性，来控制当前应该显示的子项。
 
-首先我们创建一个专用于显示 ViewStack 的类：
+首先创建一个专用于显示 ViewStack 的类：
 
 ``` TypeScript
 class ViewStackDemo extends eui.Group {
@@ -41,5 +41,5 @@ class ViewStackDemo extends eui.Group {
 
 ![](5608f2da1e4ac.png)  ![](5608f2da5e32a.png)
 
-## TabBar
+### TabBar
 ViewStack通常都同时配合导航条使用，这部分内容请参考 [选项卡](../../../../extension/EUI/dataCollection/tabBar/README.md) 章节

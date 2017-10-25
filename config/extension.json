@@ -586,20 +586,6 @@
   {
     "children": [
       {
-        "filename": "/extension/FullScreenVideo/FullScreen/",
-        "text": "视频全屏处理",
-        "des": "视频全屏处理",
-        "in_use": true
-      }
-    ],
-    "isFolder": true,
-    "text": "FullScreenVideo视频扩展库",
-    "des": "FullScreenVideo视频扩展库",
-    "in_use": true
-  },
-  {
-    "children": [
-      {
         "filename": "/extension/PhysicalSystemComponents/introduction/",
         "text": "简介",
         "des": "组件实体系统简介",

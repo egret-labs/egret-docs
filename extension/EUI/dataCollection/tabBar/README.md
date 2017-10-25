@@ -1,8 +1,8 @@
-在 [层叠容器](../../../../extension/EUI/container/viewStack/README.md) 章节，我们介绍了 ViewStack，那么应该用什么来控制 ViewStack 的显示比较好呢？TabBar 是个不错的选择。TabBar 会根据数据源，显示一组按钮，并且在同一时间，只有一个按钮会被选中，并且如果数据源是一个ViewStack 的话，那么 TabBar 的选中项索引将和 ViewStack 的选中项索引保持一致。
+在 [层叠容器](../../../../extension/EUI/container/viewStack/README.md) 章节，我们介绍了 ViewStack，而本节介绍的 TabBar 可以用来控制 ViewStack 的显示。TabBar 会根据数据源，显示一组按钮，并且在同一时间，只有一个按钮会被选中，并且如果数据源是一个ViewStack 的话，那么 TabBar 的选中项索引将和 ViewStack 的选中项索引保持一致。
 
 ##  用法1：结合ViewStack
 
-我们修改 [层叠容器](../../../../extension/EUI/container/viewStack/README.md) 章节的例子，不再用 timer 控制 ViewStack 的切换，而是绑定到 TabBar 上面：
+修改 [层叠容器](../../../../extension/EUI/container/viewStack/README.md) 章节的例子，不再用 timer 控制 ViewStack 的切换，而是绑定到 TabBar 上面：
 
 ``` TypeScript
 
@@ -40,9 +40,9 @@ class TabBarDemo extends eui.Group {
 
 ```
 
-> 注意上面我们为循环产生的group设置了名称(通过name属性)，这样TabBar的显示，就可以根据Group的名称来做。由于ViewStack实现的是ICollection接口，它默认会取子项的name属性，就是说，想显示在TabBar的文本，必须写在子项的name属性上。
+> 上面代码中为循环产生的group设置了名称(通过name属性)，这样TabBar的显示，就可以根据Group的名称来做。由于ViewStack实现的是ICollection接口，它默认会取子项的name属性，就是说，想显示在TabBar的文本，必须写在子项的name属性上。
 
-  通过设置 TabBar.dataProvider 等于 ViewStack 实例，来实现两者的绑定。
+  通过设置 `TabBar.dataProvider` 等于 ViewStack 实例，来实现两者的绑定。
 
 
 
@@ -52,7 +52,7 @@ class TabBarDemo extends eui.Group {
 
 ## 用法2：结合ArrayCollection
 
-TabBar 也可以单独使用的，将数据源设置为一个 ArrayCollection 实例即可。并且您可以通过侦听 ITEM_TAP 事件，来获取TabBar 的选中项。示意代码：
+TabBar 也可以单独使用的，将数据源设置为一个 ArrayCollection 实例即可。并且可以通过侦听 `ITEM_TAP` 事件，来获取 TabBar 的选中项。示例代码：
 
 ``` TypeScript
 

@@ -1,4 +1,4 @@
-如果在网络请求的同时还需要提交数据，那么可以使用 `URLVariables`。
+如果在网络请求的同时还需要提交数据，需要使用 `URLVariables`。
 
 使用 `URLVariables` 类可以在应用程序和服务器之间传输变量。将 `URLVariables` 对象与 `URLLoader` 类的方法、 `URLRequest` 类的  `data` 属性一起使用。
 
@@ -6,7 +6,7 @@
 
 1. 提交的数据放入 `URLRequest` 对象的 `data` 属性值，并通过 `URLRequest` 对象提交。
 
-1. 读取服务器端脚本返回的数据
+2. 读取服务器端脚本返回的数据
 
 具体示例代码如下：
 

@@ -1,8 +1,8 @@
-图片控件对应的类是 eui.Image。eui.Image 继承自 egret.Bitmap，实现了 eui.UIComponent 接口。因此它不仅拥有基本的位图功能(egret.Bitmap)，还有自动布局功能(eui.UIComponent)。
+图片控件对应的类是 `eui.Image`。`eui.Image` 继承自 `egret.Bitmap`，实现了 `eui.UIComponent` 接口。因此它不仅拥有基本的位图功能(egret.Bitmap)，还有自动布局功能(eui.UIComponent)。
 
 基本的位图API使用参考 [egret Engine 编程指南 - 处理位图的基本知识](../../../../Engine2D/bitmapTexture/scale9Grid/README.md)
 
-使用 egret.Image 加载并显示一张图片非常简单，代码如下：
+使用 `egret.Image` 加载并显示图片的代码如下：
 
 ```  TypeScript
 var image = new  eui.Image();
@@ -22,7 +22,7 @@ this.addChild(image);
 
 需要注意的是缩小可能会出现问题。
 
-Image 的 scale9Grid 属性是一个指定的矩形区域，矩形区域对应 A5 区域的起点坐标以及宽高。
+Image 的 `scale9Grid` 属性是一个指定的矩形区域，矩形区域对应 A5 区域的起点坐标以及宽高。
 
 显示一个指定尺寸为 200x200 的九宫格图片，代码如下：
 

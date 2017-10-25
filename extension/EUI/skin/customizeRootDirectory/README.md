@@ -1,6 +1,6 @@
 ## 默认加载
 
-打开主题配置文件 ** default.thm.json **，你会看到类似下面这样的内容
+打开主题配置文件 ** default.thm.json **，会看到类似下面的内容
 
 ~~~ typescript
 {
@@ -24,7 +24,7 @@ http://10.0.6.138:3000/resource/eui_skins/ButtonSkin.exml
 
 ## 自定义加载
 
-如果你想改变 **resource **文件夹的位置，可以使用 **EXML.prefixURL = xxxx** 这个方法来实现。
+如果想改变 **resource **文件夹的位置，可以使用 **EXML.prefixURL = xxxx** 方法来实现。
 
 举个例子：
 
@@ -41,6 +41,6 @@ theme.addEventListener(eui.UIEvent.COMPLETE, this.onThemeLoadComplete, this);
 http://10.0.6.138:3000/another/resource/eui_skins/ButtonSkin.exml
 ~~~
 
-这样就可以根据自己的需求来自定义 exml 文件的加载根目录了。
+按照上述方法可以根据开发者的需求来自定义 exml 文件的加载根目录。
 
 

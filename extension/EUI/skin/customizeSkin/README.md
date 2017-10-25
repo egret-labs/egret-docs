@@ -1,4 +1,4 @@
-比如我们有一个自定义的皮肤，名称为**testSkin.exml**，有两种方式使用它
+对于一个自定义的皮肤，名称为**testSkin.exml**，有两种方式使用它
 ~~~ typescript
 <?xml version="1.0" encoding="utf-8"?> <e:Skin class="mySkin.TestSkin" xmlns:e="http://ns.egret.com/eui"> <e:DataGroup> <e:itemRendererSkinName> <e:Skin> <e:Label textColor="0xfd0000" text="{data.label}"/> </e:Skin> </e:itemRendererSkinName> <e:ArrayCollection> <e:Array> <e:Object label="item1"/> <e:Object label="item2"/> <e:Object label="item3"/> </e:Array> </e:ArrayCollection> </e:DataGroup> </e:Skin>~~~
 
@@ -32,9 +32,9 @@ egret create euiDemo --type eui
 创建一个 eui 项目，里面默认就会有主题管理解析的示例。
 具体的文档在这里：http://edn.egret.com/cn/index.php/article/index/id/511
 
-你会发现，方式1的代码还可以正常使用，但是console 会先输出 **onComplete** 再输出 **createChildren**，和之前相反。这是因为主题已经加载过这个 exml 文件了，所以不需要重新加载，直接就创建出来了。
+方式1的代码还可以正常使用，但是console 会先输出 **onComplete** 再输出 **createChildren**，和之前相反。这是因为主题已经加载过这个 exml 文件了，所以不需要重新加载。
 
-另外因为我们在 exml 中定义了 **class="mySkin.TestSkin"**,所以还可以像下面这样使用
+另外因为在 exml 中定义了 **class="mySkin.TestSkin"**,所以还可以像下面这样使用
 ~~~ typescript
 class TestSkin extends eui.Component {
     constructor() {

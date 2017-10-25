@@ -1,15 +1,15 @@
-垂直布局的行为和水平布局类似，只不过方向变了，从水平方向变为竖直方向。     
+垂直布局的行为和水平布局类似，只是方向从水平方向变为竖直方向。     
 
->这里仍然使用我们前面的eui默认项目。
+>这里仍然使用 eui 默认项目。
 
-我们仍然使用水平布局所用的代码，将布局方式改变为垂直：    
+仍然使用水平布局所用的代码，将布局方式改变为垂直：    
 ``` TypeScript   
 var btn1:eui.Button = new eui.Button();
-btn1.label = "eui 按钮 A";
+btn1.label = "button A";
 var btn2:eui.Button = new eui.Button();
-btn2.label = "eui 按钮 B";
+btn2.label = "button B";
 var btn3:eui.Button = new eui.Button();
-btn3.label = "eui 按钮 C";
+btn3.label = "button C";
 this.myGroup.addChild( btn1 );
 this.myGroup.addChild( btn2 );
 this.myGroup.addChild( btn3 );

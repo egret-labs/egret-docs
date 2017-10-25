@@ -1,7 +1,8 @@
-eui.ProgressBar 进度条，我们一般用在加载某个或某组资源的时候，显示加载进程，帮助用户消磨加载过程这段无聊的时间。
-跟前面的滑块 eui.Slider 控件一样，进度条控件也继承自 eui.Range 控件。也就是说 eui.Progress 进度条控件也可以设置 maximum 、minimum 、value 等属性。
+`eui.ProgressBa` 进度条，一般用在加载某个或某组资源的时候，显示加载进程。
 
-## 水平方向进度条
+与滑块控件一样，进度条控件也继承自 `eui.Range` 控件。也就是说 `eui.Progress` 进度条控件也可以设置 `maximum` 、`minimum `、`value` 等属性。
+
+### 水平方向进度条
 ``` TypeScript
 private pBar:eui.ProgressBar
 private initProgressBar():void{
@@ -26,7 +27,7 @@ private timerHandler():void{
 
 ![](56015bfa15f46.png)
 
-## 垂直方向进度条
+### 垂直方向进度条
 ``` TypeScript
 private vBar:eui.ProgressBar;
 private initProgressvBar() {
@@ -59,4 +60,4 @@ private timerVBarHandler():void{
 ```
 egret create HelloEUI --type eui
 ```
-> 创建的示例项目的默认皮肤。可以在示例项目的`skins`文件夹下找到皮肤的 exml 文件。
+> 创建示例项目的默认皮肤。可以在示例项目的`eui_skins`文件夹下找到默认皮肤的 exml 文件。

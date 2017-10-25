@@ -1,6 +1,6 @@
 通过使用[鼠标支持库](https://github.com/egret-labs/egret-game-library/tree/master/mouse)可以监听 PC 上的鼠标事件。
 
-## 引入鼠标库
+## 1.引入鼠标库
 
 引入鼠标支持库与引入其他第三方库过程相同，首先[下载](https://github.com/egret-labs/egret-game-library/tree/master/mouse)该库，在 egretProperties.json 中引入该库并编译引擎。需要注意库的位置应放在项目外。
 
@@ -13,7 +13,7 @@
 
 引入到项目中之后编译引擎即可使用鼠标库。
 
-## 支持事件
+## 2.支持事件
 
 在鼠标支持库中支持以下事件。
 
@@ -25,7 +25,7 @@
 | ROLL_OVER | 当鼠标进入对象所在区域内调用。|
 | ROLL_OUT | 当鼠标移出对象所在区域内时调用。|
 
-## 使用方法
+## 3.使用方法
 
 使用鼠标支持库时需要开启鼠标支持。
 
@@ -34,7 +34,7 @@
 mouse.enable(this.stage);
 ```
 
-调用 enable 方法开启舞台对鼠标事件的支持。开启支持之后即可监听鼠标事件了。使用鼠标事件的方法与其他触摸事件是相同的，下面是基本的调用方法：
+调用 enable 方法开启舞台对鼠标事件的支持。开启支持之后即可监听鼠标事件。使用鼠标事件的方法与其他触摸事件是相同的，下面是基本的调用方法：
 
 ```
 mouse.enable(this.stage);
@@ -107,7 +107,7 @@ private onMouseOut2(e: egret.TouchEvent): void {
 }
 ```
 
-上面代码中我们绘制了两个 Sprite ，一个当做外层的容器，一个当做内部的显示对象。编译运行观察输出的结果：
+上面代码中绘制了两个 Sprite ，一个当做外层的容器，一个当做内部的显示对象。编译运行观察输出的结果：
 
 * 鼠标移入容器和内层显示对象时都会抛出 MOUSE_OVER 和 ROLL_OVER。
 * 鼠标在容器移动到内层显示对象时容器会抛出 MOUSE_OUT 但不会抛出 ROLL_OUT。
@@ -119,26 +119,26 @@ private onMouseOut2(e: egret.TouchEvent): void {
 
 ### 设置鼠标手型
 
-一般我们希望鼠标移动到可点击区域上时改变鼠标的形状为手型，我们可以通过 setButtonMode 来设置。
+若希望鼠标移动到可点击区域上时改变鼠标的形状为手型，可以通过 `setButtonMode` 来设置。
 
 ```
 //设置内层显示对象为鼠标手型
 mouse.setButtonMode(this.inShape, true);
 ```
 
-setButtonMode 接收两个参数，分别是显示对象和是否开启手型显示。开启之后当鼠标移动到该显示对象上时即可显示为手的形状。
+`setButtonMode` 接收两个参数，分别是显示对象和是否开启手型显示。开启之后当鼠标移动到该显示对象上时即可显示为手的形状。
 
 
 ### 监听鼠标移动事件
 
-监听鼠标的移动事件需要单独开启，调用 setMouseMoveEnabled() 方法即可。
+监听鼠标的移动事件需要单独开启，调用 `setMouseMoveEnabled()` 方法即可。
 
 ```
 //设置开启鼠标移动事件
 mouse.setMouseMoveEnabled(true);
 ```
 
-开启鼠标移动事件的监听之后接口监听该事件:
+开启鼠标移动事件的监听接口之后，监听该事件:
 
 ```
 this.outContainer.addEventListener(mouse.MouseEvent.MOUSE_MOVE, function () { 

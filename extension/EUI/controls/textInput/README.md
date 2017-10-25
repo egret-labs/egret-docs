@@ -1,12 +1,12 @@
-## 基础输入控件 EditableText
+### 基础输入控件 EditableText
 
-在 EUI 中为我们提供了输入文本控件，使用 eui.EditableText 可以创建可供用户输入的文本控件。 eui.EditableText 继承自 egret.TextInput ,也就是说使用它也可以使用 egret.TextFild 和 egret.TextInput 的属性和方法。文本对象的用法可以参考：[创建文本](../../../../Engine2D/textField/createText/README.md).
+EUI 提供了输入文本控件，使用 `eui.EditableText` 可以创建可供用户输入的文本控件。 `eui.EditableText` 继承自 `egret.TextInput` ,也就是说它可以使用 `egret.TextFild` 和 `egret.TextInput` 的属性和方法。文本对象的用法可以参考：[创建文本](../../../../Engine2D/textField/createText/README.md).
 
-这里我们准备一张图片作为背景素材:
+首先准备一张图片作为背景素材:
 
 ![](566a901838cc5.png)
 
-下面我们新建一个 EditableTextDemo 类，并绘制一张背景，具体代码如下：
+新建一个 `EditableTextDemo` 类，并绘制一张背景，具体代码如下：
 
 
 ``` TypeScript
@@ -22,7 +22,7 @@ class EditableTextDemo extends eui.Group {
 }
 ```
 
-我们通过 eui.EditableText() 新建了一个输入文本控件，我们接下来继续完善我们的程序，这里面涉及到前面的图片控件章节，大家可以复习一下。
+通过 `eui.EditableText()` 新建一个输入文本控件，代码如下。
 
 ``` TypeScript
 class EditableTextDemo extends eui.Group {
@@ -56,11 +56,11 @@ class EditableTextDemo extends eui.Group {
 }
 ```
 
-需要注意的是，我们的 EditableTextDemo 类的实例需要被添加至舞台才可以显示出来。编译运行项目我们可以看到 EditableTextDemo 已经显示出来了。
+`EditableTextDemo` 类的实例需要被添加至舞台才可以显示出来。编译运行项目，效果如下。
 
 ![](566a9018092ce.png)
 
-当然我们可以操作 myEditableText 的其他属性，比如说添加自动换行，添加密码显示等。在上面的构造函数中可以添加下面的代码，让我们看看其效果：
+同时，可以操作 `myEditableText` 的其他属性，比如说添加自动换行，添加密码显示等。在上面的构造函数中可以添加下面的代码：
 
 
 ``` TypeScript
@@ -69,10 +69,11 @@ class EditableTextDemo extends eui.Group {
 this.myEditableText.displayAsPassword = true;                             
 
 ```
+效果如下：
 
 ![](566a901819013.png)
 
-当用户输入了文本之后我们可以通过 text 属性获得用户输入的内容.首先修改一下上面的代码，添加在 constructor () 内，具体如下：
+当用户输入了文本之后，可以通过 `text` 属性获得用户输入的内容。修改上面代码，添加在 constructor () 内，具体如下：
 
 ``` TypeScript
 //让文本能被显示出来.
@@ -83,20 +84,20 @@ this.myEditableText.wordWrap = true;
 this.myEditableText.addEventListener(egret.Event.CHANGE,this.onChang,this);             
 ```
 
-接下来添加一个处理函数，在 EditableTextDemo 内添加：
+再添加一个处理函数，在 EditableTextDemo 内添加：
 ``` TypeScript
 private onChang(e:egret.Event){
     egret.log(e.target.text);
 }    
 ```
 
-让我们来看以下效果:
+效果如下:
 
 ![](566a90182b4bc.png)
 
-## 输入控件 TextInput
+### 输入控件 TextInput
 
-在 Egret 2.5.7 中，添加了 TextInput 控件，TextInput 是一个方便的文本输入控件。先来看一下他的默认皮肤：
+TextInput 控件是文本输入控件。它的默认皮肤如下：
 
 ```
 <?xml version='1.0' encoding='utf-8'?> <e:Skin class="skins.TextInputSkin" minHeight="40" minWidth="300" 
@@ -104,7 +105,8 @@ private onChang(e:egret.Event){
 	         textColor="0x000000" textColor.disabled="0xff0000" 
 	         width="200" height="100%" size="20" /> <e:Label id="promptDisplay" verticalCenter="0" left="10" right="10"
 	         textColor="0xa9a9a9" width="100%" height="24" size="20" 
-	         touchEnabled="false" includeIn="normalWithPrompt,disabledWithPrompt"/> </e:Skin>```
+	         touchEnabled="false" includeIn="normalWithPrompt,disabledWithPrompt"/> </e:Skin>
+```
 
 它的皮肤需要包含一个 `EditableText` 文本实体输入组件 `textDisplay` 和一个 `Label` 组件 `promptDisplay`。我们可以选择使用给它添加一个背景,这样来组成一个 TextInput 的皮肤。
 

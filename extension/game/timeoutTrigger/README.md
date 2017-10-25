@@ -1,16 +1,19 @@
-## 启动超时触发器
+## 1.启动超时触发器
 
-有一种场景，那就是在运行一定时间后，需要触发一个事件。比如某个对话框提示呈现后，需要在几秒钟之后自动消失。
+有一种需求，是在运行一定时间后，触发一个事件。比如某个对话框提示呈现后，需要在几秒钟之后自动消失。
 
-这种情况可以使用Egret提供的`egret.setTimeout`来实现。该函数原型为：
+Egret提供的`egret.setTimeout`可实现上述功能。该函数原型为：
 
 ```
 function setTimeout(listener: Function, thisObject: any, delay: number, ...args: any[]): number;
 ```
 
-其中`delay`设定超时等待的毫秒数，`...args`为随意个数的参数，也可以没有任何参数。
+* `listener`是待执行的回调函数
+* `thisObject`设置为`this`即可
+* `delay`设定超时等待的毫秒数，
+* `...args`为随意个数的参数，也可以没有任何参数。
 
-接下来通过一个简单的例子来学习如何使用超时触发器：
+下面示例演示超时触发器的使用方法：
 
 ```
 var idTimeout:number = egret.setTimeout( function( arg ){
@@ -26,9 +29,9 @@ console.log( "start setTimeout" );
 
 编译运行，首先输出"start setTimeout"，等待3秒后，将会出现"timeout: egret"，证实触发器准确运行。
 
-## 停止超时触发器
+## 2.停止超时触发器
 
-超时等待阶段，可能会有需求，停止超时触发器，接着开始说的例子，如果在超时结束前用户触摸对话框的关闭或确定按钮，就需要取消超时触发器了。可以使用egret.clearTimeout来取消超时触发器。在egret.setTimeout执行时返回一个id：idTimeout，这个id就是用来取消超时触发器的：
+超时等待阶段，可能会有需求，停止超时触发器，接着上述示例，如果在超时结束前用户触摸对话框的关闭或确定按钮，就需要取消超时触发器。Egret 提供 `egret.clearTimeout` 取消超时触发器。在 `egret.setTimeout` 执行时返回一个 `id：idTimeout` ，这个id就是用来取消超时触发器的：
 
 ```
 egret.clearTimeout( idTimeout );

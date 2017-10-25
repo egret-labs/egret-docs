@@ -1,11 +1,11 @@
-ToggleButton，顾名思义就是一个具备状态的按钮，这个状态就是selected属性，类型是布尔量，默认为false，当您点击一下按钮，selected将变为true，再点击一下，重新变成false。在显示上也是有区别的，选中和非选中的外观是不一样的。
+ToggleButton，是具备状态的按钮，该状态就是`selected`属性，类型是布尔值，默认为false，当点击按钮，`selected`将变为true，再点击一下，重新变成false。在显示上也是有区别的，选中和非选中的外观是不一样的。
 
-eui.ToggleSwitch 用来定义开关组件，包括一个开启和关闭状态的皮肤。它继承自 eui.ToggleButton ，可以使用 selected 来设置或获取其开关状态。
+`eui.ToggleSwitch` 用来定义开关组件，包括一个开启和关闭状态的皮肤。它继承自 `eui.ToggleButton` ，可以使用 `selected` 来设置或获取其开关状态。
 
 ``` TypeScript
 private initSwitch():void{
     var btn: eui.ToggleSwitch = new eui.ToggleSwitch();
-    btn.label = "我是ToggleButton";
+    btn.label = "This is a ToggleButton";
     btn.addEventListener(eui.UIEvent.CHANGE, this.changeHandler, this);
     this.addChild(btn);
 }
@@ -17,7 +17,7 @@ private changeHandler(evt:eui.UIEvent) {
 
 ![](560158f61ec92.png)
 
-在下面的例子中，我们结合若干个ToggleButton，就可以实现类似TabBar这样的效果，如图所示：
+下述示例中，结合若干个ToggleButton，可以实现类似TabBar的效果，如图所示：
 
 ![](560159042f1bf.png)
 
@@ -49,4 +49,4 @@ private toggleChangeHandler(evt: eui.UIEvent) {
 ```
 egret create HelloEUI --type eui
 ```
-> 创建的示例项目的默认皮肤。可以在示例项目的`skins`文件夹下找到皮肤的 exml 文件。
+> 创建示例项目的默认皮肤。可以在示例项目的`eui_skins`文件夹下找到默认皮肤的 exml 文件。

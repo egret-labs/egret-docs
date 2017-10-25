@@ -1,8 +1,8 @@
 列表组件 List ，继承自 DataGroup，它和 DataGroup 的区别在于：
-* 在 List 中选中一项，会触发 eui.ItemTapEvent.ITEM_TAP 事件，然后您就可以执行后续的逻辑处理
+* 在 List 中选中一项，会触发 ~eui.ItemTapEvent.ITEM_TAP· 事件。
 * List有选中项的概念，可以设置 List 中的默认选中项。
 
-下面来看看List的基本用法：
+下面是List的基本用法：
 ``` TypeScript
 class Main extends eui.Group {
     constructor() {
@@ -47,7 +47,7 @@ list.allowMultipleSelection = true;
 ![](5625d92835954.png)
 多选状态下，List 中所有的条目都可以被选中，再次点击选中的条目则会取消选中，恢复原状。
 
-此时监听 eui.ItemTapEvent.ITEM_TAP 事件，可以通过下面两个属性获得一个数组，里面包含了当前哪些条目处于选中状态：
+此时监听 `eui.ItemTapEvent.ITEM_TAP` 事件，可以通过下面两个属性获得一个数组，里面包含了当前处于选中状态的项目：
 ~~~
 list.selectedIndices
 list.selectedItems

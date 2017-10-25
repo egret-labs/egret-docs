@@ -1,12 +1,12 @@
-跟上一节一样，我们还是在默认的 eui 项目中创建的教程代码。
+本节依然在默认的 eui 项目中创建的教程代码。
 
-在横向布局，以及下面将要讲的垂直布局，网格布局中，都会忽略您在子项上的坐标设置，所有子项的位置将由布局类统一管理。
+在横向布局，以及下面将要讲的垂直布局，网格布局中，都会忽略在子项上的坐标设置，所有子项的位置将由布局类统一管理。
 
-横向布局会自动将所有的子项横着排列，您可以做以下的设置：
-* gap属性，设置子项之间的间距
-* horizontalAlign属性，设置水平对齐方式
-* verticalAlign属性，设置垂直对齐方式
-* padding系列属性，设置容器内间距，相对于4个边分别可以使用 paddingTop, paddingBottom, paddingLeft, paddingRight
+横向布局会自动将所有的子项横着排列，可以做以下的设置：
+* `gap`属性，设置子项之间的间距
+* `horizontalAlign`属性，设置水平对齐方式
+* `verticalAlign`属性，设置垂直对齐方式
+* `padding`系列属性，设置容器内间距，相对于4个边分别可以使用 `paddingTop`, `addingBottom`, `addingLeft`, `paddingRight`
 
 示例：    
 ``` TypeScript   
@@ -31,11 +31,11 @@ class hLayout extends egret.Sprite {
         this.myGroup.addChild(outline);
 
         var btn1:eui.Button = new eui.Button();
-        btn1.label = "egret 按钮 A";
+        btn1.label = "button A";
         var btn2:eui.Button = new eui.Button();
-        btn2.label = "egret 按钮 B";
+        btn2.label = "button B";
         var btn3:eui.Button = new eui.Button();
-        btn3.label = "egret 按钮 C";
+        btn3.label = "button C";
         this.myGroup.addChild( btn1 );
         this.myGroup.addChild( btn2 );
         this.myGroup.addChild( btn3 );
@@ -51,8 +51,5 @@ class hLayout extends egret.Sprite {
 ```              
 效果如图：
 
-![][6-2-layout-HLayout]     
-
-
-[6-2-layout-HLayout]: http://sedn.egret.com/56012e4de46c7.png
+![](20170920122619.png)
 
