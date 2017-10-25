@@ -744,9 +744,9 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/screenAdaptation/explanation/",
-        "text": "缩放模式和旋转模式说明",
-        "des": "缩放模式和旋转模式说明",
+        "filename": "/Engine2D/screenAdaptation/screenAdaptation/",
+        "text": "屏幕适配",
+        "des": "屏幕适配",
         "in_use": true
       },
       {
@@ -764,34 +764,40 @@
   {
     "children": [
       {
+        "filename": "/Engine2D/debug/debug/",
+        "text": "调试",
+        "des": "调试",
+        "in_use": true
+      },
+      {
         "filename": "/Engine2D/debug/useDebug/",
         "text": "使用 DEBUG 编译参数",
         "des": "使用 DEBUG 编译参数",
-        "in_use": true
+        "in_use": false
       },
       {
         "filename": "/Engine2D/debug/consolePanel/",
         "text": "使用内置日志输出面板",
         "des": "使用内置日志输出面板",
-        "in_use": true
+        "in_use": false
       },
       {
         "filename": "/Engine2D/debug/showDebug/",
         "text": "显示脏矩形和帧频信息",
         "des": "显示脏矩形和帧频信息",
-        "in_use": true
+        "in_use": false
       },
       {
         "filename": "/Engine2D/debug/fpsPanel/",
         "text": "FPS 面板",
         "des": "FPS 面板",
-        "in_use": true
+        "in_use": false
       },
       {
         "filename": "/Engine2D/debug/performanceOptimization/",
         "text": "最佳实践",
         "des": "最佳实践",
-        "in_use": true
+        "in_use": false
       }
     ],
     "isFolder": true,
@@ -816,40 +822,46 @@
   {
     "children": [
       {
+        "filename": "/Engine2D/native/native/",
+        "text": "原生支持",
+        "des": "原生支持",
+        "in_use": true
+      },
+      {
         "filename": "/Engine2D/native/horizontalScreen/",
         "text": "原生横屏设置",
         "des": "原生横屏设置",
-        "in_use": true
+        "in_use": false
       },
       {
         "filename": "/Engine2D/native/hotUpdate/",
         "text": "热更新",
         "des": "热更新",
-        "in_use": true
+        "in_use": false
       },
       {
         "filename": "/Engine2D/native/debugSkill/",
         "text": "调试技巧",
         "des": "调试技巧",
-        "in_use": true
+        "in_use": false
       },
       {
         "filename": "/Engine2D/native/communicateSkill/",
         "text": "Egret 与 Native 通信基本技巧",
         "des": "Egret 与 Native 通信基本技巧",
-        "in_use": true
+        "in_use": false
       },
       {
         "filename": "/Engine2D/native/quickSDK/",
         "text": "接入 QuickSDK",
         "des": "接入 QuickSDK",
-        "in_use": true
+        "in_use": false
       },
       {
         "filename": "/Engine2D/native/other/",
         "text": "其他原生支持",
         "des": "其他原生支持",
-        "in_use": true
+        "in_use": false
       }
     ],
     "isFolder": true,
@@ -860,34 +872,40 @@
   {
     "children": [
       {
+        "filename": "/Engine2D/publish/publish/",
+        "text": "打包发布",
+        "des": "打包发布",
+        "in_use": true
+      },
+      {
         "filename": "/Engine2D/publish/publishHTML5/",
         "text": "打包 HTML5",
         "des": "打包 HTML5",
-        "in_use": true
+        "in_use": false
       },
       {
         "filename": "/Engine2D/publish/publishRuntime/",
         "text": "打包 Runtime",
         "des": "打包 Runtime",
-        "in_use": true
+        "in_use": false
       },
       {
         "filename": "/Engine2D/publish/publishAndroid/",
         "text": "打包 Android app",
         "des": "打包 Android app",
-        "in_use": true
+        "in_use": false
       },
       {
         "filename": "/Engine2D/publish/publishIOS/",
         "text": "打包 iOS app",
         "des": "打包 iOS app",
-        "in_use": true
+        "in_use": false
       },
       {
         "filename": "/Engine2D/publish/publishWinPhone/",
         "text": "打包 WinPhone app",
         "des": "打包 WinPhone app",
-        "in_use": true
+        "in_use": false
       }
     ],
     "isFolder": true,
