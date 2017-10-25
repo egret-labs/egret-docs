@@ -1,11 +1,3 @@
----
-title: "cmdManual"
-author: Egret
-date: Aug 29, 2017
-output: 
-    word_document:
-        path: E:/egret/egret_docs/cmdManual.docx
----
 
 用法: egret `command` [-v]
 

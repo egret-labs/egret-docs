@@ -3,7 +3,7 @@
 
 ### 整体结构
 
-![image](5604f755ba98b.png)
+![image](5604f755ba98b1.png)
 
 ### egret_version 字段
 

@@ -1,11 +1,3 @@
----
-title: "lifeCycle"
-author: Egret
-date: Aug 29, 2017
-output: 
-    word_document:
-        path: E:/egret/egret_docs/lifeCycle.docx
----
 
 在游戏中，用户可以切换应用的前后台。在用户进入后台时，关闭游戏逻辑、渲染逻辑、背景音乐，可以保证更好的用户体验。
 
