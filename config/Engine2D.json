@@ -437,8 +437,8 @@
     "children": [
       {
         "filename": "/Engine2D/displayObject/displayObject/",
-        "text": "显示对象",
-        "des": "显示对象",
+        "text": "基本概念",
+        "des": "基本概念",
         "in_use": true
       },
       {
@@ -468,45 +468,9 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/vectorDrawing/useVectorDrawing/",
+        "filename": "/Engine2D/vectorDrawing/vectorDrawing/",
         "text": "使用矢量绘图",
         "des": "使用矢量绘图",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/vectorDrawing/drawCircle/",
-        "text": "绘制圆形",
-        "des": "绘制圆形",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/vectorDrawing/drawLine/",
-        "text": "绘制直线",
-        "des": "绘制直线",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/vectorDrawing/drawCurves/",
-        "text": "绘制曲线",
-        "des": "绘制曲线",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/vectorDrawing/drawArc/",
-        "text": "绘制圆弧",
-        "des": "绘制圆弧",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/vectorDrawing/useDrawCurves/",
-        "text": "Graphics Arc 高级使用",
-        "des": "Graphics Arc 高级使用",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/vectorDrawing/drawShapes/",
-        "text": "多个形状的绘制",
-        "des": "多个形状的绘制",
         "in_use": true
       }
     ],
@@ -518,15 +482,9 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/mask/rectangleMask/",
-        "text": "矩形遮罩",
-        "des": "矩形遮罩",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/mask/displayMask/",
-        "text": "显示对象遮罩",
-        "des": "显示对象遮罩",
+        "filename": "/Engine2D/mask/mask/",
+        "text": "遮罩",
+        "des": "遮罩",
         "in_use": true
       }
     ],
@@ -538,15 +496,15 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/hit/inexactHit/",
-        "text": "非精确碰撞检测",
-        "des": "非精确碰撞检测",
+        "filename": "/Engine2D/hit/rectangleHit/",
+        "text": "矩形碰撞检测",
+        "des": "矩形碰撞检测",
         "in_use": true
       },
       {
-        "filename": "/Engine2D/hit/accurateHit/",
-        "text": "精确碰撞检测",
-        "des": "精确碰撞检测",
+        "filename": "/Engine2D/hit/pixelHit/",
+        "text": "像素碰撞检测",
+        "des": "像素碰撞检测",
         "in_use": true
       },
       {
@@ -564,51 +522,15 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/textField/createText/",
-        "text": "使用文本",
-        "des": "使用文本",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/textField/textColor/",
-        "text": "文本颜色",
-        "des": "文本颜色",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/textField/textFonts/",
-        "text": "文本字体",
-        "des": "文本字体",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/textField/textLayout/",
-        "text": "文本布局",
-        "des": "文本布局",
+        "filename": "/Engine2D/textField/text/",
+        "text": "文本类型",
+        "des": "文本类型",
         "in_use": true
       },
       {
         "filename": "/Engine2D/textField/textStyle/",
         "text": "文本样式",
         "des": "文本样式",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/textField/textMixed/",
-        "text": "多种样式文本混合",
-        "des": "多种样式文本混合",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/textField/textLinkEvent/",
-        "text": "文本超链接事件",
-        "des": "文本超链接事件",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/textField/textInput/",
-        "text": "输入文本",
-        "des": "输入文本",
         "in_use": true
       }
     ],
@@ -621,8 +543,8 @@
     "children": [
       {
         "filename": "/Engine2D/event/principle/",
-        "text": "事件处理机制的原理",
-        "des": "事件处理机制的原理",
+        "text": "事件处理机制",
+        "des": "事件处理机制",
         "in_use": true
       },
       {
@@ -659,7 +581,7 @@
         "filename": "/Engine2D/event/touchCanel/",
         "text": "取消触摸事件",
         "des": "取消触摸事件",
-        "in_use": true
+        "in_use": false
       }
     ],
     "isFolder": true,
