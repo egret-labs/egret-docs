@@ -1,12 +1,12 @@
 事件机制包含4个步骤：注册侦听器，发送事件，侦听事件，移除侦听器。这四个步骤是按照顺序来执行的。
 
-注册侦听器，即指定事件由哪个对象的哪个方法来接受。在上一节约会的例子中，我们指定由男朋友来发送事件，由女朋友 来接受事件。
+注册侦听器，即指定事件由哪个对象的哪个方法来接受。在上一节约会的例子中，我们指定由男朋友来发送事件，由女朋友来接受事件。
 
-只有在注册侦听器后，发送的事件才能被侦听。而且发送的事件必须和侦听器事件的类型匹配。在发送事件后，侦听器才能 侦听到事件。
+只有在注册侦听器后，发送的事件才能被侦听。而且发送的事件必须和侦听器事件的类型匹配。在发送事件后，侦听器才能侦听到事件。
 
-下面我们来通过一个实例了解一下“约会”这个事件发送过程，以及代码编写过程。
+下面通过实例展示“约会”这个事件发送过程，以及代码编写过程。
 
-## 文档类
+### 文档类
 
 ```
 class SampleDate extends egret.DisplayObjectContainer
@@ -31,7 +31,7 @@ class SampleDate extends egret.DisplayObjectContainer
 }
 ```
 
-## 男朋友类
+### 男朋友类
 
 ```
 class Boy extends egret.Sprite
@@ -56,7 +56,7 @@ class Boy extends egret.Sprite
 }
 ```
 
-## 女朋友类
+### 女朋友类
 
 ```
 class Girl extends egret.Sprite
@@ -74,7 +74,7 @@ class Girl extends egret.Sprite
 }
 ```
 
-## 约会事件类
+### 约会事件类
 
 ```
 class DateEvent extends egret.Event

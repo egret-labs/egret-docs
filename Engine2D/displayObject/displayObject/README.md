@@ -54,29 +54,17 @@ shape.rotation = 30;
 上图展示了显示对象中常用的可视属性，下面列表是显示对象的全部可视属性。
 
 * alpha：透明度
-
 * width：宽度
-
 * height：高度
-
 * rotation：旋转角度
-
 * scaleX：横向缩放
-
 * scaleY：纵向缩放
-
 * skewX：横向斜切
-
 * skewY：纵向斜切
-
 * visible：是否可见
-
 * x：X轴坐标值
-
 * y：Y轴坐标值
-
 * anchorOffsetX：对象绝对锚点X
-
 * anchorOffsetY：对象绝对锚点Y
 
 ### 3.核心显示类
