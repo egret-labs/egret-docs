@@ -38,18 +38,15 @@
  默认游戏舞台的高度与宽度，以像素为单位.
 
 * 引擎版本号
-  
   当前项目所使用的 Egret 的版本。
   
 * 舞台背景色
-	
 	默认舞台显示的背景颜色。
 
 * 缩放模式
   屏幕的适配方式，这里选择showALL模式。更多关于缩放模式的介绍可以参考：[缩放模式和旋转模式说明](../../../Engine2D/screenAdaptation/explanation/README.md)
 	
 * 旋转设置
-	
 	屏幕的旋转模式，这里选择auto模式。更多关于旋转设置的介绍可以参考：[缩放模式和旋转模式说明](../../../Engine2D/screenAdaptation/explanation/README.md)
 
 点击确定，创建Hello World项目。
@@ -67,7 +64,6 @@
 * resource：项目资源文件存放于此目录。
 * src：项目代码文件存放于此目录。
 * template：项目模板文件存放于此目录。
-
 * egretProperties.json：项目的配置文件。具体的配置说明可以参考：[EgretProperties说明](../../../Engine2D/projectConfig/configFile/README.md)
 * tsconfig.json：typescript 编译配置文件。
 * wingProperties.json：Egret Wing 项目配置文件。
