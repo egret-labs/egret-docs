@@ -365,7 +365,7 @@
         "filename": "/Engine2D/projectConfig/launcherManager/",
         "text": "启动器",
         "des": "引擎和工具的管理",
-        "in_use": true
+        "in_use": false
       },
       {
         "filename": "/Engine2D/projectConfig/cmdManual/",
@@ -423,9 +423,9 @@
       },
       {
         "filename": "/Engine2D/projectConfig/wasmconfig/",
-        "text": "WebAssembly 项目配置",
-        "des": "WebAssembly 项目配置",
-        "in_use": true
+        "text": "WebAssembly 版本使用",
+        "des": "WebAssembly 版本使用",
+        "in_use": false
       }
     ],
     "isFolder": true,
@@ -436,101 +436,33 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/displayObject/visualProgram/",
-        "text": "视觉编程",
-        "des": "视觉编程",
+        "filename": "/Engine2D/displayObject/displayObject/",
+        "text": "显示对象",
+        "des": "显示对象",
         "in_use": true
       },
       {
-        "filename": "/Engine2D/displayObject/basicConcept/",
-        "text": "显示对象的基本概念",
-        "des": "显示对象的基本概念",
+        "filename": "/Engine2D/displayObject/transform/",
+        "text": "变换操作",
+        "des": "变换操作",
         "in_use": true
       },
       {
-        "filename": "/Engine2D/displayObject/classes/",
-        "text": "创建自己的显示对象类",
-        "des": "创建自己的显示对象类",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/displayObject/anchor/",
-        "text": "锚点的操作",
-        "des": "锚点的操作",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/displayObject/position/",
-        "text": "位置",
-        "des": "位置",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/displayObject/translation/",
-        "text": "平移",
-        "des": "平移",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/displayObject/size/",
-        "text": "尺寸",
-        "des": "尺寸",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/displayObject/scale/",
-        "text": "缩放",
-        "des": "缩放",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/displayObject/rotation/",
-        "text": "旋转",
-        "des": "旋转",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/displayObject/skew/",
-        "text": "斜切",
-        "des": "斜切",
-        "in_use": true
-      }
-    ],
-    "isFolder": true,
-    "text": "显示对象",
-    "des": "显示对象",
-    "in_use": true
-  },
-  {
-    "children": [
-      {
-        "filename": "/Engine2D/displayObjecContainer/concept/",
-        "text": "显示容器的概念与实现",
-        "des": "显示容器的概念与实现",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/displayObjecContainer/addAndRemove/",
+        "filename": "/Engine2D/displayObject/addAndRemove/",
         "text": "添加与删除显示对象",
         "des": "添加与删除显示对象",
         "in_use": true
       },
       {
-        "filename": "/Engine2D/displayObjecContainer/depthManagement/",
+        "filename": "/Engine2D/displayObject/depthManagement/",
         "text": "深度管理",
         "des": "深度管理",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/displayObjecContainer/childen/",
-        "text": "访问容器子对象",
-        "des": "访问容器子对象",
         "in_use": true
       }
     ],
     "isFolder": true,
-    "text": "显示容器",
-    "des": "显示容器",
+    "text": "显示对象和显示容器",
+    "des": "显示对象和显示容器",
     "in_use": true
   },
   {

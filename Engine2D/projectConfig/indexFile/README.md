@@ -1,46 +1,40 @@
-项目的入口文件，配置了项目所需文件以及各个配置。
+项目的入口文件用于加载js文件和设置配置信息。
 
-Native 下不再需要单独配置，引擎会自动从 index.html 中读取项目所使用的各个配置信息。
-
-![image](5604f68b8f32b.png)
+    Native 下不需要单独配置，引擎会自动从 index.html 中读取项目所使用的各个配置信息。
 
 ## 加载 js 文件
+项目所需的所有javascript文件的路径存放在项目根目录的 manifest.json 文件中。
+入口文件根据 manifest.json 加载 javascript 文件。
 
-### modules_files
+>>> 此处的 script 标签均为自动生成，请勿修改。
 
-通过 egretProperties.json 生成的 js 文件列表，生成的文件在 libs/modules 下。执行 ```egret build [projectName] -e``` 会清理 libs/modules 文件夹。
+### 1.库文件
 
->>> 删除 modules_files 标签后，库文件加载列表将不会变化，请谨慎操作！
+manifest.json 文件下的 "initial" 中是库文件列表，包括 Egret 核心库和其他扩展库。
 
-### other_libs_files
+### 2.项目代码文件
 
-自定义所需要加入的其他的第三方库的文件。需要填写 egret="lib" 以及 src-release。在这个块中script不会被自动替换以及清理。切记不要把这种使用方式的文件放在 libs/modules 下。
-
-![image](5604f68b50d39.png)
-
->>> 所有放在 libs 目录下面的文件，以 ts 作为扩展名的文件只能是 ```.d.ts```（如 a.d.ts）文件，不能有纯 ts 文件（如 a.ts）。
-
-### game_files
-
-项目中使用的文件。在使用了 ```egret build -e``` 或者存在文件增、删时会有变动。这个块的 script 均为自动生成，请勿修改。
-
->>> 删除 game_files 标签后，项目文件加载列表将不会变化，请谨慎操作！
+manifest.json 文件下的 "game" 中是项目代码文件列表。
 
 ## 运行配置
 
-* data-entry-class：文件类名称。 egretProperties.json 不再需要配置这个。
+* data-entry-class：文件类名称。
 * data-orientation：旋转模式。
 * data-scale-mode：适配模式。
 * data-frame-rate：帧频数。
 * data-content-width：游戏内stage宽。
-* data-content-height：游戏stage高。
+* data-content-height：游戏内stage高。
 * data-show-pain-rect：是否显示脏矩形区域。
 * data-multi-fingered：多指最大数量。
 * data-show-fps：是否显示fps。
-* data-show-log：是否显示egret.log输出出来的信息。这些会在fps的下面显示出来，和console.log不一样。前提是fps必须打开。
-* data-log-filter：只显示过滤的log。
-* data-show-fps-style：fps面板的样式。目前只支持4种，x:0, y:0, size:30, textColor:0xffffff。
+* data-show-log：是否显示egret.log的输出信息。
+* data-show-fps-style：fps面板的样式。支持5种属性，x:0, y:0, size:30, textColor:0xffffff, bgAlpha:0.9
 
+## 启动项目
+```egret.runEgret({ renderMode: "webgl", audioType: 0 })``` 启动项目。
 
-## 启动运行
-```egret.runEgret()```。启动项目。
+参数是一个对象，包括以下4个可选属性：
+* "renderMode": 引擎渲染模式，"canvas" 或者 "webgl"
+* "audioType": 使用的音频类型，0:默认，2:web audio，3:audio
+* "antialias": WebGL模式下是否开启抗锯齿，true:开启，false:关闭，默认为false
+* "retina": 是否基于devicePixelRatio缩放画布
