@@ -2,7 +2,7 @@
 #### 命令
 
 * -help 该命令会使ResDepot弹出帮助界面
-![image](1.png)
+![image](1.PNG)
 * -pack [resource_path] [pack_config_path] [root_directory] 打包
     * resource_path  资源配置文件的绝对路径，如resource.json的绝对路径。
     * pack_config_path  打包配置文件的绝对路径，该文件由ResDepot手动打包过程中可以编辑和生成。
@@ -17,4 +17,4 @@ ResDepot 的命令行是需要打包的配置文件支持的，而该文件只�
 
 此时回车，将会按照 packConfig.json 来进行打包。
 
-![image](2.png)
+![image](2.PNG)
