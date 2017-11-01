@@ -788,12 +788,6 @@
         "in_use": false
       },
       {
-        "filename": "/Engine2D/debug/fpsPanel/",
-        "text": "FPS 面板",
-        "des": "FPS 面板",
-        "in_use": false
-      },
-      {
         "filename": "/Engine2D/debug/performanceOptimization/",
         "text": "最佳实践",
         "des": "最佳实践",
