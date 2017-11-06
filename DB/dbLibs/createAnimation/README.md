@@ -28,7 +28,7 @@ egretFactory.parseTextureAtlasData(textureData, texture);
 
 数据准备好后，需要从数据中提取出需要的骨架系统。在DragonBones中，骨架有多个骨骼组成。每个骨架中绑定了当前骨架的动画数据。
 
-`let armatureDisplay: dragonBones.EgretArmatureDisplay = dragonbonesFactory.buildArmatureDisplay("robot");`
+`let armatureDisplay: dragonBones.EgretArmatureDisplay = egretFactory.buildArmatureDisplay("robot");`
 
 通过`buildArmatureDisplay`方法，我们提取名称为`robot`的骨架。要想在舞台中看到该骨架，我们需要将其显性的添加到的舞台当中，可以使用下面语句。
 
