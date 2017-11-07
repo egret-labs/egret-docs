@@ -19,12 +19,6 @@
         "des": "历史更新",
         "in_use": true,
         "children": [
-	 {
-            "filename": "/Engine2D/update/test/",
-            "text": "test",
-            "des": "test",
-            "in_use": true
-          },
           {
             "filename": "/Engine2D/update/update5011/",
             "text": "Egret Engine2D 5.0.11",
@@ -330,7 +324,13 @@
             "text": "Egret Engine2D 2.5.0",
             "des": "Egret Engine2D 2.5.0",
             "in_use": true
-          }
+          },
+	  {
+            "filename": "/Engine2D/update/test/",
+            "text": "test",
+            "des": "test",
+            "in_use": true
+          },
         ]
       }
     ],
