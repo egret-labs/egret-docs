@@ -54,7 +54,7 @@
 
 * WebAudio：IOS系统版本大于等于7的所有IOS版本的浏览器，Egret 3.2.0 以后 Android 默认也使用 WebAudio，如果不支持 WebAudio 的 app 则会自动改成 Audio 方式。
 
-* QQAudio：在html页面指定了 “https://qzonestyle.gtimg.cn/qzone/hybrid/lib/jsbridge.js” （Qzone使用的js api）并且运行在`qq空间`的 android 机型。
+* QQAudio：在html页面指定了 “ https://qzonestyle.gtimg.cn/qzone/hybrid/lib/jsbridge.js ” （Qzone使用的js api）并且运行在`qq空间`的 android 机型。
 
 * Audio：除使用 WebAudio 以及 QQAudio 外的其他所有的 Web 浏览器或者平台。可能出现的问题是声音播放有延迟，同一时间只能有一个音频的存在。
 
