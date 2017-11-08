@@ -324,6 +324,12 @@
             "text": "Egret Engine2D 2.5.0",
             "des": "Egret Engine2D 2.5.0",
             "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/test/",
+            "text": "Egret Engine2D test",
+            "des": "Egret Engine2D test",
+            "in_use": true
           }
         ]
       }
