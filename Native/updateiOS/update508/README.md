@@ -8,4 +8,4 @@
 
 ### 下载地址
 
-[http://tool.egret-labs.org/android-support/egret-android-support-5.0.8.zip](http://tool.egret-labs.org/android-support/egret-android-support-5.0.8.zip)
+[http://tool.egret-labs.org/ios-support/egret-ios-support-5.0.8.zip](http://tool.egret-labs.org/ios-support/egret-ios-support-5.0.8.zip)
