@@ -1,7 +1,7 @@
 
 ### 安装引擎
 
-下载[Egret Engine](http://www.egret.com/products/engine.html),（可参考：[安装与部署](../../../Engine2D/projectConfig/modelconfig/README.md)）。
+下载[Egret Engine](http://www.egret.com/products/engine.html),（可参考：[安装与部署](../../../Engine2D/projectConfig/installation/README.md)）。
 
 ### 安装开发工具
 
@@ -44,10 +44,10 @@
 	默认舞台显示的背景颜色。
 
 * 缩放模式
-  屏幕的适配方式，这里选择showALL模式。更多关于缩放模式的介绍可以参考：[缩放模式和旋转模式说明](../../../Engine2D/screenAdaptation/explanation/README.md)
+  屏幕的适配方式，这里选择showALL模式。更多关于缩放模式的介绍可以参考：[屏幕适配](../../../Engine2D/screenAdaptation/screenAdaptation/README.md)
 	
 * 旋转设置
-	屏幕的旋转模式，这里选择auto模式。更多关于旋转设置的介绍可以参考：[缩放模式和旋转模式说明](../../../Engine2D/screenAdaptation/explanation/README.md)
+	屏幕的旋转模式，这里选择auto模式。更多关于旋转设置的介绍可以参考：[屏幕适配](../../../Engine2D/screenAdaptation/screenAdaptation/README.md)
 
 点击确定，创建Hello World项目。
 

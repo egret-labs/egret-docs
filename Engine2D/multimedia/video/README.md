@@ -14,7 +14,7 @@ W3C 提供了在线地址来测试 HTML5 的视频功能。地址为：`http://m
 egret create VideoTest --type eui
 ```
 
-来创建默认的 EUI 项目。更多关于使用 EUI 方法参考:[EUI库 快速入门](../../../extension/EUI/getStarted/getStarted/README.md)
+来创建默认的 EUI 项目。更多关于使用 EUI 方法参考:[EUI库 快速入门](http://developer.egret.com/cn/github/egret-docs/extension/EUI/getStarted/getStarted/index.html)
 
 ## 2.使用方法
 
