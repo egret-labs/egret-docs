@@ -4,8 +4,8 @@ Eget 的 H5 项目通过 Egret Android Suppord 或 Egret IOS Support 可以生�
 
 生成 Native 项目的基本过程是相同的，可以参考以下文档：
 
-* Android APP打包：[打包Android app](../../../Engine2D/publish/publish/README.md)
-* IOS APP 打包: [打包iOS app](../../../Engine2D/publish/publish/README.md)
+* Android APP打包：[打包Android app](http://developer.egret.com/cn/2d/publish/publish)
+* IOS APP 打包: [打包iOS app](http://developer.egret.com/cn/2d/publish/publish)
 
 ### 1.1.Android 横竖屏设置
 
@@ -113,8 +113,8 @@ Egret的封装项目无论在Android还是iOS平台，均支持热更新。
 
 在进行热更新之前，需要创建Eclipse的 Andorid 项目。对于导入 Eclipse 封装项目有疑惑的可以查阅以下文章：
 
-- [打包Android app](../../../Engine2D/publish/publish/README.md)
-- [打包iOS app](../../../Engine2D/publish/publish/README.md)
+- [打包Android app](http://developer.egret.com/cn/2d/publish/publish)
+- [打包iOS app](http://developer.egret.com/cn/2d/publish/publish)
 
 ### 2.2.配置文件
 在进行热更新发布之前，需要进行H5项目中 egretProperties.json 的配置。
@@ -286,9 +286,9 @@ Eclipse环境的logcat显示方法基本一致，可参考：[Android的logcat�
 
 1、了解通过 egret-ios-support 打包为原生项目的方案，可以参考：
 
-[打包iOS app](../../../Engine2D/publish/publish/README.md)
+[打包iOS app](http://developer.egret.com/cn/2d/publish/publish)
 
-[打包Android app](../../../Engine2D/publish/publish/README.md)
+[打包Android app](http://developer.egret.com/cn/2d/publish/publish)
 
 2、了解 Egret 项目内的基本操作和 IOS 和 Android 编程基本技巧。
 
@@ -474,7 +474,7 @@ egret create_app app_name -f h5_game_path -t template_path
 ![](572b16ee79acd.png)
 
 参考教程:
-[打包Android app](../../../Engine2D/publish/publishAndroid/README.md)
+[打包Android app](http://developer.egret.com/cn/2d/publish/publish)
 
 
 ##### 编译到原生项目
