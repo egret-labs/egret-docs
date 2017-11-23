@@ -1,5 +1,5 @@
 {
-	"/microclient/manual/readme/":"/microclient/readme/",
+	"/microclient/manual/readme/":"microclient/readme/",
 	"/platform/manual/useassest/":"/microclient/useassest/",
 	"/platform/manual/closelaunchpage/":"/microclient/closelaunchpage/"
 }
