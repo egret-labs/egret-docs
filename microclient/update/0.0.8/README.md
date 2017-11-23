@@ -9,3 +9,5 @@
 【修复】 Android 输入框文字最上方缺少一像素
 
 【修复】iOS上 window.devicePixelRatio获取的值为-1
+
+**【发布日期】：2017-10-9**
