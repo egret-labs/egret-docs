@@ -2,7 +2,7 @@
 
 在应用启动之前，为了解决白屏体验不好的问题，一般会先显示一张图片，等应用启动后再关掉这个图片。微端中也有这个方法。
 
-
+[示例demo下载地址](http://tool.egret-labs.org/microclient/doc/zip/launchimageAndroid.zip)
 
 ## 1、启动图的意义
 
@@ -28,4 +28,3 @@ launcher.initViews(rootLayout, R.drawable.background, 2000);
 
 其中，launcher来自于NativeLauncher类，rootLayout是View的根节点，R.drawable.background指向前面的background.jpg图片，2000表示展示时间为2秒。
 
-[示例demo下载地址](http://tool.egret-labs.org/microclient/doc/zip/launchimageAndroid.zip)

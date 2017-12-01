@@ -107,6 +107,11 @@
         "des": "使用本地资源"
       },
       {
+        "filename": "/microclient/manual/useassest/",
+        "text": "js 和 安卓的交互方式",
+        "des": "js 和 安卓的交互方式"
+      },
+      {
         "filename": "/microclient/manual/launchimageAndroid/",
         "text": "使用启动图",
         "des": "使用启动图"
