@@ -3,7 +3,7 @@
     "children": [
       {
         "filename": "/microclient/update/0.0.13/",
-        "text": "Egret 微端 0.0.13 更新详情",
+        "text": "Egret 微端 0.0.13",
         "des": "Egret 微端 0.0.13",
         "in_use": true
       },
@@ -21,73 +21,73 @@
         "children": [
           {
           "filename": "/microclient/update/0.0.12/",
-          "text": "Egret 微端 0.0.12 更新详情",
+          "text": "Egret 微端 0.0.12",
           "des": "Egret 微端 0.0.12",
           "in_use": true
         },
           {
             "filename": "/microclient/update/0.0.11/",
-            "text": "Egret 微端 0.0.11 更新详情",
+            "text": "Egret 微端 0.0.11",
             "des": "Egret 微端 0.0.11",
             "in_use": true
           },
           {
             "filename": "/microclient/update/0.0.10/",
-            "text": "Egret 微端 0.0.10 更新详情",
+            "text": "Egret 微端 0.0.10",
             "des": "Egret 微端 0.0.10",
             "in_use": true
           },
           {
             "filename": "/microclient/update/0.0.9/",
-            "text": "Egret 微端 0.0.9 更新详情",
+            "text": "Egret 微端 0.0.9",
             "des": "Egret 微端 0.0.9",
             "in_use": true
           },
           {
             "filename": "/microclient/update/0.0.8/",
-            "text": "Egret 微端 0.0.8 更新详情",
+            "text": "Egret 微端 0.0.8",
             "des": "Egret 微端 0.0.8",
             "in_use": true
           },
           {
             "filename": "/microclient/update/0.0.7/",
-            "text": "Egret 微端 0.0.7 更新详情",
+            "text": "Egret 微端 0.0.7",
             "des": "Egret 微端 0.0.7",
             "in_use": true
           },
           {
             "filename": "/microclient/update/0.0.6/",
-            "text": "Egret 微端 0.0.6 更新详情",
+            "text": "Egret 微端 0.0.6",
             "des": "Egret 微端 0.0.6",
             "in_use": true
           },
           {
             "filename": "/microclient/update/0.0.5/",
-            "text": "Egret 微端 0.0.5 更新详情",
+            "text": "Egret 微端 0.0.5",
             "des": "Egret 微端 0.0.5",
             "in_use": true
           },
           {
             "filename": "/microclient/update/0.0.4/",
-            "text": "Egret 微端 0.0.4 更新详情",
+            "text": "Egret 微端 0.0.4",
             "des": "Egret 微端 0.0.4",
             "in_use": true
           },
           {
             "filename": "/microclient/update/0.0.3/",
-            "text": "Egret 微端 0.0.3 更新详情",
+            "text": "Egret 微端 0.0.3",
             "des": "Egret 微端 0.0.3",
             "in_use": true
           },
           {
             "filename": "/microclient/update/0.0.2/",
-            "text": "Egret 微端 0.0.2 更新详情",
+            "text": "Egret 微端 0.0.2",
             "des": "Egret 微端 0.0.2",
             "in_use": true
           },
           {
             "filename": "/microclient/update/0.0.1/",
-            "text": "Egret 微端 0.0.1 更新详情",
+            "text": "Egret 微端 0.0.1",
             "des": "Egret 微端 0.0.1",
             "in_use": true
           }
@@ -103,8 +103,8 @@
     "children": [
       {
         "filename": "/microclient/manual/readme/",
-        "text": "微端公测版使用说明",
-        "des": "微端公测版使用说明",
+        "text": "白鹭微端使用说明",
+        "des": "白鹭微端使用说明",
         "in_use": true
       },
       {
@@ -114,8 +114,8 @@
       },
       {
         "filename": "/microclient/manual/jstonative/",
-        "text": "js 和 安卓原生方法的通讯",
-        "des": "js 和 安卓原生方法的通讯"
+        "text": "js 和 安卓原生通讯",
+        "des": "js 和 安卓原生通讯"
       },
       {
         "filename": "/microclient/manual/launchimageAndroid/",
