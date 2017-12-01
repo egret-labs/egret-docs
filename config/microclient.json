@@ -108,8 +108,8 @@
       },
       {
         "filename": "/microclient/manual/jstonative/",
-        "text": "js 和 安卓的交互方式",
-        "des": "js 和 安卓的交互方式"
+        "text": "js 和 安卓原生方法的通讯",
+        "des": "js 和 安卓原生方法的通讯"
       },
       {
         "filename": "/microclient/manual/launchimageAndroid/",
