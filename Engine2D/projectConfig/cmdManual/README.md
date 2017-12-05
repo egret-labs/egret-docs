@@ -145,10 +145,31 @@ command列表:
 ## upgrade
 跟随Egret引擎的升级，升级项目代码
 
-### 用法:
+### Egret Launcher v1.0.22 中的 upgrade
+
+#### 用法:
+
+    egret upgrade [project_name] -v [target version]
+#### 参数说明:
+
+| 关键字 | 描述
+| ------------ | ------------ 
+| `project_name` |    项目名称，按照操作系统的命名规范命名
+| `target version` |    要切换的目标版本号
+
+    如果是在项目文件夹下编译，就不要加项目名称
+
+#### 举例:
+
+    升级当前目录下项目到 5.1.0
+    egret upgrade -v 5.1.0
+
+### Egret Launcher v0.6.6 中的 upgrade
+
+#### 用法:
 
     egret upgrade [project_name]
-### 参数说明:
+#### 参数说明:
 
 | 关键字 | 描述
 | ------------ | ------------ 
@@ -156,10 +177,16 @@ command列表:
 
     如果是在项目文件夹下编译，就不要加项目名称
 
-### 举例:
+#### 举例:
 
     升级【HelloWorld】项目
     egret upgrade HelloWorld
+
+### 关于 Egret Launcher v1.0.22 中项目降版本的说明
+
+    1. 修改项目根目录下的配置文件 'egretProperties.json' 中的 'egret_version' 字段下的版本号
+    2. 执行 egret clean 后项目降到目标版本
+    3. 执行 egret -v 查看是否操作成功
 
 ## make
 修改引擎源码后，编译引擎源码
