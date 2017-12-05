@@ -143,9 +143,9 @@ command列表:
     如果是在项目文件夹下编译，就不要加项目名称
 
 ## upgrade
-跟随Egret引擎的升级，升级项目代码
+升级项目代码
 
-### Egret Launcher v1.0.22 中的 upgrade
+### Egret Launcher v1.0 中的 upgrade
 
 #### 用法:
 
@@ -182,7 +182,7 @@ command列表:
     升级【HelloWorld】项目
     egret upgrade HelloWorld
 
-### 关于 Egret Launcher v1.0.22 中项目降版本的说明
+### 关于 Egret Launcher v1.0 中项目降版本的说明
 
     1. 修改项目根目录下的配置文件 'egretProperties.json' 中的 'egret_version' 字段下的版本号
     2. 执行 egret clean 后项目降到目标版本
