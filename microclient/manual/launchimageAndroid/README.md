@@ -2,7 +2,7 @@
 
 在应用启动之前，为了解决白屏体验不好的问题，一般会先显示一张图片，等应用启动后再关掉这个图片。微端中也有这个方法。
 
-[示例demo下载地址](http://tool.egret-labs.org/microclient/doc/zip/launchimageAndroid.zip)
+### [示例demo下载地址](http://tool.egret-labs.org/microclient/doc/zip/launchimageAndroidV1.2.zip)
 
 ### 启动图的意义
 
