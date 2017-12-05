@@ -149,7 +149,7 @@ command列表:
 
 #### 用法:
 
-    egret upgrade [project_name] -v [target version]
+    egret upgrade [project_name] --egretversion [target version]
 #### 参数说明:
 
 | 关键字 | 描述
@@ -162,7 +162,7 @@ command列表:
 #### 举例:
 
     升级当前目录下项目到 5.1.0
-    egret upgrade -v 5.1.0
+    egret upgrade --egretversion 5.1.0
 
 ### Egret Launcher v0.6.6 中的 upgrade
 
@@ -186,7 +186,6 @@ command列表:
 
     1. 修改项目根目录下的配置文件 'egretProperties.json' 中的 'egret_version' 字段下的版本号
     2. 执行 egret clean 后项目降到目标版本
-    3. 执行 egret -v 查看是否操作成功
 
 ## make
 修改引擎源码后，编译引擎源码
