@@ -2,10 +2,10 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/update/update510/",
-        "text": "Egret Engine2D 5.1.0",
-        "des": "Egret Engine2D 5.1.0",
-        "in_use": false
+        "filename": "/Engine2D/update/update5014/",
+        "text": "Egret Engine2D 5.0.14",
+        "des": "Egret Engine2D 5.0.14",
+        "in_use": true
       },
       {
         "filename": "/Engine2D/releaseNote/allVersion/",
@@ -23,7 +23,7 @@
             "filename": "/Engine2D/update/update5014/",
             "text": "Egret Engine2D 5.0.14",
             "des": "Egret Engine2D 5.0.14",
-            "in_use": true
+            "in_use": false
           },
           {
             "filename": "/Engine2D/update/update5013/",
