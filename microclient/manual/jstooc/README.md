@@ -2,7 +2,7 @@
 
 微端的运行模式分为两种，分别是 Runtime 模式和 WebView 模式,这两种模式的通讯方式有所不同，下面分别说一下。
 
-[示例 demo 下载](http://tool.egret-labs.org/microclient/doc/zip/jsToOC.zip)
+### [示例 demo 下载](http://tool.egret-labs.org/microclient/doc/zip/jsToOC.zip)
 
 ## Runtime 模式
 
