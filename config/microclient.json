@@ -137,7 +137,12 @@
         "filename": "/microclient/manual/closelaunchpage/",
         "text": "关闭启动页",
         "des": "关闭启动页"
-      }
+      },
+     {
+        "filename": "/microclient/manual/offline/",
+        "text": "离线模式",
+        "des": "离线模式"
+     }
     ],
     "isFolder": true,
     "text": "使用手册",
