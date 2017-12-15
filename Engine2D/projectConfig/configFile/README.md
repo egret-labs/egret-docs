@@ -75,12 +75,16 @@ eui 项目相关配置
 
 * themes: 主题文件数组，配置所有主题文件路径，该路径必须为相对路径。
 
-* exmlPublishPolicy：发布时主题文件存储exml的策略，包括 path，content，gjs
+* exmlPublishPolicy：发布时主题文件存储exml的策略，包括 debug,content,gjs,commonjs，其中commonjs 是 Egret 5.1.1 引入的新功能
 
 
-	path：主题文件只存储路径，会加载不同exml文件，和debug时一致，不推荐使用
-	content：主题文件存储exml内容，不会加载不同exml文件，优点是整体文件较小
-	gjs：主题文件存储exml编译后的js内容，不会加载不同exml文件，优点是解析速度快
+	| 策略模式 | 运行原理 | 优势 | 缺点 | 适用场景
+	|:---:|:---:|:----:|:---:|:---:|
+	| debug / path | 只存储路径，在运行时会加载并解析 exml 文件并生成皮肤 | 无需编译 | 加载速度很慢 | 调试模式下使用 |
+	| content | 存储exml内容，在运行时根据 content 中的 xml 内容动态解析并生成皮肤 | 整体文件体积较小 | 运行时需要解析exml 为主题皮肤，重度游戏解析速度会很慢 | 轻度游戏使用
+	| gjs | 存储exml编译后的js代码 | 解析速度快 | 尺寸较大|推荐使用 commonjs 代替
+	| commonjs | 直接存储编译后的JS代码，以JS方式直接运行| 解析速度最快| 尺寸较大，正在逐步优化 | 重度游戏使用
+
 
 
 ### native 字段
