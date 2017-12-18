@@ -2,6 +2,12 @@
   {
     "children": [
       {
+        "filename": "/tools/Inspector/update/update255/",
+        "text": "Egret Inspector 2.5.5",
+        "des": "Egret Inspector 2.5.5",
+        "in_use": true
+      },
+      {
         "filename": "/tools/Inspector/update/update/",
         "text": "Egret Inspector 2.5.4",
         "des": "Egret Inspector 2.5.4",

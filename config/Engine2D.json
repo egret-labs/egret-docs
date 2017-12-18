@@ -456,6 +456,12 @@
         "text": "WebAssembly 版本使用",
         "des": "WebAssembly 版本使用",
         "in_use": false
+      },
+      {
+        "filename": "/Engine2D/projectConfig/cmdExtensionPlug/",
+        "text": "命令行扩展插件",
+        "des": "命令行扩展插件",
+        "in_use": true
       }
     ],
     "isFolder": true,
