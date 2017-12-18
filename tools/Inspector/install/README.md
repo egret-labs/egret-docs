@@ -6,7 +6,7 @@
 * 打开Chrome，转到Chrome扩展工具页 (可以直接输入chrome://extensions/ 打开)。
 * 先把开发者模式打开。
   ![image](3.png)
-* 然后会出现加载一解压的扩展程序，点击弹出浏览文件夹，选择刚刚zip解压出来的文件夹。
+* 然后会出现加载已解压的扩展程序，点击弹出浏览文件夹，选择刚刚zip解压出来的EgretInspector-install文件夹。
   ![image](4.png)
 * 点击确定安装，安装完成的状态：
   ![image](5.png)
