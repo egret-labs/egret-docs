@@ -2,9 +2,9 @@
   {
     "children": [
       {
-        "filename": "/microclient/update/0.0.14/",
-        "text": "Egret 微端 0.0.14",
-        "des": "Egret 微端 0.0.14",
+        "filename": "/microclient/update/0.1.0/",
+        "text": "Egret 微端 0.1.0",
+        "des": "Egret 微端 0.1.0",
         "in_use": true
       },
       {
@@ -20,17 +20,23 @@
         "in_use": true,
         "children": [
           {
-        "filename": "/microclient/update/0.0.13/",
-        "text": "Egret 微端 0.0.13",
-        "des": "Egret 微端 0.0.13",
-        "in_use": true
-      },
+            "filename": "/microclient/update/0.0.14/",
+            "text": "Egret 微端 0.0.14",
+            "des": "Egret 微端 0.0.14",
+            "in_use": true
+          },
           {
-          "filename": "/microclient/update/0.0.12/",
-          "text": "Egret 微端 0.0.12",
-          "des": "Egret 微端 0.0.12",
-          "in_use": true
-        },
+            "filename": "/microclient/update/0.0.13/",
+            "text": "Egret 微端 0.0.13",
+            "des": "Egret 微端 0.0.13",
+            "in_use": true
+          },
+          {
+            "filename": "/microclient/update/0.0.12/",
+            "text": "Egret 微端 0.0.12",
+            "des": "Egret 微端 0.0.12",
+            "in_use": true
+          },
           {
             "filename": "/microclient/update/0.0.11/",
             "text": "Egret 微端 0.0.11",
@@ -138,11 +144,11 @@
         "text": "关闭启动页",
         "des": "关闭启动页"
       },
-     {
+      {
         "filename": "/microclient/manual/offline/",
         "text": "离线模式",
         "des": "离线模式"
-     }
+      }
     ],
     "isFolder": true,
     "text": "使用手册",
