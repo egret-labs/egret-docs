@@ -456,6 +456,12 @@
         "text": "命令行扩展插件",
         "des": "命令行扩展插件",
         "in_use": true
+      },
+      {
+        "filename": "/Engine2D/projectConfig/extendRepSummary/",
+        "text": "扩展库简介",
+        "des": "扩展库简介",
+        "in_use": true
       }
     ],
     "isFolder": true,
@@ -777,13 +783,25 @@
         "filename": "/Engine2D/screenAdaptation/screenAdaptation/",
         "text": "屏幕适配",
         "des": "屏幕适配",
-        "in_use": true
+        "in_use": false
       },
       {
         "filename": "/Engine2D/screenAdaptation/insight/",
         "text": "深入了解屏幕适配",
         "des": "深入了解屏幕适配",
         "in_use": false
+      },
+      {
+        "filename": "/Engine2D/screenAdaptation/zoomMode/",
+        "text": "缩放模式",
+        "des": "缩放模式",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/screenAdaptation/rotationMode/",
+        "text": "旋转模式",
+        "des": "旋转模式",
+        "in_use": true
       }
     ],
     "isFolder": true,
