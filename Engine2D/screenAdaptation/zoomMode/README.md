@@ -168,16 +168,3 @@ fixedWide 模式的显示效果：
 在此模式下，舞台高度(Stage.stageHeight)和舞台宽度(Stage.stageWidth)由当前的缩放比例与播放器视口宽高决定。
 
 >fixedNarrow 模式和fixedWide 模式，可以理解为fixedWidth和fixedHeight的高级封装，显示效果与那两种模式类似，但是决定缩放比例的方向不是定死的，而是根据内容距离屏幕的边距宽窄来决定。在这两种模式下可以比较方便的布局 UI。
-
-## 2.旋转模式
-
-通过设置旋转模式，可以在浏览器因为重力感应发生旋转的时候，让内容根据要求变化。
-
-![](5639734349718.png)
-
-可以在 index.html 里的 body 部分修改 `data-orientation` 属性
-
-也可以在项目代码里随时修改，如：
-```
-this.stage.orientation = egret.OrientationMode.AUTO;
-```
