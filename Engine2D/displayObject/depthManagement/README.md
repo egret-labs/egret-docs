@@ -225,7 +225,7 @@ sprcon.setChildIndex( spr1, 1 );
 
 ## 5.访问容器子对象
 
-Egret 提供两种访问容器子对象的方法: `swapChildren()` 和 `swapChildrenAt()` 方法。
+Egret 提供两种访问容器子对象的方法: `getChildAt()` 和 `getChildByName()` 方法。
 
 具体使用方法如下：
 
