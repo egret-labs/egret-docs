@@ -148,6 +148,11 @@
         "filename": "/microclient/manual/offline/",
         "text": "离线模式",
         "des": "离线模式"
+      },
+      {
+        "filename": "/microclient/manual/supportToMicroclient",
+        "text": "support到微端",
+        "des": "support到微端"
       }
     ],
     "isFolder": true,
