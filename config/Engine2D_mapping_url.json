@@ -27,7 +27,7 @@
     "/Engine2D/projectConfig/libraryProject/":"2d/projectConfig/libraryProject",
     "/Engine2D/projectConfig/compileOrder/":"2d/projectConfig/compileOrder",
     "/Engine2D/projectConfig/wasmconfig/":"2d/projectConfig/wasmconfig",
-    "/Engine2D/projectConfig/cmdExtensionPlug/":"2d/projectConfig/cmdExtensionPlug/",
+    "/Engine2D/projectConfig/cmdExtensionPlugin/":"2d/projectConfig/cmdExtensionPlugin/",
     "/Engine2D/projectConfig/extendRepSummary/":"2d/projectConfig/extendRepSummary/",
     "/Engine2D/webassembly/":"2d/webassembly",
     "/Engine2D/displayObject/visualProgram/":"2d/displayObject/visualProgram",

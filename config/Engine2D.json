@@ -458,7 +458,7 @@
         "in_use": false
       },
       {
-        "filename": "/Engine2D/projectConfig/cmdExtensionPlug/",
+        "filename": "/Engine2D/projectConfig/cmdExtensionPlugin/",
         "text": "命令行扩展插件",
         "des": "命令行扩展插件",
         "in_use": true
