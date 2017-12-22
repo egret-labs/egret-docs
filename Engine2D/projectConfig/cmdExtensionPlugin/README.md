@@ -87,5 +87,5 @@ async onFinish(commandContext: plugins.CommandContext) {
 }
 ```	
 
-现在我们已经完成了这小小的插件，要想使用还需要把我们的插件引入到config.ts文件中，首先使用import引入我们的插件，例：import { TestPlugin } from './TestPlugin';然后在buildConfig的返回值的commands数组中实例化这个插件：new TestPlugin()。最后执行命令egret publish命令的运行结果如图：
+现在我们已经完成了这小小的插件，要想使用还需要把我们的插件引入到config.ts文件中，首先使用import引入我们的插件，例：import { testPlugin } from './TestPlugin';然后在buildConfig的返回值的commands数组中实例化这个插件：new testPlugin()。最后执行命令egret publish命令的运行结果如图：
 ![image](03.jpg)
