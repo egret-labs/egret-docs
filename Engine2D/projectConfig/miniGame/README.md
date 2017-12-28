@@ -14,7 +14,7 @@
 ### 创建新项目
 
 * 使用 ```egret create helloworld --type eui``` 创建一个新项目
-* 进入项目文件夹，执行 ```egret target --t [ 微信小游戏下载路径] --appid [ 微信appid] --projectname [项目名称]```
+* 进入项目文件夹，执行 ```egret target --t [ 微信小游戏模板下载路径] --appid [ 微信appid] --projectname [项目名称]```
 
     > 注意，如果您出现过同一个 appid 创建多个项目的情况（一般是用于测试），请务必确保不同项目的 projectname 不一样。
 
