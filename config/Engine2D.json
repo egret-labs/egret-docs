@@ -468,6 +468,12 @@
         "text": "扩展库简介",
         "des": "扩展库简介",
         "in_use": true
+      },
+      {
+        "filename": "/Engine2D/projectConfig/miniGame/",
+        "text": "微信小游戏",
+        "des": "微信小游戏",
+        "in_use": true
       }
     ],
     "isFolder": true,
