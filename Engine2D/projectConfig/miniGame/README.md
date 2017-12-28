@@ -8,8 +8,12 @@
 
 * 准备最新版微信开发者工具。[地址](https://mp.weixin.qq.com/debug/wxagame/dev/devtools/download.html?scene=21#wechat_redirect)
 * 从微信公众平台获取了小游戏的 appid
-* 白鹭引擎 5.1.1 版本
+* 白鹭引擎 5.1.1 版本以上
 * 白鹭引擎微信小游戏模板。[地址](http://developer.egret.com/cn/statics/downs/target.zip)
+
+    > 注意，5.1.1 引擎模版默认皮肤会加载两次，修改 ThemeAdapter.ts 文件，如图所示：
+
+    ![](x05.jpg)
 
 ### 创建新项目
 
