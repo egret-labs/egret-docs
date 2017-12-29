@@ -386,6 +386,50 @@
   {
     "children": [
       {
+        "filename": "/Engine2D/minigame/introduction/",
+        "text": "小游戏简介",
+        "des": "小游戏简介",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/minigame/tutorial/",
+        "text": "小游戏新手教程",
+        "des": "小游戏新手教程",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/minigame/advance/",
+        "text": "小游戏进阶教程",
+        "des": "小游戏进阶教程",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/minigame/api/",
+        "text": "小游戏 API 调用",
+        "des": "小游戏 API 调用",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/minigame/publish/",
+        "text": "项目发布小游戏指南",
+        "des": "项目发布小游戏指南",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/minigame/roadmap/",
+        "text": "后续路线图",
+        "des": "后续路线图",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "小游戏开发指南",
+    "des": "小游戏开发指南",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
         "filename": "/Engine2D/projectConfig/installation/",
         "text": "安装与部署",
         "des": "安装与部署",
