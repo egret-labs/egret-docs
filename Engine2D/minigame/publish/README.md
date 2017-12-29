@@ -16,11 +16,4 @@ setTimeout、 setInterval 函数第一个参数传入代码字符串执行
 使用 Function 传入字符串构造函数
 使用 GeneratorFunction 传入字符串构造生成器函数
 
-如果使用了 egret.getDefinitionByName()，需要设置 window.object1 = object1 这样的方式强制将特定对象转为全局对象
-<!-- 
-3、目前第三方库中有使用require引入方式，小游戏会报错。一直 Protobuf 报错
-4、egret.getDefinitionByName()，反射使用注意
-
-## 使用 Launcher 发布为小游戏
-
-## 适配性修改 -->
+如果使用了 egret.getDefinitionByName()，需要设置 window.object1 = object1 这样的方式强制将特定对象转为全局对象。
