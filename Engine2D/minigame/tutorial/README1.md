@@ -7,8 +7,6 @@
 * 白鹭引擎 5.1.1 版本以上(包括5.1.1)
 * 白鹭引擎微信小游戏模板。[下载地址](http://developer.egret.com/cn/statics/downs/target.zip)
 
-<!-- ![](x05.jpg) -->
-
 ### 创建小游戏
 
 * 使用 ```egret create helloworld --type eui``` 创建一个新项目
