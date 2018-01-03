@@ -419,12 +419,18 @@
         "filename": "/Engine2D/minigame/publish/",
         "text": "项目发布小游戏指南",
         "des": "项目发布小游戏指南",
-        "in_use": true
+        "in_use": true 
       },
       {
         "filename": "/Engine2D/minigame/roadmap/",
         "text": "后续路线图",
         "des": "后续路线图",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/minigame/minigameFAQ/",
+        "text": "微信小游戏问题集锦",
+        "des": "微信小游戏问题集锦",
         "in_use": true
       }
     ],
