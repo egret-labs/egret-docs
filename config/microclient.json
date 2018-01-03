@@ -159,6 +159,15 @@
         "filename": "/microclient/manual/supportToMicroclient/",
         "text": "support到微端",
         "des": "support到微端"
+      },{
+        "filename": "/microclient/manual/httpcache/",
+        "text": "微端缓存策略",
+        "des": "微端缓存策略"
+      },
+      {
+        "filename": "/microclient/manual/otherapi/",
+        "text": "微端使用的API",
+        "des": "微端使用的API"
       }
     ],
     "isFolder": true,
