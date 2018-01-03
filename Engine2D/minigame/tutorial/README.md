@@ -21,7 +21,7 @@
 其中 AppID 白鹭已经填写了一个默认 AppID，仅用于您调试项目。<br/>
 项目块名称为您要发布微信小游戏的名字。<br/>
 
-进入刚刚创建 helloworld 的项目中，执行 ```egret publish --target wxgame```
+进入刚刚创建 helloworld 的项目中，执行 ```egret publish --target wxgame``` 命令发布为微信小游戏项目
 
 ### 运行小游戏
 
