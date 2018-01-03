@@ -2,9 +2,9 @@
   {
     "children": [
       {
-        "filename": "/Wing/update/update411/",
-        "text": "Egret Wing 4.1.1",
-        "des": "Egret Wing 4.1.1",
+        "filename": "/Wing/update/update412/",
+        "text": "Egret Wing 4.1.2",
+        "des": "Egret Wing 4.1.2",
         "in_use": true
       },
       {
@@ -13,6 +13,12 @@
         "des": "历史更新",
         "in_use": true,
         "children": [
+          {
+            "filename": "/Wing/update/update411/",
+            "text": "Egret Wing 4.1.1",
+            "des": "Egret Wing 4.1.1",
+            "in_use": true
+          },
           {
             "filename": "/Wing/update/update410/",
             "text": "Egret Wing 4.1.0",
