@@ -45,7 +45,7 @@
 
 #### 在游戏使用到 egret.getDefinitionByName() 报错，找不到对应类时：
 
-答：需要将要反射的类挂载到 window 对象下，例如有个 class People{} 类，需要添加代码 window["People"] = People。[示例demo下载](http)
+答：需要将要反射的类挂载到 window 对象下，例如有个 class People{} 类，需要添加代码 window["People"] = People。[示例demo下载](http://developer.egret.com/cn/statics/downs/testglobal.zip)
 
 #### 在 EUI 中使用自定义组件，发布到微信小程序的 default.thm.js 报错提示找不到自定义组件
 
