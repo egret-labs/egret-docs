@@ -1,4 +1,4 @@
-##《白鹭HTML5游戏转微信小游戏问题集锦，你关心的都在这里》
+##《微信小游戏 FAQ》
 
 
 首先，再次强调一些微信小游戏的基础技术限制：
@@ -25,7 +25,9 @@
 
 #### 我在使用 egret res 库，5.1.2 创建的新项目使用的是 assetsmanager 库，这两个库有区别么？
 
-答：assetsmanager 是 res 的替代方案，这两者的 API 有 90% 保持一致，但是仍然有一些小区别，主要是在 RES.Analyzer 上，如果您遇到了相关问题，您可以在 egretProperties.json 中修改模块配置，从 assetsmanager 修改回 res 并执行 egret clean ，这样就可以换成 res 资源管理库了。
+答：assetsmanager 是 res 的替代方案，这两者的 API 有 90% 保持一致，但是仍然有一些小区别，主要是在 RES.Analyzer 上，如果您遇到了相关问题，您可以在 egretProperties.json 中修改模块配置，从 assetsmanager 修改回 res 并执行 egret clean ，这样就可以换成 res 资源管理库了。更改如图所示：
+
+![img](x02.png)
 
 
 #### 微信开发者工具无法识别项目或者无法读取 manifest.js 文件
@@ -35,7 +37,11 @@
 
 #### egret 设置横屏后微信小游戏不生效:
 
-答：需要在微信小游戏的项目中找到 game.json 文件，deviceOrientation 参数设置为 landscape，更多设置参考[官方文档](https://mp.weixin.qq.com/debug/wxagame/dev/index.html?t=201813)，下一引擎版本竟会自动切换屏幕旋转模式
+答：需要在微信小游戏的项目中找到 game.json 文件，deviceOrientation 参数设置为 landscape，更多设置参考[官方文档](https://mp.weixin.qq.com/debug/wxagame/dev/index.html?t=201813)，如图：
+
+![img](x01.png)
+
+下一引擎版本将会自动切换屏幕旋转模式
 
 
 
@@ -47,7 +53,9 @@
 
 答：需要将要反射的类挂载到 window 对象下，例如有个 class People{} 类，需要添加代码 window["People"] = People。[示例demo下载](http://developer.egret.com/cn/statics/downs/testglobal.zip)
 
-#### 在 EUI 中使用自定义组件，发布到微信小程序的 default.thm.js 报错提示找不到自定义组件
+#### 在 EUI 中使用自定义组件，发布到微信小程序的 default.thm.js 报错提示找不到自定义组件，错误如图：
+
+![img](x03.png)
 
 答：参考上一条回答，需要将自定义组件暴露到全局作用域。
 

@@ -392,6 +392,12 @@
   {
     "children": [
       {
+        "filename": "/Engine2D/minigame/minigameFAQ/",
+        "text": "微信小游戏 FAQ",
+        "des": "微信小游戏 FAQ",
+        "in_use": true
+      },
+      {
         "filename": "/Engine2D/minigame/introduction/",
         "text": "小游戏简介",
         "des": "小游戏简介",
@@ -425,12 +431,6 @@
         "filename": "/Engine2D/minigame/roadmap/",
         "text": "后续路线图",
         "des": "后续路线图",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/minigame/minigameFAQ/",
-        "text": "微信小游戏问题集锦",
-        "des": "微信小游戏问题集锦",
         "in_use": true
       }
     ],
