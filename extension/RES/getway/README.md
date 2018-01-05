@@ -23,6 +23,6 @@ var texture = spriteSheet.getTexture("activity_10");
 
 //等同于这样取：
 
-var texture:egret.Texture = RES.getRes("activity_10");
+var texture:egret.Texture = RES.getRes("icons.activity_10");
 ```
 
