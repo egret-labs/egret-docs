@@ -432,6 +432,12 @@
         "text": "后续路线图",
         "des": "后续路线图",
         "in_use": true
+      },
+      {
+        "filename": "/Engine2D/minigame/update/",
+        "text": "微信小游戏更新日志",
+        "des": "微信小游戏更新日志",
+        "in_use": true
       }
     ],
     "isFolder": true,
