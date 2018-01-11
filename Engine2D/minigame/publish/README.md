@@ -33,10 +33,10 @@
     }
 ```
 
-> 注意：小程序和小游戏中都移除了动态执行代码的能力，包括以下调用方式：
-eval 函数
-setTimeout、 setInterval 函数第一个参数传入代码字符串执行
-使用 Function 传入字符串构造函数
-使用 GeneratorFunction 传入字符串构造生成器函数
+## 注意事项：
 
-如果使用了 egret.getDefinitionByName()，需要设置 window.object1 = object1 这样的方式强制将特定对象转为全局对象。
+* 小程序和小游戏中都移除了动态执行代码的能力，包括以下调用方式：eval 函数、setTimeout、 setInterval 函数第一个参数传入代码字符串执行、使用 Function 传入字符串构造函数、使用 GeneratorFunction 传入字符串构造生成器函数、
+
+* 项目中使用了 egret.getDefinitionByName() 方法，需要将要反射的类挂载到全局 window 对象上，例：window["object1"] = object1 的方式。
+
+* 项目中使用了自定义组件，需要将自定义组件挂载到全局 window 对象上，例：window["CustomCom"] = CustomCom 的方式。
