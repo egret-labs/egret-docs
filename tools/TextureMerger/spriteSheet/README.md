@@ -15,3 +15,7 @@
 点击导出，可以将合成的大图和对应的json文件保存。
 
 ![image](3.png)
+
+注意：如果使用 TextureMerger 打包后，发现使用图集时有裂缝问题，请使用 TextureMerger 1.7.0 或以上版本，在扩展设置为 1px 可以解决。
+
+![image](5.png)
