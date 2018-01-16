@@ -2,9 +2,9 @@
   {
     "children": [
       {
-        "filename": "/microclient/update/0.1.1/",
-        "text": "Egret 微端 0.1.1",
-        "des": "Egret 微端 0.1.1",
+        "filename": "/microclient/update/0.1.2/",
+        "text": "Egret 微端 0.1.2",
+        "des": "Egret 微端 0.1.2",
         "in_use": true
       },
       {
@@ -19,6 +19,12 @@
         "des": "历史更新",
         "in_use": true,
         "children": [
+          {
+            "filename": "/microclient/update/0.1.1/",
+            "text": "Egret 微端 0.1.1",
+            "des": "Egret 微端 0.1.1",
+            "in_use": true
+          },
           {
             "filename": "/microclient/update/0.1.0/",
             "text": "Egret 微端 0.1.0",
@@ -159,7 +165,8 @@
         "filename": "/microclient/manual/supportToMicroclient/",
         "text": "support到微端",
         "des": "support到微端"
-      },{
+      },
+      {
         "filename": "/microclient/manual/httpcache/",
         "text": "微端缓存策略",
         "des": "微端缓存策略"
@@ -168,6 +175,11 @@
         "filename": "/microclient/manual/otherapi/",
         "text": "微端使用的API",
         "des": "微端使用的API"
+      },
+      {
+        "filename": "/microclient/manual/project/",
+        "text": "微端工程配置",
+        "des": "微端工程配置"
       }
     ],
     "isFolder": true,
