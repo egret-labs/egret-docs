@@ -8,18 +8,30 @@
 ### 创建小游戏
 
 使用最新的 Egret Launcher 创建 5.1.2 以上版本的项目，项目名字叫做 "helloworld"。
+
 然后在 Egret Launcher 您会看到刚刚创建的项目，点击发布设置:
 
 ![](x08.png)
 
 会弹出发布设置面板：
 
-![](x09.png)
+![](x10.jpg)
 
-其中 AppID 白鹭已经填写了一个默认 AppID，仅用于您调试项目。<br/>
-项目块名称为您要发布微信小游戏的名字。<br/>
+其中 AppID 白鹭已经填写了一个默认 AppID，仅用于调试项目。<br/>
+项目名称填写要发布微信小游戏的名字。<br/>
 
-进入刚刚创建 helloworld 的项目中，执行 ```egret publish --target wxgame``` 命令发布为微信小游戏项目
+点击确定按钮后，弹出提示面板（注：只有 Egret Launcher 1.0.37 以上版本会显示“使用微信开发者工具打开”按钮）：
+
+![](x11.jpg)
+
+点击“使用微信开发者工具打开”按钮，Launcher 会自动打开开发者工具。
+
+在 wing 编辑器中，修改 egretProperties.json 配置文件中的 target 对象的 current 属性为 wxgame，然后点击调试按钮，会自动打开 微信开发者工具。
+
+![](x12.jpg)
+
+另外开发者可以使用命令行调试小游戏，执行 ```egret publish --target wxgame``` 命令发布。
+
 
 ### 运行小游戏
 

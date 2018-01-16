@@ -20,7 +20,9 @@
 
 ![img](x02.png)
 
-* 在我们刚刚新建好的 miniGameSubdomain 目录中使用 launcher 新建一个名为 egretSub 的项目，作为我们的子域项目
+* 在我们刚刚新建好的 miniGameSubdomain 目录中使用 launcher 新建一个名为 egretSub 的项目，作为我们的子域项目。
+
+> 注意：由于小游戏对包体的限制，我们在建立子域项目时应该选择`游戏项目`，强烈建议开发者不要使用  `eui项目`。开发者如不使用 `tween动画`，也可以在 egretProperties.json 文件中删掉这个模块。
 
 ![img](x03.png)
 
@@ -64,3 +66,5 @@
 复制到 egretMain 的项目中。简单的说下这段代码的原理，基本原理每帧获取离屏的 canvas ，然后根据获取的 canvas 绘制一个 Bitmap。将这个 Bitmap 添加到主域的舞台上，开发者也可以把这个 bitmap 放到任意的先是对象里。原理类似。
 
 * 在 egretMain 项目中执行 egret run --target wxgame 发布项目并调起微信开发者工具，这样我们就以调试了。
+
+> 注意：再次强调为了减少小游戏的体积，在由于创建 egret 项目时，会在项目添加一些模版文件，不需要的可和文件一定要记得删除，例如 resource 文件夹下面的配置文件，图片都是删除的。
