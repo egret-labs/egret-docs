@@ -175,6 +175,11 @@
         "filename": "/microclient/manual/otherapi/",
         "text": "微端使用的API",
         "des": "微端使用的API"
+      },
+      {
+        "filename": "/microclient/manual/project/",
+        "text": "微端工程说明",
+        "des": "微端工程说明"
       }
     ],
     "isFolder": true,
