@@ -30,31 +30,10 @@
 
 ![](x12.jpg)
 
-另外开发者可以使用命令行调试小游戏，执行 ```egret publish --target wxgame``` 命令发布。
 
-
-### 运行小游戏
-
-介绍两种运行小游戏的方式：
-
-* 第一种：直接在当前项目目录中 执行 ```egret run --target wxgame``` 命令，引擎将自动使用微信开发者工具打开当前项目。
-
-* 第二种：打开微信开发者工具，使用微信扫码登录进入：
-
-![](x01.png)
-
-点击小程序项目进入并选择中打开 ```helloworld_wxgame```工程:
-
-![](x02.png)
-
-如打开时报错‘未找到入口 app.json’错误提示:
-
-![](x06.jpg)
-
-请您点击小游戏按钮：
-
-![](x07.png)
-
-我们还专门做了视频教程，[地址](https://v.qq.com/x/page/p0526hkhr08.html)
+开发者也可以使用命令行：
+  * 发布小游戏 ```egret publish --target wxgame``` 命令发布。
+  * 用微信开发者工具打开 ```egret run --target wxgame``` 命令。<br/>
+  注：简写 ```egret publish``` 或 ```egret run``` 将读取 egretProperties.json 配置文件中的 target 对象的 current 属性。
 
 现在就可以运行小游戏了，如在开发中遇到任何问题都可到官方论坛提问，官方团队很愿意为您解答<br/>
