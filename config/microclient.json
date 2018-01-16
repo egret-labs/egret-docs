@@ -178,8 +178,8 @@
       },
       {
         "filename": "/microclient/manual/project/",
-        "text": "微端工程说明",
-        "des": "微端工程说明"
+        "text": "微端工程配置",
+        "des": "微端工程配置"
       }
     ],
     "isFolder": true,
