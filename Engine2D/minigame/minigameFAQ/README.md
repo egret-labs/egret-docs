@@ -86,7 +86,17 @@
 
 答：请开发者检查下自己的操作系统是否是 32位 Windows，这是 5.1.2 版本在 32位 Windows系统上的 BUG，我们会尽快修复，在此之前，建议开发者使用 egret publish --target wxgame 发布后，手动使用微信开发者工具打开。
 
+#### 使用 eui 皮肤时报错 'parseFromString' of undefined，如何解决。
 
+答：检查是否使用了 嵌入EXML到代码中，例：
+
+```
+    var className = "skins.ButtonSkin";
+    var exmlText = `<e:Skin class="${className}" states="up,over,down,disabled" xmlns:s="http://ns.egret.com/eui">                ...
+                    </e:Skin>`;
+```
+
+需要改成单独的皮肤文件。
 
 
 今天就和大家分享这么多。有关更多的问题请您到 egret 论坛 bbs.egret.com 参与讨论。

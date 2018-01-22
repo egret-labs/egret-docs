@@ -40,3 +40,31 @@
 * 项目中使用了 egret.getDefinitionByName() 方法，需要将要反射的类挂载到全局 window 对象上，例：window["object1"] = object1 的方式。
 
 * 项目中使用了自定义组件，需要将自定义组件挂载到全局 window 对象上，例：window["CustomCom"] = CustomCom 的方式。
+
+* 检查是否使用了嵌入EXML到代码中，例：
+
+```
+    var className = "skins.ButtonSkin";
+    var exmlText = `<e:Skin class="${className}" states="up,over,down,disabled" xmlns:s="http://ns.egret.com/eui">                ...
+                    </e:Skin>`;
+```
+
+如果有需要改成单独的皮肤文件。
+
+* ts 代码和 eui 是不允许相同的命令空间，例如：
+
+```
+<?xml version="1.0" encoding="utf-8" ?> 
+<e:Skin class="ui.MyButtonSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui"> 
+
+</e:Skin>`;
+
+
+namespace ui {
+	export class TestNameSpace {
+		public constructor() {
+			egret.log("测试命令空间输出");
+		}
+	}
+}
+```

@@ -547,7 +547,7 @@
         "filename": "/Engine2D/projectConfig/miniGame/",
         "text": "微信小游戏",
         "des": "微信小游戏",
-        "in_use": true
+        "in_use": false
       }
     ],
     "isFolder": true,
