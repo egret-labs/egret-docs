@@ -11,7 +11,7 @@
 
 * 找到 js 调用 js 的方法。
 
-* 增加方法调用的声明。 请参考 [如何生成 .d.ts](../../../extension/threes/dts/README.md) 。
+* 增加方法调用的声明。 请参考 [如何生成 .d.ts](http://developer.egret.com/cn/github/egret-docs/extension/threes/dts/index.html) 。
 
 ### 示例
 
