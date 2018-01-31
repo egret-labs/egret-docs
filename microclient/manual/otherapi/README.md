@@ -27,3 +27,15 @@ iOS如上图所示，在 `[self setExternalInterfaces];` 下面增加一行`[sup
 
 iOS如上图所示，在 `[self setExternalInterfaces];` 下面增加一行`[super.launcher disableNativeRender];`
 
+## 设置 webview 是否透明
+
+![](a5.png)
+
+安卓如上图所示，在 `setExternalInterfaces();` 下面增加一行`launcher.setWebViewBackgroundTransparent(true);`
+
+![](a6.png)
+
+iOS如上图所示，在 `[self setExternalInterfaces];` 下面增加一行`[self.launcher setWebViewBackgroundTransparent:YES];`
+
+
+

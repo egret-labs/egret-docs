@@ -13,48 +13,6 @@ xhr.open('GET', './manifest.json?v=' + Math.random(), true);
 * 微端支持服务器的缓存策略，比如`Cache-Control:max-age=age`,
 微端的资源只有超出了`max-age`设置的过期时间以后，才会向服务器发送资源的更新请求。此外，在过期以后，如果服务器上的资源没有发生变化，微端不会重新下载这个资源。只有资源发生变化时，才会重新下载。
 
-# 将文件的缓存头放到本地
-当您把资源放在 app 中之后，可以通过服务器缓存策略来更新本地资源。
-比如通过服务器的`Cache-Control` 来更新 `main.min.js` 文件，只需要将一个对应的 `main.min.js_headerFile` 头文件放到 `main.min.js` 同一目录即可。
-下面来介绍一下如何获得 `main.min.js_headerFile` 头文件。
-
-## 1. 微端缓存所在的位置
-
-### 1.1 微端游戏的包名
-
-假设在Egret Launcher中生成本地微端工程的时候填入到应用包名的名字为GetHeaderDemo，那么，该应用的完整包名为org.egret.launcher.GetHeaderDemo。
-
-### 1.2. 微端游戏应用在Android上的安装目录
-
-假设微端游戏的完整包名为org.egret.launcher.GetHeaderDemo，那么，该应用在Android上的安装目录为/data/data/org.egret.launcher.GetHeaderDemo/。
-
-### 1.3 微端游戏缓存目录
-
-在微端游戏应用的安装目录下有一个默认的files文件夹；在该文件夹下面，有一个微端创建的games文件夹。games文件夹按照游戏名称将相应的缓存文件保存到该目录下。
-
-游戏名称是根据游戏地址获得的。举例来说，假设游戏地址为http://tool.egret-labs.org/Weiduan/game/index.html，那么，该游戏的名称就为game。由此可知，游戏名称就是游戏地址中最后面那个文件的父级目录的名字。
-
-由此可知，游戏地址为http://tool.egret-labs.org/Weiduan/game/index.html且完整包名为为org.egret.launcher.GetHeaderDemo的游戏应用会将游戏缓存文件保存到如下目录中：/data/data/org.egret.launcher.GetHeaderDemo/files/games/game/。
-
-## 2. 获取游戏缓存头文件
-
-微端会将从服务器请求的资源文件按照URL中的目录关系保存到游戏缓存目录中。使用adb命令，可以从 Android 模拟器上将相应的文件夹中的内容拉取下来。如果想要把/data/data/org.egret.launcher.GetHeaderDemo/files/games/game/ 文件夹拉取下来，其命令如下：
-
-```
-adb root
-adb pull /data/data/org.egret.launcher.GetHeaderDemo/files/games/game/ ./
-```
-
-第一条命令是为了使 adb 处于 root 模式，从而有权限访问微端应用的数据（部分电脑上不需要该命令）。
-
-第二条命令则是将 Android 设备上指定的文件夹拉取到当前目录。
-
-得到相应的文件夹后，进入该文件夹，就可以发现每个文件都对应一个header文件。举例来说，main.min.js文件对应的header文件为main.min.js_headerFile。
-
-**注意**0.1.1版本只能拉取单一的 header 文件。0.1.2版本开始可以拉取整个文件夹。
-
-
-## 微端支持的服务器缓存策略
 
 ## 一、支持的http缓存字段
 ### 1.1 Cache-Control字段及取值清单
