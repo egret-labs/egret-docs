@@ -466,6 +466,20 @@
   {
     "children": [
       {
+        "filename": "/Engine2D/bricksgame/",
+        "text": "新手教程",
+        "des": "新手教程",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "玩一玩平台开发指南",
+    "des": "玩一玩平台开发指南",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
         "filename": "/Engine2D/projectConfig/installation/",
         "text": "安装与部署",
         "des": "安装与部署",
