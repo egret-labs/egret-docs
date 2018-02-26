@@ -131,7 +131,7 @@
 请您直接使用微信开发者工具 打开这个小游戏项目即可。
 
 
-#### 升级到 5.1.5 时回报 ``` isMobile of function Capabilities ``` 错误
+#### 升级到 5.1.5 时会报 ``` isMobile of function Capabilities ``` 错误
 
 答：
 升级小游戏包到最新版本（1.0.12）后，重新生成微信小游戏项目，可以解决。
