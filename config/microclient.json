@@ -150,13 +150,13 @@
       },
       {
         "filename": "/microclient/manual/jstojava/",
-        "text": "JS 和 安卓原生通讯",
-        "des": "JS 和 安卓原生通讯"
+        "text": "JS 和 JAVA 原生通讯",
+        "des": "JS 和 JAVA 原生通讯"
       },
       {
         "filename": "/microclient/manual/jstooc/",
-        "text": "JS 和 Object-C 原生通讯",
-        "des": "JS 和 Object-C 原生通讯"
+        "text": "JS 和 Objective-C 原生通讯",
+        "des": "JS 和 Objective-C 原生通讯"
       },
       {
         "filename": "/microclient/manual/launchimage/",
