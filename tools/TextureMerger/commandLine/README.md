@@ -17,3 +17,5 @@
 * 命令示例：-mc d:/Y1 d:/Y2 -o d:/outpath -e /.*\.(swf|gif)。将D盘下Y1、Y2两个目录下的所有swf、gif文件进行转换并输出到D盘outpath目录中。
 
 	-e为可选命令 不写默认转换目录下所有被TextureMerger支持的动画文件
+
+* 注意: 如何没有将 TextureMerge 设置环境变量，需要敲入 TextureMerge 的结对路径。
