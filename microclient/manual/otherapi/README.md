@@ -1,8 +1,25 @@
 ## 强制刷新页面
+
 ```
 window.location.reload()
 ```
 通过该方法，可以在微端里强制刷新页面，重新加载游戏
+
+## 设置游戏地址入口页面的超时时间
+该 API 在微端版本 v0.1.5 之后支持。
+
+```
+iOS 在 AppDelegate.mm 中设置
+_launcher.homePageTimeout = xx;
+```
+![](a7.png)
+
+```
+安卓 在 AppDelegate.mm 中设置
+_launcher.homePageTimeout = xx;
+```
+![](a8.png)
+
 
 ## 关闭本地配置文件
 微端默认从网络读取配置信息，您也可以在 Launcher 创建项目的时候把配置信息放在本地。

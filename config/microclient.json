@@ -2,9 +2,9 @@
   {
     "children": [
       {
-        "filename": "/microclient/update/0.1.4/",
-        "text": "Egret 微端 0.1.4",
-        "des": "Egret 微端 0.1.4",
+        "filename": "/microclient/update/0.1.5/",
+        "text": "Egret 微端 0.1.5",
+        "des": "Egret 微端 0.1.5",
         "in_use": true
       },
       {
@@ -19,6 +19,12 @@
         "des": "历史更新",
         "in_use": true,
         "children": [
+          {
+            "filename": "/microclient/update/0.1.4/",
+            "text": "Egret 微端 0.1.4",
+            "des": "Egret 微端 0.1.4",
+            "in_use": true
+          },
           {
             "filename": "/microclient/update/0.1.3/",
             "text": "Egret 微端 0.1.3",
