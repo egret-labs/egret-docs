@@ -493,14 +493,14 @@
     "children": [
       {
         "filename": "/Engine2D/facebookInstantGames/",
-        "text": "FacebookInstantGames开发快速指南",
-        "des": "FacebookInstantGames开发快速指南",
+        "text": "开发快速指南",
+        "des": "开发快速指南",
         "in_use": true
       }
     ],
     "isFolder": true,
-    "text": "FacebookInstantGames开发指南",
-    "des": "FacebookInstantGames开发指南",
+    "text": "FacebookInstantGames",
+    "des": "FacebookInstantGames",
     "in_use": true
   },
   {
