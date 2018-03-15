@@ -2,9 +2,9 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/update/update516/",
-        "text": "Egret Engine2D 5.1.6",
-        "des": "Egret Engine2D 5.1.6",
+        "filename": "/Engine2D/update/update517/",
+        "text": "Egret Engine2D 5.1.7",
+        "des": "Egret Engine2D 5.1.7",
         "in_use": true
       },
       {
@@ -19,6 +19,12 @@
         "des": "历史更新",
         "in_use": true,
         "children": [
+          {
+            "filename": "/Engine2D/update/update516/",
+            "text": "Egret Engine2D 5.1.6",
+            "des": "Egret Engine2D 5.1.6",
+            "in_use": true
+          },
           {
             "filename": "/Engine2D/update/update515/",
             "text": "Egret Engine2D 5.1.5",
