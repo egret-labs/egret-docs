@@ -348,6 +348,4 @@ class Main extends egret.DisplayObjectContainer {
 
 在手机Facebook APP中点击您刚刚分享的游戏，可打开游戏进行测试。
 
-![](a152.png)
-
-![](a163.png)
+![](a152.png)     ![](a163.png)
