@@ -102,6 +102,7 @@
     "/Engine2D/td3D/addScene/":"2d/td3D/addScene",
     "/Engine2D/td3D/addRole/":"2d/td3D/addRole",
     "/Engine2D/td3D/roleMove/":"2d/td3D/roleMove",
-    "/Engine2D/td3D/bloodBar/":"2d/td3D/bloodBar/"
+    "/Engine2D/td3D/bloodBar/":"2d/td3D/bloodBar/",
+    "/Engine2D/minigame/openDataContext/":"2d/minigame/openDataContext/"
 
 }

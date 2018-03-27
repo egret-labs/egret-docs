@@ -464,6 +464,12 @@
         "in_use": true
       },
       {
+        "filename": "/Engine2D/minigame/openDataContext/",
+        "text": "开放数据域",
+        "des": "开放数据域",
+        "in_use": true
+      },
+      {
         "filename": "/Engine2D/minigame/publish/",
         "text": "项目发布小游戏指南",
         "des": "项目发布小游戏指南",
