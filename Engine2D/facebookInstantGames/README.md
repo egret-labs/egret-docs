@@ -326,6 +326,12 @@ class Main extends egret.DisplayObjectContainer {
 
 ## 打包上传
 
+在 index.html 里引入 sdk 的 js 文件。注意：该 js 文件必须像下面这样远程加载，不能放到本地，否则无法通过 Facebook 的审核。
+
+```
+<script src="https://www.facebook.com/assets.php/en_US/fbinstant.6.1.js"></script>；
+```
+
 如果您安装了最新版本的Egret Wing，可点击发布按钮打开上传面板。或者可通过Egret Launcher，项目中的发布设置按钮打开上传面板。
 
 选择**Facebook**选项卡，填写您的APP ID和刚刚生成的上传口令，在备注中，填写此次上传版本的描述信息。
