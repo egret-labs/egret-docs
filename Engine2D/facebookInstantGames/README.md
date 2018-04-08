@@ -204,7 +204,7 @@ class Menu extends egret.Sprite {
 ```
 class Main extends egret.DisplayObjectContainer {
 
-    public static menu: Menu;
+    public static menu: any;
     private static _that: egret.DisplayObjectContainer;
     public constructor() {
         super();
@@ -214,7 +214,7 @@ class Main extends egret.DisplayObjectContainer {
     private addStage(evt: egret.Event): void {
         this.initializeAsync();
 
-        egretfb.EgretFBInstant.startGameAsync().then(() => {
+        FBInstant.startGameAsync().then(() => {
             egret.log("start game");
             Main._that = this;
             Context.init(this.stage);
@@ -241,57 +241,60 @@ class Main extends egret.DisplayObjectContainer {
     }
 
     private initializeAsync(): void {
-        egretfb.EgretFBInstant.initializeAsync().then(function () {
-            egret.log("getLocale:", egretfb.EgretFBInstant.getLocale());
-            egret.log("getPlatform:", egretfb.EgretFBInstant.getPlatform());
-            egret.log("getSDKVersion", egretfb.EgretFBInstant.getSDKVersion());
-            egret.log("getSupportedAPIs", egretfb.EgretFBInstant.getSupportedAPIs());
-            egret.log("getEntryPointData", egretfb.EgretFBInstant.getEntryPointData());
+        FBInstant.initializeAsync().then(function () {
+            egret.log("getLocale:", FBInstant.getLocale());
+            egret.log("getPlatform:", FBInstant.getPlatform());
+            egret.log("getSDKVersion", FBInstant.getSDKVersion());
+            egret.log("getSupportedAPIs", FBInstant.getSupportedAPIs());
+            egret.log("getEntryPointData", FBInstant.getEntryPointData());
         })
 
         setTimeout(function () {
-            egretfb.EgretFBInstant.setLoadingProgress(100);
+            FBInstant.setLoadingProgress(100);
         }, 1000);
     }
 
     private baseinfo() {
         egret.log("baseinfo");
-        egret.log("getLocale:", egretfb.EgretFBInstant.getLocale());
-        egret.log("getPlatform:", egretfb.EgretFBInstant.getPlatform());
-        egret.log("getSDKVersion", egretfb.EgretFBInstant.getSDKVersion());
-        egret.log("getSupportedAPIs", egretfb.EgretFBInstant.getSupportedAPIs());
-        egret.log("getEntryPointData", egretfb.EgretFBInstant.getEntryPointData());
+        egret.log("getLocale:", FBInstant.getLocale());
+        egret.log("getPlatform:", FBInstant.getPlatform());
+        egret.log("getSDKVersion", FBInstant.getSDKVersion());
+        egret.log("getSupportedAPIs", FBInstant.getSupportedAPIs());
+        egret.log("getEntryPointData", FBInstant.getEntryPointData());
     }
 
     private quit(): void {
         egret.log("quit");
-        egretfb.EgretFBInstant.quit();
+        FBInstant.quit();
     }
 
     private logEvent(): void {
         egret.log("logEvent");
-        egretfb.EgretFBInstant.logEvent("test", 2, { "test": "ta" });
+        FBInstant.logEvent("test", 2, { "test": "ta" });
     }
 
 
     private shareAsync(): void {
         egret.log("shareAsync");
-        let l: egretfb.EgretSharePayload = new egretfb.EgretSharePayload()
-        l.text = "test";
-        egretfb.EgretFBInstant.shareAsync(l);
+        let data: FBInstant.SharePayload = {
+            intent: "",
+            text: "",
+            image: "",
+        };
+        FBInstant.shareAsync(data);
     }
 
 
     private player() {
         egret.log("player");
-        egret.log("player.getID", egretfb.EgretFBInstant.player.getID());
-        egret.log("player.getName", egretfb.EgretFBInstant.player.getName());
-        egret.log("player.getPhoto", egretfb.EgretFBInstant.player.getPhoto());
+        egret.log("player.getID", FBInstant.player.getID());
+        egret.log("player.getName", FBInstant.player.getName());
+        egret.log("player.getPhoto", FBInstant.player.getPhoto());
     }
 
     private async getEgretConnectedPlayersAsync() {
         egret.log("frends info:::");
-        let datas: egretfb.EgretConnectedPlayer[] = await egretfb.EgretFBInstant.player.getConnectedPlayersAsync();
+        let datas: FBInstant.ConnectedPlayer[] = await FBInstant.player.getConnectedPlayersAsync();
         egret.log(datas);
         datas.forEach(element => {
             egret.log("player.getID", element.getID());
@@ -301,15 +304,18 @@ class Main extends egret.DisplayObjectContainer {
     }
 
     private contextinfo(): void {
-        egret.log("Context.getID", egretfb.EgretFBInstant.context.getID());
-        egret.log("Context.getType", egretfb.EgretFBInstant.context.getType());
+        egret.log("Context.getID", FBInstant.context.getID());
+        egret.log("Context.getType", FBInstant.context.getType());
     }
 
     private share(): void {
         egret.log("share");
-        let data: egretfb.EgretSharePayload = new egretfb.EgretSharePayload();
-        data.text = "test share";
-        egretfb.EgretFBInstant.shareAsync(data);
+        let data: FBInstant.SharePayload = {
+            intent: "",
+            text: "",
+            image: "",
+        };
+        FBInstant.shareAsync(data);
     }
 }
 ```
