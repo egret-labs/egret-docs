@@ -34,6 +34,11 @@ eui 新增的 UI 库，使用起来更加的方便
 
 使用```egret create project_name```命令创建的项目，默认会带4个官方模块：```egret game res tween```
 
+> 需要注意的是，如何您把第三放模块放到了项目内的某个文件夹中，例如 `module` 内。需要在tsconfig.json 中的 include 中引入
+
+![](m01.png)
+
+
 ## 标准第三方库
 ### 准备第三方库
 第三方库可以是标准的 ts 库，也可是你在网上下载现成的 js 库，或者是自己写的 js 库。
