@@ -77,6 +77,13 @@
 
 答：目前只能避免这种使用方式，我们正在和微信团队配合，争取尽快解决这个问题。
 
+#### 设置声音的音量无效。
+
+答：目前不要设置声音的音量，由于小游戏原生的声音设置 volume 无效，我们正在和微信团队配合，争取尽快解决这个问题。
+
+#### 在 iphone 7plus ios10 系统中会出现文体排版错误。
+答：解决方法：在进入游戏前先判断一下机型和系统型号，如果是 7plus，请切换到 canvas 模式来避免。
+
 #### 使用 navigator.userAgent 在小游戏中获取信息时无论是什么手机的返回值都是一样的 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E8301 MicroMessenger/6.6.0 MiniGame NetType/WIFI Language/zh_CN',  
 
 答：目前请暂时避免这种使用方式，这个问题已经反馈给微信团队。
