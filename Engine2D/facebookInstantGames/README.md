@@ -329,7 +329,7 @@ class Main extends egret.DisplayObjectContainer {
 在 index.html 里引入 sdk 的 js 文件。注意：该 js 文件必须像下面这样远程加载，不能放到本地，否则无法通过 Facebook 的审核。
 
 ```
-<script src="https://www.facebook.com/assets.php/en_US/fbinstant.6.1.js"></script>；
+<script src="https://www.facebook.com/assets.php/en_US/fbinstant.6.1.js"></script>
 ```
 
 如果您安装了最新版本的Egret Wing，可点击发布按钮打开上传面板。或者可通过Egret Launcher，项目中的发布设置按钮打开上传面板。
