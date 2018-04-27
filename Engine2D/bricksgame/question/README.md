@@ -43,7 +43,7 @@
  首先，确认您的原egret项目引用了我们提供的socket通讯库。
  之后，检查发布后的 `manifest.js` 文件。
 
-  ![socket引用](./socket引用.png)
+  ![socket引用](./socket04.png)
 
   确保socket.js库在`egret.js`与`egret.bricks.js`之间引用。
   这样就可以保证socket库加载成功了。调用egret.WebSocket API即可调用socket。
