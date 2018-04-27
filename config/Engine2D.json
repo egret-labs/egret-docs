@@ -508,9 +508,15 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/bricksgame/",
+        "filename": "/Engine2D/bricksgame/start",
         "text": "新手教程",
         "des": "新手教程",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/bricksgame/question",
+        "text": "玩一玩游戏FAQ",
+        "des": "玩一玩游戏FAQ",
         "in_use": true
       }
     ],
