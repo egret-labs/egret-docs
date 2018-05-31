@@ -432,6 +432,20 @@
   {
     "children": [
       {
+        "filename": "/Engine2D/v52/upgrade/",
+        "text": "5.0的项目如何升级到5.2",
+        "des": "5.0 to 5.2",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "引擎 5.2 文档汇总",
+    "des": "5.2 文档汇总",
+    "in_use": true
+  },
+  {
+    "children": [
+      {
         "filename": "/Engine2D/getStarted/helloWorld/",
         "text": "Hello World",
         "des": "Hello World",
