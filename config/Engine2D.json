@@ -506,9 +506,9 @@
         "in_use": true
       },
       {
-        "filename": "/Engine2D/minigame/update/",
-        "text": "微信小游戏更新日志",
-        "des": "微信小游戏更新日志",
+        "filename": "/Engine2D/minigame/usingcache/",
+        "text": "如何使用缓存资源",
+        "des": "",
         "in_use": true
       }
     ],
