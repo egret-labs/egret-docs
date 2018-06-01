@@ -1146,43 +1146,5 @@
     "text": "打包发布",
     "des": "打包发布",
     "in_use": true
-  },
-  {
-    "children": [
-      {
-        "filename": "/Engine2D/td3D/intro/",
-        "text": "开发教程",
-        "des": "开发教程",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/td3D/addScene/",
-        "text": "添加场景",
-        "des": "添加场景",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/td3D/addRole/",
-        "text": "添加角色",
-        "des": "添加角色",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/td3D/roleMove/",
-        "text": "角色移动",
-        "des": "角色移动",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/td3D/bloodBar/",
-        "text": "角色血条",
-        "des": "角色血条",
-        "in_use": true
-      }
-    ],
-    "isFolder": true,
-    "text": "3D游戏教程",
-    "des": "3D游戏教程",
-    "in_use": true
   }
 ]
