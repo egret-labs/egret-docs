@@ -90,6 +90,7 @@ iOS 项目同上。
 ```
 8. Runtime 模式下，[js 与 Native 的交互方式请看此文档](http://developer.egret.com/cn/github/egret-docs/Native/native/communicateSkill/index.html), WebView 模式下的交互方式将在下个版本支持。
 9. 如果游戏是横屏，请将微端工程也设置成横屏，否则会黑屏。
+10. 安卓动态申请权限要求：如果在继承自 NativeActivity 的 Activity 中实现了 onRequestPermissionsResult 方法（模版中是 MainActivity），需要在方法中调用 super.onRequestPermissionsResult 。
 
 ### 相关下载和安卓版本要求
 #### Egret Launcher

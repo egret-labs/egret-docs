@@ -2,9 +2,9 @@
   {
     "children": [
       {
-        "filename": "/Engine2D/update/update5111/",
-        "text": "Egret Engine2D 5.1.11",
-        "des": "Egret Engine2D 5.1.11",
+        "filename": "/Engine2D/update/update523/",
+        "text": "Egret Engine2D 5.2.3",
+        "des": "Egret Engine2D 5.2.3",
         "in_use": true
       },
       {
@@ -19,6 +19,30 @@
         "des": "历史更新",
         "in_use": true,
         "children": [
+          {
+            "filename": "/Engine2D/update/update522/",
+            "text": "Egret Engine2D 5.2.2",
+            "des": "Egret Engine2D 5.2.2",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update521/",
+            "text": "Egret Engine2D 5.2.1",
+            "des": "Egret Engine2D 5.2.1",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update520/",
+            "text": "Egret Engine2D 5.2.0",
+            "des": "Egret Engine2D 5.2.0",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/update/update5111/",
+            "text": "Egret Engine2D 5.1.11",
+            "des": "Egret Engine2D 5.1.11",
+            "in_use": true
+          },
           {
             "filename": "/Engine2D/update/update5110/",
             "text": "Egret Engine2D 5.1.10",
@@ -500,9 +524,9 @@
         "in_use": true
       },
       {
-        "filename": "/Engine2D/minigame/update/",
-        "text": "微信小游戏更新日志",
-        "des": "微信小游戏更新日志",
+        "filename": "/Engine2D/minigame/usingcache/",
+        "text": "如何使用缓存资源",
+        "des": "",
         "in_use": true
       }
     ],
@@ -636,6 +660,12 @@
         "text": "微信小游戏",
         "des": "微信小游戏",
         "in_use": false
+      },
+      {
+        "filename": "/Engine2D/projectConfig/upgradev52/",
+        "text": "5.2 项目升级指南",
+        "des": "5.0 to 5.2",
+        "in_use": true
       }
     ],
     "isFolder": true,
@@ -1133,44 +1163,6 @@
     "isFolder": true,
     "text": "打包发布",
     "des": "打包发布",
-    "in_use": true
-  },
-  {
-    "children": [
-      {
-        "filename": "/Engine2D/td3D/intro/",
-        "text": "开发教程",
-        "des": "开发教程",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/td3D/addScene/",
-        "text": "添加场景",
-        "des": "添加场景",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/td3D/addRole/",
-        "text": "添加角色",
-        "des": "添加角色",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/td3D/roleMove/",
-        "text": "角色移动",
-        "des": "角色移动",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/td3D/bloodBar/",
-        "text": "角色血条",
-        "des": "角色血条",
-        "in_use": true
-      }
-    ],
-    "isFolder": true,
-    "text": "3D游戏教程",
-    "des": "3D游戏教程",
     "in_use": true
   }
 ]
