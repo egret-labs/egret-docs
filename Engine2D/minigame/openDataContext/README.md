@@ -80,4 +80,4 @@
   * 开发后数据域尽量少使用库。
   * 按照示例 demo 的流程，确认引擎、以及微信开发者工具都是最新了。开放数据还是报错请重新启动微信开发者工具。
 
-今天就先写到这里，具体可以参考示例 demo，如您在开发过程中遇到任何问题，请登录官方论坛进行[讨论](http://bbs.egret.com)。示例 [demo](https://github.com/peony-ma/wxOpenDataContext.git) 下载。
+今天就先写到这里，具体可以参考示例 demo，如您在开发过程中遇到任何问题，请登录官方论坛进行[讨论](http://bbs.egret.com)。示例 [demo](https://github.com/egret-labs/egret-target-wxgame/tree/master/demos/openDataContext) 下载。
