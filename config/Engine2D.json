@@ -529,6 +529,12 @@
         "text": "如何使用缓存资源",
         "des": "",
         "in_use": true
+      },
+      {
+        "filename": "/Engine2D/minigame/package/",
+        "text": "如何分包加载资源",
+        "des": "",
+        "in_use": true
       }
     ],
     "isFolder": true,
