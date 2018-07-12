@@ -38,3 +38,19 @@ if (window['closeLoadingView']) {
 ### 注意
 
 该功能仅支持 **4.1.0** 以上版本的引擎
+
+## 禁用启动页的方法
+
+Android微端0.1.8添加。禁用后将不再弹出启动页。
+
+```
+launcher.disableLaunchPage();
+```
+
+## 修改启动页地址的方法
+
+Android微端0.1.8添加。
+
+```
+launcher.launchPageUrl = "启动页地址";
+```
