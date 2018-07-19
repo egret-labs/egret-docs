@@ -1,10 +1,8 @@
-[
-  {
-    "children": [
-      {
-        "filename": "/Engine2D/update/update523/",
-        "text": "Egret Engine2D 5.2.3",
-        "des": "Egret Engine2D 5.2.3",
+[{
+    "children": [{
+        "filename": "/Engine2D/update/update525/",
+        "text": "Egret Engine2D 5.2.5",
+        "des": "Egret Engine2D 5.2.5",
         "in_use": true
       },
       {
@@ -18,7 +16,17 @@
         "text": "历史更新",
         "des": "历史更新",
         "in_use": true,
-        "children": [
+        "children": [{
+            "filename": "/Engine2D/update/update524/",
+            "text": "Egret Engine2D 5.2.4",
+            "des": "Egret Engine2D 5.2.4",
+            "in_use": true
+          }, {
+            "filename": "/Engine2D/update/update523/",
+            "text": "Egret Engine2D 5.2.3",
+            "des": "Egret Engine2D 5.2.3",
+            "in_use": true
+          },
           {
             "filename": "/Engine2D/update/update522/",
             "text": "Egret Engine2D 5.2.2",
@@ -448,8 +456,7 @@
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/getStarted/helloWorld/",
         "text": "Hello World",
         "des": "Hello World",
@@ -474,8 +481,7 @@
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/minigame/minigameFAQ/",
         "text": "微信小游戏 FAQ",
         "des": "微信小游戏 FAQ",
@@ -528,6 +534,12 @@
         "text": "如何使用缓存资源",
         "des": "",
         "in_use": true
+      },
+      {
+        "filename": "/Engine2D/minigame/package/",
+        "text": "如何分包加载资源",
+        "des": "",
+        "in_use": true
       }
     ],
     "isFolder": true,
@@ -536,8 +548,7 @@
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/bricksgame/start/",
         "text": "新手教程",
         "des": "新手教程",
@@ -556,22 +567,19 @@
     "in_use": true
   },
   {
-    "children": [
-      {
-        "filename": "/Engine2D/facebookInstantGames/",
-        "text": "开发快速指南",
-        "des": "开发快速指南",
-        "in_use": true
-      }
-    ],
+    "children": [{
+      "filename": "/Engine2D/facebookInstantGames/",
+      "text": "开发快速指南",
+      "des": "开发快速指南",
+      "in_use": true
+    }],
     "isFolder": true,
     "text": "Facebook InstantGames",
     "des": "Facebook InstantGames",
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/projectConfig/installation/",
         "text": "安装与部署",
         "des": "安装与部署",
@@ -674,8 +682,7 @@
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/displayObject/displayObject/",
         "text": "基本概念",
         "des": "基本概念",
@@ -706,36 +713,31 @@
     "in_use": true
   },
   {
-    "children": [
-      {
-        "filename": "/Engine2D/vectorDrawing/vectorDrawing/",
-        "text": "使用矢量绘图",
-        "des": "使用矢量绘图",
-        "in_use": true
-      }
-    ],
+    "children": [{
+      "filename": "/Engine2D/vectorDrawing/vectorDrawing/",
+      "text": "使用矢量绘图",
+      "des": "使用矢量绘图",
+      "in_use": true
+    }],
     "isFolder": true,
     "text": "矢量绘图",
     "des": "矢量绘图",
     "in_use": true
   },
   {
-    "children": [
-      {
-        "filename": "/Engine2D/mask/mask/",
-        "text": "遮罩",
-        "des": "遮罩",
-        "in_use": true
-      }
-    ],
+    "children": [{
+      "filename": "/Engine2D/mask/mask/",
+      "text": "遮罩",
+      "des": "遮罩",
+      "in_use": true
+    }],
     "isFolder": true,
     "text": "遮罩",
     "des": "遮罩",
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/hit/rectangleHit/",
         "text": "矩形碰撞检测",
         "des": "矩形碰撞检测",
@@ -760,8 +762,7 @@
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/textField/text/",
         "text": "文本类型",
         "des": "文本类型",
@@ -780,8 +781,7 @@
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/event/principle/",
         "text": "事件处理机制",
         "des": "事件处理机制",
@@ -830,8 +830,7 @@
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/net/sendHTTP/",
         "text": "发送HTTP请求",
         "des": "发送HTTP请求",
@@ -856,8 +855,7 @@
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/bitmapTexture/bitmapTexture/",
         "text": "位图纹理",
         "des": "位图纹理",
@@ -894,22 +892,19 @@
     "in_use": true
   },
   {
-    "children": [
-      {
-        "filename": "/Engine2D/blendMode/blendMode/",
-        "text": "混合模式",
-        "des": "混合模式",
-        "in_use": true
-      }
-    ],
+    "children": [{
+      "filename": "/Engine2D/blendMode/blendMode/",
+      "text": "混合模式",
+      "des": "混合模式",
+      "in_use": true
+    }],
     "isFolder": true,
     "text": "混合模式",
     "des": "混合模式",
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/filter/filter/",
         "text": "滤镜",
         "des": "滤镜",
@@ -928,22 +923,19 @@
     "in_use": true
   },
   {
-    "children": [
-      {
-        "filename": "/Engine2D/timeControl/timeControl/",
-        "text": "时间控制",
-        "des": "时间控制",
-        "in_use": true
-      }
-    ],
+    "children": [{
+      "filename": "/Engine2D/timeControl/timeControl/",
+      "text": "时间控制",
+      "des": "时间控制",
+      "in_use": true
+    }],
     "isFolder": true,
     "text": "时间控制",
     "des": "时间控制",
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/multimedia/audio/",
         "text": "音频",
         "des": "音频",
@@ -968,22 +960,19 @@
     "in_use": true
   },
   {
-    "children": [
-      {
-        "filename": "/Engine2D/renderMode/webgl/",
-        "text": "WebGL渲染",
-        "des": "WebGL渲染",
-        "in_use": true
-      }
-    ],
+    "children": [{
+      "filename": "/Engine2D/renderMode/webgl/",
+      "text": "WebGL渲染",
+      "des": "WebGL渲染",
+      "in_use": true
+    }],
     "isFolder": true,
     "text": "渲染模式",
     "des": "渲染模式",
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/screenAdaptation/screenAdaptation/",
         "text": "屏幕适配",
         "des": "屏幕适配",
@@ -1014,8 +1003,7 @@
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/debug/debug/",
         "text": "调试",
         "des": "调试",
@@ -1052,22 +1040,19 @@
     "in_use": true
   },
   {
-    "children": [
-      {
-        "filename": "/Engine2D/callJS/tsCallJs/",
-        "text": "ts 与 js 互调",
-        "des": "ts 与 js 互调",
-        "in_use": true
-      }
-    ],
+    "children": [{
+      "filename": "/Engine2D/callJS/tsCallJs/",
+      "text": "ts 与 js 互调",
+      "des": "ts 与 js 互调",
+      "in_use": true
+    }],
     "isFolder": true,
     "text": "调用原生JS",
     "des": "调用原生JS",
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/native/native/",
         "text": "原生支持",
         "des": "原生支持",
@@ -1122,8 +1107,7 @@
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/Engine2D/publish/publish/",
         "text": "打包发布",
         "des": "打包发布",
