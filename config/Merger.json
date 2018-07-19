@@ -1,14 +1,17 @@
-[
-  {
-    "children": [
-      {
-        "filename": "/tools/TextureMerger/update/update163/",
-        "text": "Texture Merger 1.6.3",
-        "des": "Texture Merger 1.6.3",
+[{
+    "children": [{
+        "filename": "/tools/TextureMerger/update/update172/",
+        "text": "Texture Merger 1.7.2",
+        "des": "Texture Merger 1.7.2",
         "in_use": true
       },
       {
-        "children": [
+        "children": [{
+            "filename": "/tools/TextureMerger/update/update163/",
+            "text": "Texture Merger 1.6.3",
+            "des": "Texture Merger 1.6.3",
+            "in_use": true
+          },
           {
             "filename": "/tools/TextureMerger/update/update160/",
             "text": "Texture Merger 1.6.0",
@@ -28,8 +31,7 @@
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "/tools/TextureMerger/manual/",
         "text": "TextureMerge简介",
         "des": "TextureMerge简介",
