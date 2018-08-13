@@ -657,12 +657,6 @@
         "in_use": false
       },
       {
-        "filename": "/Engine2D/projectConfig/cmdExtensionPlugin/",
-        "text": "命令行扩展插件",
-        "des": "命令行扩展插件",
-        "in_use": true
-      },
-      {
         "filename": "/Engine2D/projectConfig/extendRepSummary/",
         "text": "扩展库简介",
         "des": "扩展库简介",
@@ -1043,6 +1037,28 @@
     "text": "调试",
     "des": "调试",
     "in_use": true
+  },
+  {
+    "isFolder": true,
+    "text": "命令行扩展插件",
+    "des": "命令行扩展插件",
+    "in_use": true,
+    "children": [{
+      "filename": "/Engine2D/cmdExtensionPlugin/plugin/",
+      "text": "命令行扩展插件",
+      "des": "命令行扩展插件",
+      "in_use": true
+    }, {
+      "filename": "/Engine2D/cmdExtensionPlugin/api/",
+      "text": "API 文档",
+      "des": "API 文档",
+      "in_use": true
+    }, {
+      "filename": "/Engine2D/cmdExtensionPlugin/teach/",
+      "text": "插件使用案例教程",
+      "des": "插件使用案例教程",
+      "in_use": true
+    }]
   },
   {
     "children": [{
