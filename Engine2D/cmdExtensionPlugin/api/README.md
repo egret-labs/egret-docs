@@ -543,17 +543,17 @@ new TextureMergerPlugin({textureMergerRoot:[ 'resource']})
 
 插件依赖 TextureMerger 1.7 以上的版本。
 
-TextureMergerPlugin根据项目中的`tmpropject`文件进行合图操作（暂时需要关闭TextureMerger工具才能使用）,通过TextureMerger工具的命令行控制完成。
+TextureMergerPlugin根据项目中的`tmproject`文件进行合图操作（暂时需要关闭TextureMerger工具才能使用）,通过TextureMerger工具的命令行控制完成。
 
-#### 生成tmpropject文件
+#### 生成tmproject文件
 
-* 开发者通过wing做出一款游戏后，我们建议使用TextureMerger工具进行合图操作，这样主要目的就是可以自由设置，开发者可以根据项目的需求来调节最后的显示效果和合图的方式。使用[TextureMerger工具](http://developer.egret.com/cn/github/egret-docs/tools/TextureMerger/update/update172/index.html)生成`tmpropject`文件。
+* 开发者通过wing做出一款游戏后，我们建议使用TextureMerger工具进行合图操作，这样主要目的就是可以自由设置，开发者可以根据项目的需求来调节最后的显示效果和合图的方式。使用[TextureMerger工具](http://developer.egret.com/cn/github/egret-docs/tools/TextureMerger/update/update172/index.html)生成`tmproject`文件。
 
 
 
-* 当游戏项目比较小，对资源配置的要求不高时，开发者可以选择使用一个自动化的脚本来处理生成`tmpropject`文件。
+* 当游戏项目比较小，对资源配置的要求不高时，开发者可以选择使用一个自动化的脚本来处理生成`tmproject`文件。
 
-  脚本[autoMerger.js](#autoMerget)，主要将对应的res.json里面的组进行合并图集操作，支持粒子，龙骨，位图字体的筛选，支持多个res.json，自动扫描配置好的res.json，但是由于资源引用问题，建议将所有res.json合并为一个文件后，然后再执行这个脚本去生成对应的tmproject文件，因为针对的是比较普遍的情况，所以性能比较低，如果开发者所需项目命名比较规范统一，建议修改脚本去提高性能，使用此脚本时开发者看不到最终显示效果，如果组的资源过多，很有可能导致合完的图集很大，大量空白区域被闲置，**因此建议开发者修改组之后或是采用[TextureMerger工具](http://developer.egret.com/cn/github/egret-docs/tools/TextureMerger/manual/index.html)进行拆分**，以达到最好的效果。
+  脚本[autoMerger.js](#autoMerger)，主要将对应的res.json里面的组进行合并图集操作，支持粒子，龙骨，位图字体的筛选，支持多个res.json，自动扫描配置好的res.json，但是由于资源引用问题，建议将所有res.json合并为一个文件后，然后再执行这个脚本去生成对应的tmproject文件，因为针对的是比较普遍的情况，所以性能比较低，如果开发者所需项目命名比较规范统一，建议修改脚本去提高性能，使用此脚本时开发者看不到最终显示效果，如果组的资源过多，很有可能导致合完的图集很大，大量空白区域被闲置，**因此建议开发者修改组之后或是采用[TextureMerger工具](http://developer.egret.com/cn/github/egret-docs/tools/TextureMerger/manual/index.html)进行拆分**，以达到最好的效果。
 
   脚本使用：
 
@@ -565,7 +565,7 @@ TextureMergerPlugin根据项目中的`tmpropject`文件进行合图操作（暂�
   ```
 
   ```typescript
-  // tmpropject文件的输出目录， 必须在resource目录下
+  // tmproject文件的输出目录， 必须在resource目录下
   var targetDir = "resource/TextureMerger";
   ```
 
