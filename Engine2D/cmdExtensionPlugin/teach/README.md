@@ -6,7 +6,7 @@
 
 为了让开发者以更简单的使用Egret内置的插件，我们将通过一个案例来展示插件的具体使用方法和注意事项。**本文基于引擎5.2.7，低于该版本的引擎可能部分功能无效**
 
-本文案例从一个刚编写完成的[eui卡牌项目](http://bbs.egret.com/thread-50009-1-1.html)开始发布到微信小游戏，为了让代码包的**体积更小**，**更好管理**，逐步添加使用不同的插件，以实现不同的需求。[源文件下载地址](http://tool.egret-labs.org/DocZip/engine/plugin-egret-eui-demo.zip)
+本文案例从一个刚编写完成的[eui卡牌项目](http://bbs.egret.com/thread-50009-1-1.html)开始发布到微信小游戏，为了让代码包的**体积更小**，**更好管理**，逐步添加使用不同的插件，以实现不同的需求。[源文件下载地址](http://tool.egret-labs.org/DocZip/engine/plugin-egret-eui-demo2.zip)
 ### todos
 
 * 使用UglifyPlugin将代码混淆压缩
@@ -354,7 +354,7 @@ node scripts/autoMerger.js
 现在只需要执行TextureMergerPlugin插件就可以自动合并，这里需要注意TextureMergerPlugin依赖 TextureMerger 1.7 以上的版本，如果不符合请自行安装，并且在运行时TextureMerger需要处于关闭状态。
 
 ```typescript
-new TextureMergerPlugin()
+new TextureMergerPlugin({textureMergerRoot:[ 'resource']})
 ```
 
 保存后在终端执行：
@@ -370,7 +370,7 @@ egret build
 编辑config.wxgame.ts：
 
 ```typescript
-new TextureMergerPlugin(),
+new TextureMergerPlugin({textureMergerRoot:[ 'resource']})
 
 new ConvertResConfigFilePlugin({
     resourceConfigFiles: [{ filename: "resource/default.res.json", root: "resource/" }],
