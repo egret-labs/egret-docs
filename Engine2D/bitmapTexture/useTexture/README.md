@@ -114,7 +114,7 @@ class BitmapTest extends egret.DisplayObjectContainer{
     }
     private onGroupComplete()
     {
-        var txtr:egret.Texture = RES.getRes( "dogs.dog1" );
+        var txtr:egret.Texture = RES.getRes( "dogs#dog1" );
         var img:egret.Bitmap = new egret.Bitmap( txtr );
         this.addChild(img);
     }
@@ -124,7 +124,7 @@ class BitmapTest extends egret.DisplayObjectContainer{
 注意其中一行：
 
 ```
-var txtr:egret.Texture = RES.getRes( "dogs.dog1" );
+var txtr:egret.Texture = RES.getRes( "dogs#dog1" );
 ```
 
 其中dogs为纹理集，id为该纹理集中的一个资源id。
