@@ -1,10 +1,8 @@
-[
-	{
-		"children": [
-			{
-				"filename": "/DB/update/update481/",
-				"text": "DragonBones 4.8.1",
-				"des": "DragonBones 4.8.1",
+[{
+		"children": [{
+				"filename": "/DB/update/update561/",
+				"text": "DragonBones 5.6.1",
+				"des": "DragonBones 5.6.1",
 				"in_use": true
 			},
 			{
@@ -12,7 +10,12 @@
 				"text": "历史更新",
 				"des": "历史更新",
 				"in_use": true,
-				"children": [
+				"children": [{
+						"filename": "/DB/update/update481/",
+						"text": "DragonBones 4.8.1",
+						"des": "DragonBones 4.8.1",
+						"in_use": true
+					},
 					{
 						"filename": "/DB/update/update474/",
 						"text": "DragonBones 4.7.4",
@@ -88,24 +91,20 @@
 		"in_use": true
 	},
 	{
-		"children": [
-			{
-				"children": [
-					{
-						"filename": "/DB/dbPro/introduction/introduction/",
-						"text": "简介",
-						"des": "简介",
-						"in_use": true
-					}
-				],
+		"children": [{
+				"children": [{
+					"filename": "/DB/dbPro/introduction/introduction/",
+					"text": "简介",
+					"des": "简介",
+					"in_use": true
+				}],
 				"isFolder": true,
 				"text": "简介",
 				"des": "DragonBones Pro简介",
 				"in_use": true
 			},
 			{
-				"children": [
-					{
+				"children": [{
 						"filename": "/DB/dbPro/interface/mainInterface/",
 						"text": "主界面",
 						"des": "主界面",
@@ -190,22 +189,19 @@
 				"in_use": true
 			},
 			{
-				"children": [
-					{
-						"filename": "/DB/dbPro/hotkey/hotkey/",
-						"text": "快捷键",
-						"des": "快捷键",
-						"in_use": true
-					}
-				],
+				"children": [{
+					"filename": "/DB/dbPro/hotkey/hotkey/",
+					"text": "快捷键",
+					"des": "快捷键",
+					"in_use": true
+				}],
 				"isFolder": true,
 				"text": "快捷键",
 				"des": "DragonBones Pro快捷键",
 				"in_use": true
 			},
 			{
-				"children": [
-					{
+				"children": [{
 						"filename": "/DB/dbPro/basicConcept/framework/",
 						"text": "骨架",
 						"des": "骨架",
@@ -242,8 +238,7 @@
 				"in_use": true
 			},
 			{
-				"children": [
-					{
+				"children": [{
 						"filename": "/DB/dbPro/createProject/skeletalAnimation/",
 						"text": "创建骨骼动画项目",
 						"des": "创建骨骼动画项目",
@@ -268,8 +263,7 @@
 				"in_use": false
 			},
 			{
-				"children": [
-					{
+				"children": [{
 						"filename": "/DB/dbPro/animation/keyframe/",
 						"text": "关键帧操作（视频）",
 						"des": "关键帧操作（视频）",
@@ -312,8 +306,7 @@
 				"in_use": true
 			},
 			{
-				"children": [
-					{
+				"children": [{
 						"filename": "/DB/dbPro/advancedFeatures/yangCongPi/",
 						"text": "洋葱皮",
 						"des": "洋葱皮",
@@ -350,8 +343,7 @@
 				"in_use": true
 			},
 			{
-				"children": [
-					{
+				"children": [{
 						"filename": "/DB/dbPro/import/importZip/",
 						"text": "导入zip包项目",
 						"des": "导入zip包项目",
@@ -394,8 +386,7 @@
 				"in_use": true
 			},
 			{
-				"children": [
-					{
+				"children": [{
 						"filename": "/DB/dbPro/export/exportAnimation/",
 						"text": "导出动画数据",
 						"des": "导出动画数据",
@@ -414,8 +405,7 @@
 				"in_use": true
 			},
 			{
-				"children": [
-					{
+				"children": [{
 						"filename": "/DB/dbPro/plugin/pluginManager/",
 						"text": "插件管理",
 						"des": "插件管理",
@@ -440,8 +430,7 @@
 		"in_use": true
 	},
 	{
-		"children": [
-			{
+		"children": [{
 				"filename": "/DB/dbLibs/5foramt/",
 				"text": "5.0 数据格式说明",
 				"des": "5.0数据格式说明",
