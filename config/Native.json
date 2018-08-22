@@ -11,7 +11,7 @@
           "in_use": true
         },
         {
-          "filename": "/Native/support/support/updateiOS/update5012/",
+          "filename": "/Native/support/updateiOS/update5012/",
           "text": "iOS Support 5.0.12",
           "des": "iOS Support 5.0.12",
           "in_use": true
@@ -22,13 +22,13 @@
           "des": "Android Support 历史更新",
           "in_use": true,
           "children": [{
-              "filename": "/Native/support/support/updateAndroid/update509/",
+              "filename": "/Native/support/updateAndroid/update509/",
               "text": "Android Support 5.0.9",
               "des": "Android Support 5.0.9",
               "in_use": true
             },
             {
-              "filename": "/Native/support/support/updateAndroid/update508/",
+              "filename": "/Native/support/updateAndroid/update508/",
               "text": "Android Support 5.0.8",
               "des": "Android Support 5.0.8",
               "in_use": true
