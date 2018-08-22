@@ -1,4 +1,8 @@
 [{
+  "isFolder": true,
+  "text": "传统 Support 方式",
+  "des": "传统 Support 打包",
+  "in_use": true,
   "children": [{
       "children": [{
           "filename": "/Native/updateAndroid/update5012/",
@@ -670,9 +674,5 @@
       "des": "打包发布",
       "in_use": true
     }
-  ],
-  "isFolder": true,
-  "text": "传统 Support 打包",
-  "des": "传统 Support 打包",
-  "in_use": true
+  ]
 }]
