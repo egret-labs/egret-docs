@@ -560,13 +560,7 @@
     "in_use": true
   },
   {
-    "children": [{
-      "filename": "/extension/jszip/jszip/",
-      "text": "JSZip",
-      "des": "JSZip",
-      "in_use": true
-    }],
-    "isFolder": false,
+    "filename": "/extension/jszip/jszip/",
     "text": "JSZip",
     "des": "JSZip",
     "in_use": true
