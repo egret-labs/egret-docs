@@ -561,14 +561,14 @@
   },
   {
     "children": [{
-      "filename": "/extension/PhysicalSystemComponents/introduction/",
-      "text": "简介",
-      "des": "组件实体系统简介",
+      "filename": "/extension/jszip/jszip/",
+      "text": "JSZip",
+      "des": "JSZip",
       "in_use": true
     }],
-    "isFolder": true,
-    "text": "组件实体系统",
-    "des": "组件实体系统",
+    "isFolder": false,
+    "text": "JSZip",
+    "des": "JSZip",
     "in_use": true
   }
 ]
