@@ -6,7 +6,7 @@
   "children": [{
     "filename": "/Native/native/externalinterface/",
     "text": "JS与原生通信",
-    "des": "",
+    "des": "JS与原生通信",
     "in_use": true
   }]
 }, {
