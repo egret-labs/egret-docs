@@ -18,11 +18,11 @@
 
 - 在launcher的项目面板找到需要发布Android工程的Egret项目，点击发布设置
 
-![](p0.png)
+![](./p0.png)
 
 - 点击左侧的Android按钮，在右侧页面中，输入应用名称、应用包名，点击确定。
 
-![](p1.png)
+![](./p1.png)
 
 
 ## 发布iOS工程
@@ -31,11 +31,11 @@
 
 - 在launcher的项目面板找到需要发布iOS工程的Egret项目，点击发布设置
 
-![](p0.png)
+![](./p0.png)
 
 - 点击左侧的iOS按钮，在右侧页面中，输入应用名称、应用包名，点击确定。
 
-![](p2.png)
+![](./p2.png)
 
 - 如果勾选`使用Hybrid方案`，则项目运行时会使用 iOS 系统的 webview 来运行游戏
 
@@ -69,6 +69,6 @@ launcher创建的默认工程会将游戏资源放到assets/game目录下，这�
 - loadingTimeout 加载index的超时时间。默认为0，不设置超时
 - preloadPath 设置预加载目录，详见“热更新方案说明”
 
-##注意
+## 注意
 
 Native 仅支持 webgl 渲染模式。
