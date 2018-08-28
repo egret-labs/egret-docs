@@ -643,12 +643,6 @@
         "in_use": true
       },
       {
-        "filename": "/Engine2D/projectConfig/libraryProject/",
-        "text": "库项目配置",
-        "des": "库项目配置",
-        "in_use": true
-      },
-      {
         "filename": "/Engine2D/projectConfig/compileOrder/",
         "text": "编译顺序说明",
         "des": "编译顺序说明",
