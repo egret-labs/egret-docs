@@ -13,6 +13,11 @@
     "text": "热更新方案说明",
     "des": "热更新方案说明",
     "in_use": true
+  },{
+    "filename": "/Native/native/httpcache/",
+    "text": "原生缓存策略",
+    "des": "原生缓存策略",
+    "in_use": true
   }]
 }, {
   "isFolder": true,
