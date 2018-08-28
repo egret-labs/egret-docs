@@ -64,17 +64,18 @@
 
 各文件夹功能说明
 * .wing：包括 Egret 项目的任务配置文件和启动配置文件。
+* wingProperties.json：Egret Wing 项目配置文件。
 * bin-debug：项目调试时，所产生的文件存放于此目录。
 * libs：库文件，包括 Egret 核心库和其他扩展库存放于此目录。
 * resource：项目资源文件存放于此目录。
-* script：项目构建和发布时需要用到的脚本文件存放在此目录。
+* scripts：项目构建和发布时需要用到的脚本文件存放在此目录。
 * src：项目代码文件存放于此目录。
 * template：项目模板文件存放于此目录。
 * egretProperties.json：项目的配置文件。具体的配置说明可以参考：[EgretProperties说明](../../../Engine2D/projectConfig/configFile/README.md)
 * index.html：入口文件。具体的配置说明可以参考：[入口文件说明](../../../Engine2D/projectConfig/indexFile/README.md)
-* manifest.json：清单文件。
+* manifest.json：网页清单文件。
 * tsconfig.json：typescript 编译配置文件。
-* wingProperties.json：Egret Wing 项目配置文件。
+
 
 ### 运行项目
 
