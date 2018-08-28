@@ -631,12 +631,6 @@
           "in_use": true
         },
         {
-          "filename": "/Native/support/native/quickSDK/",
-          "text": "接入 QuickSDK",
-          "des": "接入 QuickSDK",
-          "in_use": true
-        },
-        {
           "filename": "/Native/support/native/other/",
           "text": "其他原生支持",
           "des": "其他原生支持",
@@ -671,12 +665,6 @@
           "filename": "/Native/support/publish/publishIOS/",
           "text": "打包 iOS app",
           "des": "打包 iOS app",
-          "in_use": true
-        },
-        {
-          "filename": "/Native/support/publish/publishWinPhone/",
-          "text": "打包 WinPhone app",
-          "des": "打包 WinPhone app",
           "in_use": true
         }
       ],
