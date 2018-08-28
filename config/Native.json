@@ -8,6 +8,11 @@
     "text": "JS与原生通信",
     "des": "JS与原生通信",
     "in_use": true
+  },{
+    "filename": "/Native/native/hotupdate/",
+    "text": "热更新方案说明",
+    "des": "热更新方案说明",
+    "in_use": true
   }]
 }, {
   "isFolder": true,
