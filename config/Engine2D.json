@@ -670,7 +670,7 @@
         "filename": "/Engine2D/projectConfig/libraryProject/",
         "text": "第三方扩展库",
         "des": "第三方扩展库",
-        "in_use": false
+        "in_use": true
       },
       {
         "filename": "/Engine2D/projectConfig/miniGame/",
