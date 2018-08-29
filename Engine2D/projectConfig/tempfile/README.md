@@ -1,7 +1,7 @@
 在 Egret 5.2.x 项目根目录下，有个 `template` 文件夹，里面有个2个目录
 
 ### web
-如果您项目的配置文件 `egretProperties.json` 里有 `template` 字段，那么发布 `Html5` 项目时，就会使用该目录下的 `index.html` 来作为入口文件。
+如果您项目的配置文件 `egretProperties.json` 里有 `template` 字段，那么发布 `Html5` 项目时，就会使用 `template/web/index.html` 来作为入口文件。
 
 ### runtime
 发布原生项目的配置文件
