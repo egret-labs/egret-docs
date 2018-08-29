@@ -25,7 +25,7 @@
 * `socket` websocket 网络通讯库
 * `tween` 缓动动画库
 
-内置库可以省略`path`字段，默认和`egret_version` 使用相同的版本。也可以在`path`字段里单独设置改库使用的版本
+内置库可以省略`path`字段，默认和`egret_version` 使用相同的版本。也可以在`path`字段里单独设置该库使用的版本
 
 **第三方库**
 

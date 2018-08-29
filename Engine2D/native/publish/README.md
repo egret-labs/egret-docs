@@ -1,3 +1,5 @@
+通过 `Egret` 引擎制作的游戏，不仅可以发布成 `Html5` 网页项目，还可以发布成原生项目。
+
 ## 使用命令行
 您可以使用命令 `egret publish` 命令来发布 `Html5` 项目
 
@@ -31,3 +33,4 @@
  
 ![](./p3.png)
 
+**更多详细信息，请查看 [Egret Native 相关文档](http://developer.egret.com/cn/github/egret-docs/Native/index.html?home=1)**

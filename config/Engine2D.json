@@ -1042,7 +1042,7 @@
   },
   {
     "children": [{
-        "filename": "/Engine2D/native/native/",
+        "filename": "/Engine2D/publish/publish/",
         "text": "原生支持",
         "des": "原生支持",
         "in_use": true
@@ -1057,19 +1057,6 @@
     "isFolder": true,
     "text": "原生支持",
     "des": "原生支持",
-    "in_use": true
-  },
-  {
-    "children": [{
-        "filename": "/Engine2D/publish/publish/",
-        "text": "打包发布",
-        "des": "打包发布",
-        "in_use": true
-      }
-    ],
-    "isFolder": true,
-    "text": "打包发布",
-    "des": "打包发布",
     "in_use": true
   }
 ]
