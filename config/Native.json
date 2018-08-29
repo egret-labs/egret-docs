@@ -47,8 +47,8 @@
       "in_use": true
     }, {
       "filename": "/Native/native/runtimestate/",
-      "text": "运行过程中runtime的事件回调",
-      "des": "运行过程中runtime的事件回调",
+      "text": "事件回调",
+      "des": "事件回调",
       "in_use": true
     }
   ]
