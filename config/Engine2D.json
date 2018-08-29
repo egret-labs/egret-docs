@@ -649,16 +649,10 @@
         "in_use": true
       },
       {
-        "filename": "/Engine2D/webassembly/",
+        "filename": "/Engine2D/projectConfig/webassembly/",
         "text": "webassembly 版本使用",
         "des": "webassembly 版本使用",
         "in_use": true
-      },
-      {
-        "filename": "/Engine2D/projectConfig/wasmconfig/",
-        "text": "WebAssembly 版本使用",
-        "des": "WebAssembly 版本使用",
-        "in_use": false
       },
       {
         "filename": "/Engine2D/projectConfig/extendRepSummary/",
@@ -671,12 +665,6 @@
         "text": "第三方扩展库",
         "des": "第三方扩展库",
         "in_use": true
-      },
-      {
-        "filename": "/Engine2D/projectConfig/miniGame/",
-        "text": "微信小游戏",
-        "des": "微信小游戏",
-        "in_use": false
       },
       {
         "filename": "/Engine2D/projectConfig/upgradev52/",
