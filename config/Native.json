@@ -4,26 +4,54 @@
   "des": "使用手册",
   "in_use": true,
   "children": [{
-    "filename": "/Native/native/projectsetting/",
-    "text": "如何发布原生项目",
-    "des": "如何发布原生项目",
-    "in_use": true
-  }, {
-    "filename": "/Native/native/externalinterface/",
-    "text": "JS与原生通信",
-    "des": "JS与原生通信",
-    "in_use": true
-  }, {
-    "filename": "/Native/native/hotupdate/",
-    "text": "热更新方案说明",
-    "des": "热更新方案说明",
-    "in_use": true
-  }, {
-    "filename": "/Native/native/httpcache/",
-    "text": "原生缓存策略",
-    "des": "原生缓存策略",
-    "in_use": true
-  }]
+      "filename": "/Native/native/projectsetting/",
+      "text": "如何发布原生项目",
+      "des": "如何发布原生项目",
+      "in_use": true
+    }, {
+      "filename": "/Native/native/microclient/",
+      "text": "如何发布微端项目",
+      "des": "如何发布微端项目",
+      "in_use": true
+    }, {
+      "filename": "/Native/native/externalinterface/",
+      "text": "JS与原生通信",
+      "des": "JS与原生通信",
+      "in_use": true
+    }, {
+      "filename": "/Native/native/hotupdate/",
+      "text": "热更新方案说明",
+      "des": "热更新方案说明",
+      "in_use": true
+    },
+    {
+      "text": "Hybrid方案说明",
+      "des": "Hybrid方案说明",
+      "in_use": true,
+      "isFolder": true,
+      "children": [{
+        "filename": "/Native/native/hybrid/hybrid",
+        "text": "如何使用 Hybrid",
+        "des": "如何使用 Hybrid",
+        "in_use": true
+      }, {
+        "filename": "/Native/native/hybrid/api",
+        "text": "Hybrid API 文档",
+        "des": "Hybrid API 文档",
+        "in_use": true
+      }]
+    }, {
+      "filename": "/Native/native/httpcache/",
+      "text": "原生缓存策略",
+      "des": "原生缓存策略",
+      "in_use": true
+    }, {
+      "filename": "/Native/native/runtimestate/",
+      "text": "运行过程中runtime的事件回调",
+      "des": "运行过程中runtime的事件回调",
+      "in_use": true
+    }
+  ]
 }, {
   "isFolder": true,
   "text": "传统 Support 方式",
