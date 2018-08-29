@@ -43,7 +43,7 @@ calculateCanvasScaleFactor:function(context) {
 }});
 ```
 
-参数是一个对象，包括以下4个可选属性：
+参数是一个对象，包括以下3个可选属性：
 
 * "renderMode": 引擎渲染模式，"canvas" 或者 "webgl"
 * "audioType": 使用的音频类型，0:默认，2:web audio，3:audio
