@@ -626,8 +626,8 @@
       },
       {
         "filename": "/Engine2D/projectConfig/modelconfig/",
-        "text": "模块版本配置",
-        "des": "模块版本配置",
+        "text": "模块配置",
+        "des": "模块配置",
         "in_use": true
       },
       {
