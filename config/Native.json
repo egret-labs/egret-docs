@@ -30,12 +30,12 @@
       "in_use": true,
       "isFolder": true,
       "children": [{
-        "filename": "/Native/native/hybrid/hybrid",
+        "filename": "/Native/native/hybrid/hybrid/",
         "text": "如何使用 Hybrid",
         "des": "如何使用 Hybrid",
         "in_use": true
       }, {
-        "filename": "/Native/native/hybrid/api",
+        "filename": "/Native/native/hybrid/api/",
         "text": "Hybrid API 文档",
         "des": "Hybrid API 文档",
         "in_use": true
