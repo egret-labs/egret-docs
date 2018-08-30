@@ -13,5 +13,25 @@
         "text": "MatchvsSDK 接入指南",
         "des": "MatchvsSDK 接入指南",
         "in_use": true
+    }, {
+        "filename": "/matchvs/guide/extension/",
+        "text": "MatchvsSDK 扩展功能",
+        "des": "MatchvsSDK 扩展功能",
+        "in_use": true
+    }, {
+        "filename": "/matchvs/guide/storage/",
+        "text": "数据存储",
+        "des": "数据存储",
+        "in_use": true
+    }, {
+        "filename": "/matchvs/guide/relink/",
+        "text": "断线重连",
+        "des": "断线重连",
+        "in_use": true
+    }, {
+        "filename": "/matchvs/guide/sys/",
+        "text": "环境说明",
+        "des": "环境说明",
+        "in_use": true
     }]
 }]
