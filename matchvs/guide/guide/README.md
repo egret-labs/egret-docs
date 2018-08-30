@@ -101,7 +101,7 @@ response.loginResponse = function(loginRsp) {
 }
 ```
 
-> SDK支持房间断线重连，掉线重新登录后可以选择加入原来的房间，loginResponse里的`roomID` 即为上次异常退出的房间ID。如果登录时没有异常退出的房间，则`roomID` 为0。[断线重连说明](http://www.matchvs.com/service?page=reconnect)
+> SDK支持房间断线重连，掉线重新登录后可以选择加入原来的房间，loginResponse里的`roomID` 即为上次异常退出的房间ID。如果登录时没有异常退出的房间，则`roomID` 为0。[断线重连说明](http://developer.egret.com/cn/github/egret-docs/matchvs/guide/relink/index.html)
 
 ## 加入房间
 
