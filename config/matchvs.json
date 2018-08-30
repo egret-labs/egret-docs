@@ -34,4 +34,15 @@
         "des": "环境说明",
         "in_use": true
     }]
+},{
+    "isFolder": true,
+    "text": "Demo 教程",
+    "des": "Demo 教程",
+    "in_use": true,
+    "children": [{
+        "filename": "/matchvs/demo/duck/",
+        "text": "鸭子抢球",
+        "des": "鸭子抢球",
+        "in_use": true
+    }]
 }]
