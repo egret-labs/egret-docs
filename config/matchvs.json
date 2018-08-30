@@ -1,23 +1,17 @@
 [{
     "isFolder": true,
-    "text": "matchvs 联网对战",
-    "des": "matchvs 联网对战",
+    "text": "接入指引",
+    "des": "接入指引",
     "in_use": true,
     "children": [{
-        "isFolder": true,
-        "text": "接入指引",
-        "des": "接入指引",
-        "in_use": true,
-        "children": [{
-            "filename": "/matchvs/guide/create/",
-            "text": "使用 Matchvs 服务",
-            "des": "使用 Matchvs 服务",
-            "in_use": true
-        }, {
-            "filename": "/matchvs/guide/guide/",
-            "text": "MatchvsSDK 接入指南",
-            "des": "MatchvsSDK 接入指南",
-            "in_use": true
-        }]
+        "filename": "/matchvs/guide/create/",
+        "text": "使用 Matchvs 服务",
+        "des": "使用 Matchvs 服务",
+        "in_use": true
+    }, {
+        "filename": "/matchvs/guide/guide/",
+        "text": "MatchvsSDK 接入指南",
+        "des": "MatchvsSDK 接入指南",
+        "in_use": true
     }]
 }]
