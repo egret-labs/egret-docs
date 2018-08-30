@@ -47,17 +47,6 @@
     }]
 }, {
     "isFolder": true,
-    "text": "Demo 教程",
-    "des": "Demo 教程",
-    "in_use": true,
-    "children": [{
-        "filename": "/matchvs/demo/duck/",
-        "text": "鸭子抢球",
-        "des": "鸭子抢球",
-        "in_use": true
-    }]
-}, {
-    "isFolder": true,
     "text": "微信相关",
     "des": "微信相关",
     "in_use": true,
@@ -66,17 +55,17 @@
         "text": "第三方绑定使用指南",
         "des": "第三方绑定使用指南",
         "in_use": true
-    },{
+    }, {
         "filename": "/matchvs/wxgame/wxrank/",
         "text": "微信好友排行榜",
         "des": "微信好友排行榜",
         "in_use": true
-    },{
+    }, {
         "filename": "/matchvs/wxgame/domain/",
         "text": "微信域名列表",
         "des": "微信域名列表",
         "in_use": true
-    },{
+    }, {
         "filename": "/matchvs/wxgame/wechatInvite/",
         "text": "微信约战",
         "des": "微信约战",
