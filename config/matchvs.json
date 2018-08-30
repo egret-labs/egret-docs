@@ -71,4 +71,9 @@
         "des": "微信约战",
         "in_use": true
     }]
+}, {
+    "filename": "/matchvs/api/",
+    "text": "API 手册",
+    "des": "API 手册",
+    "in_use": true
 }]
