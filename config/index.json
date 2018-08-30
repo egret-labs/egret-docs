@@ -1,7 +1,5 @@
-[
-  {
-    "children": [
-      {
+[{
+    "children": [{
         "filename": "Engine2D.json",
         "des": "2D引擎相关文档",
         "text": "Egret Engine 2D",
@@ -32,8 +30,7 @@
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "Wing.json",
         "des": "Egret Wing说明文档",
         "text": "Egret Wing",
@@ -94,8 +91,7 @@
     "in_use": true
   },
   {
-    "children": [
-      {
+    "children": [{
         "filename": "platform.json",
         "des": "平台接入相关文档",
         "text": "平台接入",
@@ -111,6 +107,12 @@
         "filename": "microclient.json",
         "des": "微端解决方案",
         "text": "微端解决方案",
+        "in_use": "true"
+      },
+      {
+        "filename": "microclient.json",
+        "des": "Matchvs 游戏云",
+        "text": "Matchvs 游戏云",
         "in_use": "true"
       }
     ],
