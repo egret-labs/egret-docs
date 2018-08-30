@@ -1,10 +1,10 @@
 ## 接入前说明
 
-`MatchvsSDK` 使用是以简单的接口调用和接口返回的方式实现相关联网操作。比如随机加入房间只需要调用`joinRandRoom接口`，加入房间结果就以接口 `joinRoomResponse` 返回。在整个使用过程中，开发者只需要关心`MatchvsEngine`(接口请求调用对象)和 `MatchvsResponse`(接口调用返回对象)。接口请求使用 `MatchvsEngine`对象实例，接口返回使用 `MatchvsResponse` 对象实例。后面后介绍这两个对象的使用方法。此文档只是用于引导开发者接入SDK，需要接口口详细的参数说明请看 [API手册](http://www.matchvs.com/service?page=js)  
+`MatchvsSDK` 使用是以简单的接口调用和接口返回的方式实现相关联网操作。比如随机加入房间只需要调用`joinRandRoom接口`，加入房间结果就以接口 `joinRoomResponse` 返回。在整个使用过程中，开发者只需要关心`MatchvsEngine`(接口请求调用对象)和 `MatchvsResponse`(接口调用返回对象)。接口请求使用 `MatchvsEngine`对象实例，接口返回使用 `MatchvsResponse` 对象实例。后面后介绍这两个对象的使用方法。此文档只是用于引导开发者接入SDK，需要接口口详细的参数说明请看 [API手册](http://developer.egret.com/cn/github/egret-docs/matchvs/api/index.html)  
 
 #### SDK游戏交互时序图
 
-发起请求的是 `MatchvsEngine` 对象实例，返回结果是 `MatchvsResponse` 对象实例。图中接口名称只供参考，以 [API手册](http://www.matchvs.com/service?page=js)  为准。
+发起请求的是 `MatchvsEngine` 对象实例，返回结果是 `MatchvsResponse` 对象实例。图中接口名称只供参考，以 [API手册](http://developer.egret.com/cn/github/egret-docs/matchvs/api/index.html)  为准。
 
 ![](http://imgs.matchvs.com/static/时序图.jpg)
 
