@@ -1,6 +1,6 @@
 ## 接入前说明
 
-`MatchvsSDK` 使用是以简单的接口调用和接口返回的方式实现相关联网操作。比如随机加入房间只需要调用`joinRandRoom接口`，加入房间结果就以接口 `joinRoomResponse` 返回。在整个使用过程中，开发者只需要关心`MatchvsEngine`(接口请求调用对象)和 `MatchvsResponse`(接口调用返回对象)。接口请求使用 `MatchvsEngine`对象实例，接口返回使用 `MatchvsResponse` 对象实例。后面后介绍这两个对象的使用方法。此文档只是用于引导开发者接入SDK，需要接口口详细的参数说明请看 [API手册](http://developer.egret.com/cn/github/egret-docs/matchvs/api/index.html)  
+`MatchvsSDK` 使用是以简单的接口调用和接口返回的方式实现相关联网操作。比如随机加入房间只需要调用`joinRandRoom接口`，加入房间结果就以接口 `joinRoomResponse` 返回。在整个使用过程中，开发者只需要关心`MatchvsEngine`(接口请求调用对象)和 `MatchvsResponse`(接口调用返回对象)。接口请求使用 `MatchvsEngine`对象实例，接口返回使用 `MatchvsResponse` 对象实例。后面后介绍这两个对象的使用方法。此文档只是用于引导开发者接入SDK，需要接口详细的参数说明请看 [API手册](http://developer.egret.com/cn/github/egret-docs/matchvs/api/index.html)  
 
 #### SDK游戏交互时序图
 
@@ -81,7 +81,7 @@ engine.login(userID, token, gameID, gameVersion, appkey, secret, deviceID, gatew
 | gameID      | 游戏ID，来自Matchvs官网控制台游戏信息    |
 | gameVersion | 游戏版本，自定义，用于隔离匹配空间       |
 | appkey      | 游戏Appkey，来自Matchvs控制台游戏信息    |
-| serect      | secret key，来自Matchvs控制台游戏信息    |
+| secret      | secret key，来自Matchvs控制台游戏信息    |
 | deviceID    | 设备ID，用于多端登录检测，请保证是唯一ID |
 | gatewayID   | 服务器节点ID，默认为0                    |
 
