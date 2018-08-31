@@ -24,7 +24,37 @@
 
 ## 工程模版说明
 
-工程模版展示了两种启动方式。
+默认工程是从本地启动游戏。
+
+### 启动流程
+
+- 初始化EgretWebViewLib
+
+```
+[EgretWebViewLib initialize:@"/egretGame/preload/"];
+// "/egretGame/preload/"是缓存目录，在应用的document目录下。
+```
+- 检查游戏资源是否已经部署到本地服务器
+
+```
+[EgretWebViewLib checkLoaded:zipFilePath Host:host]
+// zipFilePath是游戏资源zip的绝对路径
+// host是游戏映射到哪个url下，如host为"https://egret.com/game/"，对应的游戏url为"https://egret.com/game/index.html"
+```
+- 将游戏资源部署到本地服务器
+
+```
+ZipFileLoader* loader = [EgretWebViewLib createZipFileLoader:zipFilePath Host:host Delegate:self];
+[loader start];
+```
+- 启动游戏
+
+```
+[EgretWebViewLib startLocalServer]; // 启动本地服务器
+[EgretWebViewLib startGame:gameUrl SuperView:self.view]; // 启动游戏
+```
+
+## 另外两种启动方式
 
 ### 直接启动游戏
 
@@ -44,28 +74,6 @@
 
 ```objective-c
 ZipFileLoader* loader = [EgretWebViewLib createZipFileLoader: Delegate:];
-[loader start];
-```
-
-- 启动本地服务器和游戏
-
-```objective-c
-[EgretWebViewLib startLocalServer];
-[EgretWebViewLib startGame: SuperView:];
-```
-
-## 使用本地游戏资源
-
-- 检查当前游戏资源版本（根据文件名判断是否加载过）
-
-```objective-c
-[EgretWebViewLib checkLoaded: Host:];
-```
-
-- 下载游戏资源
-
-```objective-c
-ZipFileLoader* loader = [EgretWebViewLib createZipFileLoader: Host: Delegate:];
 [loader start];
 ```
 
