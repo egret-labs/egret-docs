@@ -28,8 +28,15 @@ Egret 项目可以运行在支持HTML5的桌面浏览器和各种移动浏览器
 * 未知操作系统 "Unknown"
 
 #### egret.Capabilities.runtimeType
-`egret.Capabilities.runtimeType`属性可以获取的项目运行类型。分别是`native`和`web`。
-这个值跟`egret.RuntimeType.NATIVE`和`egret.RuntimeType.WEB`是对应的。
+`egret.Capabilities.runtimeType`属性可以获取的项目运行类型。
+
+| 属性值  |对应的常量 |对应的类型 |
+|:-------------|-------------|-------------:|
+|web| egret.RuntimeType.WEB | 运行在浏览器上|
+|native| egret.RuntimeType.NATIVE | 运行在第一代原生项目上|
+|runtime2| egret.RuntimeType.RUNTIME2 | 运行在第二代原生项目上|
+|wxgame| egret.RuntimeType.WXGAME | 运行在微信小游戏上|
+
 
 
 ### 1.2.示例
@@ -61,9 +68,6 @@ class CapabilitiesTest extends egret.Sprite {
     }
 }
 ```
-
-### 1.3.参考
-上面代码的完整应用可以参考示例：[获取硬件信息](http://edn.egret.com/cn/index.php/article/index/id/659)
 
 ## 2.陀螺仪
 
@@ -110,8 +114,6 @@ class DeviceOrientationExample extends egret.DisplayObjectContainer {
 
 * `gamma` 表示设备绕 Y 轴的角度，单位是 角度 范围是 -90 到 90.这个值表示设备从左到右的旋转状态。
 
-### 2.2.参考
-更完整应用代码可以参考示例：[获取硬件信息](http://edn.egret.com/cn/index.php/article/index/id/659)
 
 ## 3.地理位置
 
@@ -201,7 +203,4 @@ private unAvailable (e:egret.GeolocationEvent) {
 ```
 
 这里的`errorMessage`表示获取位置信息失败的具体信息，`errorType`表示错误的类型。
-
-### 3.3.参考
-上面代码的完整应用可以参考示例：[获取硬件信息](http://edn.egret.com/cn/index.php/article/index/id/659)
 
