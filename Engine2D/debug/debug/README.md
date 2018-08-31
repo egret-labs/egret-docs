@@ -51,20 +51,12 @@ Egret 还提供了另外一个与 `DEBUG` 对应的编译参数 `RELEASE`，用�
 
 在代码中可以直接调用 `egret.log(message?:any, ...optionalParams:any[])` 来输出日志。
 
-## 3.显示脏矩形和帧频信息
-
-在 index.html 文件中找到上述代码块：
-
-`data-show-paint-rect="true/false"` 设置是否显示重绘区域，当这个值为 `true` 时 egret 会将舞台中的重绘区域用红框表示出来。
-
-![重绘区域](575e943cb6ecc.png)
-		
+## 3.显示帧频信息
 
 `data-show-fps="true/false"` 设置是否显示帧频信息，当这个值为 `true` 时 Egret 会在舞台的左上角显示 FPS 和 其他性能指标
 		
 * FPS:  60		- 帧频
 
-* Draw: 13		- 每帧 draw 方法调用的平均次数
 
 * Dirty 7%		- 每帧脏区域占舞台的百分比
  
