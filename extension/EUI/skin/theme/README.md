@@ -8,21 +8,17 @@ default.thm.json:
 
 ```javascript
 {
-  "skins": {
-    "eui.Button": "skins/ButtonSkin.exml",
-    "eui.CheckBox": "skins/CheckBoxSkin.exml",
-    "eui.HScrollBar": "skins/HScrollBarSkin.exml",
-    "eui.HSlider": "skins/HSliderSkin.exml",
-    "eui.Panel": "skins/PanelSkin.exml",
-    "eui.ProgressBar": "skins/ProgressBarSkin.exml",
-    "eui.RadioButton": "skins/RadioButtonSkin.exml",
-    "eui.Scroller": "skins/ScrollerSkin.exml",
-    "eui.ToggleSwitch": "skins/ToggleSwitchSkin.exml",
-    "eui.VScrollBar": "skins/VScrollBarSkin.exml",
-    "eui.VSlider": "skins/VSliderSkin.exml"
-  },
-  "exmls": [ ],
-  "autoGenerateExmlsList": true
+	"skins": {
+		"eui.Panel": "resource/eui_skins/PanelSkin.exml",
+		"eui.ProgressBar": "resource/eui_skins/ProgressBarSkin.exml",
+		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml"
+	},
+	"autoGenerateExmlsList": true,
+	"exmls": [
+		"resource/eui_skins/ItemRendererSkin.exml",
+		"resource/eui_skins/PanelSkin.exml",
+		"resource/eui_skins/ProgressBarSkin.exml"
+	]
 }
 ```
 
