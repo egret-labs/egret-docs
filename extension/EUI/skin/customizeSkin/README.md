@@ -30,7 +30,7 @@ class TestSkin extends eui.Component {
 egret create euiDemo --type eui
 ~~~
 创建一个 eui 项目，里面默认就会有主题管理解析的示例。
-具体的文档在这里：http://edn.egret.com/cn/index.php/article/index/id/511
+[具体方式可以查看文档](../theme/README.MD)
 
 方式1的代码还可以正常使用，但是console 会先输出 **onComplete** 再输出 **createChildren**，和之前相反。这是因为主题已经加载过这个 exml 文件了，所以不需要重新加载。
 
