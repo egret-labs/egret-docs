@@ -1,8 +1,10 @@
 列表组件 List ，继承自 DataGroup，它和 DataGroup 的区别在于：
-* 在 List 中选中一项，会触发 ~eui.ItemTapEvent.ITEM_TAP· 事件。
+
+* 在 List 中选中一项，会触发 `eui.ItemTapEvent.ITEM_TAP` 事件。
 * List有选中项的概念，可以设置 List 中的默认选中项。
 
 下面是List的基本用法：
+
 ``` TypeScript
 class Main extends eui.Group {
     constructor() {
@@ -28,7 +30,9 @@ class Main extends eui.Group {
 }
 ```
 效果如下：
+
 ![](5604f13909a44.png)
+
 ~~~
 设置默认选中项
 list.selectedIndex = 1;
@@ -40,19 +44,24 @@ list.selectedIndex
 ~~~
 ## 多选状态
  List 还可以开启多选状态
+ 
 ~~~ TypeScript
 list.allowMultipleSelection = true;
 ~~~
 效果如下：
+
 ![](5625d92835954.png)
+
 多选状态下，List 中所有的条目都可以被选中，再次点击选中的条目则会取消选中，恢复原状。
 
 此时监听 `eui.ItemTapEvent.ITEM_TAP` 事件，可以通过下面两个属性获得一个数组，里面包含了当前处于选中状态的项目：
+
 ~~~
 list.selectedIndices
 list.selectedItems
 ~~~
 在多选状态下还有一个命令可以配合使用：
+
 ~~~ TypeScript
 list.requireSelection = true;
 ~~~
@@ -63,5 +72,3 @@ list.requireSelection = true;
 列表配合 Scroller 使用可以实现滚动效果。
 
 具体参考文档：[定位滚动位置](../../../../extension/EUI/container/scroller/#定位滚动位置)
-
-自定义滚动列表参考示例:[卡牌游戏EUI使用](http://edn.egret.com/cn/article/index/id/833)
