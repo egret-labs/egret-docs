@@ -995,12 +995,11 @@
   },
   {
     "children": [{
-        "filename": "/Engine2D/debug/debug/",
-        "text": "调试",
-        "des": "调试",
-        "in_use": true
-      }
-    ],
+      "filename": "/Engine2D/debug/debug/",
+      "text": "调试",
+      "des": "调试",
+      "in_use": true
+    }],
     "isFolder": true,
     "text": "调试",
     "des": "调试",
@@ -1041,22 +1040,9 @@
     "in_use": true
   },
   {
-    "children": [{
-        "filename": "/Engine2D/native/publish/",
-        "text": "原生支持",
-        "des": "原生支持",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/native/updatert2/",
-        "text": "第二代原生项目迁移说明",
-        "des": "第二代原生项目迁移说明",
-        "in_use": true
-      }
-    ],
-    "isFolder": true,
-    "text": "原生支持",
-    "des": "原生支持",
+    "filename": "/Engine2D/publish/",
+    "text": "发布项目",
+    "des": "发布项目",
     "in_use": true
   }
 ]

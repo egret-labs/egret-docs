@@ -33,4 +33,4 @@
  
 ![](./p3.png)
 
-**更多详细信息，请查看 [Egret Native 相关文档](http://developer.egret.com/cn/github/egret-docs/Native/index.html?home=1)**
+**更多发布原生项目的信息，请查看 [Egret Native 相关文档](http://developer.egret.com/cn/github/egret-docs/Native/index.html?home=1)**
