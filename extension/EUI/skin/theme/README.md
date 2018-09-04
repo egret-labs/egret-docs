@@ -50,33 +50,19 @@ default.thm.json:
 
 这里需要注意的是，引擎只会识别 `xxx.thm.json` 文件作为 theme 文件，其他格式的文件名不会自动生成。
 
-### EXML 设置版本号
-
-通常我们希望更新版本的时候避免被浏览器缓存，现在可以通过设置 EXML 版本号的方式来实现。 
-
-```
- "exmls": [
-    "resource/eui_skins/ButtonSkin.exml?v=20151211"
-  ]
-```
-
-比如上面代码给 `ButtonSkin` 的设置了一个版本号,通过在 `default.thm.json` 配置加载 EXML 文件时加入后缀`?=20151211`来设置版本号。
-
 ## 启用主题
 
-启用主题时，在项目初始化时调用一句代码即可：
+创建一个 EUI 项目，里面会自动配置好相关参数：
 
 ```javascript
-class Main extends egret.Sprite {
-    
-    public constructor(){
-        this.once(egret.Event.ADDED_TO_STAGE,this.onAddedToStage,this);
-    }
-    
-    public onAddedToStage(event:egret.Event):void{
-        new eui.Theme("resource/default.thm.json", this.stage);
-    }
-}
+//注入自定义的素材解析器
+let assetAdapter = new AssetAdapter();
+egret.registerImplementation("eui.IAssetAdapter", assetAdapter);
+egret.registerImplementation("eui.IThemeAdapter", new ThemeAdapter());
+
+...
+let theme = new eui.Theme("resource/default.thm.json", this.stage);
+
 ```
 
 创建了Theme之后，它会开始异步加载指定的主题文件并解析，在加载的过程中，如果已经有组件在创建，也不需要额外处理，这部分组件在主题加载完成后会自动重新查询一次默认皮肤。
