@@ -101,3 +101,11 @@ ZipFileLoader* loader = [EgretWebViewLib createZipFileLoader: Delegate:];
 ```objective-c
 [EgretWebViewLib callExternalInterface:@"sendToJS" Value:@"message from OC"];
 ```
+
+## 注意
+
+### Web存储
+
+如果采用从本地服务器启动游戏的方案，可能会出现“Web存储失效”的问题，如 localStorage 不能获得上次启动保存的数据。原因是每次启动本地服务器占用的端口号是不固定的（固定端口号可能会审核被拒），按照浏览器缓存策略这部分数据不能共享。
+
+解决方案：通过ExternalInterface调用原生代码存储数据。
