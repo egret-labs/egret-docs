@@ -43,12 +43,6 @@
         "in_use": "true"
       },
       {
-        "filename": "Lakeshore.json",
-        "des": "Lakeshore相关文档",
-        "text": "Lakeshore",
-        "in_use": "true"
-      },
-      {
         "filename": "Depot.json",
         "des": "Res Depot说明文档",
         "text": "Res Depot",
@@ -83,6 +77,12 @@
         "des": "EgretVS说明文档",
         "text": "EgretVS",
         "in_use": "false"
+      },
+      {
+        "filename": "Lakeshore.json",
+        "des": "Lakeshore相关文档",
+        "text": "Lakeshore",
+        "in_use": "true"
       }
     ],
     "isFolder": true,
