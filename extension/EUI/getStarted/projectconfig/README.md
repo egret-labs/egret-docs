@@ -1,17 +1,25 @@
-## eui项目配置
+在 Egret 5.x 项目的 `scripts` 目录下，有个 `config.ts` 文件，里面可以配置 EUI 的编译模式
+![](p1.png)
 
-------------------
+```
+ if (command == 'build') {
+ 	......
+ 	new ExmlPlugin('debug'), // 非 EUI 项目关闭此设置
+ }
+ else if (command == 'publish') {
+	......
+ 	new ExmlPlugin('commonjs'), // 非 EUI 项目关闭此设置
+ }
+```
+如上面的代码所示，可以分别设置 `build`（即 debug 模式）和 `publish`（即发布模式）的编译模式。
 
-### 概述
-在`egretProperties.json`中，我们提供了`eui`相关配置。开发者可以使用`Egret 5.0.4`以上版本引擎创建一个eui项目看到，旧项目升级后可参照新项目方式自行配置。
+编译模式有以下几种：
 
-### 参数说明
+*  debug : 默认策略，用于开发环境
+*  contents : 将 EXML 的内容写入到主题文件中
+*  gjs : 将生成的JS文件写入到主题文件中
+*  commonjs : 将EXML合并为一个 CommonJS 风格的文件
+*  将EXML合并为一个含有解析方法和皮肤定义的文件，且皮肤抽离为一份配置
+*  json : 将每个EXML文件生成一份配置
 
-- `exmlRoot` ： 指定exml文件存放根目录，该路径必须为相对路径。该目录内最好只有`exml`文件，如果还包含其他文件可能很大程度上影响编译速度。该字段可以为字符串或者字符串数组，字符串数组在5.0.6以上版本支持
-- `themes` ： 主题文件数组，配置所有主题文件路径，该路径必须为相对路径
-- `exmlPublishPolicy` ： 发布时主题文件存储`exml`策略，其中包含`path`，`content`，`gjs`
-
-### exmlPublishPolicy属性说明
-- `path ` ：主题文件只存储路径，会去加载不同`exml`文件，和debug时一致，不推荐使用
-- `content ` ：主题文件存储`exml`内容，不会加载不同`exml`文件，优点是整体出题文件较小
-- `gjs ` ：主题文件存储`exml`编译后的`js`内容，不会加载不同`exml`文件，优点是解析速度快
+您可以根据项目需求来设置
