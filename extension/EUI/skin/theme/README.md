@@ -23,28 +23,15 @@ default.thm.json:
 ```
 
 主题配置文件就是一个标准的JSON文件，
-* `skins` 指定组件的默认皮肤，其中键是组件的类名，值是需要赋值给这个组件skinName属性的值。可以是exml文件路径，
-   也可以是EXML文件上注册的类名（根节点上的class属性）。
-* `exmls` 表示需要主题预加载的 EXML 文件列表。Theme 文件加载之后，它会优先加载这个列表中的EXML文件，由于 EXML 可能会存在相互依赖，所以 Theme
-   会**按照列表中的顺序**编译 EXML。可以监听 `egret.Event.COMPLETE` 来确认该列表中的EXML已经加载完成。
-* `autoGenerateExmlsList` 表示是否需要使用命令行工具自动生成 EXML 列表。`build` 命令会查找项目中的 EXML 文件，
-   并根据 EXML 文件的依赖关系自动排序后，放到这个列表中。在项目发布时，命令行工具会将 EXML 文件的内容直接集成到 theme 文件中，
-   减少网络请求的次数（参考下面的示例）。如果您想要自定义 EXML 列表，请将值设置为 `false`。
 
-    ```javascript
-    //发布后的主题文件
-    {
-        "skins": {
-            "eui.Button": "skins/ButtonSkin.exml"
-        },
-        "exmls": [{
-            "path": "skins/ButtonSkin.exml",
-            "content": "<?xml version="1.0" encoding="utf-8" ?>...</e:Skin>"
-        }]
-    }
-    ```
+* `skins` 指定组件的默认皮肤，其中键是组件的类名，值是需要赋值给这个组件skinName属性的值。可以是exml文件路径，也可以是EXML文件上注册的类名（根节点上的class属性）。
+   
+* `exmls` 表示需要主题预加载的 EXML 文件列表。Theme 文件加载之后，它会优先加载这个列表中的EXML文件，由于 EXML 可能会存在相互依赖，所以 Theme 会**按照列表中的顺序**编译 EXML。可以监听 `egret.Event.COMPLETE` 来确认该列表中的EXML已经加载完成。
 
-这里需要注意的是，引擎只会识别 `xxx.thm.json` 文件作为 theme 文件，其他格式的文件名不会自动生成。
+* `autoGenerateExmlsList` 表示是否需要使用命令行工具自动生成 EXML 列表。
+
+
+这里需要注意的是，引擎只会识别 `xxx.thm.json` 文件作为 theme 文件.
 
 ## 启用主题
 
