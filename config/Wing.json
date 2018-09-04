@@ -402,12 +402,6 @@
         "in_use": true
       },
       {
-        "filename": "/Wing/build/",
-        "text": "构建",
-        "des": "构建",
-        "in_use": true
-      },
-      {
         "filename": "/Wing/clean/",
         "text": "清理",
         "des": "清理",
