@@ -6,11 +6,11 @@ egret build -e
 ``` 
 然后执行
 ```
-egret startserver
+egret run
 ``` 
 查看该项目的运行效果。或者直接在这个项目基础上开始修改学习。
 
-另外，可以访问我们的[在线API文档](http://edn.egret.com/cn/index.php/apidoc/egret243/name/eui.AddItems)，查看eui扩展库每个类页面下方的示例，这些示例覆盖到了每个类的常见用法。
+另外，可以访问我们的 [在线API文档](http://developer.egret.com/cn/apidoc/)，查看eui扩展库每个类页面下方的示例，这些示例覆盖到了每个类的常见用法。
 
 >可以使用 `egret run` 来查看项目运行效果。 
 
@@ -20,7 +20,7 @@ egret startserver
 
 首先打开命令行，进入工作目录，执行 `egret create HelloEUI --type eui`, Egret 会创建一个 HelloEUI 目录作为项目的根目录 ( 如果您想要在当前目录创建项目，可以直接执行 `Egret create --type eui` )。
 
-执行`egret startserver HelloEUI`
+执行`egret run HelloEUI`
 
 命令行工具会自动打开一个浏览器窗口，如下图：
 
