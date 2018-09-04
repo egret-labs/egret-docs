@@ -1,9 +1,3 @@
-## 必需产品
-
-- Egret Engine 1.7.1+ ：[下载地址](http://edn.egret.com/cn/docs/page/785)
-- p2物理引擎库 ：[下载地址](https://github.com/egret-labs/egret-game-library)
-- 第三方库配置方法：http://edn.egret.com/cn/docs/page/172
-
 ## 基本用法
 
 目前 Egret 已经支持p2物理系统，p2是一套使用 JavaScript 写的2D刚体物理引擎。其中包括碰撞检测，接触，摩擦等等。下面我们通过一个简单的示例来学习该物理引擎的基本用法。
