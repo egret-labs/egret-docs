@@ -57,8 +57,7 @@ Egret 还提供了另外一个与 `DEBUG` 对应的编译参数 `RELEASE`，用�
 		
 * FPS:  60		- 帧频
 
-
-* Dirty 7%		- 每帧脏区域占舞台的百分比
+* Draw: 13		- 每帧 draw 方法调用的平均次数
  
 * Cost: 0,0,0		- Ticker 和 EnterFrame 阶段显示的耗时,每帧舞台所有事件处理和矩阵运算耗时，绘制显示对象耗时（单位是ms） 
 
