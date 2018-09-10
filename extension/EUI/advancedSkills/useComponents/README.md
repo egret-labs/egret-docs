@@ -3,7 +3,8 @@
 之前例子中用到的节点都是EUI标准库中的组件，此外 EUI 可以自定义组件。例如有一个自定义的按钮类：`control.MyButton` ,在EXML中描述自定义组件的方式如下：
 
 ```
-<e:Group class="skins.MyGroup" xmlns:e="http://ns.egret.com/eui" con="control.*"> <con:MyButton/> </e:Group>```
+<e:Group class="skins.MyGroup" xmlns:e="http://ns.egret.com/eui" con="control.*"> <con:MyButton/> </e:Group>
+```
 
 首先我们要在根节点添加一个自定义的命名空间：`con="control.*"` ，等号之前的 `con` 表示命名空间前缀，这个可以随意写，只要不跟现有的前缀重名即可。等号后面的部分 `control.*` 表示在`control`这个模块名下的类。
 声明了命名空间后，就可以合法地引用自定义组件：`<con:MyButton/>` 表示的类就是 `control.MyButton`。
