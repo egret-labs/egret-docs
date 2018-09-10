@@ -45,6 +45,7 @@ private onLoaded(clazz:any,url:string):void{
 ```
 
 ## 嵌入EXML到代码
+
 EXML同样也提供了文本的解析方式，这个过程可以直接类比对JSON文件的处理，因为几乎是一样的。可以使用HttpRequest去加载EXML文件的文本内容，然后运行时调用EXML.parse(exmlText)方法去解析即可，会立即返回解析后的类定义。当然，也可以跳过异步加载，直接在代码中嵌入EXML文本内容：
 
 ```
@@ -64,7 +65,9 @@ var button = new eui.Button();
 button.skinName = exmlText;
 this.addChild(button);
 ```
-注意观察上面的例子，这里有个嵌入多行文本的技巧，可以不用写一堆的 `"n"+` 符号来连接字符串，可以直接使用头尾一对\`符号（波浪线那个按键）来包裹多行文本。另外，包含在这对符号之间的文本内容，还可以使用`${key}`的形式来引用代码中的变量，进行简洁的字符串拼接：
+注意观察上面的例子，您可以使用
+[模板字面量](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/template_strings)
+（`template literals`）进行多行字符串的嵌入，从而避免了用 `"n"+` 符号来进行字符串连接。您可以直接使用头尾一对 `·` 符号（波浪线那个按键）来包裹多行文本。另外，包含在模板字面量中的文本内容，还可以使用 `${key}` 等嵌入的表达式来引用代码中的变量，进行简洁的字符串拼接：
 
 ```
 var className = "skins.ButtonSkin";
