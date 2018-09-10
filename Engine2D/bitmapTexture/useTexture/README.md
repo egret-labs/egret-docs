@@ -81,7 +81,7 @@ Egret内置了纹理集的支持，在编写代码之前，需要先制作一张
 ```
 
 
-* 将资源文件拷贝到项目文件夹中的 `resource/assets/` 目录下，同时修改资源配置文件 `default.des.json` 。
+* 将资源文件拷贝到项目文件夹中的 `resource/assets/` 目录下，同时修改资源配置文件 `default.res.json` 。
 
 资源配置文件内容如下：
 
