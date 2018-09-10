@@ -23,7 +23,7 @@
 
 
 ### 使用
-使用方式同Android Support。例：
+使用方式如下：
 
 `egret create_app HelloEgretAndroidAS -f HelloEgretH5 -t /Users/egret-android-support-3.2.0/egret-android-support-as-3.2.0`
 
