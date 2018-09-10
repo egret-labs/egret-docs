@@ -92,7 +92,6 @@ function onClick():void{
     //重新定位圆，可以看到圆形移到了屏幕的左上角
     circle.x = targetPoint.x;
     circle.y = targetPoint.y;
-    }
 }
 ```
 
