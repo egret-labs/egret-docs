@@ -46,6 +46,6 @@ calculateCanvasScaleFactor:function(context) {
 参数是一个对象，包括以下3个可选属性：
 
 * "renderMode": 引擎渲染模式，"canvas" 或者 "webgl"
-* "audioType": 使用的音频类型，0:默认，2:web audio，3:audio
+* "audioType": 使用的音频类型，0:默认，2:web audio，3:audio  [两者的区别，可以参考文档](https://www.cnblogs.com/martinl/p/6005424.html)
 * "calculateCanvasScaleFactor"：屏幕的物理像素适配方法，使用默认的即可
 
