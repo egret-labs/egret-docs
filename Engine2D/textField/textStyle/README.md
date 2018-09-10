@@ -405,7 +405,7 @@ class GameApp extends egret.DisplayObjectContainer{
 class textEventDemo extends egret.DisplayObjectContainer {
     constructor() {
         super();
-        var tx:egret.TextField = new egret.TextField;
+        var tx:egret.TextField = new egret.TextField();
         tx.textFlow = new Array<egret.ITextElement>(
             { text:"This is a hyperlink", style: { "href" : "event:text event triggered" } }
             ,{ text:"\n This is just a text", style: {} }
