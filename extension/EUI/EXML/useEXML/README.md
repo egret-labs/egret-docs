@@ -65,9 +65,7 @@ var button = new eui.Button();
 button.skinName = exmlText;
 this.addChild(button);
 ```
-注意观察上面的例子，您可以使用
-[模板字面量](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/template_strings)
-（`template literals`）进行多行字符串的嵌入，从而避免了用 `"n"+` 符号来进行字符串连接。您可以直接使用头尾一对 `·` 符号（波浪线那个按键）来包裹多行文本。另外，包含在模板字面量中的文本内容，还可以使用 `${key}` 等嵌入的表达式来引用代码中的变量，进行简洁的字符串拼接：
+注意观察上面的例子，您可以使用[模板字面量](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/template_strings)（`template literals`）进行多行字符串的嵌入，从而避免了用 `"n"+` 符号来进行字符串连接。您可以直接使用头尾一对 `·` 符号（波浪线那个按键）来包裹多行文本。另外，包含在模板字面量中的文本内容，还可以使用 `${key}` 等嵌入的表达式来引用代码中的变量，进行简洁的字符串拼接：
 
 ```
 var className = "skins.ButtonSkin";
