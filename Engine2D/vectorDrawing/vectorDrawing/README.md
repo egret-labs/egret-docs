@@ -272,7 +272,7 @@ class GraphicsTest extends egret.DisplayObjectContainer
 
 编译并运行，效果如图：
 
-![](55fa85513f04e.png)
+![](p1.png)
 
 其中 endAngle 使用 `Math.PI` 表示弧度 π ，可以在数学相关API里查询到。
 
