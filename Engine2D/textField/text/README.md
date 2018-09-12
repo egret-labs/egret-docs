@@ -25,7 +25,7 @@ this.addChild( label );
 将文本框设置为可输入的代码如下：
 
 ```
-var txInput:egret.TextField = new egret.TextField;
+var txInput:egret.TextField = new egret.TextField();
 txInput.type = egret.TextFieldType.INPUT;
 txInput.width = 282;
 txInput.height = 43;
