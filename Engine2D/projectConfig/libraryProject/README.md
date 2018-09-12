@@ -28,11 +28,11 @@
 
    执行完成之后可以看到新建了一个 demo 文件夹，文件夹内有两个文件 `package.json`  `tsconfig.json`。
 
-2. 在jszip文件夹内创建`src`   `bin`    ` typings` 目录。
+2. 在 demo 文件夹内创建`src`   `bin`    ` typings` 目录。
 
    根据 TypeScript / JavaScript 不同类型的类库，有两种情况：
 
-   ####TypeScript库
+   #### TypeScript库
 
    直接将ts文件放到`src`目录下。
 
