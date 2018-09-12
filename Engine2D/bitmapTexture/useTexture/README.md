@@ -109,7 +109,7 @@ class BitmapTest extends egret.DisplayObjectContainer{
     }
     private onAddToStage(event:egret.Event) {
         RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onGroupComplete, this);
-        RES.loadConfig("resource/resource.json", "resource/");
+        RES.loadConfig("resource/default.res.json", "resource/");
         RES.loadGroup("preload");
     }
     private onGroupComplete()
