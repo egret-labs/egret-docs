@@ -8,65 +8,6 @@
 
 * [全部版本列表](Engine2D/releaseNote/allVersion/README.md)
 
-###### 历史更新
-
-* [Egret Engine2D 3.2.2](Engine2D/update/update322/README.md)
-
-* [Egret Engine2D 3.2.1](Engine2D/update/update321/README.md)
-
-* [Egret Engine2D 3.2.0](Engine2D/update/update320/README.md)
-
-* [Egret Engine2D 3.1.8](Engine2D/update/update318/README.md)
-
-* [Egret Engine2D 3.1.7](Engine2D/update/update317/README.md)
-
-* [Egret Engine2D 3.1.6](Engine2D/update/update316/README.md)
-
-* [Egret Engine2D 3.1.5](Engine2D/update/update315/README.md)
-
-* [Egret Engine2D 3.1.4](Engine2D/update/update314/README.md)
-
-* [Egret Engine2D 3.1.3](Engine2D/update/update313/README.md)
-
-* [Egret Engine2D 3.1.2](Engine2D/update/update312/README.md)
-
-* [Egret Engine2D 3.1.1](Engine2D/update/update311/README.md)
-
-* [Egret Engine2D 3.1.0](Engine2D/update/update310/README.md)
-
-* [Egret Engine2D 3.0.8](Engine2D/update/update308/README.md)
-
-* [Egret Engine2D 3.0.7](Engine2D/update/update307/README.md)
-
-* [Egret Engine2D 3.0.6](Engine2D/update/update306/README.md)
-
-* [Egret Engine2D 3.0.5](Engine2D/update/update305/README.md)
-
-* [Egret Engine2D 3.0.4](Engine2D/update/update304/README.md)
-
-* [Egret Engine2D 3.0.3](Engine2D/update/update303/README.md)
-
-* [Egret Engine2D 3.0.2](Engine2D/update/update302/README.md)
-
-* [Egret Engine2D 3.0.1](Engine2D/update/update301/README.md)
-
-* [Egret Engine2D 3.0.0](Engine2D/update/update300/README.md)
-
-* [Egret Engine2D 2.5.7](Engine2D/update/update257/README.md)
-
-* [Egret Engine2D 2.5.6](Engine2D/update/update256/README.md)
-
-* [Egret Engine2D 2.5.5](Engine2D/update/update255/README.md)
-
-* [Egret Engine2D 2.5.4](Engine2D/update/update254/README.md)
-
-* [Egret Engine2D 2.5.3](Engine2D/update/update253/README.md)
-
-* [Egret Engine2D 2.5.2](Engine2D/update/update252/README.md)
-
-* [Egret Engine2D 2.5.1](Engine2D/update/update251/README.md)
-
-* [Egret Engine2D 2.5.0](Engine2D/update/update250/README.md)
 
 #### Get Started
 
@@ -297,42 +238,6 @@
 #### 更新详情
 
 * [Egret Engine3D 3.2.2](Engine3D/update/update322/README.md)
-
-###### 历史更新
-
-* [Egret Engine3D 3.2.1](Engine3D/update/update321/README.md)
-
-* [Egret Engine3D 3.2.0](Engine3D/update/update320/README.md)
-
-* [Egret Engine3D 3.1.5](Engine3D/update/update315/README.md)
-
-* [Egret Engine3D 3.1.4](Engine3D/update/update314/README.md)
-
-* [Egret Engine3D 3.1.3](Engine3D/update/update313/README.md)
-
-* [Egret Engine3D 3.1.2](Engine3D/update/update312/README.md)
-
-* [Egret Engine3D 3.1.1](Engine3D/update/update311/README.md)
-
-* [Egret Engine3D 3.1.0](Engine3D/update/update310/README.md)
-
-* [Egret Engine3D 3.0.8](Engine3D/update/update308/README.md)
-
-* [Egret Engine3D 3.0.7](Engine3D/update/update307/README.md)
-
-* [Egret Engine3D 3.0.6](Engine3D/update/update306/README.md)
-
-* [Egret Engine3D 3.0.5](Engine3D/update/update305/README.md)
-
-* [Egret Engine3D 3.0.4](Engine3D/update/update304/README.md)
-
-* [Egret Engine3D 3.0.3](Engine3D/update/update303/README.md)
-
-* [Egret Engine3D 3.0.2](Engine3D/update/update302/README.md)
-
-* [Egret Engine3D 3.0.1](Engine3D/update/update301/README.md)
-
-* [Egret Engine3D 3.0.0](Engine3D/update/update300/README.md)
 
 #### Get Started
 
@@ -664,48 +569,6 @@
 
 * [Egret Wing 3.2.3](Wing/update/update323/README.md)
 
-###### 历史更新
-
-* [Egret Wing 3.2.2](Wing/update/update322/README.md)
-
-* [Egret Wing 3.2.0](Wing/update/update320/README.md)
-
-* [Egret Wing 3.1.8](Wing/update/update318/README.md)
-
-* [Egret Wing 3.1.7](Wing/update/update317/README.md)
-
-* [Egret Wing 3.1.6](Wing/update/update316/README.md)
-
-* [Egret Wing 3.1.5](Wing/update/update315/README.md)
-
-* [Egret Wing 3.1.4](Wing/update/update314/README.md)
-
-* [Egret Wing 3.1.2](Wing/update/update312/README.md)
-
-* [Egret Wing 3.1.1](Wing/update/update311/README.md)
-
-* [Egret Wing 3.1.0](Wing/update/update310/README.md)
-
-* [Egret Wing 3.0.10](Wing/update/update3010/README.md)
-
-* [Egret Wing 3.0.9](Wing/update/update309/README.md)
-
-* [Egret Wing 3.0.8](Wing/update/update308/README.md)
-
-* [Egret Wing 3.0.7](Wing/update/update307/README.md)
-
-* [Egret Wing 3.0.6](Wing/update/update306/README.md)
-
-* [Egret Wing 3.0.5](Wing/update/update305/README.md)
-
-* [Egret Wing 3.0.4](Wing/update/update304/README.md)
-
-* [Egret Wing 3.0.3](Wing/update/update303/README.md)
-
-* [Egret Wing 3.0.2](Wing/update/update302/README.md)
-
-* [Egret Wing 3.0.1](Wing/update/update301/README.md)
-
 #### 使用手册
 
 ###### 入门介绍
@@ -786,29 +649,6 @@
 
 * [DragonBones 4.8.1](DB/update/update481/README.md)
 
-###### 历史更新
-
-* [DragonBones 4.7.4](DB/update/update474/README.md)
-
-* [DragonBones 4.7.3](DB/update/update473/README.md)
-
-* [DragonBones 4.7.2](DB/update/update472/README.md)
-
-* [DragonBones 4.7.1](DB/update/update471/README.md)
-
-* [DragonBones 4.7.0](DB/update/update470/README.md)
-
-* [DragonBones 4.6.1](DB/update/update461/README.md)
-
-* [DragonBones 4.5.1](DB/update/update451/README.md)
-
-* [DragonBones 4.3.2](DB/update/update432/README.md)
-
-* [DragonBones 4.2.1](DB/update/update421/README.md)
-
-* [DragonBones 4.1.1](DB/update/update411/README.md)
-
-* [DragonBones 4.0.0](DB/update/update400/README.md)
 
 #### DragonBones Pro
 
@@ -939,22 +779,7 @@
 #### 更新详情
 
 * [Lakeshore 2.1.0](Lakeshore/update/update210/README.md)
-
-###### 历史更新
-
-* [Lakeshore 2.0.2](Lakeshore/update/update202/README.md)
-
-* [Lakeshore 2.0.1](Lakeshore/update/update201/README.md)
-
-* [Lakeshore 2.0.0](Lakeshore/update/update200/README.md)
-
-* [Lakeshore 1.2.1](Lakeshore/update/update121/README.md)
-
-* [Lakeshore 1.2.0](Lakeshore/update/update120/README.md)
-
-* [Lakeshore 1.1.1](Lakeshore/update/update111/README.md)
-
-* [Lakeshore 1.0.0](Lakeshore/update/update100/README.md)
+* [历史版本](Lakeshore/update)
 
 #### 使用手册
 
@@ -1050,9 +875,6 @@
 
 * [Texture Merger 1.6.3](tools/TextureMerger/update/update163/README.md)
 
-###### 历史更新
-
-* [Texture Merger 1.6.0](tools/TextureMerger/update/update160/README.md)
 
 #### Texture Merger
 
@@ -1077,12 +899,6 @@
 #### 更新详情
 
 * [Egret Conversion 2.5.3](Conversion/update/update253/README.md)
-
-###### 历史更新
-
-* [Egret Conversion 2.2.0](Conversion/update/update220/README.md)
-
-* [Egret Conversion 2.0.1](Conversion/update/update201/README.md)
 
 #### Conversion
 
