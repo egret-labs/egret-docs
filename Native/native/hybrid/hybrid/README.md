@@ -54,13 +54,28 @@ ZipFileLoader* loader = [EgretWebViewLib createZipFileLoader:zipFilePath Host:ho
 [EgretWebViewLib startGame:gameUrl SuperView:self.view]; // 启动游戏
 ```
 
-## 另外两种启动方式
+## 另外三种启动方式
 
 ### 直接启动游戏
 
 ```objective-c
-[EgretWebViewLib startGame: SuperView:];
+[EgretWebViewLib startGame:gameUrl SuperView:self.view];
+// gameUrl是游戏的url地址
 ```
+
+### 从Resources目录启动游戏
+
+0.1.11版本添加
+
+```objective-c
+[EgretWebViewLib startLocalServerFromResource];
+[EgretWebViewLib startGame:indexFilePath SuperView:self.view];
+// indexFilePath是游戏的index.html文件相对于Resources的路径
+```
+
+如下图所示，indexFilePath为"game/index.html"。需要确认游戏资源目录已经添加到"Copy Bundle Resources"中。
+
+![](p2.png)
 
 ### 下载游戏资源到本地，从本地启动游戏
 
@@ -101,6 +116,26 @@ ZipFileLoader* loader = [EgretWebViewLib createZipFileLoader: Delegate:];
 ```objective-c
 [EgretWebViewLib callExternalInterface:@"sendToJS" Value:@"message from OC"];
 ```
+
+## App Store审核常见问题
+
+### 和浏览器体验没有区别
+
+> Your app provides a limited user experience as it is not sufficiently different from a mobile browsing experience. As such, the experience it provides is similar to the general experience of using Safari. Including iOS features such as push notifications, Core Location, and sharing do not provide a robust enough experience to be appropriate for the App Store.
+
+解决方案：添加一些原生功能，让应用体验和Safari有区别。
+
+若只添加了一些不明显的原生功能，如通过ExternalInterface调用原生SDK进行登录，可能不会通过人工审核。
+
+### 应用启动时需要解压资源
+
+> Your app did not include sufficient content in the binary for the app to function at launch, and we were required to download or unpack additional resources before we could use it.
+
+解决方案：
+
+1. 修改启动的逻辑，打开应用后显示其他界面，无感知下载和解压游戏资源。
+
+2. 审核时采用*直接启动游戏*或者*从Resources目录启动游戏*的启动方式。
 
 ## 注意
 
