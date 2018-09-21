@@ -1,70 +1,117 @@
-本文涉及到 WEB 与 Native 两种版本控制。
+## 游戏资源版本控制功能的设计与实现
+***
+本篇文档主要以插件控制流为基础，实现自由定制的版本控制功能。
+[示例demo下载](http://tool.egret-labs.org/DocZip/engine/VersionControlDemo.zip)
+### 一. 生成版本资源
+在新的发布插件流程中，开发者可以对所有资源和代码进行定制化处理。而版本控制就是对资源的名称进行规范化，增加版本号或校验码比对等功能。
 
-本文的调试环境为引擎 3.0.0
+打开示例 demo 的`scripts/resplugin.ts`文件
 
-## WEB版本控制
+```
+const crc32 = require("./crc32");
+export class ResPlugin implements plugins.Command {
 
-default.res.json 中 resources 节点下配置的每个资源加载项，在第一次加载成功时会用 name 属性作为 key 在内存缓存下来。
-
-再次请求时，直接从内存缓存里取。如果有两个组都含有一个资源，第二个组再加载这个资源时，也会直接从缓存里得到结果，不会重复发起加载请求。
-
-目前移动设备由于碎片化的问题，对于如 PC 端浏览器的本地临时文件缓存机制，还不是很完整，支持的非常有限。当我们再次进入游戏，资源还是会从服务器重新加载。
-
-在设置配置文件加载项时，最常见的控制缓存机制是在URL后，加入特定字符，如:
-
-    assect/bg.png?v=20151010
-
-这样我们每次修改`v=xxxx`就是一个新的地址，保持地址不重复，就不会缓存。这样就可以合理的安排更新特定资源了。
-
-通过 RES Deopt 打开资源配置文件，双击需要设置的配置项，就可以进行编辑设置，如图：
-
-![](572970d038066.png)
-
-> 由于此中方式在 Native 下不可使用，因此建议在发布 Web 版本时在发布的配置文件里加上版本。
-
-## Native版本控制
-
-native涉及到[热更新机制](../../../Engine2D/native/hotUpdate/README.md)，由于热更新机制每次资源更新后，会产生一个临时的本地命名，所以 RES 模块提供了两个方法用户处理版本控制。
-
-
-正常情况下，代码一般放置于 onAddToStage 方法中：
-
-    private onAddToStage(event:egret.Event) {
-        //设置加载进度界面
-        //Config to load process interface
-        this.loadingView = new LoadingUI();
-        this.stage.addChild(this.loadingView);
-
-        //初始化Resource资源加载库
-        //initiate Resource loading library
-        RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
-        RES.loadConfig("resource/default.res.json", "resource/");
+    // 版本控制信息
+    private versionConfig = {};
+    // 需要进行版本控制的文件夹
+    private versionPath = "resource/assets/";
+    // 版本信息保存路径,建议放入resource包里面，因为这个文件每次都需要加载，不需要放在cdn上。
+    private versionConfigPath = "resource/version.json";
+    constructor() {
     }
 
-### getChangeList
-
-getChangeList 方法用于获取本次热更新后，新增或改变（文件名相同，但更改过的文件）的资源列表，在Web端此列表为空。返回数组形式，如： `[{url:"a.png", size:888}]`
-
-        var array: any[] = RES.getVersionController().getChangeList();
-        if(array.length > 0) {
-            this.versionText = array[0].url + "|" + array[0].size;
+    async onFile(file: plugins.File) {
+        //除去json可能存在的空格,如不需要，开发者可自行删除
+        if (file.extname === ".json") {
+            file.contents = new Buffer(JSON.stringify(JSON.parse(file.contents.toString())));
         }
+        var path = file.origin;
+        //对resource/assets下面的资源进行版本控制
+        if (path.indexOf(this.versionPath) != -1 && (file.extname === ".mp3" || file.extname === ".fnt" || file.extname === ".json" || file.extname === ".png" || file.extname === ".jpg")) {
+            path = path.replace(this.versionPath, "");
+            this.versionConfig[path] = crc32(file.contents.toString());
+            // 原始的文件夹+crc32码+后缀扩展名
+            file.path = this.versionPath + this.versionConfig[path] + file.extname;
+        }
+        return file;
+    }
 
-array[0].url 表示资源的新路径，我们每次热更新中，资源文件夹中新的资源路径地址。
-array[0].size 文件的大小。
+    async onFinish(commandContext: plugins.CommandContext) {
+        commandContext.createFile(this.versionConfigPath, new Buffer(JSON.stringify(this.versionConfig)));
+    }
+}
+```
+以上代码就是发布资源时进行版本控制处理的插件代码。我们选取了 `crc32` 作为版本校验的工具，相比较于 `Md5`，`crc32` 生成的代码更短，这样工程解析时需要加载的文件就会很小，更加高效。通过以上代码，会对项目中 `resource/assets` 文件夹里的文件进行版本控制。
+
+```
+else if (command == 'publish') {
+    const outputDir = `bin-release/web/${version}`;
+    return {
+        outputDir,
+        commands: [
+            ...
+            new ResPlugin(),//调用版本控制的逻辑
+            ...
+        ]
+    }
+}
+```
+如上图所示，在 `scripts/config.ts` 的发布控制流中调用自定义插件后，就可以进行版本管理。
+
+![](p1.png)
+如上图所示，执行 `egret publish` 命令后，会发布生成一个 `version.json` 文件，里面包含了资源的版本信息。
+
+```
+{
+	//文件名：对应的 crc32 校验码
+    "bg.jpg": "edb6dd7b",
+    "egret_icon.png": "770b63da",
+    "Button/button_down.png": "342e118c",
+    "Button/button_up.png": "5a23cd86",
+    "CheckBox/checkbox_select_disabled.png": "153da087",
+    "CheckBox/checkbox_select_down.png": "c9ecc6fb",
+	...
+```
+
+### 二. 解析版本资源
+解析版本控制的示例文件为： `src/VersionManager.ts`
+
+解析代码主要分为三部分，第一部分是加载version.json的配置，后续文件加载都会通过这个配置去寻找，第二部分是依据配置删除原有的缓存文件，最后一部分是运行时的资源路径的替换。这样开发者在使用的时候只需要修改版本号就能控制资源的维护。
 
 
-### getVirtualUrl
+```
+init(): Promise<any> {
+    if (RELEASE) {//发布模式
+        return new Promise((resolve, reject) => {
+        		...
+        		//根据版本控制解析资源
+        		...
+        }
+    } else {//debug 开发模式
+        return Promise.resolve()
+    }
+}
+```
 
-getVirtualUrl 获取资源文件实际的URL地址。由于热更新版本控制实际已经对原来的资源文件的URL进行了改变，因此想获取指定资源文件实际的URL时需要调用此方法。
 
-假设我们修改了 `resource/assets/bg.jpg` 通过热更新后，实际的地址为  `resource/9b/9be1d82b_138755.jpg`。 现在想获取实际地址就可以通过 getVirtualUrl 方法。如下：
+上面代码兼容了发布模式和开发模式。
 
-	console.log(RES.getVersionController().getVirtualUrl("resource/assets/bg.jpg"));
+* 在开发模式下，不走版本控制的逻辑，还是用`resource/assets/bg.jpg`这种方式加载资源，便于替换资源调试项目。
+* 在发布模式下，会用`resource/assets/edb6dd7b.jpg`这种方式加载，进行版本控制。
 
-输出结果为：
 
-	resource/9b/9be1d82b_138755.jpg
+```
+// 下面主要是对各种运行时的版本控制，
+if (egret.Capabilities.runtimeType == egret.RuntimeType.WXGAME) {
+    this.versionCacheWxgame();//微信小游戏
+} else if (egret.Capabilities.runtimeType == egret.RuntimeType.WEB) {
+    this.versionCacheWeb();//浏览器 H5
+}
+```
+上面的示例代码兼容了网页模式和微信小游戏，这样一套代码就可以处理不同环境下的资源管理逻辑。
 
-> 注： getChangeList 与 getVirtualUrl 方法的调用，需在` RES.loadConfig("resource/default.res.json", "resource/")` 加载完成后。
-> 如果代码里使用非 RES 模块的加载比如 ImageLoader 等，请使用 `RES.getVersionController().getVirtualUrl()`转换 url 后再传给 ImageLoader 等使用。
+
+### 最终效果
+
+![](./p2.png)
+上图为微信小游戏环境下，资源使用版本控制后的加载效果
