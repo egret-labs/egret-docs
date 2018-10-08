@@ -117,6 +117,37 @@ ZipFileLoader* loader = [EgretWebViewLib createZipFileLoader: Delegate:];
 [EgretWebViewLib callExternalInterface:@"sendToJS" Value:@"message from OC"];
 ```
 
+## 资源管理策略
+
+0.1.12版本添加
+
+### 本地放部分资源
+
+0.1.12开始支持在本地放部分资源，本地不存在的资源会到服务器上下载。
+
+需要在启动游戏时设置index.html对应的的服务器上的目录，以'/'结束，如"http://tool.egret-labs.org/Weiduan/game/"。
+
+```
++ (void)startGame:(NSString*)gameUrl Host:(NSString*)host SuperView:(UIView*)superView;
+```
+
+### 查找资源的顺序
+
+动态下载目录下的资源 > 本地资源 > 服务器上的资源
+
+动态下载目录下的资源：根据启动游戏时传入的host生成的目录，本地不存在的资源会下载到这里。可以通过`+(NSString*)getPreloadPathByGameUrl:(NSString*)gameUrl;`获得这个目录的绝对路径，参数是服务器上的index.html地址，如"http://tool.egret-labs.org/Weiduan/game/index.html"。
+
+本地资源：通过zip方式启动游戏后解压出来的资源，或者直接放在Resource目录下的资源。
+
+### 更新策略
+
+动态下载的资源或者本地资源不会再去服务器上下载，需要手动进行更新。
+
+两种参考更新方案：
+
+- 通过ZipFileLoader下载资源到本地。ZipFileLoader会自动覆盖旧的资源，并且能够获得当前版本。
+- 手动下载更新后的资源到动态下载目录。
+
 ## App Store审核常见问题
 
 ### 和浏览器体验没有区别
@@ -144,3 +175,7 @@ ZipFileLoader* loader = [EgretWebViewLib createZipFileLoader: Delegate:];
 如果采用从本地服务器启动游戏的方案，可能会出现“Web存储失效”的问题，如 localStorage 不能获得上次启动保存的数据。原因是每次启动本地服务器占用的端口号是不固定的（固定端口号可能会审核被拒），按照浏览器缓存策略这部分数据不能共享。
 
 解决方案：通过ExternalInterface调用原生代码存储数据。
+
+## 示例工程
+
+[下载地址](http://tool.egret-labs.org/DocZip/native/demo_ios_hybrid.zip)

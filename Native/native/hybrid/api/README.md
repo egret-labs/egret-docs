@@ -30,8 +30,18 @@ value: 参数
 ```
 
 ### 启动本地服务器
+
+从预下载目录启动服务器
+
 ```
 + (bool)startLocalServer;
+返回值: 是否成功
+```
+
+直接从Resource目录启动服务器（0.1.11添加）
+
+```
++ (bool)startLocalServerFromResource;
 返回值: 是否成功
 ```
 
@@ -39,6 +49,15 @@ value: 参数
 ```
 + (void)startGame:(NSString*)gameUrl SuperView:(UIView*)superView;
 gameUrl: 游戏地址
+superView: 父级View
+```
+
+还可以指定游戏对应的服务器地址，本地不存在的资源会去服务器上下载（0.1.12添加）
+
+```
++ (void)startGame:(NSString*)gameUrl Host:(NSString*)host SuperView:(UIView*)superView;
+gameUrl: 游戏地址
+host: 服务器地址
 superView: 父级View
 ```
 
@@ -53,6 +72,15 @@ superView: 父级View
 ```
 + (long long)getCacheSize;
 返回值: 目录大小
+```
+
+### 获取缓存目录位置
+（0.1.12添加）
+
+```
++ (NSString*)getPreloadPathByGameUrl:(NSString*)gameUrl;
+gameUrl: 游戏地址
+返回值: 缓存目录的绝对路径
 ```
 
 ### 清理缓存目录
