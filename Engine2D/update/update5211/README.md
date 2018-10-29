@@ -12,4 +12,4 @@
 
 * 修复发布QQ玩一玩 manifest 异常问题
 * 修改 tsconfig.json 和 egretProperties.json 后 egret run -a 开启的服务器自动关闭
-* 修复 egret run 命令端口异常问题
+* 修复 egret run 命令端口异常问题.
