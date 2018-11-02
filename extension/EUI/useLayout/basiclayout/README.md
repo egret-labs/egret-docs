@@ -104,6 +104,7 @@ btn.verticalCenter = 0;
 如图中效果所示，这些属性可以混合使用(相矛盾的设置除外)。   
 
 完整的类定义如下：
+
 ```
 class bascLayout extends egret.Sprite {
     private  myGroup:eui.Group;
@@ -166,12 +167,18 @@ class bascLayout extends egret.Sprite {
 ```
 
 文档类的完整定义如下:
+
 ```
 class Main extends eui.UILayer {
 
     protected createChildren(): void {
         super.createChildren();
-               
+        
+        //注入自定义的素材解析器
+        let assetAdapter = new AssetAdapter();
+        egret.registerImplementation("eui.IAssetAdapter", assetAdapter);
+        egret.registerImplementation("eui.IThemeAdapter", new ThemeAdapter());
+        
         var theme = new eui.Theme("resource/default.thm.json", this.stage);
         
         var button = new eui.Button();
