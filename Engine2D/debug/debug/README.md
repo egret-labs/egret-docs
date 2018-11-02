@@ -61,4 +61,7 @@ Egret 还提供了另外一个与 `DEBUG` 对应的编译参数 `RELEASE`，用�
  
 * Cost: 0,0		- 1)Ticker 和 EnterFrame 阶段显示的耗时; 2)绘制显示对象耗时（单位是ms） 
 
+**注：** 5.2 之前的版本 Cost 有3个值，分别为：1）Ticker 和 EnterFrame 阶段显示的耗时; 2）每帧舞台所有事件处理和矩阵运算耗时; 3）绘制显示对象耗时（单位是ms） 
+
+
 	
