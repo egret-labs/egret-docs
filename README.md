@@ -71,6 +71,26 @@
 #### Get Started
 
 * [Hello World](Engine2D/getStarted/helloWorld/README.md)
+* [生命周期](Engine2D/getStarted/lifecycle/README.md)
+
+#### 小游戏开发指南
+* [Hello World](Engine2D/minigame/minigameFAQ/README.md)
+
+* [小游戏简介](Engine2D/minigame/introduction/README.md)
+
+* [小游戏新手教程](Engine2D/minigame/tutorial/README.md)
+
+* [小游戏进阶教程](Engine2D/minigame/api/README.md)
+
+* [小游戏 API 调用](Engine2D/minigame/introduction/README.md)
+
+* [开放数据域](Engine2D/minigame/openDataContext/README.md)
+
+* [项目发布小游戏指南](Engine2D/minigame/publish/README.md)
+
+* [如何使用缓存资源](Engine2D/minigame/usingcache/README.md)
+
+* [如何分包加载资源](Engine2D/minigame/package/README.md)
 
 #### 项目配置
 
@@ -82,15 +102,36 @@
 
 * [入口文件说明](Engine2D/projectConfig/indexFile/README.md)
 
+* [入口文件模板](Engine2D/projectConfig/tempfile/README.md)
+
 * [项目配置文件说明](Engine2D/projectConfig/configFile/README.md)
+
+* [模块配置](Engine2D/projectConfig/configFile/modelconfig.md)
 
 * [tsconfig 配置文件](Engine2D/projectConfig/tsconfig/README.md)
 
 * [编译顺序说明](Engine2D/projectConfig/compileOrder/README.md)
 
-#### 显示对象
+* [webassembly 版本使用](Engine2D/projectConfig/webassembly/README.md)
 
-* [视觉编程](Engine2D/displayObject/visualProgram/README.md)
+* [扩展库简介](Engine2D/projectConfig/extendRepSummary/README.md)
+
+* [第三方扩展库](Engine2D/projectConfig/libraryProject/README.md)
+
+* [5.2 项目升级指南](Engine2D/projectConfig/upgradev52/README.md)
+
+
+#### 显示对象和显示容器
+
+ * [基本概念](Engine2D/displayObject/displayObject/README.md)
+
+ * [变换操作](Engine2D/displayObject/transform/README.md)
+
+ * [添加与删除显示对象](Engine2D/displayObject/addAndRemove/README.md)
+
+ * [深度管理](Engine2D/displayObject/depthManagement/README.md)
+
+<!-- * [视觉编程](Engine2D/displayObject/visualProgram/README.md)
 
 * [显示对象的基本概念](Engine2D/displayObject/basicConcept/README.md)
 
@@ -108,7 +149,7 @@
 
 * [旋转](Engine2D/displayObject/rotation/README.md)
 
-* [斜切](Engine2D/displayObject/skew/README.md)
+* [斜切](Engine2D/displayObject/skew/README.md) -->
 
 #### 显示容器
 
@@ -122,49 +163,23 @@
 
 #### 矢量绘图
 
-* [使用矢量绘图](Engine2D/vectorDrawing/useVectorDrawing/README.md)
-
-* [绘制圆形](Engine2D/vectorDrawing/drawCircle/README.md)
-
-* [绘制直线](Engine2D/vectorDrawing/drawLine/README.md)
-
-* [绘制曲线](Engine2D/vectorDrawing/drawCurves/README.md)
-
-* [绘制圆弧](Engine2D/vectorDrawing/drawArc/README.md)
-
-* [Graphics Arc 高级使用](Engine2D/vectorDrawing/useDrawCurves/README.md)
-
-* [多个形状的绘制](Engine2D/vectorDrawing/drawShapes/README.md)
+* [使用矢量绘图](Engine2D/vectorDrawing/vectorDrawing/README.md)
 
 #### 遮罩
 
-* [矩形遮罩](Engine2D/mask/rectangleMask/README.md)
-
-* [显示对象遮罩](Engine2D/mask/displayMask/README.md)
+* [遮罩](Engine2D/mask/mask/README.md)
 
 #### 碰撞检测
 
-* [非精确碰撞检测](Engine2D/hit/inexactHit/README.md)
+* [矩形碰撞检测](Engine2D/hit/rectangleHit/README.md)
 
-* [精确碰撞检测](Engine2D/hit/accurateHit/README.md)
+* [像素碰撞检测](Engine2D/hit/pixelHit/README.md)
 
 #### 文本
 
-* [使用文本](Engine2D/textField/createText/README.md)
-
-* [文本颜色](Engine2D/textField/textColor/README.md)
-
-* [文本字体](Engine2D/textField/textFonts/README.md)
-
-* [文本布局](Engine2D/textField/textLayout/README.md)
+* [文本类型](Engine2D/textField/text/README.md)
 
 * [文本样式](Engine2D/textField/textStyle/README.md)
-
-* [多种样式文本混合](Engine2D/textField/textMixed/README.md)
-
-* [文本超链接事件](Engine2D/textField/textLinkEvent/README.md)
-
-* [输入文本](Engine2D/textField/textInput/README.md)
 
 #### 事件机制
 
@@ -204,29 +219,21 @@
 
 #### 混合模式
 
-* [NORMAL](Engine2D/blendMode/normal/README.md)
-
-* [ADD](Engine2D/blendMode/add/README.md)
-
-* [ERASE](Engine2D/blendMode/erase/README.md)
+* [混合模式](Engine2D/blendMode/blendMode/README.md)
 
 #### 滤镜
 
-* [发光滤镜](Engine2D/filter/glowFilter/README.md)
+* [滤镜](Engine2D/filter/filter/README.md)
 
-* [颜色矩阵滤镜](Engine2D/filter/colorMatrixFilter/README.md)
-
-* [模糊滤镜](Engine2D/filter/blurFilter/README.md)
-
-* [投影滤镜](Engine2D/filter/shadowFilter/README.md)
+* [自定义Shader](Engine2D/shader/shader/README.md)
 
 #### 时间控制
 
-* [Timer 计时器](Engine2D/timeControl/timer/README.md)
+* [时间控制](Engine2D/timeControl/timeControl/README.md)
 
-* [Ticker 心跳](Engine2D/timeControl/ticker/README.md)
+<!-- * [Ticker 心跳](Engine2D/timeControl/timeControl/README.md)
 
-* [帧事件](Engine2D/timeControl/enterFrame/README.md)
+* [帧事件](Engine2D/timeControl/timeControl/README.md) -->
 
 #### 多媒体
 
@@ -234,11 +241,11 @@
 
 * [视频](Engine2D/multimedia/video/README.md)
 
-* [系统信息](Engine2D/multimedia/system/README.md)
+* [环境信息](Engine2D/multimedia/environment/README.md)
 
-* [陀螺仪](Engine2D/multimedia/gyro/README.md)
+<!-- * [陀螺仪](Engine2D/multimedia/gyro/README.md)
 
-* [地理位置](Engine2D/multimedia/location/README.md)
+* [地理位置](Engine2D/multimedia/location/README.md) -->
 
 #### 渲染模式
 
@@ -246,25 +253,28 @@
 
 #### 屏幕适配
 
-* [缩放模式和旋转模式说明](Engine2D/screenAdaptation/explanation/README.md)
+* [缩放模式](Engine2D/screenAdaptation/zoomMode/README.md)
+
+* [旋转模式](Engine2D/screenAdaptation/rotationMode/README.md)
 
 #### 调试
 
-* [使用 DEBUG 编译参数](Engine2D/debug/useDebug/README.md)
+* [调试](Engine2D/debug/debug/README.md)
 
-* [使用内置日志输出面板](Engine2D/debug/consolePanel/README.md)
+### 命令行扩展插件
 
-* [显示脏矩形和帧频信息](Engine2D/debug/showDebug/README.md)
+* [命令行扩展插件](Engine2D/cmdExtensionPlugin/plugin/README.md)
 
-* [FPS 面板](Engine2D/debug/fpsPanel/README.md)
+* [命令行扩展插件](Engine2D/cmdExtensionPlugin/api/README.md)
 
-* [最佳实践](Engine2D/debug/performanceOptimization/README.md)
+* [插件使用案例教程](Engine2D/cmdExtensionPlugin/teach/README.md)
+
 
 #### 调用原生JS
 
 * [ts 与 js 互调](Engine2D/callJS/tsCallJs/README.md)
 
-#### 原生支持
+<!-- #### 原生支持
 
 * [原生横屏设置](Engine2D/native/horizontalScreen/README.md)
 
@@ -276,19 +286,11 @@
 
 * [接入 QuickSDK](Engine2D/native/quickSDK/README.md)
 
-* [其他原生支持](Engine2D/native/other/README.md)
+* [其他原生支持](Engine2D/native/other/README.md) -->
 
 #### 打包发布
 
-* [打包 HTML5](Engine2D/publish/publishHTML5/README.md)
-
-* [打包 Runtime](Engine2D/publish/publishRuntime/README.md)
-
-* [打包 Android app](Engine2D/publish/publishAndroid/README.md)
-
-* [打包 iOS app](Engine2D/publish/publishIOS/README.md)
-
-* [打包 WinPhone app](Engine2D/publish/publishWinPhone/README.md)
+* [发布项目](Engine2D/publish/README.md)
 
 
 
