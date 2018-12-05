@@ -585,9 +585,15 @@
  
   {
     "children": [{
-      "filename": "/Engine2D/minigamebaidu/",
+      "filename": "/Engine2D/minigamebaidu/getStart/",
       "text": "开发快速指南",
       "des": "开发快速指南",
+      "in_use": true
+    },
+    {
+      "filename": "/Engine2D/minigamebaidu/baidugameFAQ/",
+      "text": "百度小游戏FAQ",
+      "des": "百度小游戏FAQ",
       "in_use": true
     }],
     "isFolder": true,
