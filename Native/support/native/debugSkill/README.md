@@ -14,8 +14,3 @@
 ![](568a5d4b40959.png)
 
 通常我们最常用到的是Warn和Error级别的log，因为这两个级别包含程序运行不正常时首先需要检查的信息。
-
-Eclipse环境的logcat显示方法基本一致，可参考：[Android的logcat中如何根据标签去过滤掉不显示某些log信息](http://www.crifan.com/android_logcat_filter_out_not_show_some_log_item_info_by_tag/)
-
-如在进行App打包过程中出现无法正常运行问题，请通过logcat取得关键报错信息，[发到官方论坛问答板块](http://bbs.egret-labs.org/forum.php?mod=forumdisplay&fid=44)，或在本教程评论直接反映，谢谢！
-

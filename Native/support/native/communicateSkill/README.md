@@ -1,10 +1,6 @@
 ## 准备工作
 
-1、了解通过 egret-ios-support 打包为原生项目的方案，这里可以参考：
-
-[打包iOS app](../../../Engine2D/publish/publishIOS/README.md)
-
-[打包Android app](../../../Engine2D/publish/publishAndroid/README.md)
+1、了解通过 egret-ios-support 打包为原生项目的方法
 
 2、了解 Egret 项目内的基本操作和 IOS 和 Android 编程基本技巧。
 

@@ -1,7 +1,3 @@
-引擎版本低于1.7.3的点击此处：[Native项目热更新(1.7.3以前)](http://edn.egret.com/cn/index.php/article/index/id/170)
-
-阅读本文档,您可能需要了解: [RES版本控制](/cn/docs/page/671)
-
 ## 概述
 
 本文适用 2.5.3 以上。

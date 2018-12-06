@@ -2,11 +2,6 @@
 
 Eget 的 H5 项目通过 Egret Android Suppord 或 Egret IOS Support 可以生成相应的 Native 项目。如果需要设置项目的横竖屏等信息，需要在相应的 Native 项目中进行设置。
 
-生成 Native 项目的基本过程是相同的，可以参考以下文档：
-
-* Android APP打包：[打包Android app](../../../Engine2D/publish/publishAndroid/README.md)
-* IOS APP 打包: [打包iOS app](../../../Engine2D/publish/publishIOS/README.md)
-
 ## Android 横竖屏设置
 
 ### 在 Java 代码中设置
