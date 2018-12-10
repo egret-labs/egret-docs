@@ -780,12 +780,6 @@
           "in_use": true
         },
         {
-          "filename": "/Native/support/publish/publishRuntime/",
-          "text": "打包 Runtime",
-          "des": "打包 Runtime",
-          "in_use": false
-        },
-        {
           "filename": "/Native/support/publish/publishAndroid/",
           "text": "打包 Android app",
           "des": "打包 Android app",
