@@ -756,8 +756,8 @@
         },
         {
           "filename": "/Native/support/native/communicateSkill/",
-          "text": "Egret 与 Native 通信基本技巧",
-          "des": "Egret 与 Native 通信基本技巧",
+          "text": "Egret 与 Native 通信",
+          "des": "Egret 与 Native 通信",
           "in_use": true
         },
         {
