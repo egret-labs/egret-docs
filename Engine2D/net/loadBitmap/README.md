@@ -13,9 +13,12 @@ imgLoader.load( "resource/egret.png" );
 
 ``` TypeScript
 imgLoadHandler( evt:egret.Event ):void{
-    var loader:egret.ImageLoader = evt.currentTarget;
-    var bmd:egret.BitmapData = loader.data;
-    var bmp:egret.Bitmap = new egret.Bitmap( bmd );
+    let loader:egret.ImageLoader = evt.currentTarget;
+    let bmd:egret.BitmapData = loader.data;
+    //创建纹理对象
+    let texture = new egret.Texture();
+    texture.bitmapData = bmd;
+    let bmp:egret.Bitmap = new egret.Bitmap(texture);
     this.addChild(bmp);
 }
 ```
