@@ -36,20 +36,21 @@ Egret 还提供了另外一个与 `DEBUG` 对应的编译参数 `RELEASE`，用�
     <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
          data-entry-class="Main"
          data-orientation="auto"
-         data-scale-mode="noScale"
+         data-scale-mode="showAll"
          data-frame-rate="30"
-         data-content-width="480"
-         data-content-height="800"
-         data-show-paint-rect="false"
+         data-content-width="640"
+         data-content-height="1136"
          data-multi-fingered="2"
          data-show-fps="true" data-show-log="false"
-         data-log-color="#b0b0b0"> 
+         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9"> 
      </div>
 ```
 
 通过 data-show-log： 设置是否在屏幕中显示日志。 true 显示，false 不显示。
 
 在代码中可以直接调用 `egret.log(message?:any, ...optionalParams:any[])` 来输出日志。
+
+data-show-fps-style 可以设置日志的位置，文字大小和背景颜色
 
 ## 3.显示帧频信息
 
