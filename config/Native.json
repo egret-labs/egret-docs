@@ -4,9 +4,9 @@
   "des": "更新详情",
   "in_use": true,
   "children": [{
-    "filename": "/Native/native/update/0.1.12/",
-    "text": "Egret Native 0.1.12",
-    "des": "Egret Native 0.1.12",
+    "filename": "/Native/native/update/0.1.13/",
+    "text": "Egret Native 0.1.13",
+    "des": "Egret Native 0.1.13",
     "in_use": true
   }, {
     "isFolder": true,
@@ -14,11 +14,16 @@
     "des": "历史更新",
     "in_use": true,
     "children": [{
+        "filename": "/Native/native/update/0.1.12/",
+        "text": "Egret Native 0.1.12",
+        "des": "Egret Native 0.1.12",
+        "in_use": true
+      }, {
         "filename": "/Native/native/update/0.1.11/",
         "text": "Egret Native 0.1.11",
         "des": "Egret Native 0.1.11",
         "in_use": true
-      },{
+      }, {
         "filename": "/Native/native/update/0.1.10/",
         "text": "Egret Native 0.1.10",
         "des": "Egret Native 0.1.10",
