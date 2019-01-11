@@ -326,50 +326,6 @@
       {
         "children": [
           {
-            "filename": "/Lakeshore/manual/projectSettings/adaptation/",
-            "text": "屏幕适配",
-            "des": "屏幕适配",
-            "in_use": true
-          },
-          {
-            "filename": "/Lakeshore/manual/projectSettings/fps/",
-            "text": "FPS显示",
-            "des": "FPS显示",
-            "in_use": true
-          },
-          {
-            "filename": "/Lakeshore/manual/projectSettings/projectName/",
-            "text": "项目名称",
-            "des": "项目名称",
-            "in_use": true
-          },
-          {
-            "filename": "/Lakeshore/manual/projectSettings/startScene/",
-            "text": "设置起始场景",
-            "des": "设置起始场景",
-            "in_use": true
-          },
-          {
-            "filename": "/Lakeshore/manual/projectSettings/sceneSize/",
-            "text": "场景尺寸",
-            "des": "场景尺寸",
-            "in_use": true
-          },
-          {
-            "filename": "/Lakeshore/manual/projectSettings/layerName/",
-            "text": "图层名",
-            "des": "图层名",
-            "in_use": true
-          }
-        ],
-        "isFolder": true,
-        "text": "项目设置",
-        "des": "项目设置",
-        "in_use": false
-      },
-      {
-        "children": [
-          {
             "filename": "/Lakeshore/manual/example/newProject/",
             "text": "新建项目",
             "des": "新建项目",
