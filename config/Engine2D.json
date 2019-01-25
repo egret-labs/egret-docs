@@ -853,12 +853,6 @@
         "text": "触摸事件",
         "des": "触摸事件",
         "in_use": true
-      },
-      {
-        "filename": "/Engine2D/event/touchCanel/",
-        "text": "取消触摸事件",
-        "des": "取消触摸事件",
-        "in_use": false
       }
     ],
     "isFolder": true,
