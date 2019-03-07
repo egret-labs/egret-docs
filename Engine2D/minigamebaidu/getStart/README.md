@@ -3,7 +3,7 @@
 * Egret Launcher 1.0.61 以上版本
 * 白鹭引擎 5.2.13 以上版本
 * 百度小游戏官网：[链接地址](https://smartprogram.baidu.com/docs/introduction/register/)，注册账号，获取 appid
-* 准备最新版百度开发者工具：[下载地址](https://smartprogram.baidu.com/docs/develop/tutorial/index_first/)
+* 准备最新版百度开发者工具：[下载地址](https://smartprogram.baidu.com/docs/game/tutorials/howto/dev/)
 
 
 ### 二.创建小游戏
