@@ -657,12 +657,6 @@
         "in_use": true
       },
       {
-        "filename": "/Engine2D/projectConfig/launcherManager/",
-        "text": "启动器",
-        "des": "引擎和工具的管理",
-        "in_use": false
-      },
-      {
         "filename": "/Engine2D/projectConfig/cmdManual/",
         "text": "命令行手册",
         "des": "命令行手册",
