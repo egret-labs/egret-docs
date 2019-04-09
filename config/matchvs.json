@@ -14,11 +14,6 @@
         "des": "MatchvsSDK 接入指南",
         "in_use": true
     }, {
-        "filename": "/matchvs/guide/extension/",
-        "text": "MatchvsSDK 扩展功能",
-        "des": "MatchvsSDK 扩展功能",
-        "in_use": true
-    }, {
         "filename": "/matchvs/guide/storage/",
         "text": "数据存储",
         "des": "数据存储",

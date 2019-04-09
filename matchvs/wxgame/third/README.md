@@ -1,8 +1,28 @@
 Matchvs 服务器会通过注册接口下发“用于在服务器校验的 userID”，开发者在使用时，可将此 userID 与自己游戏的玩家ID进行绑定。
 
-为了方便开发者使用，Matchvs 提供了第三方绑定功能。开发者可以直接调用绑定接口，传入 openID  即可获取绑定后的 Matchvs userID 。如果开发者使用绑定接口，则无需再调用注册接口获取 userID。  
+第三方绑定是指：使用其他的 **用户身份代号** 与Matchvs平台的userID做映射。以实现使用 **用户身份代号** 就能获取 Matchvs 对应平台的 userID 。比如：身份证号，手机号，qq 号等等。
+
+
+
+#### 为什么要使用第三方绑定？
+
+开发者使用Matchvs服务的时候，每次都要调用 register 接口注册一个 userID，虽然这个 userID 信息会暂时保存在平台的缓存数据中，但是一旦清理掉了，这个 userID 就会变化。如果想长久的使用一个固定的 userID 就需要开发者使用一个 用户身份识别号与 Matchvs 的userID 映射起来。每次开始游戏前获得这个 userID。
+
+为了方便开发者使用，Matchvs 提供了第三方绑定功能。开发者可以直接调用绑定接口，传入 openID  即可获取绑定后的 Matchvs userID 。如果开发者使用绑定接口，则无需再调用注册接口获取 userID。 
+
+
 
 ## 获取 openID
+
+#### openID 是什么？
+
+openID 可以理解为一个在某个系统或者软件中用来识别用户身份的唯一值（身份识别号），可能在其他平台不叫openID，但只要是可以用来对应一个用户即可。这个值可以来源其他的系统或者平台，也可以由开发者自己去定义，可以是手机号码，也可以是身份证号码。比如：你可以获取微信平台用户的openID，也可以是 QQ 平台的 qq号等等。如果不获取其他平台的 openID 也可以自己去实现一套身份定义的openID，你甚至可以使用 1, 2，3 等这样的数据。最终使用什么什么样的数据来 当做 openID 由开发者自己决定。
+
+**提示：** 如果开发者有自己服务器，并且有服务器开发相关技术，也可以自己实现一套 openID 服务来映射Matchvs 的 userID。
+
+
+
+#### 获取微信平台 openID 示例：
 
 - 调用 `wx.login `接口获取 code 参数。示例代码如下：  
 
@@ -43,15 +63,94 @@ wx.request({
 });
 ```
 
-
-
 获取 openID 可参考 [微信小游戏开发文档](https://developers.weixin.qq.com/minigame/dev/document/open-api/login/wx.login.html) `code2accessToken` 接口和 `wx.login` 接口。
+
+> 注意：微信平台 openID 获取方法以 微信开发者官网的文档为准，这里只是提供示例。
 
 
 
 ## 调用绑定接口
 
 获取到微信用户信息和 openID后， 再调用 matchvs 第三方账号绑定接口获取 Matchvs 用户信息。
+
+代码示例
+
+```javaScript
+    /**
+     * 绑定微信OpenID 返回用户信息
+     */
+    bindOpenIDWithUserID:function(wxUserInfo){
+        let self = this;
+        console.log("获取到的微信用户信息",wxUserInfo);
+        if(!wxUserInfo){
+            return;
+        }
+        console.log('openid:'+wxUserInfo.openInfos.data.openid);
+        if (wxUserInfo.openInfos.data.openid === undefined) {
+            console.warn("没有获取到微信OpenID，获取OpenID请参考："+'http://www.matchvs.com/service?page=third');
+            engine.prototype.registerUser();
+            return;
+        }
+        GLB.name = wxUserInfo.nickName;
+        GLB.avatar = wxUserInfo.avatarUrl;
+        GLB.isWX = true;
+        let req = new  XMLHttpRequest();
+        let reqUrl = this.getBindOpenIDAddr(GLB.channel,GLB.platform);
+        req.open("post",reqUrl , true);
+        req.setRequestHeader("Content-Type", "application/json");
+        req.onreadystatechange = function () {
+            if (req.readyState === 4 && (req.status >= 200 && req.status < 400)) {
+                try{
+                    let response = req.responseText;
+                    let data = JSON.parse(response).data;
+                    console.log(data.userid,data.token);
+                    self.login(data.userid,data.token);
+                } catch(error){
+                    console.warn(error.message);
+                    engine.prototype.registerUser();
+                }
+            }
+        };
+        let params = "gameID="+GLB.gameID+"&openID="+wxUserInfo.openInfos.data.openid+"&session="+wxUserInfo.openInfos.data.session_key+"&thirdFlag=1";
+        //计算签名
+        let signstr = this.getSign(params);
+        let jsonParam ={
+            userID:0,
+            gameID:GLB.gameID,
+            openID:wxUserInfo.openInfos.data.openid,
+            session:wxUserInfo.openInfos.data.session_key,
+            thirdFlag:1,
+            sign:signstr
+        };
+        req.send(jsonParam);
+    },
+
+    getBindOpenIDAddr :function(channel, platform){
+        if(channel === "MatchVS" || channel === "Matchvs"){
+            if(platform === "release"){
+                return "http://vsuser.matchvs.com/wc6/thirdBind.do?"
+            }else if(platform === "alpha"){
+                return "http://alphavsuser.matchvs.com/wc6/thirdBind.do?";
+            }
+        }else if(channel === "MatchVS-Test1"){
+            if(platform === "release"){
+                return "http://zwuser.matchvs.com/wc6/thirdBind.do?"
+            }else if(platform === "alpha"){
+                return "http://alphazwuser.matchvs.com/wc6/thirdBind.do?";
+            }
+        }
+    },
+
+    getSign:function(params){
+        let str = GLB.appKey+"&"+params+"&"+GLB.secret;
+        console.log(str);
+        let md5Str = hex_md5(str);
+        console.log(md5Str);
+        return md5Str;
+    },
+
+```
+
 
 这里以 egret 代码请求为例：
 
@@ -125,7 +224,7 @@ private static bindOpenIDWithUserID(wxUserInfo:any){
 | thirdFlag | number |        | 是       | 1-微信               |
 | sign      | string |        | 是       | 参数签名             |
 
-> sign 计算方式：md5(appKey&gameID=value1&openID=value2&session=value3&thirdFlag=value4&appSecret)得到的md5值就是 sign参数的值。
+> sign 计算方式：md5(appKey&gameID=value1&openID=value2&session=value3&thirdFlag=value4&appSecret)得到的md5值就是 sign参数的值。这个签名是取 32 为的 小写字符。
 >
 > appkey 和 appSecret 是在 matchvs 官网创建游戏时的信息。
 
@@ -182,6 +281,14 @@ statue 非零
 
 
 ## 有效信息验证
+
+#### 什么是有效信息安全验证？
+
+在使用第三方绑定接口的使用，参数中传入的 openID 默认是不会做任何的验证，就是是传的 0 也是可以的。我们同样会返回一个有效的 userID。开发者如果想要对这个 openID 进行验证，比如验证这个openID是不是合法的，验证这个openID是不是你这个游戏中的openID。对这个 openID 进行一次检查，把哪些无用的openID 过滤掉。
+
+
+
+#### 如果在 Matchvs 第三方绑定使用安全校验？
 
 在调用 `thirdBind.do ` 接口时，传入的 openID 可以进行有效性检测，即验证 openID 是否合法，确保信息安全。官网-> 控制台->我的游戏->设置-> 安全校验 配置有效性检测的接口地址。
 

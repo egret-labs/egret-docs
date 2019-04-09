@@ -1,298 +1,409 @@
-## 接入前说明
 
-`MatchvsSDK` 使用是以简单的接口调用和接口返回的方式实现相关联网操作。比如随机加入房间只需要调用`joinRandRoom接口`，加入房间结果就以接口 `joinRoomResponse` 返回。在整个使用过程中，开发者只需要关心`MatchvsEngine`(接口请求调用对象)和 `MatchvsResponse`(接口调用返回对象)。接口请求使用 `MatchvsEngine`对象实例，接口返回使用 `MatchvsResponse` 对象实例。后面后介绍这两个对象的使用方法。此文档只是用于引导开发者接入SDK，需要接口详细的参数说明请看 [API手册](http://developer.egret.com/cn/github/egret-docs/matchvs/api/index.html)  
 
-#### SDK游戏交互时序图
 
-发起请求的是 `MatchvsEngine` 对象实例，返回结果是 `MatchvsResponse` 对象实例。图中接口名称只供参考，以 [API手册](http://developer.egret.com/cn/github/egret-docs/matchvs/api/index.html)  为准。
+## 阅读前
 
-![](http://imgs.matchvs.com/static/时序图.jpg)
+在阅读我们文档之前，请确保你已经阅读了我们的 [新手入门](../../demo/duck) 文档，并且了解了我们 Matchvs SDK的 使用流程，SDK 接口调用是需要安装相应的顺序才能成功调用。下面是介绍一个普通的游戏如何接入我们Matchvs SDK 。
 
-## 获取实例
+#### 接口调用时序图
 
-在使用 MatchvsSDK 过程中需要确保 `MatchvsEngine`(接口请求调用对象)实例 和 `MatchvsResponse`(接口调用返回对象) 实例全局唯一。
+![](http://imgs.matchvs.com/static/%E6%97%B6%E5%BA%8F%E5%9B%BE.jpg)
 
-```javascript
-var engine = new MatchvsEngine();
-var response = new MatchvsResponse();
+MatcvhsSDK 库文件可到 [官网下载](http://www.matchvs.com/serviceDownload) 
+
+MatcvhsSDK库 `matchvs`文件夹包括以下三个文件：
+
+- matchvs.js： MatchvsSDK  JavaScript 源代码代码文件。
+- matchvs.d.ts：MatchvsSDK  TypScript 定义文件。
+- matchvs.min.js：MatchvsSDK  JavaScript 源码压缩文件。 
+
+Matchvs SDK 接口服务分为 **请求服务** 和 **回调服务** ， 使用是以简单的接口调用和接口返回的方式实现相关联网操作。比如随机加入房间只需要调用`joinRandRoom接口`，加入房间结果就以接口 `joinRoomResponse` 返回。在整个使用过程中，开发者只需要关心`MatchvsEngine`(接口请求调用对象)和 `MatchvsResponse`(接口调用返回对象)。接口请求使用 `MatchvsEngine`对象实例，接口返回使用 `MatchvsResponse` 对象实例。先获取这两个类的对象作为全局使用。例如：
+
+```typescript
+class MsEngine {
+    private static engine = new MatchvsEngine();
+    private static response = new MatchvsResponse();
+}
+
 ```
 
-> 可以使用全局变量，也可以使用单例模式开发者自己封装。
+##初始化
 
-## 初始化
+在连接至 Matchvs前须对SDK进行初始化操作。此时选择连接测试环境（alpha）还是正式环境（release）。[环境说明](../Advanced/EnvGuide) 。
 
-获取到对象实例后，需要开发者把 `MatchvsResponse` 实例注册到 `MatchvsEngine` 用于注册、登录、加入房间等接口请求后的异步回调。调用 `init` 接口初始化SDK。
+如果游戏属于调试阶段则连接至测试环境，游戏调试完成后即可发布到正式环境运行。  
 
-示例调用如下：
+- 请求接口：init
+- 回调接口：initResponse
 
-```javascript
-engine.init(response, "Matchvs", "alpha", 201016);
+### init
+
+初始化请求接口。
+
+```typescript
+engine.init(response: MatchvsResponse, channel: string, platform: string, gameID: string, appKey: string, gameVersion: number): number
 ```
 
-- Matchvs 提供了两个环境，alpha 调试环境和 release 正式环境。游戏开发调试阶段请使用 alpha 环境，即 platform 传参"alpha"。
+response 中设置一些回调方法，在执行注册、登录、发送事件等操作对应的方法之后，reponse中的回调函数会被SDK异步调用。
 
-参数说明:
-
-| 参数     | 含义                                          |
-| :------- | --------------------------------------------- |
-| response | 回调对象(`MatchvsResponse` 实例)              |
-| channel  | 渠道，填“Matchvs”即可                         |
-| platform | 平台，调试环境填“alpha” ，正式环境填“release” |
-| gameId   | 游戏ID，来自官网控制台游戏信息                |
+> **注意** 发布之前须到官网控制台申请“发布上线”，申请通过后在调用init方法时传“release”才会生效，否则将不能使用release环境。
 
 
-**注意** 在整个应用全局，开发者只需要对引擎做一次初始化。
+### initResponse
 
-## 注册
+initResponse是 MatchvsResponse对象属性，在 engine.init 方法中传入的对象，init初始化完成之后，会异步回调 initResponse方法。
 
-Matchvs提供的 `userID` 被用于在各个服务中校验连接的有效性，调试前开发者需要先获取到一个合法的`userID`。
-```javascript
-engine.registerUser();
+```typescript
+response.initResponse(status:number);
 ```
 
-调用成功后会收到注册成功的回调 ：
-```javascript
-response.registerUserResponse = function(userInfo) {
-	// 用户ID
-	console.log("userID: ", userInfo.userID);
-	// token
-	console.log("token: ", userInfo.token);
+### 示例代码
+
+```typescript
+class MsEngine {
+    private static engine = new MatchvsEngine();
+	private static response = new MatchvsResponse();
+    
+    private init(){
+        this.response.initResponse = (status:number)=>{
+            if(status == 200){
+                //成功
+            }else{
+                //失败
+            }
+        }
+        this.engine.init(this.response, "Matchvs", "alpha", 123456,"xxxxappkey", 1);
+    }
 }
 ```
 
 
-**注意** `userID`和 `token` 有需要的可以缓存起来，在之后的应用启动中不必重复获取。如果你有自己的用户系统，可以将Matchvs 提供的 userID 和用户系统进行映射。调用 registerUser 接口的返回数据会暂存在浏览器中。所以使用同一个浏览器调用 registerUser 接口会返回相同的 userID信息。
+## 注册用户
+
+Matchvs提供的 `userID` 被用于在各个服务中校验连接的有效性，调试前开发者需要先获取到一个合法的`userID`。调用registerUser接口获取，在registerResponse回调返回。
+
+每次调用 registerUser 接口都会生成新的 `userID` 为了节省资源消耗， `userID`和 `token` 有需要的可以缓存起来，在之后的应用启动中不必重复获取。如果你有自己的用户系统，可以将Matchvs 提供的 userID 和用户系统进行映射。可以参考 [Matchvs 第三方账号绑定](../Advanced/ThirdAccount)，让您的用户唯一对应一个userID，以节省资源。[可参考多开说明](../Advanced/MultipleIdentities) 
+
+为了资源节省，我们在registerUserResponse 回调前把userID信息缓存在本地，数据会暂存在浏览器中。所以使用同一个浏览器调用 registerUser 接口会返回相同的 userID信息。如果需要清除缓存的用户信息请调用 。`LocalStore_Clear()` 接口。
+
+- 请求接口：registerUser
+- 回调接口：registerUserResponse
+
+### registerUser
+
+```
+engine.registerUser()
+```
+
+###  registerUserResponse
+
+```
+registerUserResponse(userInfo:MsRegistRsp);
+​```                                       |
+
+> 注意：如果需要同时调试多个客户端，则需要打开多个不同的浏览器进行调试。
+>
+
+### 示例代码
+
+​```typescript
+class MsEngine {
+	......
+    private registerUser(){
+        this.response.registerUserResponse = (userInfo:MsRegistRsp)=>{
+            if(userInfo.status == 0){
+                //成功
+            }else{
+                //失败
+            }
+        }
+        this.engine.registerUser();
+    }
+}
+```
+
 
 
 ## 登录
 
-成功获取 `userID` 后即可连接Matchvs服务：
+登录Matchvs服务端，与Matchvs建立连接。服务端会校验游戏信息是否合法，保证连接的安全性。如果一个账号在两台设备上登录，则后登录的设备会连接失败，提示403错误。如果用户加入房间之后掉线，再重新登录进来，则roomID为之前加入的房间的房间号。
 
-```javascript
-engine.login(userID, token, gameID, gameVersion, appkey, secret, deviceID, gatewayID);
+- 请求接口：login
+- 回调接口：loginResponse
+
+### login
+
+```typescript
+engine.login(userID: number, token: string, deviceID: string): number
 ```
 
-参数说明:
+### loginResponse
 
-| 参数        | 含义                                     |
-| ----------- | ---------------------------------------- |
-| userID      | 用户ID，调用注册接口后获取               |
-| token       | 用户token，调用注册接口后获取            |
-| gameID      | 游戏ID，来自Matchvs官网控制台游戏信息    |
-| gameVersion | 游戏版本，自定义，用于隔离匹配空间       |
-| appkey      | 游戏Appkey，来自Matchvs控制台游戏信息    |
-| secret      | secret key，来自Matchvs控制台游戏信息    |
-| deviceID    | 设备ID，用于多端登录检测，请保证是唯一ID |
-| gatewayID   | 服务器节点ID，默认为0                    |
+```typescript
+response.loginResponse(login:MsLoginRsp);
+```
 
-- 其中，appKey，secret，gameID是你在Matchvs官网创建游戏后获取的信息，可以[前往控制台](http://www.matchvs.com/manage/gameContentList)查看。appkey和secret是校验游戏合法性的关键信息，请妥善保管secret信息。  
-- userID 和 token 是调用 registerUser 接口 **注册成功** 的回调信息。
-- deviceId 用于检测是否存在多个设备同时登录同一个用户的情况，如果一个账号在两台设备上登录，则后登录的设备会连接失败。
-- Matchvs默认将相同游戏版本的用户匹配到一起。如果开发者对游戏进行了版本升级，不希望两个版本的用户匹配到一起，此时可以在登录的时候通过`gameVersion`区分游戏版本。 
+### 示例代码
 
-登录成功会收到回调 ：
-
-```javascript
-response.loginResponse = function(loginRsp) {
-	// 返回值
-	var status = loginRsp.status;
-	// 房间号
-	var roomID = loginRsp.roomID;
+````typescript
+class MsEngine {
+	......
+    private login(){
+        this.response.registerUserResponse = (login:MsLoginRsp)=>{
+            if(userInfo.status == 200){
+                //成功
+            }else{
+                //失败
+            }
+        }
+        this.engine.login(1234, "xxxxxtoken", "deviceID");
+    }
 }
-```
-
-> SDK支持房间断线重连，掉线重新登录后可以选择加入原来的房间，loginResponse里的`roomID` 即为上次异常退出的房间ID。如果登录时没有异常退出的房间，则`roomID` 为0。[断线重连说明](http://developer.egret.com/cn/github/egret-docs/matchvs/guide/relink/index.html)
+````
 
 ## 加入房间
 
-登录成功后，可以调用Matchvs加入房间逻辑将用户匹配至一个房间开始一局游戏（如：《荒野行动》的开始匹配、《球球大作战》的开始比赛等）
+登录游戏后，需要与其他在线玩家一起对战，先要进行进入房间，类似英雄联盟这样的匹配功能将若干用户匹配至一个房间开始一局游戏，Matchvs 提供4中加入房间的方法。
 
-Matchvs默认提供了随机加入房间的模式，调用加入房间逻辑后，Matchvs服务器会自动帮助用户寻找当前可用房间，只有在同一个房间里的用户才可以互相通信。
+- 请求接口：
+  - joinRandomRoom：随机接入房间。
+  - joinRoomWithProperties：自定义属性匹配。
+  - createRoom：创建房间。
+  - joinRoom: 指定由createRoom接口创建房间的房间号加入房间。
+- 回调接口：
+  - joinRoomResponse：自己加入房间收到回调。
+  - joinRoomNotify：其他人加入房间收到回调。
+  - crateRoomResponse：调用 createRoom 接口收到的回调。
 
-随机加入房间的模式下，Matchvs服务器能够快速找到合适的房间，开发者只需要自定义房间人数上限，Matchvs服务端会根据当前房间人数判断是否可继续加入。  
+### joinRandomRoom
 
-加入房间后，服务器会指定一个房主，当房主离开房间后，服务器会随机指定下一个房主，并通过`leaveRoomNotify` 通知房间内其他成员。
+当房间里人数等于maxPlayer时，房间人满。系统会将玩家随机加入到人未满且没有 joinOver 的房间。如果不存在人未满且没有joinOver的房间，则系统会再创建一个房间，然后将玩家加入到该房间。玩家 `userProfile` 的值可以自定义，接下来会通过回调函数（如 `joinRoomResponse ` ）传给其他客户端。
 
-**注意**  随机匹配不能匹配到客户端主动创建的房间里，即通过`createRoom()`（见联网扩展）创建的房间。
-
-随机加入一个房间：
-
-```javascript
-engine.joinRandomRoom(maxPlayer, userProfile);
+```typescript
+engine.joinRandomRoom(maxPlayer:number, userProfile:string):number
 ```
 
+### joinRoomResponse
 
-参数说明:
+```typescript
+response.joinRoomResponse(status:number, roomUserInfoList:Array<MsRoomUserInfo>, roomInfo:MsRoomInfo);
+```
 
-| 参数         | 含义                |
-| ---------- | ----------------- |
-| maxPlayer  | 最大玩家数，不超过20       |
-| uerProfile | 玩家简介，可以填写昵称、段位等信息 |
+- 如果本房间是某个玩家调用joinRandomRoom随机加入房间时创建的，那么roomInfo中的owner为服务器随机指定的房主ID。在调用engine.createRoom主动创建房间时owner为创建房间者（即房主）的ID。以上两种情况下，如果房主离开房间，服务器均会指定下一个房主，并通过`leaveRoomNotify`通知房间其他成员。
+- roomUserInfoList 用户信息列表是本玩家加入房间前的玩家信息列表，不包含本玩家。
+- roomUserInfoList中的玩家的userProfile的值来自于其他客户端调用joinRandomRoom时传递的userProfile的值。
 
-加入房间的回调：
+### joinRoomNotify
 
-```javascript
-response.joinRoomResponse = function(status, roomUserInfoList, roomInfo) {
-	console.log("加入房间结果：", status);
-	console.log("房间用户列表：", roomUserInfoList);
-	console.log("房间信息：", roomInfo);
+```typescript
+response.joinRoomNotify(roomUserInfo:MsRoomUserInfo);
+```
+- 某个玩家加入房间之后，如果该房间后来又有其他玩家加入，那么将会收到回调通知，response.joinRoomNotify方法会被SDK调用，调用时传入的roomUserInfo是新加入的其他玩家的信息，不是本玩家的信息。
+- roomUserInfo的属性与response.joinRoomResponse中的 roomUserInfoList 中的元素包含的属性相同。
+
+### 示例代码
+
+```typescript
+class MsEngine {
+	......
+    private joinRoom(){
+        this.response.joinRoomResponse = (status:number, roomUserInfoList: Array <MsRoomUserInfo>, roomInfo:MsRoomInfo)=>{
+            if(status == 200){
+                //成功
+            }else{
+                //失败
+            }
+        }
+        this.response.joinRoomNotify = (roomUserInfo:MsRoomUserInfo)=>{
+            //roomUserInfo.userID 加入房间
+        }
+        this.engine.joinRandRoom(3, "hello matchvs");
+    }
 }
 ```
 
-如果当前没有可用房间，Matchvs会自动创建一个房间并将该用户加入到服务端创建的房间。当其他用户加入时，Matchvs会通知开发者新加入的用户信息。
+## 关闭房间
 
-其他玩家加入房间的回调：
+一般在匹配到用户，开始游戏之前要关闭房间，防止有其他玩家中途加入。
 
-```javascript
-reponse.joinRoomNotify = function(roomUserInfo) {
-	console.log("房间新加的用户的信息：", roomUserInfo);
+- 请求接口：joinOver
+- 返回接口：
+  - joinOverResponse ：自己关闭房间回调
+  - joinOverNotify : 别人关闭房间回调
+
+### joinOver
+
+```typescript
+engine.joinOver(cpProto:string):number
+```
+
+### joinOverResponse
+
+客户端调用engine.joinOver发送关闭房间的指令之后，SDK异步调用reponse.joinOverResponse方法告诉客户端joinOver指令的处理结果。
+
+```typescript
+response.joinOverResponse(rsp:MsJoinOverRsp);
+```
+
+### joinOverNotify
+
+当有人调用了 joinOver 接口，同一房间的其他用户就会收到这个 回调信息。
+
+```typescript
+response.joinOverNotify(notifyInfo:MsJoinOverNotifyInfo);
+```
+
+### 示例代码
+
+```typescript
+class MsEngine {
+	......
+    private joinOver(){
+        this.response.joinOverResponse = (rsp:MsJoinOverRsp)=>{
+            if(rsp.status == 200){
+                //成功
+            }else{
+                //失败
+            }
+        }
+        this.response.joinOverNotify = (notifyInfo:MsJoinOverNotifyInfo)=>{
+            //notifyInfo.srcUserID 关闭房间 notifyInfo.roomID
+        }
+        this.engine.joinOver("hello matchvs");
+    }
 }
 ```
 
-**注意** 如果开发者想用户匹配成功后可查看对方信息，可以通过填充`userProfile`的方式，将当前用户的头像昵称信息填充至`userProfile`，Matchvs会在匹配成功时将`userProfile`广播给所有用户。 
+## 消息发送
 
-如果用户已经在房间里，此时再次调用加入房间：如果房间未JoinOver，则玩家会退出房间然后随机加入房间；如果房间已经JoinOver，则SDK会返回重复加入的错误提示。
+开始游戏后，玩家之间相互同步信息，把自己的位置，得分等情况发送给其他玩家，让其他玩家能够同步修改自己的信息。一个房间消息的总传递速率是每秒500次，500次是指房间 **所有人接收和发送的总次数** 。
 
-## 停止加入
+- 请求接口：sendEvent、sendEventEx
+- 回调接口：sendEventResponse、sendEventNotify
 
-如果房间内游戏人数已经满足开始条件，此时客户端需要通知Matchvs无需再向房间里加人。（如原本设置的房间人数上限为6，而开发者在房间人数满足4个即可开始游戏，开发者就需调用停止加入接口。） 
+### sendEvent
 
-停止加入 ：
+```typescript
+engine.sendEvent(data:string):any
+```
+sendEventResponse 也会收到 sequence 标识，通过此标识来确定这个sendEventResponse 是由哪次sendEvent 发送的。主要用于在游戏中做信息同步的时候，网络传输都有延迟会出现sendEvent与sendEventResponse 收到顺序不同。 
 
-```javascript
-engine.joinOver(cpProto);
+
+消息会发给房间里**除自己外** 其他所有成员。同一客户端多次调用 `sendEvent` 方法时，每次返回的 `sequence`都是唯一的。但同一房间的不同客户端调用 `sendEven` t时生成的 `sequence` 之间会出现重复。可以发送二进制数据，开发者可以将数据用json、pb等工具先进行序列化，然后将序列化后的数据通过SendEvent的一系列接口发送。
+
+同一客户端多次调用engine.sendEvent方法时，每次返回的sequence都是唯一的。但同一房间的不同客户端调用sendEvent时生成的sequence之间会出现重复。
+
+### sendEventResponse
+
+```typescript
+response.sendEventResponse(rsp:MsSendEventRsp);
 ```
 
+- 客户端调用engine.sendEvent或engine.sendEventEx 发送消息之后，SDK异步调用reponse.sendEventResponse 方法告诉客户端消息是否发送成功。
 
-参数说明:
+### sendEventNotify
 
-| 参数    | 含义     |
-| ------- | -------- |
-| cpProto | 负载数据 |
-
-停止加入的回调 ：
-
-```javascript
-response.joinOverResponse = function(joinOverRsp) {
-	// 返回值
-	console.log("加入房间结果：", joinOverRsp.status);
-	// 负载数据
-	console.log("负载信息：", joinOverRsp.cpProto);
-}
+```typescript
+response.sendEventNotify(eventInfo:MsSendEventNotify);
 ```
 
-**注意**  Matchvs服务器会判断房间是人满状态或者已停止加入状态，根据状态判断房间是否还可加人。为避免房间人满后开始游戏，在游戏过程中有人退出后，Matchvs判断人不满可继续向房间加人，建议在任何不希望中途加入的游戏里，只要满足开始游戏条件则向Matchvs服务端发送停止加入。
+### 示例代码
 
-`cpProto` 为开发者自定义的协议内容，如果没有自定义协议可填`''`。`cpProto`的内容会伴随消息的广播以Notify的方式发给房间所有成员。其他接口里的`cpProto`机制均是如此。
-
-## 游戏数据传输
-
-当玩家在同一个房间时，即可互相通信。开发者可用该接口将数据发送给其他玩家，Matchvs默认将数据广播给当前房间内除自己以外的所有用户。
-
-默认广播数据：
-
-```javascript
-engine.sendEvent(msg)
-```
-参数说明:
-
-| 参数   | 含义   |
-| ---- | ---- |
-| msg  | 消息内容 |
-
-返回结果为一个对象，该对象的属性为：
-
-| 参数       | 含义               |
-| -------- | ---------------- |
-| result   | 错误码，0表示成功，其他表示失败 |
-| sequence | 事件序号，作为事件的唯一标识   |
-
-数据传输回调 ：
-
-```javascript
-response.sendEventResponse = function(sendEventRsp) {
-	console.log("返回状态：", sendEventRsp.status);
-	console.log("事件序号：", sendEventRsp.sequence);
-}
-```
-
-
-收到其他人发的数据：
-
-```javascript
-response.sendEventNotify = function(eventInfo) {
-    console.log("推送方用户ID：", eventInfo.srcUserID);
-    console.log("消息内容：", eventInfo.cpProto);
+```typescript
+class MsEngine{
+    ......
+    public constructor(){
+        this.response.sendEventResponse = (rsp:MsSendEventRsp)=>{
+            if(rsp.status == 200){
+                //发送成功
+            }else{
+                //发送失败
+            }
+        };
+        
+        this.response.sendEventNotify = (eventInfo:MsSendEventNotify)=>{
+            //eventInfo.srcUserID 发送数据 eventInfo.cpProto
+        };
+    }
+    public sendEventEx(){
+        //这里发给其他用户和 gameServer
+        this.engine.sendEventEx(0, data, 2, [123.456.789]);
+    }
+    ......
 }
 ```
 
 ## 离开房间
 
-在成功加入房间后，开发者可调用离开房间使得用户退出当前房间，退出房间后将不能再与房间内的成员进行通信。  
+游戏结束后，客户端调用该接口通知服务端该客户端对应的用户要离开房间。
 
-- 当房间内有用户离开时，剩余用户也会收到离开的消息。
-- 如果用户已经离开房间，此时可以随时再次加入其他房间。
+- 请求接口：leaveRoom
+- 返回接口：
+  - leaveRoomResponse：自己离开房间回调
+  - leaveRoomNotify:  其他玩家离开房间回调
 
+### leaveRoom
 
-离开房间 ：
-
-```javascript
-engine.leaveRoom(cpProto);
+```typescript
+engine.leaveRoom(cpProto:string):number
 ```
 
-参数说明:
+### leaveRoomResponse
 
-| 参数      | 含义   |
-| ------- | ---- |
-| cpProto | 负载信息 |
+客户端调用engine.leaveRoom发送关闭房间的指令之后，SDK异步调用reponse.leaveRoomResponse方法告诉客户端leaveRoom指令的处理结果。
 
-自己离开房间回调 ：
+```typescript
+response.leaveRoomResponse(rsp:MsLeaveRoomRsp);
+```
 
-```javascript
-response.leaveRoomResponse = function(leaveRoomRsp) {
-	console.log("状态返回：", leaveRoomRsp.status);
-	console.log("房间ID：", leaveRoomRsp.roomID);
-	console.log("用户ID：", leaveRoomRsp.userID);
-	console.log("负载信息：", leaveRoomRsp.cpProto);
+### leaveRoomNotify
+
+当同房间中的其他玩家调用leaveRoom发送离开房间的指令之后，本客户端将会收到回调通知，response.leaveRoomNotify方法会被SDK调用，调用时传入的roomUserInfo是离开房间的玩家的信息。
+
+```typescript
+response.leaveRoomNotify(leaveRoomInfo:MsLeaveRoomNotify);
+```
+### 示例代码
+
+```typescript
+class MsEngine {
+	......
+    private leaveRoom(){
+        this.response.leaveRoomResponse = (rsp:MsLeaveRoomRsp)=>{
+            if(rsp.status == 200){
+                //成功
+            }else{
+                //失败
+            }
+        }
+        this.response.leaveRoomNotify = (leaveRoomInfo:MsLeaveRoomNotify)=>{
+            //leaveRoomInfo.srcUserID 离开房间 leaveRoomInfo.roomID
+        }
+        this.engine.leaveRoom("hello matchvs");
+    }
 }
 ```
 
 
-其他成员离开房间回调 ：
+## 登出
 
-```javascript
-response.leaveRoomNotify = function(roomID, roomUserInfo) {;
-	console.log("房间号：", roomID);
-	console.log("离开房间的用户的信息：", roomUserInfo);
-}
+退出游戏时要退出登录，断开与Matchvs的连接。
+
+- 请求接口：logout
+- 回调接口：logoutResponse
+
+### logout
+
+```typescript
+engine.logout(cpProto:string):number
 ```
 
+### logoutResponse
 
-## 游戏登出
-
-如果用户不会再加入游戏，此时可以调用登出与Matchvs服务端断开连接。  
-
-**注意** 游戏退出时，务必要调用登出。
-
-```javascript
-engine.logout();
+```typescript
+response.logoutResponse(status:number);
 ```
 
-登出成功的回调 ：
+### 错误码说明:[错误码](https://doc.matchvs.com/APIDoc/erroCode)
 
-```javascript
-response.logoutResponse = function(status) {
-	console.log("状态返回值：", status);
-}
-```
-
-
-## 反初始化
-
-在登出后，调用反初始化对资源进行回收。  
-
-```javascript
-engine.uninit();
-```
-
-
+### 更多接口调用和说明请看 [接口使用说明](../APIDoc/TypeScript) 
