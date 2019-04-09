@@ -14,6 +14,11 @@
         "des": "MatchvsSDK 接入指南",
         "in_use": true
     }, {
+        "filename": "/matchvs/guide/gameserver/",
+        "text": "GameServer",
+        "des": "GameServer",
+        "in_use": true
+    }, {
         "filename": "/matchvs/guide/storage/",
         "text": "数据存储",
         "des": "数据存储",
@@ -22,6 +27,16 @@
         "filename": "/matchvs/guide/relink/",
         "text": "断线重连",
         "des": "断线重连",
+        "in_use": true
+    }, {
+        "filename": "/matchvs/guide/team/",
+        "text": "组队匹配",
+        "des": "组队匹配",
+        "in_use": true
+    }, {
+        "filename": "/matchvs/guide/rank/",
+        "text": "排行榜",
+        "des": "排行榜",
         "in_use": true
     }, {
         "filename": "/matchvs/guide/sys/",
