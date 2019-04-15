@@ -627,7 +627,25 @@
     "des": "百度小游戏开发指南",
     "in_use": true
   },
-
+  {
+    "children": [{
+        "filename": "/Engine2D/minigamexiaomi/getStart/",
+        "text": "开发快速指南",
+        "des": "开发快速指南",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/minigamexiaomi/qgameFAQ/",
+        "text": "小米快游戏FAQ",
+        "des": "小米快游戏FAQ",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "小米快游戏开发指南",
+    "des": "小米快游戏开发指南",
+    "in_use": true
+  },
   {
     "children": [{
         "filename": "/Engine2D/bricksgame/start/",
