@@ -13,9 +13,6 @@
 
 答：目前我们只支持白鹭引擎 5.2.17 以上的版本发布为小米快游戏。[参考微信小游戏升级指南](../minigame/publish/README.md) 
 
-#### 为什么在 Html5上可以运行的游戏，在快游戏上不能运行
-答：由于小米快游戏只支持严格模式的代码，所以只能运行 publish 后的 js 文件，build 命令发布出来的 js 文件不能使用。
-
 #### 我在使用 egret res 库，5.2.17 创建的新项目使用的是 assetsmanager 库，这两个库有区别么？
 
 答：assetsmanager 是 res 的替代方案，这两者的 API 有 90% 保持一致，但是仍然有一些小区别，主要是在 RES.Analyzer 上，如果您遇到了相关问题，您可以在 egretProperties.json 中修改模块配置，从 assetsmanager 修改回 res 并执行 egret clean ，这样就可以换成 res 资源管理库了。更改如图所示：
