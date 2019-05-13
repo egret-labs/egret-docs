@@ -653,6 +653,25 @@
   },
   {
     "children": [{
+        "filename": "/Engine2D/minigameoppo/getStart/",
+        "text": "开发快速指南",
+        "des": "开发快速指南",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/minigameoppo/oppogameFAQ/",
+        "text": "OPPO小游游戏FAQ",
+        "des": "OPPO小游游戏FAQ",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "OPPO小游戏开发指南",
+    "des": "OPPO小游戏开发指南",
+    "in_use": true
+  },
+  {
+    "children": [{
         "filename": "/Engine2D/bricksgame/start/",
         "text": "新手教程",
         "des": "新手教程",
