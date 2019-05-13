@@ -1,8 +1,8 @@
 [{
     "children": [{
-        "filename": "/Engine2D/update/update5218/",
-        "text": "Egret Engine2D 5.2.18",
-        "des": "Egret Engine2D 5.2.18",
+        "filename": "/Engine2D/update/update5219/",
+        "text": "Egret Engine2D 5.2.19",
+        "des": "Egret Engine2D 5.2.19",
         "in_use": true
       },
       {
@@ -17,6 +17,11 @@
         "des": "历史更新",
         "in_use": true,
         "children": [{
+            "filename": "/Engine2D/update/update5218/",
+            "text": "Egret Engine2D 5.2.18",
+            "des": "Egret Engine2D 5.2.18",
+            "in_use": true
+          }, {
             "filename": "/Engine2D/update/update5217/",
             "text": "Egret Engine2D 5.2.17",
             "des": "Egret Engine2D 5.2.17",
