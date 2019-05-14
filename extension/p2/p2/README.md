@@ -81,7 +81,6 @@ world.sleepMode = p2.World.BODY_SLEEPING;
 
 ## Egret与p2物理引擎使用相关传送门
 
-[Egret使用p2物理引擎演示示例，通过点击来添加刚体](http://edn.egret.com/cn/index.php/article/index/id/51)
 
 [Egret使用p2物理引擎示例源码](https://github.com/egret-labs/egret-game-library/tree/master/physics)
 
