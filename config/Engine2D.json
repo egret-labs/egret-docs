@@ -982,6 +982,12 @@
         "text": "截屏功能",
         "des": "截屏功能",
         "in_use": true
+      },
+      {
+        "filename": "/Engine2D/bitmapTexture/ktx/",
+        "text": "KTX 纹理压缩",
+        "des": "KTX 纹理压缩",
+        "in_use": true
       }
     ],
     "isFolder": true,
