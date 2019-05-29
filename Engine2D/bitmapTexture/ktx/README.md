@@ -15,7 +15,7 @@ KTX (Khronos Texture) 是一种纹理存储格式，大部分移动设备的 GPU
 
 我们制作了一个 ktx 转换工具：
 
-- [CompressedTextureTool](http://tool.egret-labs.org/DocZip/tools/CompressedTextureTool.zip) 内含使用说明
+- [CompressedTextureTool](http://tool.egret-labs.org/DocZip/tools/CompressedTextureTool_v1.1.zip) 内含使用说明
 
 也可以使用其他的转换工具:
 
