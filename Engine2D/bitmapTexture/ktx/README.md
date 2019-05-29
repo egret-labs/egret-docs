@@ -7,6 +7,16 @@ KTX (Khronos Texture) 是一种纹理存储格式，大部分移动设备的 GPU
 
 如上图所示，第一步我们先把普通的 png\jpg 图片，转换成 `ios` 系统支持的 PVRTC 和安卓系统支持的 `ETC1` 格式的纹理。第二步再把纹理打包为 KTX 格式。
 
+我们制作了一个 ktx 转换工具：
+
+- [CompressedTextureTool](http://tool.egret-labs.org/DocZip/tools/CompressedTextureTool.zip) 内含使用说明
+
+也可以使用其他的转换工具:
+
+- [PowerVRSDK](https://www.imgtec.com/developers/powervr-sdk-tools/)
+- [Mali_Texture_Compression_Tool](https://developer.arm.com/tools-and-software/graphics-and-gaming/graphics-development-tools/mali-texture-compression-tool)
+
+
 
 ### 二.如何使用 KTX
 **[KTX 使用示例](http://tool.egret-labs.org/DocZip/engine/KTXHello.zip)**
@@ -24,7 +34,7 @@ egret_icon.ktx
 ```
 * `egret_icon.png`：PC 平台使用。
 * `egret_icon.pvr.ktx`：pvr 格式的 ktx，iOS 平台使用
-* `egret_icon.ktx`(etc1 格式的颜色纹理) 和 `egret_icon_alpha.ktx`(alpha遮罩纹理)：安卓平台使用。**注：也可以把 2 个 ktx 文件合成一个文件，具体方法请参考高级教程**
+* `egret_icon.ktx`(etc1 格式的颜色纹理) 和 `egret_icon_alpha.ktx`(alpha遮罩纹理)：安卓平台使用。**注：也可以把 2 个 ktx 文件合成一个文件，具体方法请参考 [高级示例 v1.0](http://tool.egret-labs.org/DocZip/engine/ktxtest2.zip)，该示例我们后续还会更新完善**
 
 #### 2.代码说明
 

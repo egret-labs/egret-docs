@@ -988,6 +988,12 @@
         "text": "KTX 纹理压缩",
         "des": "KTX 纹理压缩",
         "in_use": true
+      },
+      {
+        "filename": "/Engine2D/bitmapTexture/ktxfaq/",
+        "text": "KTX 纹理压缩 FAQ",
+        "des": "KTX 纹理压缩 FAQ",
+        "in_use": true
       }
     ],
     "isFolder": true,
