@@ -21,7 +21,7 @@ KTX (Khronos Texture) 是一种纹理存储格式，大部分移动设备的 GPU
 
 - [PowerVRSDK](https://www.imgtec.com/developers/powervr-sdk-tools/)
 - [Mali_Texture_Compression_Tool](https://developer.arm.com/tools-and-software/graphics-and-gaming/graphics-development-tools/mali-texture-compression-tool)
-
+- [texture-compressor](https://www.npmjs.com/package/texture-compressor)
 
 
 ### 二.如何使用 KTX
