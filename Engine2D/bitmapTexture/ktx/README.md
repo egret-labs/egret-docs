@@ -25,7 +25,7 @@ KTX (Khronos Texture) 是一种纹理存储格式，大部分移动设备的 GPU
 
 
 ### 二.如何使用 KTX
-**[KTX 使用示例](http://tool.egret-labs.org/DocZip/engine/KTXHello.zip)**
+**[KTX 使用示例下载](http://tool.egret-labs.org/DocZip/engine/KTXHello.zip)**
 
 上面是一个 `HelloWorld` 的示例项目，其中只把 `egret_icon.png` 这个图片转换为 `KTX` 格式使用。
 
