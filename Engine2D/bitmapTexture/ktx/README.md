@@ -3,9 +3,15 @@
 ### 一.关于 KTX
 KTX (Khronos Texture) 是一种纹理存储格式，大部分移动设备的 GPU 均支持这种格式。可以有效降低设备的显存占用，提高运行效率和稳定性。
 
+* 关于 KTX 的具体信息，可以参考下述2个文档：
+	* [KTX 描述说明](https://www.khronos.org/opengles/sdk/tools/KTX/)
+	* [KTX 文件格式说明](https://www.khronos.org/opengles/sdk/tools/KTX/file_format_spec/)
+
 ![](p1.png)
 
 如上图所示，第一步我们先把普通的 png\jpg 图片，转换成 `ios` 系统支持的 PVRTC 和安卓系统支持的 `ETC1` 格式的纹理。第二步再把纹理打包为 KTX 格式。
+
+**注：ktx 有很多种格式，如 astc, dxt, pvrtc, etc1，etc2。白鹭引擎在 iOS 平台只支持 pvrtc, 安卓平台只支持 etc1**
 
 我们制作了一个 ktx 转换工具：
 
