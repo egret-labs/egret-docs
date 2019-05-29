@@ -40,7 +40,7 @@ egret_icon.ktx
 ```
 * `egret_icon.png`：PC 平台使用。
 * `egret_icon.pvr.ktx`：pvr 格式的 ktx，iOS 平台使用
-* `egret_icon.ktx`(etc1 格式的颜色纹理) 和 `egret_icon_alpha.ktx`(alpha遮罩纹理)：安卓平台使用。**注：也可以把 2 个 ktx 文件合成一个文件，具体方法请参考 [高级示例 v1.0](http://tool.egret-labs.org/DocZip/engine/ktxtest2.zip)，该示例我们后续还会更新完善**
+* `egret_icon.ktx`(etc1 格式的颜色纹理) 和 `egret_icon_alpha.ktx`(alpha遮罩纹理)：安卓平台使用。**注：也可以把 2 个 ktx 文件合成一个文件，具体方法请参考 [高级示例 v1.0](http://tool.egret-labs.org/DocZip/engine/CompressedTextureDemo.zip)，该示例我们后续还会更新完善**
 
 #### 2.代码说明
 
