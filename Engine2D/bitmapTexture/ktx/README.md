@@ -57,3 +57,12 @@ egret_icon.ktx
 为了更容易看出效果，我们把 `egret_icon.png` 换成了另外一张白鹭小鸟，而 `ktx` 格式还是标准 `HelloWorld ` 里的白鹭图标。
 
 从上图中很容易看出，左侧是 `PC` 浏览器中的显示效果，因为不支持 `ktx` 格式，显示的是 `png` 图片。而右侧的 `iOS` 手机浏览器，因为支持 `ktx` 格式，显示的是 `pvr` 纹理格式的图片。
+
+#### 4.远程加载 KTX 资源
+您可以使用 `AssetsManager` 自动远程加载资源。也可以使用 `URLLoader` 自己控制资源加载。
+
+* 注意：
+	* 因为 ktx 不是普通的图片格式，不能使用 ImageLoader 加载。
+	* URLLoader.dataFormat 要设置成 BINARY 二进制格式
+
+使用 `URLLoader` 加载和显示 ktx 纹理 ，[可以参考此示例](http://tool.egret-labs.org/DocZip/engine/KTXURLLoader_v1.0.zip)
