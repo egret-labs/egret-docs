@@ -2,6 +2,8 @@
 
 #### 我使用的图片转换成 KTX 后在 iOS 手机上显示变形了
 答：因为 iOS 使用的 ktx 是 PVRTC 格式的。PVRTC 必须是正方形（边长为2的N次方，如128、256、512），`否则会强制转换成正方形，显示出来就变形了`。建议把资源打包成正方型的 SpriteSheet 纹理集后，再转换成 ktx 格式使用。
+
+正方形纹理使用示例，[可以参考此Demo](http://tool.egret-labs.org/DocZip/engine/KTXSquare.zip)
 ![](p1.png)
 
 #### 为什么图片转换成 KTX 后体积变大了？会占用更多的内存影响游戏性能吗？
