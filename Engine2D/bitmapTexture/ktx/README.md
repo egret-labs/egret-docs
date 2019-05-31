@@ -66,3 +66,7 @@ egret_icon.ktx
 	* URLLoader.dataFormat 要设置成 BINARY 二进制格式
 
 使用 `URLLoader` 加载和显示 ktx 纹理 ，[可以参考此示例](http://tool.egret-labs.org/DocZip/engine/KTXURLLoader_v1.0.zip)
+
+
+#### 5.KTX 性能测试
+[纹理提交速度对比测试](http://tool.egret-labs.org/DocZip/engine/CompressedTexturePerformance.zip) 点击屏幕，可以对比测试提交 100 次 png 与 ktx 纹理的耗时。
