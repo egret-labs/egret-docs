@@ -40,7 +40,7 @@ egret_icon.ktx
 ```
 * `egret_icon.png`：PC 平台使用。
 * `egret_icon.pvr.ktx`：pvr 格式的 ktx，iOS 平台使用
-* `egret_icon.ktx`(etc1 格式的颜色纹理) 和 `egret_icon_alpha.ktx`(alpha遮罩纹理)：安卓平台使用。**注：也可以把 2 个 ktx 文件合成一个文件，具体方法请参考 [高级示例 v1.2](http://tool.egret-labs.org/DocZip/engine/CompressedTextureDemo_v1.2.zip)，该示例我们后续还会更新完善**
+* `egret_icon.ktx`(etc1 格式的颜色纹理) 和 `egret_icon_alpha.ktx`(alpha遮罩纹理)：安卓平台使用。**注：也可以把 2 个 ktx 文件合成一个文件，具体方法请参考 [高级示例 v1.3](http://tool.egret-labs.org/DocZip/engine/CompressedTextureDemo_1.3.zip)，该示例我们后续还会更新完善**
 
 #### 2.代码说明
 
@@ -69,4 +69,8 @@ egret_icon.ktx
 
 
 #### 5.KTX 性能测试
-[纹理提交速度对比测试](http://tool.egret-labs.org/DocZip/engine/CompressedTexturePerformance.zip) 点击屏幕，可以对比测试提交 100 次 png 与 ktx 纹理的耗时。
+[纹理提交速度对比测试](http://tool.egret-labs.org/DocZip/engine/CompressedTexturePerformance_v1.2.zip) 点击屏幕，可以对比测试提交 png 与 ktx 纹理的耗时和GPU占用。
+
+机型|平台|3000张ktx内存占用|3000张png内存占用
+-----------|--------|----|----|----|----
+华为P8|WebView|380M|1G
