@@ -18,7 +18,7 @@
 ##### 答：
 * 我们建议初始包体里只放普通的 png、jpg 图片，然后根据设备信息远程加载适合	该平台使用的 ktx 资源。
 * 不过 ktx 文件体积大，远程加载资源的时候会慢一些，这个就需要开发者权衡资源加载时间和游戏性能之间的利弊了。
-* 服务器可以开启 gzip ，ktx 压缩后的体积会很小。
+* 服务器可以开启 gzip ，ktx 压缩后的体积会很小。[或者直接把 ktx 打包成 zip 使用](http://tool.egret-labs.org/DocZip/engine/ktx/ktx_zip.zip)
 
 #### KTX 文件在 web 服务器上用什么 MIME 映射
 答：KTX 是一种二进制格式，MIME 设置成 `application/octet-stream
