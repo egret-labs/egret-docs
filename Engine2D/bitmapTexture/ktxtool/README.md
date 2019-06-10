@@ -8,7 +8,7 @@ KTX 转换工具使用说明
 npm install 路径/egret-texture-generator-0.1.0.tgz
 ```
 #### 命令行使用方法
-在安装目录执行命令
+在`egret-texture-generator-0.1.0.tgz`安装目录执行命令
 ```
 npx egret-texture-generator --t 资源路径
 ```
