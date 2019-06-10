@@ -18,7 +18,7 @@ npx egret-texture-generator --t 资源路径
 --t [path] --q [low|high] --pf [normal|canvas|canvasalpha] --pbpp [2|4] [--ie]
 ```
 
-**注：用默认参数准换出来的 PVRTC 格式的 KTX，质量很差。建议使用下面这几个参数：`--pf canvasalpha --pbpp 4`**
+**注：用默认参数转换出来的 PVRTC 格式的 KTX，质量很差。建议使用下面这几个参数：`--pf canvasalpha --pbpp 4`**
 
 选项
 

@@ -67,7 +67,7 @@ egret_icon.ktx
 
 
 #### 5.KTX 性能测试
-[纹理提交速度对比测试](http://tool.egret-labs.org/DocZip/engine/CompressedTexturePerformance_v1.2.zip) 点击屏幕，可以对比测试提交 png 与 ktx 纹理的耗时和GPU占用。
+[纹理提交速度对比测试 v1.3](http://tool.egret-labs.org/DocZip/engine/ktx/CompressedTexturePerformance_v1.3.zip) 点击屏幕，可以对比测试提交 png 与 ktx 纹理的耗时和GPU占用等项目，详细说明请看 demo 里的 readme 说明文档。
 
 机型|平台|3000张ktx内存占用|3000张png内存占用
 -----------|--------|----|----|----|----
