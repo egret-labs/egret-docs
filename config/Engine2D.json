@@ -994,6 +994,12 @@
         "text": "KTX 纹理压缩 FAQ",
         "des": "KTX 纹理压缩 FAQ",
         "in_use": true
+      },
+      {
+        "filename": "/Engine2D/bitmapTexture/ktxtool/",
+        "text": "KTX 转换工具",
+        "des": "KTX 转换工具",
+        "in_use": true
       }
     ],
     "isFolder": true,

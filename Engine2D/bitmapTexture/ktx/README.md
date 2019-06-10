@@ -13,7 +13,7 @@ KTX (Khronos Texture) 是一种纹理存储格式，大部分移动设备的 GPU
 
 **注：ktx 有很多种格式，如 astc, dxt, pvrtc, etc1，etc2。白鹭引擎在 iOS 平台只支持 pvrtc, 安卓平台只支持 etc1**
 
-我们制作了一个 ktx 转换工具：[下载地址和说明文档](../ktxtool) 
+我们制作了一个 ktx 转换工具：[下载地址和说明文档](../ktxtool/README.md) 
 
 也可以使用其他的转换工具:
 
