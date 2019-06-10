@@ -13,8 +13,9 @@ npm install 路径/egret-texture-generator-0.1.0.tgz
 npx egret-texture-generator --t 资源路径
 ```
 
+后面还可以加更多的可选参数：
 ```
-egret-texture-generator --t [path] --q [low|high] --pf [normal|canvas|canvasalpha] --pbpp [2|4] [--ie]
+--t [path] --q [low|high] --pf [normal|canvas|canvasalpha] --pbpp [2|4] [--ie]
 ```
 
 **注：用默认参数准换出来的 PVRTC 格式的 KTX，质量很差。建议使用下面这几个参数：`--pf canvasalpha --pbpp 4`**
