@@ -26,7 +26,8 @@
 
 
 #### KTX 文件在 web 服务器上用什么 MIME 映射
-答：KTX 是一种二进制格式，MIME 设置成 `application/octet-stream
+##### 答：
+* KTX 是一种二进制格式，MIME 设置成 `application/octet-stream
 `
 
 #### Egret 发布的原生游戏，是否支持 KTX
