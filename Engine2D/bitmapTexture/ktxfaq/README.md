@@ -20,6 +20,11 @@
 * 不过 ktx 文件体积大，远程加载资源的时候会慢一些，这个就需要开发者权衡资源加载时间和游戏性能之间的利弊了。
 * 服务器可以开启 gzip ，ktx 压缩后的体积会很小。[或者直接把 ktx 打包成 zip 使用](http://tool.egret-labs.org/DocZip/engine/ktx/ktx_zip.zip)
 
+
+####  etc1 的 ktx 和 png ，哪种格式的帧频更快？
+##### 答：png 在 shader 中调用一次 texture2D ，而 etc1 格式的 ktx 会多调用一次用于获取 alpha 遮罩，所以在 benchMark 极限测试下会有性能损失。[etc1 ktx 和 png 的帧频对比 benchmark](http://tool.egret-labs.org/DocZip/engine/ktx/KTX_VS_PNG.zip)
+
+
 #### KTX 文件在 web 服务器上用什么 MIME 映射
 答：KTX 是一种二进制格式，MIME 设置成 `application/octet-stream
 `
