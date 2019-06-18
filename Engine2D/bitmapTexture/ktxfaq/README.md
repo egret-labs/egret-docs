@@ -22,12 +22,11 @@
 
 
 ####  etc1 的 ktx 和 png ，哪种格式的帧频更快？
-##### 答：png 在 shader 中调用一次 texture2D ，而 etc1 格式的 ktx 会多调用一次用于获取 alpha 遮罩，所以在 benchMark 极限测试下会有性能损失。[etc1 ktx 和 png 的帧频对比 benchmark](http://tool.egret-labs.org/DocZip/engine/ktx/KTX_VS_PNG.zip)
+答：png 在 shader 中调用一次 texture2D ，而 etc1 格式的 ktx 会多调用一次用于获取 alpha 遮罩，所以在 benchMark 极限测试下会有性能损失。[etc1 ktx 和 png 的帧频对比 benchmark](http://tool.egret-labs.org/DocZip/engine/ktx/KTX_VS_PNG.zip)
 
 
 #### KTX 文件在 web 服务器上用什么 MIME 映射
-##### 答：
-* KTX 是一种二进制格式，MIME 设置成 `application/octet-stream
+答：KTX 是一种二进制格式，MIME 设置成 `application/octet-stream
 `
 
 #### Egret 发布的原生游戏，是否支持 KTX
