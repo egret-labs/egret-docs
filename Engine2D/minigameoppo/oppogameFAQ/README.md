@@ -66,3 +66,14 @@
 
 #### 文件加载失败： default.res.json?v=201906191000
 答：去掉`?v=201906191000`
+
+#### 一个 sound 只能创建一个 soundChannel，怎么同时播放同一个声音
+答：创建多个 sound 的方式，分别播放声音。[参考demo](http://tool.egret-labs.org/DocZip/engine/minigame/Sounds.zip)
+
+```
+for (let i = 0; i < 3; i++) {
+	let sd = new egret.Sound()
+	sd.load('resource/assets/se1.mp3')
+	...
+}
+```
