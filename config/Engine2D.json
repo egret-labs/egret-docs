@@ -687,6 +687,25 @@
   },
   {
     "children": [{
+        "filename": "/Engine2D/minigamevivo/getStart/",
+        "text": "开发快速指南",
+        "des": "开发快速指南",
+        "in_use": true
+      },
+      {
+        "filename": "/Engine2D/minigamevivo/vivogameFAQ/",
+        "text": "vivo小游游戏FAQ",
+        "des": "vivo小游游戏FAQ",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "vivo小游戏开发指南",
+    "des": "vivo小游戏开发指南",
+    "in_use": true
+  },
+  {
+    "children": [{
         "filename": "/Engine2D/bricksgame/start/",
         "text": "新手教程",
         "des": "新手教程",
