@@ -84,6 +84,6 @@
 ### 四.真机调试调试
 **注意：**一定要使用 vivo 手机才可以调试 
 
-1.在 vivo 手机上安装 `快应用调试器`
+1.在 vivo 手机上安装 [快应用调试器](https://minigame.vivo.com.cn/documents/#/download/engine)
 
 3.打开快游戏调试器，点击 `扫码安装`，扫描 EgretLauncher 发布 vivo 小游戏界面里的二维码。
