@@ -1,4 +1,4 @@
-首先，强调一些 VIVO 小游戏的基础技术限制：
+首先，强调一些 vivo 小游戏的基础技术限制：
 
 * 不允许操作 DOM、BOM、如果必须改成块游戏相应的 API 调用方式
 
@@ -9,9 +9,9 @@
 
 ### 问题
 
-#### 我在使用白鹭引擎 5.0 / 4.x / 3.x 版本，可以直接转换为VIVO小游戏游戏么？
+#### 我在使用白鹭引擎 5.0 / 4.x / 3.x 版本，可以直接转换为vivo小游戏游戏么？
 
-答：目前我们只支持白鹭引擎 5.2.19 以上的版本发布为VIVO小游戏。老版本的项目，[参考微信小游戏升级指南](../minigame/publish/README.md) 
+答：目前我们只支持白鹭引擎 5.2.19 以上的版本发布为vivo小游戏。老版本的项目，[参考微信小游戏升级指南](../minigame/publish/README.md) 
 
 
 #### 我在使用 egret res 库，5.2.19 创建的新项目使用的是 assetsmanager 库，这两个库有区别么？
@@ -24,13 +24,13 @@
 
 #### 当老项目（5.2.19以前）升到到最新版时，发布小游戏项目报错：
 
-答：升级成功后，请首先保证 HTML5 版本可以正常运行，然后再尝试发布为VIVO小游戏，目前我们遇到了多位开发者通过创建 5.2.19 新项目后拷贝老项目代码和素材的方式尝试升级，由于忽视了修改 egretProperties.json 中的模块配置，导致运行失败的问题。[参考微信小游戏升级指南](../minigame/publish/README.md)
+答：升级成功后，请首先保证 HTML5 版本可以正常运行，然后再尝试发布为vivo小游戏，目前我们遇到了多位开发者通过创建 5.2.19 新项目后拷贝老项目代码和素材的方式尝试升级，由于忽视了修改 egretProperties.json 中的模块配置，导致运行失败的问题。[参考微信小游戏升级指南](../minigame/publish/README.md)
 
 #### 在游戏使用到 egret.getDefinitionByName() 报错，找不到对应类时：
 
 答：需要将要反射的类挂载到 window 对象下，例如有个 class People{} 类，需要添加代码 window["People"] = People。[参考微信小游戏示例demo](http://developer.egret.com/cn/statics/downs/testglobal.zip)
 
-#### 在 EUI 中使用自定义组件，发布到VIVO小游戏的 default.thm.js 报错提示找不到自定义组件，错误如图：
+#### 在 EUI 中使用自定义组件，发布到vivo小游戏的 default.thm.js 报错提示找不到自定义组件，错误如图：
 
 ![img](x03.png)
 
