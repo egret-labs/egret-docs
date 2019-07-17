@@ -87,5 +87,17 @@ class BitmapTest extends egret.DisplayObjectContainer{
 ![](56614ea87fa1a.jpg)
 
 
+## 3.其他方式创建位图
+### 3.1 您还可以通过其他方式创建位图，例如 base64
+```
+ let str64 = "iVBORw0KGgoAAAANSUhEUgAAAHM..."
+ egret.BitmapData.create("base64",str64,(bitmapData)=>{
+    let texture = new egret.Texture();
+    texture.bitmapData = bitmapData;
+    let bmp = new egret.Bitmap(texture);
+    this.addChild(bmp)
+})
+```
+[示例demo](http://tool.egret-labs.org/DocZip/engine/core/display/base64Demo.zip)
 
 
