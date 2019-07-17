@@ -77,7 +77,7 @@
 	* name:应用名称，6 个汉字以内，与应用商店保存的名称一致，用于在桌面图标、弹窗等处显示应用名称
 	* versionName:应用版本名称
 	* versionCode:应用版本号，从1自增，推荐每次重新上传包时versionCode+1
-	* minPlatformVersion:支持的最小平台版本号，兼容性检查，避免上线后在低版本平台运行并导致不兼容；如果不填按照内测版本处理
+	* minPlatformVersion:支持的最小平台版本号，兼容性检查，避免上线后在低版本平台运行并导致不兼容；需要填入1050
 	* icon：应用图标的路径，尺寸为 192x192
 	* orientation：支持的屏幕方向。portrait 为竖屏，landscape 为横屏。该参数会自动从白鹭游戏项目的 index.html 里获取。
 
