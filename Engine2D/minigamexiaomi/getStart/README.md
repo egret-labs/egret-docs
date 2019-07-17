@@ -3,7 +3,7 @@
 * Egret Launcher 1.0.62 以上版本
 * 白鹭引擎 5.2.17 以上版本
 * 在电脑中安装 npm：[下载地址](https://www.npmjs.com/)
-* 下载安装调试器和运行时，以及更多快游戏 API 文档，请访问：[快游戏开发者接入指南](https://dev.mi.com/console/doc/detail?pId=1704)
+* 下载安装调试器和运行时，以及更多快游戏 API 文档，请访问：[快游戏开发者接入指南](https://dev.mi.com/console/doc/detail?pId=1779) 
 
 
 ### 二.创建小游戏
@@ -67,7 +67,7 @@
 	"name": "quickgame",
 	"versionName": "1.0.0",
 	"versionCode": "1",
-	"minPlatformVersion": "101",
+	"minPlatformVersion": "1050",
 	"icon": "/Common/logo.png",
 	"orientation": "portrait"
 }
