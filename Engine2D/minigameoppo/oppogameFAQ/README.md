@@ -80,3 +80,7 @@ for (let i = 0; i < 3; i++) {
 
 #### 为什么我动态设置帧频没有效果
 答：小游戏平台只能在 index.html 里设置，不能通过 stage.frameRate 方法动态修改
+
+
+#### 这个报错信息是什么意思？Failed to clone native_handle in hidl_handle: Too many open files
+答：oppo 小游戏对声音播放的数量有限制，不能同时打开太多的声音。具体的数量上限暂时还不清楚。
