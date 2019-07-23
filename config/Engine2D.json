@@ -843,6 +843,11 @@
         "text": "深度管理",
         "des": "深度管理",
         "in_use": true
+      }, {
+        "filename": "/Engine2D/displayObject/resetDepth/",
+        "text": "深度管理",
+        "des": "重设子对象深度",
+        "in_use": true
       }
     ],
     "isFolder": true,
@@ -1057,6 +1062,11 @@
         "filename": "/Engine2D/colorEffects/shader/",
         "text": "自定义Shader",
         "des": "自定义Shader",
+        "in_use": true
+      }, {
+        "filename": "/Engine2D/colorEffects/tint/",
+        "text": "设置填充色",
+        "des": "设置填充色",
         "in_use": true
       }
     ],
