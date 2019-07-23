@@ -845,9 +845,9 @@
         "in_use": true
       }, {
         "filename": "/Engine2D/displayObject/resetDepth/",
-        "text": "深度管理",
+        "text": "重设子对象深度",
         "des": "重设子对象深度",
-        "in_use": true
+        "in_use": false
       }
     ],
     "isFolder": true,
@@ -1067,7 +1067,7 @@
         "filename": "/Engine2D/colorEffects/tint/",
         "text": "设置填充色",
         "des": "设置填充色",
-        "in_use": true
+        "in_use": false
       }
     ],
     "isFolder": true,
