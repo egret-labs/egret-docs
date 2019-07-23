@@ -1,7 +1,7 @@
 ### 一.开发环境准备
 
 * Egret Launcher 1.0.65 以上版本
-* 白鹭引擎 5.2.22 以上版本
+* 白鹭引擎 5.2.23 以上版本
 * 在电脑中安装 npm：[下载地址](https://www.npmjs.com/)
 * 在电脑中安装 adb 工具：[下载地址](http://adbshell.com/downloads)
 * 最新版本的 vivo 小游戏引擎(平台版本1041+)[下载地址](https://minigame.vivo.com.cn/documents/#/download/engine)
@@ -9,7 +9,7 @@
 
 ### 二.创建小游戏和可视化编译打包小游戏
 
-1. 使用最新的 Egret Launcher 创建一个 Egret 游戏项目，引擎使用 5.2.22 以上版本。
+1. 使用最新的 Egret Launcher 创建一个 Egret 游戏项目，引擎使用 5.2.23 以上版本。
 创建完成后，会在 Egret Launcher 的列表里看到该项目。点击发布设置:
 ![](p1.png)
 2. 选择 `vivo小游戏` 标签，点击`确定`，创建项目
@@ -30,8 +30,8 @@
 #### 方法2：配置 egretProperties.json
 
 ```
-"engineVersion": "5.2.22",
-"compilerVersion": "5.2.22",
+"engineVersion": "5.2.23",
+"compilerVersion": "5.2.23",
 "template": {},
 "target": {
 	"current": "vivogame"
