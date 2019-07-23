@@ -2,6 +2,10 @@
 
 从 Egret 5.2.24 版本开始，`DisplayObject` 中新增加了一个 `zIndex` 属性，可以设置对象的 Z 轴顺序。该值越大，越靠近顶部。
 
+在 PC 的 Chrome 浏览器和安卓系统中，`zIndex` 的效率比 `setChildIndex` 高很多。极限测试时可以达到10倍以上。
+
+在 iOS 系统中，两种方式的效率基本一致，没有很大区别，这跟系统浏览器的内核有关。
+
 **注意，要给一个对象使用 zIndex，包含此显示对象的 DisplayObjectContainer 对象一定要设置 sortableChildren = true**
 
 ```
