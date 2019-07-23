@@ -1043,33 +1043,26 @@
   },
   {
     "children": [{
-      "filename": "/Engine2D/blendMode/blendMode/",
-      "text": "混合模式",
-      "des": "混合模式",
-      "in_use": true
-    }],
-    "isFolder": true,
-    "text": "混合模式",
-    "des": "混合模式",
-    "in_use": true
-  },
-  {
-    "children": [{
-        "filename": "/Engine2D/filter/filter/",
+        "filename": "/Engine2D/colorEffects/blendMode/",
+        "text": "混合模式",
+        "des": "混合模式",
+        "in_use": true
+      }, {
+        "filename": "/Engine2D/colorEffects/filter/",
         "text": "滤镜",
         "des": "滤镜",
         "in_use": true
       },
       {
-        "filename": "/Engine2D/shader/shader/",
+        "filename": "/Engine2D/colorEffects/shader/",
         "text": "自定义Shader",
         "des": "自定义Shader",
         "in_use": true
       }
     ],
     "isFolder": true,
-    "text": "滤镜",
-    "des": "滤镜",
+    "text": "颜色效果",
+    "des": "颜色效果",
     "in_use": true
   },
   {
