@@ -217,15 +217,13 @@
 
 * [截屏功能](Engine2D/bitmapTexture/screenshots/README.md)
 
-#### 混合模式
+#### 颜色效果
 
-* [混合模式](Engine2D/blendMode/blendMode/README.md)
+* [混合模式](Engine2D/colorEffects/blendMode/README.md)
 
-#### 滤镜
+* [滤镜](Engine2D/colorEffects/filter/README.md)
 
-* [滤镜](Engine2D/filter/filter/README.md)
-
-* [自定义Shader](Engine2D/shader/shader/README.md)
+* [自定义Shader](Engine2D/colorEffects/shader/README.md)
 
 #### 时间控制
 
