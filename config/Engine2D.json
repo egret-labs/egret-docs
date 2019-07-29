@@ -630,6 +630,25 @@
         "text": "如何分包加载资源",
         "des": "",
         "in_use": true
+      },
+      {
+        "children": [{
+            "filename": "/Engine2D/minigameqq/getStart/",
+            "text": "开发快速指南",
+            "des": "开发快速指南",
+            "in_use": true
+          },
+          {
+            "filename": "/Engine2D/minigameqq/qqgameFAQ/",
+            "text": "QQ小游戏FAQ",
+            "des": "QQ小游戏FAQ",
+            "in_use": true
+          }
+        ],
+        "isFolder": true,
+        "text": "QQ小游戏开发指南",
+        "des": "QQ小游戏开发指南",
+        "in_use": true
       }
     ],
     "isFolder": true,
@@ -637,25 +656,7 @@
     "des": "微信小游戏开发指南",
     "in_use": true
   },
-  {
-    "children": [{
-        "filename": "/Engine2D/minigameqq/getStart/",
-        "text": "开发快速指南",
-        "des": "开发快速指南",
-        "in_use": true
-      },
-      {
-        "filename": "/Engine2D/minigameqq/qqgameFAQ/",
-        "text": "QQ小游戏FAQ",
-        "des": "QQ小游戏FAQ",
-        "in_use": true
-      }
-    ],
-    "isFolder": true,
-    "text": "QQ小游戏开发指南",
-    "des": "QQ小游戏开发指南",
-    "in_use": false
-  },
+  
   {
     "children": [{
         "filename": "/Engine2D/minigamebaidu/getStart/",
