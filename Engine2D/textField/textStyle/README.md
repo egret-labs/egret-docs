@@ -28,42 +28,6 @@ label.text = "This is a text!";
 上面代码的字体名设置的为 “Impact”， 如果设置的字体在浏览器/app中不存在，浏览器/app会自动调用默认字体来代替。
 
 
-* 自定义字体
-
-用 `egret.registerFontMapping()` 方法可以添加自定义字体，该方法传入两个参数：字体名称和字体文件路径。
-
-示例代码如下：
-
-```
-egret.registerFontMapping("font1", "fonts/font1.ttf");
-egret.registerFontMapping("font2", "fonts/font2.otf");
-egret.registerFontMapping("font3", "fonts/font3.TTF");
-
-let label1 = new egret.TextField();
-label1.text = "默认字体";
-this.addChild(label1);
-
-let label2 = new egret.TextField();
-label2.text = "font1";
-label2.fontFamily = "font1";
-label2.y = 100;
-this.addChild(label2);
-
-let label3 = new egret.TextField();
-label3.text = "font2";
-label3.fontFamily = "font2";
-label3.y = 300;
-this.addChild(label3);
-
-let label4 = new egret.TextField();
-label4.text = "font3";
-label4.fontFamily = "font3";
-label4.y = 400;
-this.addChild(label4);
-```
-
-> 字体文件需要通过资源加载后才可以使用。
-
 ## 2.字号
 
 `egret.TextField` 类包含 `size` 属性，该属性是当前文本的字号大小。
