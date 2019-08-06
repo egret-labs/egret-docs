@@ -6,7 +6,7 @@
 
 在 iOS 系统中，两种方式的效率基本一致，没有很大区别，这跟系统浏览器的内核有关。
 
-**注意，要给一个对象使用 zIndex，包含此显示对象的 DisplayObjectContainer 对象一定要设置 sortableChildren = true**
+**注意，要给一个对象使用 zIndex，包含此显示对象的 DisplayObjectContainer 对象一定要设置 sortableChildren = true，开启排序功能，否则设置 zIndex 是无效的**
 
 ```
 let container = new egret.Sprite();

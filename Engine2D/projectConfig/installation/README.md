@@ -52,3 +52,8 @@ EgretLauncher 安装完成后，点击完成按钮。
 选择“工具”，可下载和安装开发工具，如下图。
 
 ![](download.png)
+* Egret Wing 代码和界面制作工具
+* DragonBones 龙骨动画制作工具
+* TextureMerger 图片资源合并工具
+* Res Depot 资源管理工具
+* Egret Feather 粒子制作工具
