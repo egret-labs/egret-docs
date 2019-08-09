@@ -2,7 +2,7 @@
 
 * Egret Launcher 1.0.67 以上版本
 * 白鹭引擎 5.2.25 以上版本
-* 下砸安装 QQ 小游戏开发者工具[下载地址](https://q.qq.com/wiki/#_4-%E7%BC%96%E7%A0%81%E5%BC%80%E5%8F%91%E5%B0%8F%E7%A8%8B%E5%BA%8F)
+* 下载安装 QQ 小游戏开发者工具[下载地址](https://q.qq.com/wiki/#_4-%E7%BC%96%E7%A0%81%E5%BC%80%E5%8F%91%E5%B0%8F%E7%A8%8B%E5%BA%8F)
 * 更多 QQ 小游戏 API 文档，请访问小游戏支持网站：[网站地址](https://q.qq.com/wiki/develop/game/API/)
 
 ### 二.创建小游戏和可视化编译打包小游戏
