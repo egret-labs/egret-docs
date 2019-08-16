@@ -1,7 +1,8 @@
 # 微信小游戏数据库API
 “小程序·云开发”是微信团队和腾讯云联合打造的“应用服务中台”。秉承高效、易用、安全、低成本的服务理念，为开发者提供稳定高性能的服务。“小程序·云开发”整合了微信公众平台和腾讯云的核心技术，提供云数据库、云存储、云函数、日志和监控等开发运维能力。通过“小程序·云开发”，开发者可无缝安全调用小程序的开放服务，提升开发效率，快速试错和落地产品。
 
-“小程序·云开发”可满足回合制游戏、聊天室、世界消息等小游戏场景需求，具备多端实时数据同步能力，让小游戏开发更高效便捷。
+
+“小程序·云开发”近期新推出的数据实时推送能力，可满足回合制游戏、聊天室、世界消息等小游戏场景需求，具备多端实时数据同步能力，让小游戏开发更高效便捷。
 
 开发者可以在微信小游戏里直接调用API，就可以操作数据库的读写存储等功能，无需搭建服务器。提高开发效率，节约成本。
 [云开发介绍](https://developers.weixin.qq.com/minigame/dev/wxcloud/basis/getting-started.html) [数据库操作API](https://developers.weixin.qq.com/minigame/dev/wxcloud/reference-client-api/database/)
@@ -97,8 +98,6 @@ db.collection('logs').doc('9390f2ff-0318-4826-87d8-78bf31568cab').get().then(res
 ```
 
 本示例演示了如何增加和查询数据，前端调用 API 即可，不需要后端的开发工作，简化了开发流程。
-
-另外数据库API即将增加消息实时推送功能，敬请期待！
 
 
 访问官网查询更多的[数据库操作API](https://developers.weixin.qq.com/minigame/dev/wxcloud/reference-client-api/database/)
