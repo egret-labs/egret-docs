@@ -640,6 +640,12 @@
         "text": "如何分包加载资源",
         "des": "",
         "in_use": true
+      },
+      {
+        "filename": "/Engine2D/minigame/cloudapi/",
+        "text": "使用数据库API",
+        "des": "",
+        "in_use": true
       }
     ],
     "isFolder": true,
