@@ -43,7 +43,15 @@
 
 ### 四.使用命令行打包发布小米快游戏
 * 进入快游戏项目，在命令行里执行编译命令 `npm run build`，成功后会生成一个`dist`文件夹，里面的 `com.application.demo.debug.rpk` 文件就是打包好的快游戏项目，可以在手机上调试。
-* 如果执行命令 `npm run release`，则会生成正式发布的快游戏项目。注意，发布正式项目，需要在 `sign/release/private.pem` 路径下自己准备签名文件。签名生成方法[详见文档](https://doc.quickapp.cn/tools/compiling-tools.html)
+* 如果执行命令 `npm run release`，则会生成正式发布的快游戏项目。
+* **注意:发布正式项目，需要正式的签名文件。**可以通过 openssl 命令等工具生成签名文件 private.pem、certificate.pem，例如：
+
+```
+openssl req -newkey rsa:2048 -nodes -keyout private.pem -x509 -days 3650 -out certificate.pem
+
+```
+在工程的 sign 目录下创建 release 目录，将私钥文件 private.pem 和证书文件 certificate.pem 拷贝进去
+
 
 * 项目代码目录的结构如下
 
