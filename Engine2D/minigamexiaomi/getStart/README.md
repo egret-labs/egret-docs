@@ -1,14 +1,14 @@
 ### 一.开发环境准备
 
 * Egret Launcher 1.0.62 以上版本
-* 白鹭引擎 5.2.17 以上版本
+* 白鹭引擎 5.2.28 以上版本
 * 在电脑中安装 npm：[下载地址](https://www.npmjs.com/)
 * 下载安装调试器和运行时，以及更多快游戏 API 文档，请访问：[快游戏开发者接入指南](https://dev.mi.com/console/doc/detail?pId=1779) 
 
 
 ### 二.创建小游戏
 
-1. 使用最新的 Egret Launcher 创建 5.2.17 以上版本的项目，项目名字叫做 `QGameDemo`。
+1. 使用最新的 Egret Launcher 创建 5.2.28 以上版本的项目，项目名字叫做 `QGameDemo`。
 然后在 Egret Launcher 您会看到刚刚创建的项目，点击发布设置:
 ![](p1.png)
 2. 选择 `小米快游戏` 标签，点击`确定`，创建项目
@@ -31,8 +31,8 @@
 #### 方法2：配置 egretProperties.json
 
 ```
-"engineVersion": "5.2.17",
-"compilerVersion": "5.2.17",
+"engineVersion": "5.2.28",
+"compilerVersion": "5.2.28",
 "template": {},
 "target": {
 	"current": "qgame"

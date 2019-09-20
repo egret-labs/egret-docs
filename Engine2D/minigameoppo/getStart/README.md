@@ -1,7 +1,7 @@
 ### 一.开发环境准备
 
 * Egret Launcher 1.0.63 以上版本
-* 白鹭引擎 5.2.19 以上版本
+* 白鹭引擎 5.2.28 以上版本
 * 在电脑中安装 npm：[下载地址](https://www.npmjs.com/)
 * 在电脑中安装 adb 工具：[下载地址](http://adbshell.com/downloads)
 * 在 OPPO 手机上安装快应用调试器，以及更多小游戏 API 文档，请访问小游戏支持网站：[网站地址](https://cdofs.oppomobile.com/cdo-activity/static/201810/26/quickgame/documentation/games/use.html)
@@ -31,8 +31,8 @@
 #### 方法2：配置 egretProperties.json
 
 ```
-"engineVersion": "5.2.19",
-"compilerVersion": "5.2.19",
+"engineVersion": "5.2.28",
+"compilerVersion": "5.2.28",
 "template": {},
 "target": {
 	"current": "oppogame"
