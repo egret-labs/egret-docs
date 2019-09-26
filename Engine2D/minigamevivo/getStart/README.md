@@ -105,3 +105,10 @@
 
 * 1.使用 EgretLauncher 下载白鹭引擎 5.2.28 版本
 * 2.新创建一个游戏项目，将项目中 `scripts/config.vivogame.ts ` 和 `scripts/vivogame/vivogame.ts`这两个文件替换您原来项目里对应的文件
+
+### 常见问题排查
+如果您的 vivo 小游戏项目不能运行，请先检查下面这些流程是否正确
+
+* 使用的是 vivo 手机
+* 手机中安装了 [快应用调试器](https://minigame.vivo.com.cn/documents/#/download/engine)
+* Egret Launcher [是最新版本的](https://egret.com/products/engine.html)
