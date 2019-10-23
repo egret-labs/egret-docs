@@ -1215,12 +1215,6 @@
       "text": "调试",
       "des": "调试",
       "in_use": true
-    },
-    {
-      "filename": "/Engine2D/debug/compatibility/",
-      "text": "兼容性问题",
-      "des": "兼容性问题",
-      "in_use": true
     }],
     "isFolder": true,
     "text": "调试",
