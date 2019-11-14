@@ -1,8 +1,8 @@
 [{
     "children": [{
-        "filename": "/Engine2D/update/update5230/",
-        "text": "Egret Engine2D 5.2.30",
-        "des": "Egret Engine2D 5.2.30",
+        "filename": "/Engine2D/update/update5231/",
+        "text": "Egret Engine2D 5.2.31",
+        "des": "Egret Engine2D 5.2.31",
         "in_use": true
       },
       {
@@ -17,6 +17,11 @@
         "des": "历史更新",
         "in_use": true,
         "children": [{
+            "filename": "/Engine2D/update/update5230/",
+            "text": "Egret Engine2D 5.2.30",
+            "des": "Egret Engine2D 5.2.30",
+            "in_use": true
+          }, {
             "filename": "/Engine2D/update/update5229/",
             "text": "Egret Engine2D 5.2.29",
             "des": "Egret Engine2D 5.2.29",
@@ -666,7 +671,7 @@
         "text": "使用数据库API",
         "des": "",
         "in_use": true
-      },{
+      }, {
         "filename": "/Engine2D/minigame/useWxPlugin/",
         "text": "使用微信引擎插件",
         "des": "",
