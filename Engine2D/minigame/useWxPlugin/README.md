@@ -24,7 +24,7 @@
 1.在 Egret Launcher 里下载引擎 5.2.31 版本，使用该版本创建一个游戏项目
 2.打开项目中的 `scripts/config.wxgame.ts` 文件，将 `useWxPlugin` 变量改为 `true`
 ![](p4.png)
-3.在发布成微信小游戏 release 版本后(`egret publisb --target wxgame`)，会开启插件功能。debug 调试版 (`egret build --target wxgame`)，不支持该功能。
+3.在发布成微信小游戏 release 版本后(`egret publish --target wxgame`)，会开启插件功能。debug 调试版 (`egret build --target wxgame`)，不支持该功能。
 
 ##### 老项目升级：
 
