@@ -666,6 +666,11 @@
         "text": "使用数据库API",
         "des": "",
         "in_use": true
+      },{
+        "filename": "/Engine2D/minigame/useWxPlugin/",
+        "text": "使用微信引擎插件",
+        "des": "",
+        "in_use": true
       }
     ],
     "isFolder": true,
