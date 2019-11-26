@@ -10,7 +10,7 @@
 
 #### 白鹭引擎插件使用和调试环境
 * 白鹭引擎 5.2.31 版本
-* 微信开发者工具调试 Nightly 版本(>=1.02.1910252);**注意：正式版还不支持插件功能。**
+* 使用微信开发者工具的[RC版本](https://developers.weixin.qq.com/miniprogram/dev/devtools/rc.html)(>=1.02.1911181)或[Nightly版本](https://developers.weixin.qq.com/miniprogram/dev/devtools/nightly.html)(>=1.02.1911202)  **注意：正式版还不支持插件功能。**
 * 在 Android 微信和 iOS 微信的7.0.7版本(>=7.0.7)，可直接体验和测试插件分离功能。使用了插件分离的小游戏，在console日志中会输出:`plugin ***** inject success/fail!`
 
 **注意**
