@@ -188,6 +188,11 @@
       "des": "事件回调",
       "in_use": true
     }, {
+      "filename": "/Native/native/fontFamily/",
+      "text": "使用自定义字体",
+      "des": "使用自定义字体",
+      "in_use": true
+    }, {
       "filename": "/Native/native/nativefaq/",
       "text": "原生项目常见问题",
       "des": "原生项目常见问题",
