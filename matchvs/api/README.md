@@ -241,7 +241,7 @@ response.loginResponse(login:MsLoginRsp);
 
 | 属性   | 类型   | 描述                                                         | 示例值 |
 | ------ | ------ | ------------------------------------------------------------ | ------ |
-| status | number | 状态返回 <br>200 成功<br>402 应用校验失败，确认是否在未上线时用了release环境，并检查gameID、appkey 和 secret<br>403 检测到该账号已在其他设备登录<br>404 无效用户 <br>500 服务器内部错误 | 200    |
+| status | number | 状态返回 ：200 成功 ；402 应用校验失败，确认是否在未上线时用了release环境，并检查gameID、appkey 和 secret ；403 检测到该账号已在其他设备登录 ； 404 无效用户 ；500 服务器内部错误 | 200    |
 | roomID | string | 房间号（预留断线重连）                                       | 210039 |
 
 ### 示例代码
@@ -301,7 +301,7 @@ response.logoutResponse(status:number);
 
 | 参数   | 类型   | 描述                            | 示例值 |
 | ------ | ------ | ------------------------------- | ------ |
-| status | number | 状态返回，200表示成功 <br>500 服务器内部错误 | 200    |
+| status | number | 状态返回，200表示成功 ；500 服务器内部错误 | 200    |
 
 
 
@@ -412,7 +412,7 @@ engine.createRoom(createRoomInfo:MsCreateRoomInfo, userProfile:string, watchSet?
 | -------------- | ---------------------- | ------------------------------------------------------------ | ------ |
 | createRoomInfo | MsCreateRoomInfo       | 创建房间的信息                                               |        |
 | userProfile    | string                 | 玩家简介                                                     | ""     |
-| watchSet       | object<MVS.MsWatchSet> | 观战服务参数,创建房间时，如果没有设置 watchSet 参数，则默认是不可观战的， watchSet 参数要与MsCreateRoomInfo的canWatch参结合使用，如果没有设置观战参数，再获取房间列表的时候 canWatch参数需要设置0或者2。 |        |
+| watchSet       | object | 观战服务参数,创建房间时，如果没有设置 watchSet 参数，则默认是不可观战的， watchSet 参数要与MsCreateRoomInfo的canWatch参结合使用，如果没有设置观战参数，再获取房间列表的时候 canWatch参数需要设置0或者2。 |        |
 
 #### MsCreateRoomInfo 的属性
 
@@ -457,7 +457,7 @@ response.createRoomResponse(rsp:MsCreateRoomRsp);
 
 | 参数   | 类型   | 描述                                                         | 示例值   |
 | ------ | ------ | ------------------------------------------------------------ | -------- |
-| status | number | 状态返回，200表示成功<br>400 客户端参数错误 <br>500 服务器内部错误 | 200      |
+| status | number | 状态返回，200表示成功 ；400 客户端参数错误 ；500 服务器内部错误 | 200      |
 | roomID | string | 房间号                                                       | "210039" |
 | owner  | number | 房主                                                         | 210000   |
 
@@ -501,8 +501,8 @@ response.joinRoomResponse(status:number, roomUserInfoList:Array<MsRoomUserInfo>,
 
 | 参数             | 类型                  | 描述                            | 示例值 |
 | ---------------- | --------------------- | ------------------------------- | ------ |
-| status           | number                | 状态返回，200表示成功 <br>400 客户端参数错误 <br>404 指定房间不存在 <br>405 房间已满 <br>406 房间已joinOver <br>500 服务器内部错误       | 200    |
-| roomUserInfoList | Array<MsRoomUserInfo> | 房间内玩家信息列表              |        |
+| status           | number                | 状态返回，200表示成功 ；400 客户端参数错误 ；404 指定房间不存在 ；405 房间已满 ；406 房间已joinOver ；500 服务器内部错误       | 200    |
+| roomUserInfoList | Array | 房间内玩家信息列表              |        |
 | roomInfo         | MsRoomInfo            | 房间信息构成的对象              |        |
 
 #### MsRoomUserInfo 的属性
@@ -608,7 +608,7 @@ response.joinOverResponse(rsp:MsJoinOverRsp);
 
 | 属性    | 类型   | 描述                            | 示例值 |
 | ------- | ------ | ------------------------------- | ------ |
-| status  | number | 状态返回，200表示成功<br>400 客户端参数错误 <br>404 用户或房间不存在 <br>403 该用户不在房间 <br>500 服务器内部错误 | 200    |
+| status  | number | 状态返回，200表示成功；400 客户端参数错误 ；404 用户或房间不存在；403 该用户不在房间 ；500 服务器内部错误 | 200    |
 | cpProto | string | 负载信息                        |        |
 
 ### joinOverNotify
@@ -695,7 +695,7 @@ response.leaveRoomResponse(rsp:MsLeaveRoomRsp);
 
 | 属性    | 类型   | 描述                                                         | 示例值 |
 | ------- | ------ | ------------------------------------------------------------ | ------ |
-| status  | number | 状态返回，200表示成功<br>400 客户端参数错误 <br>404 房间不存在 <br>500 服务器内部错误 | 200    |
+| status  | number | 状态返回，200表示成功；400 客户端参数错误 ；404 房间不存在 ；500 服务器内部错误 | 200    |
 | roomID  | string | 房间号                                                       | 317288 |
 | userID  | number | 用户ID                                                       | 317288 |
 | cpProto | string | 负载信息                                                     |        |
@@ -790,8 +790,8 @@ response.getRoomListResponse(status:number, roomInfos:Array<MsRoomInfoEx>);
 
 | 参数      | 类型                | 描述                            | 示例值 |
 | --------- | ------------------- | ------------------------------- | ------ |
-| status    | number              |状态返回，200表示成功<br>500 服务器内部错误 | 200    |
-| roomInfos | Array<MsRoomInfoEx> | 房间信息列表                    |        |
+| status    | number              |状态返回，200表示成功；500 服务器内部错误 | 200    |
+| roomInfos | Array | 房间信息列表                    |        |
 
 #### MsRoomInfoEx 的属性
 
@@ -874,9 +874,9 @@ response.getRoomListExResponse(rsp:MsGetRoomListExRsp);
 
 | 参数      | 类型                   | 描述          | 示例值 |
 | --------- | ---------------------- | ------------- | ------ |
-| status    | number                 | 状态 200 成功 <br>500 服务器内部错误 | 200    |
+| status    | number                 | 状态 200 成功 ；500 服务器内部错误 | 200    |
 | total     | number                 | 房间总数量    | 2      |
-| roomAttrs | Array<MsRoomAttribute> | 房间信息列表  | []     |
+| roomAttrs | Array | 房间信息列表  | []     |
 
 #### 参数 MsRoomAttribute 的属性 
 
@@ -958,7 +958,7 @@ response.getRoomDetailResponse(rsp:MsGetRoomDetailRsp);
 
 | 参数         | 类型                  | 描述                                                        | 示例值 |
 | ------------ | --------------------- | ----------------------------------------------------------- | ------ |
-| status       | number                | 接口状态 200 成功 <br>404 房间不存在 <br>500 服务器内部错误 |        |
+| status       | number                | 接口状态 200 成功 ；404 房间不存在 ；500 服务器内部错误 |        |
 | state        | number                | 房间状态 1-开放 2-关闭                                      |        |
 | maxPlayer    | number                | 最大人数                                                    |        |
 | mode         | number                | 模式                                                        |        |
@@ -966,9 +966,9 @@ response.getRoomDetailResponse(rsp:MsGetRoomDetailRsp);
 | roomProperty | string                | 房间属性                                                    |        |
 | owner        | number                | 房主                                                        |        |
 | createFlag   | number                | 创建方式 0-未知 1-系统创建 2-玩家创建                       |        |
-| userInfos    | Array<MsRoomUserInfo> | 用户列表信息                                                |        |
+| userInfos    | Array | 用户列表信息                                                |        |
 | watchinfo    | object                | 观战信息                                                    |        |
-| brigades     | Array<object>         | 组队列表信息                                                |        |
+| brigades     | Array        | 组队列表信息                                                |        |
 
 #### MsRoomUserInfo 的属性
 
@@ -992,7 +992,7 @@ response.getRoomDetailResponse(rsp:MsGetRoomDetailRsp);
 | 属性      | 类型          | 描述           | 示例值 |
 | --------- | ------------- | -------------- | ------ |
 | brigadeID | number        | 大队伍的ID     | 1      |
-| teamList  | Array<object> | 小队伍信息列表 |        |
+| teamList  | Array | 小队伍信息列表 |        |
 
 #### teamList 数据项属性
 
@@ -1002,7 +1002,7 @@ response.getRoomDetailResponse(rsp:MsGetRoomDetailRsp);
 | capacity   | number        | 小队伍人数 | 5                     |
 | mode       | number        | 自定义参数 | 0                     |
 | owner      | number        | 队长       | 123456                |
-| playerList | Array<object> | 队伍成员   |                       |
+| playerList | Array | 队伍成员   |                       |
 
 
 
@@ -1050,7 +1050,7 @@ response.setRoomPropertyResponse(rsp:MsSetRoomPropertyRspInfo);
 
 | 参数         | 类型   | 描述            | 示例值               |
 | ------------ | ------ | --------------- | -------------------- |
-| status       | number | 状态值，200成功<br>400 客户端参数错误 <br>404 房间不存在 <br>500 服务器内部错误| 200                  |
+| status       | number | 状态值，200成功；400 客户端参数错误 ；404 房间不存在 ；500 服务器内部错误| 200                  |
 | roomID       | string | 房间号          | "654354323413134354" |
 | userID       | number | 玩家            | 123                  |
 | roomProperty | string | 修改后的属性值  | “changeRoomProperty” |
@@ -1205,7 +1205,7 @@ response.sendEventResponse(rsp:MsSendEventRsp);
 
 | 属性     | 类型   | 描述                                                         | 示例值 |
 | -------- | ------ | ------------------------------------------------------------ | ------ |
-| status   | number | 状态返回，200表示成功<br>521 gameServer不存在，请检查是否已开启本地调试或在正式环境发布运行gameServer | 200    |
+| status   | number | 状态返回，200表示成功；521 gameServer不存在，请检查是否已开启本地调试或在正式环境发布运行gameServer | 200    |
 | sequence | number | 事件序号，作为事件的唯一标识，可以参考sendEvent，对这个字段的详细说明 | 231212 |
 
 #### 说明
@@ -1377,7 +1377,7 @@ response.kickPlayerResponse(rsp:MsKickPlayerRsp);
 
 | 参数   | 类型   | 描述              | 示例值 |
 | ------ | ------ | ----------------- | ------ |
-| status | number | 接口状态 200 成功 <br>  400 客户端参数错误 <br>404 用户或房间不存在  |        |
+| status | number | 接口状态 200 成功 ；  400 客户端参数错误 ；404 用户或房间不存在  |        |
 | owner  | nunber | 房主ID            |        |
 | userID | number | 被踢玩家ID        |        |
 
@@ -1440,8 +1440,8 @@ engine.subscribeEventGroup(confirms:Array<string>, cancles:Array<string>):number
 
 | 参数     | 类型          | 描述             | 示例值                 |
 | -------- | ------------- | ---------------- | ---------------------- |
-| confirms | Array<string> | 要订阅的组名     | ["1344333","matchvs1"] |
-| cancles  | Array<string> | 要取消订阅的组名 | ["matchvs","4654"]     |
+| confirms | Array | 要订阅的组名     | ["1344333","matchvs1"] |
+| cancles  | Array | 要取消订阅的组名 | ["matchvs","4654"]     |
 
 #### 返回值
 
@@ -1467,7 +1467,7 @@ response.subscribeEventGroupResponse(status:number, groups:Array<string>);
 | 参数   | 类型          | 描述                      | 示例值      |
 | ------ | ------------- | ------------------------- | ----------- |
 | status | number        | 状态值：成功200，其他失败 | 200         |
-| groups | Array<string> | 订阅的组                  | ["MatchVS"] |
+| groups | Array | 订阅的组                  | ["MatchVS"] |
 
 ### 示例代码
 
@@ -1510,7 +1510,7 @@ engine.sendEventGroup(groups:Array<string>, data:string):number
 | 参数   | 类型          | 描述       | 示例值          |
 | ------ | ------------- | ---------- | --------------- |
 | data   | string        | 发送的数据 | “hello matchvs” |
-| groups | Array<string> | 发送的分组 | ["MatchVS"]     |
+| groups | Array | 发送的分组 | ["MatchVS"]     |
 
 #### 返回值
 
@@ -1554,7 +1554,7 @@ response.sendEventGroupNotify(srcUid:number, groups:Array<string>, cpProto:strin
 | 参数      | 类型          | 描述         | 示例值      |
 | --------- | ------------- | ------------ | ----------- |
 | srcUserID | number        | 消息来源用户 | 277773      |
-| groups    | Array<string> | 消息来源分组 | ["MatchVS"] |
+| groups    | Array | 消息来源分组 | ["MatchVS"] |
 | cpProto   | string        | 负载消息     | "test"      |
 
 ### 示例代码
@@ -1635,7 +1635,7 @@ response.setFrameSyncResponse(rsp:MsSetChannelFrameSyncRsp);
 
 | 参数   | 类型   | 描述                                                       | 示例值 |
 | ------ | ------ | ---------------------------------------------------------- | ------ |
-| status | number | 状态：<br>200 成功<br>519 重复设置<br>500 帧率需被1000整除 | 200    |
+| status | number | 状态：200 成功；519 重复设置；500 帧率需被1000整除 | 200    |
 
 ### setFrameSyncNotify
 
@@ -1712,7 +1712,7 @@ response.frameUpdate(data:MsFrameData);
 | 参数           | 类型               | 描述                     | 示例值 |
 | -------------- | ------------------ | ------------------------ | ------ |
 | frameIndex     | number             | 帧序号                   |        |
-| frameItems     | Array<MsFrameItem> | 同步帧内的数据包数组     |        |
+| frameItems     | Array | 同步帧内的数据包数组     |        |
 | frameWaitCount | number             | 同步帧内的数据包数组数量 |        |
 
 #### MsFrameItem 的属性
@@ -1800,7 +1800,7 @@ response.reconnectResponse(status:number, roomUserInfoList:Array<MsRoomUserInfo>
 | 参数             | 类型                  | 描述                                                         | 示例值 |
 | ---------------- | --------------------- | ------------------------------------------------------------ | ------ |
 | status           | number                | 状态返回，200表示成功， 201-重连房间失败但是处于登录状态，其他失败 | 200    |
-| roomUserInfoList | Array<MsRoomUserInfo> | 房间内玩家信息列表                                           |        |
+| roomUserInfoList | Array | 房间内玩家信息列表                                           |        |
 | roomInfo         | MsRoomInfo            | 房间信息构成的对象                                           |        |
 
 #### MsRoomUserInfo 的属性
@@ -2062,7 +2062,7 @@ getWatchRoomsResponse(rooms:MsGetRoomListExRsp);
 | --------- | ---------------------- | ------------------------------------------------------------ | ------ |
 | status    | number                 | 接口调用状态 200 成功，其他值请看 [错误码说明](https://doc.matchvs.com/APIDoc/erroCode) |        |
 | total     | number                 | 房间                                                         |        |
-| roomAttrs | Array<MsRoomAttribute> | 房间信息列信息                                               |        |
+| roomAttrs | Array| 房间信息列信息                                               |        |
 
 MsRoomAttribute 属性可以参考 getRoomListExResponse 接口。
 
@@ -2280,7 +2280,7 @@ liveFrameUpdate(data:MsFrameData):void
 | 参数           | 类型               | 描述                     | 示例值 |
 | -------------- | ------------------ | ------------------------ | ------ |
 | frameIndex     | number             | 帧序号                   |        |
-| frameItems     | Array<MsFrameItem> | 同步帧内的数据包数组     |        |
+| frameItems     | Array | 同步帧内的数据包数组     |        |
 | frameWaitCount | number             | 同步帧内的数据包数组数量 |        |
 
 #### MsFrameItem 的属性

@@ -1,6 +1,4 @@
 
-
-
 [组队示例](http://demo.matchvs.com/RombBoy/)
 
 当前页面是组队相关的API说明。我们同样是以 MatchvsEngine 和 MatchvsResponse 的对象 engine 和 response 来说明。
@@ -24,7 +22,7 @@ Response 是发起方在调用接口后，自己收到的回调；Notify是发�
 | team.visibility  | number | 0-不可见 1-可见       | 1          |
 | status               | number        | 加入队伍状态值        | 200  |
 |    user    | object        |       玩家               |{userID:""}|
-| userList  | array<object> | 队伍玩家列表          |         [{userID:""},{}] |
+| userList  | array | 队伍玩家列表          |         [{userID:""},{}] |
 | userID | number        | 玩家ID                | 2356   |
 | userProfile | string        | 玩家自定义信息        | 如玩家头像|
 
