@@ -41,7 +41,8 @@
 之前的GUI库里必须将皮肤声明为一个独立的EXML文件，再引用它。对于需要复用的皮肤，这种方式比较理想。而对于只用一次的外观，则会比较不便，显得文件也特别多。现在EUI里已经支持EXML的内部类定义方式，可以直接嵌套写在节点内。通常有两种节点支持作为内部类：Skin和ItemRenderer，如下：
 
 ```
-<?xml version='1.0' encoding='utf-8'?> <e:Skin class="skins.DemoSkin" xmlns:e="http://ns.egret.com/eui" minHeight="230" minWidth="470"> <e:Button label="按钮"> <e:Skin states="up,over,down,disable"> <e:Image source="image/button_up.png" includeIn="up" width="100%" height="100%" /> <e:Image source="image/button_down.png" includeIn="down" width="100%" height="100%" /> <e:Label id="LabelDisplay" left="20" right="20" top="10" text="{data.label}" /> </e:Skin> </e:Button> <e:List id="list" cacheAsBitmap="false"> <e:itemRendererSkinName> <e:Skin states="up,down"> <e:Image source="image/button_up.png" includeIn="up" width="100%" height="100%" /> <e:Image source="image/button_down.png" includeIn="down" width="100%" height="100%" /> <e:Label id="LabelDisplay" left="20" right="20" top="10" text="{data.label}" /> </e:Skin> </e:itemRendererSkinName> </e:List> </e:Skin>```
+<?xml version='1.0' encoding='utf-8'?> <e:Skin class="skins.DemoSkin" xmlns:e="http://ns.egret.com/eui" minHeight="230" minWidth="470"> <e:Button label="按钮"> <e:Skin states="up,over,down,disable"> <e:Image source="image/button_up.png" includeIn="up" width="100%" height="100%" /> <e:Image source="image/button_down.png" includeIn="down" width="100%" height="100%" /> <e:Label id="LabelDisplay" left="20" right="20" top="10" text="{data.label}" /> </e:Skin> </e:Button> <e:List id="list" cacheAsBitmap="false"> <e:itemRendererSkinName> <e:Skin states="up,down"> <e:Image source="image/button_up.png" includeIn="up" width="100%" height="100%" /> <e:Image source="image/button_down.png" includeIn="down" width="100%" height="100%" /> <e:Label id="LabelDisplay" left="20" right="20" top="10" text="{data.label}" /> </e:Skin> </e:itemRendererSkinName> </e:List> </e:Skin>
+```
 
 如上面的例子，这个Button的外观只有它自己使用，那么可以从节点内部可以直接开始描述一个Skin，而不需要另外声明一个ButtonSkin的exml文件。另外一个比较常用的是ItemRenderer，ItemRenderer通常都是直接跟List关联的，很少有复用的情况，现在也可以直接嵌入写在List节点内部。
 
@@ -61,7 +62,8 @@ XML的文件结构描述显示列表有着天然的优势。在之前的GUI库�
 另外，之前EXML的模块名是根据所在文件夹路径生成的，现在由于EXML文件变成了运行时解析，有可能只有文本内容，并没有路径信息，因此包名也不再依赖文件路径。我们提供了另一种声明类名的方式：在EXML根节点上设置class属性，class属性的值会被解析并注册为全局类名。若不声明，这个EXML文件解析的类定义会被解析器作为一个临时变量返回。声明方式如下图：
 
 ```
-<?xml version="1.0" encoding="utf-8" ?> <e:Skin class="skins.ButtonSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui"> <e:Image width="100%" height="100%" scale9Grid="1,3,8,8" includeIn="up" source="button_up_png" /> <e:Image width="100%" height="100%" scale9Grid="1,3,8,8" includeIn="down" source="button_down_png" /> <e:Image width="100%" height="100%" scale9Grid="1,3,8,8" includeIn="disabled" source="button_disable_png" /> <e:Label id="labelDisplay" top="10" bottom="10" left="20" right="20" verticalCenter="0" horizontalCenter="0"/> </e:Skin>```
+<?xml version="1.0" encoding="utf-8" ?> <e:Skin class="skins.ButtonSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui"> <e:Image width="100%" height="100%" scale9Grid="1,3,8,8" includeIn="up" source="button_up_png" /> <e:Image width="100%" height="100%" scale9Grid="1,3,8,8" includeIn="down" source="button_down_png" /> <e:Image width="100%" height="100%" scale9Grid="1,3,8,8" includeIn="disabled" source="button_disable_png" /> <e:Label id="labelDisplay" top="10" bottom="10" left="20" right="20" verticalCenter="0" horizontalCenter="0"/> </e:Skin>
+```
 
 ## EXML描述非皮肤对象
 
