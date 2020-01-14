@@ -4,7 +4,7 @@
   "des": "更新详情",
   "in_use": true,
   "children": [{
-    "filename": "/Native/native/update/0.1.23/",
+    "filename": "/Native/update/0.1.23/",
     "text": "Egret Native 0.1.23",
     "des": "Egret Native 0.1.23",
     "in_use": true
@@ -14,126 +14,126 @@
     "des": "历史更新",
     "in_use": true,
     "children": [{
-        "filename": "/Native/native/update/0.1.22/",
+        "filename": "/Native/update/0.1.22/",
         "text": "Egret Native 0.1.22",
         "des": "Egret Native 0.1.22",
         "in_use": true
       }, {
-        "filename": "/Native/native/update/0.1.21/",
+        "filename": "/Native/update/0.1.21/",
         "text": "Egret Native 0.1.21",
         "des": "Egret Native 0.1.21",
         "in_use": true
       } {
-        "filename": "/Native/native/update/0.1.20/",
+        "filename": "/Native/update/0.1.20/",
         "text": "Egret Native 0.1.20",
         "des": "Egret Native 0.1.20",
         "in_use": true
       }, {
-        "filename": "/Native/native/update/0.1.19/",
+        "filename": "/Native/update/0.1.19/",
         "text": "Egret Native 0.1.19",
         "des": "Egret Native 0.1.19",
         "in_use": true
       }, {
-        "filename": "/Native/native/update/0.1.18/",
+        "filename": "/Native/update/0.1.18/",
         "text": "Egret Native 0.1.18",
         "des": "Egret Native 0.1.18",
         "in_use": true
       }, {
-        "filename": "/Native/native/update/0.1.17/",
+        "filename": "/Native/update/0.1.17/",
         "text": "Egret Native 0.1.17",
         "des": "Egret Native 0.1.17",
         "in_use": true
       }, {
-        "filename": "/Native/native/update/0.1.16/",
+        "filename": "/Native/update/0.1.16/",
         "text": "Egret Native 0.1.16",
         "des": "Egret Native 0.1.16",
         "in_use": true
       }, {
-        "filename": "/Native/native/update/0.1.15/",
+        "filename": "/Native/update/0.1.15/",
         "text": "Egret Native 0.1.15",
         "des": "Egret Native 0.1.15",
         "in_use": true
       }, {
-        "filename": "/Native/native/update/0.1.14/",
+        "filename": "/Native/update/0.1.14/",
         "text": "Egret Native 0.1.14",
         "des": "Egret Native 0.1.14",
         "in_use": true
       }, {
-        "filename": "/Native/native/update/0.1.13/",
+        "filename": "/Native/update/0.1.13/",
         "text": "Egret Native 0.1.13",
         "des": "Egret Native 0.1.13",
         "in_use": true
       }, {
-        "filename": "/Native/native/update/0.1.12/",
+        "filename": "/Native/update/0.1.12/",
         "text": "Egret Native 0.1.12",
         "des": "Egret Native 0.1.12",
         "in_use": true
       }, {
-        "filename": "/Native/native/update/0.1.11/",
+        "filename": "/Native/update/0.1.11/",
         "text": "Egret Native 0.1.11",
         "des": "Egret Native 0.1.11",
         "in_use": true
       }, {
-        "filename": "/Native/native/update/0.1.10/",
+        "filename": "/Native/update/0.1.10/",
         "text": "Egret Native 0.1.10",
         "des": "Egret Native 0.1.10",
         "in_use": true
       },
       {
-        "filename": "/Native/native/update/0.1.9/",
+        "filename": "/Native/update/0.1.9/",
         "text": "Egret Native 0.1.9",
         "des": "Egret Native 0.1.9",
         "in_use": true
       }, {
-        "filename": "/Native/native/update/0.1.8/",
+        "filename": "/Native/update/0.1.8/",
         "text": "Egret Native 0.1.8",
         "des": "Egret Native 0.1.8",
         "in_use": true
       },
       {
-        "filename": "/Native/native/update/0.1.7/",
+        "filename": "/Native/update/0.1.7/",
         "text": "Egret Native 0.1.7",
         "des": "Egret Native 0.1.7",
         "in_use": true
       },
       {
-        "filename": "/Native/native/update/0.1.6/",
+        "filename": "/Native/update/0.1.6/",
         "text": "Egret Native 0.1.6",
         "des": "Egret Native 0.1.6",
         "in_use": true
       },
       {
-        "filename": "/Native/native/update/0.1.5/",
+        "filename": "/Native/update/0.1.5/",
         "text": "Egret Native 0.1.5",
         "des": "Egret Native 0.1.5",
         "in_use": true
       },
       {
-        "filename": "/Native/native/update/0.1.4/",
+        "filename": "/Native/update/0.1.4/",
         "text": "Egret Native 0.1.4",
         "des": "Egret Native 0.1.4",
         "in_use": true
       },
       {
-        "filename": "/Native/native/update/0.1.3/",
+        "filename": "/Native/update/0.1.3/",
         "text": "Egret Native 0.1.3",
         "des": "Egret Native 0.1.3",
         "in_use": true
       },
       {
-        "filename": "/Native/native/update/0.1.2/",
+        "filename": "/Native/update/0.1.2/",
         "text": "Egret Native 0.1.2",
         "des": "Egret Native 0.1.2",
         "in_use": true
       },
       {
-        "filename": "/Native/native/update/0.1.1/",
+        "filename": "/Native/update/0.1.1/",
         "text": "Egret Native 0.1.1",
         "des": "Egret Native 0.1.1",
         "in_use": true
       },
       {
-        "filename": "/Native/native/update/0.1.0/",
+        "filename": "/Native/update/0.1.0/",
         "text": "Egret Native 0.1.0",
         "des": "Egret Native 0.1.0",
         "in_use": true
@@ -146,22 +146,22 @@
   "des": "使用手册",
   "in_use": true,
   "children": [{
-      "filename": "/Native/native/projectsetting/",
+      "filename": "/Native/manual/projectsetting/",
       "text": "如何发布原生项目",
       "des": "如何发布原生项目",
       "in_use": true
     }, {
-      "filename": "/Native/native/microclient/",
+      "filename": "/Native/manual/microclient/",
       "text": "如何发布微端项目",
       "des": "如何发布微端项目",
       "in_use": true
     }, {
-      "filename": "/Native/native/externalinterface/",
+      "filename": "/Native/manual/externalinterface/",
       "text": "JS与原生通信",
       "des": "JS与原生通信",
       "in_use": true
     }, {
-      "filename": "/Native/native/hotupdate/",
+      "filename": "/Native/manual/hotupdate/",
       "text": "热更新方案说明",
       "des": "热更新方案说明",
       "in_use": true
@@ -172,33 +172,33 @@
       "in_use": true,
       "isFolder": true,
       "children": [{
-        "filename": "/Native/native/hybrid/hybrid/",
+        "filename": "/Native/manual/hybrid/hybrid/",
         "text": "如何使用 Hybrid",
         "des": "如何使用 Hybrid",
         "in_use": true
       }, {
-        "filename": "/Native/native/hybrid/api/",
+        "filename": "/Native/manual/hybrid/api/",
         "text": "Hybrid API 文档",
         "des": "Hybrid API 文档",
         "in_use": true
       }]
     }, {
-      "filename": "/Native/native/httpcache/",
+      "filename": "/Native/manual/httpcache/",
       "text": "原生缓存策略",
       "des": "原生缓存策略",
       "in_use": true
     }, {
-      "filename": "/Native/native/runtimestate/",
+      "filename": "/Native/manual/runtimestate/",
       "text": "事件回调",
       "des": "事件回调",
       "in_use": true
     }, {
-      "filename": "/Native/native/fontFamily/",
+      "filename": "/Native/manual/fontFamily/",
       "text": "使用自定义字体",
       "des": "使用自定义字体",
       "in_use": true
     }, {
-      "filename": "/Native/native/nativefaq/",
+      "filename": "/Native/manual/nativefaq/",
       "text": "原生项目常见问题",
       "des": "原生项目常见问题",
       "in_use": true
