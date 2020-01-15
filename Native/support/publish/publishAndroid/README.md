@@ -1,3 +1,4 @@
+
 > 基于Android Studio 的 Android Support ,是用于创建Android Studio上的 Android 工程的模版。当前是预览版教程。
 
 ## Mac 打包
@@ -58,9 +59,6 @@
 ![](p3.png)
 
 ![](p5.png)
-
-
-![](57710410a0e22.png)
 
 然后“确定”“确定”“确定”。完成后，建议重启电脑。
 

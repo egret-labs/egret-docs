@@ -1,3 +1,4 @@
+
 ## 当前文件缓存策略
 
 游戏运行过程中下载的文件会缓存在本地，参考“原生缓存策略”。
@@ -56,7 +57,7 @@ String getFileDirByUrl(String urlString /*"http://game.com/game/index.html"*/) {
 
 以Android为例，解压完成后 /sdcard/egretGame/http/game.com/game/ 下的内容如下：
 
-![](p1.png)
+![](./p1.png)
 
 游戏资源解压完成后，设置config.preloadPath指定预加载目录，启动游戏后runtime会优先从这个目录加载资源。
 

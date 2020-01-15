@@ -1,3 +1,4 @@
+
 - **[新增]** 添加了 performance.now()
 - **[新增]** 添加了 getSystemInfo() 获得手机厂商和型号
 - **[新增]** 支持 atob(), btoa()

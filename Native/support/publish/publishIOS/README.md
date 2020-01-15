@@ -1,3 +1,4 @@
+
 egret-ios-support是Egret打包为原生ios APP的方案，你可以使用egret-ios-support将你的HTML5游戏打包为ipa文件，并提供给用户安装。
 
 具体使用方法如下：
@@ -17,8 +18,6 @@ egret-ios-support是Egret打包为原生ios APP的方案，你可以使用egret-
     * 编写游戏逻辑需要：JavaScript、TypeScript、nodejs、npm
 
     * 打包iOS App需要：Objective-C、C++、Xcode
-
-> 建议在阅读本文之前先阅读 [Get Started](../../../Engine2D/getStarted/helloWorld/README.md)
 
 ## 文档概述
 
@@ -60,9 +59,6 @@ $ mkdir projects
 
 ![](566649898fba5.png)
 
-### 安装Egret
-
-传送门：[Mac OS X 系统下安装最新的Egret](../../../Engine2D/projectConfig/installation/README.md)。
 
 ### 下载Egret的iOS支持包
 

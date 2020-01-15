@@ -1,3 +1,4 @@
+
 - **[修正]** TouchMove事件可能乱序
 - **[修正]** egret.RenderTexture.toDataURL返回值为空
 - **[修正]** 从跳转到第三方Activity之后访问assets目录的资源可能会崩溃

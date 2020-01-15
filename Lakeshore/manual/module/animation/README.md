@@ -41,7 +41,7 @@
 - 参与碰撞：设置动画实例是否参与碰撞。默认值为“否”。
 
 ### 动画条件
-动画组件除特有条件外，也适用所有通用条件，参看：[通用条件](../../../../Lakeshore/manual/commonElements/conditions/README.md)
+动画组件除特有条件外，也适用所有通用条件，参看：[通用条件](../../commonElements/conditions/README.md)
 
 ![](565bf97ec1734.png)
 #### 全部播放完毕
@@ -77,7 +77,7 @@
 ![](565bf97f56518.png)
 
 ### 动画动作
-动画组件除特有动作外，也适用所有通用动作，参看：[通用动作](../../../../Lakeshore/manual/commonElements/action/README.md)
+动画组件除特有动作外，也适用所有通用动作，参看：[通用动作](../../commonElements/action/README.md)
 
 ![](565bf96f7d716.png)
 #### 跳到指定帧播放

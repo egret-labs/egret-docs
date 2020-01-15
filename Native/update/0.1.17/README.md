@@ -1,3 +1,4 @@
+
 - **[新增]** 原生渲染支持自定义字体
 - **[新增]** 支持更多的WebGLExtension: `OES_texture_float`、`OES_standard_derivatives`
 - **[修正]** 在打开原生显示列表时，位图字体时可能导致程序崩溃

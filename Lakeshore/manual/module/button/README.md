@@ -17,7 +17,7 @@
 
 
 ### 按钮条件
-按钮组件除特有条件外，也适用部分通用条件（按钮不支持“碰撞”相关条件），参看：[通用条件](../../../../Lakeshore/manual/commonElements/conditions/README.md)
+按钮组件除特有条件外，也适用部分通用条件（按钮不支持“碰撞”相关条件），参看：[通用条件](../../commonElements/conditions/README.md)
 
 ![](564ac01e6ec2e.png)
 #### 当按住时
@@ -50,7 +50,7 @@
 
 
 ### 按钮动作
-按钮组件除特有动作外，也适用部分通用动作（按钮不支持“碰撞”相关动作），参看：[通用动作](../../../../Lakeshore/manual/commonElements/action/README.md)
+按钮组件除特有动作外，也适用部分通用动作（按钮不支持“碰撞”相关动作），参看：[通用动作](../../commonElements/action/README.md)
 
 ![](564ac024888b3.png)
 #### 文本内容

@@ -1,3 +1,4 @@
+
 ## 准备工作
 
 Eget 的 H5 项目通过 Egret Android Suppord 或 Egret IOS Support 可以生成相应的 Native 项目。如果需要设置项目的横竖屏等信息，需要在相应的 Native 项目中进行设置。

@@ -1,4 +1,6 @@
 
+
+
 [组队示例](http://demo.matchvs.com/RombBoy/)
 
 当前页面是组队相关的API说明。我们同样是以 MatchvsEngine 和 MatchvsResponse 的对象 engine 和 response 来说明。

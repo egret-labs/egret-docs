@@ -32,7 +32,7 @@
 
 
 ### 文本条件
-文本组件除特有条件外，也适用部分通用条件（文本不支持“碰撞”相关条件）。参见：[通用条件](../../../../Lakeshore/manual/commonElements/conditions/README.md)
+文本组件除特有条件外，也适用部分通用条件（文本不支持“碰撞”相关条件）。参见：[通用条件](../../commonElements/conditions/README.md)
 
 ![](564ad9fa5cfc5.png)
 #### 比较文本内容
@@ -44,7 +44,7 @@
 
 
 ### 文本动作
-文本组件除特有动作外，也适用部分通用动作（文本不支持“碰撞”相关动作）。参见：[通用动作](../../../../Lakeshore/manual/commonElements/action/README.md)
+文本组件除特有动作外，也适用部分通用动作（文本不支持“碰撞”相关动作）。参见：[通用动作](../../commonElements/action/README.md)
 
 ![](564ad9f917a87.png)
 #### 文本内容

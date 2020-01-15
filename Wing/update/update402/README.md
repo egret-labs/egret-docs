@@ -1,4 +1,4 @@
-最新版本下载地址
+最新版本下载地址
 
 - [Egret Wing 4.0.2 for Windows](http://tool.egret-labs.org/EgretWing/electron/EgretWing-v4.0.2.exe?d=0221)
 - [Egret Wing 4.0.2 for Mac OS](http://tool.egret-labs.org/EgretWing/electron/EgretWing-v4.0.2.dmg?d=0221)
