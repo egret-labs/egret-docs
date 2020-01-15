@@ -11,7 +11,7 @@
 
 仍然用 3 个按钮进行布局设置示例：
 
-``` TypeScript   
+~~~ typescript
 var btn1:eui.Button = new eui.Button();
 btn1.label = "button A";
 var btn2:eui.Button = new eui.Button();
@@ -33,7 +33,7 @@ tLayout.paddingLeft = 30;
 tLayout.paddingBottom = 10;
 tLayout.requestedColumnCount = 2;  /// 设置两列显示
 this.myGroup.layout = tLayout;    /// 网格布局
-```    
+~~~  
 
 效果如图：
 

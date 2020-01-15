@@ -71,7 +71,7 @@ var msg = sock.readUTF();
 
 将上一节所述的各部分用法连接起来：
 
-```
+``` typescript
 private webSocket:egret.WebSocket;
 private createGameScene():void {    
     this.webSocket = new egret.WebSocket();        
@@ -88,7 +88,7 @@ private onReceiveMessage(e:egret.Event):void {
     var msg = this.webSocket.readUTF();    
     console.log("收到数据：" + msg);
 }
-```
+``` 
 访问 [这里](http://static.egret-labs.org/egret-game/example/html5/websocket/) 查看演示示例
 
 ## 注意事项

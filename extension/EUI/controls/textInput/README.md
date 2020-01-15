@@ -9,7 +9,7 @@ EUI 提供了输入文本控件，使用 `eui.EditableText` 可以创建可供�
 新建一个 `EditableTextDemo` 类，并绘制一张背景，具体代码如下：
 
 
-``` TypeScript
+~~~ typescript 
 class EditableTextDemo extends eui.Group {
     public constructor () {
         super();
@@ -20,11 +20,11 @@ class EditableTextDemo extends eui.Group {
     private myEditableText:eui.EditableText = new eui.EditableText();    
 
 }
-```
+~~~ 
 
 通过 `eui.EditableText()` 新建一个输入文本控件，代码如下。
 
-``` TypeScript
+~~~ typescript 
 class EditableTextDemo extends eui.Group {
     public constructor () {
         super();
@@ -54,7 +54,7 @@ class EditableTextDemo extends eui.Group {
     private myEditableText:eui.EditableText = new eui.EditableText();
 
 }
-```
+~~~ 
 
 `EditableTextDemo` 类的实例需要被添加至舞台才可以显示出来。编译运行项目，效果如下。
 
@@ -63,33 +63,33 @@ class EditableTextDemo extends eui.Group {
 同时，可以操作 `myEditableText` 的其他属性，比如说添加自动换行，添加密码显示等。在上面的构造函数中可以添加下面的代码：
 
 
-``` TypeScript
+~~~ typescript 
 
 //添加密码显示 添加在 constructor () 内.
 this.myEditableText.displayAsPassword = true;                             
 
-```
+~~~ 
 效果如下：
 
 ![](566a901819013.png)
 
 当用户输入了文本之后，可以通过 `text` 属性获得用户输入的内容。修改上面代码，添加在 constructor () 内，具体如下：
 
-``` TypeScript
+~~~ typescript 
 //让文本能被显示出来.
 this.myEditableText.displayAsPassword = fale; 
 //表示文本字段是否按单词换行。如果值为 true，则该文本字段按单词换行；反之则该文本字段按字符换行。
 this.myEditableText.wordWrap = true;                                     
 //添加监听，监听用户的输入
 this.myEditableText.addEventListener(egret.Event.CHANGE,this.onChang,this);             
-```
+~~~ 
 
 再添加一个处理函数，在 EditableTextDemo 内添加：
-``` TypeScript
+~~~ typescript 
 private onChang(e:egret.Event){
     egret.log(e.target.text);
 }    
-```
+~~~ 
 
 效果如下:
 
@@ -99,25 +99,26 @@ private onChang(e:egret.Event){
 
 TextInput 控件是文本输入控件。它的默认皮肤如下：
 
-```
-<?xml version='1.0' encoding='utf-8'?> <e:Skin class="skins.TextInputSkin" minHeight="40" minWidth="300" 
-            states="normal,disabled,normalWithPrompt,disabledWithPrompt" xmlns:e="http://ns.egret.com/eui"> <e:Image width="100%" height="100%" scale9Grid="1,3,8,8" source="button_up_png"/> <e:Rect height="100%" width="100%" fillColor="0xffffff"/> <e:EditableText id="textDisplay" verticalCenter="0" left="10" right="10"
-	         textColor="0x000000" textColor.disabled="0xff0000" 
-	         width="200" height="100%" size="20" /> <e:Label id="promptDisplay" verticalCenter="0" left="10" right="10"
-	         textColor="0xa9a9a9" width="100%" height="24" size="20" 
-	         touchEnabled="false" includeIn="normalWithPrompt,disabledWithPrompt"/> </e:Skin>
-```
+~~~ typescript
+<?xml version='1.0' encoding='utf-8'?> 
+<e:Skin class="skins.TextInputSkin" minHeight="40" minWidth="300" 
+            states="normal,disabled,normalWithPrompt,disabledWithPrompt" xmlns:e="http://ns.egret.com/eui"> 
+    <e:Image width="100%" height="100%" scale9Grid="1,3,8,8" source="button_up_png"/> <e:Rect height="100%" width="100%" fillColor="0xffffff"/> 
+    <e:EditableText id="textDisplay" verticalCenter="0" left="10" right="10" textColor="0x000000"textColor.disabled="0xff0000" width="200" height="100%" size="20" /> 
+    <e:Label id="promptDisplay" verticalCenter="0" left="10" right="10" textColor="0xa9a9a9" width="100%" height="24" size="20" touchEnabled="false" includeIn="normalWithPrompt,disabledWithPrompt"/> 
+</e:Skin>
+~~~ 
 
 它的皮肤需要包含一个 `EditableText` 文本实体输入组件 `textDisplay` 和一个 `Label` 组件 `promptDisplay`。我们可以选择使用给它添加一个背景,这样来组成一个 TextInput 的皮肤。
 
 在程序中使用 TextInput 跟其他控件类似，可以参考下面代码:
 
-```
+~~~ typescript
 var textInput = new eui.TextInput();
 textInput.skinName = "resource/eui_skins/TextInputSkin.exml";
 textInput.prompt = "请输入文字";
 this.addChild(textInput);
-```
+~~~ 
 
 通过设置 `protmpt` 属性来设置默认的文字。也可以通过 `textDisplay` 属性来取得文本输入组件。
 

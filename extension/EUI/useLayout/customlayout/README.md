@@ -1,7 +1,7 @@
 Egret eui库内置的4个布局类基本上可以满足大部分需求，不过在一些特殊情况下，可能会需要一些特殊的布局方式。此时可以制作自定义布局类，代替默认的布局类。   
 
 新建一个MyLayout.ts，扩展自 eui.LayoutBase:   
-``` TypeScript
+~~~ typescript 
 module uilayout {
 
     var UIComponentClass = "eui.UIComponent";
@@ -55,13 +55,13 @@ module uilayout {
         }
     }
 }
-```    
+~~~     
 
 然后修改前几节中的例子，改为使用自定义布局类(通过设置group.layout属性)：    
 
 > 基本代码可以参考前面几节。下面是修改其中的myGroup为自定义布局。
 
-``` TypeScript
+~~~ typescript 
 this.myGroup.horizontalCenter = 0;
 this.myGroup.layout = new uilayout.RingLayout();//自定义布局
 this.addChild( this.myGroup );
@@ -73,7 +73,7 @@ for(var i:number=0;i<20;i++) {
    btn.label = "Button"+i;
    this.myGroup.addChild( btn );
 }
-```   
+~~~    
 
 运行生成效果：
 

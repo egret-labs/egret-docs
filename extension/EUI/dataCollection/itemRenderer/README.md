@@ -1,7 +1,7 @@
 前面的章节我们介绍了 DataGroup 和 List，发现里面都用到了 ItemRenderer 。它的作用实际上就是根据数据源，把当前的数据可视化的显示出来。ItemRenderer 中有一个默认的属性 data ，引擎会自动把通过 dataProvider 设置的的数据赋值给 data。
 用一段代码来举例,
 
-~~~ TypeScript
+~~~ typescript
 class ItemRendererDemo extends eui.Group {
     public constructor() {
         super();
@@ -31,7 +31,7 @@ class ItemRendererDemo extends eui.Group {
     }
 }
 ~~~
-``` TypeScript
+~~~ typescript 
 class LabelRenderer extends eui.ItemRenderer {
 	private labelDisplay:eui.Label;
     public constructor(){
@@ -49,7 +49,7 @@ class LabelRenderer extends eui.ItemRenderer {
         this.labelDisplay.text = this.data.label;
     }
 }
-```
+~~~ 
 显示效果：
 ![](5604f86edd6d2.png)
 在上面的代码示例中，继承自 `eui.ItemRenderer` 的 LabelRenderer 类中，有一个文本行 labelDisplay 。
@@ -58,7 +58,7 @@ class LabelRenderer extends eui.ItemRenderer {
 如果 ItemRenderer 类中只是显示皮肤，没有自定义的逻辑方法。完全可以不创建自定义的 ItemRenderer 类，而通过 `dataGroup.itemRendererSkinName()` 方法直接使用 exml 描述文件来实现皮肤显示和数据绑定。显示效果完全相同，但可以少写一个类文件。
 
 另外，像上面这个创建显示 DataGroup 的示例，也完全可以用一个 exml 文件实现，不需要写这么多代码。
-~~~ TypeScript
+~~~ typescript
 class ItemRendererDemo extends eui.Group {
     constructor() {
         super();

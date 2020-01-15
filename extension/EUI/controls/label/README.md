@@ -3,18 +3,18 @@
 基本的文本使用请参考 [Egret Engine - 处理文本](../../../../Engine2D/textField/createText/README.md)
 
 示例如下：
-```  TypeScript
+~~~ typescript 
 var label:eui.Label = new eui.Label();
 label.text = "eui Label test";
 this.addChild(label);
-```
+~~~ 
 效果如下：
 
 ![](560154d02a353.png)
 
 上面设置了文本的显示文字，此外还可以修改样式，实现不同的显示效果：
 
-```  TypeScript
+~~~ typescript  
 label.width = 400;//设置宽度
 label.height = 300;//设置高度
 label.fontFamily = "Tahoma";//设置字体
@@ -24,19 +24,19 @@ label.bold = true;//设置是否加粗
 label.italic = true;//设置是否斜体
 label.textAlign = "right";//设置水平对齐方式
 label.verticalAlign = "middle";//设置垂直对齐方式
-```
+~~~ 
 效果如下：
 
 ![](560154da0bf2f.png)
 
 Label既可以显示单行文本，也可以显示多行文本。当为Label设定了宽度，并且文字过长的时候，会自动换行。
-```  TypeScript
+~~~ typescript  
 label.width = 200;
 label.height = 60;
 label.size = 14;
 label.lineSpacing = 2;//行间距
 label.text = "test test test test test test test test test test";
-```
+~~~ 
 效果如下：
 
 ![](560154ede9474.png)

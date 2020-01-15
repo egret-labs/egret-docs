@@ -5,7 +5,7 @@
 
 下面是List的基本用法：
 
-``` TypeScript
+~~~ typescript 
 class Main extends eui.Group {
     constructor() {
         super();
@@ -28,7 +28,7 @@ class Main extends eui.Group {
         console.log(this.list.selectedItem,this.list.selectedIndex)
     }
 }
-```
+~~~ 
 效果如下：
 
 ![](5604f13909a44.png)
@@ -71,4 +71,4 @@ list.requireSelection = true;
 
 列表配合 Scroller 使用可以实现滚动效果。
 
-具体参考文档：[定位滚动位置](../../../../extension/EUI/container/scroller/#定位滚动位置)
+具体参考文档：[定位滚动位置](../../container/scroller/README.md#定位滚动位置)

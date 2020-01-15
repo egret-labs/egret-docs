@@ -4,7 +4,7 @@ ViewStack 是层叠容器，在 ViewStack 容器中可以添加多个子项，�
 
 首先创建一个专用于显示 ViewStack 的类：
 
-``` TypeScript
+~~~ typescript 
 class ViewStackDemo extends eui.Group {
     private viewStack:eui.ViewStack;
     public constructor() {
@@ -35,11 +35,11 @@ class ViewStackDemo extends eui.Group {
     }
 }
 
-```
+~~~ 
 
 可以看到 ViewStack 中的两个按钮按照设定的间隔自动变换的效果： 
 
 ![](5608f2da1e4ac.png)  ![](5608f2da5e32a.png)
 
 ### TabBar
-ViewStack通常都同时配合导航条使用，这部分内容请参考 [选项卡](../../../../extension/EUI/dataCollection/tabBar/README.md) 章节
+ViewStack通常都同时配合导航条使用，这部分内容请参考 [选项卡](../../dataCollection/tabBar/README.md) 章节

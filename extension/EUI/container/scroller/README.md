@@ -8,7 +8,7 @@ EUI 中已经提供了一个组件：Scroller。开发者只需要创建一个 S
 
 下面的示例中我们使用一张比较大的图片，手机屏幕显示不下，然后用 Scroller 处理：
 
-``` TypeScript
+~~~ typescript 
 class ScrollerDemo extends eui.Group {
     constructor() {
         super();
@@ -30,7 +30,7 @@ class ScrollerDemo extends eui.Group {
     }
 }
 
-```
+~~~ 
 > 注意位置和尺寸的约束应该是在 Scroller 上面，而不是容器上面。
 
 实现效果：
@@ -39,10 +39,10 @@ class ScrollerDemo extends eui.Group {
 
 ## 定位滚动位置
 除了通过手指控制 Scroller , 通过代码也可以获取和控制滚动的位置
-``` 
+~~~ typescript 
 Scroller.viewport.scrollV  纵向滚动的位置
 Scroller.viewport.scrollH  横向滚动的位置
-``` 
+~~~  
 改变这2个值，就可以改变滚动的位置。
 下面是一个滚动的示例，初始化以后就会改变 Scroller 里列表的位置，点击按钮也会移动列表。
 ~~~ TypeScript
@@ -92,7 +92,7 @@ Scroller.viewport.contentHeight 是滚动内容的高度，这个值是固定的
 
 Scroller 中有 `stopAnimation()` 方法，可以立即停止当前的滚动动画。扩展上面的代码，在`moveScroller`函数中加入停止动画的方法。
 
-```
+~~~ typescript
 private moveScroller(): void {
     //点击按钮后改变滚动的位置
     var sc = this.scroller;
@@ -104,7 +104,7 @@ private moveScroller(): void {
     //停止正在滚动的动画
     sc.stopAnimation();
 }
-```
+~~~ 
 
 在滚动的过程中点击按钮就可以立即停止滚动动画。
 
@@ -114,17 +114,17 @@ private moveScroller(): void {
 
 默认的 `autoVisibility` 属性为`true`,即自动隐藏的。当我们把 `autoVisibility` 的属性设置为 `false` 时，是否显示滚动条取决于 ScrollerBar 的 `visible` 属性，当 `visible` 为 `true` 时始终显示滚动条，为 `false` 时始终隐藏滚动条。比如下面的 EXML 设置永不显示滚动条。
 
-```
+~~~ typescript
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="skins.ScrollerSkin" minWidth="20" minHeight="20" xmlns:e="http://ns.egret.com/eui">
     <e:HScrollBar id="horizontalScrollBar" width="100%" bottom="0" autoVisibility = "false" visible="false"/>
     <e:VScrollBar id="verticalScrollBar" height="100%" right="0" autoVisibility = "false" visible="false"/>
 </e:Skin>
-```
+~~~ 
 
 当添加该滚动条到舞台以后可发现不会再显示垂直方向的滚动条:
 
-```
+~~~ typescript
 var scroller = new eui.Scroller();
 
 var list = new eui.List();
@@ -133,7 +133,7 @@ scroller.viewport = list;
 scroller.height = 200;
 
 this.addChild(scroller);
-```
+~~~ 
 
 效果如下图所示:
 
@@ -141,7 +141,7 @@ this.addChild(scroller);
 
 当然也可以在 TS 代码中直接修改 `autoVisibility`属性如下:
 
-```
+~~~ typescript
 var scroller = new eui.Scroller();
 
 var list = new eui.List();
@@ -153,4 +153,4 @@ this.addChild(scroller);
 //需要在scroller添加到舞台上面之后再访问verticalScrollBar
 scroller.verticalScrollBar.autoVisibility = false;
 scroller.verticalScrollBar.visible = false;
-```
+~~~ 

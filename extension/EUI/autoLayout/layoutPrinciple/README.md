@@ -1,4 +1,4 @@
-自动布局本质上就是封装了各种更加便捷的相对布局属性，结合[失效验证机制](../../../../extension/EUI/autoLayout/FailureToVerify/README.md)，在合适的触发条件下(如尺寸发生改变时)，自动设置相关对象的`x`，`y`，`width`，`height`等属性。所以无论过程是怎么样的，最终结果都是直接体现在`x`,`y`,`width`,`height`这些最原始的属性上，并没有脱离显示对象原始的API。
+自动布局本质上就是封装了各种更加便捷的相对布局属性，结合[失效验证机制](../../autoLayout/FailureToVerify/README.md)，在合适的触发条件下(如尺寸发生改变时)，自动设置相关对象的`x`，`y`，`width`，`height`等属性。所以无论过程是怎么样的，最终结果都是直接体现在`x`,`y`,`width`,`height`这些最原始的属性上，并没有脱离显示对象原始的API。
 
 在上一节内容中，简单介绍了跟布局有关的两个方法：`measure()`和`updateDisplayList()`。本节详细说明这个两个方法：
 
@@ -12,7 +12,7 @@ EUI 里所有的组件都是这样：如果不显式设置宽高，就调用`mea
 
 `Group`是容器基类。它不负责具体的布局规则，而是做了一个解耦处理。增加`layout`属性，类型为`LayoutBase`。`Group`中的`measure()`和`updateDisplayList()`方法的内容为：
 
-```
+~~~ typescript
 protected measure():void {
     if (!this.$layout) {
         this.setMeasuredSize(0, 0);
@@ -27,6 +27,6 @@ protected updateDisplayList(unscaledWidth:number, unscaledHeight:number):void {
     }
     this.updateScrollRect();
 }
-```
+~~~ 
 `Group`把自己的`measure()`方法交给`layout.measure()`实现，`updateDisplayList()`交给`layout.updateDisplayList()`实现。也就是把具体的布局方式解耦出来，形成独立的`LayoutBase`类。这样所有的容器都可以采用`Group+LayoutBase`的组合的方式，来设置任意的布局。
 

@@ -1,6 +1,23 @@
 对于一个自定义的皮肤，名称为**testSkin.exml**，有两种方式使用它
 ~~~ typescript
-<?xml version="1.0" encoding="utf-8"?> <e:Skin class="mySkin.TestSkin" xmlns:e="http://ns.egret.com/eui"> <e:DataGroup> <e:itemRendererSkinName> <e:Skin> <e:Label textColor="0xfd0000" text="{data.label}"/> </e:Skin> </e:itemRendererSkinName> <e:ArrayCollection> <e:Array> <e:Object label="item1"/> <e:Object label="item2"/> <e:Object label="item3"/> </e:Array> </e:ArrayCollection> </e:DataGroup> </e:Skin>~~~
+<?xml version="1.0" encoding="utf-8"?> 
+<e:Skin class="mySkin.TestSkin" xmlns:e="http://ns.egret.com/eui"> 
+	<e:DataGroup> 
+		<e:itemRendererSkinName> 
+			<e:Skin> 
+				<e:Label textColor="0xfd0000" text="{data.label}"/> 
+			</e:Skin> 
+		</e:itemRendererSkinName> 
+		<e:ArrayCollection> 
+			<e:Array> 
+				<e:Object label="item1"/> 
+				<e:Object label="item2"/> 
+				<e:Object label="item3"/> 
+			</e:Array> 
+		</e:ArrayCollection> 
+	</e:DataGroup>
+</e:Skin>
+~~~
 
 
 ## 方式1 加载文件
@@ -30,7 +47,7 @@ class TestSkin extends eui.Component {
 egret create euiDemo --type eui
 ~~~
 创建一个 eui 项目，里面默认就会有主题管理解析的示例。
-[具体方式可以查看文档](../theme/README.MD)
+[具体方式可以查看文档](../theme/README.md)
 
 方式1的代码还可以正常使用，但是console 会先输出 **onComplete** 再输出 **createChildren**，和之前相反。这是因为主题已经加载过这个 exml 文件了，所以不需要重新加载。
 

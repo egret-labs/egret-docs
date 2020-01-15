@@ -4,11 +4,11 @@
 
 使用 `egret.Image` 加载并显示图片的代码如下：
 
-```  TypeScript
+~~~ typescript  
 var image = new  eui.Image();
 image.source = "image/icon.png";
 this.addChild(image);
-```
+~~~ 
 
 ## 显示一个九宫格的图片
 
@@ -26,11 +26,11 @@ Image 的 `scale9Grid` 属性是一个指定的矩形区域，矩形区域对应
 
 显示一个指定尺寸为 200x200 的九宫格图片，代码如下：
 
-```  TypeScript
+~~~ typescript  
 var image = new eui.Image();
 image.source = "image/uibg.png";
 image.scale9Grid = new egret.Rectangle(10,10,80,80);
 image.width = 200;
 image.height = 200;
 this.addChild(image);
-```
+~~~ 

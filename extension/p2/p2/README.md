@@ -8,21 +8,21 @@
 
 所谓刚体，就是在外力作用下,物体的形状和大小(尺寸)保持不变,而且内部各部分相对位置保持恒定(没有形变)的理想物理模型。 在物理引擎中简言之，就是一个独立的物体，可以有相对于其他物体的位移、旋转，并且可以跟它们产生碰撞。 在egret中创建刚体很简单：
 
-```
+``` typescript
 //创建刚体 
 var body:p2.Body = new p2.Body();
-```
+``` 
 
 ## 创建形状
 
 实际显示可能有多种不同的形状，p2引擎已经准备了丰富的类型，以适应各种不同的需要。 我们举两个简单的例子，一个是矩形，一个是平面：
 
-```
+``` typescript
 //创建宽4单位、高2单位的矩形形状
 var shpRect:p2.Shape = new p2.Rectangle( 4, 2 );
 //创建平面形状
 var shpPlane:p2.Plane = new p2.Plane();
-```
+``` 
 
 其中的单位是在物理引擎中设置的单位，跟实际的像素不是一个概念。具体的用法demo有提及，如果希望深入理解请学习底部的进阶详细教程。
 
@@ -30,32 +30,32 @@ var shpPlane:p2.Plane = new p2.Plane();
 
 每一个形状具有显示特性，要在物理引擎中计算其物理特性，那必须要将每一个独立形状绑定到刚体。 接下来分别为刚才创建的形状绑定：
 
-```
+``` typescript
 //绑定矩形到刚体
 var bodyRect:p2.Body = new p2.Body();
 bodyRect.addShape( shpRect );
 //绑定平面到刚体
 var bodyPlane:p2.Body = new p2.Body();
 bodyPlane.addShape( shpPlane );
-```
+``` 
 
 ### 将刚体加入物理世界
 
 所有需要物理引擎计算的显示对象，我们先绑定到刚体，然后需要添加到一个物理世界或物理空间，即一个World实例中。World是以刚体作为单位来进行各种物理模拟及计算的，如下所示：
 
-```
+``` typescript
 //创建world对象
 var world:p2.World = new p2.World();
 //将之前创建的刚体加入world
 world.addBody( bodyRect );
 world.addBody( bodyPlane );
-```
+``` 
 
 ## 使world动起来
 
 都准备好了，然后就按特定的频率运行物理世界，用world.step即可：
 
-```
+``` typescript
 //添加帧事件侦听
 
 egret.Ticker.getInstance().register(function (dt) {
@@ -65,15 +65,15 @@ egret.Ticker.getInstance().register(function (dt) {
     world.step(dt / 1000);
 
 }, this);
-```
+``` 
 
 ## 优化性能的小技巧
 
 我们可以设置刚体一定时间后自动进入睡眠状态以提高性能，一行搞定：
 
-```
+``` typescript
 world.sleepMode = p2.World.BODY_SLEEPING;
-```
+``` 
 
 ## 与egret中显示对象的结合
 
@@ -93,7 +93,7 @@ world.sleepMode = p2.World.BODY_SLEEPING;
 ### 物理对象的创建和使用
 首先创建一个物理世界：
 
-```
+``` typescript
 var world:p2.World;
 创建Body，并加入world中：
 
@@ -104,13 +104,13 @@ var p2body:p2.Body = new p2.Body(
     }
 );
 world.addBody(body);
-```
+``` 
 
 创建Body中的参数含义，我们将在后文中结合游戏示例代码说明。
 
 为p2.Body设置显示内容：
 
-```
+``` typescript
 boxBody.displays = [display];
 display是一个egret.DisplayObject实例，该语句就是用来创建p2物理世界对象和实际显示对象的关联的。物理世界发生的所有的变化，都需要设置其关联的显示对象以同步其状态。
 
@@ -120,7 +120,7 @@ var boxBody:p2.Body = world.bodies[i];
 从p2.Body中取出显示对象：
 
 var box:egret.DisplayObject = boxBody.displays[0];
-```
+``` 
 
 ## 物理世界的坐标系及长度计算
 
@@ -128,16 +128,16 @@ var box:egret.DisplayObject = boxBody.displays[0];
 
 Egret显示对象egret.DisplayObject的宽度需要进行换算，即乘以该因数。 每个运行推进函数中同步显示对象与刚体的位置关系：
 
-```
+``` typescript
 disp.x = body.position[0] * factor;
 disp.y = stageHeight - body.position[1] * factor;
-```
+``` 
 
 注意：高度因为坐标系不一致需要修正！ 角度需要同步：
 
-```
+``` typescript
 disp.rotation = 360 - body.angle * 180 / Math.PI;
-```
+``` 
 
 对于某一个物体对象，在p2中，宽度高度是在Shape中设定的；位置和旋转却是由绑定该形状的Body设定。
 
@@ -148,18 +148,18 @@ disp.rotation = 360 - body.angle * 180 / Math.PI;
 
 创建Shape过程，直接传入参数才有效。
 
-```
+``` typescript
 var rectShape:p2.Rectangle = new p2.Rectangle( 4, 2 );
-```
+``` 
 
 如果换成：
 
-```
+``` typescript
 var rectShape:p2.Rectangle = new p2.Rectangle;
 rectShape.width = 4;
 rectShape.height = 2;
 rectShape.updateArea();
-```
+``` 
 
 也是无法生效的！
 
@@ -169,9 +169,9 @@ rectShape.updateArea();
 在物理系统每次推进时，会遍历p2物理世界所有的Body，对每个Body所绑定的显示对象进行同步。
 p2所有的坐标都是以中心为准的。因此，为了减少坐标转换计算量，应当设置显示映射的注册点为中心：
 
-```
+``` typescript
 dispRect.anchorX = dispRect.anchorY = .5;
-```
+``` 
 
 city.phys.P2Space中的syncDisplay就是专门用来同步p2物理世界所对应显示的。
 
@@ -200,7 +200,7 @@ city.phys.P2Space中的syncDisplay就是专门用来同步p2物理世界所对�
 ## 创建地面、墙面和跳板
 这几种形式都比较相近，我们都用一个函数创建：
 
-```
+``` typescript
 private createGround( world:p2.World, container:egret.DisplayObjectContainer
     , id:number, vx:number, w:number, h:number, resid:string, x0:number, y0:number ):p2.Body{
 
@@ -229,7 +229,7 @@ private createGround( world:p2.World, container:egret.DisplayObjectContainer
 
     return p2body;
 }
-```
+``` 
 
 我们游戏的设计，所有物体均不需要转动，因此创建Body时，设置fixedRotation为true。
 然后position设置我们用了P2Space的坐标转换服务方法getP2Pos，为了方便设置坐标，我们都使用左上角标准，因此，传入显示空间坐标时，用宽度和高度进行修正，使其在物理空间对应中心点坐标。
@@ -243,7 +243,7 @@ p2中Body的类型分为三种，这里我们用到两种。地面和墙面不�
 
 使用这个函数，我们很轻松的可以创建3个跳板和地面及墙面：
 
-```
+``` typescript
 /// 创建浮动跳板
 this._vcGroundsFloating = [
 this.createGround( this._pw, this, 4, 0.6, 120, 20, "rects.rect-" + "0", this._p2FloatingLimitLeft, 600 )      /// -->,this.createGround( this._pw, this, 5, -0.8, 90, 20, "rects.rect-" + "8", this._p2FloatingLimitRight, 450 )    /// <--
@@ -255,15 +255,15 @@ this.createGround( this._pw, this, 1, 0, 640, 50, "rects.rect-" + "9", 0, 750 ) 
 ,this.createGround( this._pw, this, 2, 0, 50, 750, "rects.rect-" + "1", 0, 0 )      /// 左墙面
 ,this.createGround( this._pw, this, 3, 0, 50, 750, "rects.rect-" + "1", 430, 0 )  /// 右墙面
 ];
-```
+``` 
 
 三个浮动跳板的方向相邻相反，并且宽度越往上越小。
 
-```
+``` typescript
 city.phys.P2Space.syncDisplay( this._vcGroundsFixed[0] );
 city.phys.P2Space.syncDisplay( this._vcGroundsFixed[1] );
 city.phys.P2Space.syncDisplay( this._vcGroundsFixed[2] );
-```
+``` 
 
 创建完毕之后，我们用P2Space.syncDisplay立即对地面和墙面进行显示同步：
 
@@ -272,7 +272,7 @@ city.phys.P2Space.syncDisplay( this._vcGroundsFixed[2] );
 ## 创建玩家
 玩家的形状，也是一个p2.Rectangle，创建玩家的过程跟上述诸面基本类似：
 
-```
+``` typescript
 private createPlayer( world:p2.World, container:egret.DisplayObjectContainer, id:number, resid:string, xLanding:number, yLanding:number ):p2.Body{
     var p2body:p2.Body = new p2.Body(
         { mass: 1
@@ -303,7 +303,7 @@ private createPlayer( world:p2.World, container:egret.DisplayObjectContainer, id
 
     return p2body;
 }
-```
+``` 
 玩家创建时，使用了p2中Body的第三种类型：p2.Body.DYNAMIC。
 
 我们事先准备好了玩家的图元素材，为了保持其原始大小显示，我们根据图元纹理的宽高来设置对应p2形状的宽高。
@@ -312,7 +312,7 @@ private createPlayer( world:p2.World, container:egret.DisplayObjectContainer, id
 ## 运行
 由于我们事先进行了充分的准备工作(特别是用了city.phys.P2Space.syncDisplay)，运行物理世界的代码相当的简练：
 
-```
+``` typescript
 private run( dt ):void{
 
     this._pw.step( this.WORLD_STEP_DT );
@@ -337,7 +337,7 @@ private run( dt ):void{
    city.phys.P2Space.syncDisplay( this._vcGroundsFloating[2] );
 
 }
-```
+``` 
 
 玩家只需要同步显示！
 
@@ -347,7 +347,7 @@ private run( dt ):void{
 为了简化，我们只使用触摸来控制，在不同的区域来进行不同的控制，具体控制方法已经在设计游戏一节说明了。
 代码也没有任何累赘：
 
-```
+``` typescript
 private touchProcess( e:egret.TouchEvent ):void{
 
     if( e.stageY > 750 ) {    /// 地面重置
@@ -365,7 +365,7 @@ private touchProcess( e:egret.TouchEvent ):void{
         }
     }
 }
-```
+``` 
 
 需要说明的就是city.phys.P2Space.checkIfCanJump，这是根据玩家当前状态来判断是否可以起跳，因为我们不能允许玩家在不接触跳板或地面的情况下再次起跳！其中的判断涉及的物理引擎原理较为复杂，本篇教程就先不细讲了。
 

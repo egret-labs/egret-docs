@@ -9,7 +9,7 @@
 * `padding`系列属性，设置容器内间距，相对于4个边分别可以使用 `paddingTop`, `addingBottom`, `addingLeft`, `paddingRight`
 
 示例：    
-``` TypeScript   
+~~~ typescript    
 class hLayout extends egret.Sprite {
 
     private  myGroup:eui.Group;
@@ -48,7 +48,7 @@ class hLayout extends egret.Sprite {
 
     }
 }
-```              
+~~~               
 效果如图：
 
 ![](20170920122619.png)

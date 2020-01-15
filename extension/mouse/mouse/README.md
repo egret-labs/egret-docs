@@ -4,12 +4,12 @@
 
 引入鼠标支持库与引入其他第三方库过程相同，首先[下载](https://github.com/egret-labs/egret-game-library/tree/master/mouse)该库，在 egretProperties.json 中引入该库并编译引擎。需要注意库的位置应放在项目外。
 
-```
+``` typescript
 {
     "name": "mouse",
     "path": "../libsrc"
 }
-```
+``` 
 
 引入到项目中之后编译引擎即可使用鼠标库。
 
@@ -29,14 +29,14 @@
 
 使用鼠标支持库时需要开启鼠标支持。
 
-```
+``` typescript
 //启用舞台的鼠标支持
 mouse.enable(this.stage);
-```
+``` 
 
 调用 enable 方法开启舞台对鼠标事件的支持。开启支持之后即可监听鼠标事件。使用鼠标事件的方法与其他触摸事件是相同的，下面是基本的调用方法：
 
-```
+``` typescript
 mouse.enable(this.stage);
 //绘制外层容器
 this.outContainer = new egret.Sprite();
@@ -69,11 +69,11 @@ this.inShape.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onRollOver2, this
 this.inShape.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onRollOut2, this);
 this.inShape.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver2, this);
 this.inShape.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut2, this);
-```
+``` 
 
 其中回调函数如下：
 
-```
+``` typescript
 private onRollOver(e: egret.TouchEvent): void {
     console.log("roll over " + e.target.name + "  " + e.bubbles);
 }
@@ -105,7 +105,7 @@ private onMouseOver2(e: egret.TouchEvent): void {
 private onMouseOut2(e: egret.TouchEvent): void {
     console.log("mouse out2 " + e.target.name + "  " + e.bubbles);
 }
-```
+``` 
 
 上面代码中绘制了两个 Sprite ，一个当做外层的容器，一个当做内部的显示对象。编译运行观察输出的结果：
 
@@ -121,10 +121,10 @@ private onMouseOut2(e: egret.TouchEvent): void {
 
 若希望鼠标移动到可点击区域上时改变鼠标的形状为手型，可以通过 `setButtonMode` 来设置。
 
-```
+``` typescript
 //设置内层显示对象为鼠标手型
 mouse.setButtonMode(this.inShape, true);
-```
+``` 
 
 `setButtonMode` 接收两个参数，分别是显示对象和是否开启手型显示。开启之后当鼠标移动到该显示对象上时即可显示为手的形状。
 
@@ -133,18 +133,18 @@ mouse.setButtonMode(this.inShape, true);
 
 监听鼠标的移动事件需要单独开启，调用 `setMouseMoveEnabled()` 方法即可。
 
-```
+``` typescript
 //设置开启鼠标移动事件
 mouse.setMouseMoveEnabled(true);
-```
+``` 
 
 开启鼠标移动事件的监听接口之后，监听该事件:
 
-```
+``` typescript
 this.outContainer.addEventListener(mouse.MouseEvent.MOUSE_MOVE, function () { 
     console.log("mouse move"); 
 }, this);
-```
+``` 
 
 > 需要注意的是监听鼠标移动事件会消耗更多的性能。
 

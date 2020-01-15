@@ -10,7 +10,7 @@
 
 具体示例代码如下：
 
-```
+``` typescript
 class NetDemo extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -35,7 +35,7 @@ class NetDemo extends egret.DisplayObjectContainer
         console.log( data.toString() );
     }
 }
-```
+``` 
 
 编译后运行，效果如图
 

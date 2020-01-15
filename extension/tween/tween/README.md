@@ -3,16 +3,16 @@
 ## 1.确保项目支持 Tween
 
 在 Egret 项目中，修改egretProperties.json中的`modules`，添加 `tween` 模块：
-```
+``` typescript
  {
      "name": "tween"
  }
- ```
+ ``` 
 在项目所在目录内执行一次引擎编译：
 
-```
+``` typescript
 egret build -e
-```
+``` 
 
 ## 2.缓动基本用法
 
@@ -24,7 +24,7 @@ egret build -e
 
 具体代码如下：
 
-```
+``` typescript
 /// 代码段 A
 class TweenTest extends egret.DisplayObjectContainer{
     public constructor(){
@@ -42,7 +42,7 @@ class TweenTest extends egret.DisplayObjectContainer{
         tw.to( {x:150}, 1000 );
     }
 }
-```
+``` 
 
 如代码所示，缓动对象是用 `Tween.get()` 获得的，该方法需要传入用于缓动的目标对象，即例中的 `shp` ，然后通过 `to()` 方法给出需要设置缓动的具体参数。`to()` 的第一个参数用于设置缓动属性以及目标值：例中的属性为 x ，目标值为 150，即会将 shp 从当前 x 坐标位置缓动到 x 坐标为 150；`to()` 的第二个参数为缓动时间长度，单位为毫秒，例中的缓动长度为 1000毫秒，即 1 秒 。
 
@@ -58,9 +58,9 @@ class TweenTest extends egret.DisplayObjectContainer{
 
 例如，给代码段 A 加入循环控制，只需要修改 `Tween.get()` :
 
-```
+``` typescript
 var tw = egret.Tween.get( shp, { loop:true} );
-```
+``` 
 
 ## 4.缓动对象的缓动变化事件
 
@@ -70,7 +70,7 @@ var tw = egret.Tween.get( shp, { loop:true} );
 
 举个简单的例子，log出变化的坐标：
 
-```
+``` typescript
 /// 代码段 B
 var obj = { x:0 };
 
@@ -80,7 +80,7 @@ var funcChange = function():void{
 
 egret.Tween.get( obj, { onChange:funcChange, onChangeObj:obj } )
     .to( {x:600}, 1000 , egret.Ease.backInOut );
-```
+``` 
 
 ## 5.缓动过程参数设定
 
@@ -101,7 +101,7 @@ egret.Tween.get( obj, { onChange:funcChange, onChangeObj:obj } )
 
 缓动对象不只可以完成一次单独的缓动动画，通过连续调用缓动过程方法，可以连续进行多次缓动。这里设计一个小方块在一个正方形轨道上运动的动画，会在每个角上产生回调事件 log 是哪个角，并在角上稍作停留，以下是完整代码：
 
-```
+``` typescript
 /// 代码段 C
 var shp:egret.Shape = new egret.Shape();
 shp.graphics.beginFill( 0x00ff00 );
@@ -115,4 +115,4 @@ tw.to( {x:250}, 500 ).call( function(){ console.log( "右上角" ) } ).wait( 100
     .to( {y:250}, 500 ).call( function(){ console.log( "右下角" ) } ).wait( 100 )
     .to( {x:50}, 500 ).call( function(){ console.log( "左下角" ) } ).wait( 100 )
     .to( {y:50}, 500 ).call( function(){ console.log( "左上角" ) } ).wait( 100 );
-```
+``` 

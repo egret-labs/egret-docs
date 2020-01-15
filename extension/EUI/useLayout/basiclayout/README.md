@@ -1,25 +1,25 @@
 首先新建一个 eui 项目，使用：
 
-```
+~~~ typescript
 egret create HelloEUI --type eui
-```
+~~~
 
 下面的教程里使用的是该项目的默认皮肤。
 
 这是Group的默认布局模式。在基本布局模式下，容器内的子项的定位方式，取决于每个子项的坐标设置。首先，创建一个 Group 容器，并设置其布局属性为基本布局：    
-``` TypeScript
+~~~ typescript TypeScript
 this.myGroup = new eui.Group();
 this.addChild( this.myGroup );
 this.myGroup.width = 400;
 this.myGroup.height = 300;
 this.myGroup.layout = new eui.BasicLayout();
-``` 
+~~~ 
 其中预先定义了:
-```
+~~~ typescript
 private  myGroup:eui.Group;
-```
+~~~ 
 为了看清楚容器的边缘，在容器内先绘制一个与容器宽高一致的空心矩形：   
-``` TypeScript
+~~~ typescript
 /// 绘制矩形用于显示 myGroup 的轮廓
 var outline:egret.Shape = new egret.Shape;
 outline.graphics.lineStyle(3,0x00ff00);
@@ -28,13 +28,13 @@ outline.graphics.drawRect(0,0,400,300);
 outline.graphics.endFill();
 
 this.myGroup.addChild( outline );
-```
+~~~ 
 以上代码是基础代码，后边讲解中列出的代码段都在此基础上添加。   
 
 ## 绝对定位
 基本布局的主要特征就是绝对定位，设置子项的 x 与 y 坐标即可设置其相对于容器的坐标位置。   
 首先用坐标递增的方式放置4个按钮：     
-``` TypeScript
+~~~ typescript 
 for(var i:number=0;i<4;i++) {
     var btn:eui.Button = new eui.Button();
     btn.x = 25 +i*35;
@@ -42,7 +42,7 @@ for(var i:number=0;i<4;i++) {
     btn.label = "button "+i;
     this.myGroup.addChild(btn);
 }
-```     
+~~~      
 效果如图：    
 ![](56012da601bca.png)     
 
@@ -52,13 +52,13 @@ for(var i:number=0;i<4;i++) {
 - `verticalCenter`       
 
 这两个值是定义对象的中心点与容器的中心点之间的差值。如果两项都设置为0，代表中心点完全重合，也就实现了自动居中功能。   
-``` TypeScript
+~~~ typescript TypeScript
 var btn:eui.Button = new eui.Button();
 btn.label = "This is an egret button";
 btn.horizontalCenter = 0;
 btn.verticalCenter = 0;
 this.myGroup.addChild( btn );
-```       
+~~~        
 效果如图：    
 ![](56012dab90171.png)     
 
@@ -70,7 +70,7 @@ this.myGroup.addChild( btn );
 - `right`
 
 `top`的值，就是定义对象的上边界和容器的上边界之间的距离，其他3个值以此类推。设置如下：    
-``` TypeScript
+~~~ typescript
 var btn:eui.Button = new eui.Button();
 btn.label = "This is an egret button";
 btn.top = 20;
@@ -78,26 +78,26 @@ btn.bottom = 20;
 btn.left = 20;
 btn.right = 20;
 this.myGroup.addChild( btn );
-```              
+~~~               
 效果如图：    
 ![](56012db066087.png)   
 
 ## 百分比设定
 在尺寸的定义上，可以使用百分比。比如要让按钮容器的尺寸一致，可以设置：    
-``` TypeScript
+~~~ typescript 
 var btn:eui.Button = new eui.Button();
 btn.label = "This is an egret button";
 btn.percentWidth = 60;
 btn.percentHeight = 80;
 this.myGroup.addChild( btn );
-```        
+~~~         
 > 可以根据需求，决定使用`percentWidth`,`percentHeight`还是`top`,`bottom`,`left`,`right`。`percentWidth`,`percentHeight`只能约束宽高，而`top`,`bottom`,`left`,`right`则同时约束了尺寸和位置`(x,y)`。     
 
 为了使按钮在容器处于中心位置，可以在上一段代码基础上加入居中设定：   
-``` TypeScript
+~~~ typescript 
 btn.horizontalCenter = 0;
 btn.verticalCenter = 0;
-```              
+~~~               
 效果如图：    
 ![](56012db56771e.png)     
 
@@ -105,7 +105,7 @@ btn.verticalCenter = 0;
 
 完整的类定义如下：
 
-```
+~~~ typescript
 class bascLayout extends egret.Sprite {
     private  myGroup:eui.Group;
 
@@ -164,11 +164,11 @@ class bascLayout extends egret.Sprite {
 
     }
 }
-```
+~~~ 
 
 文档类的完整定义如下:
 
-```
+~~~ typescript
 class Main extends eui.UILayer {
 
     protected createChildren(): void {
@@ -203,6 +203,6 @@ class Main extends eui.UILayer {
         this.addChild(panel);
     }
 }
-```
+~~~ 
 
 

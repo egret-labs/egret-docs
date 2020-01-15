@@ -3,7 +3,7 @@
 >这里仍然使用 eui 默认项目。
 
 仍然使用水平布局所用的代码，将布局方式改变为垂直：    
-``` TypeScript   
+~~~ typescript 
 var btn1:eui.Button = new eui.Button();
 btn1.label = "button A";
 var btn2:eui.Button = new eui.Button();
@@ -19,7 +19,7 @@ vLayout.gap = 10;
 vLayout.paddingTop = 30;
 vLayout.horizontalAlign = egret.HorizontalAlign.CENTER;
 this.myGroup.layout = vLayout; //设置问垂直布局
-```    
+~~~    
 效果如图：
 
 ![](56012ed082c88.png)

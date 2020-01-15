@@ -2,7 +2,7 @@
 
 而在 EUI 库里，通过引入自适应流式布局（简称自动布局），能够解决第二步骤的屏幕适配问题。下面是一个屏幕适配的示例：
 
-```
+~~~ typescript
 class Main extends egret.Sprite{
 
     public constructor(){
@@ -21,9 +21,9 @@ class Main extends egret.Sprite{
         uiLayer.addChild(group);
     }
 }
-```
+~~~
 
-Main是程序的入口类，在Main被添加到舞台时，开始创建一系列的子项：首先要创建一个`UILayer`，它是UI的根容器，它的宽高会自动跟舞台宽高保持一致，起到最外层的自适应作用。然后使用EXML快速实例化一些列的组件，简便起见，这里直接将EXML的内容嵌入到代码中，（请参考[如何使用EXML](../../../../extension/EUI/EXML/useEXML/README.md)的 `嵌入EXML到代码` 一节）。下面简单介绍EXML里实例化的内容：
+Main是程序的入口类，在Main被添加到舞台时，开始创建一系列的子项：首先要创建一个`UILayer`，它是UI的根容器，它的宽高会自动跟舞台宽高保持一致，起到最外层的自适应作用。然后使用EXML快速实例化一些列的组件，简便起见，这里直接将EXML的内容嵌入到代码中，（请参考[如何使用EXML](../../EXML/useEXML/README.md)的 `嵌入EXML到代码` 一节）。下面简单介绍EXML里实例化的内容：
 
 (1)标题栏背景:显式设置高度为90像素，宽度设置为父级容器的100%(percentWidth = 100)，也就是始终跟uiStage一样宽。
 

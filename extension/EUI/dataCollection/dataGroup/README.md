@@ -1,26 +1,28 @@
 DataGroup，可以直译为"数据容器"。但他不是传统意义上的“容器”，因为不能将它当做普通容器来用，不能直接添加显示对象或UI组件，正确的做法是给它设置一个数据源，然后它自动创建内部所需的对象，来完成数据展示。也就是说，如果开发者要干预数据容器的显示，只能通过干预数据来实现，数据变了，显示就会变。
 
-那么它是怎么实现这种"数据绑定+展示"的过程呢？如果您之前做过前端开发，应该对"模板"这种机制不陌生。假设有10条数据，需要用列表标签
+那么它是怎么实现这种"数据绑定+展示"的过程呢？如果您之前做过前端开发，应该对"模板"这种机制不陌生。假设有10条数据，需要用列表标签显示出来
 
-```
-<ul></ul>```
+~~~ typescript
+<ul></ul>
+~~~ typescript
+您所需要做的就是定义一条
 
-显示出来，您所需要做的就是定义一条
-
-```
-<li>```
+~~~ typescript
+<li>
+~~~ typescript
 
 的格式，至于数据条数就不是问题了，那是循环要解决的事情。
 
-```
+~~~ typescript
 //伪代码
-<ul> <%for(data each collection)%> <li><a href="{data.link}">{data.label}</a></li> <%end for%> </ul>```
+<ul> <%for(data each collection)%> <li><a href="{data.link}">{data.label}</a></li> <%end for%> </ul>
+~~~ 
 
 对于 DataGroup 而言，也是类似的道理。您除了设置数据源，还要设置单条数据的"模板"。这个"模板"，在eui 框架中称之为 ItemRenderer。
 
 来看一个DataGroup的例子，首先创建数据源：
 
-```
+~~~ typescript
 //先创建一个数组
 var sourceArr:any[] = [];
 for (var i:number = 1; i < 5; i++) {
@@ -28,23 +30,23 @@ for (var i:number = 1; i < 5; i++) {
 }
 //用ArrayCollection包装
 var myCollection:eui.ArrayCollection = new eui.ArrayCollection(sourceArr);
-```
+~~~ 
 
 然后创建DataGroup的实例，并设置数据源(属性名称是dataProvider)：
 
-```
+~~~ typescript
 var dataGroup:eui.DataGroup = new eui.DataGroup();
 dataGroup.dataProvider = myCollection;
 dataGroup.percentWidth = 100;
 dataGroup.percentHeight = 100;
 this.addChild(dataGroup);
-```
+~~~ 
 
 写到这里直接编译运行后，什么都看不到的。因为还有两个重要的工作没有做，一个是创建 ItemRenderer，一个时设置 ItemRenderer 的样式。
 
 **创建ItemRenderer**
 
-```
+~~~ typescript
 class LabelRenderer extends eui.ItemRenderer {
 	private labelDisplay:eui.Label;
     public constructor(){
@@ -58,7 +60,7 @@ class LabelRenderer extends eui.ItemRenderer {
         this.labelDisplay.text = this.data.label;
     }
 }
-```
+~~~ 
 
 注意两点：
 
@@ -67,9 +69,9 @@ class LabelRenderer extends eui.ItemRenderer {
 
 然后我们将自定义的 LabelRenderer 类赋值给 itemRenderer 属性：
 
-``` TypeScript
+~~~ typescript
 dataGroup.itemRenderer = LabelRenderer;
-```
+~~~ 
 再编译就能看到显示效果了：
 
 ![](5604ef2d2f09d.png)
@@ -78,7 +80,7 @@ dataGroup.itemRenderer = LabelRenderer;
 
 Main.ts
 
-``` TypeScript
+~~~ typescript 
 class DataGroupDemo extends eui.Group {
     public constructor() {
         super();
@@ -102,11 +104,11 @@ class DataGroupDemo extends eui.Group {
         dataGroup.itemRenderer = LabelRenderer;
     }
 }
-```
+~~~ 
 
 LabelRenderer.ts
 
-``` TypeScript
+~~~ typescript 
 class LabelRenderer extends eui.ItemRenderer {
 	private labelDisplay:eui.Label;
     public constructor(){
@@ -120,8 +122,8 @@ class LabelRenderer extends eui.ItemRenderer {
         this.labelDisplay.text = this.data.label;
     }
 }
-```
-**如何给 ItemRenderer 设置皮肤，请看后面的[自定义项呈示器](../../../../extension/EUI/dataCollection/itemRenderer/README.md)章节**
+~~~ 
+**如何给 ItemRenderer 设置皮肤，请看后面的[自定义项呈示器](../../dataCollection/itemRenderer/README.md)章节**
 
 ## 大数据优化
 DataGroup 中有一个属性 useVirtualLayout，默认为 true，这个属性决定了列表创建内部对象的策略：
@@ -134,7 +136,7 @@ DataGroup 中有一个属性 useVirtualLayout，默认为 true，这个属性决
 * 策略2
 	useVirtualLayout = true;
 
-* 一般配合 [Scroller](../../../../extension/EUI/container/scroller/README.md) 使用。
+* 一般配合 [Scroller](../../container/scroller/README.md) 使用。
 
 	DataGroup 会根据组件的尺寸，计算同时最多能显示多少个组件，根据这个数字创建一组 ItemRenderer 并循环使用。当您滚动切换数据的时候，只是这一组 ItemRenderer 循环切换自己的位置和显示，这个过程是顺畅的无缝衔接的。
 

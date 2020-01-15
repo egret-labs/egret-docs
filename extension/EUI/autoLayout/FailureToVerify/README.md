@@ -6,7 +6,7 @@
 
 以下代码就是失效验证机制的最简单实现:
 
-```
+~~~ typescript
 class UIComponent extends egret.Shape{
 
     public constructor(){
@@ -71,7 +71,7 @@ class UIComponent extends egret.Shape{
         this.invalidatePropertiesFlag = false;
     }
 }
-```
+~~~ 
 
 `redrawBackground()`就是根据当前宽高绘制背景的方法。当`UIComponent`的`width`或`height`在外部被赋值修改后，不直接调用`redrawBackground()`重绘背景,而是先用`sizeChanged`属性标记尺寸发生了改变，然后调用`invalidateProperties()`方法，标记有属性失效，需要延迟验证。`invalidateProperties()`方法里通过监听`ENTER_FRAME`事件，来实现在下一帧再执行`commitProperties()`方法。`commitProperties()`方法里就是判断`sizeChanged`属性，然后最终执行`redrawBackground()`；在这之前，无论你对`width`或`height`执行了多少次修改，最终`redrawBackground()`只会执行一次。在实际使用中，这些异步过程都封装好了，开发者只需要关注那一对方法： `invalidateProperties()` 和 `commitProperties()` ，前者标记属性失效，后者应用失效的属性。
 
