@@ -21,7 +21,7 @@ egret create VideoTest --type eui
 ### 2.1.创建视频
 创建`Video`的代码如下:
 
-```
+```javascript
 class VideoTest extends egret.DisplayObjectContainer {
     public constructor() {
         super();
@@ -62,7 +62,7 @@ class VideoTest extends egret.DisplayObjectContainer {
 
 这里需要注意的是在 EUI 默认项目的入口文件类里面需要实例化上面的`VideoTest`,并删除默认的 UI。代码如下：
 
-```
+```javascript
 class Main extends eui.UILayer {
 
     protected createChildren(): void {
@@ -99,7 +99,7 @@ class Main extends eui.UILayer {
 通过`Video`的`pause()`方法将暂停视频。
 继续完善上面的程序，添加暂停按钮的功能。在`onLoad`函数中，绘制一个暂停的按钮，并监听其行为：
 
-```
+```javascript
 //在onLoad函数中添加暂停按钮
 var btnPause:eui.Button = new eui.Button();
 btnPause.label = "暂停";
@@ -110,7 +110,7 @@ btnPause.addEventListener(egret.TouchEvent.TOUCH_TAP,this.pause,this);
 ```
 
 然后在`VideoTest`类中添加暂停视频函数：
-```
+```javascript
 public pause(e:egret.TouchEvent) {
     this.video.pause(); //暂停视频
 }
@@ -123,7 +123,7 @@ public pause(e:egret.TouchEvent) {
 通过设置`Video`的`volume`属性可以设置其音量的大小。其属性值为0到1。
 下面通过 EUI 的水平滑块来控制。同样在`onLoad`函数中添加如下代码：
 
-```
+```javascript
 //设置控制音量的滑块，监听它的CHANGE事件,当滑动滑块时回调 `setVoluem()` 函数。
 var volume:eui.HSlider = new eui.HSlider();
 volume.x = btnPlay.x;
@@ -138,7 +138,7 @@ volume.addEventListener(egret.Event.CHANGE,this.setVoluem,this);
 
 然后在`VideoTest`类中添加设置音量的函数：
 
-```
+```javascript
 public setVoluem(e:egret.Event) {
     this.video.volume = e.target.value / 100;
 }
@@ -151,7 +151,7 @@ public setVoluem(e:egret.Event) {
 
 同样在`onLoad`函数中添加如下代码：
 
-```
+```javascript
 //设置全屏播放开关按钮
 var screenSwitcher:eui.ToggleSwitch = new eui.ToggleSwitch();
 screenSwitcher.label = "全屏";
@@ -163,7 +163,7 @@ this.addChild(screenSwitcher);
 
 然后在`VideoTest`类中添加设置是否全屏显示的函数：
 
-```
+```javascript
 public setFullScreen(e:egret.Event) {
     //当开关被选择后。该开关的selected属性将变为true,反之则为false
     this.video.fullscreen =e.target.selected;
@@ -176,7 +176,7 @@ public setFullScreen(e:egret.Event) {
 
 同样在`onLoad`函数中添加如下代码，用来显示播放时间。
 
-```
+```javascript
 //使用label标签来显示文字，并监听`ENTER_FRAME`事件来更新显示。
 var position:eui.Label = new eui.Label();
 position.x = btnPlay.x;
@@ -187,7 +187,7 @@ position.addEventListener(egret.Event.ENTER_FRAME,this.showPosition,this);
 
 然后在`VideoTest`类中添加显示播放时间的函数：
 
-```
+```javascript
 public showPosition(e:egret.Event) {
     e.target.text = "播放时间: " + this.video.position;
 }
@@ -199,7 +199,7 @@ public showPosition(e:egret.Event) {
 
 在`onLoad`函数中添加截图的按钮，点击该按钮将在舞台上添加一张截图:
 
-```        
+```javascript
 var btnPrintScreen:eui.Button = new eui.Button();
 btnPrintScreen.label = "截图";
 btnPrintScreen.x = screenSwitcher.x + screenSwitcher.width + 40;
@@ -210,7 +210,7 @@ btnPrintScreen.addEventListener(egret.TouchEvent.TOUCH_TAP,this.printScreen,this
 
 然后在`VideoTest`类中添加截图的函数：
 
-```
+```javascript
 public printScreen(e:egret.Event) {
     var bitmap:egret.Bitmap = new egret.Bitmap();
     bitmap.bitmapData = this.video.bitmapData;
@@ -226,13 +226,8 @@ public printScreen(e:egret.Event) {
 
 `Video`的 `length` 属性可以获得视频的长度。
 
-```
+```javascript
 //获取视频长度
 console.log(this.video.length);
 ```
-
-## 3.视频示例
-
-可以在[视频示例](http://edn.egret.com/cn/index.php/article/index/id/656)处获得完整的项目代码。
-
 

@@ -12,7 +12,7 @@ DragonBones作为Egret引擎的扩展库已经集成在安装包中。如果你�
 
 添加后配置内容如下：
 
-```
+~~~ javascript
 "modules": [
     {
         "name": "egret"
@@ -30,7 +30,7 @@ DragonBones作为Egret引擎的扩展库已经集成在安装包中。如果你�
         "name": "dragonbones"
     }
 ]
- ```
+~~~
 
 3、重新编译项目
 

@@ -11,7 +11,7 @@
 
 创建滤镜：  
   
-```     
+```    javascript 
 var color:number = 0x33CCFF;        /// 光晕的颜色，十六进制，不包含透明度
 var alpha:number = 0.8;             /// 光晕的颜色透明度，是对 color 参数的透明度设定。有效值为 0.0 到 1.0。例如，0.8 设置透明度值为 80%。
 var blurX:number = 35;              /// 水平模糊量。有效值为 0 到 255.0（浮点）
@@ -26,7 +26,7 @@ var glowFilter:egret.GlowFilter = new egret.GlowFilter( color, alpha, blurX, blu
 ```
 
 最后对位图对象应用发光滤镜：    
-```   
+```   javascript
 img.filters = [ glowFilter ];
 ```
 
@@ -53,7 +53,7 @@ ColorMatrixFilter--颜色矩阵滤镜(egret.ColorMatrixFilter) 在颗粒等级�
  
 然后通过下面颜色转换矩阵代码添加一个“灰度化”的效果:
  
-```
+```javascript
 var hero:egret.Bitmap = new egret.Bitmap();
 hero.texture = RES.getRes("hero_png");
 this.addChild(hero);
@@ -79,7 +79,7 @@ hero.filters = [colorFlilter];
  
 > 通过 ColorMatrixFilter 的 matrix 属性可以设置颜色矩阵。需要注意的是不能直接通过 `colorFlilter.matrix[4] = 100;` 这样的方式直接修改颜色矩阵。只能通过获得数组的引用然后修改,最后重置矩阵：
 
-```
+```javascript
 //获得数组。
 var test = colorFlilter.matrix;
 //修改数组中的值。
@@ -96,7 +96,7 @@ colorFlilter.matrix = test;
 
 实际的颜色值由下面的公式决定：
 
-``` 伪代码
+``` javascript
 redResult   = (a[0] * srcR)  + (a[1] * srcG)  + (a[2] * srcB)  + (a[3] * srcA)  + a[4];
 greenResult = (a[5] * srcR)  + (a[6] * srcG)  + (a[7] * srcB)  + (a[8] * srcA)  + a[9];
 blueResult  = (a[10] * srcR) + (a[11] * srcG) + (a[12] * srcB) + (a[13] * srcA) + a[14];
@@ -105,7 +105,7 @@ alphaResult = (a[15] * srcR) + (a[16] * srcG) + (a[17] * srcB) + (a[18] * srcA) 
 
 公式中 srcR、srcG、srcB、srcA 表示原始显示对象的像素值, a 是颜色矩阵。新的红绿蓝和alpha通道实际由颜色矩阵和原始图片的像素值同时决定。颜色矩阵中的 Off 可以直接设置偏移量加上相应的 R G B A 的值的乘积即为最终的颜色值。所以与原来完全相同的矩阵转换应该是下面这样的：
 
-```
+```javascript
 var colorMatrix = [
     1,0,0,0,0,
     0,1,0,0,0,
@@ -120,7 +120,7 @@ var colorMatrix = [
 
 在颜色矩阵中直接设置每一行中最后一个值即可设置偏移量，直接设置红色通道的偏移量，结果整张图片变红。
 
-```
+```javascript
 var colorMatrix = [
     1,0,0,0,100,
     0,1,0,0,0,
@@ -139,7 +139,7 @@ var colorMatrix = [
 
 如果想使绿色通道加倍,colorMatrix[6] 加倍即可：
 
-```
+```javascript
 var colorMatrix = [
     1,0,0,0,0,
     0,2,0,0,0,
@@ -154,7 +154,7 @@ var colorMatrix = [
 
 如果要使结果图像中的蓝色与原图的红色数量相等，将colorMatrix[10]设为1， colorMatrix[12]设为0 ,即结果的蓝色值完全由原始的红色值决定：
 
-```
+```javascript
 var colorMatrix = [
     1,0,0,0,0,
     0,1,0,0,0,
@@ -169,7 +169,7 @@ var colorMatrix = [
 
 增加亮度的最简单途径是给每个颜色值添加相同的偏移量。
 
-```
+```javascript
 var colorMatrix = [
     1,0,0,0,100,
     0,1,0,0,100,
@@ -188,7 +188,7 @@ var colorMatrix = [
 ### 3.1.设置
 在 Egret 中，通过 `BlurFilter` 类设置模糊滤镜。
 
-```
+```javascript
 var hero:egret.Bitmap = new egret.Bitmap();
 hero.texture = RES.getRes("hero_png");
 this.addChild(hero);
@@ -219,7 +219,7 @@ hero.filters = [blurFliter];
 创建滤镜，在定义局部变量时，对每一个参数的含义在注释部分进行简要的说明：   
 
  
-```    
+```    javascript
 var distance:number = 6;           /// 阴影的偏移距离，以像素为单位
 var angle:number = 45;              /// 阴影的角度，0 到 360 度
 var color:number = 0x000000;        /// 阴影的颜色，不包含透明度
@@ -236,7 +236,7 @@ var dropShadowFilter:egret.DropShadowFilter =  new egret.DropShadowFilter( dista
 ```   
 
 最后对位图对象应用投影滤镜：     
-```  
+```  javascript
 img.filters = [ dropShadowFilter ];
 ```
 

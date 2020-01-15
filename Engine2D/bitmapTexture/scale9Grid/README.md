@@ -24,7 +24,7 @@
 
 下面是一个完整的示例代码，这个示例中，放置两个 `Bitmap` 对象，两个 `Bitmap` 对象都将 width 设置为原来的2倍。其中一个添加九宫格数据，另外一个不添加九宫格数据。
 
-```
+```javascript
 class BitmapTest extends egret.DisplayObjectContainer{
     public constructor() {
         super();
@@ -64,18 +64,16 @@ class BitmapTest extends egret.DisplayObjectContainer{
 
 > 注意：设置九宫宽高的时候尽量使用整数，否则有些浏览器可能会出现“黑线”。
 
-关于九宫格的更多示例，可以参考[教学示例](http://developer.egret.com/cn/example/egret2d/index.html#050-bitmap-prac-9grid)
-
 ## 错误处理
 
 在正常情况下，九宫格区域的宽度和高度要小于图片的宽度和高度，位置在图片内部。如果设置的九宫格位置或者宽度和高度异常的情况下会报如下错误：
 
-```
+```javascript
 Warning #1018: 9宫格设置错误
 ```
 
 具体来讲正确的九宫格设置为:
-```
+```javascript
 x + w < 图片宽度;
 y + h < 图片高度;
 ```

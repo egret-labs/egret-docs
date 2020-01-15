@@ -22,4 +22,4 @@
 
 ## 百度小游戏
 
-* 新增百度小游戏支持，文档点击[这里](http://developer.egret.com/cn/github/egret-docs/Engine2D/minigamebaidu/index.html)
+* 新增百度小游戏支持，文档点击[这里](../../minigamebaidu/getStart/README.md)

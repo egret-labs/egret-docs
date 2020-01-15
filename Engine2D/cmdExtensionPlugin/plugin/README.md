@@ -31,7 +31,7 @@ scripts
 我们要的功能很简单，只是在编译后 js 文件名添加这次编译的时间戳，以便达到对 js 文件版本控制。
 首先在 scripts 文件中建立 TestPlugin.ts 文件，并实现 plugins.Command 接口。
 
-```
+```javascript
 export class TestPlugin implements plugins.Command {
     constructor() {
     }
@@ -45,7 +45,7 @@ export class TestPlugin implements plugins.Command {
 
 我们要保存时间戳和已修改的 js 文件名字，就要声明这几个属性来保存，然后在构造函数里生成时间戳，代码如下：
 
-```
+```javascript
 private timeStamp: number; //时间戳
 
 private modifyInitial: Array<string> = []; //保存修改过的库文件 js 文件名字
@@ -60,7 +60,7 @@ constructor() {
 
 然后我来扩展 onFile 的方法，先判断类型为 js 的文件，使用 file.extname 来判断，如果为 js 文件将生成好的时间戳加到 js 文件的名字上，我们还将所有修改的 js 文件重新放到 manifest.json 中，所以要将 manifest 路径和修改过的 js 文件名字保存起来以便我们后续修改，最后返回这个文件。代码如下：
 
-```
+```javascript
 async onFile(file: plugins.File) {
   const extName = file.extname;
   if (extName == ".js") {
@@ -85,7 +85,7 @@ async onFile(file: plugins.File) {
 
 我们还需在 onFinish 方法中处理 manifest.json 文件，先将所有保存好的 js 文件名字放到一个对象中，然后将这个对象转换为一个 JSON 字符串，最后保利用 createFile 方法修改 manifest 文件。代码如下：
 
-```
+```javascript
 async onFinish(commandContext: plugins.CommandContext) {
   let obj = {
     initial: this.modifyInitial,

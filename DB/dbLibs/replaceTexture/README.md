@@ -16,11 +16,11 @@
 
 在上面的代码中继续添加如下代码。
 
-```
+~~~javascript
 this.factory.parseDragonBonesData(RES.getRes("new_json"));
 this.factory.parseTextureAtlasData(RES.getRes("new_texture_json"), RES.getRes("new_texture_png"));
 this.factory.replaceSlotDisplay( "NewProject", "Armature", "ti", "bb", ar.armature.getSlot("Atoufa"));
-```
+~~~
 
 通过`replaceSlotDisplay`方法来替换其中头发的内容，其中第一个参数为DragonBonesName，如果你在解析DragonBones数据时未添加其参数，那么该参数可以填写`null`或者填写项目名称。
 
@@ -38,6 +38,6 @@ this.factory.replaceSlotDisplay( "NewProject", "Armature", "ti", "bb", ar.armatu
 
 你可以使用如下代码来进行全局换装
 
-```
+~~~javascript
 ar.armature.replaceTexture(RES.getRes("new_db_texture_png"));
-```
+~~~

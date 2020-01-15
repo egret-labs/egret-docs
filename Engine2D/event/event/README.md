@@ -16,7 +16,7 @@ Event类是所有事件类的基类。当创建一个自定义事件的时候，
 
 通常情况下，游戏中都会编写一些自定义事件，在上一小节中，已经编写过一个“约会”的自定义事件了，下面是详细代码。
 
-```
+```javascript
 class DateEvent extends egret.Event
 {
     public static DATE:string = "约会";

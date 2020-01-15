@@ -42,7 +42,7 @@
 
 ##### Button.ts
 
-```
+~~~ javascript
 class Button extends egret.Sprite {
 
     public constructor(label: string) {
@@ -131,11 +131,11 @@ class Button extends egret.Sprite {
         this.textF.stroke = 1;
     }
 }
-```
+~~~
 
 ##### Context.ts
 
-```
+~~~ javascript
 class Context {
     static stageWidth: number = 0;
     static stageHeight: number = 0;
@@ -145,11 +145,12 @@ class Context {
         Context.stageHeight = _stage.stageHeight;
     }
 }
-```
+~~~
+
 
 ##### Menu.ts
 
-```
+~~~ javascript
 class Menu extends egret.Sprite {
 
     public constructor(title: string) {
@@ -197,11 +198,11 @@ class Menu extends egret.Sprite {
         this.viewNum++;
     }
 }
-```
+~~~
 
 ##### Main.ts
 
-```
+~~~ javascript
 class Main extends egret.DisplayObjectContainer {
 
     public static menu: any;
@@ -318,7 +319,7 @@ class Main extends egret.DisplayObjectContainer {
         FBInstant.shareAsync(data);
     }
 }
-```
+~~~
 
 ## 开发建议
 

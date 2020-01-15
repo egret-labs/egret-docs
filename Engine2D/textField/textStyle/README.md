@@ -7,7 +7,7 @@
 
 示例代码如下：
 
-```
+```javascript
 var label:egret.TextField = new egret.TextField();
 
 this.addChild( label );
@@ -40,7 +40,7 @@ label.text = "This is a text!";
 
 在Egret中，文本的默认颜色为白色。可以通过 `textColor` 修改 `egret.TextField` 对象中文本的颜色。 具体代码如下：
 
-```
+```javascript
 var label:egret.TextField = new egret.TextField();
 this.addChild( label );
 label.width = 70;
@@ -67,7 +67,7 @@ label.text = "This is a text!";
 
 具体代码如下：
 
-```
+```javascript
 class GameApp extends egret.DisplayObjectContainer{
     public constructor() {
         super();
@@ -107,7 +107,7 @@ class GameApp extends egret.DisplayObjectContainer{
 
 具体代码如下：
 
-```
+```javascript
 class GameApp extends egret.DisplayObjectContainer{
     public constructor() {
         super();
@@ -151,7 +151,7 @@ Egret 提供两种实现方案。
 
 建立多种样式混合文本的基本结构是 `ITextElement`：
 
-```
+```javascript
 interface ITextElement {
      text: string;
      style: ITextStyle; 
@@ -160,7 +160,7 @@ interface ITextElement {
 
 其中 `ITextStyle` 是所需要定义的各种样式属性的集合，以Object的样式给出，这个Object里的每个元素就是一种样式属性的键值对定义，例如定义文本颜色为红色，那么这个Object就是：
 
-```
+```json
 {"textColor":0xFF0000}
 ```
 
@@ -168,7 +168,7 @@ interface ITextElement {
 
 给一段文字定义红色、字号30样式的代码如下：
 
-```
+```javascript
 var tx:egret.TextField = new egret.TextField;
 
 tx.textFlow = <Array<egret.ITextElement>>[ 
@@ -182,7 +182,7 @@ this.addChild( tx );
 
 实现图1中效果的代码如下：
 
-```
+```javascript
 var tx:egret.TextField = new egret.TextField;
 tx.width = 400;
 tx.x = 10;
@@ -218,7 +218,7 @@ this.addChild( tx );
 
 有些开发者习惯用HTML设置文字的样式，Egret也提供了这种方式，目前支持的标签有`b`和`i`，支持的font标签属性有`color`、`size`、`face`。
 
-```
+```javascript
 var tx:egret.TextField = new egret.TextField;
 // 注意_container是事先建立好的一个显示容器，即 egret.DisplayObjectContainer，并且已经添加到显示列表中
 tx.width = this._container.stage.stageWidth - 20;
@@ -251,7 +251,7 @@ this._container.addChild( tx );
 
 `egret.TextFiled` 支持布局，可以通过布局来实现一些文本的现实样式。代码示例如下：
 
-```
+```javascript
 var shape:egret.Shape = new egret.Shape();
 shape.graphics.beginFill(0xff0000);
 shape.graphics.drawRect( 0, 0, 400, 400 );
@@ -285,7 +285,7 @@ label.text = "This is a text!";
 
 修改代码，将文本水平对齐修改为右对齐:
 
-```
+```javascript
 label.textAlign = egret.HorizontalAlign.RIGHT;
 ```
 
@@ -296,7 +296,7 @@ label.textAlign = egret.HorizontalAlign.RIGHT;
 
 同理，设置为本水平居中对齐:
 
-```
+```javascript
 label.textAlign = egret.HorizontalAlign.CENTER;
 ```
 
@@ -314,7 +314,7 @@ label.textAlign = egret.HorizontalAlign.CENTER;
 
 修改上面的代码，添加垂直对齐属性，设置纵向的底对齐:
 
-```
+```javascript
 label.verticalAlign = egret.VerticalAlign.BOTTOM;
 ```
 
@@ -324,7 +324,7 @@ label.verticalAlign = egret.VerticalAlign.BOTTOM;
 
 同理，设置文本居垂直居中对齐:
 
-```
+```javascript
 label.verticalAlign = egret.VerticalAlign.MIDDLE;
 ```
 
@@ -334,7 +334,7 @@ label.verticalAlign = egret.VerticalAlign.MIDDLE;
 
 下面是完整代码:
 
-```
+```javascript
 class GameApp extends egret.DisplayObjectContainer{
     public constructor() {
         super();
@@ -365,7 +365,7 @@ class GameApp extends egret.DisplayObjectContainer{
 
 有时有这样的需求：在一大段文字中，有某一段需要作为热区，响应Touch事件。可以通过对该段文字设置 `href` 来实现，类似于html中的 `href`。代码示例如下：
 
-```
+```javascript
 class textEventDemo extends egret.DisplayObjectContainer {
     constructor() {
         super();
@@ -396,7 +396,7 @@ class textEventDemo extends egret.DisplayObjectContainer {
 
 将上面的 href 对应的字符串修改为 url 即可打开相应的 url。下面代码即可打开 Egret 的首页。
 
-```
+```javascript
 tx.textFlow = new Array<egret.ITextElement>(
 
     { text:"这段文字有链接", style: { "href" : "http://www.egret.com/" } }

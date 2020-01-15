@@ -21,7 +21,7 @@ DisplayObject类是所有显示对象的父类，该类包含显示对象共有�
 
 上图1中包含一个灰色的矩形，该矩形拥有一个“锚点”，Egret使用该点的坐标表示矩形的坐标。通过 x 和 y 属性访问修改显示对象的坐标位置。示例代码如下：
 
-```
+```javascript
 var shape:egret.Shape = new egret.Shape();
 shape.x = 100;
 shape.y = 20;
@@ -29,7 +29,7 @@ shape.y = 20;
 
 图2中展示了显示对象的缩放功能。缩放是指将显示对象的宽或高进行比例缩放。缩放功能通过 scaleX 和 scaleY 属性来实现。图中，对灰色的矩形宽高进行0.5倍缩放。示例代码如下：
 
-```
+```javascript
 var shape:egret.Shape = new egret.Shape();
 shape.scaleX = 0.5; 
 shape.scaleY = 0.5;
@@ -39,14 +39,14 @@ shape.scaleY = 0.5;
 
 图3中展示了关于透明度的操作。显示对象的默认透明度为"1"，表示完全不透明，通过 alpha 属性访问修改透明度。alpha取值范围为 0-1。示例代码如下：
 
-```
+```javascript
 var shape:egret.Shape = new egret.Shape();
 shape.alpha = 0.4;
 ```
 
 图4中展示了显示对象的旋转操作，旋转角度可通过 rotation 属性访问修改。将图中的矩形旋转30°，示例代码如下：
 
-```
+```javascript
 var shape:egret.Shape = new egret.Shape();
 shape.rotation = 30;
 ```
@@ -91,7 +91,7 @@ shape.rotation = 30;
 * 创建
 创建一个名称为 `MyGrid` 的类，并且继承自 `Shape` 。具体代码如下：
 
-```
+```javascript
 class MyGrid extends egret.Shape{
     public constructor(){
         super();
@@ -121,7 +121,7 @@ class MyGrid extends egret.Shape{
 在 `MyGrid` 中绘制了一个红蓝相间的2*2格子，然后修改文档类`Main`，在文档类中创建并显示 `MyGrid`类的实例，具体代码如下：
 
 
-```
+```javascript
 class Main extends egret.DisplayObjectContainer{
     public constructor(){
         super();
@@ -170,7 +170,7 @@ class Main extends egret.DisplayObjectContainer{
 
 下面是一个自定义容器类的示例，该示例定义了一个`GridSprite`类。这个类默认绘制一个红蓝相间的格子。
 
-```
+```javascript
 class GridSprite extends egret.Sprite
 {
     public constructor()
@@ -202,7 +202,7 @@ class GridSprite extends egret.Sprite
 
 在文档类中，实例化 `GridSprite` 即可。
 
-```
+```javascript
 var _myGrid:GridSprite = new GridSprite();  
 this.addChild( _myGrid );
 ```

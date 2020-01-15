@@ -7,7 +7,7 @@
 
 用法为：将一个矩形对象赋值给显示对象的 `mask` 属性。
 
-~~~
+~~~javascript
 shp.mask = new egret.Rectangle(20,20,30,50); 
 ~~~
 
@@ -15,7 +15,7 @@ shp.mask = new egret.Rectangle(20,20,30,50);
 
 下面示例中绘制了两个 `Shape` 对象，对其中一个 `Shape` 使用矩形遮罩，另外一个 `Shape` 当做参考。代码如下：
 
-~~~
+~~~javascript
 class Test extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -49,7 +49,7 @@ class Test extends egret.DisplayObjectContainer
 
 现在对 `shp` 添加遮罩，具体代码如下：
 
-~~~
+~~~javascript
 var rect:egret.Rectangle = new egret.Rectangle(20,20,30,50);  
 shp.mask = rect;
 ~~~
@@ -68,13 +68,13 @@ shp.mask = rect;
 
 用法为：将被遮罩显示对象的 `mask` 属性设置为遮罩对象：
 
-```
+```javascript
 //将maskSprite设置为mySprite的遮罩
 mySprite.mask = maskSprite;
 ```
 被遮罩的显示对象的显示区域，在用作遮罩的显示对象的全部不透明区域之内。例如，下面的代码创建一个包含 100 x 100 像素的红色正方形的 `Shape` 实例和一个包含半径为 25 个像素的蓝色圆的 `Sprite` 实例，它被设置为正方形的遮罩。正方形的显示区域，是由圆的不透明区域覆盖的那一部分。
 
-```
+```javascript
 //画一个红色的正方形
  var square:egret.Shape = new egret.Shape();
  square.graphics.beginFill(0xff0000);
@@ -99,7 +99,7 @@ square.mask = circle;
 
 通过将 `mask` 属性设置为 `null` 可以删除遮罩：
 
-```
+```javascript
 mySprite.mask = null;
 ```
 > 不能使用一个遮罩对象来遮罩另一个遮罩对象。

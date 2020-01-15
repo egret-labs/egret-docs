@@ -8,7 +8,7 @@
 
 ### 文档类
 
-```
+```javascript
 class SampleDate extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -33,7 +33,7 @@ class SampleDate extends egret.DisplayObjectContainer
 
 ### 男朋友类
 
-```
+```javascript
 class Boy extends egret.Sprite
 {
     public constructor()
@@ -58,7 +58,7 @@ class Boy extends egret.Sprite
 
 ### 女朋友类
 
-```
+```javascript
 class Girl extends egret.Sprite
 {
     public constructor()
@@ -76,7 +76,7 @@ class Girl extends egret.Sprite
 
 ### 约会事件类
 
-```
+```javascript
 class DateEvent extends egret.Event
 {
     public static DATE:string = "约会";

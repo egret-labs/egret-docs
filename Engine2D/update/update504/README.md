@@ -9,11 +9,11 @@
 ## 更新内容
 
 * 2D 渲染 - JavaScript
-    * eui 项目 publish 流程优化 [查看详情](http://developer.egret.com/cn/github/egret-docs/extension/EUI/getStarted/projectconfig/index.html)
+    * eui 项目 publish 流程优化
 
 * 2D 渲染 - WebAssembly
     * 增加 eui 模块支持 
-    * 优化项目结构 [查看详情](http://developer.egret.com/cn//2d/projectConfig/wasmconfig)
+    * 优化项目结构
 
 ## 已知问题
 

@@ -11,8 +11,8 @@
 ## 更新内容
 
 * 命令行工具
-    * 引擎提供模块化更新机制，开发者无需担心引擎升级导致其他问题而不升级引擎版本。具体细节请参见[文档](http://developer.egret.com/cn/github/egret-docs/Engine2D/projectConfig/configFile/index.html)
-    * 引入新的第三方库构建机制，对库项目进行标准化。具体细节请参加[文档](http://developer.egret.com/cn/github/egret-docs/Engine2D/projectConfig/libraryProject/index.html)
+    * 引擎提供模块化更新机制，开发者无需担心引擎升级导致其他问题而不升级引擎版本。具体细节请参见[文档](../../projectConfig/configFile/README.md)
+    * 引入新的第三方库构建机制，对库项目进行标准化。具体细节请参加[文档](../../projectConfig/libraryProject/README.md)
 
 * 白鹭引擎 2D 渲染
     * 优化渲染结构，允许开发者通过设置参数，使字体渲染在高分辨率屏幕上更为清晰锐利。

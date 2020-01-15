@@ -29,7 +29,7 @@ canvasScaleFactor 是用于解决图片和字体发虚所引入的机制，它�
 
 同时我们还在模板index.html文件的runEgret方法中加入了calculateCanvasScaleFactor方法，开发者可以根据不同需求去更改缩放策略：
 
-```
+~~~javascript
 egret.runEgret({
     renderMode: "webgl", audioType: 0,
     calculateCanvasScaleFactor: function (context) {
@@ -42,7 +42,7 @@ egret.runEgret({
         return (window.devicePixelRatio || 1) / backingStore;
     }
 });
-```
+~~~
 
 ## Tween.removeAllTweens
 Tween 内部在添加及删除时，都会有内部变量去标记一个对象有多少个 Tween 在同时生效。Tween.removeAllTweens 方法中应该将该变量置为0，然而之前版本并没有正确的设置这个，这可能会导致很多问题的产生。本次更新中我们把这个问题修复了。

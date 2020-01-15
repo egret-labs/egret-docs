@@ -4,35 +4,36 @@
 
 * 通过 ```var sound:egret.Sound = new egret.Sound()``` 创建 `Sound` 对象，再通过 ```sound.load(url)```加载，`Sound` 类支持的事件类型有两个：`egret.Event.COMPLETE` 音频加载完成时抛出；`egret.IOErrorEvent.IO_ERROR` 音频加载失败时抛出.
 
-		var sound:egret.Sound = new egret.Sound();
-        sound.addEventListener(egret.Event.COMPLETE, function loadOver(event:egret.Event) {
-			sound.play();
-		}, this);
-        sound.addEventListener(egret.IOErrorEvent.IO_ERROR, function loadError(event:egret.IOErrorEvent) {
-			console.log("loaded error!");
-		}, this);
-        sound.load("resource/sound/sound.mp3");
-
+```javascript
+var sound:egret.Sound = new egret.Sound();
+sound.addEventListener(egret.Event.COMPLETE, function loadOver(event:egret.Event) {
+    sound.play();
+}, this);
+sound.addEventListener(egret.IOErrorEvent.IO_ERROR, function loadError(event:egret.IOErrorEvent) {
+    console.log("loaded error!");
+}, this);
+sound.load("resource/sound/sound.mp3");
+```
 
 ### 1.2.通过 URLLoader 加装音频。
 
 * 具体调用如下。
-
-		var loader:egret.URLLoader = new egret.URLLoader();
-		loader.addEventListener(egret.Event.COMPLETE, function loadOver(event:egret.Event) {
-			var sound:egret.Sound = loader.data;
-			sound.play();
-		}, this);
-		loader.dataFormat = egret.URLLoaderDataFormat.SOUND;
-		loader.load(new egret.URLRequest("resource/sound/sound.mp3"));
-
+```javascript
+var loader:egret.URLLoader = new egret.URLLoader();
+loader.addEventListener(egret.Event.COMPLETE, function loadOver(event:egret.Event) {
+    var sound:egret.Sound = loader.data;
+    sound.play();
+}, this);
+loader.dataFormat = egret.URLLoaderDataFormat.SOUND;
+loader.load(new egret.URLRequest("resource/sound/sound.mp3"));
+```
 ### 1.3.通过 res 加装音频。
 
 * 具体调用如下。
- 	
-		var sound:egret.Sound = RES.getRes("sound_mp3");
-		sound.play();
-        
+```javascript
+var sound:egret.Sound = RES.getRes("sound_mp3");
+sound.play();
+```     
 ## 2.播放Sound
 
 ### 2.1.播放方法
@@ -63,23 +64,23 @@
 
 设置播放类型在项目根目录下的 index.html 模板文件中进行： 
 
-```
-    /**
-    * {
-    * "renderMode":, //引擎渲染模式，"canvas" 或者 "webgl"
-    * "audioType": 0 //使用的音频类型，0:默认，1:qq audio，2:web audio，3:audio
-    * "antialias": //WebGL模式下是否开启抗锯齿，true:开启，false:关闭，默认为false
-    * "retina": //是否基于devicePixelRatio缩放画布
-    * }
-    **/
-    egret.runEgret({renderMode:"webgl", audioType:0});
+```javascript
+/**
+* {
+* "renderMode":, //引擎渲染模式，"canvas" 或者 "webgl"
+* "audioType": 0 //使用的音频类型，0:默认，1:qq audio，2:web audio，3:audio
+* "antialias": //WebGL模式下是否开启抗锯齿，true:开启，false:关闭，默认为false
+* "retina": //是否基于devicePixelRatio缩放画布
+* }
+**/
+egret.runEgret({renderMode:"webgl", audioType:0});
 ```
 
 ## 3.音频示例
 
 播放音频的简单示例代码如下 :
 
-```
+```javascript
 class SoundExample extends egret.DisplayObjectContainer {
     public constructor() {
         super();

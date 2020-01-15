@@ -6,7 +6,7 @@ Egret中封装了 `Graphics` 类实现矢量绘图功能，可以绘制矩形、
 
 下面代码以 `Shape` 对象为例，绘制矩形的：
 
-```
+```javascript
 class GraphicsTest extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -31,7 +31,7 @@ class GraphicsTest extends egret.DisplayObjectContainer
 
 这段代码中核心绘图代码是下面这三行:
 
-```
+```javascript
 shp.graphics.beginFill( 0xff0000, 1); 
 shp.graphics.drawRect( 0, 0, 100, 200 ); 
 shp.graphics.endFill();
@@ -51,13 +51,13 @@ shp.graphics.endFill();
 
 为绘图代码添加一行:
 
-```
+```javascript
 shp.graphics.lineStyle( 10, 0x00ff00 );
 ```
 
 修改后的代码如下：
 
-```
+```javascript
 class GraphicsTest extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -87,7 +87,7 @@ class GraphicsTest extends egret.DisplayObjectContainer
 
 绘制圆形的方法与绘制矩形类似，只需将 `drawRect()` 方法改为 `drawCircle()` 方法。
 
-```
+```javascript
 drawCircle( x:number, y:number, radius:number): void
 ```
 
@@ -97,7 +97,7 @@ drawCircle( x:number, y:number, radius:number): void
 
 下面代码示例绘制了一个半径为50像素的圆形：
 
-```
+```javascript
 class GraphicsTest extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -127,20 +127,20 @@ class GraphicsTest extends egret.DisplayObjectContainer
 
 使用Graphics绘制直线需要使用两个方法: `moveTo()` 和 `lineTo()`，它们输入参数是一对坐标值。`moveTo()` 负责绘制直线的起始点，`lineTo()` 负责绘制直线的终点。
 
-```
+```javascript
 moveTo( x:number, y:number): void
 lineTo( x:number, y:number): void
 ```
 
 在绘图直线前，需要先制定线条的样式，设置 `lineStyle()` 方法：
 
-```
+```javascript
 shp.graphics.lineStyle( 2, 0x00ff00 );
 ```
 
 然后使用 `moveTo()` 来设定线条的起始点，使用 `lineTo()` 来设定线条的终点。完整代码如下：
 
-```
+```javascript
 class GraphicsTest extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -166,7 +166,7 @@ class GraphicsTest extends egret.DisplayObjectContainer
 
 也可以连续绘制多条首尾相接的直线，形成一条折线，代码如下：
 
-```
+```javascript
 var shp:egret.Shape = new egret.Shape();
 
 shp.graphics.lineStyle( 2, 0x00ff00 );
@@ -203,7 +203,7 @@ Egret中提供的曲线绘制是“二次贝塞尔曲线”，下图是“二次
 
 绘制曲线时，需使用 `Graphics` 中的 `curveTo()` 方法。
 
-```
+```javascript
 curveTo( x1:number, y1:number, x2:number, y2:number ): void
 ```
 
@@ -215,7 +215,7 @@ curveTo( x1:number, y1:number, x2:number, y2:number ): void
 
 示例代码：
 
-```
+```javascript
 class GraphicsTest extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -243,7 +243,7 @@ class GraphicsTest extends egret.DisplayObjectContainer
 
 绘制封闭圆弧使用 `Graphics` 中的 `drawArc()` 方法。
 
-```
+```javascript
 drawArc( x:number, y:number, radius:number, startAngle:number, endAngle:number, anticlockwise:boolean ):void
 ```
 
@@ -251,7 +251,7 @@ drawArc( x:number, y:number, radius:number, startAngle:number, endAngle:number, 
 
 下面的例子绘制了一个从 0 到 π 的圆弧：
 
-```
+```javascript
 class GraphicsTest extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -282,7 +282,7 @@ http://developer.egret.com/cn/apidoc/index/name/global.Math
 
 ### 6.1.画弧
 
-~~~
+~~~javascript
 var shape:egret.Shape = new egret.Shape();
 shape.graphics.lineStyle(2, 0xffff00);
 shape.graphics.drawArc(50, 50, 50, 0, Math.PI / 180 * 30, false);
@@ -293,7 +293,7 @@ shape.graphics.endFill();
 
 ### 6.2.画拱形
 
-~~~
+~~~javascript
 var shape:egret.Shape = new egret.Shape();
 shape.graphics.beginFill(0xff0000);
 shape.graphics.drawArc(50, 50, 50, 0, Math.PI / 180 * 60, false);
@@ -308,7 +308,7 @@ shape.graphics.endFill();
 
 扇形其实就是圆心跟弧的2个端点连接后的一个封闭区域。
 
-~~~
+~~~javascript
 var r:number = 50;
 var shape:egret.Shape = new egret.Shape();
 shape.graphics.beginFill(0xff0000);
@@ -323,7 +323,7 @@ shape.graphics.endFill();
 
 ### 6.4.画弧形进度条
 
-~~~
+~~~javascript
 private getArcProgress():egret.Shape {
     var shape:egret.Shape = new egret.Shape();
     var angle:number = 0;
@@ -345,11 +345,11 @@ private getArcProgress():egret.Shape {
 }
 ~~~
 
-关于代码中 `egret.startTick` 的用法，可参考[Timer计时器](../../timeControl/timer)
+关于代码中 `egret.startTick` 的用法，可参考[Timer计时器](../../timeControl/timeControl/README.md)
 
 ### 6.5.画扇形进度条
 
-~~~
+~~~javascript
 private getSectorProgress():egret.Shape {
     var shape:egret.Shape = new egret.Shape();
 
@@ -379,7 +379,7 @@ private getSectorProgress():egret.Shape {
 
 ### 6.6.画不规则边框进度条
 
-下面是一个示例，通过结合遮罩 (`mask`) 和扇形进度条来模拟边框的进度显示。关于 `mask` 的具体用法，可参考[遮罩](../../mask/rectangleMask)
+下面是一个示例，通过结合遮罩 (`mask`) 和扇形进度条来模拟边框的进度显示。关于 `mask` 的具体用法，可参考[遮罩](../../mask/mask/README.md)
 
 * 首先，提供一个只有边框的全封闭的图形。比如
 
@@ -393,7 +393,7 @@ private getSectorProgress():egret.Shape {
 
 * 代码:
 
-~~~
+~~~javascript
 private drawBorderProgress():egret.DisplayObjectContainer {
     var container:egret.DisplayObjectContainer = new egret.DisplayObjectContainer();
     var w:number = 100;
@@ -445,7 +445,7 @@ private drawBorderProgress():egret.DisplayObjectContainer {
 
 以下代码在一个 `Shape` 对象中绘制4个小格子，互相紧邻，并且红蓝相间。
 
-```
+```javascript
 this.graphics.beginFill( 0x0000ff );
 this.graphics.drawRect( 0, 0, 50,50 );
 this.graphics.endFill();
@@ -474,6 +474,6 @@ this.graphics.endFill();
 
 清空绘图操作是将已经绘制的图像全部清空，可以执行 `Graphics` 中的 `clear()` 方法，代码如下：
 
-```
+```javascript
 shp.graphics.clear();
 ```

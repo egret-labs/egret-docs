@@ -42,7 +42,8 @@ Egret Engine 3.0 包含了白鹭时代研发的遵循HTML5标准的2D引擎及�
 EXML 现在可以解析 `Itemrenderer` 的状态变化。比如可以在`Itemrenderer`的皮肤中添加下面的状态：
 
 ```
-<e:Image source.up="{data.up}"  source.down="{data.down}"/>```
+<e:Image source.up="{data.up}"  source.down="{data.down}"/>
+```
 
 ### RES 获得版本控制器
 

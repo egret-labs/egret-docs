@@ -12,7 +12,7 @@ Egret内置了纹理集的支持，在编写代码之前，需要先制作一张
 
 同时生成的对应的json文件如下：
   
-```
+```json
 {
     "file": "dogs.png",
     "frames": {
@@ -85,7 +85,7 @@ Egret内置了纹理集的支持，在编写代码之前，需要先制作一张
 
 资源配置文件内容如下：
 
-```
+```json
 {
 "resources":
     [
@@ -100,7 +100,7 @@ Egret内置了纹理集的支持，在编写代码之前，需要先制作一张
 
 * 编写代码：
 
-```
+```javascript
 class BitmapTest extends egret.DisplayObjectContainer{
     public constructor()
     {
@@ -123,7 +123,7 @@ class BitmapTest extends egret.DisplayObjectContainer{
 
 注意其中一行：
 
-```
+```javascript
 var txtr:egret.Texture = RES.getRes( "dogs#dog1" );
 ```
 

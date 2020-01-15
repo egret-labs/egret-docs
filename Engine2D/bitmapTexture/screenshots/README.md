@@ -12,7 +12,7 @@ egret 中位图的显示基于纹理，通常静态纹理的获取方式有下�
 
 除此之外，egret 提供了动态纹理类`egret.RenderTexture`，用来将显示对象及其子对象绘制成为一个纹理，以实现截图功能。
 
-```
+```javascript
 var renderTexture:egret.RenderTexture = new egret.RenderTexture();
 renderTexture.drawToTexture(displayObject);
 ```
@@ -52,7 +52,7 @@ renderTexture.drawToTexture(displayObject);
 #### 示例
 保存截屏测试，代码如下：
 
-```
+```javascript
 var texture:egret.Texture = RES.getRes("run_png");
 texture.saveToFile("image/png", "a/down.png", new egret.Rectangle(20, 20, 100, 100));
 ```
@@ -75,7 +75,7 @@ texture.saveToFile("image/png", "a/down.png", new egret.Rectangle(20, 20, 100, 1
 
 交替使用 `RenderTexture` 示例代码:
 
-```
+```javascript
 if (this.bmp.texture == this.renderTexture) {
     this.renderTexture2.drawToTexture(this, new egret.Rectangle(0, 0, 1024, 768));   
     this.bmp.texture = this.renderTexture2;
@@ -88,7 +88,3 @@ if (this.bmp.texture == this.renderTexture) {
 其中 `this.bmp` 是保存画板的位图对象，`this.renderTexture` 和 `this.renderTexture2` 是用来保存纹理的 `RenderTexture` 对象。
 
 更新画板的纹理时使用与当前不同的 `RenderTexture` 对象保证上一次的纹理不被清空。
-
-## 3.截图示例
-
-点击[动态截屏](http://developer.egret.com/cn/example/page/index#040-bitmap-draw)，可以查看动态截屏示例的完整代码和效果。

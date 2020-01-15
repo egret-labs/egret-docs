@@ -4,16 +4,14 @@
 如果您项目的配置文件 `egretProperties.json` 里有 `template` 字段，那么发布 `Html5` 项目时，就会使用 `template/web/index.html` 来作为入口文件。
 例如：
 
-```
+~~~javascript
 {
   "engineVersion": "5.2.9",
   "compilerVersion": "5.2.9",
-  "template": {}, //该字段只要存在，
-  //就会使用 template/web/index.html 来作为入口文件。
-
+  "template": {}, //该字段只要存在，/就会使用 template/web/index.html 来作为入口文件。
   ...
  }
-```
+~~~
 
 ### runtime
 发布原生项目的配置文件

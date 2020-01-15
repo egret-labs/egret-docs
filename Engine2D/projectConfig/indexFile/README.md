@@ -1,7 +1,7 @@
 
 `index.html` 为项目的入口文件，下面是 `body` 标签里的默认配置，您可以根据项目需求修改。
 
-```
+~~~ javascript
 <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
          data-entry-class="Main"
          data-orientation="auto"
@@ -13,7 +13,7 @@
          data-show-fps="false" data-show-log="false"
          data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
     </div>
-```
+~~~ 
 
 * data-entry-class：文件类名称。
 * data-orientation：旋转模式。
@@ -30,7 +30,7 @@
 
 在 `script` 标签内，有项目的启动参数,如下图所示
 
-```
+~~~ javascript
 egret.runEgret({ renderMode: "webgl", audioType: 0, 
 calculateCanvasScaleFactor:function(context) {
     var backingStore = context.backingStorePixelRatio ||
@@ -41,7 +41,7 @@ calculateCanvasScaleFactor:function(context) {
         context.backingStorePixelRatio || 1;
     return (window.devicePixelRatio || 1) / backingStore;
 }});
-```
+~~~
 
 参数是一个对象，包括以下3个可选属性：
 

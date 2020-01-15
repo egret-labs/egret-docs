@@ -30,14 +30,14 @@
 
 #### 方法2：配置 egretProperties.json
 
-```
+~~~ javascript
 "engineVersion": "5.2.28",
 "compilerVersion": "5.2.28",
 "template": {},
 "target": {
 	"current": "oppogame"
 },
-```
+~~~
 
 如上所示，将 `egretProperties.json` 配置文件中的 `current` 属性设置为 `oppogame` 时，可以直接使用```egret build``` 或者 ```egret publish``` 命令编译和发布OPPO小游戏。
 

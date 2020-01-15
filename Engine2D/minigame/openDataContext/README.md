@@ -6,7 +6,7 @@
   
   * 这张图片是来自于微信小游戏的跳一跳排行榜，小游戏不但开放了用户注册也把关系链数据开放了出来，有了这些数据，普通的开发者也可以开发出类似的排行榜功能，有了关系链数据，会大大增加游戏玩法，玩家之间的互动，给游戏带来了更大的趣味性。
   
-  * 小游戏主要提供了 ```wx.getFriendCloudStorage()``` 和 ```wx.getGroupCloudStorage()``` 两个 API 接口。但是为了保护关系链数据，小游戏增加了开放数据域的概念，开放数据域只能在离屏画布（sharedCanvas）上使用，这块画布和主域是可以共享的。我们需要把 sharedCanvas 绘制到主域上，这个过程需要开发者接触底层的 canvas 底层 API，对于不熟悉的同学会带来很大的不便，所以白鹭引擎对做了进一步的优化与封装。
+  * 小游戏主要提供了 ~~~wx.getFriendCloudStorage()~~~ 和 ~~~wx.getGroupCloudStorage()~~~ 两个 API 接口。但是为了保护关系链数据，小游戏增加了开放数据域的概念，开放数据域只能在离屏画布（sharedCanvas）上使用，这块画布和主域是可以共享的。我们需要把 sharedCanvas 绘制到主域上，这个过程需要开发者接触底层的 canvas 底层 API，对于不熟悉的同学会带来很大的不便，所以白鹭引擎对做了进一步的优化与封装。
 
   * 请开发者先阅读微信小游戏开放数据的 [文档](https://mp.weixin.qq.com/debug/wxagame/dev/tutorial/open-ability/open-data.html?t=2018323) 这样对关系链会有更好的理解。
 
@@ -18,17 +18,17 @@
 
 3、离屏画布的显示对象可直接在主域中通过以下的方式进行创建。 
 
-```
+~~~javascript
 //创建开放数据域显示对象
 var platform = window.platform;
 this.bitmap = platform.openDataContext.createDisplayObject(null,this.stage.stageWidth, this.stage.stageHeight);
-```
+~~~
 
 该接口在发布后的项目文件`platform.js`当中可进行查看。创建后的显示对象为 `egre.Bitmap` ，可直接添加到舞台上。
 
 可通过与主域与开放数据域的单向数据接口进行通讯。主域可向开放数据域单方向发送消息。
 
-```
+~~~javascript
 
 //主域向子域发送自定义消息
 platform.openDataContext.postMessage({
@@ -38,11 +38,11 @@ platform.openDataContext.postMessage({
   command: "open"
 });
 
-```
+~~~
 
 子域可通过监听事件的方式获取到主域发送过来的自定义信息。
 
-```
+~~~javascript
 wx.onMessage((data) => {
   if (data.command == 'open') {
     //显示开放域
@@ -52,7 +52,7 @@ wx.onMessage((data) => {
       ...
   }
 }
-```
+~~~
 
 开发者可通过这种方式通知开放域的显示与关闭，或者向开发数据域中传输数据。
 

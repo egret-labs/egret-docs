@@ -3,7 +3,7 @@ DragonBones 的动画复用功能够把同名骨骼的动画数据从一个骨�
 
 正常播放两个骨骼动画代码如下：
 
-```
+~~~javascript
 let egretFactory = dragonBones.EgretFactory.factory;
 
 egretFactory.parseDragonBonesData(RES.getRes("DragonBonesDataA"));
@@ -29,7 +29,7 @@ armatureDisplayB.scaleY = 0.5;
 egretFactory.copyAnimationsToArmature(armatureDisplayB, "armatureA");
 
 armatureDisplayB.animation.play("animationName");
-```
+~~~
 
 使用 `Factory` 中的 `copyAnimationsToArmature` 方法可实现该效果。
 `copyAnimationsToArmature` 方法第一个参数为接收动画数据的骨架，第二个参数为被拷贝动画数据的骨架名称。

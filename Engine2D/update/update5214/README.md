@@ -25,8 +25,8 @@
 ## 微信 Html5
 * 在 iOS12 的微信里，某些情况下，在弹出的软键盘回收时，顶起来的游戏页面不会落下来。该问题引擎暂不处理，等待微信修复。您可以在 `index.html` 的 `<script>` 标签里增加一个监听来处理该异常：
 
-```
+~~~ javascript
 document.body.addEventListener("blur",function(){
     window.scrollTo(0,0);
 },true);
-```
+~~~

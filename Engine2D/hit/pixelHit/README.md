@@ -1,7 +1,7 @@
 
 像素碰撞检测，是判断显示对象的图案（非透明区域）是否与一点相交。同样使用 `hitTestPoint()` 方法，用法为：
 
-```
+```javascript
 var isHit:boolean = shp.hitTestPoint( x: number, y:number, true:boolean );
 ```
 
@@ -9,7 +9,7 @@ var isHit:boolean = shp.hitTestPoint( x: number, y:number, true:boolean );
 
 * 示例代码1：
 
-```
+```javascript
 var shp:egret.Shape = new egret.Shape();
 shp.graphics.beginFill( 0xff0000 );
 shp.graphics.drawRect( 0,0,100,100);
@@ -28,7 +28,7 @@ this.infoText.text = "isHit: " + isHit;
 
 * 示例代码2：
 
-```
+```javascript
 var shp:egret.Shape = new egret.Shape();
 shp.graphics.beginFill( 0xff0000 );
 shp.graphics.drawCircle( 0, 0, 20);

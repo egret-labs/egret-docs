@@ -10,7 +10,7 @@
 
 在Egret中使用触摸事件时，需要打开显示对象的触摸事件开关，即将该显示对象的`touchEnabled`属性设置为`true`。代码示例如下：
 
-```
+```javascript
 class TouchEventTest extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -74,7 +74,7 @@ class TouchEventTest extends egret.DisplayObjectContainer
 
 下面是一个示例代码，创建一个滚动列表并增加监听
 
-~~~
+~~~javascript
 var scroller = new eui.Scroller();
 var list = new eui.List();  
 list.itemRendererSkinName = `
@@ -104,7 +104,7 @@ list.addEventListener(egret.TouchEvent.TOUCH_CANCEL,()=>{console.log("44 List ca
 
 当没有滚动，点击列表后，会依次抛出以下事件。
 
-~~~
+~~~javascript
 111 List Begin
 111 Scroller Begin
 222 List END
@@ -119,7 +119,7 @@ list.addEventListener(egret.TouchEvent.TOUCH_CANCEL,()=>{console.log("44 List ca
 
 当滚动 `scroller` 以后，会抛出 `TouchCancel`，后续的 touch 事件不会被触发。
 
-~~~
+~~~javascript
 111 List Begin
 111 Scroller Begin
 44 List cancel

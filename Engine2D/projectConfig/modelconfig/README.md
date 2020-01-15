@@ -37,7 +37,7 @@
 
 使用示例：
 
-```
+``` json
 {
 	"egret_version":"5.2.6",
 	"modules":[

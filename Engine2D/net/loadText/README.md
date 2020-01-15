@@ -9,7 +9,7 @@ Egret 加载资源主要使用 `egret.HttpRequest` 类。该类封装了在异�
 在加载完成时，通过 `HttpRequest` 对象的 `response` 属性来获取返回的数据。    
 加载文本数据的方法如下：   
 
-```
+```javascript
 var url = "resource/config/description.json";
 var  request:egret.HttpRequest = new egret.HttpRequest();
         
@@ -43,7 +43,7 @@ request.send( );
 ## 2.加载二进制   
 加载二进制数据的方法如下：
 
-```
+```javascript
 var url = "resource/assets/egret_icon.png";
 var  request:egret.HttpRequest = new egret.HttpRequest();
 request.responseType = egret.HttpResponseType.ARRAY_BUFFER;

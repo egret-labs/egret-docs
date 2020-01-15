@@ -18,7 +18,7 @@
 
 #### 我在使用白鹭引擎 5.0 / 4.x / 3.x 版本，可以直接转换为微信小游戏么？
 
-答：目前我们只支持白鹭引擎 5.1.x 版本发布为微信小游戏，推荐您使用最新的 5.1.2 版本。[升级教程](http://developer.egret.com/cn/github/egret-docs/Engine2D/minigame/publish/index.html) 
+答：目前我们只支持白鹭引擎 5.1.x 版本发布为微信小游戏，推荐您使用最新的 5.1.2 版本。[升级教程](../../minigame/publish/README.md) 
 
 #### 我在使用 egret res 库，5.1.2 创建的新项目使用的是 assetsmanager 库，这两个库有区别么？
 
@@ -44,7 +44,7 @@
 
 #### 当老项目（5.1.2以前）升到到最新版时，发布小游戏项目报错：
 
-答：升级成功后，请首先保证 HTML5 版本可以正常运行，然后再尝试发布为微信小游戏，目前我们遇到了多位开发者通过创建 5.1.2 新项目后拷贝老项目代码和素材的方式尝试升级，由于忽视了修改 egretProperties.json 中的模块配置，导致运行失败的问题。[升级教程](http://developer.egret.com/cn/github/egret-docs/Engine2D/minigame/publish/index.html)
+答：升级成功后，请首先保证 HTML5 版本可以正常运行，然后再尝试发布为微信小游戏，目前我们遇到了多位开发者通过创建 5.1.2 新项目后拷贝老项目代码和素材的方式尝试升级，由于忽视了修改 egretProperties.json 中的模块配置，导致运行失败的问题。[升级教程](../../minigame/publish/README)
 
 #### 在游戏使用到 egret.getDefinitionByName() 报错，找不到对应类时：
 
@@ -101,11 +101,12 @@
 
 答：检查是否使用了 嵌入EXML到代码中，例：
 
-```
+~~~javascript
     var className = "skins.ButtonSkin";
-    var exmlText = `<e:Skin class="${className}" states="up,over,down,disabled" xmlns:s="http://ns.egret.com/eui">                ...
+    var exmlText = `<e:Skin class="${className}" states="up,over,down,disabled" xmlns:s="http://ns.egret.com/eui">
+                    ...
                     </e:Skin>`;
-```
+~~~
 
 需要改成单独的皮肤文件。
 
@@ -119,45 +120,16 @@
 
 答：
 * 升级小游戏支持库到1.0.12版本
-* 在微信开发者工具的 Console 控制台输入```egret.wxgame.version```应输出1.0.12
+* 在微信开发者工具的 Console 控制台输入 **egret.wxgame.version** 应输出1.0.12
 
 * 访问 [这里](./xmldom.zip) 下载小游戏xml支持库
 * 解压支持库，并拷贝到微信小游戏目录
 * 打开小游戏目录中 game.js
-* 在 ```egret.runEgret``` 之前加入代码：```window.DOMParser = require("./xmldom/xmldom.js").DOMParser;```
-
-<a name="thirdlib"></a>
-#### 为什么引入第三方库报 ``` 第三方库 is not defined``` 错误.
-
-答：
-我们要再次强调小游戏有很多的限制，首先检查我们所使用的第三方库是否符合小游戏的标准，具体可以参考小游戏官方文档，如果不符合规范，我们只能自己来修改这个库以达到标准。后期我们会整理常用的库提供给开发者。
-经检查适合小游戏的标准，但还是会报我们使用的 ```第三放库未定义```，需要我们把第三方库挂在到全局对象 window 上，我们可以在 wxgame.ts 的文件中添加。例如我们加入 zlib 库。如图：
-
-![](x04.png);
-
-#### 在 wing 调用小游戏开发工具，例如使用 run 命令，有如图提示：
-![](x05.png);
-
-答：
-请您直接使用微信开发者工具 打开这个小游戏项目即可。
-
-
-#### 升级到 5.1.5 时会报 ``` isMobile of function Capabilities ``` 错误
-
-答：
-升级小游戏包到最新版本（1.0.12）后，重新生成微信小游戏项目，可以解决。
-
-今天就和大家分享这么多。有关更多的问题请您到 egret 论坛 bbs.egret.com 参与讨论。
-
-#### WebGLRenderContext 在模拟器里报错
-![](error-5.png)
-
- window 系统下，部分独立显卡对模拟器的支持有问题，需要切换成集成显卡。
-
-#### 为什么我动态设置帧频没有效果
-答：小游戏平台只能在 index.html 里设置，不能通过 stage.frameRate 方法动态修改
+* 在 **egret.runEgret** 之前加入代码：**window.DOMParser = require("./xmldom/README.md 里设置，不能通过 stage.frameRate 方法动态修改
 
 #### 为什么加载图片时，在模拟器中产生很多类似这种的报错信息
 ![](error-6.png)
+
 答：这是为了解决骁龙CPU的手机上产生两份纹理引起的，只会在模拟器上报错，真机上没有影响。把微信小游戏项目里 `library/image.js` 这个`log`注释掉就可以了。
+
 ![](error-7.png)

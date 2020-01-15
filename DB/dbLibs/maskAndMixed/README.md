@@ -5,19 +5,19 @@
 * 动画混合
 动画混合是指一个骨架同时可以播放多个动画。例如下面的代码,可以让角色同时播放跑步和开火的动画。
 
-```
+~~~javascript
 armatureDisplay.animation.fadeIn("run", 0.2, 0, 0, "NORMAL_ANIMATION_GROUP");
 armatureDisplay.animation.fadeIn("fire", 0.1, 1, 0, "ATTACK_ANIMATION_GROUP");
-```
+~~~
 
 * 动画遮罩
 动画遮罩就是只将动画的一部分呈现出来，例如下面的代码，将只播放head和body两个骨头的跑步动画，其他骨头将维持原姿势不动。
 
-```
+~~~javascript
 let animationState = armatureDisplay.animation.fadeIn("run");
 animationState.addBoneMask("head");
 animationState.addBoneMask("body_u");
-```
+~~~
 
 这个功能就是通过 AnimationState 的 addBoneMask 这个 API 来实现的。
 
@@ -25,9 +25,9 @@ animationState.addBoneMask("body_u");
 
 最后将动画遮罩和动画混合一起使用，代码如下
 
-```
+~~~javascript
 armatureDisplay.animation.fadeIn("run", 0.2, 0, 0, "NORMAL_ANIMATION_GROUP");
 
 let animationState = armatureDisplay.animation.fadeIn("fire", 0.1, 1, 0, "ATTACK_ANIMATION_GROUP");
 animationState.addBoneMask("body_u");
-```
+~~~

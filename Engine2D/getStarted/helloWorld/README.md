@@ -1,7 +1,7 @@
-
+
 ### 安装引擎
 
-下载[Egret Engine](http://www.egret.com/products/engine.html),（可参考：[安装与部署](../../../Engine2D/projectConfig/installation/README.md)）。
+下载[Egret Engine](http://www.egret.com/products/engine.html),（可参考：[安装与部署](../../projectConfig/installation/README.md)）。
 
 ### 安装开发工具
 
@@ -39,16 +39,16 @@
   当前项目所使用的 Egret 的版本。
 
 * 选择扩展库
-项目中需要使用的系统库。更多关于扩展库选择的介绍可以参考：[扩展库简介](../../../Engine2D/projectConfig/extendRepSummary/README.md)
+项目中需要使用的系统库。更多关于扩展库选择的介绍可以参考：[扩展库简介](../../projectConfig/extendRepSummary/README.md)
 
 * 舞台尺寸
  默认游戏舞台的高度与宽度，以像素为单位.
 
 * 缩放模式
-  屏幕的适配方式，这里选择showALL模式。更多关于缩放模式的介绍可以参考：[屏幕适配](../../../Engine2D/screenAdaptation/screenAdaptation/README.md)
+  屏幕的适配方式，这里选择showALL模式。更多关于缩放模式的介绍可以参考：[屏幕适配](../../screenAdaptation/zoomMode/README.md)
 	
 * 旋转方式
-	屏幕的旋转模式，这里选择auto模式。更多关于旋转设置的介绍可以参考：[屏幕适配](../../../Engine2D/screenAdaptation/screenAdaptation/README.md)
+	屏幕的旋转模式，这里选择auto模式。更多关于旋转设置的介绍可以参考：[屏幕适配](../../screenAdaptation/rotationMode/README.md)
 
 点击 `创建` ，创建Hello World项目。
 
@@ -71,8 +71,8 @@
 * scripts：项目构建和发布时需要用到的脚本文件存放在此目录。
 * src：项目代码文件存放于此目录。
 * template：项目模板文件存放于此目录。
-* egretProperties.json：项目的配置文件。具体的配置说明可以参考：[EgretProperties说明](../../../Engine2D/projectConfig/configFile/README.md)
-* index.html：入口文件。具体的配置说明可以参考：[入口文件说明](../../../Engine2D/projectConfig/indexFile/README.md)
+* egretProperties.json：项目的配置文件。具体的配置说明可以参考：[EgretProperties说明](../../projectConfig/configFile/README.md)
+* index.html：入口文件。具体的配置说明可以参考：[入口文件说明](../../projectConfig/indexFile/README.md)
 * manifest.json：网页清单文件。
 * tsconfig.json：typescript 编译配置文件。
 

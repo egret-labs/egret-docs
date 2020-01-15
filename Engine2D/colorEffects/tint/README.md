@@ -5,7 +5,7 @@
 
 下面是一个示例，给图片加上不同的填充色。
 
-```
+```javascript
 let texture: egret.Texture = RES.getRes('bird_png');
 
 let b1 = new egret.Bitmap();

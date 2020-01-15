@@ -1,4 +1,4 @@
-# 使用 AssetsManager 灵活定制微信小游戏的缓存策略
+# 使用 AssetsManager 灵活定制微信小游戏的缓存策略
 
 
 ---
@@ -25,9 +25,9 @@
 
 在进行缓存之前，您需要将您的游戏资源设置为从外部加载，而非从游戏包加载，如果您之前已经做完了这一步，可以忽略这个步骤。
 
-* 修改您的 ```script/config.wxgame.ts``` 文件，在发布过程中添加 ResSplitPlugin 插件:
+* 修改您的 **script/config.wxgame.ts** 文件，在发布过程中添加 ResSplitPlugin 插件:
 
-    ```
+    ~~~javascript
      commands: [
                     new CleanPlugin({ matchers: ["js", "resource"] }),
                     new CompilePlugin({ libraryType: "release", defines: { DEBUG: false, RELEASE: true } }),
@@ -47,10 +47,10 @@
                         ]
                     }),
                     new ManifestPlugin({ output: 'manifest.js' })
-    ```
+    ~~~
     该插件的用意是，在您执行 egret publish 时，将 resource 文件夹的所有内容发布到 projectname_wxgame_remote 文件夹，而非 projectname_wxgame 文件夹中，这样游戏资源就不会被打包进微信项目。
-* 修改您的```Main.ts```中的配置加载代码，修改为 ```RES.loadConfig("default.res.json","http://localhost:8080/resource/");```
-* 执行 ```egret publish --target wxgame```，游戏的代码会发布到projectname_wxgame 文件夹，游戏资源会发布到 projectname_wxgame_remote 文件夹，发布之后在projectname_wxgame_remote 架设一台端口为 8080 的本地服务器。
+* 修改您的**Main.ts**中的配置加载代码，修改为 **RES.loadConfig("default.res.json","http://localhost:8080/resource/");**
+* 执行 **egret publish --target wxgame**，游戏的代码会发布到projectname_wxgame 文件夹，游戏资源会发布到 projectname_wxgame_remote 文件夹，发布之后在projectname_wxgame_remote 架设一台端口为 8080 的本地服务器。
 
 
 这一步完成之后，您的项目就已经支持资源从外部读取。

@@ -6,7 +6,7 @@ Egret 提供三种不同的文本类型。
 
 `egret.TextField` 类表示文本类型，使用范例如下：
 
-```
+```javascript
 var label:egret.TextField = new egret.TextField(); 
 label.text = "This is a text!"; 
 this.addChild( label );
@@ -24,7 +24,7 @@ this.addChild( label );
 
 将文本框设置为可输入的代码如下：
 
-```
+```javascript
 var txInput:egret.TextField = new egret.TextField();
 txInput.type = egret.TextFieldType.INPUT;
 txInput.width = 282;
@@ -42,7 +42,7 @@ this._container.addChild(txInput);
 
 输入文本有 `setFocus()` 方法，作用是使输入文本获得焦点，使用方法如下：
 
-```
+```javascript
 var textIput:egret.TextField = new egret.TextField();
 textIput.type = egret.TextFieldType.INPUT;
 this.addChild(textIput);
@@ -67,7 +67,7 @@ button.addEventListener(egret.TouchEvent.TOUCH_BEGIN,(e) => {
 
 设置输入文本样式首先要设置 `egret.TextField` 的 `TextFieldType` 为 `INPUT` 类型。然后设置 `egret.TextField` 的 `inputType` 属性即可。
 
-```
+```javascript
 var text:egret.TextField = new egret.TextField();
 text.type = egret.TextFieldType.INPUT;
 //设置输入文本的样式为文本
@@ -113,7 +113,7 @@ this.addChild(tel);
 
 范例如下：
 
-```
+```javascript
 class Main extends egret.DisplayObjectContainer {
 
     public constructor() {

@@ -16,7 +16,7 @@ Egret中容器的深度都是从0开始的，当第一个显示对象被添加�
 
 下面的示例中，创建了两个显示对象，并且让他们发生遮挡，依次查看显示对象的深度值关系。
 
-```
+```javascript
 var spr1:egret.Sprite = new egret.Sprite();
 spr1.graphics.beginFill( 0xff0000 );
 spr1.graphics.drawRect( 0, 0, 100, 100);
@@ -50,7 +50,7 @@ this.addChild( spr2 );
 
 在下面的示例中，随机绘制四个颜色不同的正方形，将它们依次叠加排列，然后新建一个显示对象，并且放到深度为1的位置。
 
-```
+```javascript
 var sprcon:egret.Sprite = new egret.Sprite();
 this.addChild( sprcon );
 sprcon.x = 10;
@@ -86,7 +86,7 @@ sprcon.addChildAt( sprNew, 1 );
 
 通过对上面示例代码的修改，将深度值为2的显示对象移除显示列表。
 
-```
+```javascript
 var sprcon:egret.Sprite = new egret.Sprite();
 this.addChild( sprcon );
 sprcon.x = 10;
@@ -118,7 +118,7 @@ sprcon.removeChildAt( 2 );
 
 若要一次性将一个容器内的所有子对象全部删除，不需要使用下方代码所示遍历操作：
 
-```
+```javascript
 var numChild:number = sprcon.numChildren;
 for(var t:number = 0; t<numChild; t++)
 {
@@ -150,7 +150,7 @@ Egret 为开发者提供了两个方法实现交换不同对象深度的功能�
 
 下面示例中，创建一个sprcon容器，并向其中绘制两个颜色不同的方块。然后分别使用上面两个方法互换两个方块的深度值。
 
-```
+```javascript
 var sprcon:egret.Sprite = new egret.Sprite();
 this.addChild( sprcon );
 sprcon.x = 10;
@@ -194,7 +194,7 @@ sprcon.swapChildrenAt( 0, 1 );
 
 示例代码如下：
 
-```
+```javascript
 var sprcon:egret.Sprite = new egret.Sprite();
 this.addChild( sprcon );
 sprcon.x = 10;
@@ -234,7 +234,7 @@ Egret 提供两种访问容器子对象的方法: `getChildAt()` 和 `getChildBy
 
 下面示例代码中，向一个容器中存放了两个方块，通过深度来获取其中一个方块，并调整它的透明度。
 
-```
+```javascript
 var sprcon:egret.Sprite = new egret.Sprite();
 this.addChild( sprcon );
 sprcon.x = 10;
@@ -267,7 +267,7 @@ _spr.alpha = 0.5;
 
 下面示例代码中，通过显示对象的 `name` 获取其中一个方块，并调整它的透明度。
 
-```
+```javascript
 var sprcon:egret.Sprite = new egret.Sprite();
 this.addChild( sprcon );
 sprcon.x = 10;

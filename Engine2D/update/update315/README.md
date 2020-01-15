@@ -1,4 +1,4 @@
-
+
 
 ## Egret Engine 2D    
 
@@ -16,35 +16,38 @@
 ## 开放平台    
 
 #### 创建 Nest示例工程
-全局安装命令行工具：    
-```
+全局安装命令行工具:
+~~~ javascript
 npm install -g egret-cli
-```    
-1 创建命令    
-```
-egret-cli nest create [relativePathToCwd] | -p <absolutePath>
-```    
-参数说明:    
-    [relativePathToCwd]       项目名称(相对路径)    
-    -p, --path <absolutePath> 项目名称(绝对路径,必须指定-p 否则会当做相对路径处理)    
+~~~
 
-2 run 运行命令    
-```
+**1.创建命令**
+
+~~~ javascript
+egret-cli nest create [relativePathToCwd] | -p <absolutePath>
+~~~    
+参数说明:
+* [relativePathToCwd] 项目名称(相对路径)
+* -p, –path 项目名称(绝对路径,必须指定-p 否则会当做相对路径处理)
+
+**2.run 运行命令**
+
+~~~
 egret-cli nest run [relativePathToCwd | -p <absolutePath>] [-a]
-```    
+~~~
 
 用法示例:    
-```
+~~~
 egret-cli nest run
 egret-cli nest run -a
 egret-cli nest run test -a
 egret-cli nest run -p /Users/testuser/test -a 
-```
+~~~
 
-可选参数说明:    
-    relativePathToCwd         项目名称(相对路径)    
-    -p, --path <absolutePath> 项目名称(绝对路径,必须指定-p)    
-    -a, --autoBuild           打开自动编译
+可选参数说明:
+* relativePathToCwd 项目名称(相对路径)
+* -p, –path 项目名称(绝对路径,必须指定-p)
+* -a, –autoBuild 打开自动编译
 
 [bern_hdr]: 5791e02548192.jpg
 [egret-bird-filter-shadow]: 5791e0255665b.png

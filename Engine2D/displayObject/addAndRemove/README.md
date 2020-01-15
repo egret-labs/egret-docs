@@ -4,7 +4,7 @@
 
 当创建一个显示对象后，就可以将其添加到显示列表中，首先绘制一个Sprite，这个Sprite是一个宽高为100的绿色正方形。
 
-```
+```javascript
 var spr:egret.Sprite = new egret.Sprite();
 spr.graphics.beginFill( 0x00ff00 );
 spr.graphics.drawRect(0, 0, 100, 100);
@@ -13,7 +13,7 @@ spr.graphics.endFill();
 
 上面的代码就是建立显示对象的过程，测试程序，在舞台中看不到任何内容。将 spr 添加到显示列表中，代码如下：
 
-```
+```javascript
 this.addChild( spr );
 ```
 
@@ -31,7 +31,7 @@ this.addChild( spr );
 
 使用 `removeChild()` 方法可删除显示对象，代码如下：
 
-```
+```javascript
 this.removeChild( spr );
 ```
 
@@ -47,7 +47,7 @@ this.removeChild( spr );
 
 通过一段代码观察显示对象在容器中的操作与状态改变：
 
-```
+```javascript
 //创建了一个类型为Sprite的显示对象
 var spr:egret.Sprite = new egret.Sprite();
 spr.graphics.beginFill( 0x00ff00 );
@@ -74,7 +74,7 @@ this.removeChild( spr );
 
 将两个容器都添加到显示列表中，他们的父级都是文档类。下面是示例代码：
 
-```
+```javascript
 var sprcon1:egret.Sprite = new egret.Sprite();
 sprcon1.graphics.beginFill( 0x00ff00 );
 sprcon1.graphics.drawRect(0, 0, 100, 100);
@@ -98,7 +98,7 @@ sprcon2.y = 130;
 
 创建并绘制一个蓝色正方形的代码：
 
-```
+```javascript
 var spr:egret.Sprite = new egret.Sprite();
 spr.graphics.beginFill( 0x0000ff );
 spr.graphics.drawRect( 0, 0, 50, 50 );
@@ -109,7 +109,7 @@ spr.y = 10
 
 添加到文档类的显示容器中：
 
-```
+```javascript
 this.addChild( spr );
 ```
 
@@ -119,7 +119,7 @@ this.addChild( spr );
 
 添加到sprcon1绿色容器中：
 
-```
+```javascript
 sprcon1.addChild( spr );
 ```
 
@@ -129,7 +129,7 @@ sprcon1.addChild( spr );
 
 添加到sprcon2红色容器中：
 
-```
+```javascript
 sprcon2.addChild( spr );
 ```
 
@@ -155,7 +155,7 @@ sprcon2.addChild( spr );
 
 避免这种问题的处理方法是：每次removeChild之前，对即将要被删除的显示对象做一次判断，判断它是否拥有父级。判断的代码如下：
 
-```
+```javascript
 if( spr.parent ) {
     spr.parent.removeChild( spr );
 }

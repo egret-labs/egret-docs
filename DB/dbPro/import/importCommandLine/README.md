@@ -1,5 +1,7 @@
 DragonBones pro 从 4.3 开始支持命令行导入，实现批处理
-`Import ( dbdata=""，texturefolder=""， textureatlas="xxx.png"， texturedata=""， dbdatapack=""， plugin="auto"， projectname=""， projectpath="" )`
+``` typescript
+Import ( dbdata=""，texturefolder=""， textureatlas="xxx.png"， texturedata="" dbdatapack=""，plugin="auto"，projectname=""，projectpath="")
+```
 
 命令名：import
 参数列表：

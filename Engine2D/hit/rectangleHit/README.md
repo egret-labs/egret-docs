@@ -5,7 +5,7 @@
 
 Egret 提供 `hitTestPoint()` 方法进行碰撞检测，矩形碰撞检测的用法为：
 
-```
+```javascript
 var isHit:boolean = shp.hitTestPoint( x: number, y:number );
 ```
 
@@ -13,7 +13,7 @@ var isHit:boolean = shp.hitTestPoint( x: number, y:number );
 
 * 示例代码1：
 
-```
+```javascript
 class HitTest extends egret.DisplayObjectContainer
 {
    public constructor()
@@ -58,7 +58,7 @@ class HitTest extends egret.DisplayObjectContainer
 
 * 示例代码2：
 
-```
+```javascript
 class HitTest extends egret.DisplayObjectContainer
 {
    public constructor()

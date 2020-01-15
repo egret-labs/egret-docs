@@ -6,7 +6,7 @@ Egret中，事件的侦听器必须是一个函数。事件的发送者必须是
 
 下面是注册侦听函数的定义。
 
-```
+```javascript
 public addEventListener(type:string, listener:Function, thisObject:any, useCapture:boolean = false, priority:number = 0)
 ```
 
@@ -25,7 +25,7 @@ public addEventListener(type:string, listener:Function, thisObject:any, useCaptu
 
 侦听器必须是函数，它可以是一个独立函数，也可以是一个实例的方法。侦听器必须有一个参数，并且这个参数必须是 Event 类实例或其子类的实例， 同时，侦听器的返回值必须为空（void）。范例代码如下：
 
-```
+```javascript
 listenerName(evt:Event):void {...}
 ```
 
@@ -35,13 +35,13 @@ listenerName(evt:Event):void {...}
 
 注册侦听器
 
-```
+```javascript
 事件发送者.addEventListener(事件类型, 侦听器, this);
 ```
 
 移除侦听器
 
-```
+```javascript
 事件发送者.removeEventListener(事件类型, 侦听器, this);
 ```
 
@@ -51,7 +51,7 @@ listenerName(evt:Event):void {...}
 
 如果该事件类型已经被注册过，返回 `true`，如果没有被注册过，返回 `false`。
 
-```
+```javascript
 事件发送者.hasEventListener(事件类型);
 ```
 
@@ -60,6 +60,6 @@ listenerName(evt:Event):void {...}
 TouchEvent的启动开关 `touchEnabled` 指定此对象是否接收触摸或其他用户输入。默认值为 false，实例将不接收任何触摸事件（或其他用户输入事件）。如果将 `touchEnabled`设置为 true，则显示对象实例将会接收触摸事件或其他用户输入事件。要更改显示对象的所有子级的 touchEnabled 行为，请使用 `DisplayObjectContainer.touchChildren`。
 
 实际使用过程，如果某些显示对象需要侦听TouchEvent，请先打开：
-```
+```javascript
 显示对象实例.touchEnabled = true;
 ```

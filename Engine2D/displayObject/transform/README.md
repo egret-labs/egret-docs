@@ -6,7 +6,7 @@
 
 ### 默认锚点
 
-```
+```javascript
 class AnchorTest extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -40,7 +40,7 @@ class AnchorTest extends egret.DisplayObjectContainer
 
 修改上例锚点的位置，让锚点居于正方形左上角x轴 50 像素的位置，代码如下：
 
-```
+```javascript
 shp.anchorOffsetX = 50;
 ```
 
@@ -55,7 +55,7 @@ shp.anchorOffsetX = 50;
 ### 位置
 通过的 x 和 y 属性可访问修改显示对象的位置。
 
-``` 
+``` javascript
 container.x = 17;
 container.y = 212;
 ```
@@ -68,7 +68,7 @@ container.y = 212;
 
 x 和 y 属性始终是指显示对象相对于其父显示对象坐标轴的 (0,0) 坐标的位置。因此，对于包含在 DisplayObjectContainer 实例内的 Shape 实例（如圆），如果将 Shape 对象的 x 和 y 属性设置为 0，会将圆放在 DisplayObjectContainer 的左上角，但该位置不一定是舞台的左上角。若要确定对象相对于全局舞台坐标的位置，可以使用任何显示对象的 globalToLocal() 方法将坐标从全局（相对于舞台）坐标转换为本地（相对于显示对象容器）坐标，如下所示：
  
-```
+```javascript
 //创建一个空的 DisplayObjectContainer，把它的 x 和 y 坐标都改为
 var container: egret.DisplayObjectContainer = new egret.DisplayObjectContainer();
 container.x = 200;
@@ -103,7 +103,7 @@ function onClick():void{
 
 当手指按到屏幕时监听 TOUCH_MOVE 事件，每次手指移动时调用`onMove()`函数，使拖动的对象跳到手指所在的x,y坐标。当手指离开屏幕后取消监听，对象停止跟随。
 
-```
+```javascript
 //设定2个偏移量
 var offsetX:number;
 var offsetY:number;
@@ -148,7 +148,7 @@ function onMove(e:egret.TouchEvent):void{
 ### 尺寸
 尺寸属性 `width` 和 `height` 最初设置为对象的大小，以像素为单位。可以通过读取这些属性的值来确定显示对象的大小,也可以指定新值来更改对象的大小，如下所示：
 
-```  TypeScript
+```  javascript
 //设定对象的大小
 mySprite.width = 50;
 mySprite.height = 100;
@@ -159,7 +159,7 @@ mySprite.height = 100;
 
 通过缩放属性 `scaleX` 和 `scaleY` 可以等比更改显示对象的大小，如下面代码:
 
-```
+```javascript
 //设定对象的大小
 mySprite.scaleX = 2;
 mySprite.scaleY = 2;
@@ -173,7 +173,7 @@ mySprite.scaleY = 2;
 
 下面代码使 `mySprit` 以锚点为圆心，顺时针旋转45°。
 
-```
+```javascript
 //把对象旋转 45 度（一整周旋转的 1/8）
 mySprite.rotation = 45;
 ```
@@ -188,7 +188,7 @@ mySprite.rotation = 45;
 
 如上图所示，是对白鹭小鸟进行X方向斜切10所达到的结果。左边是未变形的原始图片，右边是变形后的图片。  
 
-```
+```javascript
 //设定对象的X方向斜切
 mySprite.skewX = 10;
 ```
@@ -202,7 +202,7 @@ mySprite.skewX = 10;
 [skewX_compare]: skewX_compare.png
 [skewY_compare]: skewY_compare.png
 
-```
+```javascript
 //设定对象的Y方向斜切
 mySprite.skewY = 10;
 ```

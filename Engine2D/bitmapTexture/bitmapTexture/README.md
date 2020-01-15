@@ -4,7 +4,7 @@
 ## 1.创建
 使用 `Bitmap` 类创建图片对象，代码如下：
 
-```
+```javascript
 private img:egret.Bitmap = new egret.Bitmap();
 ```
 
@@ -25,7 +25,7 @@ img.texture = RES.getRes("图片ID");
 
 下面是一个标准的资源配置文件：
 
-```
+```json
 {
     "resources":
     [
@@ -60,7 +60,7 @@ img.texture = RES.getRes("图片ID");
 
 示例代码如下：
 
-```
+```javascript
 class BitmapTest extends egret.DisplayObjectContainer{
 
     public constructor() {
@@ -89,7 +89,7 @@ class BitmapTest extends egret.DisplayObjectContainer{
 
 ## 3.其他方式创建位图
 ### 3.1 您还可以通过其他方式创建位图，例如 base64
-```
+```javascript
  let str64 = "iVBORw0KGgoAAAANSUhEUgAAAHM..."
  egret.BitmapData.create("base64",str64,(bitmapData)=>{
     let texture = new egret.Texture();

@@ -3,7 +3,7 @@ Egret 提供了 `ImageLoader` 类，用于加载位图文件。
 
 例如 `ImageLoader` 类通过如下代码加载位于 'resource/egret.png' 的图片： 
 
-``` TypeScript
+``` javascript
 var imgLoader:egret.ImageLoader = new egret.ImageLoader;
 imgLoader.once( egret.Event.COMPLETE, this.imgLoadHandler, this ); 
 imgLoader.load( "resource/egret.png" );  
@@ -11,7 +11,7 @@ imgLoader.load( "resource/egret.png" );
 
 在所定义的回调事件中，可以用下面的方式获取该图片对应的 BitmapData，并以此来创建位图：
 
-``` TypeScript
+``` javascript
 imgLoadHandler( evt:egret.Event ):void{
     let loader:egret.ImageLoader = evt.currentTarget;
     let bmd:egret.BitmapData = loader.data;

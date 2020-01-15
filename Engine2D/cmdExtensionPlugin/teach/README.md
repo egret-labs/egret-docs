@@ -32,7 +32,7 @@
 
 回到EgretWing，编辑sctipts下的config.wxgame.ts：
 
-```typescript
+```javascript
 //***其他代码***
 //
 
@@ -422,5 +422,5 @@ this.list_hero.itemRenderer = heroList_item
 
 本文通过使用UglifyPlugin，ResSplitPlugin，ZipPlugin，TextureMergerPlugin，ConvertResConfigFilePlugin插件，使项目发布到微信小程序之后的代码包体积减小，用户发起的请求数变少，且将代码混淆压缩。
 
-使用Egret自带的插件，已经可以满足开发者的基本需求，如果有针对项目的特殊需求，可以选择[自定义插件](http://developer.egret.com/cn/github/egret-docs/Engine2D/cmdExtensionPlugin/plugin/index.html)。
+使用Egret自带的插件，已经可以满足开发者的基本需求，如果有针对项目的特殊需求，可以选择[自定义插件](../../cmdExtensionPlugin/plugin/README.md)。
 

@@ -18,7 +18,7 @@ TypeScript详细手册参考：[TypeScript Handbook（中文版）](https://www.
 
 在 TestA.ts 中代码如下：
 
-```
+``` javascript
 class TestA{
     public static arr:Array<any> = ["t","e","s","t","c","a","l","l"];
 }
@@ -26,7 +26,7 @@ class TestA{
 
 TestB.ts 中代码如下:
 
-```
+``` javascript
 class TestB{
     public static testBStr:string = TestA.arr.join("");
 }
@@ -36,7 +36,7 @@ class TestB{
 
 下面在TestCall.ts 中加入对 TestB 类的调用。
 
-```
+``` javascript
 class TestCall{
     public static test:any = egret.getDefinitionByName(TestB.testBStr);
 }
@@ -54,12 +54,12 @@ class TestCall{
 
 这种情况解决方法是告诉编译器项目中的类的依赖关系。在 TypeScript 中，使用`<reference>`标签来表示引用关系。在 reference 标签中可以标记依赖文件的相对路径。所以只需要在 TestB 类之前加入如下注释即可：
 
-```
+``` javascript
 ///<reference path="TestA.ts" />
 ```
 
 
-```
+``` javascript
 class TestB{
     public static testBStr:string = TestA.arr.join("");
 }

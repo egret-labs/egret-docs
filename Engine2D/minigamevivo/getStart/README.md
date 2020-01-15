@@ -29,14 +29,14 @@
 
 #### 方法2：配置 egretProperties.json
 
-```
+~~~ javascript
 "engineVersion": "5.2.23",
 "compilerVersion": "5.2.23",
 "template": {},
 "target": {
 	"current": "vivogame"
 },
-```
+~~~
 
 如上所示，将 `egretProperties.json` 配置文件中的 `current` 属性设置为 `vivogame` 时，可以直接使用```egret build``` 或者 ```egret publish``` 命令编译和发布 vivo 小游戏。
 
@@ -60,7 +60,7 @@
 
 * manifest.json 配置说明
 
-```
+~~~ javascript
 {
 	"package": "com.application.demo",
 	"name": "vivogame",
@@ -70,7 +70,7 @@
 	"icon": "/icon/logo.png",
 	"orientation": "portrait"
 }
-```
+~~~
 - 参数说明
 	* package:应用包名
 	* name:应用名称，6 个汉字以内，与应用商店保存的名称一致，用于在桌面图标、弹窗等处显示应用名称

@@ -1,4 +1,4 @@
-
+
 
 
 ## Egret Engine 2D    
@@ -58,7 +58,7 @@ fnt有两种规范，一种是纯文本的，一种是JSON，这里以 Egret 配
 现在，创建新的 Egret 项目后，将会在入口文件 `index.html` 底部发现入口代码：   
 ```egret.runEgret({renderMode:"webgl", audioType:0});```    
 `audioType`参数可以使用如下数字取值，对应含义说明与后：0:默认，1:qq audio，2:web audio，3:audio。    
-这几种音频的具体说明见 [音频系统之播放类型](http://developer.egret.com/cn/github/egret-docs/Engine2D/multimedia/audio/index.html)   
+这几种音频的具体说明见 [音频系统之播放类型](../../multimedia/audio/README.md)   
 
 
 #### 其他更新

@@ -22,7 +22,7 @@
 
 1. 创建一个egret第三方库的项目文件，在命令行中输入
 
-   ```bash
+   ```
    egret create_lib demo
    ```
 

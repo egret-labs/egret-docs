@@ -40,7 +40,7 @@
 
 * 2.将 `addLog` 文件夹内的 `index.js` 代码修改如下：
 
-```
+~~~javascript
 // 云函数入口文件
 const cloud = require('wx-server-sdk')
 cloud.init()
@@ -63,7 +63,7 @@ exports.main = async (event, context) => {
   })
   return newData
 }
-```
+~~~
 * 3.右键在 `addLog` 文件夹上点击 `上传并部署：云端安装依赖`
 
 
@@ -72,7 +72,7 @@ exports.main = async (event, context) => {
 ### 四.代码调用
 * 1.增加服务器上的数据，只要调用刚才创建的 `addLog` 云函数就可以了。
 
-```
+~~~javascript
 wx.cloud.callFunction({
     name: "addLog",
     data: {
@@ -85,16 +85,16 @@ wx.cloud.callFunction({
         console.log("err", err)
     }
 })
-```
+~~~
 * 2.获取服务器上的数据
 
-```
+~~~javascript
 const db = wx.cloud.database()
 
 db.collection('logs').doc('9390f2ff-0318-4826-87d8-78bf31568cab').get().then(res => {
     console.log('获取数据', res.data.content)
 })
-```
+~~~
 
 本示例演示了如何增加和查询数据，前端调用 API 即可，不需要后端的开发工作，简化了开发流程。
 

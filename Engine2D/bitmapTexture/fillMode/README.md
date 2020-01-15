@@ -10,7 +10,7 @@
 
 下面是的示例中，使用默认填充方式。使用的纹理图片为一张100*100的图片。图像宽度设置为2倍，高度设置为3倍。
 
-```
+```javascript
 class BitmapTest extends egret.DisplayObjectContainer{
     public constructor()
     {
@@ -43,13 +43,13 @@ class BitmapTest extends egret.DisplayObjectContainer{
 
 设置填充方法需要改变 `Bitmap` 中的 `fillMode` 属性。
 
-```
+```javascript
 img.fillMode = egret.BitmapFillMode.REPEAT
 ```
 
 具体示例代码如下：
 
-```
+```javascript
 class BitmapTest extends egret.DisplayObjectContainer{
     public constructor()
     {

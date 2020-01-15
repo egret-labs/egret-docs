@@ -5,7 +5,7 @@ DragonBones 系统中允许创建多个骨骼动画，用户可以创建多个 F
 使用多个EgretFactory方法可参考**创建骨骼动画**一节。
 范例如下：
 
-```
+~~~javascript
 let dragonbonesData = RES.getRes( "RobotGame_1_json" );
 let textureData = RES.getRes( "texture_json" );
 let texture = RES.getRes( "texture_png" );
@@ -33,7 +33,7 @@ armatureDisplayB.x = 250;
 armatureDisplayB.y = 350;
 armatureDisplayB.scaleX = 0.5;
 armatureDisplayB.scaleY = 0.5;
-```
+~~~
 
 效果如图：
 
@@ -41,7 +41,7 @@ armatureDisplayB.scaleY = 0.5;
 
 使用同一 Factory 方法如下：
 
-```
+~~~javascript
 let dragonbonesDataA = RES.getRes( "RobotGame_1_json" );
 let textureDataA = RES.getRes( "texture_json" );
 let textureA = RES.getRes( "texture_png" );
@@ -69,7 +69,7 @@ armatureDisplayB.x = 250;
 armatureDisplayB.y = 350;
 armatureDisplayB.scaleX = 0.5;
 armatureDisplayB.scaleY = 0.5;
-```
+~~~
 
 效果如图：
 

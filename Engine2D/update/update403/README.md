@@ -36,11 +36,11 @@
     * 导出插件支持 MacOS 版本，重构部分业务逻辑， 插件下载地址：[http://tool.egret-labs.org/egret3D/egret3d_unity_plugin_0.0.3.unitypackage](http://tool.egret-labs.org/egret3D/egret3d_unity_plugin_0.0.3.unitypackage)
     * 增加 debug 模式性能监控面板
     
-		~~~
-		egret3d.Egret3DEngine.instance.debug = true;
-		~~~
-		
-		![image](1.png)
+    ~~~
+    egret3d.Egret3DEngine.instance.debug = true;
+    ~~~
+
+    ![image](1.png)
 		
 	
 ## 已知问题

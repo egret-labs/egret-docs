@@ -10,7 +10,7 @@
 
 ## 2D 渲染 - JavaScript 
 
-* 新增内置库 [Egretia SDK](https://github.com/Egretia/egretia-docs/tree/master/cn)，嵌入 Web 钱包，游戏调试可以直接使用 Web 钱包进⾏调试
+* 新增内置库 [Egretia SDK](https://github.com/Egretia/egretia-docs)，嵌入 Web 钱包，游戏调试可以直接使用 Web 钱包进⾏调试
 * 修复开启C++显示列表情况下，龙骨动画颜色变换功能失效问题
 
 ## AssetsManager

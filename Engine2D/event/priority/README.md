@@ -1,7 +1,7 @@
 通过制定事件的优先级来设置事件侦听器的执行顺序。
 
 可以在注册侦听器的时候制定事件的优先级。
-```
+```javascript
 public addEventListener(type:string, listener:Function, thisObject:any, useCapture:boolean = false, priority:number = 0)
 ```
 

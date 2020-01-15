@@ -42,7 +42,7 @@ Egret 使用 `HttpRequest` 类发送 HTTP 请求。可以指定请求的方法�
 
 代码如下:
 
-```
+~~~javascript
 var request = new egret.HttpRequest();
 request.responseType = egret.HttpResponseType.TEXT;
 request.open("http://httpbin.org/get",egret.HttpMethod.GET);
@@ -51,13 +51,13 @@ request.send();
 request.addEventListener(egret.Event.COMPLETE,this.onGetComplete,this);
 request.addEventListener(egret.IOErrorEvent.IO_ERROR,this.onGetIOError,this);
 request.addEventListener(egret.ProgressEvent.PROGRESS,this.onGetProgress,this);
-```
+~~~
 
 上面发送了一个 GET 请求到`http://httpbin.org/get`，然后添加回调事件，当请求成功或者失败之后来获取数据。
 
 通过`COMPLETE`事件的`response`属性可获取到返回的信息。通过 `ProgressEvent` 事件的`bytesLoaded`和`bytesTotal`获取可加载进度。回调函数代码如下：
 
-```
+~~~javascript
 private onGetComplete(event:egret.Event):void {
     var request = <egret.HttpRequest>event.currentTarget;
     console.log("get data : ",request.response);
@@ -76,11 +76,11 @@ private onGetIOError(event:egret.IOErrorEvent):void {
 private onGetProgress(event:egret.ProgressEvent):void {
     console.log("get progress : " + Math.floor(100*event.bytesLoaded/event.bytesTotal) + "%");
 }
-```
+~~~
 
 发送 POST 请求的代码如下:
 
-```
+~~~javascript
 var request = new egret.HttpRequest();
 request.responseType = egret.HttpResponseType.TEXT;
 //设置为 POST 请求
@@ -90,11 +90,11 @@ request.send();
 request.addEventListener(egret.Event.COMPLETE,this.onPostComplete,this);
 request.addEventListener(egret.IOErrorEvent.IO_ERROR,this.onPostIOError,this);
 request.addEventListener(egret.ProgressEvent.PROGRESS,this.onPostProgress,this);
-```
+~~~
 
 添加回调函数：
 
-```
+~~~javascript
 private onPostComplete(event:egret.Event):void {
     var request = <egret.HttpRequest>event.currentTarget;
     console.log("post data : ",request.response);
@@ -113,7 +113,7 @@ private onPostIOError(event:egret.IOErrorEvent):void {
 private onPostProgress(event:egret.ProgressEvent):void {
     console.log("post progress : " + Math.floor(100*event.bytesLoaded/event.bytesTotal) + "%");
 }
-```
+~~~
 
 ## 3.发送带参数的请求
 
@@ -121,9 +121,9 @@ private onPostProgress(event:egret.ProgressEvent):void {
 
 发送数据的格式：在 HTTP 客户端发送的数据，一般以`key`和`value`的形式组成，多个数据之间用`&`相连。拼接之后形成如下的形式:
 
-```
+~~~javascript
 key1=value1&key2=valueP2
-```
+~~~
 
 通过 GET 方法发送的参数会加到 URL 的后面拼接起来，并以`?`分隔。POST 方法发送的参数需要先设置 HTTP 请求的头信息，告诉服务端是以什么样的形式来发送的数据。我们最常用的就是`application/x-www-form-urlencoded`,表示我们以`key`和`value`方式来格式化参数。服务端也可以用同样的方法来取到参数。
 
@@ -135,18 +135,20 @@ key1=value1&key2=valueP2
 
 首先建立`get_testphp`文件，在 PHP 中获得 GET 的参数可以通过一个全局数组`$_GET[]`来获取到。下面代码将获取并返回`key`为`p1`和`p2`的参数的值。
 
-```
+~~~javascript
 <?php
      echo $_GET['p1'];
      echo $_GET['p2'];
-?>```
+?>
+~~~
 
 同理建立`post_test.php`,在 PHP 中通过全局数组`$_POST[]`来获取参数。下面代码将获取并返回`key`为`p1`和`p2`的参数的值。
-```
+~~~javascript
 <?php
      echo $_POST['p1'];
      echo $_POST['p2'];
-?>```
+?>
+~~~
 
 ###  3.2.客户端发送参数
 
@@ -154,7 +156,7 @@ key1=value1&key2=valueP2
 
 首先是 GET 请求，GET 请求需要将参数拼接到 URL 后面实现。其中 URL 和 参数之间需要用 `?` 链接。修改上面 GET 请求相应代码如下:
 
-```
+~~~javascript
 //拼接参数 
 var params = "?p1=getP1&p2=getP2";
 var request = new egret.HttpRequest();
@@ -162,11 +164,11 @@ request.responseType = egret.HttpResponseType.TEXT;
 //将参数拼接到url
 request.open("php/get_test.php"+params,egret.HttpMethod.GET);
 request.send();
-```
+~~~
 
 发送 POST 请求. 需要注意的是发送 POST 请求需要将参数放到`send`方法的参数中发送出去。并且要设置其响应头，在我们的例子中使用`key` `value` 的方式来格式化参数，这里需要设置响应头`Content-Type`为`application/x-www-form-urlencoded`。修改上面 POST 请求相应代码如下:
 
-```
+~~~javascript
 //拼接参数
 var params = "p1=postP1&p2=postP2";
 
@@ -177,11 +179,11 @@ request.open("php/post_test.php",egret.HttpMethod.POST);
 request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 //发送参数
 request.send(params);
-```
+~~~
 
 完整代码如下:
 
-```
+~~~javascript
 /**
  * 下面的示例使用 egret.HttpRequest 类进行网络通信。
  */
@@ -277,7 +279,7 @@ class Main extends egret.DisplayObjectContainer {
         console.log("post progress : " + Math.floor(100*event.bytesLoaded/event.bytesTotal) + "%");
     }
 }
-```
+~~~
 
 
 

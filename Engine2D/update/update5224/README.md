@@ -3,8 +3,8 @@
 
 ## 2D 渲染 - JavaScript 
 - **[优化]** 重新整理小游戏平台的适配层结构
-- **[新增]** 新增 `tint` 方法，给当前对象设置填充色。[使用教程](http://developer.egret.com/cn/github/egret-docs/Engine2D/colorEffects/tint/index.html)
-- **[新增]** 新增 `zIndex` 方法，设置对象的 Z 轴顺序。[使用教程](http://developer.egret.com/cn/github/egret-docs/Engine2D/displayObject/resetDepth/index.html)
+- **[新增]** 新增 `tint` 方法，给当前对象设置填充色。[使用教程](../../colorEffects/tint/README.md)
+- **[新增]** 新增 `zIndex` 方法，设置对象的 Z 轴顺序。[使用教程](../../displayObject/resetDepth/README.md)
 
 ## 第三方库
 - **[修复]** Tiled 库在安卓微信上报错的问题

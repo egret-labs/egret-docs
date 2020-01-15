@@ -11,7 +11,7 @@
 
 #### 我在使用白鹭引擎 5.0 / 4.x / 3.x 版本，可以直接转换为vivo小游戏游戏么？
 
-答：目前我们只支持白鹭引擎 5.2.19 以上的版本发布为vivo小游戏。老版本的项目，[参考微信小游戏升级指南](http://developer.egret.com/cn/github/egret-docs/Engine2D/minigame/publish/index.html) 
+答：目前我们只支持白鹭引擎 5.2.19 以上的版本发布为vivo小游戏。老版本的项目，[参考微信小游戏升级指南](../../minigame/publish/README.md) 
 
 
 #### 我在使用 egret res 库，5.2.19 创建的新项目使用的是 assetsmanager 库，这两个库有区别么？
@@ -24,7 +24,7 @@
 
 #### 当老项目（5.2.19以前）升到到最新版时，发布小游戏项目报错：
 
-答：升级成功后，请首先保证 HTML5 版本可以正常运行，然后再尝试发布为vivo小游戏，目前我们遇到了多位开发者通过创建 5.2.19 新项目后拷贝老项目代码和素材的方式尝试升级，由于忽视了修改 egretProperties.json 中的模块配置，导致运行失败的问题。[参考微信小游戏升级指南](http://developer.egret.com/cn/github/egret-docs/Engine2D/minigame/publish/index.html)
+答：升级成功后，请首先保证 HTML5 版本可以正常运行，然后再尝试发布为vivo小游戏，目前我们遇到了多位开发者通过创建 5.2.19 新项目后拷贝老项目代码和素材的方式尝试升级，由于忽视了修改 egretProperties.json 中的模块配置，导致运行失败的问题。[参考微信小游戏升级指南](../../minigame/publish/README.md) 
 
 #### 在游戏使用到 egret.getDefinitionByName() 报错，找不到对应类时：
 
@@ -46,16 +46,14 @@
 
 答：检查是否使用了 嵌入EXML到代码中，例：
 
-```
+~~~ javascript
     var className = "skins.ButtonSkin";
     var exmlText = `<e:Skin class="${className}" states="up,over,down,disabled" xmlns:s="http://ns.egret.com/eui">                ...
                     </e:Skin>`;
-```
+~~~
 
 需要改成单独的皮肤文件。
 
-
-<a name="thirdlib"></a>
 #### 为什么引入第三方库报 ``` 第三方库 is not defined``` 错误.
 
 答：
@@ -70,13 +68,13 @@
 #### 一个 sound 只能创建一个 soundChannel，怎么同时播放同一个声音
 答：创建多个 sound 的方式，分别播放声音。[参考demo](http://tool.egret-labs.org/DocZip/engine/minigame/Sounds.zip)
 
-```
+~~~ javascript
 for (let i = 0; i < 3; i++) {
 	let sd = new egret.Sound()
 	sd.load('resource/assets/se1.mp3')
 	...
 }
-```
+~~~
 
 #### 为什么我动态设置帧频没有效果
 答：小游戏平台只能在 index.html 里设置，不能通过 stage.frameRate 方法动态修改

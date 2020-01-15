@@ -1,7 +1,7 @@
 # 白鹭引擎 5.2.32 发布日志
 白鹭引擎在 2019年12月19日，发布 5.2.32 稳定版本。
 
-- **[新增]** [支持QQ引擎插件功能](https://github.com/egret-labs/egret-docs/tree/master/Engine2D/minigameqq/usePlugin)
+- **[新增]** [支持QQ引擎插件功能](../../minigameqq/usePlugin/README.md)
 
 ## QQ小游戏 v0.1.7
 - **[修复]** 修复声音第一次会播放2次的问题

@@ -6,7 +6,7 @@ DragonBones 本身并不实现事件派发，动画事件和自定义事件的�
 
 代码如下：
 
-```
+~~~javascript
 let armatureDisplay = factory.buildArmatureDisplay("armatureName");
 this.addChild(armatureDisplay);
 
@@ -30,9 +30,9 @@ armatureDisplay.addEventListener(dragonBones.EventObject.FRAME_EVENT, animationE
 
 // Add animation sound event listener.
 factory.soundEventManager.addEventListener(dragonBones.EventObject.SOUND_EVENT, animationEventHandler, this);
-```
+~~~
 
-* 自定义事件可以在 DragonBones Pro 中的事件时间轴添加。（[视频教程](http://developer.egret.com/cn/article/index/id/1091)）
+* 自定义事件可以在 DragonBones Pro 中的事件时间轴添加。[视频教程](http://player.youku.com/embed/XMjY0MjU4ODU4NA==)
 * 自定义事件可以配置自定义参数。
 * 声音事件可以通过 factory 的 soundEventManager 实例统一监听，而不必为每个骨架单独监听。
 

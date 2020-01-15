@@ -14,7 +14,7 @@
 
 示例演示：
 
-```
+```javascript
 class TimerDemo extends egret.DisplayObjectContainer
 {
     public constructor()
@@ -49,7 +49,7 @@ class TimerDemo extends egret.DisplayObjectContainer
 
 示例代码：
 
-```
+```javascript
 class startTickerTest extends egret.DisplayObjectContainer {
     public constructor() {
         super();
@@ -87,7 +87,7 @@ class startTickerTest extends egret.DisplayObjectContainer {
 `startTick` 函数有两个传入参数，第一个参数是回调函数，该回调函数要求有返回值，如果返回为`true`将在回调函数执行完成之后立即重绘，为`false`则不会重绘。第二个参数是`this`对象，通常传入`this`即可。
 
 下面修改回调函数中的代码:
-```
+```javascript
 private moveStar(timeStamp:number):boolean {
     var now = timeStamp;
     var time = this.time;
@@ -113,7 +113,7 @@ private moveStar(timeStamp:number):boolean {
 
 帧事件 `ENTER_FRAME` 在下一帧开始时回调。所以它的回调速率是跟帧率相关的。下面代码测试了不同帧率下的表现：
 
-```
+```javascript
 class startTickerTest extends egret.DisplayObjectContainer {
     public constructor() {
         super();
@@ -149,7 +149,7 @@ class startTickerTest extends egret.DisplayObjectContainer {
 
 示例代码：
 
-```
+```javascript
 private star:egret.Bitmap;
 //设置动画的移动速度
 private speed:number = 0.05;

@@ -10,7 +10,7 @@
 * 全部拷贝以后，先测试下在 H5 中是否正常运行，一定要保证在 H5 中可以正常运行，再进行后续的操作。
 * 还要将 `ThemeAdapter` 类中的 `getTheme` 方法替换如下代码：
 
-```
+~~~javascript
     public getTheme(url: string, onSuccess: Function, onError: Function, thisObject: any): void {
         function onResGet(e: string): void {
             onSuccess.call(thisObject, e);
@@ -31,7 +31,7 @@
             RES.getResByUrl(url, onResGet, this, RES.ResourceItem.TYPE_TEXT);
         }
     }
-```
+~~~
 
 ## 注意事项：
 
@@ -43,17 +43,17 @@
 
 * 检查是否使用了嵌入EXML到代码中，例：
 
-```
+~~~javascript
     var className = "skins.ButtonSkin";
     var exmlText = `<e:Skin class="${className}" states="up,over,down,disabled" xmlns:s="http://ns.egret.com/eui">                ...
                     </e:Skin>`;
-```
+~~~
 
 如果有需要改成单独的皮肤文件。
 
 * ts 代码和 eui 是不允许相同的命令空间，例如：
 
-```
+~~~javascript
 <?xml version="1.0" encoding="utf-8" ?> 
 <e:Skin class="ui.MyButtonSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui"> 
 
@@ -67,4 +67,4 @@ namespace ui {
 		}
 	}
 }
-```
+~~~

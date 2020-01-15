@@ -1,3 +1,4 @@
+
 ## 1.系统信息
 Egret 项目可以运行在支持HTML5的桌面浏览器和各种移动浏览器中。也可以运行在 Egret Runtime 的加速和原生系统环境中。若要获得不同系统的系统信息可以通过`egret.Capabilities `类来获取。需要注意的是它的值都是静态的，可以读取但是不能更改。
 
@@ -44,7 +45,7 @@ Egret 项目可以运行在支持HTML5的桌面浏览器和各种移动浏览器
 ### 1.2.示例
 获得系统信息可以参考下面的代码：
 
-```
+```javascript
 /**
  * 获取系统信息类
  */
@@ -79,7 +80,7 @@ class CapabilitiesTest extends egret.Sprite {
 
 如下示例演示了如何监听旋转的变化并获得旋转的值：
 
-```
+```javascript
 class DeviceOrientationExample extends egret.DisplayObjectContainer {
     private label: egret.TextField;
     public constructor() {
@@ -127,7 +128,7 @@ class DeviceOrientationExample extends egret.DisplayObjectContainer {
 
 示例代码如下：
 
-```
+```javascript
 /**
  * 获取地理位置信息并显示出来
  */
@@ -174,13 +175,13 @@ class GeolocationTest extends egret.DisplayObjectContainer {
 要获得用户的位置信息时需要用户允许的。如果当用户选择了不共享当前的位置信息,将抛出`GeolocationEvent`的`PERMISSION_DENIED`事件。
 
 在我们上面的构造函数里添加gps的监听：
-```
+```javascript
 //监听用户拒绝事件
 gps.once(egret.GeolocationEvent.PERMISSION_DENIED,this.userDenied,this);
 ```
 并给在 `GeolocationTest` 里添加处理函数，将该信息提示给用户：
 
-```
+```javascript
 private userDenied(e:egret.GeolocationEvent){
     this.label.text = "用户拒绝访问位置信息，获取位置信息失败";
     this.label.anchorOffsetX = this.label.width / 2;
@@ -189,14 +190,14 @@ private userDenied(e:egret.GeolocationEvent){
 
 如果由于其他原因未能获取位置信息，将抛出`GeolocationEvent`的`UNAVAILABLE`事件。这里完善上面的程序，添加不能获取信息时的处理：
 
-```
+```javascript
 //监听失败事件
 gps.addEventListener(egret.GeolocationEvent.UNAVAILABLE,this.unAvailable,this);
 ```
 
 在`GeolocationTest` 里添加处理函数，将该信息提示给用户：
 
-```
+```javascript
 private unAvailable (e:egret.GeolocationEvent) {
     this.label.text = "获取位置信息失败: " + e.errorMessage + "n"
         + "错误类型: " + e.errorType;

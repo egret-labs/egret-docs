@@ -9,7 +9,7 @@ DragonBonesPro4.2 开放了插件规范，并实现了导入插件的管理，�
 
 #### 插件编写规范
 *.excfg 文件格式具体如下，例如Spine插件
-``` TypeScript
+~~~ typescript
 {
     "name":"Spine 2.x Importer", //插件的名称
     "path":["spine.js"],//插件的主脚本以及包含脚本
@@ -18,10 +18,10 @@ DragonBonesPro4.2 开放了插件规范，并实现了导入插件的管理，�
     "version":"1.0.0",//插件的版本号
     "icon":"icon.png"//插件的图标(32*32)
 }
-```
+~~~
 
 *.js文件格式具体如下，例如Spine导入插件，继承的是egretPluginSdk.js中DBImportTemplate类。DBImportTemplate 类格式如下：
-``` TypeScript
+~~~ typescript
 var DBImportTemplate = (function () {
     function DBImportTemplate() {
         this._type = "DBImportTemplate";
@@ -59,10 +59,10 @@ var DBImportTemplate = (function () {
     };
     return DBImportTemplate;
 })();
-```
+~~~
 
 需要注意的是，*.js的入口类必须命名为main，例如Spine数据导入插件大致内容如下：
-``` TypeScript
+~~~ typescript
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -104,7 +104,7 @@ var main = (function (_super) {
     };
     return main;
 })(DBImportTemplate);
-```
+~~~
 注意：为了保证插件的安全性，开发者必须要在代码中加上try catch。
 
 最后，DragonBonesPro中自带的两个插件就在安装目录的plugins文件夹中，“Cocos 1.x Importer.expl” 和“Spine 2.x Importer.expl”可以做为完整的例子用于参考。

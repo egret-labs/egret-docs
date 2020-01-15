@@ -21,7 +21,7 @@ egret 5.0.3 以上版本中提供了 `egret.CustomFilter` ，供开发者自由�
 
 下面示例实现一个黑白方块背景的效果，首先创建一个game项目，之后在Main.ts中createGameScene函数最后插入顶点着色器代码：
 
-```
+```javascript
 let vertexSrc =
 	"attribute vec2 aVertexPosition;\n" +
 	"attribute vec2 aTextureCoord;\n" +
@@ -41,7 +41,7 @@ let vertexSrc =
 
 在之后插入片段着色器代码：
 
-```
+```javascript
 let fragmentSrc =
     "precision lowp float;\n" +
 
@@ -65,7 +65,7 @@ let fragmentSrc =
 
 对背景图使用自定义滤镜，设定每个方格大小为50像素：
 
-```
+```javascript
 let size = 50;
 let filter = new egret.CustomFilter(vertexSrc, fragmentSrc, { width: size / stageW, height: size / stageH });
 sky.filters = [filter];
@@ -77,7 +77,7 @@ sky.filters = [filter];
 
 之后再通过帧函数改变方格大小(uniforms属性)：
 
-```
+```javascript
 let inc = 1;
 this.stage.addEventListener(egret.Event.ENTER_FRAME, function () {
     size += inc;
@@ -93,7 +93,3 @@ this.stage.addEventListener(egret.Event.ENTER_FRAME, function () {
 ```
 
 再次运行游戏，会发现每帧方格的大小都会相应变化
-
-访问 [这里](http://developer.egret.com/cn/example/egret2d/index.html#210-egret2d-heibai) 查看上述演示示例。
-
-访问 [这里](http://developer.egret.com/cn/example/egret2d/index.html#210-egret2d-customefilter) 查看更多演示示例。

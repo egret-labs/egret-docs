@@ -17,7 +17,7 @@
 
 * js 内的方法
 
-~~~
+~~~javascript
 function callJsFunc(msg) {
 	console.log("msg from egret : " + msg);
 }
@@ -25,19 +25,19 @@ function callJsFunc(msg) {
 
 * ts 内声明
 
-~~~
+~~~javascript
 declare function callJsFunc(msg:string);//可以放在 ts 文件内（建议在顶部或者底部，中间的没试过）或者单独放到一个 .d.ts 文件中，请不要放在其他类型的文件内。msg 类型根据函数体判断。
 ~~~
 
 * ts 内调用
 
-~~~
+~~~javascript
 callJsFunc("hello js");
 ~~~
 
 * 输出
 
-~~~
+~~~javascript
 msg from egret : hello js
 ~~~
 
@@ -59,7 +59,7 @@ js 调用 ts 其实就是 ts 调用 ts，由于 ts 调用 ts 可能会有同模�
 
 * ts 内的方法
 
-~~~
+~~~javascript
 module exampleA {
     export class A {
         public callEgretMethod(msg:string):void {
@@ -76,7 +76,7 @@ module exampleA {
 
 * 非同一模块下 ts 调用
 
-~~~
+~~~javascript
 module exampleB {
     export function b() {
     	//调用方法
@@ -94,7 +94,7 @@ module exampleB {
 * js 内调用
 
 
-~~~
+~~~javascript
 var a = new exampleA.A();//去掉 a 的类型
 a.callEgretMethod("method");
 
@@ -103,7 +103,7 @@ exampleA.A.CallEgretFunc("function");
 
 * 输出
 
-~~~
+~~~javascript
 method msg from js : method
 static msg from js : function
 ~~~

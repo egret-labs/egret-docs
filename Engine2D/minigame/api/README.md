@@ -8,6 +8,7 @@
 
 在 src 下新增 platform.ts，代码如下
 
+~~~javascript
     /** 
     * 平台数据接口。
     * 由于每款游戏通常需要发布到多个平台上，所以提取出一个统一的接口用于开发者获取平台数据信息
@@ -44,6 +45,7 @@
 
         platform: Platform
     }
+~~~
 
 这样就可以在 Egret 项目中使用 platform 里的方法了。但是如果我们当前的项目想要发布成 H5 游戏的话也不会报错，保证整个项目的兼容性。
 
@@ -54,7 +56,7 @@
 ![](miniplatform.jpeg)
 
 我们 platform.js 代码编写如下
-
+~~~javascript
     /**
     * 请在白鹭引擎的Main.ts中调用 platform.login() 方法调用至此处。
     */
@@ -94,7 +96,7 @@
 
 
     window.platform = new WxgamePlatform();
-
+~~~
 上述代码使用了小游戏的登陆 API，只需要在 Egret 项目中调用 platform.login() 方法即可。
 
 #### 引入 platform.js

@@ -25,31 +25,31 @@
 ### 三.使用命令行把白鹭游戏编译成快游戏
 #### 方法1：开发者可以使用命令行来编译和发布小米快游戏：
 	
-  * dubug 模式： ```egret build --target qgame```
-  * release 模式： ```egret publish --target qgame```
+  * dubug 模式： **egret build --target qgame**
+  * release 模式： **egret publish --target qgame**
 
 #### 方法2：配置 egretProperties.json
 
-```
+~~~javascript
 "engineVersion": "5.2.28",
 "compilerVersion": "5.2.28",
 "template": {},
 "target": {
 	"current": "qgame"
 },
-```
+~~~
 
-如上所示，将 `egretProperties.json` 配置文件中的 `current` 属性设置为 `qgame` 时，可以直接使用```egret build``` 或者 ```egret publish``` 命令编译和发布小米快游戏。
+如上所示，将 `egretProperties.json` 配置文件中的 `current` 属性设置为 `qgame` 时，可以直接使用**egret build** 或者 **egret publish** 命令编译和发布小米快游戏。
 
 ### 四.使用命令行打包发布小米快游戏
 * 进入快游戏项目，在命令行里执行编译命令 `npm run build`，成功后会生成一个`dist`文件夹，里面的 `com.application.demo.debug.rpk` 文件就是打包好的快游戏项目，可以在手机上调试。
 * 如果执行命令 `npm run release`，则会生成正式发布的快游戏项目。
 * **注意:发布正式项目，需要正式的签名文件。** 可以通过 openssl 等命令工具生成签名文件 private.pem、certificate.pem，然后把签名文件拷贝到 `sign/release` 目录。示例方法：
 
-```
+~~~
 openssl req -newkey rsa:2048 -nodes -keyout private.pem -x509 -days 3650 -out certificate.pem
 
-```
+~~~
 
 
 * 项目代码目录的结构如下
@@ -68,7 +68,7 @@ openssl req -newkey rsa:2048 -nodes -keyout private.pem -x509 -days 3650 -out ce
 
 * manifest.json 配置说明
 
-```
+~~~javascript
 {
 	"package": "com.application.demo",
 	"name": "quickgame",
@@ -78,7 +78,7 @@ openssl req -newkey rsa:2048 -nodes -keyout private.pem -x509 -days 3650 -out ce
 	"icon": "/Common/logo.png",
 	"orientation": "portrait"
 }
-```
+~~~
 - 参数说明
 	* package:应用包名
 	* name:应用名称，6 个汉字以内，与应用商店保存的名称一致，用于在桌面图标、弹窗等处显示应用名称

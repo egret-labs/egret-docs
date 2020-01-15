@@ -13,7 +13,7 @@
 项目当前使用的 egret 命令行版本，比如执行 `build`,`publish` 等命令，每个版本略有不同
 
 ### template 字段
-如果存在该字段，在发布 `Html5` 项目时，会使用 `template/web/index.html` 来作为入口文件。[点击查看更多详情](../tempfile/index.html)
+如果存在该字段，在发布 `Html5` 项目时，会使用 `template/web/index.html` 来作为入口文件。[点击查看更多详情](../tempfile/README.md)
 
 ### target 字段
 执行 `build` 和 `publish` 命令时的目标类型。
@@ -60,13 +60,13 @@
 * 如果在项目外，引擎编译时会首先将此路径所对应的库拷贝至项目中的 `libs/modules` 文件夹中，然后加载该文件夹中的库。
 
 修改该配置中的内容后，需要执行 `egret clean` 命令进行重新构建，以保证改动生效。
-[点击查看更多内容](../modelconfig/index.html)
+[点击查看更多内容](../modelconfig/README.md)
 
 ### urlParams 字段 (3.1.6 以上支持)
 
 * 针对```egret run```命令添加URL参数，
 
-```
+``` json
 {
 	"urlParams":{
 		"okok":12,

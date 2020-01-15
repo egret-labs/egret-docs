@@ -18,8 +18,6 @@
     * 保留现有的 JavaScript 渲染逻辑，开发者可以决定使用新的 WebAssembly 模式或者现有的 JavaScript 模式
     * 基于白鹭引擎 4.x 的 JavaScript 模式会长期维护保证现有开发者可以继续使用
 
-    > 关于白鹭引擎 5.0的 WebAssembly ，您可以参考[这篇文档](http://developer.egret.com/cn/github/egret-docs/Engine2D/webassembly/index.html)了解更多内容
-
 * DragonBones
     * 引入二进制格式替代JSON文本格式、降低资源体积、内存占用，提升运行性能
     * 引入一个命令行脚本用于将旧的JSON文本格式切换为二进制格式

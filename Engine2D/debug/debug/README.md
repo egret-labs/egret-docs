@@ -6,7 +6,7 @@ Egret 提供了 `DEBUG` 这一全局变量来实现这样的功能。
 
 下面的代码校验 `value` 是不是由4个数字组成，如果不是，输出指定的错误信息。
 
-```
+```javascript
 	if (DEBUG) {
 	    var rect = value.split(",");
 	    if (rect.length != 4 || isNaN(parseInt(rect[0])) || isNaN(parseInt(rect[1])) ||
@@ -32,18 +32,18 @@ Egret 还提供了另外一个与 `DEBUG` 对应的编译参数 `RELEASE`，用�
 
 在 index.html 文件中有如下代码块：
 
-```
-    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
-         data-entry-class="Main"
-         data-orientation="auto"
-         data-scale-mode="showAll"
-         data-frame-rate="30"
-         data-content-width="640"
-         data-content-height="1136"
-         data-multi-fingered="2"
-         data-show-fps="true" data-show-log="false"
-         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9"> 
-     </div>
+```css
+<div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+    data-entry-class="Main"
+    data-orientation="auto"
+    data-scale-mode="showAll"
+    data-frame-rate="30"
+    data-content-width="640"
+    data-content-height="1136"
+    data-multi-fingered="2"
+    data-show-fps="true" data-show-log="false"
+    data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9"> 
+</div>
 ```
 
 通过 data-show-log： 设置是否在屏幕中显示日志。 true 显示，false 不显示。
@@ -69,7 +69,7 @@ data-show-fps-style 可以设置日志的位置，文字大小和背景颜色
 当您在 `index.html` 里开启信息面板后，
 `data-show-fps="true" data-show-log="true"`。可以通过代码动态隐藏和显示这个面板。**注意** 该功能只有在 pc 的浏览器中才有效。
 
-```
+```css
 //隐藏面板
 document.getElementById('egret-fps-panel').style.visibility ="hidden";
 //显示面板
