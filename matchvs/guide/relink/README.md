@@ -61,7 +61,7 @@ reconnectResponse接口是重连的结果。
 
 networkStateNotify 接口 state 结果值
 
-- 如果有用断线了 state 为 1。
+- 如果有用户断线了 state 为 1。
 - 如果用户正在重新连接 state 为 2.
 - 如果用户用户不能 再重连了彻底离开了房间 state为 3。
 - 如果用户重连成功了 networkStateNotify 接口没有通知，需要玩家自己使用 sendEvent 接口发送消息 告诉其他人。
