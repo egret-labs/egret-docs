@@ -6,7 +6,7 @@
 
 ### 二.创建小游戏和可视化编译打包小游戏
 
-1. 使用最新的 Egret Launcher 创建一个 Egret 游戏项目，引擎使用 5.2.19 以上版本。
+1. 使用最新的 Egret Launcher 创建一个 Egret 游戏项目，引擎使用 5.2.33 以上版本。
 创建完成后，会在 Egret Launcher 的列表里看到该项目。点击发布设置:
 ![](p1.png)
 2. 选择 `支付宝小游戏` 标签，点击`确定`，创建项目
@@ -28,8 +28,8 @@
 #### 方法2：配置 egretProperties.json
 
 ```
-"engineVersion": "5.2.27",
-"compilerVersion": "5.2.27",
+"engineVersion": "5.2.33",
+"compilerVersion": "5.2.33",
 "template": {},
 "target": {
 	"current": "mygame"
