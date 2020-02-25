@@ -1,5 +1,7 @@
-[{
-    "children": [{
+[
+  {
+    "children": [
+      {
         "filename": "/extension/threes/instructions/",
         "text": "第三方库的使用方法",
         "des": "第三方库的使用方法",
@@ -18,7 +20,8 @@
     "in_use": true
   },
   {
-    "children": [{
+    "children": [
+      {
         "filename": "/extension/RES/newres/",
         "text": "资源管理框架",
         "des": "资源管理框架",
@@ -79,8 +82,10 @@
     "in_use": true
   },
   {
-    "children": [{
-        "children": [{
+    "children": [
+      {
+        "children": [
+          {
             "filename": "/extension/EUI/outline/introduction/",
             "text": "简介",
             "des": "EUI简介",
@@ -99,7 +104,8 @@
         "in_use": true
       },
       {
-        "children": [{
+        "children": [
+          {
             "filename": "/extension/EUI/getStarted/getStarted/",
             "text": "快速入门",
             "des": "EUI快速入门",
@@ -118,7 +124,8 @@
         "in_use": true
       },
       {
-        "children": [{
+        "children": [
+          {
             "filename": "/extension/EUI/EXML/useEXML/",
             "text": "使用EXML",
             "des": "使用EXML",
@@ -143,7 +150,8 @@
         "in_use": true
       },
       {
-        "children": [{
+        "children": [
+          {
             "filename": "/extension/EUI/skin/separate/",
             "text": "皮肤分离机制",
             "des": "皮肤分离机制",
@@ -186,7 +194,8 @@
         "in_use": true
       },
       {
-        "children": [{
+        "children": [
+          {
             "filename": "/extension/EUI/autoLayout/adaptation/",
             "text": "屏幕适配",
             "des": "屏幕适配",
@@ -223,7 +232,8 @@
         "in_use": true
       },
       {
-        "children": [{
+        "children": [
+          {
             "filename": "/extension/EUI/useLayout/basiclayout/",
             "text": "基本布局",
             "des": "基本布局",
@@ -260,7 +270,8 @@
         "in_use": true
       },
       {
-        "children": [{
+        "children": [
+          {
             "filename": "/extension/EUI/controls/label/",
             "text": "文本",
             "des": "EUI文本",
@@ -321,7 +332,8 @@
         "in_use": true
       },
       {
-        "children": [{
+        "children": [
+          {
             "filename": "/extension/EUI/container/group/",
             "text": "简单容器( Group )",
             "des": "EUI简单容器( Group )",
@@ -352,7 +364,8 @@
         "in_use": true
       },
       {
-        "children": [{
+        "children": [
+          {
             "filename": "/extension/EUI/dataCollection/dataGroup/",
             "text": "数据容器",
             "des": "EUI数据容器",
@@ -389,7 +402,8 @@
         "in_use": true
       },
       {
-        "children": [{
+        "children": [
+          {
             "filename": "/extension/EUI/advancedSkills/tool/",
             "text": "EUI-BOOSTER-TOOL",
             "des": "EUI-BOOSTER-TOOL",
@@ -420,7 +434,8 @@
     "in_use": true
   },
   {
-    "children": [{
+    "children": [
+      {
         "filename": "/extension/game/movieClip/",
         "text": "MovieClip序列帧动画",
         "des": "MovieClip序列帧动画",
@@ -469,55 +484,64 @@
     "in_use": true
   },
   {
-    "children": [{
-      "filename": "/extension/tween/tween/",
-      "text": "缓动动画",
-      "des": "缓动动画",
-      "in_use": true
-    }],
+    "children": [
+      {
+        "filename": "/extension/tween/tween/",
+        "text": "缓动动画",
+        "des": "缓动动画",
+        "in_use": true
+      }
+    ],
     "isFolder": true,
     "text": "Tween缓动库",
     "des": "EUITween缓动库",
     "in_use": true
   },
   {
-    "children": [{
-      "filename": "/extension/WebSocket/WebSocket/",
-      "text": "WebSocket",
-      "des": "WebSocket",
-      "in_use": true
-    }],
+    "children": [
+      {
+        "filename": "/extension/WebSocket/WebSocket/",
+        "text": "WebSocket",
+        "des": "WebSocket",
+        "in_use": true
+      }
+    ],
     "isFolder": true,
     "text": "WebSocket库",
     "des": "EUIWebSocket库",
     "in_use": true
   },
   {
-    "children": [{
-      "filename": "/extension/p2/p2/",
-      "text": "使用p2制作跳跃游戏",
-      "des": "使用p2制作跳跃游戏",
-      "in_use": true
-    }],
+    "children": [
+      {
+        "filename": "/extension/p2/p2/",
+        "text": "使用p2制作跳跃游戏",
+        "des": "使用p2制作跳跃游戏",
+        "in_use": true
+      }
+    ],
     "isFolder": true,
     "text": "P2物理系统库",
     "des": "P2物理系统库",
     "in_use": true
   },
   {
-    "children": [{
-      "filename": "/extension/mouse/mouse/",
-      "text": "鼠标支持库",
-      "des": "鼠标支持库",
-      "in_use": true
-    }],
+    "children": [
+      {
+        "filename": "/extension/mouse/mouse/",
+        "text": "鼠标支持库",
+        "des": "鼠标支持库",
+        "in_use": true
+      }
+    ],
     "isFolder": true,
     "text": "mouse鼠标支持库",
     "des": "mouse鼠标支持库",
     "in_use": true
   },
   {
-    "children": [{
+    "children": [
+      {
         "filename": "/extension/particle/introduction/",
         "text": "粒子系统简介",
         "des": "粒子系统简介",
@@ -564,5 +588,135 @@
     "text": "JSZip 库",
     "des": "JSZip 库",
     "in_use": true
+  },
+  {
+    "children": [
+      {
+        "filename": "/extension/mouse/mouse/",
+        "text": "鼠标支持库",
+        "des": "鼠标支持库",
+        "in_use": true
+      }
+    ],
+    "isFolder": true,
+    "text": "mouse鼠标支持库",
+    "des": "mouse鼠标支持库",
+    "in_use": true
+  },
+  {
+    "isFolder": true,
+    "text": "接入指引",
+    "des": "接入指引",
+    "in_use": true,
+    "children": [
+      {
+        "isFolder": true,
+        "text": "Matchvs 游戏云",
+        "des": "Matchvs 游戏云",
+        "in_use": true,
+        "children": [
+          {
+            "filename": "/extension/matchvs/guide/create/",
+            "text": "使用 Matchvs 服务",
+            "des": "使用 Matchvs 服务",
+            "in_use": true
+          },
+          {
+            "filename": "/extension/matchvs/guide/guide/",
+            "text": "MatchvsSDK 接入指南",
+            "des": "MatchvsSDK 接入指南",
+            "in_use": true
+          },
+          {
+            "filename": "/extension/matchvs/guide/gameserver/",
+            "text": "GameServer",
+            "des": "GameServer",
+            "in_use": true
+          },
+          {
+            "filename": "/extension/matchvs/guide/storage/",
+            "text": "数据存储",
+            "des": "数据存储",
+            "in_use": true
+          },
+          {
+            "filename": "/extension/matchvs/guide/relink/",
+            "text": "断线重连",
+            "des": "断线重连",
+            "in_use": true
+          },
+          {
+            "filename": "/extension/matchvs/guide/team/",
+            "text": "组队匹配",
+            "des": "组队匹配",
+            "in_use": true
+          },
+          {
+            "filename": "/extension/matchvs/guide/rank/",
+            "text": "排行榜",
+            "des": "排行榜",
+            "in_use": true
+          },
+          {
+            "filename": "/extension/matchvs/guide/sys/",
+            "text": "环境说明",
+            "des": "环境说明",
+            "in_use": true
+          }
+        ]
+      },
+      {
+        "isFolder": true,
+        "text": "Demo 教程",
+        "des": "Demo 教程",
+        "in_use": true,
+        "children": [
+          {
+            "filename": "/extension/matchvs/demo/duck/",
+            "text": "鸭子抢球",
+            "des": "鸭子抢球",
+            "in_use": true
+          }
+        ]
+      },
+      {
+        "isFolder": true,
+        "text": "微信相关",
+        "des": "微信相关",
+        "in_use": true,
+        "children": [
+          {
+            "filename": "/extension/matchvs/wxgame/third/",
+            "text": "第三方绑定使用指南",
+            "des": "第三方绑定使用指南",
+            "in_use": true
+          },
+          {
+            "filename": "/extension/matchvs/wxgame/wxrank/",
+            "text": "微信好友排行榜",
+            "des": "微信好友排行榜",
+            "in_use": true
+          },
+          {
+            "filename": "/extension/matchvs/wxgame/domain/",
+            "text": "微信域名列表",
+            "des": "微信域名列表",
+            "in_use": true
+          },
+          {
+            "filename": "/extension/matchvs/wxgame/wechatInvite/",
+            "text": "微信约战",
+            "des": "微信约战",
+            "in_use": true
+          }
+        ]
+      },
+      {
+        "filename": "/extension/matchvs/api/",
+        "text": "API 手册",
+        "des": "API 手册",
+        "in_use": true
+      }
+    ]
   }
 ]
