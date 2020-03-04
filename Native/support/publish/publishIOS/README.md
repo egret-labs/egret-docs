@@ -1,3 +1,7 @@
+---
+id: publishIOS.html
+title: 打包 iOS app
+---
 
 egret-ios-support是Egret打包为原生ios APP的方案，你可以使用egret-ios-support将你的HTML5游戏打包为ipa文件，并提供给用户安装。
 

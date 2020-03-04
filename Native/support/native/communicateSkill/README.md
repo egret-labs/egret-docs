@@ -1,3 +1,7 @@
+---
+id: communicateSkill.html
+title: Egret 与 Native 通信
+---
 
 ## 准备工作
 

@@ -1,3 +1,6 @@
+---
+title: 热更新方案说明
+---
 
 ## 当前文件缓存策略
 
@@ -57,7 +60,7 @@ String getFileDirByUrl(String urlString /*"http://game.com/game/index.html"*/) {
 
 以Android为例，解压完成后 /sdcard/egretGame/http/game.com/game/ 下的内容如下：
 
-![](./p1.png)
+![](/native/img/docs/manual/hotupdate/p1.png)
 
 游戏资源解压完成后，设置config.preloadPath指定预加载目录，启动游戏后runtime会优先从这个目录加载资源。
 

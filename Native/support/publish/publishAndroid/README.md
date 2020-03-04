@@ -1,3 +1,7 @@
+---
+id: publishAndroid.html
+title: 打包 Android app
+---
 
 > 基于Android Studio 的 Android Support ,是用于创建Android Studio上的 Android 工程的模版。当前是预览版教程。
 

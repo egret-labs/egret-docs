@@ -1,3 +1,7 @@
+---
+id: hotUpdate.html
+title: 热更新
+---
 
 ## 概述
 

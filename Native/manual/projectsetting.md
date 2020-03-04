@@ -1,3 +1,6 @@
+---
+title: 如何发布原生项目
+---
 
 
 通过 `Egret` 引擎制作的游戏，不仅可以发布成 `Html5` 网页项目，还可以发布成原生项目。
@@ -20,11 +23,11 @@
 
 - 在launcher的项目面板找到需要发布Android工程的Egret项目，点击发布设置
 
-![](p0.png)
+![](/native/img/docs/manual/projectsetting/p0.png)
 
 - 点击左侧的Android按钮，在右侧页面中，输入应用名称、应用包名，点击确定。
 
-![](p1.png)
+![](/native/img/docs/manual/projectsetting/p1.png)
 
 
 ## 发布iOS工程
@@ -33,13 +36,12 @@
 
 - 在launcher的项目面板找到需要发布iOS工程的Egret项目，点击发布设置
 
-![](p0.png)
+![](/native/img/docs/manual/projectsetting/p0.png)
 
 - 点击左侧的iOS按钮，在右侧页面中，输入应用名称、应用包名，点击确定。
 
-![](p2.png)
+![](/native/img/docs/manual/projectsetting/p2.png)
 
-- 如果勾选`使用Hybrid方案`，该项目会使用 iOS 系统的 webview 来运行游戏
 
 ## 工程设置
 

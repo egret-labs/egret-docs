@@ -1,3 +1,6 @@
+---
+title: 如何发布微端项目
+---
 
 
 
@@ -15,19 +18,19 @@
 
 - 进入微端界面
 
-![](p0.png)
+![](/native/img/docs/manual/microclient/p0.png)
 
 - 注册游戏，填写游戏名称和地址
 
-![](p1.png)
+![](/native/img/docs/manual/microclient/p1.png)
 
 - 创建Android工程，填写应用报名和应用名称
 
-![](p2.png)
+![](/native/img/docs/manual/microclient/p2.png)
 
 - 根据需求选择是否使用Runtime加速，如果没有勾选，将通过WebView加载游戏，两种模式的优缺点如下：
 
-![](p3.png)
+![](/native/img/docs/manual/microclient/p3.png)
 
 ## 使用本地资源
 
@@ -35,7 +38,7 @@
 
 使用本地资源或想要把H5游戏打包到微端里，只需将h5发布的项目直接拷贝到 assets/game 目录，如没有这个目录请创建。
 
-![](p4.jpg)
+![](/native/img/docs/manual/microclient/p4.jpg)
 
 ## JS与Java通信
 

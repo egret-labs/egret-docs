@@ -1,3 +1,7 @@
+---
+id: horizontalScreen.html
+title: 原生横屏设置
+---
 
 ## 准备工作
 
