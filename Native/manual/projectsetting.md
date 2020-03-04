@@ -23,11 +23,11 @@ title: 如何发布原生项目
 
 - 在launcher的项目面板找到需要发布Android工程的Egret项目，点击发布设置
 
-![](/native/img/docs/manual/projectsetting/p0.png)
+![](./projectsetting/p0.png)
 
 - 点击左侧的Android按钮，在右侧页面中，输入应用名称、应用包名，点击确定。
 
-![](/native/img/docs/manual/projectsetting/p1.png)
+![](./projectsetting/p1.png)
 
 
 ## 发布iOS工程
@@ -36,11 +36,11 @@ title: 如何发布原生项目
 
 - 在launcher的项目面板找到需要发布iOS工程的Egret项目，点击发布设置
 
-![](/native/img/docs/manual/projectsetting/p0.png)
+![](./projectsetting/p0.png)
 
 - 点击左侧的iOS按钮，在右侧页面中，输入应用名称、应用包名，点击确定。
 
-![](/native/img/docs/manual/projectsetting/p2.png)
+![](./projectsetting/p2.png)
 
 
 ## 工程设置
