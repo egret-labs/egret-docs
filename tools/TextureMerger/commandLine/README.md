@@ -18,4 +18,4 @@
 
 	-e为可选命令 不写默认转换目录下所有被TextureMerger支持的动画文件
 
-* 注意: 如何没有将 TextureMerge 设置环境变量，需要敲入 TextureMerge 的结对路径。
+* 注意: 如何没有将 TextureMerge 设置环境变量，需要敲入 TextureMerge 的绝对路径。
