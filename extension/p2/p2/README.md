@@ -19,7 +19,7 @@ var body:p2.Body = new p2.Body();
 
 ```
 //创建宽4单位、高2单位的矩形形状
-var shpRect:p2.Shape = new p2.Rectangle( 4, 2 );
+var shpRect:p2.Shape = new p2.Box({ width: 4, height: 2 });
 //创建平面形状
 var shpPlane:p2.Plane = new p2.Plane();
 ```
@@ -149,13 +149,13 @@ disp.rotation = 360 - body.angle * 180 / Math.PI;
 创建Shape过程，直接传入参数才有效。
 
 ```
-var rectShape:p2.Rectangle = new p2.Rectangle( 4, 2 );
+var rectShape:p2.Box = new p2.Box({ width: 4, height: 2 });
 ```
 
 如果换成：
 
 ```
-var rectShape:p2.Rectangle = new p2.Rectangle;
+var rectShape:p2.Box = new p2.Box();
 rectShape.width = 4;
 rectShape.height = 2;
 rectShape.updateArea();
@@ -216,7 +216,7 @@ private createGround( world:p2.World, container:egret.DisplayObjectContainer
     console.log( "位置：", p2body.position );
     world.addBody( p2body );
 
-    var p2rect:p2.Rectangle = new p2.Rectangle(city.phys.P2Space.extentP2( w ),city.phys.P2Space.extentP2( h ) );
+    var p2rect:p2.Box = new p2.Box({ width: city.phys.P2Space.extentP2( w ), height: city.phys.P2Space.extentP2( h ) });
     p2body.addShape( p2rect );
 
     var bitmap:egret.Bitmap = city.utils.DispUtil.createBitmapByName( resid );
@@ -270,7 +270,7 @@ city.phys.P2Space.syncDisplay( this._vcGroundsFixed[2] );
 这是因为，在游戏运行过程中，这3个块不需要任何运动。
 
 ## 创建玩家
-玩家的形状，也是一个p2.Rectangle，创建玩家的过程跟上述诸面基本类似：
+玩家的形状，也是一个p2.Box，创建玩家的过程跟上述诸面基本类似：
 
 ```
 private createPlayer( world:p2.World, container:egret.DisplayObjectContainer, id:number, resid:string, xLanding:number, yLanding:number ):p2.Body{
@@ -289,10 +289,10 @@ private createPlayer( world:p2.World, container:egret.DisplayObjectContainer, id
     display.anchorX = display.anchorY = .5;
 
     /// 对应p2形状的宽高要根据玩家计算
-    var p2rect:p2.Rectangle = new p2.Rectangle(
-       city.phys.P2Space.extentP2((<egret.Bitmap>display).texture.textureWidth),
-       city.phys.P2Space.extentP2((<egret.Bitmap>display).texture.textureHeight)
-    );
+    var p2rect:p2.Box = new p2.Box({
+       width: city.phys.P2Space.extentP2((<egret.Bitmap>display).texture.textureWidth),
+       height: city.phys.P2Space.extentP2((<egret.Bitmap>display).texture.textureHeight)
+    });
     p2body.addShape( p2rect );
 
     p2body.position =city.phys.P2Space.getP2Pos( xLanding, yLanding - (<egret.Bitmap>display).texture.textureHeight / 2 );
